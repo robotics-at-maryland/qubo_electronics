@@ -1,0 +1,31 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+
+\begin{document}
+	\section{Design Goals}
+		At a system level, the battery management subsystem lies between the batteries and the power supply/regulation system. The battery management system is responsible for balancing the batteries to create a single high voltage bus capable of powering all of the robot subsystems. It manages multiple battery cells (6 cells in Tortuga 4, 2 cells in Project QUBO). It must be capable of dealing with batteries of differing charge levels and therefore different voltages. Each battery is not capable of powering the entire robot so load balancing between the batteries, even with batteries of different voltages, is required. The battery management system is also responsible for providing a system to monitor the batteries and their containers. These monitoring systems include hot-plug detection, water sensors, and temperature sensors. Since Project QUBO contains two separate battery packs, hot-swapping support in the battery management system would also be desirable.
+		
+		\paragraph{General Goals}
+		\begin{itemize}
+			\item Balance 2 batteries and present a single battery-level rail to draw power from
+			\item Provide a monitoring interface to ensure safe performance of the batteries
+			\item Provide a method for connecting shore power to the robot
+			\item Provide a method for turning battery power on/off
+			\item Evaluate and possibly integrate hot-swapping functionality
+		\end{itemize}
+		
+	\section{System Layout}
+		
+		Currently (March 2015), each of the 2 batteries will reside in their own hulls that are separate from the main electronics hull. This allows for easy battery removal from the system and for a smaller, simpler electronics hull. The battery management system is split between the electronics hull and battery hulls. Moreover, some of the battery management circuitry will reside on the same backplane PCB as the power regulation/distribution board. While this makes the power system more monolithic in nature, it will make systems integration on the robot much simpler since there will be only one power supply related board on the backplane.
+		
+		The battery management system will consist of two PCBs. One PCB will contain the balancing and hot-swapping circuitry and will be plugged into the backplane inside the main electronics hull. That PCB will be shared with the power regulation/distribution system. The other PCB will reside inside the battery hulls (so technically there will be 3 PCBs in the system since there are 2 battery hulls). The battery hull PCB will contain a mechanism to turn a battery on/off and provide monitoring circuitry to ensure the battery is functioning properly/safely inside the battery hulls.
+		
+	\section{Battery Balancing}
+	
+		In designing the battery balancing portion of the system, we found 2 possible methods for balancing the batteries to generate a single bus for the robot. We evaluated each method by taking efficiency, cost, and simplicity into account. 
+		
+		The first method is diode-ORing. This is the same method used the balance the 6 batteries (the main battery contained 5 27V batteries and the 6th 'cell' was the shore power) inside of Tortuga 4. 
+\end{document}

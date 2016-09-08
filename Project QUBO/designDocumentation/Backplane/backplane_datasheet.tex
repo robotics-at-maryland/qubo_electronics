@@ -1,0 +1,142 @@
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%-------------------------------------------------------------------------------------------------
+% DOCUMENT INFORMATION SPECIFIED HERE
+%-------------------------------------------------------------------------------------------------
+%% Assignment type, e.g. HW1, Project 2, Assignment 3
+\newcommand{\assignmentType}{Technical Datasheet}
+
+%% Assignment title, e.g. Karger's Min Cut, Magnetic Fields
+\newcommand{\assignmentTitle}{Backplane}
+
+%% Last edited date
+\newcommand{\lastEdited}{8/2/16}
+
+%% Course number, e.g. ENEE324
+\newcommand{\courseNum}{}
+
+%% Course title, e.g. Advanced Signals and Systems
+\newcommand{\courseTitle}{Robotics@Maryland}
+
+%% Course professor
+\newcommand{\prof}{Institute for Systems Research}
+
+%% Department
+\newcommand{\dept}{Department of Electrical and Computer Engineering}						
+
+%% University
+\newcommand{\univ}{University of Maryland}	
+
+%% Seal image
+\newcommand{\seal}{C:/UMD_seal.png}					
+
+%% Author
+\newcommand{\student}{Ben Hurwitz}
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{0.9} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\rhead{\author} % Top left header
+\lhead{\courseTitle : \assignmentType} % Top center head
+%\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{\assignmentTitle}
+        
+        \vspace{0.5cm}
+        \LARGE
+        \assignmentType
+        
+        \vspace{1.5cm}
+        
+        \textbf{\student}
+        
+        \vfill
+        
+        \vspace{0.6cm}
+        
+        \includegraphics[width=0.4\textwidth]{\seal}
+        
+        \vspace{1.5cm}
+        
+        \textbf{Last Edited: \lastEdited}
+        
+        \vfill
+        
+        \Large
+        \courseTitle \\
+        \prof \\
+        \dept \\
+        \univ \\
+        
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\section{Introduction}
+The backplane is a four layer board that connects most of the electrical components together and passes signals between them. Physically, the board is approximately 20cm long and 10cm wide, sitting about 3.5 inches above the bottom of the electronics hulls, and consists of a 16V plane, a GND plane, and two internal signal planes. There are four major connectors for the fours plug-in daughterboards, which allow for flexibility and modularity, each with eighty signal pins and two full-power blades. There are two I$^2$C lines, two SPI lines, and two serial RX/TX lines that run between the CPU and all the daughterboards, as well as USB connections between the CPU and the individual daughterboards. 
+
+\section{Connectors}
+\subsection{Daughterboard Connection}
+\subsection{CPU Connection}
+\subsection{Hypertronics Connection}
+
+\section{Signalling}
+\subsection{USB}
+\subsection{I$^2$C}
+\subsection{SPI}
+\subsection{Serial}
+
+\section{Thrusters}
+
+\section{Misc}
+\subsection{Current Sensors}
+\subsection{Debug port}
+\subsection{Misc. Ports}
+
+\section{Appendix}
+\subsection{Current ratings}
+\subsection{Thermal Considerations}
+\subsection{Complete Parts List}
+
+\end{document}
