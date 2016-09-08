@@ -1,7 +1,7 @@
 This is the electronics folder for Project QUBO, the replacement for Tortuga 4.
 ===============================================================================
 
-eagleLibraries is the library folder eagle.
+eagleLibraries is the EAGLE library folder.
 	ALL robot PCB designs MUST only contain parts from libraries in the eagleLibraries directory.
 
 datasheets is for all part datasheets used in the electronics designs.
