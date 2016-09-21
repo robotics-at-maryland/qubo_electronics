@@ -14184,93 +14184,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="allegro">
-<packages>
-<package name="ACS764">
-<smd name="P$1" x="0.3175" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$2" x="0.9525" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$3" x="1.5875" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$4" x="2.2225" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$5" x="2.8575" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$6" x="3.4925" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$7" x="-3.4825" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$8" x="-2.8475" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$9" x="-2.2125" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$10" x="-1.5775" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$11" x="-0.9425" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$12" x="-0.3075" y="2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$13" x="0.3175" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$14" x="0.9525" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$15" x="1.5875" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$16" x="2.2225" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$17" x="2.8575" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$18" x="3.4925" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$19" x="-3.4925" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$20" x="-2.8575" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$21" x="-2.2225" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$22" x="-1.5875" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$23" x="-0.9525" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$24" x="-0.3175" y="-2.5" dx="2.3" dy="0.4" layer="1" rot="R90"/>
-<wire x1="-4.33" y1="2.5" x2="-4.3" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-4.3" y1="2.5" x2="4.3" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4.3" y1="2.5" x2="4.33" y2="2.5" width="0.127" layer="21"/>
-<wire x1="4.3" y1="2.5" x2="4.33" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="4.33" y1="-2.5" x2="-4.33" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-4.33" y1="-2.5" x2="-4.3" y2="2.5" width="0.127" layer="21"/>
-<circle x="-3.6" y="-1.8" radius="0.412309375" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ACS764">
-<wire x1="-15.24" y1="15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
-<pin name="IP+" x="-20.32" y="12.7" length="middle"/>
-<pin name="VCC" x="-20.32" y="7.62" length="middle"/>
-<pin name="SDA" x="-20.32" y="2.54" length="middle"/>
-<pin name="SCL" x="-20.32" y="-2.54" length="middle"/>
-<pin name="GND" x="-20.32" y="-7.62" length="middle"/>
-<pin name="NC" x="-20.32" y="-12.7" length="middle"/>
-<pin name="NC2" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="FREEZE" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="FAULT" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="A0" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="A1" x="20.32" y="7.62" length="middle" rot="R180"/>
-<text x="-15.24" y="15.24" size="1.778" layer="95">&gt;Name</text>
-<text x="-15.24" y="-17.78" size="1.778" layer="96">&gt;Value</text>
-<pin name="IP-" x="20.32" y="12.7" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ACS764">
-<gates>
-<gate name="G$1" symbol="ACS764" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ACS764">
-<connects>
-<connect gate="G$1" pin="A0" pad="P$3"/>
-<connect gate="G$1" pin="A1" pad="P$2"/>
-<connect gate="G$1" pin="FAULT" pad="P$4"/>
-<connect gate="G$1" pin="FREEZE" pad="P$5"/>
-<connect gate="G$1" pin="GND" pad="P$17"/>
-<connect gate="G$1" pin="IP+" pad="P$13 P$19 P$20 P$21 P$22 P$23 P$24"/>
-<connect gate="G$1" pin="IP-" pad="P$1 P$7 P$8 P$9 P$10 P$11 P$12"/>
-<connect gate="G$1" pin="NC" pad="P$18"/>
-<connect gate="G$1" pin="NC2" pad="P$6"/>
-<connect gate="G$1" pin="SCL" pad="P$16"/>
-<connect gate="G$1" pin="SDA" pad="P$15"/>
-<connect gate="G$1" pin="VCC" pad="P$14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="vishay">
 <packages>
 <package name="SI7164DP">
@@ -14379,8 +14292,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
-<part name="REG-12V" library="texas" deviceset="PTN78060W" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="732 Ω"/>
+<part name="REG-9V" library="texas" deviceset="PTN78060W" device=""/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="407 kΩ"/>
 <part name="C15" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C17" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
@@ -14422,18 +14335,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="2 kOhm"/>
 <part name="D17" library="diode" deviceset="ZENER-DIODE" device="SMB" value="12V"/>
 <part name="D18" library="diode" deviceset="ZENER-DIODE" device="SMB" value="150V"/>
-<part name="CURRENTSENSOR3.3" library="allegro" deviceset="ACS764" device=""/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0603" value="10 kΩ"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
-<part name="CURRENTSENSOR5" library="allegro" deviceset="ACS764" device=""/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0603" value="10 kΩ"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
-<part name="CURRENTSENSOR12" library="allegro" deviceset="ACS764" device=""/>
-<part name="R13" library="resistor" deviceset="R-US_" device="R0603" value="10 kΩ"/>
-<part name="R14" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="107 kΩ"/>
 <part name="C21" library="resistor" deviceset="C-US" device="C0603" value=".18 uF"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="32.4 kOhm"/>
 <part name="R17" library="resistor" deviceset="R-US_" device="R0603" value="4.22 kOhm"/>
@@ -14445,6 +14346,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="U$2" library="vishay" deviceset="N-MOSFET" device="SI5410DU"/>
 <part name="R21" library="resistor" deviceset="R-US_" device="R0603" value="20 kOhm"/>
 <part name="C23" library="resistor" deviceset="CPOL-US" device="G" value="220 uF"/>
+<part name="REG-12V" library="texas" deviceset="PTN78060W" device=""/>
+<part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="732 Ω"/>
+<part name="C24" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
+<part name="C25" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
+<part name="C26" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
+<part name="C27" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
+<part name="C28" library="resistor" deviceset="C-US" device="C0603" value="100 nF"/>
+<part name="C29" library="resistor" deviceset="C-US" device="C0805" value="10 µF"/>
+<part name="C30" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14472,7 +14382,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C9" gate="G$1" x="271.78" y="2.54" rot="R270"/>
 <instance part="C10" gate="G$1" x="271.78" y="-5.08" rot="R270"/>
 <instance part="C11" gate="G$1" x="271.78" y="-12.7" rot="R270"/>
-<instance part="REG-12V" gate="G$1" x="299.72" y="-40.64"/>
+<instance part="REG-9V" gate="G$1" x="299.72" y="-40.64"/>
 <instance part="R3" gate="G$1" x="281.94" y="-55.88" rot="R90"/>
 <instance part="C15" gate="G$1" x="271.78" y="-38.1" rot="R270"/>
 <instance part="C16" gate="G$1" x="271.78" y="-45.72" rot="R270"/>
@@ -14515,18 +14425,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="R6" gate="G$1" x="10.16" y="-96.52"/>
 <instance part="D17" gate="G$1" x="-25.4" y="-91.44" rot="R180"/>
 <instance part="D18" gate="G$1" x="27.94" y="-86.36" rot="R270"/>
-<instance part="CURRENTSENSOR3.3" gate="G$1" x="403.86" y="45.72"/>
-<instance part="R7" gate="G$1" x="439.42" y="43.18" rot="R180"/>
-<instance part="R9" gate="G$1" x="447.04" y="68.58" rot="R270"/>
-<instance part="R8" gate="G$1" x="457.2" y="58.42" rot="R270"/>
-<instance part="CURRENTSENSOR5" gate="G$1" x="398.78" y="-5.08"/>
-<instance part="R10" gate="G$1" x="434.34" y="-7.62" rot="R180"/>
-<instance part="R11" gate="G$1" x="441.96" y="17.78" rot="R270"/>
-<instance part="R12" gate="G$1" x="452.12" y="7.62" rot="R270"/>
-<instance part="CURRENTSENSOR12" gate="G$1" x="401.32" y="-58.42"/>
-<instance part="R13" gate="G$1" x="436.88" y="-60.96" rot="R180"/>
-<instance part="R14" gate="G$1" x="444.5" y="-35.56" rot="R270"/>
-<instance part="R15" gate="G$1" x="454.66" y="-45.72" rot="R270"/>
 <instance part="C21" gate="G$1" x="160.02" y="50.8" rot="R90"/>
 <instance part="R16" gate="G$1" x="129.54" y="25.4"/>
 <instance part="R17" gate="G$1" x="114.3" y="22.86" rot="R180"/>
@@ -14538,6 +14436,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="U$2" gate="G$1" x="187.96" y="78.74" rot="R90"/>
 <instance part="R21" gate="G$1" x="172.72" y="45.72" rot="R180"/>
 <instance part="C23" gate="G$1" x="205.74" y="91.44"/>
+<instance part="REG-12V" gate="G$1" x="302.26" y="-88.9"/>
+<instance part="R22" gate="G$1" x="284.48" y="-104.14" rot="R90"/>
+<instance part="C24" gate="G$1" x="274.32" y="-86.36" rot="R270"/>
+<instance part="C25" gate="G$1" x="274.32" y="-93.98" rot="R270"/>
+<instance part="C26" gate="G$1" x="274.32" y="-101.6" rot="R270"/>
+<instance part="C27" gate="G$1" x="274.32" y="-109.22" rot="R270"/>
+<instance part="C28" gate="G$1" x="327.66" y="-88.9" rot="R90"/>
+<instance part="C29" gate="G$1" x="327.66" y="-96.52" rot="R90"/>
+<instance part="C30" gate="G$1" x="327.66" y="-104.14" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14592,91 +14499,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="JP1" gate="G$1" pin="P$72"/>
 <wire x1="660.4" y1="-2.54" x2="655.32" y2="-2.54" width="0.1524" layer="91"/>
 <label x="655.32" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="VCC"/>
-<wire x1="383.54" y1="53.34" x2="373.38" y2="53.34" width="0.1524" layer="91"/>
-<label x="373.38" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="IP-"/>
-<wire x1="424.18" y1="58.42" x2="434.34" y2="58.42" width="0.1524" layer="91"/>
-<label x="431.8" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="444.5" y1="43.18" x2="449.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="447.04" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="447.04" y1="73.66" x2="447.04" y2="76.2" width="0.1524" layer="91"/>
-<label x="447.04" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="457.2" y1="63.5" x2="457.2" y2="66.04" width="0.1524" layer="91"/>
-<label x="457.2" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="VCC"/>
-<wire x1="378.46" y1="2.54" x2="368.3" y2="2.54" width="0.1524" layer="91"/>
-<label x="368.3" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="IP-"/>
-<wire x1="419.1" y1="7.62" x2="429.26" y2="7.62" width="0.1524" layer="91"/>
-<label x="426.72" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="439.42" y1="-7.62" x2="444.5" y2="-7.62" width="0.1524" layer="91"/>
-<label x="441.96" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="441.96" y1="22.86" x2="441.96" y2="25.4" width="0.1524" layer="91"/>
-<label x="441.96" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="452.12" y1="12.7" x2="452.12" y2="15.24" width="0.1524" layer="91"/>
-<label x="452.12" y="15.24" size="1.778" layer="95"/>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="A0"/>
-<wire x1="419.1" y1="-2.54" x2="447.04" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="-2.54" x2="447.04" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="12.7" x2="452.12" y2="12.7" width="0.1524" layer="91"/>
-<junction x="452.12" y="12.7"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="VCC"/>
-<wire x1="381" y1="-50.8" x2="370.84" y2="-50.8" width="0.1524" layer="91"/>
-<label x="370.84" y="-50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="IP-"/>
-<wire x1="421.64" y1="-45.72" x2="431.8" y2="-45.72" width="0.1524" layer="91"/>
-<label x="429.26" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="441.96" y1="-60.96" x2="447.04" y2="-60.96" width="0.1524" layer="91"/>
-<label x="444.5" y="-60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="444.5" y1="-30.48" x2="444.5" y2="-27.94" width="0.1524" layer="91"/>
-<label x="444.5" y="-30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="454.66" y1="-40.64" x2="454.66" y2="-38.1" width="0.1524" layer="91"/>
-<label x="454.66" y="-38.1" size="1.778" layer="95"/>
-<wire x1="449.58" y1="-40.64" x2="454.66" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="454.66" y="-40.64"/>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="A1"/>
-<wire x1="449.58" y1="-40.64" x2="449.58" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="449.58" y1="-50.8" x2="421.64" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -15107,12 +14929,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="330.2" y="-7.62"/>
 </segment>
 <segment>
-<pinref part="REG-12V" gate="G$1" pin="GND1"/>
+<pinref part="REG-9V" gate="G$1" pin="GND1"/>
 <wire x1="284.48" y1="-33.02" x2="279.4" y2="-33.02" width="0.1524" layer="91"/>
 <label x="279.4" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="REG-12V" gate="G$1" pin="GND2"/>
+<pinref part="REG-9V" gate="G$1" pin="GND2"/>
 <wire x1="314.96" y1="-45.72" x2="320.04" y2="-45.72" width="0.1524" layer="91"/>
 <label x="314.96" y="-45.72" size="1.778" layer="95"/>
 </segment>
@@ -15157,71 +14979,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="D9" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="GND"/>
-<wire x1="383.54" y1="38.1" x2="373.38" y2="38.1" width="0.1524" layer="91"/>
-<label x="373.38" y="38.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="A1"/>
-<wire x1="424.18" y1="53.34" x2="441.96" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="441.96" y1="53.34" x2="441.96" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="63.5" x2="447.04" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="63.5" x2="447.04" y2="60.96" width="0.1524" layer="91"/>
-<junction x="447.04" y="63.5"/>
-<label x="447.04" y="60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="A0"/>
-<wire x1="424.18" y1="48.26" x2="449.58" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="449.58" y1="48.26" x2="449.58" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="449.58" y1="53.34" x2="457.2" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="457.2" y1="53.34" x2="457.2" y2="50.8" width="0.1524" layer="91"/>
-<junction x="457.2" y="53.34"/>
-<label x="457.2" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="GND"/>
-<wire x1="378.46" y1="-12.7" x2="368.3" y2="-12.7" width="0.1524" layer="91"/>
-<label x="368.3" y="-12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="A1"/>
-<wire x1="419.1" y1="2.54" x2="436.88" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="436.88" y1="2.54" x2="436.88" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="12.7" x2="441.96" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="12.7" x2="441.96" y2="10.16" width="0.1524" layer="91"/>
-<junction x="441.96" y="12.7"/>
-<label x="441.96" y="10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="452.12" y1="2.54" x2="452.12" y2="-2.54" width="0.1524" layer="91"/>
-<label x="452.12" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="GND"/>
-<wire x1="381" y1="-66.04" x2="370.84" y2="-66.04" width="0.1524" layer="91"/>
-<label x="370.84" y="-66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="439.42" y1="-55.88" x2="439.42" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-40.64" x2="444.5" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="444.5" y1="-40.64" x2="444.5" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="444.5" y="-40.64"/>
-<label x="444.5" y="-43.18" size="1.778" layer="95"/>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="A0"/>
-<wire x1="439.42" y1="-55.88" x2="421.64" y2="-55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="454.66" y1="-50.8" x2="454.66" y2="-55.88" width="0.1524" layer="91"/>
-<label x="454.66" y="-55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="HOTSWAP1" gate="G$1" pin="GND"/>
 <wire x1="152.4" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
 <label x="157.48" y="40.64" size="1.778" layer="95"/>
@@ -15240,6 +14997,47 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="C23" gate="G$1" pin="-"/>
 <wire x1="205.74" y1="86.36" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
 <label x="205.74" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="REG-12V" gate="G$1" pin="GND1"/>
+<wire x1="287.02" y1="-81.28" x2="281.94" y2="-81.28" width="0.1524" layer="91"/>
+<label x="281.94" y="-81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="REG-12V" gate="G$1" pin="GND2"/>
+<wire x1="317.5" y1="-93.98" x2="322.58" y2="-93.98" width="0.1524" layer="91"/>
+<label x="317.5" y="-93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="-109.22" x2="284.48" y2="-114.3" width="0.1524" layer="91"/>
+<label x="284.48" y="-114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="-86.36" x2="269.24" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<junction x="269.24" y="-109.22"/>
+<wire x1="269.24" y1="-93.98" x2="269.24" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-101.6" x2="269.24" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-109.22" x2="269.24" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<junction x="269.24" y="-101.6"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<junction x="269.24" y="-93.98"/>
+<junction x="269.24" y="-86.36"/>
+<label x="269.24" y="-119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="332.74" y1="-88.9" x2="332.74" y2="-96.52" width="0.1524" layer="91"/>
+<label x="332.74" y="-109.22" size="1.778" layer="95"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="332.74" y1="-96.52" x2="332.74" y2="-104.14" width="0.1524" layer="91"/>
+<junction x="332.74" y="-96.52"/>
+<pinref part="C30" gate="G$1" pin="-"/>
+<wire x1="332.74" y1="-104.14" x2="332.74" y2="-109.22" width="0.1524" layer="91"/>
+<junction x="332.74" y="-104.14"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15282,7 +15080,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="VI12V" class="0">
 <segment>
-<pinref part="REG-12V" gate="G$1" pin="VI"/>
+<pinref part="REG-9V" gate="G$1" pin="VI"/>
 <wire x1="284.48" y1="-38.1" x2="274.32" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="-38.1" x2="274.32" y2="-45.72" width="0.1524" layer="91"/>
@@ -15298,6 +15096,23 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="274.32" y1="-60.96" x2="274.32" y2="-71.12" width="0.1524" layer="91"/>
 <label x="274.32" y="-71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="REG-12V" gate="G$1" pin="VI"/>
+<wire x1="287.02" y1="-86.36" x2="276.86" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="276.86" y1="-86.36" x2="276.86" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="276.86" y="-86.36"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="276.86" y1="-93.98" x2="276.86" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="276.86" y="-93.98"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="276.86" y1="-101.6" x2="276.86" y2="-109.22" width="0.1524" layer="91"/>
+<junction x="276.86" y="-101.6"/>
+<junction x="276.86" y="-109.22"/>
+<wire x1="276.86" y1="-109.22" x2="276.86" y2="-119.38" width="0.1524" layer="91"/>
+<label x="276.86" y="-119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -15309,7 +15124,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="REG-12V" gate="G$1" pin="VOADJUST"/>
+<pinref part="REG-9V" gate="G$1" pin="VOADJUST"/>
 <wire x1="284.48" y1="-48.26" x2="281.94" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="-48.26" x2="281.94" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -15610,21 +15425,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="322.58" y1="38.1" x2="322.58" y2="33.02" width="0.1524" layer="91"/>
 <junction x="322.58" y="38.1"/>
 </segment>
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="IP+"/>
-<wire x1="383.54" y1="58.42" x2="373.38" y2="58.42" width="0.1524" layer="91"/>
-<label x="368.3" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="IP+"/>
-<wire x1="378.46" y1="7.62" x2="368.3" y2="7.62" width="0.1524" layer="91"/>
-<label x="363.22" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="IP+"/>
-<wire x1="381" y1="-45.72" x2="370.84" y2="-45.72" width="0.1524" layer="91"/>
-<label x="365.76" y="-45.72" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="5VACS" class="0">
 <segment>
@@ -15648,9 +15448,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="12VACS" class="0">
 <segment>
-<pinref part="REG-12V" gate="G$1" pin="VOSENSE"/>
+<pinref part="REG-9V" gate="G$1" pin="VOSENSE"/>
 <wire x1="314.96" y1="-35.56" x2="322.58" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="REG-12V" gate="G$1" pin="VO"/>
+<pinref part="REG-9V" gate="G$1" pin="VO"/>
 <wire x1="314.96" y1="-40.64" x2="322.58" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="-35.56" x2="322.58" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="322.58" y="-40.64"/>
@@ -15665,112 +15465,23 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="322.58" y1="-55.88" x2="322.58" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="322.58" y="-55.88"/>
 </segment>
-</net>
-<net name="N$19" class="0">
 <segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="NC"/>
-<wire x1="383.54" y1="33.02" x2="373.38" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="FAULT"/>
-<wire x1="424.18" y1="43.18" x2="434.34" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="FREEZE"/>
-<wire x1="424.18" y1="38.1" x2="434.34" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="NC2"/>
-<wire x1="424.18" y1="33.02" x2="434.34" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="I2C-SDL" class="0">
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="SCL"/>
-<wire x1="378.46" y1="-7.62" x2="363.22" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="SCL"/>
-<wire x1="381" y1="-60.96" x2="363.22" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="SCL"/>
-<wire x1="383.54" y1="43.18" x2="363.22" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="43.18" x2="363.22" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="-7.62" x2="363.22" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="-60.96" x2="363.22" y2="-101.6" width="0.1524" layer="91"/>
-<junction x="363.22" y="-60.96"/>
-<junction x="363.22" y="-7.62"/>
-<label x="363.22" y="-101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="NC"/>
-<wire x1="378.46" y1="-17.78" x2="368.3" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="FAULT"/>
-<wire x1="419.1" y1="-7.62" x2="429.26" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="FREEZE"/>
-<wire x1="419.1" y1="-12.7" x2="429.26" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="NC2"/>
-<wire x1="419.1" y1="-17.78" x2="429.26" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="I2C-SDA" class="0">
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="SDA"/>
-<pinref part="CURRENTSENSOR3.3" gate="G$1" pin="SDA"/>
-<wire x1="383.54" y1="48.26" x2="345.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="48.26" x2="345.44" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="-2.54" x2="345.44" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="-55.88" x2="345.44" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="381" y1="-55.88" x2="345.44" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="345.44" y="-55.88"/>
-<pinref part="CURRENTSENSOR5" gate="G$1" pin="SDA"/>
-<wire x1="378.46" y1="-2.54" x2="345.44" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="345.44" y="-2.54"/>
-<label x="345.44" y="-101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="NC"/>
-<wire x1="381" y1="-71.12" x2="370.84" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="FAULT"/>
-<wire x1="421.64" y1="-60.96" x2="431.8" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="FREEZE"/>
-<wire x1="421.64" y1="-66.04" x2="431.8" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="CURRENTSENSOR12" gate="G$1" pin="NC2"/>
-<wire x1="421.64" y1="-71.12" x2="431.8" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="REG-12V" gate="G$1" pin="VOSENSE"/>
+<wire x1="317.5" y1="-83.82" x2="325.12" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="REG-12V" gate="G$1" pin="VO"/>
+<wire x1="317.5" y1="-88.9" x2="325.12" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="-83.82" x2="325.12" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="325.12" y="-88.9"/>
+<junction x="325.12" y="-88.9"/>
+<wire x1="325.12" y1="-88.9" x2="325.12" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="-96.52" x2="325.12" y2="-104.14" width="0.1524" layer="91"/>
+<label x="325.12" y="-111.76" size="1.778" layer="95"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<junction x="325.12" y="-96.52"/>
+<pinref part="C30" gate="G$1" pin="+"/>
+<wire x1="325.12" y1="-104.14" x2="325.12" y2="-109.22" width="0.1524" layer="91"/>
+<junction x="325.12" y="-104.14"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15913,6 +15624,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="HOTSWAP1" gate="G$1" pin="STATUS"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="REG-12V" gate="G$1" pin="VOADJUST"/>
+<wire x1="287.02" y1="-96.52" x2="284.48" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-96.52" x2="284.48" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
