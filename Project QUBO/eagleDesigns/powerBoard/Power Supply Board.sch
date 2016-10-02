@@ -296,66 +296,6 @@ http://www.linear-tech.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="murata">
-<packages>
-<package name="UVQ-24/4.5-D24P-C">
-<wire x1="-29.21" y1="18.415" x2="29.21" y2="18.415" width="0.127" layer="21"/>
-<wire x1="29.21" y1="18.415" x2="29.21" y2="-18.415" width="0.127" layer="21"/>
-<wire x1="29.21" y1="-18.415" x2="-29.21" y2="-18.415" width="0.127" layer="21"/>
-<wire x1="-29.21" y1="-18.415" x2="-29.21" y2="18.415" width="0.127" layer="21"/>
-<pad name="P$1" x="-25.4" y="7.62" drill="1.143" shape="octagon" rot="R270"/>
-<pad name="P$2" x="-25.4" y="0" drill="1.143" shape="octagon"/>
-<pad name="P$3" x="-25.4" y="-7.62" drill="1.143" shape="octagon"/>
-<pad name="P$4" x="25.4" y="7.62" drill="1.7018" shape="octagon"/>
-<pad name="P$5" x="25.4" y="3.81" drill="1.7018" shape="octagon"/>
-<pad name="P$6" x="25.4" y="0" drill="1.7018" shape="octagon"/>
-<pad name="P$7" x="25.4" y="-3.81" drill="1.7018" shape="octagon"/>
-<pad name="P$8" x="25.4" y="-7.62" drill="1.7018" shape="octagon"/>
-</package>
-</packages>
-<symbols>
-<symbol name="UVQ-24/4.5-D24P-C">
-<wire x1="-17.78" y1="22.86" x2="17.78" y2="22.86" width="0.254" layer="94"/>
-<wire x1="17.78" y1="22.86" x2="17.78" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
-<pin name="+VIN" x="-22.86" y="-12.7" length="middle"/>
-<pin name="ON/OFFCONTROL" x="-22.86" y="0" length="middle"/>
-<pin name="-VIN" x="-22.86" y="12.7" length="middle"/>
-<pin name="-VOUT" x="22.86" y="15.24" length="middle" rot="R180"/>
-<pin name="-SENSE" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="TRIM" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="+SENSE" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="+VOUT" x="22.86" y="-15.24" length="middle" rot="R180"/>
-<text x="-20.32" y="22.86" size="2.54" layer="95">&gt;Name</text>
-<text x="-20.32" y="-25.4" size="2.54" layer="96">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="UVQ-24/4.5-D24P-C">
-<gates>
-<gate name="G$1" symbol="UVQ-24/4.5-D24P-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UVQ-24/4.5-D24P-C">
-<connects>
-<connect gate="G$1" pin="+SENSE" pad="P$7"/>
-<connect gate="G$1" pin="+VIN" pad="P$3"/>
-<connect gate="G$1" pin="+VOUT" pad="P$8"/>
-<connect gate="G$1" pin="-SENSE" pad="P$5"/>
-<connect gate="G$1" pin="-VIN" pad="P$1"/>
-<connect gate="G$1" pin="-VOUT" pad="P$4"/>
-<connect gate="G$1" pin="ON/OFFCONTROL" pad="P$2"/>
-<connect gate="G$1" pin="TRIM" pad="P$6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="samtec">
 <packages>
 <package name="MPSC-01-80">
@@ -14261,6 +14201,66 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="murata">
+<packages>
+<package name="UWE">
+<pad name="+VIN" x="-25.4" y="-7.62" drill="1.27" diameter="2.1844"/>
+<pad name="ONOFF" x="-25.4" y="0" drill="1.27" diameter="2.1844"/>
+<pad name="-VIN" x="-25.4" y="7.62" drill="1.27" diameter="2.1844"/>
+<pad name="-VOUT" x="25.4" y="7.62" drill="1.778" diameter="2.54"/>
+<pad name="-SENSE" x="25.4" y="3.81" drill="1.27" diameter="2.1844"/>
+<pad name="TRIM" x="25.4" y="0" drill="1.27" diameter="2.1844"/>
+<pad name="+SENSE" x="25.4" y="-3.81" drill="1.27" diameter="2.1844"/>
+<pad name="+VOUT" x="25.4" y="-7.62" drill="1.778" diameter="2.54"/>
+<wire x1="-29.21" y1="11.43" x2="29.21" y2="11.43" width="0.127" layer="21"/>
+<wire x1="29.21" y1="11.43" x2="29.21" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="29.21" y1="-11.43" x2="-29.21" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-29.21" y1="-11.43" x2="-29.21" y2="11.43" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="UWE">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="+VIN" x="-15.24" y="7.62" length="middle"/>
+<pin name="ON/OFFCTRL" x="-15.24" y="2.54" length="middle"/>
+<pin name="-VIN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="-VOUT" x="-15.24" y="-7.62" length="middle"/>
+<pin name="-SENSE" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="TRIM" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="+SENSE" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="+VOUT" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="UWE">
+<gates>
+<gate name="G$1" symbol="UWE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="UWE" package="UWE">
+<connects>
+<connect gate="G$1" pin="+SENSE" pad="+SENSE"/>
+<connect gate="G$1" pin="+VIN" pad="+VIN"/>
+<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
+<connect gate="G$1" pin="-SENSE" pad="-SENSE"/>
+<connect gate="G$1" pin="-VIN" pad="-VIN"/>
+<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
+<connect gate="G$1" pin="ON/OFFCTRL" pad="ONOFF"/>
+<connect gate="G$1" pin="TRIM" pad="TRIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14272,7 +14272,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </classes>
 <parts>
 <part name="HOTSWAP1" library="linear" deviceset="LTC4231" device=""/>
-<part name="UVQ" library="murata" deviceset="UVQ-24/4.5-D24P-C" device=""/>
 <part name="DIODE-OR-1" library="linear" deviceset="LTC4359" device=""/>
 <part name="JP1" library="samtec" deviceset="MPSC-01-80" device="MPSC-RA-LC"/>
 <part name="BAT2-CON" library="molex" deviceset="172043-0201" device=""/>
@@ -14355,6 +14354,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C28" library="resistor" deviceset="C-US" device="C0603" value="100 nF"/>
 <part name="C29" library="resistor" deviceset="C-US" device="C0805" value="10 µF"/>
 <part name="C30" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
+<part name="U$3" library="murata" deviceset="UWE" device="UWE"/>
 </parts>
 <sheets>
 <sheet>
@@ -14362,7 +14362,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </plain>
 <instances>
 <instance part="HOTSWAP1" gate="G$1" x="134.62" y="48.26"/>
-<instance part="UVQ" gate="G$1" x="12.7" y="144.78"/>
 <instance part="DIODE-OR-1" gate="G$1" x="-25.4" y="45.72"/>
 <instance part="JP1" gate="G$1" x="612.14" y="2.54"/>
 <instance part="BAT2-CON" gate="G$1" x="-101.6" y="0"/>
@@ -14445,6 +14444,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C28" gate="G$1" x="327.66" y="-88.9" rot="R90"/>
 <instance part="C29" gate="G$1" x="327.66" y="-96.52" rot="R90"/>
 <instance part="C30" gate="G$1" x="327.66" y="-104.14" rot="R90"/>
+<instance part="U$3" gate="G$1" x="5.08" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -15052,22 +15052,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="-50.8" y1="109.22" x2="-43.18" y2="109.22" width="0.1524" layer="91"/>
 <label x="-48.26" y="109.22" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="UVQ" gate="G$1" pin="+VOUT"/>
-<wire x1="35.56" y1="129.54" x2="63.5" y2="129.54" width="0.1524" layer="91"/>
-<label x="58.42" y="129.54" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="UVQV-" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="CIRCUIT2"/>
 <wire x1="-50.8" y1="104.14" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
 <label x="-48.26" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="UVQ" gate="G$1" pin="-VOUT"/>
-<wire x1="35.56" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
-<label x="58.42" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15632,6 +15622,35 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="287.02" y1="-96.52" x2="284.48" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="-96.52" x2="284.48" y2="-99.06" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="UVQ-" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="-VOUT"/>
+<wire x1="-10.16" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="-SENSE"/>
+<wire x1="20.32" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="119.38" x2="17.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="132.08" x2="-22.86" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="132.08" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="104.14" x2="-25.4" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-22.86" y="104.14"/>
+<label x="-30.48" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UVQ+" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="+SENSE"/>
+<wire x1="20.32" y1="109.22" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="109.22" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="-12.7" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="+VOUT"/>
+<wire x1="-12.7" y1="96.52" x2="-20.32" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="104.14" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="99.06" x2="-12.7" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="99.06" x2="-12.7" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-12.7" y="96.52"/>
+<label x="-20.32" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
