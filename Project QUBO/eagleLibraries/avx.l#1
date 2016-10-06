@@ -75,7 +75,7 @@
 </packages>
 <symbols>
 <symbol name="F930J107MBA">
-<pin name="+" x="0" y="5.144" visible="off" length="short" rot="R270"/>
+<pin name="+" x="0" y="6.16" visible="off" length="middle" rot="R270"/>
 <pin name="-" x="0" y="-2.62" visible="off" length="short" rot="R90"/>
 <text x="-1.7" y="-1.38" size="0.8128" layer="94" rot="R90">&gt;NAME</text>
 <text x="2.3" y="-1.16" size="0.8128" layer="94" rot="R90">&gt;VALUE</text>
