@@ -1,0 +1,55 @@
+[Eagle]
+Version="07 06 00"
+Platform="Windows"
+Serial="741D138005-LSR-WLM-1ES"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/Jameco.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/NXP.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/ParkerFludics.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/allegro.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/analog_devices.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/atmel.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/avx.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/con-molex_MOD.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/crystal.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/diode.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/finder.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/ftdichip.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/images.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/led.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/linear.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/maxim.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/molex.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/murata.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/nichicon.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/nonelectrical_mounting.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/omron.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/pinhead.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/resistor.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/samtec.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/supply1.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/texas.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-fet.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-npn.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-pnp.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-power.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-small-signal.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/uln-udn.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/vishay.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/eagle/Libraries/sullins.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/MSAL Ben Hurwitz/MSAL Eagle/holesOnly/hole_arrays.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 0 823 729"
+State=2
+Number=0
+
+[Desktop]
+Screen="3286 1080"
+Window="Win_1"
