@@ -764,6 +764,56 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="avx">
+<packages>
+<package name="F930J107MBA">
+<wire x1="-1.8" y1="0.8" x2="1.8" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.8" y1="0.8" x2="1.8" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.8" y1="-0.8" x2="-1.8" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="-0.8" x2="-1.8" y2="0.8" width="0.127" layer="51"/>
+<smd name="+" x="-1.6" y="0" dx="1" dy="1.2" layer="1"/>
+<smd name="-" x="1.6" y="0" dx="1" dy="1.2" layer="1"/>
+<text x="-1.8" y="1" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.9" y="-1.6" size="0.6096" layer="27">&gt;VALUE</text>
+<wire x1="-2.5" y1="1.9" x2="-2.5" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.1" x2="2.6" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-2.1" x2="2.6" y2="1.9" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.9" x2="-2.5" y2="1.9" width="0.127" layer="21"/>
+<text x="-1" y="-0.2" size="0.4064" layer="21">(+)</text>
+</package>
+</packages>
+<symbols>
+<symbol name="F930J107MBA">
+<pin name="+" x="0" y="5.144" visible="off" length="short" rot="R270"/>
+<pin name="-" x="0" y="-2.62" visible="off" length="short" rot="R90"/>
+<text x="-1.7" y="-1.38" size="0.8128" layer="94" rot="R90">&gt;NAME</text>
+<text x="2.3" y="-1.16" size="0.8128" layer="94" rot="R90">&gt;VALUE</text>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.254" layer="94"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.254" layer="94" curve="-100"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="F930J107MBA" prefix="G" uservalue="yes">
+<description>AVX Tantalum J-Lead Capacitor&lt;br&gt;
+F930J107MBA&lt;br&gt;
+&lt;a href=http://datasheets.avx.com/f93.pdf&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="F930J107MBA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="F930J107MBA">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -782,6 +832,13 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 <part name="U1" library="texas" deviceset="TUSB2077A" device="LQFP"/>
 <part name="G2" library="texas" deviceset="TPS2044B" device="BD-SOIC"/>
 <part name="G3" library="texas" deviceset="TPS2044B" device="BD-SOIC"/>
+<part name="G4" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G5" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G6" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G7" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G8" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G9" library="avx" deviceset="F930J107MBA" device=""/>
+<part name="G10" library="avx" deviceset="F930J107MBA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -796,6 +853,13 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 <instance part="U1" gate="G$1" x="-238.76" y="-10.16"/>
 <instance part="G2" gate="G$1" x="-238.76" y="-88.9"/>
 <instance part="G3" gate="G$1" x="-238.76" y="-121.92"/>
+<instance part="G4" gate="G$1" x="-205.74" y="-132.08"/>
+<instance part="G5" gate="G$1" x="-200.66" y="-124.46"/>
+<instance part="G6" gate="G$1" x="-193.04" y="-121.92"/>
+<instance part="G7" gate="G$1" x="-203.2" y="-101.6"/>
+<instance part="G8" gate="G$1" x="-198.12" y="-99.06"/>
+<instance part="G9" gate="G$1" x="-193.04" y="-91.44"/>
+<instance part="G10" gate="G$1" x="-187.96" y="-88.9"/>
 </instances>
 <busses>
 </busses>
