@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -43,6 +47,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -54,6 +59,12 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -399,6 +410,84 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 </deviceset>
 </devicesets>
 </library>
+<library name="NXP">
+<packages>
+<package name="PCA9540B">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<smd name="SCL" x="-1.05" y="-2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<smd name="SDA" x="-0.325" y="-2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="VDD" x="0.325" y="-2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="SDA0" x="1.05" y="-2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<smd name="SCL1" x="-1.05" y="2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<smd name="SDA1" x="-0.325" y="2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="GND" x="0.325" y="2.175" dx="1.15" dy="0.45" layer="1" rot="R90"/>
+<smd name="SCL0" x="1.05" y="2.175" dx="1.15" dy="0.6" layer="1" rot="R90"/>
+<wire x1="-2" y1="3" x2="-2" y2="-3" width="0.127" layer="21"/>
+<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="21"/>
+<wire x1="2" y1="-3" x2="2" y2="3" width="0.127" layer="21"/>
+<wire x1="2" y1="3" x2="-2" y2="3" width="0.127" layer="21"/>
+<text x="-0.9" y="0.6" size="0.254" layer="21" rot="R90">SCL1</text>
+<text x="-0.2" y="0.6" size="0.254" layer="21" rot="R90">SDA1</text>
+<text x="0.5" y="0.6" size="0.254" layer="21" rot="R90">GND</text>
+<text x="1.2" y="0.6" size="0.254" layer="21" rot="R90">SCL0</text>
+<text x="1.2" y="-1.2" size="0.254" layer="21" rot="R90">SDA0</text>
+<text x="0.5" y="-1.2" size="0.254" layer="21" rot="R90">VDD</text>
+<text x="-0.2" y="-1.2" size="0.254" layer="21" rot="R90">SDA</text>
+<text x="-0.9" y="-1.2" size="0.254" layer="21" rot="R90">SCL</text>
+<text x="-2" y="4" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2" y="-5" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PCA9540B">
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SDA0" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL0" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="GND" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="SDA1" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="SCL1" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCA9540B" prefix="G" uservalue="yes">
+<description>NXP PCA9540B-TSSOP8 2-Channel I2C-bus Multiplexer&lt;br&gt;
+I2C-controlled, 5V supply, 1.8-6.5V outputs, 20mA currents &lt;br&gt;
+&lt;a href="http://www.nxp.com/documents/data_sheet/PCA9540B.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
+Created by Ben Hurwitz, 9 March 2016</description>
+<gates>
+<gate name="G$1" symbol="PCA9540B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TSSOP8" package="PCA9540B">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SCL0" pad="SCL0"/>
+<connect gate="G$1" pin="SCL1" pad="SCL1"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SDA0" pad="SDA0"/>
+<connect gate="G$1" pin="SDA1" pad="SDA1"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -413,6 +502,7 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <part name="JP2" library="samtec" deviceset="MPTC-01-80" device=""/>
 <part name="JP3" library="samtec" deviceset="MPTC-01-80" device=""/>
 <part name="JP4" library="samtec" deviceset="MPTC-01-80" device=""/>
+<part name="G1" library="NXP" deviceset="PCA9540B" device="TSSOP8"/>
 </parts>
 <sheets>
 <sheet>
@@ -423,6 +513,7 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <instance part="JP2" gate="G$1" x="60.96" y="2.54"/>
 <instance part="JP3" gate="G$1" x="60.96" y="-73.66"/>
 <instance part="JP4" gate="G$1" x="60.96" y="-144.78"/>
+<instance part="G1" gate="G$1" x="-129.54" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -492,6 +583,11 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <wire x1="-12.7" y1="-127" x2="-22.86" y2="-127" width="0.1524" layer="91"/>
 <label x="-22.86" y="-127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="G1" gate="G$1" pin="SDA"/>
+<wire x1="-116.84" y1="76.2" x2="-106.68" y2="76.2" width="0.1524" layer="91"/>
+<label x="-114.3" y="76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO_2" class="0">
 <segment>
@@ -513,6 +609,11 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <pinref part="JP4" gate="G$1" pin="P$4"/>
 <wire x1="-12.7" y1="-129.54" x2="-22.86" y2="-129.54" width="0.1524" layer="91"/>
 <label x="-22.86" y="-129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="G1" gate="G$1" pin="SCL"/>
+<wire x1="-116.84" y1="73.66" x2="-106.68" y2="73.66" width="0.1524" layer="91"/>
+<label x="-114.3" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_3" class="0">
@@ -940,6 +1041,11 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <wire x1="109.22" y1="-162.56" x2="96.52" y2="-162.56" width="0.1524" layer="91"/>
 <label x="96.52" y="-162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="G1" gate="G$1" pin="GND"/>
+<wire x1="-142.24" y1="81.28" x2="-154.94" y2="81.28" width="0.1524" layer="91"/>
+<label x="-154.94" y="81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -1185,6 +1291,11 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <pinref part="JP4" gate="G$1" pin="P$80"/>
 <wire x1="109.22" y1="-170.18" x2="96.52" y2="-170.18" width="0.1524" layer="91"/>
 <label x="96.52" y="-170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="G1" gate="G$1" pin="VDD"/>
+<wire x1="-116.84" y1="81.28" x2="-106.68" y2="81.28" width="0.1524" layer="91"/>
+<label x="-109.22" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_15" class="0">
@@ -2211,6 +2322,34 @@ Description; This is an 82-pin female signal/power combination plug, with 80 5A 
 <pinref part="JP4" gate="G$1" pin="P$61"/>
 <wire x1="109.22" y1="-121.92" x2="96.52" y2="-121.92" width="0.1524" layer="91"/>
 <label x="96.52" y="-121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA_BATT0" class="0">
+<segment>
+<pinref part="G1" gate="G$1" pin="SDA0"/>
+<wire x1="-116.84" y1="83.82" x2="-106.68" y2="83.82" width="0.1524" layer="91"/>
+<label x="-119.38" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL_BATT1" class="0">
+<segment>
+<pinref part="G1" gate="G$1" pin="SCL1"/>
+<wire x1="-142.24" y1="73.66" x2="-154.94" y2="73.66" width="0.1524" layer="91"/>
+<label x="-154.94" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA_BATT1" class="0">
+<segment>
+<pinref part="G1" gate="G$1" pin="SDA1"/>
+<wire x1="-142.24" y1="76.2" x2="-154.94" y2="76.2" width="0.1524" layer="91"/>
+<label x="-154.94" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL_BATT0" class="0">
+<segment>
+<pinref part="G1" gate="G$1" pin="SCL0"/>
+<wire x1="-142.24" y1="83.82" x2="-154.94" y2="83.82" width="0.1524" layer="91"/>
+<label x="-154.94" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

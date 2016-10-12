@@ -5950,7 +5950,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="55.88" y="-160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_55" class="0">
+<net name="GPIO_56" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$76"/>
 <wire x1="109.22" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
@@ -5972,7 +5972,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_54" class="0">
+<net name="GPIO_55" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$75"/>
 <wire x1="109.22" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
@@ -5994,7 +5994,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-157.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_53" class="0">
+<net name="GPIO_54" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$74"/>
 <wire x1="109.22" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
@@ -6016,7 +6016,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_52" class="0">
+<net name="GPIO_53" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$73"/>
 <wire x1="109.22" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
@@ -6038,7 +6038,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_51" class="0">
+<net name="GPIO_52" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$72"/>
 <wire x1="109.22" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
@@ -6060,7 +6060,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_50" class="0">
+<net name="GPIO_51" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$71"/>
 <wire x1="109.22" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
@@ -6082,7 +6082,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_49" class="0">
+<net name="GPIO_50" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$70"/>
 <wire x1="109.22" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
@@ -6104,7 +6104,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_48" class="0">
+<net name="GPIO_49" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$69"/>
 <wire x1="109.22" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
@@ -6126,7 +6126,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_47" class="0">
+<net name="GPIO_48" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$68"/>
 <wire x1="109.22" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
@@ -6148,7 +6148,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_46" class="0">
+<net name="GPIO_47" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$67"/>
 <wire x1="109.22" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
@@ -6170,7 +6170,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_45" class="0">
+<net name="GPIO_46" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$66"/>
 <wire x1="109.22" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
@@ -6192,7 +6192,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_44" class="0">
+<net name="GPIO_45" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$65"/>
 <wire x1="109.22" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
@@ -6214,7 +6214,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GPIO_43" class="0">
+<net name="GPIO_44" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$64"/>
 <wire x1="109.22" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
@@ -6237,11 +6237,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </segment>
 </net>
 <net name="USB-5V_1" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="P$63"/>
-<wire x1="109.22" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
-<label x="96.52" y="91.44" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="G2" gate="G$1" pin="OUT1"/>
 <label x="-220.98" y="-83.82" size="1.778" layer="95"/>
@@ -6616,11 +6611,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <wire x1="-193.04" y1="-88.836" x2="-193.04" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="-193.04" y="-88.836"/>
 </segment>
-<segment>
-<pinref part="JP2" gate="G$1" pin="P$63"/>
-<wire x1="109.22" y1="20.32" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
-<label x="96.52" y="20.32" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="!OVERCUR2!" class="0">
 <segment>
@@ -6762,11 +6752,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </net>
 <net name="USB-5V_3" class="0">
 <segment>
-<pinref part="JP3" gate="G$1" pin="P$63"/>
-<wire x1="109.22" y1="-55.88" x2="96.52" y2="-55.88" width="0.1524" layer="91"/>
-<label x="96.52" y="-55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="G2" gate="G$1" pin="OUT3"/>
 <wire x1="-223.52" y1="-93.98" x2="-198.12" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-220.98" y="-93.98" size="1.778" layer="95"/>
@@ -6777,11 +6762,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </segment>
 </net>
 <net name="USB-5V_4" class="0">
-<segment>
-<pinref part="JP4" gate="G$1" pin="P$63"/>
-<wire x1="109.22" y1="-127" x2="96.52" y2="-127" width="0.1524" layer="91"/>
-<label x="96.52" y="-127" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="G2" gate="G$1" pin="OUT4"/>
 <wire x1="-223.52" y1="-96.52" x2="-203.2" y2="-96.52" width="0.1524" layer="91"/>
@@ -6812,6 +6792,28 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="-251.46" y1="71.12" x2="-259.08" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-259.08" y="71.12"/>
+</segment>
+</net>
+<net name="GPIO_43" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$63"/>
+<wire x1="109.22" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+<label x="96.52" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="P$63"/>
+<wire x1="109.22" y1="20.32" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<label x="96.52" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="P$63"/>
+<wire x1="109.22" y1="-55.88" x2="96.52" y2="-55.88" width="0.1524" layer="91"/>
+<label x="96.52" y="-55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="P$63"/>
+<wire x1="109.22" y1="-127" x2="96.52" y2="-127" width="0.1524" layer="91"/>
+<label x="96.52" y="-127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
