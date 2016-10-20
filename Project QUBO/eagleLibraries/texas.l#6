@@ -22997,20 +22997,6 @@ changed 2011-11-09</description>
 <text x="-3" y="2" size="0.75" layer="25">&gt;NAME</text>
 <text x="-3" y="-2" size="0.75" layer="27">&gt;VALUE</text>
 </package>
-<package name="SOT23-6PIN">
-<smd name="P$1" x="-1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
-<smd name="P$2" x="-1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
-<smd name="P$3" x="-1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
-<smd name="P$4" x="1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
-<smd name="P$5" x="1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
-<smd name="P$6" x="1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
-<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
-<text x="-1.35" y="2.7" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.35" y="-2.7" size="0.6096" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="320C5402">
@@ -32212,71 +32198,57 @@ changed 2011-11-09</description>
 <wire x1="27.94" y1="-27.94" x2="27.94" y2="27.94" width="0.254" layer="94"/>
 <wire x1="27.94" y1="27.94" x2="-27.94" y2="27.94" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="27.94" x2="-27.94" y2="-27.94" width="0.254" layer="94"/>
-<pin name="SUSPND" x="-33.02" y="15.24" visible="pin" length="middle"/>
-<pin name="DP0PUR" x="-33.02" y="12.7" visible="pin" length="middle"/>
-<pin name="DP0" x="-33.02" y="10.16" visible="pin" length="middle"/>
-<pin name="DM0" x="-33.02" y="7.62" visible="pin" length="middle"/>
-<pin name="GND@5" x="-33.02" y="5.08" visible="pin" length="middle"/>
-<pin name="!RESET!" x="-33.02" y="2.54" visible="pin" length="middle"/>
-<pin name="EECLK" x="-33.02" y="-2.54" visible="pin" length="middle"/>
-<pin name="EEDATA/!GANGED!" x="-33.02" y="-5.08" visible="pin" length="middle"/>
-<pin name="VCC@9" x="-33.02" y="-7.62" visible="pin" length="middle"/>
-<pin name="!BUSPWR!" x="-33.02" y="-10.16" visible="pin" length="middle"/>
-<pin name="!PWRON1!" x="-33.02" y="-12.7" visible="pin" length="middle"/>
-<pin name="!OVERCUR1!" x="-33.02" y="-15.24" visible="pin" length="middle"/>
-<pin name="DM1" x="-15.24" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="DP1" x="-12.7" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!PWRON2!" x="-10.16" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!OVERCUR2!" x="-7.62" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="DM2" x="-5.08" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="DP2" x="-2.54" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!PWRON3!" x="2.54" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!OVERCUR3!" x="5.08" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="DM3" x="7.62" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="DP3" x="10.16" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!PWRON4!" x="12.7" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="GND@24" x="15.24" y="-33.02" visible="pin" length="middle" rot="R90"/>
-<pin name="!OVERCUR4!" x="33.02" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="DM4" x="33.02" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="DP4" x="33.02" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="!PWRON5!" x="33.02" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="!OVERCUR5!" x="33.02" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="DM5" x="33.02" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="DP5" x="33.02" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="!PWRON6!" x="33.02" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="!OVERCUR6!" x="33.02" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="DM6" x="33.02" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="DP6" x="33.02" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="!PWRON7!" x="33.02" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="!OVERCUR7!" x="15.24" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="DM7" x="12.7" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="DP7" x="10.16" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="HUBCFG" x="7.62" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="PORTPWR" x="5.08" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="PORTDIS" x="2.54" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@43" x="-2.54" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="XTAL2" x="-5.08" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="XTAL1/CLK48" x="-7.62" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="VCC@46" x="-10.16" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="!EXTMEM!" x="-12.7" y="33.02" visible="pin" length="middle" rot="R270"/>
-<pin name="MODE" x="-15.24" y="33.02" visible="pin" length="middle" rot="R270"/>
+<pin name="SUSPND" x="-33.02" y="15.24" length="middle"/>
+<pin name="DP0PUR" x="-33.02" y="12.7" length="middle"/>
+<pin name="DP0" x="-33.02" y="10.16" length="middle"/>
+<pin name="DM0" x="-33.02" y="7.62" length="middle"/>
+<pin name="GND\" x="-33.02" y="5.08" length="middle"/>
+<pin name="!RESET!" x="-33.02" y="2.54" length="middle"/>
+<pin name="EECLK" x="-33.02" y="-2.54" length="middle"/>
+<pin name="EEDATA/!GANGED!" x="-33.02" y="-5.08" length="middle"/>
+<pin name="VCC@9" x="-33.02" y="-7.62" length="middle"/>
+<pin name="!BUSPWR!" x="-33.02" y="-10.16" length="middle"/>
+<pin name="!PWRON1!" x="-33.02" y="-12.7" length="middle"/>
+<pin name="!OVERCUR1!" x="-33.02" y="-15.24" length="middle"/>
+<pin name="DM1" x="-15.24" y="-33.02" length="middle" rot="R90"/>
+<pin name="DP1" x="-12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="!PWRON2!" x="-10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="!OVERCUR2!" x="-7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="DM2" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="DP2" x="-2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="!PWRON3!" x="2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="!OVERCUR3!" x="5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="DM3" x="7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="DP3" x="10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="!PWRON4!" x="12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="GND@24" x="15.24" y="-33.02" length="middle" rot="R90"/>
+<pin name="!OVERCUR4!" x="33.02" y="-15.24" length="middle" rot="R180"/>
+<pin name="DM4" x="33.02" y="-12.7" length="middle" rot="R180"/>
+<pin name="DP4" x="33.02" y="-10.16" length="middle" rot="R180"/>
+<pin name="!PWRON5!" x="33.02" y="-7.62" length="middle" rot="R180"/>
+<pin name="!OVERCUR5!" x="33.02" y="-5.08" length="middle" rot="R180"/>
+<pin name="DM5" x="33.02" y="-2.54" length="middle" rot="R180"/>
+<pin name="DP5" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="!PWRON6!" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="!OVERCUR6!" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="DM6" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="DP6" x="33.02" y="12.7" length="middle" rot="R180"/>
+<pin name="!PWRON7!" x="33.02" y="15.24" length="middle" rot="R180"/>
+<pin name="!OVERCUR7!" x="15.24" y="33.02" length="middle" rot="R270"/>
+<pin name="DM7" x="12.7" y="33.02" length="middle" rot="R270"/>
+<pin name="DP7" x="10.16" y="33.02" length="middle" rot="R270"/>
+<pin name="HUBCFG" x="7.62" y="33.02" length="middle" rot="R270"/>
+<pin name="PORTPWR" x="5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="PORTDIS" x="2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="GND@43" x="-2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="XTAL2" x="-5.08" y="33.02" length="middle" rot="R270"/>
+<pin name="XTAL1/CLK48" x="-7.62" y="33.02" length="middle" rot="R270"/>
+<pin name="VCC@46" x="-10.16" y="33.02" length="middle" rot="R270"/>
+<pin name="!EXTMEM!" x="-12.7" y="33.02" length="middle" rot="R270"/>
+<pin name="MODE" x="-15.24" y="33.02" length="middle" rot="R270"/>
 <text x="20.32" y="27.94" size="1.778" layer="95">&gt;NAME</text>
-<text x="17.78" y="-30.48" size="1.778" layer="94">&gt;VALUE</text>
+<text x="17.78" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 <circle x="-25.4" y="17.78" radius="0.915809375" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SN65220">
-<pin name="NC@1" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="GND@2" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="NC@3" x="-15.24" y="-5.08" visible="pin" length="middle"/>
-<pin name="B" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="A" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -44706,12 +44678,7 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TUSB2077A" prefix="U">
-<description>The Texas Instruments TUSB2007A in the 48-pin LQFP package.&lt;br&gt;
-7-port USB 2.0 hub/controller.&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/tusb2077a.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
-Created by Ben Hurwitz, 10-6-16&lt;br&gt;
-Robotics@Maryland</description>
+<deviceset name="TUSB2077A">
 <gates>
 <gate name="G$1" symbol="TUSB2077A" x="0" y="0"/>
 </gates>
@@ -44756,39 +44723,6 @@ Robotics@Maryland</description>
 <connect gate="G$1" pin="EEDATA/!GANGED!" pad="P$8"/>
 <connect gate="G$1" pin="GND@24" pad="P$24"/>
 <connect gate="G$1" pin="GND@43" pad="P$43"/>
-<connect gate="G$1" pin="GND@5" pad="P$5"/>
-<connect gate="G$1" pin="HUBCFG" pad="P$40"/>
-<connect gate="G$1" pin="MODE" pad="P$48"/>
-<connect gate="G$1" pin="PORTDIS" pad="P$42"/>
-<connect gate="G$1" pin="PORTPWR" pad="P$41"/>
-<connect gate="G$1" pin="SUSPND" pad="P$1"/>
-<connect gate="G$1" pin="VCC@46" pad="P$46"/>
-<connect gate="G$1" pin="VCC@9" pad="P$9"/>
-<connect gate="G$1" pin="XTAL1/CLK48" pad="P$45"/>
-<connect gate="G$1" pin="XTAL2" pad="P$44"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN65220DBVR">
-<description>Texas Instruments SN65220&lt;br&gt;
-Dual Line USB Port Transient Suppressor&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn65220.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN65220" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-6PIN">
-<connects>
-<connect gate="G$1" pin="A" pad="P$6"/>
-<connect gate="G$1" pin="B" pad="P$4"/>
-<connect gate="G$1" pin="GND@2" pad="P$2"/>
-<connect gate="G$1" pin="GND@5" pad="P$5"/>
-<connect gate="G$1" pin="NC@1" pad="P$1"/>
-<connect gate="G$1" pin="NC@3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
