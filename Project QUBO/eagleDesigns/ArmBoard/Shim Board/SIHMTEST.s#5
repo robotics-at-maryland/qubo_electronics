@@ -1516,22 +1516,10 @@
 </net>
 <net name="UNBUFFERSCL1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SX"/>
-<wire x1="-99.06" y1="124.46" x2="-111.76" y2="124.46" width="0.1524" layer="91"/>
-<label x="-116.84" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="9"/>
-<wire x1="15.24" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
-<label x="-7.62" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="U1" pin="SCK/SCL"/>
 <wire x1="-30.48" y1="147.32" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
 <label x="-25.4" y="147.32" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="UNBUFFERSCL2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="SX"/>
 <wire x1="-99.06" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
@@ -1542,13 +1530,8 @@
 <wire x1="55.88" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <label x="33.02" y="73.66" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="55.88" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
-<label x="33.02" y="86.36" size="1.778" layer="95"/>
-</segment>
 </net>
-<net name="UNBUFFERSCL3" class="0">
+<net name="UNBUFFERSCL2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="SX"/>
 <wire x1="-99.06" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
@@ -1560,26 +1543,19 @@
 <label x="71.12" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UNBUFFERSCL4" class="0">
+<net name="UNBUFFERSCL3" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="SX"/>
 <wire x1="-99.06" y1="78.74" x2="-109.22" y2="78.74" width="0.1524" layer="91"/>
 <label x="-116.84" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="55.88" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+<label x="33.02" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUFFERSCL1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="LX"/>
-<wire x1="-99.06" y1="127" x2="-111.76" y2="127" width="0.1524" layer="91"/>
-<label x="-116.84" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP5" gate="G$1" pin="P$1"/>
-<wire x1="7.62" y1="152.4" x2="-5.08" y2="152.4" width="0.1524" layer="91"/>
-<label x="-7.62" y="152.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BUFFERSCL2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="LX"/>
 <wire x1="-99.06" y1="111.76" x2="-111.76" y2="111.76" width="0.1524" layer="91"/>
@@ -1591,7 +1567,7 @@
 <label x="-7.62" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUFFERSCL3" class="0">
+<net name="BUFFERSCL2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="LX"/>
 <wire x1="-99.06" y1="96.52" x2="-111.76" y2="96.52" width="0.1524" layer="91"/>
@@ -1603,7 +1579,7 @@
 <label x="-7.62" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUFFERSCL4" class="0">
+<net name="BUFFERSCL3" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="LX"/>
 <wire x1="-99.06" y1="81.28" x2="-109.22" y2="81.28" width="0.1524" layer="91"/>
@@ -1617,35 +1593,6 @@
 </net>
 <net name="BUFFERSDA1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="LY"/>
-<wire x1="-73.66" y1="127" x2="-63.5" y2="127" width="0.1524" layer="91"/>
-<label x="-71.12" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP5" gate="G$1" pin="P$2"/>
-<wire x1="7.62" y1="149.86" x2="-5.08" y2="149.86" width="0.1524" layer="91"/>
-<label x="-7.62" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UNBUFFERSDA1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SY"/>
-<wire x1="-73.66" y1="124.46" x2="-63.5" y2="124.46" width="0.1524" layer="91"/>
-<label x="-71.12" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="10"/>
-<wire x1="15.24" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<label x="-7.62" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SDI/SDA"/>
-<wire x1="-30.48" y1="152.4" x2="-17.78" y2="152.4" width="0.1524" layer="91"/>
-<label x="-25.4" y="152.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BUFFERSDA2" class="0">
-<segment>
 <pinref part="U$2" gate="G$1" pin="LY"/>
 <wire x1="-73.66" y1="111.76" x2="-63.5" y2="111.76" width="0.1524" layer="91"/>
 <label x="-71.12" y="111.76" size="1.778" layer="95"/>
@@ -1656,7 +1603,12 @@
 <label x="-7.62" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UNBUFFERSDA2" class="0">
+<net name="UNBUFFERSDA1" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="SDI/SDA"/>
+<wire x1="-30.48" y1="152.4" x2="-17.78" y2="152.4" width="0.1524" layer="91"/>
+<label x="-25.4" y="152.4" size="1.778" layer="95"/>
+</segment>
 <segment>
 <wire x1="-76.2" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
 <label x="-71.12" y="109.22" size="1.778" layer="95"/>
@@ -1667,7 +1619,7 @@
 <label x="33.02" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUFFERSDA3" class="0">
+<net name="BUFFERSDA2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="LY"/>
 <wire x1="-73.66" y1="96.52" x2="-60.96" y2="96.52" width="0.1524" layer="91"/>
@@ -1679,7 +1631,19 @@
 <label x="-7.62" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUFFERSDA4" class="0">
+<net name="UNBUFFERSDA2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="SY"/>
+<wire x1="-73.66" y1="93.98" x2="-60.96" y2="93.98" width="0.1524" layer="91"/>
+<label x="-71.12" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="4"/>
+<wire x1="93.98" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<label x="71.12" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BUFFERSDA3" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="LY"/>
 <wire x1="-73.66" y1="81.28" x2="-60.96" y2="81.28" width="0.1524" layer="91"/>
@@ -1691,7 +1655,7 @@
 <label x="-7.62" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UNBUFFERSDA4" class="0">
+<net name="UNBUFFERSDA3" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="SY"/>
 <wire x1="-73.66" y1="78.74" x2="-60.96" y2="78.74" width="0.1524" layer="91"/>
@@ -1701,18 +1665,6 @@
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="137.16" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 <label x="114.3" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UNBUFFERSDA3" class="0">
-<segment>
-<pinref part="JP3" gate="A" pin="4"/>
-<wire x1="93.98" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
-<label x="71.12" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="SY"/>
-<wire x1="-73.66" y1="93.98" x2="-60.96" y2="93.98" width="0.1524" layer="91"/>
-<label x="-71.12" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="U1RX(USB+)-" class="0">
@@ -1783,6 +1735,54 @@
 <pinref part="JP4" gate="A" pin="7"/>
 <wire x1="137.16" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <label x="116.84" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BUFFERSCL0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="LX"/>
+<wire x1="-99.06" y1="127" x2="-111.76" y2="127" width="0.1524" layer="91"/>
+<label x="-116.84" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="P$1"/>
+<wire x1="7.62" y1="152.4" x2="-5.08" y2="152.4" width="0.1524" layer="91"/>
+<label x="-7.62" y="152.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BUFFERSDA0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="LY"/>
+<wire x1="-73.66" y1="127" x2="-63.5" y2="127" width="0.1524" layer="91"/>
+<label x="-71.12" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="P$2"/>
+<wire x1="7.62" y1="149.86" x2="-5.08" y2="149.86" width="0.1524" layer="91"/>
+<label x="-7.62" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UNBUFFERSCL0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SX"/>
+<wire x1="-99.06" y1="124.46" x2="-111.76" y2="124.46" width="0.1524" layer="91"/>
+<label x="-116.84" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="9"/>
+<wire x1="15.24" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="-7.62" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UNBUFFERSDA0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SY"/>
+<wire x1="-73.66" y1="124.46" x2="-63.5" y2="124.46" width="0.1524" layer="91"/>
+<label x="-71.12" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="10"/>
+<wire x1="15.24" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="-7.62" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
