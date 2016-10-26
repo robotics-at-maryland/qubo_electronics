@@ -1198,22 +1198,12 @@
 <wire x1="7.62" y1="144.78" x2="-5.08" y2="144.78" width="0.1524" layer="91"/>
 <label x="-5.08" y="144.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SCK/SCL"/>
-<wire x1="-30.48" y1="147.32" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
-<label x="-25.4" y="147.32" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="I2CSDA1" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$3"/>
 <wire x1="7.62" y1="147.32" x2="-5.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="-5.08" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SDI/SDA"/>
-<wire x1="-30.48" y1="152.4" x2="-17.78" y2="152.4" width="0.1524" layer="91"/>
-<label x="-25.4" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB2" class="0">
@@ -1599,6 +1589,11 @@
 <wire x1="15.24" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
 <label x="-7.62" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SCK/SCL"/>
+<wire x1="-30.48" y1="147.32" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
+<label x="-25.4" y="147.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="UNBUFFERSCL2" class="0">
 <segment>
@@ -1701,6 +1696,11 @@
 <pinref part="JP1" gate="A" pin="10"/>
 <wire x1="15.24" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
 <label x="-7.62" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SDI/SDA"/>
+<wire x1="-30.48" y1="152.4" x2="-17.78" y2="152.4" width="0.1524" layer="91"/>
+<label x="-25.4" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUFFERSDA2" class="0">
