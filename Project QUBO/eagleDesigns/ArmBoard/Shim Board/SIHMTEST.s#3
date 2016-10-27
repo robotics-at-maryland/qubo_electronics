@@ -986,14 +986,14 @@ RJ45 Jack connectors&lt;br&gt;
 <label x="-5.08" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="U1RX(USB+)" class="0">
+<net name="USB+" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$61"/>
 <wire x1="129.54" y1="152.4" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
 <label x="116.84" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="U1TX(USB-)" class="0">
+<net name="USB-" class="0">
 <segment>
 <wire x1="91.44" y1="152.4" x2="73.66" y2="152.4" width="0.1524" layer="91"/>
 <label x="73.66" y="152.4" size="1.778" layer="95"/>

@@ -2377,7 +2377,7 @@ Source: www.kingbright.com</description>
 <instance part="U$2" gate="G$1" x="-86.36" y="109.22"/>
 <instance part="U$3" gate="G$1" x="-86.36" y="93.98"/>
 <instance part="U$4" gate="G$1" x="-86.36" y="78.74"/>
-<instance part="LED1" gate="G$1" x="-33.02" y="58.42"/>
+<instance part="LED1" gate="G$1" x="-35.56" y="96.52"/>
 <instance part="LED2" gate="G$1" x="-22.86" y="58.42"/>
 <instance part="LED3" gate="G$1" x="-53.34" y="55.88"/>
 <instance part="LED4" gate="G$1" x="-66.04" y="55.88"/>
