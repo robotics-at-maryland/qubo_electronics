@@ -1518,7 +1518,7 @@
 <segment>
 <pinref part="U1" gate="U1" pin="SCK/SCL"/>
 <wire x1="-30.48" y1="147.32" x2="-17.78" y2="147.32" width="0.1524" layer="91"/>
-<label x="-25.4" y="147.32" size="1.778" layer="95"/>
+<label x="-30.48" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="SX"/>
@@ -1607,7 +1607,7 @@
 <segment>
 <pinref part="U1" gate="U1" pin="SDI/SDA"/>
 <wire x1="-30.48" y1="152.4" x2="-17.78" y2="152.4" width="0.1524" layer="91"/>
-<label x="-25.4" y="152.4" size="1.778" layer="95"/>
+<label x="-30.48" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-76.2" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>

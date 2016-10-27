@@ -992,11 +992,21 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="129.54" y1="152.4" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
 <label x="116.84" y="152.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="175.26" x2="12.7" y2="175.26" width="0.1524" layer="91"/>
+<label x="12.7" y="175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USB-" class="0">
 <segment>
 <wire x1="91.44" y1="152.4" x2="73.66" y2="152.4" width="0.1524" layer="91"/>
 <label x="73.66" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="177.8" x2="12.7" y2="177.8" width="0.1524" layer="91"/>
+<label x="12.7" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="U5RX" class="0">
@@ -1898,18 +1908,6 @@ RJ45 Jack connectors&lt;br&gt;
 <pinref part="JP5" gate="G$1" pin="P$65"/>
 <wire x1="129.54" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 <label x="116.84" y="142.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="177.8" x2="12.7" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="3"/>
-<wire x1="27.94" y1="175.26" x2="12.7" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

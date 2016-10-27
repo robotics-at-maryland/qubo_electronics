@@ -832,6 +832,106 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="con-amp">
+<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
+RJ45 Jack connectors&lt;br&gt;
+ Based on the previous libraris:
+ &lt;ul&gt;
+ &lt;li&gt;amp.lbr
+ &lt;li&gt;amp-j.lbr
+ &lt;li&gt;amp-mta.lbr
+ &lt;li&gt;amp-nlok.lbr
+ &lt;li&gt;amp-sim.lbr
+ &lt;li&gt;amp-micro-match.lbr
+ &lt;/ul&gt;
+ Sources :
+ &lt;ul&gt;
+ &lt;li&gt;Catalog 82066 Revised 11-95 
+ &lt;li&gt;Product Guide 296785 Rev. 8-99
+ &lt;li&gt;Product Guide CD-ROM 1999
+ &lt;li&gt;www.amp.com
+ &lt;/ul&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="USB">
+<description>&lt;b&gt;USB connector&lt;/b&gt;</description>
+<wire x1="-6.5" y1="0.3" x2="-6.4999" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="-6.4999" y1="0.3" x2="-6.2" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="-5.9" y1="0" x2="5.9" y2="0" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="0.3" x2="6.5" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="0.3" x2="6.5" y2="9" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="9" x2="6.5" y2="11.5" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="11.5" x2="6.5" y2="13.9" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="13.9" x2="-6.5" y2="13.9" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="13.9" x2="-6.5" y2="11.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="11.5" x2="-6.5" y2="9" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="9" x2="-6.5" y2="0.3" width="0.2032" layer="21"/>
+<wire x1="-6.7999" y1="0" x2="-6.4999" y2="0.3" width="0.2032" layer="21" curve="90"/>
+<wire x1="-6.8" y1="0" x2="-7" y2="0" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="0.3" x2="-5.9" y2="0" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6.5" y1="0.3" x2="6.8" y2="0" width="0.2032" layer="21" curve="90"/>
+<wire x1="5.9" y1="0" x2="6.2" y2="0.3001" width="0.2032" layer="21" curve="-89.980911"/>
+<wire x1="-5" y1="8" x2="-4" y2="2" width="0.2032" layer="21"/>
+<wire x1="-4" y1="2" x2="-3" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3" y1="2" x2="-2" y2="8" width="0.2032" layer="21"/>
+<wire x1="5" y1="8" x2="4" y2="2" width="0.2032" layer="21"/>
+<wire x1="4" y1="2" x2="3" y2="2" width="0.2032" layer="21"/>
+<wire x1="3" y1="2" x2="2" y2="8" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="11.5" x2="-8" y2="11" width="0.2032" layer="21"/>
+<wire x1="-8" y1="11" x2="-8" y2="9.5" width="0.2032" layer="21"/>
+<wire x1="-8" y1="9.5" x2="-6.5" y2="9" width="0.2032" layer="21"/>
+<wire x1="6.5" y1="11.5" x2="8" y2="11" width="0.2032" layer="21"/>
+<wire x1="8" y1="11" x2="8" y2="9.5" width="0.2032" layer="21"/>
+<wire x1="8" y1="9.5" x2="6.5" y2="9" width="0.2032" layer="21"/>
+<wire x1="6.8" y1="0" x2="7" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-3.5001" y="12.9901" drill="1"/>
+<pad name="2" x="-1" y="12.9901" drill="1"/>
+<pad name="3" x="1" y="12.9901" drill="1"/>
+<pad name="4" x="3.5001" y="12.9901" drill="1"/>
+<text x="-6.5001" y="14.5001" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.5001" y="10" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.08" y="0.635" size="1.016" layer="21">AMP 787616-1</text>
+<hole x="-6.57" y="10.2799" drill="2.3"/>
+<hole x="6.57" y="10.2799" drill="2.3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="USB-4">
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="1.27" y="-2.032" size="2.54" layer="94" rot="R90">USB</text>
+<text x="-3.81" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB-787616" prefix="X" uservalue="yes">
+<description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="USB-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -852,6 +952,7 @@
 <part name="U$2" library="NXP" deviceset="P82B715" device=""/>
 <part name="U$3" library="NXP" deviceset="P82B715" device=""/>
 <part name="U$4" library="NXP" deviceset="P82B715" device=""/>
+<part name="X2" library="con-amp" deviceset="USB-787616" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -868,6 +969,7 @@
 <instance part="U$2" gate="G$1" x="-86.36" y="109.22"/>
 <instance part="U$3" gate="G$1" x="-86.36" y="93.98"/>
 <instance part="U$4" gate="G$1" x="-86.36" y="78.74"/>
+<instance part="X2" gate="G$1" x="33.02" y="175.26"/>
 </instances>
 <busses>
 </busses>
