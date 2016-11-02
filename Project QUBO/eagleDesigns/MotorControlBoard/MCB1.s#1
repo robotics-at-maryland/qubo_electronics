@@ -418,6 +418,216 @@ http://www.linear-tech.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="allegro">
+<packages>
+<package name="ACS713-SOIC">
+<smd name="P$1" x="-1.905" y="-2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.635" y="-2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$3" x="0.635" y="-2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$4" x="1.905" y="-2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$5" x="1.905" y="2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$6" x="0.635" y="2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$7" x="-0.635" y="2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$8" x="-1.905" y="2.8" dx="1.75" dy="0.65" layer="1" rot="R90"/>
+<wire x1="-2.45" y1="1.95" x2="2.45" y2="1.95" width="0.127" layer="21"/>
+<wire x1="2.45" y1="1.95" x2="2.45" y2="-1.95" width="0.127" layer="21"/>
+<wire x1="2.45" y1="-1.95" x2="-2.45" y2="-1.95" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="-1.95" x2="-2.45" y2="1.95" width="0.127" layer="21"/>
+<circle x="-1.5" y="-1.05" radius="0.390509375" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ACS713">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="IP+" x="-12.7" y="7.62" length="middle"/>
+<pin name="IP-" x="-12.7" y="-7.62" length="middle"/>
+<pin name="GND" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="FILTER" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="VIOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="12.7" y="7.62" length="middle" rot="R180"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACS713">
+<gates>
+<gate name="G$1" symbol="ACS713" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC" package="ACS713-SOIC">
+<connects>
+<connect gate="G$1" pin="FILTER" pad="P$6"/>
+<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="IP+" pad="P$1 P$2"/>
+<connect gate="G$1" pin="IP-" pad="P$3 P$4"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
+<connect gate="G$1" pin="VIOUT" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="molex">
+<packages>
+<package name="KK254_VERT_3PIN">
+<wire x1="-3.685" y1="1.18" x2="3.685" y2="1.18" width="0.127" layer="51"/>
+<wire x1="3.685" y1="1.18" x2="3.685" y2="-1.18" width="0.127" layer="51"/>
+<wire x1="3.685" y1="-1.18" x2="-3.685" y2="-1.18" width="0.127" layer="51"/>
+<wire x1="-3.685" y1="-1.18" x2="-3.685" y2="1.18" width="0.127" layer="51"/>
+<pad name="P$1" x="2.54" y="0" drill="1.05" shape="octagon"/>
+<pad name="P$2" x="0" y="0" drill="1.05" shape="octagon"/>
+<pad name="P$3" x="-2.54" y="0" drill="1.05" shape="octagon"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<text x="-3.81" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="KK254_VERT_2PIN">
+<wire x1="-2.54" y1="2.921" x2="2.54" y2="2.921" width="0.127" layer="51"/>
+<wire x1="2.54" y1="2.921" x2="2.54" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-2.921" x2="-2.54" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-2.921" x2="-2.54" y2="2.921" width="0.127" layer="51"/>
+<pad name="P$1" x="1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<pad name="P$2" x="-1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+</package>
+<package name="KK254_VERT_5PIN">
+<wire x1="-6.225" y1="1.18" x2="6.225" y2="1.18" width="0.127" layer="51"/>
+<wire x1="6.225" y1="1.18" x2="6.225" y2="-1.18" width="0.127" layer="51"/>
+<wire x1="6.225" y1="-1.18" x2="-6.225" y2="-1.18" width="0.127" layer="51"/>
+<wire x1="-6.225" y1="-1.18" x2="-6.225" y2="1.18" width="0.127" layer="51"/>
+<pad name="P$1" x="5.08" y="0" drill="1.05" shape="square"/>
+<pad name="P$2" x="2.54" y="0" drill="1.05" shape="octagon"/>
+<pad name="P$3" x="0" y="0" drill="1.05" shape="octagon"/>
+<pad name="P$4" x="-2.54" y="0" drill="1.05" shape="octagon"/>
+<pad name="P$5" x="-5.08" y="0" drill="1.05" shape="octagon"/>
+<wire x1="-7" y1="2" x2="-7" y2="-2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-2" x2="7" y2="-2" width="0.127" layer="21"/>
+<wire x1="7" y1="-2" x2="7" y2="2" width="0.127" layer="21"/>
+<wire x1="7" y1="2" x2="-7" y2="2" width="0.127" layer="21"/>
+<text x="-7" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="KK254_VERT_3PIN">
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$2" x="-7.62" y="0" visible="pad" length="middle"/>
+<pin name="P$3" x="-7.62" y="5.08" visible="pad" length="middle"/>
+<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="KK254_VERT_2PIN">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="2.54" visible="off" length="middle"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="off" length="middle"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+<symbol name="KK254_VERT_5PIN">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="-10.16" y="-5.08" visible="off" length="middle"/>
+<pin name="P$2" x="-10.16" y="-2.54" visible="off" length="middle"/>
+<pin name="P$3" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="P$4" x="-10.16" y="2.54" visible="off" length="middle"/>
+<pin name="P$5" x="-10.16" y="5.08" visible="off" length="middle"/>
+<circle x="-2.54" y="-5.08" radius="0.803215625" width="0.254" layer="94"/>
+<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-11.938" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KK254_VERT_3PIN" prefix="JMP" uservalue="yes">
+<description>Molex KK® 254 Wire-to-Board Header, Single Row, Vertical, 3 Circuits, PA Polyamide Nylon, Gold (Au) Plating&lt;br&gt;
+Part Number: 22-10-2031&lt;br&gt;
+&lt;a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022102031_PCB_HEADERS.xml"&gt;Link&lt;/a&gt;</description>
+<gates>
+<gate name="JMP1" symbol="KK254_VERT_3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="22-10-2031" package="KK254_VERT_3PIN">
+<connects>
+<connect gate="JMP1" pin="P$1" pad="P$1"/>
+<connect gate="JMP1" pin="P$2" pad="P$2"/>
+<connect gate="JMP1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK254_VERT_2PIN" prefix="2PIN_" uservalue="yes">
+<description>KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating&lt;br&gt;
+Part Number: 22-29-2021&lt;br&gt;
+http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEADERS.xml</description>
+<gates>
+<gate name="U1" symbol="KK254_VERT_2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="22-29-2021" package="KK254_VERT_2PIN">
+<connects>
+<connect gate="U1" pin="P$1" pad="P$1"/>
+<connect gate="U1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK254_VERT_5PIN" prefix="KK254_" uservalue="yes">
+<description>Molex KK® 254 Wire-to-Board Header, Single Row, Vertical, 5 Circuits, PA Polyamide Nylon, Gold (Au) Plating&lt;br&gt;
+Part Number: 22-10-2051&lt;br&gt;
+&lt;a href="http://www.molex.com/pdm_docs/sd/022102051_sd.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022102051_PCB_HEADERS.xml"&gt;Information&lt;/a&gt;&lt;br&gt;
+Created by Ben Hurwitz, 10 March 2016</description>
+<gates>
+<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KK254_VERT_5PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -430,6 +640,12 @@ http://www.linear-tech.com&lt;p&gt;
 <parts>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="U$1" library="linear" deviceset="LTC2497" device="UHF"/>
+<part name="U$2" library="allegro" deviceset="ACS713" device="SOIC"/>
+<part name="JMP1" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP2" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="KK254_1" library="molex" deviceset="KK254_VERT_5PIN" device=""/>
+<part name="KK254_2" library="molex" deviceset="KK254_VERT_5PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -438,6 +654,12 @@ http://www.linear-tech.com&lt;p&gt;
 <instances>
 <instance part="U1" gate="G$1" x="7.62" y="43.18"/>
 <instance part="U$1" gate="G$1" x="-45.72" y="63.5"/>
+<instance part="U$2" gate="G$1" x="12.7" y="127"/>
+<instance part="JMP1" gate="JMP1" x="-114.3" y="129.54"/>
+<instance part="JMP2" gate="JMP1" x="-114.3" y="10.16"/>
+<instance part="2PIN_1" gate="U1" x="-114.3" y="73.66"/>
+<instance part="KK254_1" gate="G$1" x="-116.84" y="101.6"/>
+<instance part="KK254_2" gate="G$1" x="-116.84" y="48.26"/>
 </instances>
 <busses>
 </busses>
