@@ -1092,14 +1092,14 @@ RJ45 Jack connectors&lt;br&gt;
 <label x="-5.08" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="SDO/ADR"/>
-<wire x1="-60.96" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
-<label x="-71.12" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="180.34" x2="12.7" y2="180.34" width="0.1524" layer="91"/>
 <label x="12.7" y="180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="!CS"/>
+<wire x1="-30.48" y1="157.48" x2="-17.78" y2="157.48" width="0.1524" layer="91"/>
+<label x="-27.94" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -1561,11 +1561,6 @@ RJ45 Jack connectors&lt;br&gt;
 <label x="33.02" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="U1" pin="!CS"/>
-<wire x1="-30.48" y1="157.48" x2="-17.78" y2="157.48" width="0.1524" layer="91"/>
-<label x="-27.94" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="U1" pin="GND1"/>
 <wire x1="-30.48" y1="162.56" x2="-17.78" y2="162.56" width="0.1524" layer="91"/>
 <label x="-27.94" y="162.56" size="1.778" layer="95"/>
@@ -1584,6 +1579,11 @@ RJ45 Jack connectors&lt;br&gt;
 <pinref part="X2" gate="G$1" pin="4"/>
 <wire x1="27.94" y1="172.72" x2="12.7" y2="172.72" width="0.1524" layer="91"/>
 <label x="12.7" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SDO/ADR"/>
+<wire x1="-60.96" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
+<label x="-71.12" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UNBUFFERSCL1" class="0">
