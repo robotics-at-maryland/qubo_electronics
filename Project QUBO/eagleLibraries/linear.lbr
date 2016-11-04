@@ -6285,6 +6285,29 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <wire x1="-3.6" y1="-2.6" x2="-3.6" y2="2.6" width="0.127" layer="21"/>
 <circle x="-2.4" y="-1.4" radius="0.4472125" width="0.127" layer="21"/>
 </package>
+<package name="MSOP16">
+<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.44" y="-0.9" radius="0.22" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2NUL2CMP">
@@ -10798,6 +10821,27 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <pin name="CA1" x="-30.48" y="-30.48" length="middle"/>
 <pin name="CA2" x="-30.48" y="-35.56" length="middle"/>
 <pin name="VCC" x="-30.48" y="-40.64" length="middle"/>
+</symbol>
+<symbol name="LTC4364">
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<pin name="OUT" x="-20.32" y="17.78" length="middle"/>
+<pin name="SENSE" x="-20.32" y="12.7" length="middle"/>
+<pin name="NC" x="-20.32" y="7.62" length="middle"/>
+<pin name="DGATE" x="-20.32" y="2.54" length="middle"/>
+<pin name="SOURCE" x="-20.32" y="-2.54" length="middle"/>
+<pin name="HGATE" x="-20.32" y="-7.62" length="middle"/>
+<pin name="FB" x="-20.32" y="-12.7" length="middle"/>
+<pin name="VCC" x="-20.32" y="-17.78" length="middle"/>
+<pin name="SHDN" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="UV" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="OV" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="FLT'" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="ENOUT" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="TMR" x="20.32" y="15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -27771,6 +27815,35 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <connect gate="G$1" pin="REF-" pad="REF-"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4364">
+<gates>
+<gate name="G$1" symbol="LTC4364" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP16">
+<connects>
+<connect gate="G$1" pin="DGATE" pad="DGATE"/>
+<connect gate="G$1" pin="ENOUT" pad="ENOUT"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="FLT'" pad="FLT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HGATE" pad="HGATE"/>
+<connect gate="G$1" pin="NC" pad="NC NC1"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="OV" pad="OV"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="SHDN" pad="SHDN"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
+<connect gate="G$1" pin="TMR" pad="TMR"/>
+<connect gate="G$1" pin="UV" pad="UV"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
