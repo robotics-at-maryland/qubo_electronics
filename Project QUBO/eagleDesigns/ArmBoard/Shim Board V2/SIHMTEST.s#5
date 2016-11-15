@@ -1608,10 +1608,11 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="53.34" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="BUFFERVCC(5V)" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$22"/>
 <wire x1="53.34" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
+<label x="35.56" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
