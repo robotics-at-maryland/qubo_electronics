@@ -4939,6 +4939,7 @@ Source: Philips - BAS70_1PS7XSB70_SER_8.pdf</description>
 <wire x1="1.425" y1="0.65" x2="1.425" y2="-0.65" width="0.127" layer="51"/>
 <wire x1="1.425" y1="-0.65" x2="-1.425" y2="-0.65" width="0.127" layer="51"/>
 <wire x1="-1.425" y1="-0.65" x2="-1.425" y2="0.65" width="0.127" layer="51"/>
+<rectangle x1="0.8" y1="-0.6" x2="1.1" y2="0.6" layer="21"/>
 </package>
 </packages>
 <symbols>

@@ -4924,10 +4924,10 @@ Source: Philips - BAS70_1PS7XSB70_SER_8.pdf</description>
 <package name="SMA">
 <smd name="P$1CATHODE" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
 <smd name="P$2" x="2" y="0" dx="2.5" dy="1.7" layer="1"/>
-<wire x1="-2.3" y1="1.46" x2="2.3" y2="1.46" width="0.127" layer="21"/>
-<wire x1="2.3" y1="1.46" x2="2.3" y2="-1.46" width="0.127" layer="21"/>
-<wire x1="2.3" y1="-1.46" x2="-2.3" y2="-1.46" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="-1.46" x2="-2.3" y2="1.46" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="1.46" x2="2.3" y2="1.46" width="0.127" layer="51"/>
+<wire x1="2.3" y1="1.46" x2="2.3" y2="-1.46" width="0.127" layer="51"/>
+<wire x1="2.3" y1="-1.46" x2="-2.3" y2="-1.46" width="0.127" layer="51"/>
+<wire x1="-2.3" y1="-1.46" x2="-2.3" y2="1.46" width="0.127" layer="51"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
 </package>
