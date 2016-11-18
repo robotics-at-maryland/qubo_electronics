@@ -9023,6 +9023,15 @@ super fast rectifier, 2 A</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="SOD523">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE-" prefix="D" uservalue="yes">
