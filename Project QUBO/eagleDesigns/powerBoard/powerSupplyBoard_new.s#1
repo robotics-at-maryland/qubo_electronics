@@ -11236,6 +11236,88 @@ diameter 5 mm, grid 2.54 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="linear">
+<description>&lt;b&gt;Linear Technology Devices&lt;/b&gt;&lt;p&gt;
+http://www.linear-tech.com&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MSOP16">
+<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.44" y="-0.9" radius="0.22" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LTC4364">
+<wire x1="-33.02" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-12.7" x2="-33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="12.7" width="0.254" layer="94"/>
+<pin name="SHDN'" x="-38.1" y="10.16" length="middle"/>
+<pin name="UV" x="-38.1" y="0" length="middle"/>
+<pin name="OV" x="-38.1" y="-7.62" length="middle"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle" rot="R90"/>
+<pin name="TMR" x="15.24" y="-17.78" length="middle" rot="R90"/>
+<pin name="FAULT'" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="ENOUT" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="FB" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="27.94" y="17.78" length="middle" rot="R270"/>
+<pin name="SENSE" x="17.78" y="17.78" length="middle" rot="R270"/>
+<pin name="DGATE" x="10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="SOURCE" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="HGATE" x="-10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="VCC" x="-22.86" y="17.78" length="middle" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LTC4364">
+<gates>
+<gate name="G$1" symbol="LTC4364" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP16">
+<connects>
+<connect gate="G$1" pin="DGATE" pad="DGATE"/>
+<connect gate="G$1" pin="ENOUT" pad="ENOUT"/>
+<connect gate="G$1" pin="FAULT'" pad="FLT"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HGATE" pad="HGATE"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="OV" pad="OV"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="SHDN'" pad="SHDN"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
+<connect gate="G$1" pin="TMR" pad="TMR"/>
+<connect gate="G$1" pin="UV" pad="UV"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11263,21 +11345,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
-<part name="REG-9V" library="texas" deviceset="PTN78060W" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="407 kΩ"/>
-<part name="C15" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
-<part name="C16" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
-<part name="C17" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
-<part name="C18" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0603" value="100 nF"/>
 <part name="C22" library="resistor" deviceset="C-US" device="C0603" value="100 nF"/>
-<part name="C12" library="resistor" deviceset="C-US" device="C0603" value="100 nF"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="10 µF"/>
 <part name="C19" library="resistor" deviceset="C-US" device="C0805" value="10 µF"/>
-<part name="C13" library="resistor" deviceset="C-US" device="C0805" value="10 µF"/>
 <part name="C7" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
 <part name="C14" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
-<part name="C20" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
 <part name="REG-12V" library="texas" deviceset="PTN78060W" device=""/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="732 Ω"/>
 <part name="C24" library="resistor" deviceset="C-US" device="C1206" value="2.2 µF"/>
@@ -11289,6 +11362,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C30" library="resistor" deviceset="CPOL-US" device="D" value="100 uF"/>
 <part name="UWE" library="murata" deviceset="UWE" device="UWE"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="27 kOhm"/>
+<part name="U$1" library="linear" deviceset="LTC4364" device="MSOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -11312,21 +11386,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C9" gate="G$1" x="55.88" y="12.7" rot="R270"/>
 <instance part="C10" gate="G$1" x="55.88" y="5.08" rot="R270"/>
 <instance part="C11" gate="G$1" x="55.88" y="-2.54" rot="R270"/>
-<instance part="REG-9V" gate="G$1" x="83.82" y="-30.48"/>
-<instance part="R3" gate="G$1" x="66.04" y="-45.72" rot="R90"/>
-<instance part="C15" gate="G$1" x="55.88" y="-27.94" rot="R270"/>
-<instance part="C16" gate="G$1" x="55.88" y="-35.56" rot="R270"/>
-<instance part="C17" gate="G$1" x="55.88" y="-43.18" rot="R270"/>
-<instance part="C18" gate="G$1" x="55.88" y="-50.8" rot="R270"/>
 <instance part="C2" gate="G$1" x="109.22" y="63.5" rot="R90"/>
 <instance part="C22" gate="G$1" x="109.22" y="17.78" rot="R90"/>
-<instance part="C12" gate="G$1" x="109.22" y="-30.48" rot="R90"/>
 <instance part="C3" gate="G$1" x="109.22" y="55.88" rot="R90"/>
 <instance part="C19" gate="G$1" x="109.22" y="10.16" rot="R90"/>
-<instance part="C13" gate="G$1" x="109.22" y="-38.1" rot="R90"/>
 <instance part="C7" gate="G$1" x="109.22" y="48.26" rot="R90"/>
 <instance part="C14" gate="G$1" x="109.22" y="2.54" rot="R90"/>
-<instance part="C20" gate="G$1" x="109.22" y="-45.72" rot="R90"/>
 <instance part="REG-12V" gate="G$1" x="86.36" y="-78.74"/>
 <instance part="R22" gate="G$1" x="68.58" y="-93.98" rot="R90"/>
 <instance part="C24" gate="G$1" x="58.42" y="-76.2" rot="R270"/>
@@ -11338,6 +11403,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C30" gate="G$1" x="111.76" y="-93.98" rot="R90"/>
 <instance part="UWE" gate="G$1" x="-210.82" y="121.92"/>
 <instance part="R4" gate="G$1" x="-187.96" y="129.54" rot="R90"/>
+<instance part="U$1" gate="G$1" x="-193.04" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -11748,47 +11814,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <junction x="114.3" y="2.54"/>
 </segment>
 <segment>
-<pinref part="REG-9V" gate="G$1" pin="GND1"/>
-<wire x1="68.58" y1="-22.86" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
-<label x="63.5" y="-22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="REG-9V" gate="G$1" pin="GND2"/>
-<wire x1="99.06" y1="-35.56" x2="104.14" y2="-35.56" width="0.1524" layer="91"/>
-<label x="99.06" y="-35.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="-50.8" x2="66.04" y2="-55.88" width="0.1524" layer="91"/>
-<label x="66.04" y="-55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="-27.94" x2="50.8" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-<junction x="50.8" y="-50.8"/>
-<wire x1="50.8" y1="-35.56" x2="50.8" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-43.18" x2="50.8" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-50.8" x2="50.8" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<junction x="50.8" y="-43.18"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<junction x="50.8" y="-35.56"/>
-<junction x="50.8" y="-27.94"/>
-<label x="50.8" y="-60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="114.3" y1="-30.48" x2="114.3" y2="-38.1" width="0.1524" layer="91"/>
-<label x="114.3" y="-50.8" size="1.778" layer="95"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="-38.1" x2="114.3" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="114.3" y="-38.1"/>
-<pinref part="C20" gate="G$1" pin="-"/>
-<wire x1="114.3" y1="-45.72" x2="114.3" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="114.3" y="-45.72"/>
-</segment>
-<segment>
 <pinref part="REG-12V" gate="G$1" pin="GND1"/>
 <wire x1="71.12" y1="-71.12" x2="66.04" y2="-71.12" width="0.1524" layer="91"/>
 <label x="66.04" y="-71.12" size="1.778" layer="95"/>
@@ -11860,23 +11885,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </net>
 <net name="VI12V" class="0">
 <segment>
-<pinref part="REG-9V" gate="G$1" pin="VI"/>
-<wire x1="68.58" y1="-27.94" x2="58.42" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-27.94" x2="58.42" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="58.42" y="-27.94"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-35.56" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="58.42" y="-35.56"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-43.18" x2="58.42" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="58.42" y="-43.18"/>
-<junction x="58.42" y="-50.8"/>
-<wire x1="58.42" y1="-50.8" x2="58.42" y2="-60.96" width="0.1524" layer="91"/>
-<label x="58.42" y="-60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="REG-12V" gate="G$1" pin="VI"/>
 <wire x1="71.12" y1="-76.2" x2="60.96" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
@@ -11900,14 +11908,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="68.58" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="10.16" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="REG-9V" gate="G$1" pin="VOADJUST"/>
-<wire x1="68.58" y1="-38.1" x2="66.04" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-38.1" x2="66.04" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VI5V" class="0">
@@ -11989,24 +11989,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </segment>
 </net>
 <net name="12VACS" class="0">
-<segment>
-<pinref part="REG-9V" gate="G$1" pin="VOSENSE"/>
-<wire x1="99.06" y1="-25.4" x2="106.68" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="REG-9V" gate="G$1" pin="VO"/>
-<wire x1="99.06" y1="-30.48" x2="106.68" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-25.4" x2="106.68" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="106.68" y="-30.48"/>
-<junction x="106.68" y="-30.48"/>
-<wire x1="106.68" y1="-30.48" x2="106.68" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="-38.1" x2="106.68" y2="-45.72" width="0.1524" layer="91"/>
-<label x="106.68" y="-53.34" size="1.778" layer="95"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<junction x="106.68" y="-38.1"/>
-<pinref part="C20" gate="G$1" pin="+"/>
-<wire x1="106.68" y1="-45.72" x2="106.68" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="106.68" y="-45.72"/>
-</segment>
 <segment>
 <pinref part="REG-12V" gate="G$1" pin="VOSENSE"/>
 <wire x1="101.6" y1="-73.66" x2="109.22" y2="-73.66" width="0.1524" layer="91"/>
