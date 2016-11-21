@@ -23011,6 +23011,27 @@ changed 2011-11-09</description>
 <text x="-1.35" y="2.7" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.35" y="-2.7" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="LMZ23610">
+<smd name="PGND" x="0" y="0" dx="9.126" dy="13.36" layer="1"/>
+<smd name="AGND2" x="0" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="FB" x="1.27" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="AGND1" x="-1.27" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="SS" x="2.54" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="EN" x="-2.54" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="SH" x="3.81" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="VOUT1" x="5.08" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="VOUT2" x="6.35" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="SYNC" x="-3.81" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="VIN2" x="-5.08" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<smd name="VIN1" x="-6.35" y="-9.5" dx="2.41" dy="0.86" layer="1" rot="R90"/>
+<wire x1="-7.5" y1="7.5" x2="7.5" y2="7.5" width="0.127" layer="51"/>
+<wire x1="7.5" y1="7.5" x2="7.5" y2="-7.5" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-7.5" x2="-7.5" y2="-7.5" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-7.5" x2="-7.5" y2="7.5" width="0.127" layer="51"/>
+<circle x="-6" y="-6" radius="0.8" width="0.127" layer="22"/>
+<text x="-3.81" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-12.7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="320C5402">
@@ -32287,6 +32308,21 @@ changed 2011-11-09</description>
 <pin name="GND" x="-15.24" y="-2.54" length="middle"/>
 <pin name="VCC" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="NC" x="15.24" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LMZ23610">
+<wire x1="-15.24" y1="22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<pin name="VIN" x="-20.32" y="20.32" length="middle"/>
+<pin name="VOUT" x="-20.32" y="-20.32" length="middle"/>
+<pin name="PGND" x="-20.32" y="0" length="middle"/>
+<pin name="AGND" x="-20.32" y="5.08" length="middle"/>
+<pin name="EN" x="-20.32" y="10.16" length="middle"/>
+<pin name="SYNC" x="-20.32" y="15.24" length="middle"/>
+<pin name="FB" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SS" x="-20.32" y="-10.16" length="middle"/>
+<pin name="SH" x="-20.32" y="-15.24" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -44817,6 +44853,29 @@ Dual Line USB Port Transient Suppressor&lt;br&gt;
 <connect gate="G$1" pin="NC" pad="2 3 5 6 7"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 <connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMZ23610">
+<gates>
+<gate name="G$1" symbol="LMZ23610" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LMZ23610">
+<connects>
+<connect gate="G$1" pin="AGND" pad="AGND1 AGND2"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="PGND" pad="PGND"/>
+<connect gate="G$1" pin="SH" pad="SH"/>
+<connect gate="G$1" pin="SS" pad="SS"/>
+<connect gate="G$1" pin="SYNC" pad="SYNC"/>
+<connect gate="G$1" pin="VIN" pad="VIN1 VIN2"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT1 VOUT2"/>
 </connects>
 <technologies>
 <technology name=""/>
