@@ -12293,6 +12293,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="68 kO"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="430 kO"/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="33 kO"/>
+<part name="RSNS" library="resistor" deviceset="R-US_" device="R0805" value="2 mO"/>
+<part name="CTMR" library="resistor" deviceset="C-US" device="C0805" value="4.7 nF"/>
+<part name="C15" library="resistor" deviceset="CPOL-US" device="F"/>
 </parts>
 <sheets>
 <sheet>
@@ -12351,6 +12354,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="R12" gate="G$1" x="-149.86" y="63.5" rot="R90"/>
 <instance part="R13" gate="G$1" x="-149.86" y="73.66" rot="R90"/>
 <instance part="R14" gate="G$1" x="-149.86" y="50.8" rot="R90"/>
+<instance part="RSNS" gate="G$1" x="-182.88" y="76.2"/>
+<instance part="CTMR" gate="G$1" x="-177.8" y="25.4"/>
+<instance part="C15" gate="G$1" x="-134.62" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -12826,6 +12832,20 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-149.86" y1="45.72" x2="-147.32" y2="45.72" width="0.1524" layer="91"/>
 <label x="-144.78" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="-210.82" y1="27.94" x2="-210.82" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="CTMR" gate="G$1" pin="2"/>
+<wire x1="-177.8" y1="20.32" x2="-210.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="20.32" x2="-210.82" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-210.82" y="20.32"/>
+<label x="-210.82" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="-"/>
+<wire x1="-134.62" y1="73.66" x2="-134.62" y2="68.58" width="0.1524" layer="91"/>
+<label x="-134.62" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -13097,6 +13117,13 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="D"/>
 <wire x1="-193.04" y1="86.36" x2="-193.04" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="RSNS" gate="G$1" pin="1"/>
+<wire x1="-187.96" y1="76.2" x2="-193.04" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="76.2" x2="-187.96" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-187.96" y="76.2"/>
+<pinref part="U$1" gate="G$1" pin="SENSE"/>
+<wire x1="-187.96" y1="68.58" x2="-175.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-175.26" y1="68.58" x2="-175.26" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -13160,6 +13187,31 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-154.94" y1="50.8" x2="-154.94" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="55.88" x2="-149.86" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-149.86" y="55.88"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="RSNS" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="-177.8" y1="76.2" x2="-165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="76.2" x2="-165.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="76.2" x2="-165.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="86.36" x2="-149.86" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-165.1" y="76.2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="-149.86" y1="86.36" x2="-134.62" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="86.36" x2="-121.92" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="78.74" x2="-149.86" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-149.86" y="86.36"/>
+<pinref part="C15" gate="G$1" pin="+"/>
+<wire x1="-134.62" y1="81.28" x2="-134.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-134.62" y="86.36"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="TMR"/>
+<pinref part="CTMR" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
