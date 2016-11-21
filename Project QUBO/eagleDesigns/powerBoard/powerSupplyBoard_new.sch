@@ -11794,6 +11794,56 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fairchild">
+<packages>
+<package name="FDMC8360LET40">
+<smd name="DRAIN" x="0" y="0.675" dx="2.37" dy="2.15" layer="1"/>
+<smd name="SOURCE1" x="-0.975" y="-1.4" dx="0.7" dy="0.42" layer="1" rot="R90"/>
+<smd name="GATE" x="0.975" y="-1.4" dx="0.7" dy="0.42" layer="1" rot="R90"/>
+<smd name="SOURCE2" x="-0.325" y="-1.4" dx="0.7" dy="0.42" layer="1" rot="R90"/>
+<smd name="SOURCE3" x="0.325" y="-1.4" dx="0.7" dy="0.42" layer="1" rot="R90"/>
+<wire x1="-1.7" y1="1.7" x2="1.7" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="1.7" x2="-1.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-1.7" x2="1.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.7" y1="-1.7" x2="1.7" y2="1.7" width="0.127" layer="51"/>
+<circle x="-1.3" y="-1.3" radius="0.2" width="0.127" layer="21"/>
+<text x="-1.84" y="1.9" size="0.8" layer="25">&gt;NAME</text>
+<text x="-2.07" y="-2.71" size="0.8" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FDMC8360LET40">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="GATE" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SOURCE" x="-15.24" y="5.08" length="middle"/>
+<pin name="DRAIN" x="-15.24" y="-5.08" length="middle"/>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FDMC8360LET40">
+<gates>
+<gate name="G$1" symbol="FDMC8360LET40" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FDMC8360LET40">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="DRAIN"/>
+<connect gate="G$1" pin="GATE" pad="GATE"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE1 SOURCE2 SOURCE3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11870,6 +11920,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="BAT2" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="BAT1" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="SHORE" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="U$7" library="fairchild" deviceset="FDMC8360LET40" device=""/>
+<part name="U$8" library="fairchild" deviceset="FDMC8360LET40" device=""/>
+<part name="U$9" library="fairchild" deviceset="FDMC8360LET40" device=""/>
+<part name="U$10" library="fairchild" deviceset="FDMC8360LET40" device=""/>
+<part name="U$11" library="fairchild" deviceset="FDMC8360LET40" device=""/>
+<part name="U$12" library="fairchild" deviceset="FDMC8360LET40" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11942,6 +11998,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="BAT2" gate="G$1" x="-297.18" y="-2.54" rot="MR0"/>
 <instance part="BAT1" gate="G$1" x="-297.18" y="22.86" rot="MR0"/>
 <instance part="SHORE" gate="G$1" x="-297.18" y="-27.94" rot="MR0"/>
+<instance part="U$7" gate="G$1" x="-12.7" y="127"/>
+<instance part="U$8" gate="G$1" x="-12.7" y="99.06"/>
+<instance part="U$9" gate="G$1" x="-12.7" y="38.1"/>
+<instance part="U$10" gate="G$1" x="-12.7" y="7.62"/>
+<instance part="U$11" gate="G$1" x="-12.7" y="-50.8"/>
+<instance part="U$12" gate="G$1" x="-12.7" y="-81.28"/>
 </instances>
 <busses>
 </busses>
@@ -12594,6 +12656,42 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="TMR"/>
 <pinref part="CTMR2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="SOURCE"/>
+<wire x1="-27.94" y1="132.08" x2="-33.02" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="DRAIN"/>
+<wire x1="-27.94" y1="121.92" x2="-33.02" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="GATE"/>
+<wire x1="2.54" y1="127" x2="7.62" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="SOURCE"/>
+<wire x1="-27.94" y1="104.14" x2="-33.02" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="DRAIN"/>
+<wire x1="-27.94" y1="93.98" x2="-33.02" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="GATE"/>
+<wire x1="2.54" y1="99.06" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
