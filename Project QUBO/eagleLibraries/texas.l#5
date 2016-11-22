@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1.35" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.95" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22996,6 +22996,20 @@ changed 2011-11-09</description>
 <text x="-3" y="-3.25" size="0.25" layer="51">1 -&gt; 12</text>
 <text x="-3" y="2" size="0.75" layer="25">&gt;NAME</text>
 <text x="-3" y="-2" size="0.75" layer="27">&gt;VALUE</text>
+</package>
+<package name="SOT23-6PIN">
+<smd name="P$1" x="-1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$2" x="-1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$3" x="-1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$4" x="1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$5" x="1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$6" x="1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<text x="-1.35" y="2.7" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.35" y="-2.7" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
