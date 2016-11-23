@@ -641,11 +641,17 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="U$1" library="linear" deviceset="LTC2497" device="UHF"/>
 <part name="U$2" library="allegro" deviceset="ACS713" device="SOIC"/>
-<part name="JMP1" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
-<part name="JMP2" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="KK254_1" library="molex" deviceset="KK254_VERT_5PIN" device=""/>
 <part name="KK254_2" library="molex" deviceset="KK254_VERT_5PIN" device=""/>
+<part name="JMP3" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP1" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP2" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP4" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP5" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP6" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP7" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JMP8" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 </parts>
 <sheets>
 <sheet>
@@ -655,11 +661,17 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <instance part="U1" gate="G$1" x="7.62" y="43.18"/>
 <instance part="U$1" gate="G$1" x="-45.72" y="63.5"/>
 <instance part="U$2" gate="G$1" x="12.7" y="127"/>
-<instance part="JMP1" gate="JMP1" x="-114.3" y="129.54"/>
-<instance part="JMP2" gate="JMP1" x="-114.3" y="10.16"/>
 <instance part="2PIN_1" gate="U1" x="-114.3" y="73.66"/>
 <instance part="KK254_1" gate="G$1" x="-116.84" y="101.6"/>
 <instance part="KK254_2" gate="G$1" x="-116.84" y="48.26"/>
+<instance part="JMP3" gate="JMP1" x="101.6" y="106.68"/>
+<instance part="JMP1" gate="JMP1" x="66.04" y="106.68"/>
+<instance part="JMP2" gate="JMP1" x="66.04" y="81.28"/>
+<instance part="JMP4" gate="JMP1" x="66.04" y="55.88"/>
+<instance part="JMP5" gate="JMP1" x="66.04" y="33.02"/>
+<instance part="JMP6" gate="JMP1" x="101.6" y="33.02"/>
+<instance part="JMP7" gate="JMP1" x="101.6" y="81.28"/>
+<instance part="JMP8" gate="JMP1" x="101.6" y="55.88"/>
 </instances>
 <busses>
 </busses>
