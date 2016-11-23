@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -523,6 +523,62 @@ http://www.linear-tech.com&lt;p&gt;
 <text x="-7" y="3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SUPERSABRE_2CIRCUIT">
+<wire x1="-10.541" y1="3.81" x2="-10.541" y2="5.7658" width="0" layer="20"/>
+<wire x1="-10.541" y1="5.7658" x2="10.541" y2="5.7658" width="0.254" layer="21"/>
+<wire x1="-10.541" y1="5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
+<wire x1="10.541" y1="5.7658" x2="10.541" y2="-5.7658" width="0.254" layer="21"/>
+<wire x1="10.541" y1="-5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
+<hole x="-8.5344" y="-1.8034" drill="2.9972"/>
+<hole x="8.5344" y="-1.8034" drill="2.9972"/>
+<wire x1="-4.2545" y1="2.0828" x2="-3.2385" y2="2.0828" width="0" layer="20" curve="-180"/>
+<wire x1="-4.2545" y1="-2.0828" x2="-3.2385" y2="-2.0828" width="0" layer="20" curve="180"/>
+<wire x1="-4.2545" y1="-2.0828" x2="-4.2545" y2="2.0828" width="0" layer="20"/>
+<wire x1="-3.2385" y1="2.0828" x2="-3.2385" y2="-2.0828" width="0" layer="20"/>
+<wire x1="3.2385" y1="2.0828" x2="4.2545" y2="2.0828" width="0" layer="20" curve="-180"/>
+<wire x1="3.2385" y1="-2.0828" x2="4.2545" y2="-2.0828" width="0" layer="20" curve="180"/>
+<wire x1="3.2385" y1="-2.0828" x2="3.2385" y2="2.0828" width="0" layer="20"/>
+<wire x1="4.2545" y1="2.0828" x2="4.2545" y2="-2.0828" width="0" layer="20"/>
+<pad name="P$2" x="3.7465" y="0" drill="0.8" shape="square"/>
+<pad name="P$1" x="-3.7465" y="0" drill="0.8" shape="square"/>
+<polygon width="0.127" layer="1">
+<vertex x="2.54" y="0"/>
+<vertex x="2.54" y="2.54"/>
+<vertex x="3.81" y="3.81"/>
+<vertex x="5.08" y="2.54"/>
+<vertex x="5.08" y="-2.54"/>
+<vertex x="3.81" y="-3.81"/>
+<vertex x="2.54" y="-2.54"/>
+</polygon>
+<polygon width="0.127" layer="16">
+<vertex x="-5.08" y="-2.54"/>
+<vertex x="-5.08" y="2.54"/>
+<vertex x="-3.81" y="3.81"/>
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="-3.81" y="-3.81"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-5.08" y="0"/>
+<vertex x="-5.08" y="2.54"/>
+<vertex x="-3.81" y="3.81"/>
+<vertex x="-2.54" y="2.54"/>
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="-3.81" y="-3.81"/>
+<vertex x="-5.08" y="-2.54"/>
+</polygon>
+<polygon width="0.127" layer="16">
+<vertex x="2.54" y="0"/>
+<vertex x="2.54" y="2.54"/>
+<vertex x="3.81" y="3.81"/>
+<vertex x="5.08" y="2.54"/>
+<vertex x="5.08" y="-2.54"/>
+<vertex x="3.81" y="-3.81"/>
+<vertex x="2.54" y="-2.54"/>
+</polygon>
+<text x="-10.16" y="6.35" size="1.27" layer="1">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="1">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="KK254_VERT_3PIN">
@@ -560,6 +616,16 @@ http://www.linear-tech.com&lt;p&gt;
 <circle x="-2.54" y="-5.08" radius="0.803215625" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.826" y="-11.938" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SUPERSABRE_2CIRCUIT">
+<pin name="P$1" x="0" y="2.54" visible="off" length="middle"/>
+<pin name="P$2" x="0" y="-2.54" visible="off" length="middle"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="2.54" y="7.62" size="1.778" layer="94">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -626,6 +692,22 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SUPERSABRE_2CIRCUIT" prefix="JP">
+<gates>
+<gate name="G$1" symbol="SUPERSABRE_2CIRCUIT" x="-17.78" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SUPERSABRE_2CIRCUIT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -652,6 +734,24 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <part name="JMP6" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="JMP7" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="JMP8" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JP1" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP2" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP3" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP4" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP5" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP7" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP8" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP9" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP10" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP11" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP13" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP14" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP15" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP16" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP17" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JMP9" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JP18" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP19" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -664,14 +764,32 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <instance part="2PIN_1" gate="U1" x="-114.3" y="73.66"/>
 <instance part="KK254_1" gate="G$1" x="-116.84" y="101.6"/>
 <instance part="KK254_2" gate="G$1" x="-116.84" y="48.26"/>
-<instance part="JMP3" gate="JMP1" x="101.6" y="106.68"/>
-<instance part="JMP1" gate="JMP1" x="66.04" y="106.68"/>
-<instance part="JMP2" gate="JMP1" x="66.04" y="81.28"/>
-<instance part="JMP4" gate="JMP1" x="66.04" y="55.88"/>
-<instance part="JMP5" gate="JMP1" x="66.04" y="33.02"/>
-<instance part="JMP6" gate="JMP1" x="101.6" y="33.02"/>
-<instance part="JMP7" gate="JMP1" x="101.6" y="81.28"/>
-<instance part="JMP8" gate="JMP1" x="101.6" y="55.88"/>
+<instance part="JMP3" gate="JMP1" x="101.6" y="129.54"/>
+<instance part="JMP1" gate="JMP1" x="66.04" y="129.54"/>
+<instance part="JMP2" gate="JMP1" x="48.26" y="91.44"/>
+<instance part="JMP4" gate="JMP1" x="66.04" y="68.58"/>
+<instance part="JMP5" gate="JMP1" x="66.04" y="7.62"/>
+<instance part="JMP6" gate="JMP1" x="101.6" y="7.62"/>
+<instance part="JMP7" gate="JMP1" x="101.6" y="68.58"/>
+<instance part="JMP8" gate="JMP1" x="101.6" y="-58.42"/>
+<instance part="JP1" gate="G$1" x="-124.46" y="124.46"/>
+<instance part="JP2" gate="G$1" x="58.42" y="152.4"/>
+<instance part="JP3" gate="G$1" x="58.42" y="111.76"/>
+<instance part="JP4" gate="G$1" x="58.42" y="91.44"/>
+<instance part="JP5" gate="G$1" x="58.42" y="30.48"/>
+<instance part="JP7" gate="G$1" x="58.42" y="-10.16"/>
+<instance part="JP8" gate="G$1" x="93.98" y="152.4"/>
+<instance part="JP9" gate="G$1" x="93.98" y="91.44"/>
+<instance part="JP10" gate="G$1" x="93.98" y="111.76"/>
+<instance part="JP11" gate="G$1" x="93.98" y="30.48"/>
+<instance part="JP13" gate="G$1" x="93.98" y="-10.16"/>
+<instance part="JP14" gate="G$1" x="93.98" y="50.8"/>
+<instance part="JP15" gate="G$1" x="58.42" y="50.8"/>
+<instance part="JP16" gate="G$1" x="58.42" y="-30.48"/>
+<instance part="JP17" gate="G$1" x="93.98" y="-30.48"/>
+<instance part="JMP9" gate="JMP1" x="66.04" y="-55.88"/>
+<instance part="JP18" gate="G$1" x="58.42" y="-78.74"/>
+<instance part="JP19" gate="G$1" x="93.98" y="-78.74"/>
 </instances>
 <busses>
 </busses>

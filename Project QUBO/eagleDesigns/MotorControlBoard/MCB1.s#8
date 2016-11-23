@@ -735,6 +735,24 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <part name="JMP7" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="JMP8" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="JP1" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP2" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP3" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP4" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP5" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP7" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP8" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP9" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP10" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP11" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP13" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP14" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP15" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP16" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP17" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JMP9" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
+<part name="JP18" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP19" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP6" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -747,15 +765,33 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <instance part="2PIN_1" gate="U1" x="-114.3" y="73.66"/>
 <instance part="KK254_1" gate="G$1" x="-116.84" y="101.6"/>
 <instance part="KK254_2" gate="G$1" x="-116.84" y="48.26"/>
-<instance part="JMP3" gate="JMP1" x="101.6" y="106.68"/>
-<instance part="JMP1" gate="JMP1" x="66.04" y="106.68"/>
-<instance part="JMP2" gate="JMP1" x="66.04" y="81.28"/>
-<instance part="JMP4" gate="JMP1" x="66.04" y="55.88"/>
-<instance part="JMP5" gate="JMP1" x="66.04" y="33.02"/>
-<instance part="JMP6" gate="JMP1" x="101.6" y="33.02"/>
-<instance part="JMP7" gate="JMP1" x="101.6" y="81.28"/>
-<instance part="JMP8" gate="JMP1" x="101.6" y="55.88"/>
+<instance part="JMP3" gate="JMP1" x="101.6" y="129.54"/>
+<instance part="JMP1" gate="JMP1" x="66.04" y="129.54"/>
+<instance part="JMP2" gate="JMP1" x="48.26" y="91.44"/>
+<instance part="JMP4" gate="JMP1" x="66.04" y="68.58"/>
+<instance part="JMP5" gate="JMP1" x="66.04" y="7.62"/>
+<instance part="JMP6" gate="JMP1" x="101.6" y="7.62"/>
+<instance part="JMP7" gate="JMP1" x="101.6" y="68.58"/>
+<instance part="JMP8" gate="JMP1" x="101.6" y="-58.42"/>
 <instance part="JP1" gate="G$1" x="-124.46" y="124.46"/>
+<instance part="JP2" gate="G$1" x="58.42" y="152.4"/>
+<instance part="JP3" gate="G$1" x="58.42" y="111.76"/>
+<instance part="JP4" gate="G$1" x="58.42" y="91.44"/>
+<instance part="JP5" gate="G$1" x="58.42" y="30.48"/>
+<instance part="JP7" gate="G$1" x="58.42" y="-10.16"/>
+<instance part="JP8" gate="G$1" x="93.98" y="152.4"/>
+<instance part="JP9" gate="G$1" x="93.98" y="91.44"/>
+<instance part="JP10" gate="G$1" x="93.98" y="111.76"/>
+<instance part="JP11" gate="G$1" x="93.98" y="30.48"/>
+<instance part="JP13" gate="G$1" x="93.98" y="-10.16"/>
+<instance part="JP14" gate="G$1" x="93.98" y="50.8"/>
+<instance part="JP15" gate="G$1" x="58.42" y="50.8"/>
+<instance part="JP16" gate="G$1" x="58.42" y="-30.48"/>
+<instance part="JP17" gate="G$1" x="93.98" y="-30.48"/>
+<instance part="JMP9" gate="JMP1" x="66.04" y="-55.88"/>
+<instance part="JP18" gate="G$1" x="58.42" y="-78.74"/>
+<instance part="JP19" gate="G$1" x="93.98" y="-78.74"/>
+<instance part="JP6" gate="G$1" x="-124.46" y="25.4"/>
 </instances>
 <busses>
 </busses>
