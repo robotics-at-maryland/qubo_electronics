@@ -467,8 +467,13 @@
 <circle x="-6.35" y="0" radius="0.635" width="0.127" layer="51"/>
 </package>
 <package name="ULTRAFIT_2PIN">
+<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="3.81" y="0" drill="0.8" shape="square"/>
 </package>
 <package name="SUPERSABRE_3CIRCUIT">
+<pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="6.35" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="-6.35" y="0" drill="0.8" shape="square"/>
 </package>
 </packages>
 <symbols>

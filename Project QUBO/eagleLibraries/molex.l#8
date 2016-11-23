@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -466,6 +466,8 @@
 <wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.127" layer="51"/>
 <circle x="-6.35" y="0" radius="0.635" width="0.127" layer="51"/>
 </package>
+<package name="ULTRAFIT_2PIN">
+</package>
 </packages>
 <symbols>
 <symbol name="SUPERSABRE_2CIRCUIT">
@@ -815,6 +817,16 @@
 <wire x1="-7.62" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ULTRAFIT_2PIN">
+<pin name="P$1" x="-15.24" y="5.08" length="middle"/>
+<pin name="P$2" x="-15.24" y="10.16" length="middle"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<text x="-12.7" y="-2.54" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-12.7" y="15.24" size="1.778" layer="94">G$1</text>
 </symbol>
 </symbols>
 <devicesets>
