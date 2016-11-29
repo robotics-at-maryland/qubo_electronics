@@ -544,6 +544,24 @@
 <pad name="4" x="0" y="10" drill="2.54" diameter="3.556" rot="R180"/>
 <pad name="3" x="0" y="4.158" drill="2.54" diameter="3.556" rot="R180"/>
 </package>
+<package name="M205_5PIN">
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<pad name="P$1" x="6.7056" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$2" x="6.7056" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$3" x="4.1656" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$4" x="4.1656" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$5" x="1.6256" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$6" x="1.6256" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$7" x="-0.9144" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$8" x="-0.9144" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$9" x="-3.4544" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$10" x="-3.4544" y="-1.524" drill="1.1" shape="octagon"/>
+<text x="-7.62" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SUPERSABRE_2CIRCUIT">
@@ -1402,6 +1420,28 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M250_5PIN">
+<description>5-pin Eurostyle Terminal Block&lt;br&gt;
+Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
+Part number: 397000205</description>
+<gates>
+<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M205_5PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+<connect gate="G$1" pin="P$3" pad="P$5 P$6"/>
+<connect gate="G$1" pin="P$4" pad="P$7 P$8"/>
+<connect gate="G$1" pin="P$5" pad="P$9 P$10"/>
 </connects>
 <technologies>
 <technology name=""/>

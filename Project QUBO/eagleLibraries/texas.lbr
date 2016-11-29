@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -32328,6 +32328,42 @@ changed 2011-11-09</description>
 <text x="-15.24" y="22.86" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MAX213">
+<pin name="DOUT3" x="-15.24" y="17.78" length="middle"/>
+<pin name="DOUT1" x="-15.24" y="15.24" length="middle"/>
+<pin name="DOUT2" x="-15.24" y="12.7" length="middle"/>
+<pin name="RIN2" x="-15.24" y="10.16" length="middle"/>
+<pin name="ROUT2" x="-15.24" y="7.62" length="middle"/>
+<pin name="DIN2" x="-15.24" y="5.08" length="middle"/>
+<pin name="DIN1" x="-15.24" y="2.54" length="middle"/>
+<pin name="ROUT1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="RIN1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VCC" x="-15.24" y="-10.16" length="middle"/>
+<pin name="C1+" x="-15.24" y="-12.7" length="middle"/>
+<pin name="V+" x="-15.24" y="-15.24" length="middle"/>
+<pin name="C1-" x="-15.24" y="-17.78" length="middle"/>
+<pin name="C2+" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="C2-" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="V-" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="RIN5" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="ROUT5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="DIN3" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="DIN4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="ROUT4" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="RIN4" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="!SHDN!" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="ROUT3" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="RIN3" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="DOUT4" x="15.24" y="17.78" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<text x="-10.16" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ2054PN" prefix="U">
@@ -44880,6 +44916,51 @@ Dual Line USB Port Transient Suppressor&lt;br&gt;
 <connect gate="G$1" pin="SYNC" pad="SYNC"/>
 <connect gate="G$1" pin="VIN" pad="VIN1 VIN2"/>
 <connect gate="G$1" pin="VOUT" pad="VOUT1 VOUT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX213CDBR">
+<description>Texas Instruments MAX213CDBR&lt;br&gt;
+5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH ±15-kV ESD PROTECTION&lt;br&gt;
+SSOP28DB package</description>
+<gates>
+<gate name="G$1" symbol="MAX213" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP28DB">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="25"/>
+<connect gate="G$1" pin="C1+" pad="12"/>
+<connect gate="G$1" pin="C1-" pad="14"/>
+<connect gate="G$1" pin="C2+" pad="15"/>
+<connect gate="G$1" pin="C2-" pad="16"/>
+<connect gate="G$1" pin="DIN1" pad="7"/>
+<connect gate="G$1" pin="DIN2" pad="6"/>
+<connect gate="G$1" pin="DIN3" pad="20"/>
+<connect gate="G$1" pin="DIN4" pad="21"/>
+<connect gate="G$1" pin="DOUT1" pad="2"/>
+<connect gate="G$1" pin="DOUT2" pad="3"/>
+<connect gate="G$1" pin="DOUT3" pad="1"/>
+<connect gate="G$1" pin="DOUT4" pad="28"/>
+<connect gate="G$1" pin="EN" pad="24"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="RIN1" pad="9"/>
+<connect gate="G$1" pin="RIN2" pad="4"/>
+<connect gate="G$1" pin="RIN3" pad="27"/>
+<connect gate="G$1" pin="RIN4" pad="23"/>
+<connect gate="G$1" pin="RIN5" pad="18"/>
+<connect gate="G$1" pin="ROUT1" pad="8"/>
+<connect gate="G$1" pin="ROUT2" pad="5"/>
+<connect gate="G$1" pin="ROUT3" pad="26"/>
+<connect gate="G$1" pin="ROUT4" pad="22"/>
+<connect gate="G$1" pin="ROUT5" pad="19"/>
+<connect gate="G$1" pin="V+" pad="13"/>
+<connect gate="G$1" pin="V-" pad="17"/>
+<connect gate="G$1" pin="VCC" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
