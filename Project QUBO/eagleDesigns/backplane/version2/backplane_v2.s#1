@@ -577,6 +577,20 @@ Created by Ben Hurwitz, 9 March 2016</description>
 <text x="-5.715" y="4.445" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-5.715" y="-5.08" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT23-6PIN">
+<smd name="P$1" x="-1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$2" x="-1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$3" x="-1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$4" x="1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$5" x="1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$6" x="1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<text x="-1.35" y="2.7" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.35" y="-2.7" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TUSB2077A">
@@ -657,6 +671,20 @@ Created by Ben Hurwitz, 9 March 2016</description>
 <pin name="OUT2" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT1" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="!OC1!" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SN65220">
+<pin name="NC@1" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="GND@2" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="NC@3" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="B" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GND@5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -755,6 +783,29 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 <connect gate="G$1" pin="OUT2" pad="OUT2"/>
 <connect gate="G$1" pin="OUT3" pad="OUT3"/>
 <connect gate="G$1" pin="OUT4" pad="OUT4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN65220DBVR">
+<description>Texas Instruments SN65220&lt;br&gt;
+Dual Line USB Port Transient Suppressor&lt;br&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/sn65220.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SN65220" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6PIN">
+<connects>
+<connect gate="G$1" pin="A" pad="P$6"/>
+<connect gate="G$1" pin="B" pad="P$4"/>
+<connect gate="G$1" pin="GND@2" pad="P$2"/>
+<connect gate="G$1" pin="GND@5" pad="P$5"/>
+<connect gate="G$1" pin="NC@1" pad="P$1"/>
+<connect gate="G$1" pin="NC@3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4344,23 +4395,23 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="JP4" library="samtec" deviceset="MPTC-01-80" device=""/>
 <part name="G1" library="NXP" deviceset="PCA9540B" device="TSSOP8"/>
 <part name="U1" library="texas" deviceset="TUSB2077A" device="LQFP"/>
-<part name="G2" library="texas" deviceset="TPS2044B" device="BD-SOIC"/>
 <part name="G3" library="texas" deviceset="TPS2044B" device="BD-SOIC"/>
 <part name="G4" library="avx" deviceset="F930J107MBA" device=""/>
 <part name="G5" library="avx" deviceset="F930J107MBA" device=""/>
 <part name="G6" library="avx" deviceset="F930J107MBA" device=""/>
-<part name="G7" library="avx" deviceset="F930J107MBA" device="" value="100u"/>
-<part name="G8" library="avx" deviceset="F930J107MBA" device="" value="100u"/>
-<part name="G9" library="avx" deviceset="F930J107MBA" device="" value="100u"/>
-<part name="G10" library="avx" deviceset="F930J107MBA" device="" value="100u"/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0603" value="0.1u"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0603" value="0.1u"/>
 <part name="LED1" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
 <part name="LED2" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
 <part name="LED3" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
 <part name="LED4" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
 <part name="LED5" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
 <part name="LED6" library="led" deviceset="*P4" device="-TOP" technology="LA"/>
+<part name="U$1" library="texas" deviceset="SN65220DBVR" device=""/>
+<part name="U$2" library="texas" deviceset="SN65220DBVR" device=""/>
+<part name="U$3" library="texas" deviceset="SN65220DBVR" device=""/>
+<part name="U$4" library="texas" deviceset="SN65220DBVR" device=""/>
+<part name="U$5" library="texas" deviceset="SN65220DBVR" device=""/>
+<part name="U$6" library="texas" deviceset="SN65220DBVR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4373,23 +4424,23 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <instance part="JP4" gate="G$1" x="60.96" y="-144.78"/>
 <instance part="G1" gate="G$1" x="-129.54" y="78.74"/>
 <instance part="U1" gate="G$1" x="-238.76" y="-10.16"/>
-<instance part="G2" gate="G$1" x="-238.76" y="-88.9"/>
-<instance part="G3" gate="G$1" x="-238.76" y="-121.92"/>
-<instance part="G4" gate="G$1" x="-203.2" y="-127" rot="R90"/>
-<instance part="G5" gate="G$1" x="-203.2" y="-119.38" rot="R90"/>
-<instance part="G6" gate="G$1" x="-203.2" y="-116.84" rot="R90"/>
-<instance part="G7" gate="G$1" x="-203.2" y="-104.14"/>
-<instance part="G8" gate="G$1" x="-198.12" y="-101.6"/>
-<instance part="G9" gate="G$1" x="-193.04" y="-93.98"/>
-<instance part="G10" gate="G$1" x="-187.96" y="-91.44"/>
-<instance part="C1" gate="G$1" x="-281.94" y="-132.08"/>
-<instance part="C2" gate="G$1" x="-281.94" y="-99.06"/>
+<instance part="G3" gate="G$1" x="-241.3" y="-88.9"/>
+<instance part="G4" gate="G$1" x="-205.74" y="-93.98" rot="R90"/>
+<instance part="G5" gate="G$1" x="-205.74" y="-86.36" rot="R90"/>
+<instance part="G6" gate="G$1" x="-205.74" y="-83.82" rot="R90"/>
+<instance part="C1" gate="G$1" x="-284.48" y="-99.06"/>
 <instance part="LED1" gate="G$1" x="-218.44" y="60.96" rot="R90"/>
 <instance part="LED2" gate="G$1" x="-218.44" y="50.8" rot="R90"/>
 <instance part="LED3" gate="G$1" x="-218.44" y="71.12" rot="R90"/>
 <instance part="LED4" gate="G$1" x="-246.38" y="71.12" rot="R270"/>
 <instance part="LED5" gate="G$1" x="-246.38" y="60.96" rot="R270"/>
 <instance part="LED6" gate="G$1" x="-246.38" y="50.8" rot="R270"/>
+<instance part="U$1" gate="G$1" x="-129.54" y="48.26"/>
+<instance part="U$2" gate="G$1" x="-129.54" y="20.32"/>
+<instance part="U$3" gate="G$1" x="-129.54" y="-7.62"/>
+<instance part="U$4" gate="G$1" x="-129.54" y="-38.1"/>
+<instance part="U$5" gate="G$1" x="-129.54" y="-66.04"/>
+<instance part="U$6" gate="G$1" x="-129.54" y="-93.98"/>
 </instances>
 <busses>
 </busses>
@@ -4947,66 +4998,33 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <wire x1="-254" y1="22.86" x2="-254" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="G2" gate="G$1" pin="GND1"/>
-<wire x1="-254" y1="-81.28" x2="-269.24" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-269.24" y="-81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="G2" gate="G$1" pin="GND2"/>
-<wire x1="-254" y1="-91.44" x2="-269.24" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-269.24" y="-91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="G3" gate="G$1" pin="GND1"/>
-<wire x1="-254" y1="-114.3" x2="-269.24" y2="-114.3" width="0.1524" layer="91"/>
-<label x="-269.24" y="-114.3" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-81.28" x2="-271.78" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-271.78" y="-81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="G3" gate="G$1" pin="GND2"/>
-<wire x1="-254" y1="-124.46" x2="-269.24" y2="-124.46" width="0.1524" layer="91"/>
-<label x="-269.24" y="-124.46" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-91.44" x2="-271.78" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-271.78" y="-91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-200.66" y1="-116.84" x2="-195.58" y2="-116.84" width="0.1524" layer="91"/>
-<label x="-200.66" y="-116.84" size="1.778" layer="95"/>
+<wire x1="-203.2" y1="-83.82" x2="-203.12" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-203.2" y="-83.82" size="1.778" layer="95"/>
+<pinref part="G6" gate="G$1" pin="-"/>
+<wire x1="-203.12" y1="-83.82" x2="-198.12" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-203.12" y="-83.82"/>
 </segment>
 <segment>
-<wire x1="-200.66" y1="-119.38" x2="-195.58" y2="-119.38" width="0.1524" layer="91"/>
-<label x="-200.66" y="-119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="-203.2" y1="-106.68" x2="-203.2" y2="-106.76" width="0.1524" layer="91"/>
-<wire x1="-203.2" y1="-106.76" x2="-203.2" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="-203.2" y1="-109.22" x2="-198.12" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-109.22" x2="-193.04" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-109.22" x2="-187.96" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="-187.96" y1="-109.22" x2="-187.96" y2="-94.06" width="0.1524" layer="91"/>
-<wire x1="-187.96" y1="-94.06" x2="-187.96" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-96.52" x2="-193.04" y2="-96.6" width="0.1524" layer="91"/>
-<junction x="-193.04" y="-109.22"/>
-<wire x1="-193.04" y1="-96.6" x2="-193.04" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-104.14" x2="-198.12" y2="-104.22" width="0.1524" layer="91"/>
-<junction x="-198.12" y="-109.22"/>
-<pinref part="G7" gate="G$1" pin="-"/>
-<junction x="-203.2" y="-106.76"/>
-<pinref part="G8" gate="G$1" pin="-"/>
-<wire x1="-198.12" y1="-104.22" x2="-198.12" y2="-109.22" width="0.1524" layer="91"/>
-<junction x="-198.12" y="-104.22"/>
-<pinref part="G9" gate="G$1" pin="-"/>
-<junction x="-193.04" y="-96.6"/>
-<pinref part="G10" gate="G$1" pin="-"/>
-<junction x="-187.96" y="-94.06"/>
-<label x="-193.04" y="-109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-281.94" y1="-104.14" x2="-294.64" y2="-104.14" width="0.1524" layer="91"/>
-<label x="-294.64" y="-104.14" size="1.778" layer="95"/>
+<wire x1="-203.2" y1="-86.36" x2="-203.12" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-203.2" y="-86.36" size="1.778" layer="95"/>
+<pinref part="G5" gate="G$1" pin="-"/>
+<wire x1="-203.12" y1="-86.36" x2="-198.12" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-203.12" y="-86.36"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-281.94" y1="-137.16" x2="-294.64" y2="-137.16" width="0.1524" layer="91"/>
-<label x="-294.64" y="-137.16" size="1.778" layer="95"/>
+<wire x1="-284.48" y1="-104.14" x2="-297.18" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-297.18" y="-104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
@@ -5021,6 +5039,66 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="-213.36" y1="60.96" x2="-208.28" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-208.28" y="60.96"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="48.26" x2="-160.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="-160.02" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="48.26" x2="-99.06" y2="48.26" width="0.1524" layer="91"/>
+<label x="-104.14" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="20.32" x2="-160.02" y2="20.32" width="0.1524" layer="91"/>
+<label x="-160.02" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="20.32" x2="-99.06" y2="20.32" width="0.1524" layer="91"/>
+<label x="-104.14" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="-7.62" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-160.02" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-104.14" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="-38.1" x2="-160.02" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-160.02" y="-38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="-38.1" x2="-99.06" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-104.14" y="-38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="-66.04" x2="-160.02" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-160.02" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="-66.04" x2="-99.06" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-104.14" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND@2"/>
+<wire x1="-144.78" y1="-93.98" x2="-160.02" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-160.02" y="-93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND@5"/>
+<wire x1="-114.3" y1="-93.98" x2="-99.06" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-104.14" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -5299,28 +5377,16 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="-109.22" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="G2" gate="G$1" pin="IN1"/>
-<wire x1="-254" y1="-83.82" x2="-281.94" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-269.24" y="-83.82" size="1.778" layer="95"/>
-<pinref part="G2" gate="G$1" pin="IN2"/>
-<wire x1="-254" y1="-93.98" x2="-281.94" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-269.24" y="-93.98" size="1.778" layer="95"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-281.94" y1="-96.52" x2="-281.94" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="-281.94" y1="-83.82" x2="-281.94" y2="-93.98" width="0.1524" layer="91"/>
-<junction x="-281.94" y="-93.98"/>
-</segment>
-<segment>
 <pinref part="G3" gate="G$1" pin="IN2"/>
-<wire x1="-254" y1="-127" x2="-281.94" y2="-127" width="0.1524" layer="91"/>
-<label x="-269.24" y="-127" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-93.98" x2="-284.48" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-271.78" y="-93.98" size="1.778" layer="95"/>
 <pinref part="G3" gate="G$1" pin="IN1"/>
-<wire x1="-254" y1="-116.84" x2="-281.94" y2="-116.84" width="0.1524" layer="91"/>
-<label x="-269.24" y="-116.84" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-83.82" x2="-284.48" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-271.78" y="-83.82" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-281.94" y1="-116.84" x2="-281.94" y2="-127" width="0.1524" layer="91"/>
-<wire x1="-281.94" y1="-127" x2="-281.94" y2="-129.54" width="0.1524" layer="91"/>
-<junction x="-281.94" y="-127"/>
+<wire x1="-284.48" y1="-83.82" x2="-284.48" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-284.48" y1="-93.98" x2="-284.48" y2="-96.52" width="0.1524" layer="91"/>
+<junction x="-284.48" y="-93.98"/>
 </segment>
 </net>
 <net name="GPIO_15" class="0">
@@ -6236,17 +6302,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <label x="96.52" y="-129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB-5V_1" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="OUT1"/>
-<label x="-220.98" y="-83.82" size="1.778" layer="95"/>
-<wire x1="-223.52" y1="-83.82" x2="-187.96" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="-187.96" y1="-83.82" x2="-187.96" y2="-86.296" width="0.1524" layer="91"/>
-<pinref part="G10" gate="G$1" pin="+"/>
-<wire x1="-187.96" y1="-86.296" x2="-187.96" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="-187.96" y="-86.296"/>
-</segment>
-</net>
 <net name="USB-M_1" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$61"/>
@@ -6543,22 +6598,12 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </net>
 <net name="!PWRON1!" class="0">
 <segment>
-<pinref part="G2" gate="G$1" pin="!EN1!"/>
-<wire x1="-254" y1="-86.36" x2="-269.24" y2="-86.36" width="0.1524" layer="91"/>
-<label x="-269.24" y="-86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="!PWRON1!"/>
 <wire x1="-271.78" y1="-22.86" x2="-287.02" y2="-22.86" width="0.1524" layer="91"/>
 <label x="-287.02" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!PWRON2!" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="!EN2!"/>
-<wire x1="-254" y1="-88.9" x2="-269.24" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-269.24" y="-88.9" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRON2!"/>
 <wire x1="-248.92" y1="-43.18" x2="-248.92" y2="-53.34" width="0.1524" layer="91"/>
@@ -6567,22 +6612,12 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </net>
 <net name="!PWRON3!" class="0">
 <segment>
-<pinref part="G2" gate="G$1" pin="!EN3!"/>
-<wire x1="-254" y1="-96.52" x2="-269.24" y2="-96.52" width="0.1524" layer="91"/>
-<label x="-269.24" y="-96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="!PWRON3!"/>
 <wire x1="-236.22" y1="-43.18" x2="-236.22" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-236.22" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="!PWRON4!" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="!EN4!"/>
-<wire x1="-254" y1="-99.06" x2="-269.24" y2="-99.06" width="0.1524" layer="91"/>
-<label x="-269.24" y="-99.06" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRON4!"/>
 <wire x1="-226.06" y1="-43.18" x2="-226.06" y2="-53.34" width="0.1524" layer="91"/>
@@ -6591,33 +6626,12 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </net>
 <net name="!OVERCUR1!" class="0">
 <segment>
-<pinref part="G2" gate="G$1" pin="!OC1!"/>
-<wire x1="-223.52" y1="-81.28" x2="-208.28" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-220.98" y="-81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR1!"/>
 <wire x1="-271.78" y1="-25.4" x2="-287.02" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-287.02" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USB-5V_2" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="OUT2"/>
-<label x="-220.98" y="-86.36" size="1.778" layer="95"/>
-<wire x1="-223.52" y1="-86.36" x2="-193.04" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-193.04" y1="-86.36" x2="-193.04" y2="-88.836" width="0.1524" layer="91"/>
-<pinref part="G9" gate="G$1" pin="+"/>
-<wire x1="-193.04" y1="-88.836" x2="-193.04" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-193.04" y="-88.836"/>
-</segment>
-</net>
 <net name="!OVERCUR2!" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="!OC2!"/>
-<wire x1="-223.52" y1="-88.9" x2="-208.28" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-220.98" y="-88.9" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR2!"/>
 <wire x1="-246.38" y1="-43.18" x2="-246.38" y2="-53.34" width="0.1524" layer="91"/>
@@ -6626,22 +6640,12 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </net>
 <net name="!OVERCUR3!" class="0">
 <segment>
-<pinref part="G2" gate="G$1" pin="!OC3!"/>
-<wire x1="-223.52" y1="-91.44" x2="-208.28" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-220.98" y="-91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR3!"/>
 <wire x1="-233.68" y1="-43.18" x2="-233.68" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-233.68" y="-53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="!OVERCUR4!" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="!OC4!"/>
-<wire x1="-223.52" y1="-99.06" x2="-208.28" y2="-99.06" width="0.1524" layer="91"/>
-<label x="-220.98" y="-99.06" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR4!"/>
 <wire x1="-205.74" y1="-25.4" x2="-193.04" y2="-25.4" width="0.1524" layer="91"/>
@@ -6651,8 +6655,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="!PWRON5!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!EN1!"/>
-<wire x1="-254" y1="-119.38" x2="-269.24" y2="-119.38" width="0.1524" layer="91"/>
-<label x="-269.24" y="-119.38" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-86.36" x2="-271.78" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-271.78" y="-86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRON5!"/>
@@ -6663,8 +6667,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="!PWRON6!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!EN2!"/>
-<wire x1="-254" y1="-121.92" x2="-269.24" y2="-121.92" width="0.1524" layer="91"/>
-<label x="-269.24" y="-121.92" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-88.9" x2="-271.78" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-271.78" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRON6!"/>
@@ -6675,8 +6679,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="!PWRON7!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!EN3!"/>
-<wire x1="-254" y1="-129.54" x2="-269.24" y2="-129.54" width="0.1524" layer="91"/>
-<label x="-269.24" y="-129.54" size="1.778" layer="95"/>
+<wire x1="-256.54" y1="-96.52" x2="-271.78" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-271.78" y="-96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!PWRON7!"/>
@@ -6687,8 +6691,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="!OVERCUR5!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!OC1!"/>
-<wire x1="-223.52" y1="-114.3" x2="-208.28" y2="-114.3" width="0.1524" layer="91"/>
-<label x="-220.98" y="-114.3" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-81.28" x2="-210.82" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-223.52" y="-81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR5!"/>
@@ -6699,28 +6703,28 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="USB-5V_5" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="OUT1"/>
-<wire x1="-223.52" y1="-116.84" x2="-208.344" y2="-116.84" width="0.1524" layer="91"/>
-<label x="-220.98" y="-116.84" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-83.82" x2="-210.884" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-223.52" y="-83.82" size="1.778" layer="95"/>
 <pinref part="G6" gate="G$1" pin="+"/>
-<wire x1="-208.344" y1="-116.84" x2="-208.28" y2="-116.84" width="0.1524" layer="91"/>
-<junction x="-208.344" y="-116.84"/>
+<wire x1="-210.884" y1="-83.82" x2="-210.82" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-210.884" y="-83.82"/>
 </segment>
 </net>
 <net name="USB-5V_6" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="OUT2"/>
-<wire x1="-223.52" y1="-119.38" x2="-208.344" y2="-119.38" width="0.1524" layer="91"/>
-<label x="-220.98" y="-119.38" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-86.36" x2="-210.884" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-223.52" y="-86.36" size="1.778" layer="95"/>
 <pinref part="G5" gate="G$1" pin="+"/>
-<wire x1="-208.344" y1="-119.38" x2="-208.28" y2="-119.38" width="0.1524" layer="91"/>
-<junction x="-208.344" y="-119.38"/>
+<wire x1="-210.884" y1="-86.36" x2="-210.82" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-210.884" y="-86.36"/>
 </segment>
 </net>
 <net name="!OVERCUR6!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!OC2!"/>
-<wire x1="-223.52" y1="-121.92" x2="-208.28" y2="-121.92" width="0.1524" layer="91"/>
-<label x="-220.98" y="-121.92" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-88.9" x2="-210.82" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-223.52" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR6!"/>
@@ -6731,8 +6735,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="!OVERCUR7!" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="!OC3!"/>
-<wire x1="-223.52" y1="-124.46" x2="-208.28" y2="-124.46" width="0.1524" layer="91"/>
-<label x="-220.98" y="-124.46" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-91.44" x2="-210.82" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-223.52" y="-91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="!OVERCUR7!"/>
@@ -6743,39 +6747,20 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="USB-5V_7" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="OUT3"/>
-<wire x1="-223.52" y1="-127" x2="-208.344" y2="-127" width="0.1524" layer="91"/>
-<label x="-220.98" y="-127" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="-93.98" x2="-210.884" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-223.52" y="-93.98" size="1.778" layer="95"/>
 <pinref part="G4" gate="G$1" pin="+"/>
-<wire x1="-208.344" y1="-127" x2="-208.28" y2="-127" width="0.1524" layer="91"/>
-<junction x="-208.344" y="-127"/>
-</segment>
-</net>
-<net name="USB-5V_3" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="OUT3"/>
-<wire x1="-223.52" y1="-93.98" x2="-198.12" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-220.98" y="-93.98" size="1.778" layer="95"/>
-<wire x1="-198.12" y1="-93.98" x2="-198.12" y2="-96.456" width="0.1524" layer="91"/>
-<pinref part="G8" gate="G$1" pin="+"/>
-<wire x1="-198.12" y1="-96.456" x2="-198.12" y2="-96.52" width="0.1524" layer="91"/>
-<junction x="-198.12" y="-96.456"/>
-</segment>
-</net>
-<net name="USB-5V_4" class="0">
-<segment>
-<pinref part="G2" gate="G$1" pin="OUT4"/>
-<wire x1="-223.52" y1="-96.52" x2="-203.2" y2="-96.52" width="0.1524" layer="91"/>
-<label x="-220.98" y="-96.52" size="1.778" layer="95"/>
-<wire x1="-203.2" y1="-99.06" x2="-203.2" y2="-98.996" width="0.1524" layer="91"/>
-<pinref part="G7" gate="G$1" pin="+"/>
-<wire x1="-203.2" y1="-98.996" x2="-203.2" y2="-96.52" width="0.1524" layer="91"/>
-<junction x="-203.2" y="-98.996"/>
+<wire x1="-210.884" y1="-93.98" x2="-210.82" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-210.884" y="-93.98"/>
 </segment>
 </net>
 <net name="GND\" class="0">
 <segment>
-<wire x1="-200.66" y1="-127" x2="-195.58" y2="-127" width="0.1524" layer="91"/>
-<label x="-200.66" y="-127" size="1.778" layer="95"/>
+<wire x1="-203.2" y1="-93.98" x2="-203.12" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-203.2" y="-93.98" size="1.778" layer="95"/>
+<pinref part="G4" gate="G$1" pin="-"/>
+<wire x1="-203.12" y1="-93.98" x2="-198.12" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-203.12" y="-93.98"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6814,6 +6799,78 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <pinref part="JP4" gate="G$1" pin="P$63"/>
 <wire x1="109.22" y1="-127" x2="96.52" y2="-127" width="0.1524" layer="91"/>
 <label x="96.52" y="-127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="53.34" x2="-99.06" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="43.18" x2="-99.06" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="25.4" x2="-99.06" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="15.24" x2="-99.06" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="-2.54" x2="-99.06" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="-12.7" x2="-99.06" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="-33.02" x2="-99.06" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="-43.18" x2="-99.06" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="-60.96" x2="-99.06" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="-71.12" x2="-99.06" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="-88.9" x2="-99.06" y2="-88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="B"/>
+<wire x1="-114.3" y1="-99.06" x2="-99.06" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
