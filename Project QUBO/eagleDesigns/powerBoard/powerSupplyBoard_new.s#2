@@ -10737,6 +10737,51 @@ http://www.linear-tech.com&lt;p&gt;
 <wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.44" y="-0.9" radius="0.22" width="0.127" layer="21"/>
 </package>
+<package name="LTC2497-UHF">
+<smd name="GND0" x="-2.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="SCL" x="-2.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="SDA" x="-1.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="GND1" x="-1.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="NC" x="-0.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="GND2" x="-0.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="COM" x="0.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH0" x="0.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH1" x="1.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH2" x="1.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH3" x="2.25" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH4" x="2.75" y="-2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH5" x="3.4" y="-1.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH6" x="3.4" y="-1" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH7" x="3.4" y="-0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH8" x="3.4" y="0" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH9" x="3.4" y="0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH10" x="3.4" y="1" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CH11" x="3.4" y="1.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="GND3" x="-2.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="REF-" x="-2.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="REF+" x="-1.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="VCC" x="-1.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="MUXOUTN" x="-0.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="ADCINN" x="-0.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="ADCINP" x="0.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="MUXOUTP" x="0.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH15" x="1.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH14" x="1.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH13" x="2.25" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CH12" x="2.75" y="2.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="CA2" x="-3.4" y="-1.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CA1" x="-3.4" y="-1" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="CA0" x="-3.4" y="-0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="F0" x="-3.4" y="0" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="GND4" x="-3.4" y="0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="GND5" x="-3.4" y="1" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="GND6" x="-3.4" y="1.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<wire x1="-3.6" y1="2.6" x2="3.6" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="2.6" x2="3.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-2.6" x2="-3.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-2.6" x2="-3.6" y2="2.6" width="0.127" layer="21"/>
+<circle x="-2.4" y="-1.4" radius="0.4472125" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4364">
@@ -10761,6 +10806,44 @@ http://www.linear-tech.com&lt;p&gt;
 <text x="-33.02" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-33.02" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="LTC2497">
+<wire x1="-25.4" y1="38.1" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-45.72" x2="20.32" y2="38.1" width="0.254" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="-25.4" y2="38.1" width="0.254" layer="94"/>
+<pin name="GND" x="-30.48" y="35.56" length="middle"/>
+<pin name="SCL" x="-30.48" y="30.48" length="middle"/>
+<pin name="SDA" x="-30.48" y="25.4" length="middle"/>
+<pin name="NC" x="-30.48" y="20.32" length="middle"/>
+<pin name="COM" x="-30.48" y="15.24" length="middle"/>
+<pin name="MUXOUTP" x="-30.48" y="10.16" length="middle"/>
+<pin name="MUXOUTN" x="-30.48" y="5.08" length="middle"/>
+<pin name="ADCINN" x="-30.48" y="0" length="middle"/>
+<pin name="ADCINP" x="-30.48" y="-5.08" length="middle"/>
+<pin name="REF+" x="-30.48" y="-10.16" length="middle"/>
+<pin name="REF-" x="-30.48" y="-15.24" length="middle"/>
+<pin name="CH15" x="25.4" y="-40.64" length="middle" rot="R180"/>
+<pin name="CH14" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="CH13" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="CH12" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="CH11" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="CH10" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="CH9" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="CH8" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="CH7" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="CH6" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="CH5" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="CH4" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="CH3" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="CH2" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="CH1" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="CH0" x="25.4" y="35.56" length="middle" rot="R180"/>
+<pin name="F0" x="-30.48" y="-20.32" length="middle"/>
+<pin name="CA0" x="-30.48" y="-25.4" length="middle"/>
+<pin name="CA1" x="-30.48" y="-30.48" length="middle"/>
+<pin name="CA2" x="-30.48" y="-35.56" length="middle"/>
+<pin name="VCC" x="-30.48" y="-40.64" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4364">
@@ -10783,6 +10866,52 @@ http://www.linear-tech.com&lt;p&gt;
 <connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
 <connect gate="G$1" pin="TMR" pad="TMR"/>
 <connect gate="G$1" pin="UV" pad="UV"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC2497">
+<gates>
+<gate name="G$1" symbol="LTC2497" x="0" y="0"/>
+</gates>
+<devices>
+<device name="UHF" package="LTC2497-UHF">
+<connects>
+<connect gate="G$1" pin="ADCINN" pad="ADCINN"/>
+<connect gate="G$1" pin="ADCINP" pad="ADCINP"/>
+<connect gate="G$1" pin="CA0" pad="CA0"/>
+<connect gate="G$1" pin="CA1" pad="CA1"/>
+<connect gate="G$1" pin="CA2" pad="CA2"/>
+<connect gate="G$1" pin="CH0" pad="CH0"/>
+<connect gate="G$1" pin="CH1" pad="CH1"/>
+<connect gate="G$1" pin="CH10" pad="CH10"/>
+<connect gate="G$1" pin="CH11" pad="CH11"/>
+<connect gate="G$1" pin="CH12" pad="CH12"/>
+<connect gate="G$1" pin="CH13" pad="CH13"/>
+<connect gate="G$1" pin="CH14" pad="CH14"/>
+<connect gate="G$1" pin="CH15" pad="CH15"/>
+<connect gate="G$1" pin="CH2" pad="CH2"/>
+<connect gate="G$1" pin="CH3" pad="CH3"/>
+<connect gate="G$1" pin="CH4" pad="CH4"/>
+<connect gate="G$1" pin="CH5" pad="CH5"/>
+<connect gate="G$1" pin="CH6" pad="CH6"/>
+<connect gate="G$1" pin="CH7" pad="CH7"/>
+<connect gate="G$1" pin="CH8" pad="CH8"/>
+<connect gate="G$1" pin="CH9" pad="CH9"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="F0" pad="F0"/>
+<connect gate="G$1" pin="GND" pad="GND0 GND1 GND2 GND3 GND4 GND5 GND6"/>
+<connect gate="G$1" pin="MUXOUTN" pad="MUXOUTN"/>
+<connect gate="G$1" pin="MUXOUTP" pad="MUXOUTP"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="REF+" pad="REF+"/>
+<connect gate="G$1" pin="REF-" pad="REF-"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
@@ -12522,6 +12651,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <part name="16V_CON" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="U$5" library="diode" deviceset="MMSZ5231BS" device="SOD323-REFLOW"/>
 <part name="JP1" library="samtec" deviceset="MPSC-01-80" device="MPSC-RA-LC"/>
+<part name="ADC1" library="linear" deviceset="LTC2497" device="UHF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12638,6 +12768,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <instance part="16V_CON" gate="G$1" x="200.66" y="83.82" rot="MR180"/>
 <instance part="U$5" gate="G$1" x="22.86" y="-15.24"/>
 <instance part="JP1" gate="G$1" x="363.22" y="20.32"/>
+<instance part="ADC1" gate="G$1" x="-7.62" y="-218.44"/>
 </instances>
 <busses>
 </busses>
@@ -13806,6 +13937,88 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <pinref part="BAT3CS" gate="G$1" pin="VIOUT"/>
 <wire x1="-55.88" y1="-86.36" x2="-53.34" y2="-86.36" width="0.1524" layer="91"/>
 <label x="-30.48" y="-91.44" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="16CSOUT" class="0">
+<segment>
+<pinref part="16VCS" gate="G$1" pin="VIOUT"/>
+<wire x1="142.24" y1="88.9" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="142.24" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12CSOUT" class="0">
+<segment>
+<pinref part="12VCS" gate="G$1" pin="VIOUT"/>
+<wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="142.24" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5CSOUT" class="0">
+<segment>
+<pinref part="5VCS" gate="G$1" pin="VIOUT"/>
+<wire x1="142.24" y1="-22.86" x2="144.78" y2="-22.86" width="0.1524" layer="91"/>
+<label x="142.24" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="3.3CSOUT" class="0">
+<segment>
+<pinref part="3.3VCS" gate="G$1" pin="VIOUT"/>
+<wire x1="142.24" y1="-71.12" x2="144.78" y2="-71.12" width="0.1524" layer="91"/>
+<label x="142.24" y="-73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="GND"/>
+<wire x1="-38.1" y1="-182.88" x2="-45.72" y2="-182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="SCL"/>
+<wire x1="-38.1" y1="-187.96" x2="-45.72" y2="-187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="SDA"/>
+<wire x1="-38.1" y1="-193.04" x2="-45.72" y2="-193.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="MUXOUTP"/>
+<wire x1="-38.1" y1="-208.28" x2="-48.26" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-208.28" x2="-48.26" y2="-218.44" width="0.1524" layer="91"/>
+<pinref part="ADC1" gate="G$1" pin="ADCINN"/>
+<wire x1="-48.26" y1="-218.44" x2="-38.1" y2="-218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="MUXOUTN"/>
+<wire x1="-38.1" y1="-213.36" x2="-40.64" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-213.36" x2="-40.64" y2="-223.52" width="0.1524" layer="91"/>
+<pinref part="ADC1" gate="G$1" pin="ADCINP"/>
+<wire x1="-40.64" y1="-223.52" x2="-38.1" y2="-223.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="REF+"/>
+<wire x1="-38.1" y1="-228.6" x2="-43.18" y2="-228.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="REF-"/>
+<wire x1="-38.1" y1="-233.68" x2="-43.18" y2="-233.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="ADC1" gate="G$1" pin="VCC"/>
+<wire x1="-38.1" y1="-259.08" x2="-43.18" y2="-259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

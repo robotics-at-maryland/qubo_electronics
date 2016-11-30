@@ -12602,6 +12602,76 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 </deviceset>
 </devicesets>
 </library>
+<library name="Jameco">
+<packages>
+<package name="LM35">
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LM35">
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VOUT" x="-15.24" y="7.62" length="middle"/>
+<pin name="N.C.1" x="-15.24" y="2.54" length="middle"/>
+<pin name="N.C.2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="+VS" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="N.C.3" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="N.C.4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="N.C.5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LM35">
+<gates>
+<gate name="G$1" symbol="LM35" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LM35">
+<connects>
+<connect gate="G$1" pin="+VS" pad="8"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="N.C.1" pad="2"/>
+<connect gate="G$1" pin="N.C.2" pad="3"/>
+<connect gate="G$1" pin="N.C.3" pad="5"/>
+<connect gate="G$1" pin="N.C.4" pad="6"/>
+<connect gate="G$1" pin="N.C.5" pad="7"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12722,10 +12792,11 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <part name="16V_CON" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="U$5" library="diode" deviceset="MMSZ5231BS" device="SOD323-REFLOW"/>
 <part name="JP1" library="samtec" deviceset="MPSC-01-80" device="MPSC-RA-LC"/>
-<part name="ADC1" library="linear" deviceset="LTC2497" device="UHF"/>
+<part name="ADC" library="linear" deviceset="LTC2497" device="UHF"/>
 <part name="U$6" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="U$9" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="U$10" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
+<part name="TEMP_SENSOR" library="Jameco" deviceset="LM35" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12842,10 +12913,11 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <instance part="16V_CON" gate="G$1" x="200.66" y="83.82" rot="MR180"/>
 <instance part="U$5" gate="G$1" x="22.86" y="-15.24"/>
 <instance part="JP1" gate="G$1" x="363.22" y="20.32"/>
-<instance part="ADC1" gate="G$1" x="-7.62" y="-218.44"/>
+<instance part="ADC" gate="G$1" x="-7.62" y="-218.44"/>
 <instance part="U$6" gate="G$1" x="-63.5" y="-243.84"/>
 <instance part="U$9" gate="G$1" x="-78.74" y="-248.92"/>
 <instance part="U$10" gate="G$1" x="-91.44" y="-254"/>
+<instance part="TEMP_SENSOR" gate="G$1" x="-302.26" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -13205,19 +13277,36 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <label x="195.58" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ADC1" gate="G$1" pin="F0"/>
+<pinref part="ADC" gate="G$1" pin="F0"/>
 <wire x1="-38.1" y1="-238.76" x2="-40.64" y2="-238.76" width="0.1524" layer="91"/>
 <label x="-43.18" y="-238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ADC1" gate="G$1" pin="REF-"/>
+<pinref part="ADC" gate="G$1" pin="REF-"/>
 <wire x1="-38.1" y1="-233.68" x2="-43.18" y2="-233.68" width="0.1524" layer="91"/>
 <label x="-45.72" y="-233.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ADC1" gate="G$1" pin="GND"/>
+<pinref part="ADC" gate="G$1" pin="GND"/>
 <wire x1="-38.1" y1="-182.88" x2="-45.72" y2="-182.88" width="0.1524" layer="91"/>
 <label x="-48.26" y="-182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="GND"/>
+<wire x1="-91.44" y1="-264.16" x2="-91.44" y2="-269.24" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<wire x1="-63.5" y1="-254" x2="-63.5" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-269.24" x2="-78.74" y2="-269.24" width="0.1524" layer="91"/>
+<label x="-71.12" y="-269.24" size="1.778" layer="95"/>
+<pinref part="U$9" gate="G$1" pin="GND"/>
+<wire x1="-78.74" y1="-269.24" x2="-63.5" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-269.24" x2="-78.74" y2="-259.08" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-269.24"/>
+</segment>
+<segment>
+<pinref part="TEMP_SENSOR" gate="G$1" pin="GND"/>
+<wire x1="-317.5" y1="81.28" x2="-322.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="-322.58" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -13412,14 +13501,31 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <pinref part="C_BYP6" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="ADC1" gate="G$1" pin="VCC"/>
+<pinref part="ADC" gate="G$1" pin="VCC"/>
 <wire x1="-38.1" y1="-259.08" x2="-43.18" y2="-259.08" width="0.1524" layer="91"/>
 <label x="-43.18" y="-259.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ADC1" gate="G$1" pin="REF+"/>
+<pinref part="ADC" gate="G$1" pin="REF+"/>
 <wire x1="-38.1" y1="-228.6" x2="-43.18" y2="-228.6" width="0.1524" layer="91"/>
 <label x="-43.18" y="-228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="PWR"/>
+<wire x1="-91.44" y1="-243.84" x2="-91.44" y2="-228.6" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="PWR"/>
+<wire x1="-91.44" y1="-228.6" x2="-78.74" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-228.6" x2="-63.5" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-228.6" x2="-63.5" y2="-233.68" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="PWR"/>
+<wire x1="-78.74" y1="-238.76" x2="-78.74" y2="-228.6" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-228.6"/>
+<label x="-86.36" y="-228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP_SENSOR" gate="G$1" pin="+VS"/>
+<wire x1="-287.02" y1="96.52" x2="-281.94" y2="96.52" width="0.1524" layer="91"/>
+<label x="-287.02" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -14071,55 +14177,62 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="SCL"/>
+<pinref part="ADC" gate="G$1" pin="SCL"/>
 <wire x1="-38.1" y1="-187.96" x2="-45.72" y2="-187.96" width="0.1524" layer="91"/>
 <label x="-48.26" y="-187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="SDA"/>
+<pinref part="ADC" gate="G$1" pin="SDA"/>
 <wire x1="-38.1" y1="-193.04" x2="-45.72" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-48.26" y="-193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="MUXOUTP"/>
+<pinref part="ADC" gate="G$1" pin="MUXOUTP"/>
 <wire x1="-38.1" y1="-208.28" x2="-48.26" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-208.28" x2="-48.26" y2="-218.44" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="G$1" pin="ADCINN"/>
+<pinref part="ADC" gate="G$1" pin="ADCINN"/>
 <wire x1="-48.26" y1="-218.44" x2="-38.1" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$65" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="MUXOUTN"/>
+<pinref part="ADC" gate="G$1" pin="MUXOUTN"/>
 <wire x1="-38.1" y1="-213.36" x2="-40.64" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-213.36" x2="-40.64" y2="-223.52" width="0.1524" layer="91"/>
-<pinref part="ADC1" gate="G$1" pin="ADCINP"/>
+<pinref part="ADC" gate="G$1" pin="ADCINP"/>
 <wire x1="-40.64" y1="-223.52" x2="-38.1" y2="-223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="CA0"/>
+<pinref part="ADC" gate="G$1" pin="CA0"/>
 <pinref part="U$6" gate="G$1" pin="MID"/>
 <wire x1="-38.1" y1="-243.84" x2="-58.42" y2="-243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$70" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="CA1"/>
+<pinref part="ADC" gate="G$1" pin="CA1"/>
 <pinref part="U$9" gate="G$1" pin="MID"/>
 <wire x1="-38.1" y1="-248.92" x2="-73.66" y2="-248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$71" class="0">
+<net name="N$67" class="0">
 <segment>
-<pinref part="ADC1" gate="G$1" pin="CA2"/>
 <pinref part="U$10" gate="G$1" pin="MID"/>
-<wire x1="-38.1" y1="-254" x2="-86.36" y2="-254" width="0.1524" layer="91"/>
+<pinref part="ADC" gate="G$1" pin="CA2"/>
+<wire x1="-86.36" y1="-254" x2="-38.1" y2="-254" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="TEMP_SENSOR" gate="G$1" pin="VOUT"/>
+<wire x1="-317.5" y1="96.52" x2="-322.58" y2="96.52" width="0.1524" layer="91"/>
+<label x="-322.58" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
