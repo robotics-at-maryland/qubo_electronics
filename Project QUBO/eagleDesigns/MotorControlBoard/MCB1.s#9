@@ -752,6 +752,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <part name="JMP9" library="molex" deviceset="KK254_VERT_3PIN" device="22-10-2031"/>
 <part name="JP18" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="JP19" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP6" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -790,6 +791,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <instance part="JMP9" gate="JMP1" x="66.04" y="-55.88"/>
 <instance part="JP18" gate="G$1" x="58.42" y="-78.74"/>
 <instance part="JP19" gate="G$1" x="93.98" y="-78.74"/>
+<instance part="JP6" gate="G$1" x="-124.46" y="25.4"/>
 </instances>
 <busses>
 </busses>
