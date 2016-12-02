@@ -5172,13 +5172,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-53.34" y1="116.84" x2="-48.26" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="R6" class="0">
-<segment>
-<label x="-71.12" y="109.22" size="1.778" layer="95"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-76.2" y1="109.22" x2="-48.26" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="R7" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="LY"/>
@@ -5287,6 +5280,14 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-119.38" y1="78.74" x2="-119.38" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="-119.38" y1="76.2" x2="-124.46" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="R6" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="SY"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="109.22" x2="-48.26" y2="109.22" width="0.1524" layer="91"/>
+<label x="-71.12" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

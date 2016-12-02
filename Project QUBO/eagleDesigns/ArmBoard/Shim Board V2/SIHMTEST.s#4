@@ -5080,7 +5080,7 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$62"/>
 <wire x1="134.62" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
-<label x="121.92" y="149.86" size="1.778" layer="95" rot="R180"/>
+<label x="121.92" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
