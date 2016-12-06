@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -124,7 +124,6 @@
 <smd name="P$24" x="-6.97" y="4.6" dx="1.5" dy="0.635" layer="1" rot="R90"/>
 <text x="-8.5" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-6.5" y="-0.5" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-6.35" y="-2.54" radius="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -161,30 +160,30 @@
 <text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="AD7306">
-<pin name="V+" x="-17.78" y="10.16" visible="pin" length="middle"/>
-<pin name="C1+" x="-17.78" y="5.08" visible="pin" length="middle"/>
-<pin name="C1-" x="-17.78" y="2.54" visible="pin" length="middle"/>
-<pin name="R2-IN" x="20.32" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="T1-OUT" x="20.32" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="T2-OUT" x="20.32" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="-17.78" y="12.7" visible="pin" length="middle"/>
-<pin name="R1-IN(B)" x="20.32" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="R1-IN/(A)" x="20.32" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="T3-OUT(B)" x="20.32" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="T3-OUT(A)" x="20.32" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="NC@12" x="-17.78" y="-10.16" visible="pin" length="middle"/>
-<pin name="NC@13" x="-17.78" y="-12.7" visible="pin" length="middle"/>
-<pin name="GND@14" x="-17.78" y="-7.62" visible="pin" length="middle"/>
-<pin name="232/!422!" x="-17.78" y="-15.24" visible="pin" length="middle"/>
-<pin name="T3-IN" x="20.32" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="R1-OUT" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@18" x="-17.78" y="-5.08" visible="pin" length="middle"/>
-<pin name="T2-IN" x="20.32" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="T1-IN" x="20.32" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="R2-OUT" x="20.32" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="C2+" x="-17.78" y="0" visible="pin" length="middle"/>
-<pin name="C2-" x="-17.78" y="-2.54" visible="pin" length="middle"/>
-<pin name="V-" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="V+" x="-17.78" y="10.16" length="middle"/>
+<pin name="C1+" x="-17.78" y="5.08" length="middle"/>
+<pin name="C1-" x="-17.78" y="2.54" length="middle"/>
+<pin name="R2-IN" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="T1-OUT" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="T2-OUT" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="VCC" x="-17.78" y="12.7" length="middle"/>
+<pin name="R1-IN(B)" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="R1-IN/(A)" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="T3-OUT(B)" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="T3-OUT(A)" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="NC@12" x="-17.78" y="-10.16" length="middle"/>
+<pin name="NC@13" x="-17.78" y="-12.7" length="middle"/>
+<pin name="GND@14" x="-17.78" y="-7.62" length="middle"/>
+<pin name="232/!422!" x="-17.78" y="-15.24" length="middle"/>
+<pin name="T3-IN" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="R1-OUT" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="GND@18" x="-17.78" y="-5.08" length="middle"/>
+<pin name="T2-IN" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="T1-IN" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="R2-OUT" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="C2+" x="-17.78" y="0" length="middle"/>
+<pin name="C2-" x="-17.78" y="-2.54" length="middle"/>
+<pin name="V-" x="-17.78" y="7.62" length="middle"/>
 <wire x1="-12.7" y1="15.24" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-17.78" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-17.78" x2="15.24" y2="15.24" width="0.254" layer="94"/>
@@ -225,46 +224,6 @@
 <connect gate="U1" pin="VEE@7" pad="P$7"/>
 <connect gate="U1" pin="VEE@9" pad="P$9"/>
 <connect gate="U1" pin="VREF" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AD7306JRZ">
-<description>AD7306 - 24 SOIC package&lt;br&gt;
-RS232/RS422 Transciever</description>
-<gates>
-<gate name="G$1" symbol="AD7306" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-24">
-<connects>
-<connect gate="G$1" pin="232/!422!" pad="P$15"/>
-<connect gate="G$1" pin="C1+" pad="P$2"/>
-<connect gate="G$1" pin="C1-" pad="P$3"/>
-<connect gate="G$1" pin="C2+" pad="P$22"/>
-<connect gate="G$1" pin="C2-" pad="P$23"/>
-<connect gate="G$1" pin="GND@14" pad="P$14"/>
-<connect gate="G$1" pin="GND@18" pad="P$18"/>
-<connect gate="G$1" pin="NC@12" pad="P$12"/>
-<connect gate="G$1" pin="NC@13" pad="P$13"/>
-<connect gate="G$1" pin="R1-IN(B)" pad="P$8"/>
-<connect gate="G$1" pin="R1-IN/(A)" pad="P$9"/>
-<connect gate="G$1" pin="R1-OUT" pad="P$17"/>
-<connect gate="G$1" pin="R2-IN" pad="P$4"/>
-<connect gate="G$1" pin="R2-OUT" pad="P$21"/>
-<connect gate="G$1" pin="T1-IN" pad="P$20"/>
-<connect gate="G$1" pin="T1-OUT" pad="P$5"/>
-<connect gate="G$1" pin="T2-IN" pad="P$19"/>
-<connect gate="G$1" pin="T2-OUT" pad="P$6"/>
-<connect gate="G$1" pin="T3-IN" pad="P$16"/>
-<connect gate="G$1" pin="T3-OUT(A)" pad="P$11"/>
-<connect gate="G$1" pin="T3-OUT(B)" pad="P$10"/>
-<connect gate="G$1" pin="V+" pad="P$1"/>
-<connect gate="G$1" pin="V-" pad="P$24"/>
-<connect gate="G$1" pin="VCC" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>

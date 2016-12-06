@@ -1220,11 +1220,16 @@ Use only at your own risk.&lt;/p&gt;</description>
 <label x="76.2" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PF3" class="0">
+<net name="CANTX" class="0">
 <segment>
 <pinref part="JP4" gate="A" pin="2"/>
 <wire x1="137.16" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
 <label x="116.84" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="X" pin="TXD"/>
+<wire x1="68.58" y1="180.34" x2="58.42" y2="180.34" width="0.1524" layer="91"/>
+<label x="58.42" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -1379,6 +1384,11 @@ Use only at your own risk.&lt;/p&gt;</description>
 <pinref part="IC1" gate="X" pin="VSS"/>
 <wire x1="68.58" y1="177.8" x2="58.42" y2="177.8" width="0.1524" layer="91"/>
 <label x="58.42" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="X" pin="RS"/>
+<wire x1="93.98" y1="180.34" x2="101.6" y2="180.34" width="0.1524" layer="91"/>
+<label x="96.52" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UNBUFFERSCL1" class="0">
@@ -1838,11 +1848,6 @@ Use only at your own risk.&lt;/p&gt;</description>
 <label x="81.28" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
-<wire x1="55.88" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
-<label x="38.1" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="8"/>
 <wire x1="55.88" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 <label x="38.1" y="71.12" size="1.778" layer="95"/>
@@ -2045,6 +2050,18 @@ Use only at your own risk.&lt;/p&gt;</description>
 <pinref part="IC1" gate="X" pin="VDD"/>
 <wire x1="68.58" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <label x="58.42" y="175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CANRX" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="55.88" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
+<label x="38.1" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="X" pin="RXD"/>
+<wire x1="68.58" y1="172.72" x2="58.42" y2="172.72" width="0.1524" layer="91"/>
+<label x="58.42" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
