@@ -753,6 +753,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <part name="JP18" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="JP19" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="JP6" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP12" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -792,20 +793,47 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <instance part="JP18" gate="G$1" x="58.42" y="-78.74"/>
 <instance part="JP19" gate="G$1" x="93.98" y="-78.74"/>
 <instance part="JP6" gate="G$1" x="-124.46" y="25.4"/>
+<instance part="JP12" gate="G$1" x="-124.46" y="147.32"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="BATGND" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$1"/>
 <wire x1="-124.46" y1="127" x2="-129.54" y2="127" width="0.1524" layer="91"/>
+<label x="-129.54" y="127" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$2"/>
 <wire x1="-124.46" y1="121.92" x2="-129.54" y2="121.92" width="0.1524" layer="91"/>
+<label x="-129.54" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="JP12" gate="G$1" pin="P$1"/>
+<wire x1="-124.46" y1="149.86" x2="-129.54" y2="149.86" width="0.1524" layer="91"/>
+<label x="-129.54" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP12" gate="G$1" pin="P$2"/>
+<wire x1="-124.46" y1="144.78" x2="-129.54" y2="144.78" width="0.1524" layer="91"/>
+<label x="-129.54" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="P$1"/>
+<wire x1="-124.46" y1="27.94" x2="-129.54" y2="27.94" width="0.1524" layer="91"/>
+<label x="-129.54" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5VGND" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="P$2"/>
+<wire x1="-124.46" y1="22.86" x2="-129.54" y2="22.86" width="0.1524" layer="91"/>
+<label x="-129.54" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
