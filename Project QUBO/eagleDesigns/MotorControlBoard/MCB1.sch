@@ -8511,12 +8511,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="50.8" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="F3" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <wire x1="50.8" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
@@ -8555,6 +8549,13 @@ type 0309, grid 2.5 mm</description>
 <wire x1="139.7" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="F9" gate="G$1" pin="2"/>
 <pinref part="U$21" gate="G$1" pin="IP+"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="F3" gate="G$1" pin="2"/>
+<pinref part="U$13" gate="G$1" pin="IP+"/>
+<wire x1="45.72" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

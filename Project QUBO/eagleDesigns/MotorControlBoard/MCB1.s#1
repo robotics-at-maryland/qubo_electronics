@@ -7425,41 +7425,41 @@ type 0309, grid 2.5 mm</description>
 <part name="U$4" library="molex" deviceset="SUPERSABRE_3CIRCUIT" device=""/>
 <part name="U$5" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$6" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
-<part name="C1" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C1" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="U$13" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C4" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C4" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="2PIN_11" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$14" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$15" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C5" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C6" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="2PIN_4" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$7" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$8" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C8" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="U$11" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="2PIN_6" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="2PIN_7" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$12" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$16" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
-<part name="C11" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C11" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="U$17" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C13" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C14" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C14" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="2PIN_8" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$18" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$19" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C15" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C16" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C16" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="2PIN_9" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$20" library="molex" deviceset="ULTRAFIT_2PIN" device=""/>
 <part name="U$21" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C17" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
-<part name="C18" library="resistor" deviceset="C-US" device="C0805"/>
+<part name="C18" library="resistor" deviceset="C-US" device="C0805" value="47nF"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
