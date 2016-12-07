@@ -10330,6 +10330,22 @@ Source: BAS70_1PS7XSB70_SER_8.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MMSZ5231BS">
+<gates>
+<gate name="G$1" symbol="D-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD323-REFLOW" package="SOD323-R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
