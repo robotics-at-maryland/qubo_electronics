@@ -11303,42 +11303,44 @@ http://www.linear-tech.com&lt;p&gt;
 <text x="-33.02" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="LTC2497">
-<wire x1="-25.4" y1="38.1" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-45.72" x2="20.32" y2="38.1" width="0.254" layer="94"/>
-<wire x1="20.32" y1="38.1" x2="-25.4" y2="38.1" width="0.254" layer="94"/>
-<pin name="GND" x="-30.48" y="35.56" length="middle"/>
-<pin name="SCL" x="-30.48" y="30.48" length="middle"/>
-<pin name="SDA" x="-30.48" y="25.4" length="middle"/>
-<pin name="NC" x="-30.48" y="20.32" length="middle"/>
-<pin name="COM" x="-30.48" y="15.24" length="middle"/>
-<pin name="MUXOUTP" x="-30.48" y="10.16" length="middle"/>
-<pin name="MUXOUTN" x="-30.48" y="5.08" length="middle"/>
-<pin name="ADCINN" x="-30.48" y="0" length="middle"/>
-<pin name="ADCINP" x="-30.48" y="-5.08" length="middle"/>
-<pin name="REF+" x="-30.48" y="-10.16" length="middle"/>
-<pin name="REF-" x="-30.48" y="-15.24" length="middle"/>
-<pin name="CH15" x="25.4" y="-40.64" length="middle" rot="R180"/>
-<pin name="CH14" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="CH13" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="CH12" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="CH11" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="CH10" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="CH9" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="CH8" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="CH7" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="CH6" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="CH5" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="CH4" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="CH3" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="CH2" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="CH1" x="25.4" y="30.48" length="middle" rot="R180"/>
-<pin name="CH0" x="25.4" y="35.56" length="middle" rot="R180"/>
-<pin name="F0" x="-30.48" y="-20.32" length="middle"/>
-<pin name="CA0" x="-30.48" y="-25.4" length="middle"/>
-<pin name="CA1" x="-30.48" y="-30.48" length="middle"/>
-<pin name="CA2" x="-30.48" y="-35.56" length="middle"/>
-<pin name="VCC" x="-30.48" y="-40.64" length="middle"/>
+<wire x1="-22.86" y1="40.64" x2="-22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-43.18" x2="22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-43.18" x2="22.86" y2="40.64" width="0.254" layer="94"/>
+<wire x1="22.86" y1="40.64" x2="-22.86" y2="40.64" width="0.254" layer="94"/>
+<pin name="GND" x="-27.94" y="38.1" length="middle"/>
+<pin name="SCL" x="-27.94" y="33.02" length="middle"/>
+<pin name="SDA" x="-27.94" y="27.94" length="middle"/>
+<pin name="NC" x="-27.94" y="22.86" length="middle"/>
+<pin name="COM" x="-27.94" y="17.78" length="middle"/>
+<pin name="MUXOUTP" x="-27.94" y="12.7" length="middle"/>
+<pin name="MUXOUTN" x="-27.94" y="7.62" length="middle"/>
+<pin name="ADCINN" x="-27.94" y="2.54" length="middle"/>
+<pin name="ADCINP" x="-27.94" y="-2.54" length="middle"/>
+<pin name="REF+" x="-27.94" y="-7.62" length="middle"/>
+<pin name="REF-" x="-27.94" y="-12.7" length="middle"/>
+<pin name="CH15" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="CH14" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="CH13" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="CH12" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="CH11" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="CH10" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="CH9" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="CH8" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="CH7" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="CH6" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="CH5" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="CH4" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="CH3" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="CH2" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="CH1" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="CH0" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="F0" x="-27.94" y="-17.78" length="middle"/>
+<pin name="CA0" x="-27.94" y="-22.86" length="middle"/>
+<pin name="CA1" x="-27.94" y="-27.94" length="middle"/>
+<pin name="CA2" x="-27.94" y="-33.02" length="middle"/>
+<pin name="VCC" x="-27.94" y="-38.1" length="middle"/>
+<text x="-20.32" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-17.78" y="40.64" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13531,7 +13533,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <instance part="16V_CON" gate="G$1" x="200.66" y="83.82" rot="MR180"/>
 <instance part="U$5" gate="G$1" x="22.86" y="-15.24"/>
 <instance part="JP1" gate="G$1" x="363.22" y="20.32"/>
-<instance part="ADC" gate="G$1" x="-7.62" y="-218.44"/>
+<instance part="ADC" gate="G$1" x="-7.62" y="-220.98"/>
 <instance part="U$6" gate="G$1" x="-63.5" y="-243.84"/>
 <instance part="U$9" gate="G$1" x="-78.74" y="-248.92"/>
 <instance part="U$10" gate="G$1" x="-91.44" y="-254"/>
@@ -13926,17 +13928,17 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="F0"/>
-<wire x1="-38.1" y1="-238.76" x2="-40.64" y2="-238.76" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-238.76" x2="-40.64" y2="-238.76" width="0.1524" layer="91"/>
 <label x="-43.18" y="-238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="REF-"/>
-<wire x1="-38.1" y1="-233.68" x2="-43.18" y2="-233.68" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-233.68" x2="-43.18" y2="-233.68" width="0.1524" layer="91"/>
 <label x="-45.72" y="-233.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="GND"/>
-<wire x1="-38.1" y1="-182.88" x2="-45.72" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-182.88" x2="-45.72" y2="-182.88" width="0.1524" layer="91"/>
 <label x="-48.26" y="-182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -13991,7 +13993,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="COM"/>
-<wire x1="-38.1" y1="-203.2" x2="-45.72" y2="-203.2" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-203.2" x2="-45.72" y2="-203.2" width="0.1524" layer="91"/>
 <label x="-48.26" y="-203.2" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14187,12 +14189,12 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="VCC"/>
-<wire x1="-38.1" y1="-259.08" x2="-43.18" y2="-259.08" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-259.08" x2="-43.18" y2="-259.08" width="0.1524" layer="91"/>
 <label x="-43.18" y="-259.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="REF+"/>
-<wire x1="-38.1" y1="-228.6" x2="-43.18" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-228.6" x2="-43.18" y2="-228.6" width="0.1524" layer="91"/>
 <label x="-43.18" y="-228.6" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -14833,7 +14835,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH0"/>
-<wire x1="17.78" y1="-182.88" x2="22.86" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-182.88" x2="22.86" y2="-182.88" width="0.1524" layer="91"/>
 <label x="25.4" y="-182.88" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14845,7 +14847,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH1"/>
-<wire x1="17.78" y1="-187.96" x2="22.86" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-187.96" x2="22.86" y2="-187.96" width="0.1524" layer="91"/>
 <label x="25.4" y="-187.96" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14857,7 +14859,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH3"/>
-<wire x1="17.78" y1="-198.12" x2="22.86" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-198.12" x2="22.86" y2="-198.12" width="0.1524" layer="91"/>
 <label x="25.4" y="-198.12" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14866,11 +14868,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <pinref part="12VCS" gate="G$1" pin="VIOUT"/>
 <wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 <label x="142.24" y="33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ADC" gate="G$1" pin="CH4"/>
-<wire x1="20.32" y1="-203.2" x2="17.78" y2="-203.2" width="0.1524" layer="91"/>
-<label x="25.4" y="-203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5CSOUT" class="0">
@@ -14881,7 +14878,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH5"/>
-<wire x1="17.78" y1="-208.28" x2="22.86" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-208.28" x2="22.86" y2="-208.28" width="0.1524" layer="91"/>
 <label x="25.4" y="-208.28" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14893,61 +14890,61 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH6"/>
-<wire x1="17.78" y1="-213.36" x2="22.86" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-213.36" x2="22.86" y2="-213.36" width="0.1524" layer="91"/>
 <label x="25.4" y="-213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="SCL"/>
-<wire x1="-38.1" y1="-187.96" x2="-45.72" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-187.96" x2="-45.72" y2="-187.96" width="0.1524" layer="91"/>
 <label x="-48.26" y="-187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="SDA"/>
-<wire x1="-38.1" y1="-193.04" x2="-45.72" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-193.04" x2="-45.72" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-48.26" y="-193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="MUXOUTP"/>
-<wire x1="-38.1" y1="-208.28" x2="-48.26" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-208.28" x2="-48.26" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-208.28" x2="-48.26" y2="-218.44" width="0.1524" layer="91"/>
 <pinref part="ADC" gate="G$1" pin="ADCINN"/>
-<wire x1="-48.26" y1="-218.44" x2="-38.1" y2="-218.44" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-218.44" x2="-35.56" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$65" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="MUXOUTN"/>
-<wire x1="-38.1" y1="-213.36" x2="-40.64" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-213.36" x2="-40.64" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-213.36" x2="-40.64" y2="-223.52" width="0.1524" layer="91"/>
 <pinref part="ADC" gate="G$1" pin="ADCINP"/>
-<wire x1="-40.64" y1="-223.52" x2="-38.1" y2="-223.52" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-223.52" x2="-35.56" y2="-223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$69" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CA0"/>
 <pinref part="U$6" gate="G$1" pin="MID"/>
-<wire x1="-38.1" y1="-243.84" x2="-58.42" y2="-243.84" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-243.84" x2="-58.42" y2="-243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$70" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CA1"/>
 <pinref part="U$9" gate="G$1" pin="MID"/>
-<wire x1="-38.1" y1="-248.92" x2="-73.66" y2="-248.92" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-248.92" x2="-73.66" y2="-248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="MID"/>
 <pinref part="ADC" gate="G$1" pin="CA2"/>
-<wire x1="-86.36" y1="-254" x2="-38.1" y2="-254" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="-254" x2="-35.56" y2="-254" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TEMP1" class="0">
@@ -14958,14 +14955,14 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH14"/>
-<wire x1="17.78" y1="-254" x2="22.86" y2="-254" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-254" x2="22.86" y2="-254" width="0.1524" layer="91"/>
 <label x="25.4" y="-254" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$76" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH7"/>
-<wire x1="17.78" y1="-218.44" x2="83.82" y2="-218.44" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-218.44" x2="83.82" y2="-218.44" width="0.1524" layer="91"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="R35" gate="G$1" pin="2"/>
 <junction x="104.14" y="-218.44"/>
@@ -14976,37 +14973,37 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <net name="N$77" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH8"/>
-<wire x1="17.78" y1="-223.52" x2="22.86" y2="-223.52" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-223.52" x2="22.86" y2="-223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$78" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH9"/>
-<wire x1="17.78" y1="-228.6" x2="22.86" y2="-228.6" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-228.6" x2="22.86" y2="-228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$79" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH10"/>
-<wire x1="17.78" y1="-233.68" x2="22.86" y2="-233.68" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-233.68" x2="22.86" y2="-233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$80" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH11"/>
-<wire x1="17.78" y1="-238.76" x2="22.86" y2="-238.76" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-238.76" x2="22.86" y2="-238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$81" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH12"/>
-<wire x1="17.78" y1="-243.84" x2="22.86" y2="-243.84" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-243.84" x2="22.86" y2="-243.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH13"/>
-<wire x1="17.78" y1="-248.92" x2="22.86" y2="-248.92" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-248.92" x2="22.86" y2="-248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$60" class="0">
@@ -15065,14 +15062,14 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 </segment>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH15"/>
-<wire x1="17.78" y1="-259.08" x2="22.86" y2="-259.08" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-259.08" x2="22.86" y2="-259.08" width="0.1524" layer="91"/>
 <label x="25.4" y="-259.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SHORECSOUT" class="0">
 <segment>
 <pinref part="ADC" gate="G$1" pin="CH2"/>
-<wire x1="17.78" y1="-193.04" x2="22.86" y2="-193.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-193.04" x2="22.86" y2="-193.04" width="0.1524" layer="91"/>
 <label x="25.4" y="-193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
