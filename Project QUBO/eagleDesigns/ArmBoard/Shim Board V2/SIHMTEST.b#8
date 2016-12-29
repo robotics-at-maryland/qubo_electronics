@@ -2662,8 +2662,6 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="5"/>
 <wire x1="8.89" y1="24.13" x2="10.16" y2="24.13" width="0.1524" layer="1"/>
 <wire x1="10.16" y1="24.13" x2="11.43" y2="25.4" width="0.1524" layer="1"/>
-<wire x1="11.43" y1="25.4" x2="16.51" y2="25.4" width="0.1524" layer="1"/>
-<wire x1="16.51" y1="25.4" x2="16.51" y2="24.13" width="0.1524" layer="1"/>
 <wire x1="16.51" y1="24.13" x2="19.05" y2="21.59" width="0.1524" layer="1"/>
 <wire x1="19.05" y1="21.59" x2="22.86" y2="21.59" width="0.1524" layer="1"/>
 <wire x1="22.86" y1="21.59" x2="25.4" y2="24.13" width="0.1524" layer="1"/>
@@ -2712,6 +2710,10 @@ design rules under a new name.</description>
 <wire x1="31.4325" y1="76.581" x2="32.004" y2="77.1525" width="0.1524" layer="1"/>
 <wire x1="32.004" y1="77.1525" x2="33.7225" y2="77.1525" width="0.1524" layer="1"/>
 <wire x1="33.7225" y1="77.1525" x2="34.56" y2="77.99" width="0.1524" layer="1"/>
+<wire x1="16.51" y1="24.13" x2="16.4465" y2="24.13" width="0.1524" layer="1"/>
+<wire x1="16.4465" y1="24.13" x2="15.4305" y2="25.146" width="0.1524" layer="1"/>
+<wire x1="15.4305" y1="25.146" x2="11.684" y2="25.146" width="0.1524" layer="1"/>
+<wire x1="11.684" y1="25.146" x2="11.43" y2="25.4" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$52">
 <contactref element="JP5" pad="52"/>
