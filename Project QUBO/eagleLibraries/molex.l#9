@@ -469,6 +469,9 @@
 <package name="ULTRAFIT_2PIN">
 </package>
 <package name="SUPERSABRE_3CIRCUIT">
+<pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="6.35" y="0" drill="0.8" shape="square"/>
+<pad name="P$3" x="-6.35" y="0" drill="0.8" shape="square"/>
 </package>
 </packages>
 <symbols>

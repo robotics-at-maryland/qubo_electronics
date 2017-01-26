@@ -1294,6 +1294,22 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="ULTRAFIT_2PIN">
+<gates>
+<gate name="G$1" symbol="ULTRAFIT_2PIN" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="ULTRAFIT_2PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

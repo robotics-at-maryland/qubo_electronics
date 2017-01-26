@@ -1285,9 +1285,15 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </deviceset>
 <deviceset name="SUPERSABRE_3CIRCUIT">
 <gates>
+<gate name="G$1" symbol="SUPERSABRE_3CIRCUIT" x="-5.08" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="SUPERSABRE_3CIRCUIT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

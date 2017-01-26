@@ -1355,7 +1355,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK254_6PIN">
+<deviceset name="KK254_6PIN" uservalue="yes">
 <description>Molex KK254 series 6-pin package &lt;br&gt;
 &lt;a href="http://www.molex.com/pdm_docs/sd/022032061_sd.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
 &lt;a href="http://www.molex.com/molex/products/listview.jsp?query=&amp;offset=0&amp;filter=&amp;fs=&amp;npp=20&amp;sType=a&amp;autoNav=&amp;path=+inmeta%3Apromotable%253Dyes+inmeta%3ACollectionName%253DImpulse++inmeta%3Acategory%253DPCB%252520Headers+inmeta%3Abreakaway%253DNo+inmeta%3Acircuitsloaded%253D6%2526partialfields%3D%28productname%3AKK%252520254%29&amp;channel=products"&gt; Link&lt;/a&gt;</description>

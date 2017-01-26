@@ -5645,6 +5645,22 @@ type 0309, grid 2.5 mm</description>
 <wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.127" layer="51"/>
 <circle x="-6.35" y="0" radius="0.635" width="0.127" layer="51"/>
 </package>
+<package name="KK254_VERT_4PIN">
+<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.127" layer="51"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-2.921" x2="-5.08" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="2.921" width="0.127" layer="51"/>
+<pad name="P$1" x="3.81" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<pad name="P$2" x="1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<pad name="P$3" x="-1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<pad name="P$4" x="-3.81" y="0" drill="1.2" shape="octagon" rot="R180"/>
+<text x="-5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.54" x2="-6.35" y2="2.54" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KK254_VERT_2PIN">
@@ -5696,6 +5712,19 @@ type 0309, grid 2.5 mm</description>
 <circle x="0" y="-7.62" radius="0.71841875" width="0.254" layer="94"/>
 <text x="-5.08" y="12.7" size="1.778" layer="94">&gt;NAME</text>
 <text x="-5.08" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="KK254_VERT_4PIN">
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="-5.08" visible="off" length="middle"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="off" length="middle"/>
+<pin name="P$3" x="-7.62" y="2.54" visible="off" length="middle"/>
+<pin name="P$4" x="-7.62" y="5.08" visible="off" length="middle"/>
+<text x="-2.54" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="-5.08" radius="1.016" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5756,7 +5785,7 @@ Part number: 397000205</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK254_6PIN">
+<deviceset name="KK254_6PIN" uservalue="yes">
 <description>Molex KK254 series 6-pin package &lt;br&gt;
 &lt;a href="http://www.molex.com/pdm_docs/sd/022032061_sd.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
 &lt;a href="http://www.molex.com/molex/products/listview.jsp?query=&amp;offset=0&amp;filter=&amp;fs=&amp;npp=20&amp;sType=a&amp;autoNav=&amp;path=+inmeta%3Apromotable%253Dyes+inmeta%3ACollectionName%253DImpulse++inmeta%3Acategory%253DPCB%252520Headers+inmeta%3Abreakaway%253DNo+inmeta%3Acircuitsloaded%253D6%2526partialfields%3D%28productname%3AKK%252520254%29&amp;channel=products"&gt; Link&lt;/a&gt;</description>
@@ -5772,6 +5801,27 @@ Part number: 397000205</description>
 <connect gate="G$1" pin="P$4" pad="P$4"/>
 <connect gate="G$1" pin="P$5" pad="P$5"/>
 <connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK254_VERT_4PIN" prefix="4PIN_" uservalue="yes">
+<description>KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating&lt;br&gt;
+Part Number: 22-29-2041&lt;br&gt;
+http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEADERS.xml</description>
+<gates>
+<gate name="U1" symbol="KK254_VERT_4PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="22-29-2041" package="KK254_VERT_4PIN">
+<connects>
+<connect gate="U1" pin="P$1" pad="P$1"/>
+<connect gate="U1" pin="P$2" pad="P$2"/>
+<connect gate="U1" pin="P$3" pad="P$3"/>
+<connect gate="U1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8468,6 +8518,7 @@ Source: www.kingbright.com</description>
 <smd name="P$24" x="-6.97" y="4.6" dx="1.5" dy="0.635" layer="1" rot="R90"/>
 <text x="-8.5" y="-3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-6.5" y="-0.5" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-6.35" y="-2.54" radius="0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9018,6 +9069,20 @@ QFN-64 package&lt;br&gt;
 <part name="U$12" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$13" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$14" library="NXP" deviceset="PRTR5V0U2X" device=""/>
+<part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_HUB"/>
+<part name="2PIN_2" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_AHRS"/>
+<part name="2PIN_3" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_IMU"/>
+<part name="2PIN_4" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_To-DVL"/>
+<part name="2PIN_5" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_From-DVL"/>
+<part name="4PIN_1" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_RS232_MCU"/>
+<part name="4PIN_2" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_RS232_Flex"/>
+<part name="2PIN_6" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_I2C_1"/>
+<part name="U$15" library="molex" deviceset="KK254_6PIN" device="" value="SPI_LEDS"/>
+<part name="U$16" library="molex" deviceset="KK254_6PIN" device="" value="CPU_SPI"/>
+<part name="4PIN_3" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_PWR1"/>
+<part name="4PIN_4" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_PWR2"/>
+<part name="4PIN_5" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_GND1"/>
+<part name="4PIN_6" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_GND2"/>
 </parts>
 <sheets>
 <sheet>
@@ -9112,6 +9177,20 @@ QFN-64 package&lt;br&gt;
 <instance part="U$12" gate="G$1" x="-208.28" y="-330.2"/>
 <instance part="U$13" gate="G$1" x="-162.56" y="-330.2"/>
 <instance part="U$14" gate="G$1" x="-231.14" y="-363.22"/>
+<instance part="2PIN_1" gate="U1" x="-787.4" y="25.4"/>
+<instance part="2PIN_2" gate="U1" x="-787.4" y="-2.54"/>
+<instance part="2PIN_3" gate="U1" x="-787.4" y="-30.48"/>
+<instance part="2PIN_4" gate="U1" x="-787.4" y="-58.42"/>
+<instance part="2PIN_5" gate="U1" x="-787.4" y="-86.36"/>
+<instance part="4PIN_1" gate="U1" x="-787.4" y="-116.84"/>
+<instance part="4PIN_2" gate="U1" x="-787.4" y="-147.32"/>
+<instance part="2PIN_6" gate="U1" x="-787.4" y="-177.8"/>
+<instance part="U$15" gate="G$1" x="-787.4" y="-213.36"/>
+<instance part="U$16" gate="G$1" x="-858.52" y="-213.36"/>
+<instance part="4PIN_3" gate="U1" x="-787.4" y="-264.16"/>
+<instance part="4PIN_4" gate="U1" x="-858.52" y="-266.7"/>
+<instance part="4PIN_5" gate="U1" x="-787.4" y="-307.34"/>
+<instance part="4PIN_6" gate="U1" x="-858.52" y="-307.34"/>
 </instances>
 <busses>
 </busses>
@@ -9802,6 +9881,34 @@ QFN-64 package&lt;br&gt;
 <pinref part="U$14" gate="G$1" pin="GND"/>
 <wire x1="-241.3" y1="-358.14" x2="-248.92" y2="-358.14" width="0.1524" layer="91"/>
 <label x="-248.92" y="-358.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_5" gate="U1" pin="P$4"/>
+<pinref part="4PIN_5" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-302.26" x2="-795.02" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="-795.02" y1="-304.8" x2="-795.02" y2="-309.88" width="0.1524" layer="91"/>
+<wire x1="-795.02" y1="-309.88" x2="-795.02" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-795.02" y1="-312.42" x2="-802.64" y2="-312.42" width="0.1524" layer="91"/>
+<junction x="-795.02" y="-312.42"/>
+<pinref part="4PIN_5" gate="U1" pin="P$2"/>
+<junction x="-795.02" y="-309.88"/>
+<pinref part="4PIN_5" gate="U1" pin="P$3"/>
+<junction x="-795.02" y="-304.8"/>
+<label x="-802.64" y="-312.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_6" gate="U1" pin="P$4"/>
+<pinref part="4PIN_6" gate="U1" pin="P$1"/>
+<wire x1="-866.14" y1="-302.26" x2="-866.14" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-304.8" x2="-866.14" y2="-309.88" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-309.88" x2="-866.14" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-312.42" x2="-873.76" y2="-312.42" width="0.1524" layer="91"/>
+<junction x="-866.14" y="-312.42"/>
+<label x="-873.76" y="-312.42" size="1.778" layer="95"/>
+<pinref part="4PIN_6" gate="U1" pin="P$2"/>
+<junction x="-866.14" y="-309.88"/>
+<pinref part="4PIN_6" gate="U1" pin="P$3"/>
+<junction x="-866.14" y="-304.8"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -11565,6 +11672,34 @@ QFN-64 package&lt;br&gt;
 <wire x1="190.5" y1="-127" x2="177.8" y2="-127" width="0.1524" layer="91"/>
 <label x="177.8" y="-127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_4" gate="U1" pin="P$4"/>
+<pinref part="4PIN_4" gate="U1" pin="P$1"/>
+<wire x1="-866.14" y1="-261.62" x2="-866.14" y2="-264.16" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-264.16" x2="-866.14" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-269.24" x2="-866.14" y2="-271.78" width="0.1524" layer="91"/>
+<wire x1="-866.14" y1="-271.78" x2="-873.76" y2="-271.78" width="0.1524" layer="91"/>
+<junction x="-866.14" y="-271.78"/>
+<label x="-876.3" y="-271.78" size="1.778" layer="95"/>
+<pinref part="4PIN_4" gate="U1" pin="P$2"/>
+<junction x="-866.14" y="-269.24"/>
+<pinref part="4PIN_4" gate="U1" pin="P$3"/>
+<junction x="-866.14" y="-264.16"/>
+</segment>
+<segment>
+<pinref part="4PIN_3" gate="U1" pin="P$4"/>
+<pinref part="4PIN_3" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-259.08" x2="-795.02" y2="-261.62" width="0.1524" layer="91"/>
+<pinref part="4PIN_3" gate="U1" pin="P$2"/>
+<junction x="-795.02" y="-266.7"/>
+<wire x1="-795.02" y1="-261.62" x2="-795.02" y2="-266.7" width="0.1524" layer="91"/>
+<wire x1="-795.02" y1="-266.7" x2="-795.02" y2="-269.24" width="0.1524" layer="91"/>
+<pinref part="4PIN_3" gate="U1" pin="P$3"/>
+<junction x="-795.02" y="-261.62"/>
+<wire x1="-795.02" y1="-269.24" x2="-805.18" y2="-269.24" width="0.1524" layer="91"/>
+<junction x="-795.02" y="-269.24"/>
+<label x="-805.18" y="-269.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CTS_4" class="0">
 <segment>
@@ -12456,6 +12591,42 @@ QFN-64 package&lt;br&gt;
 <segment>
 <pinref part="U$14" gate="G$1" pin="I/O_2"/>
 <wire x1="-220.98" y1="-365.76" x2="-213.36" y2="-365.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$6"/>
+<wire x1="-795.02" y1="-205.74" x2="-812.8" y2="-205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$5"/>
+<wire x1="-795.02" y1="-208.28" x2="-812.8" y2="-208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$4"/>
+<wire x1="-795.02" y1="-210.82" x2="-812.8" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$3"/>
+<wire x1="-795.02" y1="-215.9" x2="-812.8" y2="-215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$2"/>
+<wire x1="-795.02" y1="-218.44" x2="-812.8" y2="-218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$1"/>
+<wire x1="-795.02" y1="-220.98" x2="-812.8" y2="-220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
