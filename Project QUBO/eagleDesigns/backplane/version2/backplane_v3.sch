@@ -9004,7 +9004,6 @@ QFN-64 package&lt;br&gt;
 <part name="5.5" library="molex" deviceset="M250_5PIN" device=""/>
 <part name="5.6" library="molex" deviceset="M250_5PIN" device=""/>
 <part name="5.7" library="molex" deviceset="M250_5PIN" device=""/>
-<part name="SPI_LEDS" library="molex" deviceset="KK254_6PIN" device=""/>
 <part name="BATTERY-MUX" library="NXP" deviceset="PCA9546APW" device=""/>
 <part name="DVL_HOST_FTDI" library="ftdichip" deviceset="FT232R" device="Q"/>
 <part name="DVL_TTL-TO-RS232" library="texas" deviceset="MAX213CDBR" device=""/>
@@ -9072,21 +9071,24 @@ QFN-64 package&lt;br&gt;
 <part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_HUB"/>
 <part name="2PIN_2" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_AHRS"/>
 <part name="2PIN_3" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_IMU"/>
-<part name="2PIN_4" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_To-DVL"/>
-<part name="2PIN_5" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_From-DVL"/>
+<part name="2PIN_5" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_USB_DVL"/>
 <part name="4PIN_1" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_RS232_MCU"/>
 <part name="4PIN_2" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_RS232_Flex"/>
 <part name="2PIN_6" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_I2C_1"/>
 <part name="U$15" library="molex" deviceset="KK254_6PIN" device="" value="SPI_LEDS"/>
-<part name="U$16" library="molex" deviceset="KK254_6PIN" device="" value="CPU_SPI"/>
 <part name="4PIN_3" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_PWR1"/>
 <part name="4PIN_4" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_PWR2"/>
 <part name="4PIN_5" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_GND1"/>
 <part name="4PIN_6" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_GND2"/>
+<part name="4PIN_7" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU_SPI"/>
+<part name="2PIN_7" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="CPU_CAN"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-845.82" y="5.08" size="6.4516" layer="91">&gt;&gt;&gt; CPU-end connections</text>
+<text x="302.26" y="124.46" size="6.4516" layer="91">&gt;&gt;&gt; HYP-side connections</text>
+<text x="22.86" y="127" size="6.4516" layer="91">&gt;&gt;&gt; Daughterboard connections</text>
 </plain>
 <instances>
 <instance part="CPU_USB_CPU" gate="U1" x="-441.96" y="-12.7" rot="R180"/>
@@ -9112,7 +9114,6 @@ QFN-64 package&lt;br&gt;
 <instance part="5.5" gate="G$1" x="406.4" y="-93.98"/>
 <instance part="5.6" gate="G$1" x="406.4" y="-121.92"/>
 <instance part="5.7" gate="G$1" x="406.4" y="-149.86"/>
-<instance part="SPI_LEDS" gate="G$1" x="-58.42" y="-238.76"/>
 <instance part="BATTERY-MUX" gate="G$1" x="30.48" y="-238.76"/>
 <instance part="DVL_HOST_FTDI" gate="1" x="157.48" y="-226.06"/>
 <instance part="DVL_TTL-TO-RS232" gate="G$1" x="248.92" y="-226.06"/>
@@ -9177,20 +9178,20 @@ QFN-64 package&lt;br&gt;
 <instance part="U$12" gate="G$1" x="-208.28" y="-330.2"/>
 <instance part="U$13" gate="G$1" x="-162.56" y="-330.2"/>
 <instance part="U$14" gate="G$1" x="-231.14" y="-363.22"/>
-<instance part="2PIN_1" gate="U1" x="-787.4" y="25.4"/>
-<instance part="2PIN_2" gate="U1" x="-787.4" y="-2.54"/>
-<instance part="2PIN_3" gate="U1" x="-787.4" y="-30.48"/>
-<instance part="2PIN_4" gate="U1" x="-787.4" y="-58.42"/>
-<instance part="2PIN_5" gate="U1" x="-787.4" y="-86.36"/>
+<instance part="2PIN_1" gate="U1" x="-787.4" y="-7.62"/>
+<instance part="2PIN_2" gate="U1" x="-787.4" y="-35.56"/>
+<instance part="2PIN_3" gate="U1" x="-787.4" y="-63.5"/>
+<instance part="2PIN_5" gate="U1" x="-787.4" y="-88.9"/>
 <instance part="4PIN_1" gate="U1" x="-787.4" y="-116.84"/>
 <instance part="4PIN_2" gate="U1" x="-787.4" y="-147.32"/>
 <instance part="2PIN_6" gate="U1" x="-787.4" y="-177.8"/>
-<instance part="U$15" gate="G$1" x="-787.4" y="-213.36"/>
-<instance part="U$16" gate="G$1" x="-858.52" y="-213.36"/>
-<instance part="4PIN_3" gate="U1" x="-787.4" y="-264.16"/>
-<instance part="4PIN_4" gate="U1" x="-858.52" y="-266.7"/>
-<instance part="4PIN_5" gate="U1" x="-787.4" y="-307.34"/>
-<instance part="4PIN_6" gate="U1" x="-858.52" y="-307.34"/>
+<instance part="U$15" gate="G$1" x="-500.38" y="-152.4"/>
+<instance part="4PIN_3" gate="U1" x="-797.56" y="-271.78"/>
+<instance part="4PIN_4" gate="U1" x="-822.96" y="-271.78"/>
+<instance part="4PIN_5" gate="U1" x="-751.84" y="-271.78"/>
+<instance part="4PIN_6" gate="U1" x="-774.7" y="-271.78"/>
+<instance part="4PIN_7" gate="U1" x="-787.4" y="-205.74"/>
+<instance part="2PIN_7" gate="U1" x="-787.4" y="-233.68"/>
 </instances>
 <busses>
 </busses>
@@ -9604,11 +9605,6 @@ QFN-64 package&lt;br&gt;
 <label x="381" y="-149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$5"/>
-<wire x1="-66.04" y1="-233.68" x2="-78.74" y2="-233.68" width="0.1524" layer="91"/>
-<label x="-78.74" y="-233.68" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BATTERY-MUX" gate="G$1" pin="VSS"/>
 <wire x1="15.24" y1="-256.54" x2="7.62" y2="-256.54" width="0.1524" layer="91"/>
 <label x="7.62" y="-256.54" size="1.778" layer="95"/>
@@ -9885,30 +9881,35 @@ QFN-64 package&lt;br&gt;
 <segment>
 <pinref part="4PIN_5" gate="U1" pin="P$4"/>
 <pinref part="4PIN_5" gate="U1" pin="P$1"/>
-<wire x1="-795.02" y1="-302.26" x2="-795.02" y2="-304.8" width="0.1524" layer="91"/>
-<wire x1="-795.02" y1="-304.8" x2="-795.02" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="-795.02" y1="-309.88" x2="-795.02" y2="-312.42" width="0.1524" layer="91"/>
-<wire x1="-795.02" y1="-312.42" x2="-802.64" y2="-312.42" width="0.1524" layer="91"/>
-<junction x="-795.02" y="-312.42"/>
+<wire x1="-759.46" y1="-266.7" x2="-759.46" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-759.46" y1="-269.24" x2="-759.46" y2="-274.32" width="0.1524" layer="91"/>
+<wire x1="-759.46" y1="-274.32" x2="-759.46" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="-759.46" y1="-276.86" x2="-767.08" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="-759.46" y="-276.86"/>
 <pinref part="4PIN_5" gate="U1" pin="P$2"/>
-<junction x="-795.02" y="-309.88"/>
+<junction x="-759.46" y="-274.32"/>
 <pinref part="4PIN_5" gate="U1" pin="P$3"/>
-<junction x="-795.02" y="-304.8"/>
-<label x="-802.64" y="-312.42" size="1.778" layer="95"/>
+<junction x="-759.46" y="-269.24"/>
+<label x="-767.08" y="-276.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="4PIN_6" gate="U1" pin="P$4"/>
 <pinref part="4PIN_6" gate="U1" pin="P$1"/>
-<wire x1="-866.14" y1="-302.26" x2="-866.14" y2="-304.8" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-304.8" x2="-866.14" y2="-309.88" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-309.88" x2="-866.14" y2="-312.42" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-312.42" x2="-873.76" y2="-312.42" width="0.1524" layer="91"/>
-<junction x="-866.14" y="-312.42"/>
-<label x="-873.76" y="-312.42" size="1.778" layer="95"/>
+<wire x1="-782.32" y1="-266.7" x2="-782.32" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-782.32" y1="-269.24" x2="-782.32" y2="-274.32" width="0.1524" layer="91"/>
+<wire x1="-782.32" y1="-274.32" x2="-782.32" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="-782.32" y1="-276.86" x2="-789.94" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="-782.32" y="-276.86"/>
+<label x="-789.94" y="-276.86" size="1.778" layer="95"/>
 <pinref part="4PIN_6" gate="U1" pin="P$2"/>
-<junction x="-866.14" y="-309.88"/>
+<junction x="-782.32" y="-274.32"/>
 <pinref part="4PIN_6" gate="U1" pin="P$3"/>
-<junction x="-866.14" y="-304.8"/>
+<junction x="-782.32" y="-269.24"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$1"/>
+<wire x1="-508" y1="-160.02" x2="-513.08" y2="-160.02" width="0.1524" layer="91"/>
+<label x="-513.08" y="-160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -10195,11 +10196,6 @@ QFN-64 package&lt;br&gt;
 <label x="381" y="-147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$6"/>
-<wire x1="-66.04" y1="-231.14" x2="-78.74" y2="-231.14" width="0.1524" layer="91"/>
-<label x="-78.74" y="-231.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BATTERY-MUX" gate="G$1" pin="!RESET!"/>
 <wire x1="15.24" y1="-231.14" x2="-7.62" y2="-231.14" width="0.1524" layer="91"/>
 <label x="-7.62" y="-231.14" size="1.778" layer="95"/>
@@ -10451,6 +10447,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="330.2" y1="-88.9" x2="314.96" y2="-88.9" width="0.1524" layer="91"/>
 <label x="314.96" y="-88.9" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$2"/>
+<wire x1="-508" y1="-157.48" x2="-513.08" y2="-157.48" width="0.1524" layer="91"/>
+<label x="-513.08" y="-157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA_3" class="0">
 <segment>
@@ -10571,6 +10572,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="33.02" y1="-137.16" x2="22.86" y2="-137.16" width="0.1524" layer="91"/>
 <label x="22.86" y="-137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="2PIN_6" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-180.34" x2="-797.56" y2="-180.34" width="0.1524" layer="91"/>
+<label x="-797.56" y="-180.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL_1" class="0">
 <segment>
@@ -10593,30 +10599,13 @@ QFN-64 package&lt;br&gt;
 <wire x1="33.02" y1="-139.7" x2="22.86" y2="-139.7" width="0.1524" layer="91"/>
 <label x="22.86" y="-139.7" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="FLEX_USB_2-" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="P$13"/>
-<wire x1="33.02" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
-<label x="17.78" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP2" gate="G$1" pin="P$13"/>
-<wire x1="33.02" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
-<label x="17.78" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="P$13"/>
-<wire x1="33.02" y1="-71.12" x2="22.86" y2="-71.12" width="0.1524" layer="91"/>
-<label x="17.78" y="-71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="P$13"/>
-<wire x1="33.02" y1="-147.32" x2="22.86" y2="-147.32" width="0.1524" layer="91"/>
-<label x="17.78" y="-147.32" size="1.778" layer="95"/>
+<pinref part="2PIN_6" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-175.26" x2="-797.56" y2="-175.26" width="0.1524" layer="91"/>
+<label x="-797.56" y="-175.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FLEX_USB_2+" class="0">
+<net name="NC" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$14"/>
 <wire x1="33.02" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
@@ -10637,30 +10626,26 @@ QFN-64 package&lt;br&gt;
 <wire x1="33.02" y1="-149.86" x2="22.86" y2="-149.86" width="0.1524" layer="91"/>
 <label x="17.78" y="-149.86" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="FLEX_USB_1-" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="P$16"/>
-<wire x1="33.02" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="17.78" y="76.2" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="P$13"/>
+<wire x1="33.02" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
+<label x="17.78" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="P$16"/>
-<wire x1="33.02" y1="0" x2="22.86" y2="0" width="0.1524" layer="91"/>
-<label x="17.78" y="0" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="P$13"/>
+<wire x1="33.02" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
+<label x="17.78" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="P$16"/>
-<wire x1="33.02" y1="-78.74" x2="22.86" y2="-78.74" width="0.1524" layer="91"/>
-<label x="17.78" y="-78.74" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="P$13"/>
+<wire x1="33.02" y1="-71.12" x2="22.86" y2="-71.12" width="0.1524" layer="91"/>
+<label x="17.78" y="-71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="P$16"/>
-<wire x1="33.02" y1="-154.94" x2="22.86" y2="-154.94" width="0.1524" layer="91"/>
-<label x="17.78" y="-154.94" size="1.778" layer="95"/>
+<pinref part="JP4" gate="G$1" pin="P$13"/>
+<wire x1="33.02" y1="-147.32" x2="22.86" y2="-147.32" width="0.1524" layer="91"/>
+<label x="17.78" y="-147.32" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="FLEX_USB_1+\" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$17"/>
 <wire x1="33.02" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
@@ -10680,6 +10665,26 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$17"/>
 <wire x1="33.02" y1="-157.48" x2="22.86" y2="-157.48" width="0.1524" layer="91"/>
 <label x="17.78" y="-157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$16"/>
+<wire x1="33.02" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<label x="17.78" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="P$16"/>
+<wire x1="33.02" y1="0" x2="22.86" y2="0" width="0.1524" layer="91"/>
+<label x="17.78" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="P$16"/>
+<wire x1="33.02" y1="-78.74" x2="22.86" y2="-78.74" width="0.1524" layer="91"/>
+<label x="17.78" y="-78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="P$16"/>
+<wire x1="33.02" y1="-154.94" x2="22.86" y2="-154.94" width="0.1524" layer="91"/>
+<label x="17.78" y="-154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_1-" class="0">
@@ -10722,6 +10727,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="330.2" y1="-149.86" x2="314.96" y2="-149.86" width="0.1524" layer="91"/>
 <label x="314.96" y="-149.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-795.02" y1="-236.22" x2="-802.64" y2="-236.22" width="0.1524" layer="91"/>
+<label x="-802.64" y="-236.22" size="1.778" layer="95"/>
+<pinref part="2PIN_7" gate="U1" pin="P$2"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
@@ -10748,6 +10758,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="5.3" gate="G$1" pin="P$4"/>
 <wire x1="330.2" y1="-147.32" x2="314.96" y2="-147.32" width="0.1524" layer="91"/>
 <label x="314.96" y="-147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-795.02" y1="-231.14" x2="-802.64" y2="-231.14" width="0.1524" layer="91"/>
+<pinref part="2PIN_7" gate="U1" pin="P$1"/>
+<label x="-802.64" y="-231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_0" class="0">
@@ -11051,9 +11066,14 @@ QFN-64 package&lt;br&gt;
 <label x="101.6" y="-137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$4"/>
-<wire x1="-66.04" y1="-236.22" x2="-78.74" y2="-236.22" width="0.1524" layer="91"/>
-<label x="-78.74" y="-236.22" size="1.778" layer="95"/>
+<wire x1="-795.02" y1="-210.82" x2="-802.64" y2="-210.82" width="0.1524" layer="91"/>
+<pinref part="4PIN_7" gate="U1" pin="P$1"/>
+<label x="-802.64" y="-210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$4"/>
+<wire x1="-508" y1="-149.86" x2="-513.08" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-513.08" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -11078,9 +11098,14 @@ QFN-64 package&lt;br&gt;
 <label x="101.6" y="-139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$3"/>
-<wire x1="-66.04" y1="-241.3" x2="-78.74" y2="-241.3" width="0.1524" layer="91"/>
-<label x="-78.74" y="-241.3" size="1.778" layer="95"/>
+<wire x1="-795.02" y1="-200.66" x2="-802.64" y2="-200.66" width="0.1524" layer="91"/>
+<pinref part="4PIN_7" gate="U1" pin="P$4"/>
+<label x="-802.64" y="-200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$6"/>
+<wire x1="-508" y1="-144.78" x2="-513.08" y2="-144.78" width="0.1524" layer="91"/>
+<label x="-513.08" y="-144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -11105,39 +11130,44 @@ QFN-64 package&lt;br&gt;
 <label x="101.6" y="-142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$2"/>
-<wire x1="-66.04" y1="-243.84" x2="-78.74" y2="-243.84" width="0.1524" layer="91"/>
-<label x="-78.74" y="-243.84" size="1.778" layer="95"/>
+<wire x1="-795.02" y1="-203.2" x2="-802.64" y2="-203.2" width="0.1524" layer="91"/>
+<pinref part="4PIN_7" gate="U1" pin="P$3"/>
+<label x="-802.64" y="-203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$5"/>
+<wire x1="-508" y1="-147.32" x2="-513.08" y2="-147.32" width="0.1524" layer="91"/>
+<label x="-513.08" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CE_DEBUG-LEDS" class="0">
+<net name="CE_LEDS" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$52"/>
 <wire x1="114.3" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="96.52" y="86.36" size="1.778" layer="95"/>
+<label x="101.6" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="P$52"/>
 <wire x1="114.3" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
-<label x="96.52" y="10.16" size="1.778" layer="95"/>
+<label x="101.6" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="P$52"/>
 <wire x1="114.3" y1="-68.58" x2="101.6" y2="-68.58" width="0.1524" layer="91"/>
-<label x="96.52" y="-68.58" size="1.778" layer="95"/>
+<label x="101.6" y="-68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="P$52"/>
 <wire x1="114.3" y1="-144.78" x2="101.6" y2="-144.78" width="0.1524" layer="91"/>
-<label x="96.52" y="-144.78" size="1.778" layer="95"/>
+<label x="101.6" y="-144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPI_LEDS" gate="G$1" pin="P$1"/>
-<wire x1="-66.04" y1="-246.38" x2="-78.74" y2="-246.38" width="0.1524" layer="91"/>
-<label x="-83.82" y="-246.38" size="1.778" layer="95"/>
+<pinref part="U$15" gate="G$1" pin="P$3"/>
+<wire x1="-508" y1="-154.94" x2="-513.08" y2="-154.94" width="0.1524" layer="91"/>
+<label x="-513.08" y="-154.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CE_1" class="0">
+<net name="CE_CPU" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$53"/>
 <wire x1="114.3" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
@@ -11157,6 +11187,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$53"/>
 <wire x1="114.3" y1="-147.32" x2="101.6" y2="-147.32" width="0.1524" layer="91"/>
 <label x="101.6" y="-147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-795.02" y1="-208.28" x2="-802.64" y2="-208.28" width="0.1524" layer="91"/>
+<label x="-802.64" y="-208.28" size="1.778" layer="95"/>
+<pinref part="4PIN_7" gate="U1" pin="P$2"/>
 </segment>
 </net>
 <net name="CE_2" class="0">
@@ -11388,6 +11423,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="154.94" y1="-154.94" x2="144.78" y2="-154.94" width="0.1524" layer="91"/>
 <label x="144.78" y="-154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_2" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-149.86" x2="-800.1" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-800.1" y="-149.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CTS_3" class="0">
 <segment>
@@ -11409,6 +11449,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$75"/>
 <wire x1="154.94" y1="-152.4" x2="144.78" y2="-152.4" width="0.1524" layer="91"/>
 <label x="144.78" y="-152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_2" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-152.4" x2="-800.1" y2="-152.4" width="0.1524" layer="91"/>
+<label x="-800.1" y="-152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_3" class="0">
@@ -11432,6 +11477,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="154.94" y1="-149.86" x2="144.78" y2="-149.86" width="0.1524" layer="91"/>
 <label x="144.78" y="-149.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_2" gate="U1" pin="P$3"/>
+<wire x1="-795.02" y1="-144.78" x2="-800.1" y2="-144.78" width="0.1524" layer="91"/>
+<label x="-800.1" y="-144.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX_3" class="0">
 <segment>
@@ -11453,6 +11503,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$73"/>
 <wire x1="154.94" y1="-147.32" x2="144.78" y2="-147.32" width="0.1524" layer="91"/>
 <label x="144.78" y="-147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_2" gate="U1" pin="P$4"/>
+<wire x1="-795.02" y1="-142.24" x2="-800.1" y2="-142.24" width="0.1524" layer="91"/>
+<label x="-800.1" y="-142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTS_2" class="0">
@@ -11476,6 +11531,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="154.94" y1="-144.78" x2="144.78" y2="-144.78" width="0.1524" layer="91"/>
 <label x="144.78" y="-144.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_1" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-119.38" x2="-800.1" y2="-119.38" width="0.1524" layer="91"/>
+<label x="-800.1" y="-119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CTS_2" class="0">
 <segment>
@@ -11497,6 +11557,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$71"/>
 <wire x1="154.94" y1="-142.24" x2="144.78" y2="-142.24" width="0.1524" layer="91"/>
 <label x="144.78" y="-142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_1" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-121.92" x2="-800.1" y2="-121.92" width="0.1524" layer="91"/>
+<label x="-800.1" y="-121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX_2" class="0">
@@ -11520,6 +11585,11 @@ QFN-64 package&lt;br&gt;
 <wire x1="154.94" y1="-139.7" x2="144.78" y2="-139.7" width="0.1524" layer="91"/>
 <label x="144.78" y="-139.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_1" gate="U1" pin="P$3"/>
+<wire x1="-795.02" y1="-114.3" x2="-800.1" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-800.1" y="-114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX_2" class="0">
 <segment>
@@ -11541,6 +11611,11 @@ QFN-64 package&lt;br&gt;
 <pinref part="JP4" gate="G$1" pin="P$69"/>
 <wire x1="154.94" y1="-137.16" x2="144.78" y2="-137.16" width="0.1524" layer="91"/>
 <label x="144.78" y="-137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_1" gate="U1" pin="P$4"/>
+<wire x1="-795.02" y1="-111.76" x2="-800.1" y2="-111.76" width="0.1524" layer="91"/>
+<label x="-800.1" y="-111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTS_5" class="0">
@@ -11675,30 +11750,30 @@ QFN-64 package&lt;br&gt;
 <segment>
 <pinref part="4PIN_4" gate="U1" pin="P$4"/>
 <pinref part="4PIN_4" gate="U1" pin="P$1"/>
-<wire x1="-866.14" y1="-261.62" x2="-866.14" y2="-264.16" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-264.16" x2="-866.14" y2="-269.24" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-269.24" x2="-866.14" y2="-271.78" width="0.1524" layer="91"/>
-<wire x1="-866.14" y1="-271.78" x2="-873.76" y2="-271.78" width="0.1524" layer="91"/>
-<junction x="-866.14" y="-271.78"/>
-<label x="-876.3" y="-271.78" size="1.778" layer="95"/>
+<wire x1="-830.58" y1="-266.7" x2="-830.58" y2="-269.24" width="0.1524" layer="91"/>
+<wire x1="-830.58" y1="-269.24" x2="-830.58" y2="-274.32" width="0.1524" layer="91"/>
+<wire x1="-830.58" y1="-274.32" x2="-830.58" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="-830.58" y1="-276.86" x2="-838.2" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="-830.58" y="-276.86"/>
+<label x="-840.74" y="-276.86" size="1.778" layer="95"/>
 <pinref part="4PIN_4" gate="U1" pin="P$2"/>
-<junction x="-866.14" y="-269.24"/>
+<junction x="-830.58" y="-274.32"/>
 <pinref part="4PIN_4" gate="U1" pin="P$3"/>
-<junction x="-866.14" y="-264.16"/>
+<junction x="-830.58" y="-269.24"/>
 </segment>
 <segment>
 <pinref part="4PIN_3" gate="U1" pin="P$4"/>
 <pinref part="4PIN_3" gate="U1" pin="P$1"/>
-<wire x1="-795.02" y1="-259.08" x2="-795.02" y2="-261.62" width="0.1524" layer="91"/>
+<wire x1="-805.18" y1="-266.7" x2="-805.18" y2="-269.24" width="0.1524" layer="91"/>
 <pinref part="4PIN_3" gate="U1" pin="P$2"/>
-<junction x="-795.02" y="-266.7"/>
-<wire x1="-795.02" y1="-261.62" x2="-795.02" y2="-266.7" width="0.1524" layer="91"/>
-<wire x1="-795.02" y1="-266.7" x2="-795.02" y2="-269.24" width="0.1524" layer="91"/>
+<junction x="-805.18" y="-274.32"/>
+<wire x1="-805.18" y1="-269.24" x2="-805.18" y2="-274.32" width="0.1524" layer="91"/>
+<wire x1="-805.18" y1="-274.32" x2="-805.18" y2="-276.86" width="0.1524" layer="91"/>
 <pinref part="4PIN_3" gate="U1" pin="P$3"/>
-<junction x="-795.02" y="-261.62"/>
-<wire x1="-795.02" y1="-269.24" x2="-805.18" y2="-269.24" width="0.1524" layer="91"/>
-<junction x="-795.02" y="-269.24"/>
-<label x="-805.18" y="-269.24" size="1.778" layer="95"/>
+<junction x="-805.18" y="-269.24"/>
+<wire x1="-805.18" y1="-276.86" x2="-815.34" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="-805.18" y="-276.86"/>
+<label x="-815.34" y="-276.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTS_4" class="0">
@@ -12231,12 +12306,10 @@ QFN-64 package&lt;br&gt;
 <wire x1="144.78" y1="-373.38" x2="132.08" y2="-373.38" width="0.1524" layer="91"/>
 <label x="129.54" y="-373.38" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="IMUT_USB-" class="0">
 <segment>
-<pinref part="IMU_FTDI" gate="1" pin="USBDM"/>
-<wire x1="144.78" y1="-375.92" x2="132.08" y2="-375.92" width="0.1524" layer="91"/>
-<label x="129.54" y="-375.92" size="1.778" layer="95"/>
+<pinref part="2PIN_3" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-60.96" x2="-805.18" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-805.18" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -12372,12 +12445,22 @@ QFN-64 package&lt;br&gt;
 <wire x1="-254" y1="-190.5" x2="-259.08" y2="-190.5" width="0.1524" layer="91"/>
 <label x="-264.16" y="-190.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="2PIN_5" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-91.44" x2="-802.64" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-802.64" y="-91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DVL_USB+" class="0">
 <segment>
 <pinref part="DVL_USB_HUB" gate="G$1" pin="USBDP_UP"/>
 <wire x1="-254" y1="-193.04" x2="-259.08" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-264.16" y="-193.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_5" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-86.36" x2="-802.64" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-802.64" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -12593,40 +12676,69 @@ QFN-64 package&lt;br&gt;
 <wire x1="-220.98" y1="-365.76" x2="-213.36" y2="-365.76" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="AHRS_USB-" class="0">
+<segment>
+<pinref part="2PIN_2" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-38.1" x2="-805.18" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-805.18" y="-38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AHRS_USB+" class="0">
+<segment>
+<pinref part="2PIN_2" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-33.02" x2="-805.18" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-805.18" y="-33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HUB_USB-" class="0">
+<segment>
+<pinref part="2PIN_1" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-10.16" x2="-805.18" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-805.18" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HUB_USB+" class="0">
+<segment>
+<pinref part="2PIN_1" gate="U1" pin="P$1"/>
+<wire x1="-795.02" y1="-5.08" x2="-805.18" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-805.18" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IMU_USB-" class="0">
+<segment>
+<pinref part="2PIN_3" gate="U1" pin="P$2"/>
+<wire x1="-795.02" y1="-66.04" x2="-805.18" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-805.18" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IMU_FTDI" gate="1" pin="USBDM"/>
+<wire x1="144.78" y1="-375.92" x2="132.08" y2="-375.92" width="0.1524" layer="91"/>
+<label x="129.54" y="-375.92" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="P$6"/>
-<wire x1="-795.02" y1="-205.74" x2="-812.8" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="-863.6" y1="12.7" x2="-708.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-708.66" y1="12.7" x2="-708.66" y2="-297.18" width="0.1524" layer="91"/>
+<wire x1="-708.66" y1="-297.18" x2="-863.6" y2="-297.18" width="0.1524" layer="91"/>
+<wire x1="-868.68" y1="-297.18" x2="-863.6" y2="-297.18" width="0.1524" layer="91"/>
+<wire x1="-863.6" y1="-297.18" x2="-863.6" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$65" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="P$5"/>
-<wire x1="-795.02" y1="-208.28" x2="-812.8" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="134.62" x2="434.34" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="134.62" x2="434.34" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="-172.72" x2="281.94" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-172.72" x2="281.94" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="P$4"/>
-<wire x1="-795.02" y1="-210.82" x2="-812.8" y2="-210.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$68" class="0">
-<segment>
-<pinref part="U$15" gate="G$1" pin="P$3"/>
-<wire x1="-795.02" y1="-215.9" x2="-812.8" y2="-215.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="U$15" gate="G$1" pin="P$2"/>
-<wire x1="-795.02" y1="-218.44" x2="-812.8" y2="-218.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="U$15" gate="G$1" pin="P$1"/>
-<wire x1="-795.02" y1="-220.98" x2="-812.8" y2="-220.98" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="144.78" x2="218.44" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-190.5" x2="-17.78" y2="-187.96" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-187.96" x2="-17.78" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
