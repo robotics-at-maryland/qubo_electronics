@@ -1642,10 +1642,10 @@ design rules under a new name.</description>
 <element name="2PIN_11" library="molex" package="KK254_VERT_2PIN" value="" x="-41.91" y="27.94"/>
 <element name="2PIN_2" library="molex" package="KK254_VERT_2PIN" value="" x="-59.69" y="27.94"/>
 <element name="2PIN_3" library="molex" package="KK254_VERT_2PIN" value="" x="-68.58" y="27.94"/>
-<element name="2PIN_4" library="molex" package="KK254_VERT_2PIN" value="" x="25.4" y="33.02"/>
+<element name="2PIN_4" library="molex" package="KK254_VERT_2PIN" value="" x="27.94" y="29.21"/>
 <element name="2PIN_6" library="molex" package="KK254_VERT_2PIN" value="" x="-26.67" y="52.07"/>
 <element name="2PIN_7" library="molex" package="KK254_VERT_2PIN" value="" x="-35.56" y="52.07"/>
-<element name="2PIN_8" library="molex" package="KK254_VERT_2PIN" value="" x="29.21" y="52.07"/>
+<element name="2PIN_8" library="molex" package="KK254_VERT_2PIN" value="" x="-44.45" y="52.07"/>
 <element name="2PIN_9" library="molex" package="KK254_VERT_2PIN" value="" x="-53.34" y="52.07"/>
 <element name="C1" library="resistor" package="C0805" value="47nF" x="-43.18" y="69.85"/>
 <element name="C11" library="resistor" package="C0805" value="47nF" x="-68.58" y="69.85"/>
@@ -1670,8 +1670,8 @@ design rules under a new name.</description>
 <element name="F5" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="-46.99" y="12.7"/>
 <element name="F6" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="-54.61" y="12.7"/>
 <element name="F7" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="-62.23" y="12.7"/>
-<element name="F8" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="50.8" y="66.04"/>
-<element name="F9" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="50.8" y="96.52" rot="R270"/>
+<element name="F8" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="-69.85" y="12.7"/>
+<element name="F9" library="molex" package="FUSE_5MM" value="FUSEX20MM" x="36.83" y="67.31"/>
 <element name="LED1" library="led" package="CHIPLED_0805" value="" x="-67.31" y="74.93"/>
 <element name="LED2" library="led" package="CHIPLED_0805" value="" x="-72.39" y="74.93"/>
 <element name="LED3" library="led" package="CHIPLED_0805" value="" x="-13.97" y="81.28"/>
@@ -1744,12 +1744,12 @@ design rules under a new name.</description>
 <signal name="PWM3">
 <contactref element="U1" pad="9"/>
 <contactref element="2PIN_4" pad="P$1"/>
-<wire x1="-27.33" y1="29.505" x2="26.67" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.33" y1="29.505" x2="29.21" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM6">
 <contactref element="U1" pad="12"/>
 <contactref element="2PIN_8" pad="P$1"/>
-<wire x1="-27.33" y1="27.555" x2="30.48" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.33" y1="27.555" x2="-43.18" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM5">
 <contactref element="U1" pad="11"/>
@@ -1913,10 +1913,10 @@ design rules under a new name.</description>
 <wire x1="-69.215" y1="56.14" x2="-64.135" y2="56.14" width="0" layer="19" extent="1-1"/>
 <wire x1="-70.27" y1="60.96" x2="-69.215" y2="56.14" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.61" y1="52.07" x2="-59.055" y2="56.14" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="52.07" x2="-45.93" y2="58.56" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.72" y1="52.07" x2="-45.93" y2="58.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.83" y1="52.07" x2="-42.93" y2="58.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.94" y1="52.07" x2="-36.83" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="33.02" x2="-27.94" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="29.21" x2="-27.94" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.33" y1="34.055" x2="-27.94" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.33" y1="32.755" x2="-27.33" y2="34.055" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.93" y1="32.755" x2="-27.33" y2="32.755" width="0" layer="19" extent="1-1"/>
@@ -1938,14 +1938,14 @@ design rules under a new name.</description>
 <contactref element="F7" pad="1"/>
 <contactref element="F8" pad="1"/>
 <contactref element="F9" pad="1"/>
-<wire x1="-62.23" y1="2.7" x2="50.8" y2="56.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.23" y1="2.7" x2="-69.85" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.61" y1="2.7" x2="-62.23" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.99" y1="2.7" x2="-54.61" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.37" y1="2.7" x2="-46.99" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.75" y1="2.7" x2="-39.37" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.13" y1="2.7" x2="-31.75" y2="2.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.51" y1="2.7" x2="-24.13" y2="2.7" width="0" layer="19" extent="1-1"/>
-<wire x1="40.8" y1="96.52" x2="-16.51" y2="2.7" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="57.31" x2="-16.51" y2="2.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATGND">
 <contactref element="U$3" pad="P$1"/>
@@ -2236,14 +2236,14 @@ design rules under a new name.</description>
 <contactref element="F8" pad="3"/>
 <contactref element="U$19" pad="P$1"/>
 <contactref element="U$19" pad="P$2"/>
-<wire x1="-32.385" y1="59.43" x2="50.8" y2="70.198" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.385" y1="59.43" x2="-69.85" y2="16.858" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.115" y1="59.43" x2="-32.385" y2="59.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="F9" pad="3"/>
 <contactref element="U$21" pad="P$1"/>
 <contactref element="U$21" pad="P$2"/>
-<wire x1="-36.195" y1="59.43" x2="54.958" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.195" y1="59.43" x2="36.83" y2="71.468" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.465" y1="59.43" x2="-36.195" y2="59.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
