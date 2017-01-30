@@ -44,13 +44,11 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/uln-udn.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/vishay.lbr"
-UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/eagle/Libraries/sullins.lbr"
-UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/MSAL Ben Hurwitz/MSAL Eagle/holesOnly/hole_arrays.lbr"
 
 [Win_1]
 Type="Control Panel"
 Loc="542 0 1365 729"
-State=2
+State=0
 Number=0
 
 [Desktop]
