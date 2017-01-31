@@ -15407,6 +15407,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS1" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="88.9" x2="-254" y2="88.9" width="0.1524" layer="91"/>
+<label x="-259.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P00"/>
@@ -15430,6 +15431,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS2" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="-17.78" x2="-254" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-259.08" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P01"/>
@@ -15453,6 +15455,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS3" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="-124.46" x2="-254" y2="-124.46" width="0.1524" layer="91"/>
+<label x="-259.08" y="-127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P02"/>
@@ -15476,6 +15479,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="U$14" gate="G$1" pin="G"/>
 <wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
+<label x="5.08" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P03"/>
@@ -15505,6 +15509,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="U$15" gate="G$1" pin="G"/>
 <wire x1="10.16" y1="-96.52" x2="15.24" y2="-96.52" width="0.1524" layer="91"/>
+<label x="10.16" y="-99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P04"/>
