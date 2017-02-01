@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14006,36 +14006,22 @@ by R. Vogg  15.March.2002</description>
 <junction x="40.64" y="-20.32"/>
 </segment>
 <segment>
-<pinref part="12VREG" gate="G$1" pin="VOADJUST"/>
-<wire x1="53.34" y1="25.4" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R_SET12V" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="12VREG" gate="G$1" pin="GND1"/>
 <wire x1="53.34" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="40.64" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="15.24" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
-<junction x="53.34" y="15.24"/>
 <pinref part="C_1_12V" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
-<junction x="45.72" y="15.24"/>
 <label x="38.1" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="3.3VREG" gate="G$1" pin="VOADJUST"/>
-<wire x1="53.34" y1="-81.28" x2="53.34" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="R_SET3.3V" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="-91.44" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="3.3VREG" gate="G$1" pin="GND1"/>
 <wire x1="53.34" y1="-66.04" x2="45.72" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-66.04" x2="45.72" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-91.44" x2="53.34" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="53.34" y="-91.44"/>
 <pinref part="C_1_3.3V" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="-83.82" x2="35.56" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-91.44" x2="35.56" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="45.72" y="-91.44"/>
-<label x="38.1" y="-91.44" size="1.778" layer="95"/>
+<label x="38.1" y="-99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R_LOAD" gate="G$1" pin="1"/>
@@ -14224,6 +14210,28 @@ by R. Vogg  15.March.2002</description>
 <pinref part="JP1" gate="G$1" pin="P$64"/>
 <wire x1="411.48" y1="35.56" x2="406.4" y2="35.56" width="0.1524" layer="91"/>
 <label x="406.4" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="12VREG" gate="G$1" pin="GND2"/>
+<wire x1="83.82" y1="27.94" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R_SET12V" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="15.24" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C_0_12V" gate="G$1" pin="-"/>
+<wire x1="91.44" y1="20.32" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="15.24" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
+<junction x="83.82" y="15.24"/>
+<label x="88.9" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="3.3VREG" gate="G$1" pin="GND2"/>
+<wire x1="83.82" y1="-78.74" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="R_SET3.3V" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="C_0_3.3V" gate="G$1" pin="-"/>
+<wire x1="91.44" y1="-86.36" x2="91.44" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="83.82" y="-91.44"/>
+<label x="88.9" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -14969,18 +14977,6 @@ by R. Vogg  15.March.2002</description>
 <junction x="91.44" y="33.02"/>
 </segment>
 </net>
-<net name="N$55" class="0">
-<segment>
-<pinref part="12VREG" gate="G$1" pin="GND2"/>
-<wire x1="83.82" y1="27.94" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R_SET12V" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="15.24" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="C_0_12V" gate="G$1" pin="-"/>
-<wire x1="91.44" y1="20.32" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="15.24" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
-<junction x="83.82" y="15.24"/>
-</segment>
-</net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="3.3VREG" gate="G$1" pin="VO"/>
@@ -14995,18 +14991,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="91.44" y1="-73.66" x2="91.44" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="91.44" y="-73.66"/>
 <pinref part="3.3VCS" gate="G$1" pin="IP+"/>
-</segment>
-</net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="3.3VREG" gate="G$1" pin="GND2"/>
-<wire x1="83.82" y1="-78.74" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="R_SET3.3V" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="C_0_3.3V" gate="G$1" pin="-"/>
-<wire x1="91.44" y1="-86.36" x2="91.44" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="83.82" y="-91.44"/>
 </segment>
 </net>
 <net name="N$58" class="0">
@@ -15120,6 +15104,11 @@ by R. Vogg  15.March.2002</description>
 <pinref part="12VCS" gate="G$1" pin="VIOUT"/>
 <wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 <label x="142.24" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="G$1" pin="CH4"/>
+<wire x1="20.32" y1="-203.2" x2="22.86" y2="-203.2" width="0.1524" layer="91"/>
+<label x="25.4" y="-203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5CSOUT" class="0">
@@ -15418,6 +15407,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS1" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="88.9" x2="-254" y2="88.9" width="0.1524" layer="91"/>
+<label x="-259.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P00"/>
@@ -15441,6 +15431,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS2" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="-17.78" x2="-254" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-259.08" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P01"/>
@@ -15464,6 +15455,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="HIGHSIDEMOS3" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="-124.46" x2="-254" y2="-124.46" width="0.1524" layer="91"/>
+<label x="-259.08" y="-127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P02"/>
@@ -15487,6 +15479,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="U$14" gate="G$1" pin="G"/>
 <wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
+<label x="5.08" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P03"/>
@@ -15516,6 +15509,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="U$15" gate="G$1" pin="G"/>
 <wire x1="10.16" y1="-96.52" x2="15.24" y2="-96.52" width="0.1524" layer="91"/>
+<label x="10.16" y="-99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IOEXPANDER" gate="G$1" pin="P04"/>
@@ -15613,6 +15607,22 @@ by R. Vogg  15.March.2002</description>
 <pinref part="HSOR3MOS1" gate="G$1" pin="GATE"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="-172.72" y1="-88.9" x2="-170.18" y2="-88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$83" class="0">
+<segment>
+<pinref part="R_SET3.3V" gate="G$1" pin="2"/>
+<pinref part="3.3VREG" gate="G$1" pin="VOADJUST"/>
+<wire x1="53.34" y1="-81.28" x2="53.34" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-91.44" x2="63.5" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$90" class="0">
+<segment>
+<pinref part="R_SET12V" gate="G$1" pin="2"/>
+<pinref part="12VREG" gate="G$1" pin="VOADJUST"/>
+<wire x1="53.34" y1="25.4" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

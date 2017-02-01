@@ -14674,12 +14674,6 @@ by R. Vogg  15.March.2002</description>
 <junction x="-162.56" y="20.32"/>
 </segment>
 </net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="HSOR2MOS1" gate="G$1" pin="GATE"/>
-<wire x1="-172.72" y1="17.78" x2="-170.18" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="BAT2CS" gate="G$1" pin="FILTER"/>
@@ -14797,12 +14791,6 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="BAT3HSOR" gate="G$1" pin="TMR"/>
 <pinref part="CTMR2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="HSOR3MOS1" gate="G$1" pin="GATE"/>
-<wire x1="-172.72" y1="-88.9" x2="-170.18" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -15611,6 +15599,20 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="HSOR1MOS1" gate="G$1" pin="GATE"/>
 <wire x1="-170.18" y1="124.46" x2="-172.72" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="HSOR2MOS1" gate="G$1" pin="GATE"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-172.72" y1="17.78" x2="-170.18" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="HSOR3MOS1" gate="G$1" pin="GATE"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="-172.72" y1="-88.9" x2="-170.18" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
