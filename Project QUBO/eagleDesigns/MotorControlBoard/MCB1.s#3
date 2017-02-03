@@ -7781,6 +7781,21 @@ type 0309, grid 2.5 mm</description>
 <wire x1="167.64" y1="58.42" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
 <label x="167.64" y="58.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<wire x1="-101.6" y1="190.5" x2="-109.22" y2="190.5" width="0.1524" layer="91"/>
+<label x="-109.22" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A2"/>
+<wire x1="-101.6" y1="185.42" x2="-109.22" y2="185.42" width="0.1524" layer="91"/>
+<label x="-109.22" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A4"/>
+<wire x1="-101.6" y1="180.34" x2="-109.22" y2="180.34" width="0.1524" layer="91"/>
+<label x="-109.22" y="180.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5VGND" class="0">
 <segment>
@@ -7836,8 +7851,8 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="EXTCLK"/>
-<wire x1="-73.66" y1="182.88" x2="-66.04" y2="182.88" width="0.1524" layer="91"/>
 <label x="-71.12" y="182.88" size="1.778" layer="95"/>
+<wire x1="-73.66" y1="182.88" x2="-66.04" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$13" gate="G$1" pin="GND"/>
@@ -7979,6 +7994,26 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-27.94" y1="167.64" x2="-22.86" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="175.26" x2="-17.78" y2="175.26" width="0.1524" layer="91"/>
 <label x="-17.78" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A1"/>
+<wire x1="-101.6" y1="187.96" x2="-109.22" y2="187.96" width="0.1524" layer="91"/>
+<label x="-109.22" y="187.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A3"/>
+<wire x1="-101.6" y1="182.88" x2="-109.22" y2="182.88" width="0.1524" layer="91"/>
+<label x="-109.22" y="182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A5"/>
+<wire x1="-73.66" y1="180.34" x2="-66.04" y2="180.34" width="0.1524" layer="91"/>
+<label x="-71.12" y="180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="!OE"/>
+<wire x1="-73.66" y1="177.8" x2="-66.04" y2="177.8" width="0.1524" layer="91"/>
+<label x="-71.12" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBAT" class="0">

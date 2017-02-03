@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -516,13 +516,53 @@
 <circle x="-6.35" y="0" radius="0.635" width="0.127" layer="51"/>
 </package>
 <package name="ULTRAFIT_2PIN">
-<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="3.81" y="0" drill="0.8" shape="square"/>
+<pad name="P$1" x="-1.75" y="0" drill="0.4" shape="square"/>
+<pad name="P$2" x="1.75" y="0" drill="0.4" shape="square" rot="R180"/>
+<hole x="4.2505" y="-0.6255" drill="2.25"/>
+<hole x="-4.2505" y="-0.6255" drill="2.25"/>
 </package>
 <package name="SUPERSABRE_3CIRCUIT">
 <pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="6.35" y="0" drill="0.8" shape="square"/>
 <pad name="P$3" x="-6.35" y="0" drill="0.8" shape="square"/>
+</package>
+<package name="FUSE_5MM">
+<wire x1="-3.2258" y1="-10.127" x2="-3.2258" y2="-4.1072" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="-10.127" x2="3.2258" y2="-10.127" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="-10.127" x2="3.2258" y2="-4.031" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="-4.031" x2="-3.2258" y2="-4.031" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="10.127" x2="3.2258" y2="4.1072" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="10.127" x2="-3.2258" y2="10.127" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="10.127" x2="-3.2258" y2="4.031" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="4.031" x2="3.2258" y2="4.031" width="0.2032" layer="21"/>
+<wire x1="-2.921" y1="9.812" x2="-2.921" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="-2.921" y1="-9.619" x2="0.254" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="0.254" y1="-9.619" x2="2.794" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="-9.619" x2="2.794" y2="9.177" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="9.177" x2="2.794" y2="9.812" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="9.812" x2="-2.921" y2="9.812" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="-10" drill="2.54" diameter="3.556"/>
+<pad name="2" x="0" y="-4.158" drill="2.54" diameter="3.556"/>
+<pad name="4" x="0" y="10" drill="2.54" diameter="3.556" rot="R180"/>
+<pad name="3" x="0" y="4.158" drill="2.54" diameter="3.556" rot="R180"/>
+</package>
+<package name="M205_5PIN">
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<pad name="P$1" x="6.7056" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$2" x="6.7056" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$3" x="4.1656" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$4" x="4.1656" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$5" x="1.6256" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$6" x="1.6256" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$7" x="-0.9144" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$8" x="-0.9144" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$9" x="-3.4544" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$10" x="-3.4544" y="-1.524" drill="1.1" shape="octagon"/>
+<text x="-7.62" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1317,7 +1357,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK254_6PIN">
+<deviceset name="KK254_6PIN" uservalue="yes">
 <description>Molex KK254 series 6-pin package &lt;br&gt;
 &lt;a href="http://www.molex.com/pdm_docs/sd/022032061_sd.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
 &lt;a href="http://www.molex.com/molex/products/listview.jsp?query=&amp;offset=0&amp;filter=&amp;fs=&amp;npp=20&amp;sType=a&amp;autoNav=&amp;path=+inmeta%3Apromotable%253Dyes+inmeta%3ACollectionName%253DImpulse++inmeta%3Acategory%253DPCB%252520Headers+inmeta%3Abreakaway%253DNo+inmeta%3Acircuitsloaded%253D6%2526partialfields%3D%28productname%3AKK%252520254%29&amp;channel=products"&gt; Link&lt;/a&gt;</description>
@@ -1366,6 +1406,44 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="X20MM" package="FUSE_5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M250_5PIN">
+<description>5-pin Eurostyle Terminal Block&lt;br&gt;
+Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
+Part number: 397000205</description>
+<gates>
+<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M205_5PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+<connect gate="G$1" pin="P$3" pad="P$5 P$6"/>
+<connect gate="G$1" pin="P$4" pad="P$7 P$8"/>
+<connect gate="G$1" pin="P$5" pad="P$9 P$10"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -43,8 +43,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -54,6 +58,51 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -475,6 +524,44 @@
 <pad name="P$2" x="6.35" y="0" drill="0.8" shape="square"/>
 <pad name="P$3" x="-6.35" y="0" drill="0.8" shape="square"/>
 </package>
+<package name="FUSE_5MM">
+<wire x1="-3.2258" y1="-10.127" x2="-3.2258" y2="-4.1072" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="-10.127" x2="3.2258" y2="-10.127" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="-10.127" x2="3.2258" y2="-4.031" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="-4.031" x2="-3.2258" y2="-4.031" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="10.127" x2="3.2258" y2="4.1072" width="0.2032" layer="21"/>
+<wire x1="3.2258" y1="10.127" x2="-3.2258" y2="10.127" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="10.127" x2="-3.2258" y2="4.031" width="0.2032" layer="21"/>
+<wire x1="-3.2258" y1="4.031" x2="3.2258" y2="4.031" width="0.2032" layer="21"/>
+<wire x1="-2.921" y1="9.812" x2="-2.921" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="-2.921" y1="-9.619" x2="0.254" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="0.254" y1="-9.619" x2="2.794" y2="-9.619" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="-9.619" x2="2.794" y2="9.177" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="9.177" x2="2.794" y2="9.812" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="9.812" x2="-2.921" y2="9.812" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="-10" drill="2.54" diameter="3.556"/>
+<pad name="2" x="0" y="-4.158" drill="2.54" diameter="3.556"/>
+<pad name="4" x="0" y="10" drill="2.54" diameter="3.556" rot="R180"/>
+<pad name="3" x="0" y="4.158" drill="2.54" diameter="3.556" rot="R180"/>
+</package>
+<package name="M205_5PIN">
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<pad name="P$1" x="6.7056" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$2" x="6.7056" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$3" x="4.1656" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$4" x="4.1656" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$5" x="1.6256" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$6" x="1.6256" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$7" x="-0.9144" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$8" x="-0.9144" y="-1.524" drill="1.1" shape="octagon"/>
+<pad name="P$9" x="-3.4544" y="3.556" drill="1.1" shape="octagon"/>
+<pad name="P$10" x="-3.4544" y="-1.524" drill="1.1" shape="octagon"/>
+<text x="-7.62" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SUPERSABRE_2CIRCUIT">
@@ -834,6 +921,14 @@
 <wire x1="-5.08" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
 <text x="-12.7" y="-2.54" size="1.778" layer="94">&gt;VALUE</text>
 <text x="-12.7" y="15.24" size="1.778" layer="94">G$1</text>
+</symbol>
+<symbol name="FUSE">
+<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-10.16" y="2.54" size="1.27" layer="95">&gt;Name</text>
+<text x="5.08" y="2.54" size="1.27" layer="96">&gt;Value</text>
+<pin name="1" x="-10.16" y="0" length="middle"/>
+<pin name="2" x="10.16" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1285,9 +1380,15 @@ Created by Ben Hurwitz, 10 March 2016</description>
 </deviceset>
 <deviceset name="SUPERSABRE_3CIRCUIT">
 <gates>
+<gate name="G$1" symbol="SUPERSABRE_3CIRCUIT" x="-5.08" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="SUPERSABRE_3CIRCUIT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1303,6 +1404,44 @@ Created by Ben Hurwitz, 10 March 2016</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="X20MM" package="FUSE_5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M250_5PIN">
+<description>5-pin Eurostyle Terminal Block&lt;br&gt;
+Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
+Part number: 397000205</description>
+<gates>
+<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M205_5PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+<connect gate="G$1" pin="P$3" pad="P$5 P$6"/>
+<connect gate="G$1" pin="P$4" pad="P$7 P$8"/>
+<connect gate="G$1" pin="P$5" pad="P$9 P$10"/>
 </connects>
 <technologies>
 <technology name=""/>

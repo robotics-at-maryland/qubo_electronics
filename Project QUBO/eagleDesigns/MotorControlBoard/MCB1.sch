@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -331,42 +335,44 @@ http://www.linear-tech.com&lt;p&gt;
 </packages>
 <symbols>
 <symbol name="LTC2497">
-<wire x1="-25.4" y1="38.1" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-45.72" x2="20.32" y2="38.1" width="0.254" layer="94"/>
-<wire x1="20.32" y1="38.1" x2="-25.4" y2="38.1" width="0.254" layer="94"/>
-<pin name="GND" x="-30.48" y="35.56" length="middle"/>
-<pin name="SCL" x="-30.48" y="30.48" length="middle"/>
-<pin name="SDA" x="-30.48" y="25.4" length="middle"/>
-<pin name="NC" x="-30.48" y="20.32" length="middle"/>
-<pin name="COM" x="-30.48" y="15.24" length="middle"/>
-<pin name="MUXOUTP" x="-30.48" y="10.16" length="middle"/>
-<pin name="MUXOUTN" x="-30.48" y="5.08" length="middle"/>
-<pin name="ADCINN" x="-30.48" y="0" length="middle"/>
-<pin name="ADCINP" x="-30.48" y="-5.08" length="middle"/>
-<pin name="REF+" x="-30.48" y="-10.16" length="middle"/>
-<pin name="REF-" x="-30.48" y="-15.24" length="middle"/>
-<pin name="CH15" x="25.4" y="-40.64" length="middle" rot="R180"/>
-<pin name="CH14" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="CH13" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="CH12" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="CH11" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="CH10" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="CH9" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="CH8" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="CH7" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="CH6" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="CH5" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="CH4" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="CH3" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="CH2" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="CH1" x="25.4" y="30.48" length="middle" rot="R180"/>
-<pin name="CH0" x="25.4" y="35.56" length="middle" rot="R180"/>
-<pin name="F0" x="-30.48" y="-20.32" length="middle"/>
-<pin name="CA0" x="-30.48" y="-25.4" length="middle"/>
-<pin name="CA1" x="-30.48" y="-30.48" length="middle"/>
-<pin name="CA2" x="-30.48" y="-35.56" length="middle"/>
-<pin name="VCC" x="-30.48" y="-40.64" length="middle"/>
+<wire x1="-22.86" y1="40.64" x2="-22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-43.18" x2="22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-43.18" x2="22.86" y2="40.64" width="0.254" layer="94"/>
+<wire x1="22.86" y1="40.64" x2="-22.86" y2="40.64" width="0.254" layer="94"/>
+<pin name="GND" x="-27.94" y="38.1" length="middle"/>
+<pin name="SCL" x="-27.94" y="33.02" length="middle"/>
+<pin name="SDA" x="-27.94" y="27.94" length="middle"/>
+<pin name="NC" x="-27.94" y="22.86" length="middle"/>
+<pin name="COM" x="-27.94" y="17.78" length="middle"/>
+<pin name="MUXOUTP" x="-27.94" y="12.7" length="middle"/>
+<pin name="MUXOUTN" x="-27.94" y="7.62" length="middle"/>
+<pin name="ADCINN" x="-27.94" y="2.54" length="middle"/>
+<pin name="ADCINP" x="-27.94" y="-2.54" length="middle"/>
+<pin name="REF+" x="-27.94" y="-7.62" length="middle"/>
+<pin name="REF-" x="-27.94" y="-12.7" length="middle"/>
+<pin name="CH15" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="CH14" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="CH13" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="CH12" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="CH11" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="CH10" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="CH9" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="CH8" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="CH7" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="CH6" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="CH5" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="CH4" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="CH3" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="CH2" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="CH1" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="CH0" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="F0" x="-27.94" y="-17.78" length="middle"/>
+<pin name="CA0" x="-27.94" y="-22.86" length="middle"/>
+<pin name="CA1" x="-27.94" y="-27.94" length="middle"/>
+<pin name="CA2" x="-27.94" y="-33.02" length="middle"/>
+<pin name="VCC" x="-27.94" y="-38.1" length="middle"/>
+<text x="-20.32" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-17.78" y="40.64" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -497,8 +503,27 @@ http://www.linear-tech.com&lt;p&gt;
 <pad name="P$3" x="-6.35" y="0" drill="0.8" shape="square"/>
 </package>
 <package name="ULTRAFIT_2PIN">
-<pad name="P$1" x="-3.81" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="3.81" y="0" drill="0.8" shape="square"/>
+<description>molex Ultrafit 2 ckt header
+http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEADERS.xml#partdetail</description>
+<pad name="P$1" x="-1.75" y="0" drill="0.4" shape="square"/>
+<pad name="P$2" x="1.75" y="0" drill="0.4" shape="square" rot="R180"/>
+<hole x="4.2505" y="-0.6255" drill="2.25"/>
+<hole x="-4.2505" y="-0.6255" drill="2.25"/>
+<wire x1="-5.3005" y1="2.4305" x2="5.3005" y2="2.4305" width="0.127" layer="51"/>
+<wire x1="5.3005" y1="2.4305" x2="5.3005" y2="-2.9205" width="0.127" layer="51"/>
+<wire x1="5.3005" y1="-2.9205" x2="-5.3005" y2="-2.9205" width="0.127" layer="51"/>
+<wire x1="-5.3005" y1="-2.9205" x2="-5.3005" y2="2.4305" width="0.127" layer="51"/>
+<wire x1="-5.75" y1="2.75" x2="-5.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-3.25" x2="5.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-3.25" x2="5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="5.75" y1="2.75" x2="4.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="2.75" x2="4.23" y2="6.1" width="0.127" layer="21"/>
+<wire x1="4.23" y1="6.1" x2="-4.33" y2="6.1" width="0.127" layer="21"/>
+<wire x1="-4.33" y1="6.1" x2="-4.33" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-4.33" y1="2.75" x2="-5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="3.9005" y1="2.4305" x2="3.9005" y2="5.7405" width="0.127" layer="48"/>
+<wire x1="3.9005" y1="5.7405" x2="-3.9005" y2="5.7405" width="0.127" layer="48"/>
+<wire x1="-3.9005" y1="5.7405" x2="-3.9005" y2="2.4305" width="0.127" layer="48"/>
 </package>
 <package name="FUSE_5MM">
 <wire x1="-3.2258" y1="-10.127" x2="-3.2258" y2="-4.1072" width="0.2032" layer="21"/>
@@ -7579,7 +7604,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
-<wire x1="-66.04" y1="71.12" x2="-78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="73.66" x2="-78.74" y2="71.12" width="0.1524" layer="91"/>
 <label x="-78.74" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -7596,7 +7621,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
-<wire x1="-66.04" y1="66.04" x2="-78.74" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="68.58" x2="-78.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="-78.74" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -7709,7 +7734,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="-66.04" y1="0" x2="-78.74" y2="0" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="2.54" x2="-78.74" y2="0" width="0.1524" layer="91"/>
 <label x="-78.74" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -7722,7 +7747,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="REF+"/>
-<wire x1="-66.04" y1="30.48" x2="-78.74" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="33.02" x2="-78.74" y2="30.48" width="0.1524" layer="91"/>
 <label x="-78.74" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -7832,21 +7857,21 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="-66.04" y1="76.2" x2="-78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="78.74" x2="-78.74" y2="76.2" width="0.1524" layer="91"/>
 <label x="-78.74" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="F0"/>
-<wire x1="-66.04" y1="20.32" x2="-71.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="22.86" x2="-71.12" y2="20.32" width="0.1524" layer="91"/>
 <label x="-78.74" y="20.32" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="REF-"/>
 <wire x1="-71.12" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="25.4" x2="-71.12" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="27.94" x2="-71.12" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="25.4" x2="-71.12" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="COM"/>
-<wire x1="-66.04" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="58.42" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
 <label x="-78.74" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8142,24 +8167,24 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="ADCINP"/>
 <wire x1="-78.74" y1="50.8" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="35.56" x2="-63.5" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="MUXOUTP"/>
-<wire x1="-78.74" y1="50.8" x2="-66.04" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="50.8" x2="-63.5" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MUXOUTN"/>
-<wire x1="-66.04" y1="45.72" x2="-76.2" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="48.26" x2="-76.2" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="45.72" x2="-76.2" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="ADCINN"/>
-<wire x1="-76.2" y1="40.64" x2="-66.04" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="40.64" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AN0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH0"/>
-<wire x1="-10.16" y1="76.2" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="78.74" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
 <label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8171,7 +8196,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH1"/>
-<wire x1="-10.16" y1="71.12" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="73.66" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
 <label x="-2.54" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8183,7 +8208,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH2"/>
-<wire x1="-10.16" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="68.58" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
 <label x="-2.54" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8195,7 +8220,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH3"/>
-<wire x1="-10.16" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="63.5" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
 <label x="-2.54" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8207,7 +8232,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH4"/>
-<wire x1="-10.16" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="58.42" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
 <label x="-2.54" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8219,7 +8244,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN5" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH5"/>
-<wire x1="-10.16" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="53.34" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 <label x="-2.54" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8231,7 +8256,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN6" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH6"/>
-<wire x1="-10.16" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="48.26" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="-2.54" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -8243,7 +8268,7 @@ type 0309, grid 2.5 mm</description>
 <net name="AN7" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CH7"/>
-<wire x1="-10.16" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="43.18" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
 <label x="-2.54" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
