@@ -13540,7 +13540,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="C12" gate="G$1" x="-218.44" y="81.28"/>
 <instance part="R10" gate="G$1" x="-220.98" y="124.46" rot="R90"/>
 <instance part="R11" gate="G$1" x="-220.98" y="101.6" rot="R90"/>
-<instance part="C13" gate="G$1" x="-231.14" y="106.68"/>
+<instance part="C13" gate="G$1" x="-231.14" y="109.22"/>
 <instance part="R12" gate="G$1" x="-116.84" y="109.22" rot="R90"/>
 <instance part="R13" gate="G$1" x="-116.84" y="121.92" rot="R90"/>
 <instance part="R14" gate="G$1" x="-116.84" y="96.52" rot="R90"/>
@@ -13757,11 +13757,6 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-205.74" y1="73.66" x2="-205.74" y2="71.12" width="0.1524" layer="91"/>
 <label x="-205.74" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-231.14" y1="101.6" x2="-231.14" y2="99.06" width="0.1524" layer="91"/>
-<label x="-236.22" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
@@ -14261,6 +14256,20 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-231.14" y1="-109.22" x2="-231.14" y2="-111.76" width="0.1524" layer="91"/>
 <junction x="-231.14" y="-111.76"/>
 </segment>
+<segment>
+<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
+<wire x1="-246.38" y1="99.06" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="99.06" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R48" gate="G$1" pin="1"/>
+<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
+<wire x1="-241.3" y1="101.6" x2="-241.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="101.6" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-241.3" y="101.6"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-231.14" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="104.14" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-231.14" y="101.6"/>
+</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -14317,7 +14326,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-213.36" y1="91.44" x2="-198.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="-220.98" y1="111.76" x2="-231.14" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="111.76" x2="-231.14" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -15371,18 +15379,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-142.24" y1="-68.58" x2="-142.24" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-142.24" y1="-86.36" x2="-147.32" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="-147.32" y="-91.44"/>
-</segment>
-</net>
-<net name="N$75" class="0">
-<segment>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
-<wire x1="-246.38" y1="99.06" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-241.3" y1="99.06" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
-<wire x1="-241.3" y1="101.6" x2="-241.3" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-241.3" y="101.6"/>
 </segment>
 </net>
 <net name="OR1EN" class="0">

@@ -14370,7 +14370,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="-116.84" y="101.6"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="BAT1HSOROUT" class="0">
 <segment>
 <pinref part="RSNS" gate="G$1" pin="2"/>
 <pinref part="BAT1HSOR" gate="G$1" pin="OUT"/>
@@ -14720,7 +14720,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="-116.84" y="-5.08"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="BAT2HSOROUT" class="0">
 <segment>
 <pinref part="RSNS1" gate="G$1" pin="2"/>
 <pinref part="BAT2HSOR" gate="G$1" pin="OUT"/>
@@ -14860,7 +14860,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="-116.84" y="-111.76"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="BAT3HSOROUT" class="0">
 <segment>
 <pinref part="RSNS2" gate="G$1" pin="2"/>
 <pinref part="BAT3HSOR" gate="G$1" pin="OUT"/>
