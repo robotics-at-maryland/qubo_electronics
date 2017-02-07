@@ -13805,6 +13805,9 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-220.98" y1="96.52" x2="-220.98" y2="93.98" width="0.1524" layer="91"/>
 <label x="-226.06" y="93.98" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-231.14" y1="104.14" x2="-231.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="93.98" x2="-220.98" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -14278,21 +14281,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="91.44" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="83.82" y="-91.44"/>
 <label x="88.9" y="-93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
-<wire x1="-246.38" y1="99.06" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-241.3" y1="99.06" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
-<wire x1="-241.3" y1="101.6" x2="-241.3" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="101.6" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-241.3" y="101.6"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-231.14" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="104.14" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-231.14" y="101.6"/>
-<label x="-231.14" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15652,6 +15640,18 @@ by R. Vogg  15.March.2002</description>
 <pinref part="BAT2HSOR" gate="G$1" pin="SHDN'"/>
 <wire x1="-241.3" y1="-7.62" x2="-241.3" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="-5.08" x2="-198.12" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
+<pinref part="R48" gate="G$1" pin="1"/>
+<wire x1="-198.12" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="101.6" x2="-241.3" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
+<wire x1="-241.3" y1="101.6" x2="-246.38" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-246.38" y1="101.6" x2="-246.38" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-241.3" y="101.6"/>
 </segment>
 </net>
 </nets>

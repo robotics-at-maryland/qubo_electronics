@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15104,6 +15104,11 @@ by R. Vogg  15.March.2002</description>
 <pinref part="12VCS" gate="G$1" pin="VIOUT"/>
 <wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 <label x="142.24" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="G$1" pin="CH4"/>
+<wire x1="20.32" y1="-203.2" x2="22.86" y2="-203.2" width="0.1524" layer="91"/>
+<label x="25.4" y="-203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5CSOUT" class="0">
