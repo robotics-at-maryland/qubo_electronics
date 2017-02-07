@@ -97,7 +97,8 @@
 <devicesets>
 <deviceset name="F93-XX-XXX-X-B" prefix="G" uservalue="yes">
 <description>AVX Tantalum J-Lead Capacitor&lt;br&gt;
-F930J107MBA&lt;br&gt;
+F93-XX-XXX-X-B&lt;br&gt;
+B-style case (1210)&lt;br&gt;
 &lt;a href=http://datasheets.avx.com/f93.pdf&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
@@ -117,7 +118,7 @@ F930J107MBA&lt;br&gt;
 <deviceset name="F93-XX-XXX-X-A" uservalue="yes">
 <description>AVX Tantulum Capacitor&lt;br&gt;
 Model number F93-XX-XXX-X-A&lt;br&gt;
-1206</description>
+Case A (1206)</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
 </gates>
