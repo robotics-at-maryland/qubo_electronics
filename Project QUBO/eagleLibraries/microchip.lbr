@@ -179,6 +179,18 @@
 <text x="-5" y="5" size="1.016" layer="25">&gt;NAME</text>
 <text x="-4" y="3" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+<package name="4-CDFN_3.2X2.5MM">
+<wire x1="-1.25" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.6" x2="-1.25" y2="1.6" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.95" y="1.05" dx="1" dy="0.9" layer="1"/>
+<smd name="P$2" x="-0.95" y="-1.05" dx="1" dy="0.9" layer="1"/>
+<smd name="P$3" x="0.95" y="-1.05" dx="1" dy="0.9" layer="1"/>
+<smd name="P$4" x="1.05" y="1.05" dx="1" dy="0.9" layer="1"/>
+<text x="-2" y="2" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB2412">
@@ -290,6 +302,18 @@
 <text x="-35.56" y="43.18" size="1.778" layer="95">&gt;NAME</text>
 <text x="-35.56" y="-48.26" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="-48.26" visible="pin" length="middle" rot="R90"/>
+</symbol>
+<symbol name="DSC6XXX">
+<pin name="EN" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -415,6 +439,28 @@ QFN-64 package&lt;br&gt;
 <connect gate="G$1" pin="VDDA33@57" pad="P$58"/>
 <connect gate="G$1" pin="XTAL1/CLKIN" pad="P$62"/>
 <connect gate="G$1" pin="XTAL2" pad="P$61"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCS6XXX" uservalue="yes">
+<description>Microchip DSC6XXX Oscillator&lt;br&gt;
+Various frequencies.&lt;br&gt;
+NOTE: Some variations have different pinouts! &lt;br&gt;
+&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20005625A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DSC6XXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4-CDFN_3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$3"/>
+<connect gate="G$1" pin="VDD" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
