@@ -897,7 +897,7 @@
 <text x="-5.08" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 <circle x="0" y="-17.78" radius="0.915809375" width="0.254" layer="94"/>
 </symbol>
-<symbol name="KK254_VERT_5PIN">
+<symbol name="5-PIN">
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
@@ -1379,7 +1379,7 @@ Part Number: 22-10-2051&lt;br&gt;
 &lt;a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022102051_PCB_HEADERS.xml"&gt;Information&lt;/a&gt;&lt;br&gt;
 Created by Ben Hurwitz, 10 March 2016</description>
 <gates>
-<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+<gate name="G$1" symbol="5-PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="KK254_VERT_5PIN">
@@ -1473,7 +1473,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
 Part number: 397000205</description>
 <gates>
-<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+<gate name="G$1" symbol="5-PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="M205_5PIN">

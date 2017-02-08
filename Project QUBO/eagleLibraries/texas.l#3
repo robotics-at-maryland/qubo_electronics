@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -45000,12 +45000,25 @@ SSOP28DB package</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCA9306DCTR">
+<deviceset name="PCA9306DCTR" uservalue="yes">
+<description>TI I2C/SMBus Level Shifter&lt;br&gt;
+Bidirectional 5V &lt;-&gt; 3V3 &lt;br&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/pca9306.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="PCA9306" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO-08">
+<device name="" package="SM8">
+<connects>
+<connect gate="G$1" pin="EN" pad="P$8"/>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="SCL1" pad="P$3"/>
+<connect gate="G$1" pin="SCL2" pad="P$6"/>
+<connect gate="G$1" pin="SDA1" pad="P$4"/>
+<connect gate="G$1" pin="SDA2" pad="P$5"/>
+<connect gate="G$1" pin="VREF1" pad="P$2"/>
+<connect gate="G$1" pin="VREF2" pad="P$7"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

@@ -32328,6 +32328,42 @@ changed 2011-11-09</description>
 <text x="-15.24" y="22.86" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MAX213">
+<pin name="DOUT3" x="-15.24" y="17.78" length="middle"/>
+<pin name="DOUT1" x="-15.24" y="15.24" length="middle"/>
+<pin name="DOUT2" x="-15.24" y="12.7" length="middle"/>
+<pin name="RIN2" x="-15.24" y="10.16" length="middle"/>
+<pin name="ROUT2" x="-15.24" y="7.62" length="middle"/>
+<pin name="DIN2" x="-15.24" y="5.08" length="middle"/>
+<pin name="DIN1" x="-15.24" y="2.54" length="middle"/>
+<pin name="ROUT1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="RIN1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VCC" x="-15.24" y="-10.16" length="middle"/>
+<pin name="C1+" x="-15.24" y="-12.7" length="middle"/>
+<pin name="V+" x="-15.24" y="-15.24" length="middle"/>
+<pin name="C1-" x="-15.24" y="-17.78" length="middle"/>
+<pin name="C2+" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="C2-" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="V-" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="RIN5" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="ROUT5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="DIN3" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="DIN4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="ROUT4" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="RIN4" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="!SHDN!" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="ROUT3" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="RIN3" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="DOUT4" x="15.24" y="17.78" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
+<text x="-10.16" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ2054PN" prefix="U">
