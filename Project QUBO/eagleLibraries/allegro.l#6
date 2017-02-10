@@ -105,7 +105,7 @@
 <wire x1="4.3" y1="2.5" x2="4.33" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="4.33" y1="-2.5" x2="-4.33" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-4.33" y1="-2.5" x2="-4.3" y2="2.5" width="0.127" layer="21"/>
-<circle x="-3.5" y="-1.5" radius="0.4242625" width="0.127" layer="21"/>
+<circle x="-3.6" y="-1.8" radius="0.412309375" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
