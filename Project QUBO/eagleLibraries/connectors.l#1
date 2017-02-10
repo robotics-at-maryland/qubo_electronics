@@ -68,10 +68,10 @@
 <wire x1="-6.55" y1="-2.86" x2="-6.55" y2="2.86" width="0.127" layer="21"/>
 <hole x="-6.57" y="-1.125" drill="2.35"/>
 <hole x="6.55" y="-1.125" drill="2.35"/>
-<pad name="1" x="-3.55" y="1.585" drill="0.95" shape="square"/>
-<pad name="2" x="-1" y="1.585" drill="0.95"/>
-<pad name="3" x="1" y="1.585" drill="0.95"/>
-<pad name="4" x="3.55" y="1.585" drill="0.95"/>
+<pad name="VDD" x="-3.55" y="1.585" drill="0.95" shape="square"/>
+<pad name="D-" x="-1" y="1.585" drill="0.95"/>
+<pad name="D+" x="1" y="1.585" drill="0.95"/>
+<pad name="GND" x="3.55" y="1.585" drill="0.95"/>
 <text x="-7" y="4" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7" y="-5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -113,10 +113,10 @@ UE27AE54100&lt;br&gt;
 <devices>
 <device name="" package="UE27AE54100">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="1" pad="VDD"/>
+<connect gate="G$1" pin="2" pad="D-"/>
+<connect gate="G$1" pin="3" pad="D+"/>
+<connect gate="G$1" pin="4" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -124,12 +124,21 @@ UE27AE54100&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DF13-4">
+<deviceset name="DF13-4" uservalue="yes">
+<description>Hirose 4-pin vertical header&lt;br&gt;
+1.25mm Pitch Miniature Crimping Connector&lt;br&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/DF13-4P-1.25DSA/H2193-ND/241767"&gt;Digikey Product Page&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="4-PIN-HEADER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DF13-4">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
