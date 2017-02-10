@@ -10304,8 +10304,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C5" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="C6" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="DVL_SLAVE_FTDI" library="ftdichip" deviceset="FT232R" device="Q"/>
@@ -10313,8 +10313,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
@@ -10330,7 +10330,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C27" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="100&gt;R&gt;40"/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED7" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED7" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="U$2" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$3" library="NXP" deviceset="PRTR5V0U2X" device=""/>

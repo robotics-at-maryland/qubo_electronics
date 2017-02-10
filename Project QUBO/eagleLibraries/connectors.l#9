@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -68,18 +68,32 @@
 <wire x1="-6.55" y1="-2.86" x2="-6.55" y2="2.86" width="0.127" layer="21"/>
 <hole x="-6.57" y="-1.125" drill="2.35"/>
 <hole x="6.55" y="-1.125" drill="2.35"/>
-<pad name="P$1" x="-3.55" y="1.585" drill="0.95" shape="square"/>
-<pad name="P$2" x="-1" y="1.585" drill="0.95"/>
-<pad name="P$3" x="1" y="1.585" drill="0.95"/>
-<pad name="P$4" x="3.55" y="1.585" drill="0.95"/>
+<pad name="VDD" x="-3.55" y="1.585" drill="0.95" shape="square"/>
+<pad name="D-" x="-1" y="1.585" drill="0.95"/>
+<pad name="D+" x="1" y="1.585" drill="0.95"/>
+<pad name="GND" x="3.55" y="1.585" drill="0.95"/>
+<text x="-7" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7" y="-5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13-4">
+<wire x1="-3.325" y1="1.7" x2="3.325" y2="1.7" width="0.127" layer="21"/>
+<wire x1="3.325" y1="1.7" x2="3.325" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="3.325" y1="-1.7" x2="-3.325" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="-1.7" x2="-3.325" y2="1.7" width="0.127" layer="21"/>
+<pad name="P$1" x="1.875" y="0.49" drill="0.35" shape="square"/>
+<pad name="P$2" x="0.625" y="0.49" drill="0.35"/>
+<pad name="P$3" x="-0.625" y="0.49" drill="0.35"/>
+<pad name="P$4" x="-1.875" y="0.49" drill="0.35"/>
+<text x="-3.75" y="2.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.75" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
 <symbol name="4-PIN-HEADER">
-<pin name="1" x="-7.62" y="7.62" visible="pad" length="middle"/>
-<pin name="2" x="-7.62" y="2.54" visible="pad" length="middle"/>
-<pin name="3" x="-7.62" y="-2.54" visible="pad" length="middle"/>
-<pin name="4" x="-7.62" y="-7.62" visible="pad" length="middle"/>
+<pin name="1" x="-7.62" y="7.62" visible="pin" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" visible="pin" length="middle"/>
+<pin name="3" x="-7.62" y="-2.54" visible="pin" length="middle"/>
+<pin name="4" x="-7.62" y="-7.62" visible="pin" length="middle"/>
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
@@ -89,6 +103,48 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="USB_4PIN_VERT" uservalue="yes">
+<description>Amphenol USB 4-pin vertical header&lt;br&gt;
+UE27AE54100&lt;br&gt;
+&lt;a href="https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27AEX4X0X.pdf"&gt;Drawing&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="4-PIN-HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UE27AE54100">
+<connects>
+<connect gate="G$1" pin="1" pad="VDD"/>
+<connect gate="G$1" pin="2" pad="D-"/>
+<connect gate="G$1" pin="3" pad="D+"/>
+<connect gate="G$1" pin="4" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF13-4" uservalue="yes">
+<description>Hirose 4-pin vertical header&lt;br&gt;
+1.25mm Pitch Miniature Crimping Connector&lt;br&gt;
+&lt;a href="https://www.digikey.com/product-detail/en/DF13-4P-1.25DSA/H2193-ND/241767"&gt;Digikey Product Page&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="4-PIN-HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF13-4">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

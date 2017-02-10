@@ -477,7 +477,7 @@ SSOP28DB package</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2044B" prefix="G" uservalue="yes">
+<deviceset name="TPS2044B" prefix="G">
 <description>Texas Instruments TPS2044BD-SOIC&lt;br&gt;
 Current-limited power distribution switches&lt;br&gt;
 0.5A continuous current, 1.25A max current, 3.3-5V&lt;br&gt;

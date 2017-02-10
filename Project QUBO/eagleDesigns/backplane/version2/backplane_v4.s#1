@@ -6177,86 +6177,86 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 <library name="samtec">
 <packages>
 <package name="MPTC-01-80">
-<pad name="1" x="-19" y="-2.54" drill="0.86" shape="square" rot="R180"/>
-<pad name="2" x="-17" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="3" x="-15" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="4" x="-13" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="5" x="-11" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="6" x="-9" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="7" x="-7" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="8" x="-5" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="9" x="-3" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="10" x="-1" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="11" x="1" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="12" x="3" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="13" x="5" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="14" x="7" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="15" x="9" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="16" x="11" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="17" x="13" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="18" x="15" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="19" x="17" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="20" x="19" y="-2.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="21" x="-19" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="22" x="-17" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="23" x="-15" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="24" x="-13" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="25" x="-11" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="26" x="-9" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="27" x="-7" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="28" x="-5" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="29" x="-3" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="30" x="-1" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="31" x="1" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="32" x="3" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="33" x="5" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="34" x="7" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="35" x="9" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="36" x="11" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="37" x="13" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="38" x="15" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="39" x="17" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="40" x="19" y="-0.54" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="41" x="-19" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="42" x="-17" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="43" x="-15" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="44" x="-13" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="45" x="-11" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="46" x="-9" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="47" x="-7" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="48" x="-5" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="49" x="-3" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="50" x="-1" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="51" x="1" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="52" x="3" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="53" x="5" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="54" x="7" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="55" x="9" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="56" x="11" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="57" x="13" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="58" x="15" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="59" x="17" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="60" x="19" y="1.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="61" x="-19" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="62" x="-17" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="63" x="-15" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="64" x="-13" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="65" x="-11" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="66" x="-9" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="67" x="-7" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="68" x="-5" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="69" x="-3" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="70" x="-1" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="71" x="1" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="72" x="3" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="73" x="5" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="74" x="7" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="75" x="9" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="76" x="11" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="77" x="13" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="78" x="15" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="79" x="17" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
-<pad name="80" x="19" y="3.46" drill="0.86" shape="octagon" rot="R180"/>
+<pad name="1" x="-19" y="-2.54" drill="0.9" shape="square" rot="R180"/>
+<pad name="2" x="-17" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="3" x="-15" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="4" x="-13" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="5" x="-11" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="6" x="-9" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="7" x="-7" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="8" x="-5" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="9" x="-3" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="10" x="-1" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="11" x="1" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="12" x="3" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="13" x="5" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="14" x="7" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="15" x="9" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="16" x="11" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="17" x="13" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="18" x="15" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="19" x="17" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="20" x="19" y="-2.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="21" x="-19" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="22" x="-17" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="23" x="-15" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="24" x="-13" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="25" x="-11" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="26" x="-9" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="27" x="-7" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="28" x="-5" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="29" x="-3" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="30" x="-1" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="31" x="1" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="32" x="3" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="33" x="5" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="34" x="7" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="35" x="9" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="36" x="11" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="37" x="13" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="38" x="15" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="39" x="17" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="40" x="19" y="-0.54" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="41" x="-19" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="42" x="-17" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="43" x="-15" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="44" x="-13" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="45" x="-11" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="46" x="-9" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="47" x="-7" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="48" x="-5" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="49" x="-3" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="50" x="-1" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="51" x="1" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="52" x="3" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="53" x="5" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="54" x="7" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="55" x="9" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="56" x="11" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="57" x="13" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="58" x="15" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="59" x="17" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="60" x="19" y="1.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="61" x="-19" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="62" x="-17" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="63" x="-15" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="64" x="-13" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="65" x="-11" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="66" x="-9" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="67" x="-7" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="68" x="-5" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="69" x="-3" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="70" x="-1" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="71" x="1" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="72" x="3" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="73" x="5" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="74" x="7" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="75" x="9" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="76" x="11" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="77" x="13" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="78" x="15" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="79" x="17" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
+<pad name="80" x="19" y="3.46" drill="0.9" shape="octagon" rot="R180"/>
 <pad name="P1,1" x="-22.5" y="-2.54" drill="1.04" shape="octagon" rot="R270"/>
 <pad name="P1,2" x="-22.5" y="0" drill="1.04" shape="octagon" rot="R270"/>
 <pad name="P1,3" x="-22.5" y="2.54" drill="1.04" shape="octagon" rot="R270"/>
@@ -6269,26 +6269,40 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 <pad name="P2,4" x="24.38" y="2.54" drill="1.04" shape="octagon" rot="R270"/>
 <pad name="P2,5" x="24.38" y="0" drill="1.04" shape="octagon" rot="R270"/>
 <pad name="P2,6" x="24.38" y="-2.54" drill="1.04" shape="octagon" rot="R270"/>
-<hole x="-27.255" y="-2.15" drill="1.19"/>
-<hole x="27.255" y="-2.15" drill="1.19"/>
-<wire x1="-29.72" y1="6.225" x2="0" y2="6.225" width="0.127" layer="51"/>
-<wire x1="-29.72" y1="6.225" x2="-29.72" y2="1.75" width="0.127" layer="51"/>
-<wire x1="-29.72" y1="1.75" x2="-30.72" y2="1.75" width="0.127" layer="51"/>
-<wire x1="-30.72" y1="1.75" x2="-30.72" y2="0" width="0.127" layer="51"/>
-<wire x1="29.72" y1="6.225" x2="0" y2="6.225" width="0.127" layer="52"/>
-<wire x1="29.72" y1="6.225" x2="29.72" y2="1.75" width="0.127" layer="52"/>
-<wire x1="29.72" y1="1.75" x2="30.72" y2="1.75" width="0.127" layer="52"/>
-<wire x1="30.72" y1="1.75" x2="30.72" y2="0" width="0.127" layer="52"/>
-<wire x1="29.72" y1="-6.225" x2="0" y2="-6.225" width="0.127" layer="51"/>
-<wire x1="29.72" y1="-6.225" x2="29.72" y2="-1.75" width="0.127" layer="51"/>
-<wire x1="29.72" y1="-1.75" x2="30.72" y2="-1.75" width="0.127" layer="51"/>
-<wire x1="30.72" y1="-1.75" x2="30.72" y2="0" width="0.127" layer="51"/>
-<wire x1="-29.72" y1="-6.225" x2="0" y2="-6.225" width="0.127" layer="52"/>
-<wire x1="-29.72" y1="-6.225" x2="-29.72" y2="-1.75" width="0.127" layer="52"/>
-<wire x1="-29.72" y1="-1.75" x2="-30.72" y2="-1.75" width="0.127" layer="52"/>
-<wire x1="-30.72" y1="-1.75" x2="-30.72" y2="0" width="0.127" layer="52"/>
-<text x="-29" y="8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-29" y="-9" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="-27.255" y="-2.15" drill="1.3"/>
+<hole x="27.255" y="-2.15" drill="1.3"/>
+<wire x1="-29.72" y1="6.225" x2="-29.72" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-29.72" y1="1.75" x2="-30.72" y2="1.75" width="0.127" layer="21"/>
+<wire x1="29.72" y1="6.225" x2="-29.72" y2="6.225" width="0.127" layer="21"/>
+<wire x1="29.72" y1="6.225" x2="29.72" y2="1.75" width="0.127" layer="21"/>
+<wire x1="29.72" y1="1.75" x2="30.72" y2="1.75" width="0.127" layer="21"/>
+<wire x1="29.72" y1="-6.225" x2="29.72" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="29.72" y1="-1.75" x2="30.72" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="30.72" y1="-1.75" x2="30.72" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-29.72" y1="-6.225" x2="29.72" y2="-6.225" width="0.127" layer="21"/>
+<wire x1="-29.72" y1="-6.225" x2="-29.72" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-29.72" y1="-1.75" x2="-30.72" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-30.72" y1="-1.75" x2="-30.72" y2="1.75" width="0.127" layer="21"/>
+<text x="-15.03" y="6.73" size="1.27" layer="25">&gt;NAME</text>
+<text x="-15.03" y="-9" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.127" layer="39">
+<vertex x="-29.845" y="6.35"/>
+<vertex x="29.845" y="6.35"/>
+<vertex x="29.845" y="-6.35"/>
+<vertex x="-29.845" y="-6.35"/>
+</polygon>
+<polygon width="0.127" layer="40">
+<vertex x="-29.845" y="6.35"/>
+<vertex x="29.845" y="6.35"/>
+<vertex x="29.845" y="-6.35"/>
+<vertex x="-29.845" y="-6.35"/>
+</polygon>
+<text x="-20.32" y="-5.08" size="1.27" layer="21">P1</text>
+<text x="17.78" y="-5.08" size="1.27" layer="21">P20</text>
+<text x="-20.32" y="5.08" size="1.27" layer="21">P60</text>
+<text x="17.78" y="5.08" size="1.27" layer="21">P80</text>
+<text x="-27.94" y="0" size="1.27" layer="21">PP1</text>
+<text x="25.4" y="0" size="1.27" layer="21">PP2</text>
 </package>
 </packages>
 <symbols>
@@ -9254,20 +9268,20 @@ Case A (1206)</description>
 <wire x1="-6.55" y1="-2.86" x2="-6.55" y2="2.86" width="0.127" layer="21"/>
 <hole x="-6.57" y="-1.125" drill="2.35"/>
 <hole x="6.55" y="-1.125" drill="2.35"/>
-<pad name="1" x="-3.55" y="1.585" drill="0.95" shape="square"/>
-<pad name="2" x="-1" y="1.585" drill="0.95"/>
-<pad name="3" x="1" y="1.585" drill="0.95"/>
-<pad name="4" x="3.55" y="1.585" drill="0.95"/>
+<pad name="VDD" x="-3.55" y="1.585" drill="0.95" shape="square"/>
+<pad name="D-" x="-1" y="1.585" drill="0.95"/>
+<pad name="D+" x="1" y="1.585" drill="0.95"/>
+<pad name="GND" x="3.55" y="1.585" drill="0.95"/>
 <text x="-7" y="4" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7" y="-5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
 <symbol name="4-PIN-HEADER">
-<pin name="1" x="-7.62" y="7.62" visible="pin" length="middle"/>
-<pin name="2" x="-7.62" y="2.54" visible="pin" length="middle"/>
-<pin name="3" x="-7.62" y="-2.54" visible="pin" length="middle"/>
-<pin name="4" x="-7.62" y="-7.62" visible="pin" length="middle"/>
+<pin name="1" x="-7.62" y="7.62" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" length="middle"/>
+<pin name="3" x="-7.62" y="-2.54" length="middle"/>
+<pin name="4" x="-7.62" y="-7.62" length="middle"/>
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
@@ -9308,10 +9322,10 @@ UE27AE54100&lt;br&gt;
 <devices>
 <device name="" package="UE27AE54100">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="1" pad="VDD"/>
+<connect gate="G$1" pin="2" pad="D-"/>
+<connect gate="G$1" pin="3" pad="D+"/>
+<connect gate="G$1" pin="4" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
