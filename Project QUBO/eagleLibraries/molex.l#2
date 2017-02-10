@@ -554,6 +554,24 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <hole x="-31.05" y="-1.145" drill="3"/>
 <hole x="31.05" y="-1.145" drill="3"/>
 </package>
+<package name="KK254_10-PIN">
+<wire x1="-12.575" y1="1.18" x2="12.575" y2="1.18" width="0.127" layer="21"/>
+<wire x1="12.575" y1="1.18" x2="12.575" y2="-1.18" width="0.127" layer="21"/>
+<wire x1="12.575" y1="-1.18" x2="-12.575" y2="-1.18" width="0.127" layer="21"/>
+<wire x1="-12.575" y1="-1.18" x2="-12.575" y2="1.18" width="0.127" layer="21"/>
+<pad name="P$1" x="11.43" y="0" drill="1.1" shape="square"/>
+<pad name="P$2" x="8.89" y="0" drill="1.1"/>
+<pad name="P$3" x="6.35" y="0" drill="1.1"/>
+<pad name="P$4" x="3.81" y="0" drill="1.1"/>
+<pad name="P$5" x="1.27" y="0" drill="1.1"/>
+<pad name="P$6" x="-1.27" y="0" drill="1.1"/>
+<pad name="P$7" x="-3.81" y="0" drill="1.1"/>
+<pad name="P$8" x="-6.35" y="0" drill="1.1"/>
+<pad name="P$9" x="-8.89" y="0" drill="1.1"/>
+<pad name="P$10" x="-11.43" y="0" drill="1.1"/>
+<text x="-12.7" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SUPERSABRE_2CIRCUIT">
@@ -869,11 +887,11 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="P$1" x="-10.16" y="-5.08" visible="off" length="middle"/>
-<pin name="P$2" x="-10.16" y="-2.54" visible="off" length="middle"/>
-<pin name="P$3" x="-10.16" y="0" visible="off" length="middle"/>
-<pin name="P$4" x="-10.16" y="2.54" visible="off" length="middle"/>
-<pin name="P$5" x="-10.16" y="5.08" visible="off" length="middle"/>
+<pin name="P$1" x="-10.16" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$2" x="-10.16" y="-2.54" visible="pad" length="middle"/>
+<pin name="P$3" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="P$4" x="-10.16" y="2.54" visible="pad" length="middle"/>
+<pin name="P$5" x="-10.16" y="5.08" visible="pad" length="middle"/>
 <circle x="-2.54" y="-5.08" radius="0.803215625" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.826" y="-11.938" size="1.778" layer="96">&gt;VALUE</text>
@@ -923,20 +941,21 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <pin name="2" x="10.16" y="0" length="middle" rot="R180"/>
 </symbol>
 <symbol name="8-PIN">
-<pin name="1" x="-7.62" y="10.16" visible="pin" length="middle"/>
-<pin name="2" x="-7.62" y="7.62" visible="pin" length="middle"/>
-<pin name="3" x="-7.62" y="5.08" visible="pin" length="middle"/>
-<pin name="4" x="-7.62" y="2.54" visible="pin" length="middle"/>
-<pin name="5" x="-7.62" y="-2.54" visible="pin" length="middle"/>
-<pin name="6" x="-7.62" y="-5.08" visible="pin" length="middle"/>
-<pin name="7" x="-7.62" y="-7.62" visible="pin" length="middle"/>
-<pin name="8" x="-7.62" y="-10.16" visible="pin" length="middle"/>
+<pin name="1" x="-7.62" y="10.16" visible="pad" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" visible="pad" length="middle"/>
+<pin name="3" x="-7.62" y="5.08" visible="pad" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" visible="pad" length="middle"/>
+<pin name="5" x="-7.62" y="-2.54" visible="pad" length="middle"/>
+<pin name="6" x="-7.62" y="-5.08" visible="pad" length="middle"/>
+<pin name="7" x="-7.62" y="-7.62" visible="pad" length="middle"/>
+<pin name="8" x="-7.62" y="-10.16" visible="pad" length="middle"/>
 <wire x1="-2.54" y1="12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
 <text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="0" y="10.16" radius="0.567959375" width="0.254" layer="94"/>
 </symbol>
 <symbol name="10-PIN">
 <pin name="1" x="-7.62" y="10.16" length="middle"/>
@@ -1496,6 +1515,32 @@ Part number: 397000205</description>
 <connect gate="G$1" pin="6" pad="P$6"/>
 <connect gate="G$1" pin="7" pad="P$7"/>
 <connect gate="G$1" pin="8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK254_10-PIN">
+<description>KK254 10-pin&lt;br&gt;
+&lt;a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022102101_PCB_HEADERS.xml"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="10-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KK254_10-PIN">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>

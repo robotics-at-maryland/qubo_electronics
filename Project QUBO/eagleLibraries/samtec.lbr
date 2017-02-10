@@ -397,6 +397,11 @@
 <text x="90.678" y="5.842" size="1.778" layer="97" rot="R270">Power Pins</text>
 <text x="-71.12" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 <text x="-71.12" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="-66.04" y="22.86" radius="0.762" width="0.254" layer="94"/>
+<circle x="-25.654" y="22.86" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="15.24" y="23.114" radius="0.71841875" width="0.254" layer="94"/>
+<circle x="55.88" y="22.86" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="91.44" y="12.7" radius="0.567959375" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>

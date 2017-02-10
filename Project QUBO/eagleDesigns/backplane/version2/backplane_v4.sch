@@ -5946,8 +5946,8 @@ type 0309, grid 2.5 mm</description>
 <pad name="P$2" x="1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$3" x="-1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$4" x="-3.81" y="0" drill="1.2" shape="octagon" rot="R180"/>
-<text x="-5.08" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.08" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
@@ -5976,8 +5976,8 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="-7.62" y="2.54" visible="off" length="middle"/>
-<pin name="P$2" x="-7.62" y="-2.54" visible="off" length="middle"/>
+<pin name="P$1" x="-7.62" y="2.54" visible="pad" length="middle"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="pad" length="middle"/>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
@@ -5987,11 +5987,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="P$1" x="-10.16" y="-5.08" visible="off" length="middle"/>
-<pin name="P$2" x="-10.16" y="-2.54" visible="off" length="middle"/>
-<pin name="P$3" x="-10.16" y="0" visible="off" length="middle"/>
-<pin name="P$4" x="-10.16" y="2.54" visible="off" length="middle"/>
-<pin name="P$5" x="-10.16" y="5.08" visible="off" length="middle"/>
+<pin name="P$1" x="-10.16" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$2" x="-10.16" y="-2.54" visible="pad" length="middle"/>
+<pin name="P$3" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="P$4" x="-10.16" y="2.54" visible="pad" length="middle"/>
+<pin name="P$5" x="-10.16" y="5.08" visible="pad" length="middle"/>
 <circle x="-2.54" y="-5.08" radius="0.803215625" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.826" y="-11.938" size="1.778" layer="96">&gt;VALUE</text>
@@ -6025,20 +6025,21 @@ type 0309, grid 2.5 mm</description>
 <circle x="0" y="-5.08" radius="1.016" width="0.254" layer="94"/>
 </symbol>
 <symbol name="8-PIN">
-<pin name="1" x="-7.62" y="10.16" visible="pin" length="middle"/>
-<pin name="2" x="-7.62" y="7.62" visible="pin" length="middle"/>
-<pin name="3" x="-7.62" y="5.08" visible="pin" length="middle"/>
-<pin name="4" x="-7.62" y="2.54" visible="pin" length="middle"/>
-<pin name="5" x="-7.62" y="-2.54" visible="pin" length="middle"/>
-<pin name="6" x="-7.62" y="-5.08" visible="pin" length="middle"/>
-<pin name="7" x="-7.62" y="-7.62" visible="pin" length="middle"/>
-<pin name="8" x="-7.62" y="-10.16" visible="pin" length="middle"/>
+<pin name="1" x="-7.62" y="10.16" visible="pad" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" visible="pad" length="middle"/>
+<pin name="3" x="-7.62" y="5.08" visible="pad" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" visible="pad" length="middle"/>
+<pin name="5" x="-7.62" y="-2.54" visible="pad" length="middle"/>
+<pin name="6" x="-7.62" y="-5.08" visible="pad" length="middle"/>
+<pin name="7" x="-7.62" y="-7.62" visible="pad" length="middle"/>
+<pin name="8" x="-7.62" y="-10.16" visible="pad" length="middle"/>
 <wire x1="-2.54" y1="12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
 <text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="0" y="10.16" radius="0.567959375" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6401,6 +6402,11 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 <text x="90.678" y="5.842" size="1.778" layer="97" rot="R270">Power Pins</text>
 <text x="-71.12" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 <text x="-71.12" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<circle x="-66.04" y="22.86" radius="0.762" width="0.254" layer="94"/>
+<circle x="-25.654" y="22.86" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="15.24" y="23.114" radius="0.71841875" width="0.254" layer="94"/>
+<circle x="55.88" y="22.86" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="91.44" y="12.7" radius="0.567959375" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< HEAD
-<eagle version="7.7.0">
-=======
 <eagle version="8.0.0">
->>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -45,7 +41,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -118,53 +114,10 @@
 <wire x1="10.541" y1="-5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
 <hole x="-8.5344" y="-1.8034" drill="2.9972"/>
 <hole x="8.5344" y="-1.8034" drill="2.9972"/>
-<wire x1="-4.2545" y1="2.0828" x2="-3.2385" y2="2.0828" width="0" layer="20" curve="-180"/>
-<wire x1="-4.2545" y1="-2.0828" x2="-3.2385" y2="-2.0828" width="0" layer="20" curve="180"/>
-<wire x1="-4.2545" y1="-2.0828" x2="-4.2545" y2="2.0828" width="0" layer="20"/>
-<wire x1="-3.2385" y1="2.0828" x2="-3.2385" y2="-2.0828" width="0" layer="20"/>
-<wire x1="3.2385" y1="2.0828" x2="4.2545" y2="2.0828" width="0" layer="20" curve="-180"/>
-<wire x1="3.2385" y1="-2.0828" x2="4.2545" y2="-2.0828" width="0" layer="20" curve="180"/>
-<wire x1="3.2385" y1="-2.0828" x2="3.2385" y2="2.0828" width="0" layer="20"/>
-<wire x1="4.2545" y1="2.0828" x2="4.2545" y2="-2.0828" width="0" layer="20"/>
-<pad name="P$2" x="3.7465" y="0" drill="0.8" shape="square"/>
-<pad name="P$1" x="-3.7465" y="0" drill="0.8" shape="square"/>
-<polygon width="0.127" layer="1">
-<vertex x="2.54" y="0"/>
-<vertex x="2.54" y="2.54"/>
-<vertex x="3.81" y="3.81"/>
-<vertex x="5.08" y="2.54"/>
-<vertex x="5.08" y="-2.54"/>
-<vertex x="3.81" y="-3.81"/>
-<vertex x="2.54" y="-2.54"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="-5.08" y="-2.54"/>
-<vertex x="-5.08" y="2.54"/>
-<vertex x="-3.81" y="3.81"/>
-<vertex x="-2.54" y="2.54"/>
-<vertex x="-2.54" y="-2.54"/>
-<vertex x="-3.81" y="-3.81"/>
-</polygon>
-<polygon width="0.127" layer="1">
-<vertex x="-5.08" y="0"/>
-<vertex x="-5.08" y="2.54"/>
-<vertex x="-3.81" y="3.81"/>
-<vertex x="-2.54" y="2.54"/>
-<vertex x="-2.54" y="-2.54"/>
-<vertex x="-3.81" y="-3.81"/>
-<vertex x="-5.08" y="-2.54"/>
-</polygon>
-<polygon width="0.127" layer="16">
-<vertex x="2.54" y="0"/>
-<vertex x="2.54" y="2.54"/>
-<vertex x="3.81" y="3.81"/>
-<vertex x="5.08" y="2.54"/>
-<vertex x="5.08" y="-2.54"/>
-<vertex x="3.81" y="-3.81"/>
-<vertex x="2.54" y="-2.54"/>
-</polygon>
-<text x="-10.16" y="6.35" size="1.27" layer="1">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.27" layer="1">&gt;VALUE</text>
+<pad name="P$2" x="3.7465" y="0" drill="5.25" shape="square"/>
+<pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
+<text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PICOCLASP_VERT_50PIN">
 <smd name="P$50" x="12" y="2.85" dx="1.76" dy="0.66" layer="1" rot="R90"/>
@@ -526,7 +479,21 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <pad name="P$2" x="1.75" y="0" drill="0.4" shape="square" rot="R180"/>
 <hole x="4.2505" y="-0.6255" drill="2.25"/>
 <hole x="-4.2505" y="-0.6255" drill="2.25"/>
-<rectangle x1="-7.25" y1="-3.25" x2="7.5" y2="2.75" layer="21"/>
+<wire x1="-5.3005" y1="2.4305" x2="5.3005" y2="2.4305" width="0.127" layer="51"/>
+<wire x1="5.3005" y1="2.4305" x2="5.3005" y2="-2.9205" width="0.127" layer="51"/>
+<wire x1="5.3005" y1="-2.9205" x2="-5.3005" y2="-2.9205" width="0.127" layer="51"/>
+<wire x1="-5.3005" y1="-2.9205" x2="-5.3005" y2="2.4305" width="0.127" layer="51"/>
+<wire x1="-5.75" y1="2.75" x2="-5.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-3.25" x2="5.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-3.25" x2="5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="5.75" y1="2.75" x2="4.25" y2="2.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="2.75" x2="4.23" y2="6.1" width="0.127" layer="21"/>
+<wire x1="4.23" y1="6.1" x2="-4.33" y2="6.1" width="0.127" layer="21"/>
+<wire x1="-4.33" y1="6.1" x2="-4.33" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-4.33" y1="2.75" x2="-5.75" y2="2.75" width="0.127" layer="21"/>
+<wire x1="3.9005" y1="2.4305" x2="3.9005" y2="5.7405" width="0.127" layer="48"/>
+<wire x1="3.9005" y1="5.7405" x2="-3.9005" y2="5.7405" width="0.127" layer="48"/>
+<wire x1="-3.9005" y1="5.7405" x2="-3.9005" y2="2.4305" width="0.127" layer="48"/>
 </package>
 <package name="SUPERSABRE_3CIRCUIT">
 <pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
@@ -571,8 +538,6 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <text x="-7.62" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<<<<<<< HEAD
-=======
 <package name="SUPERSABRE_8-PIN">
 <wire x1="-33" y1="5.75" x2="33" y2="5.75" width="0.127" layer="21"/>
 <wire x1="33" y1="5.75" x2="33" y2="-5.75" width="0.127" layer="21"/>
@@ -589,7 +554,6 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <hole x="-31.05" y="-1.145" drill="3"/>
 <hole x="31.05" y="-1.145" drill="3"/>
 </package>
->>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
 </packages>
 <symbols>
 <symbol name="SUPERSABRE_2CIRCUIT">
@@ -914,7 +878,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-4.826" y="-11.938" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="KK254_6PIN">
+<symbol name="6-PIN">
 <wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
@@ -973,6 +937,24 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
 <text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="10-PIN">
+<pin name="1" x="-7.62" y="10.16" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" length="middle"/>
+<pin name="3" x="-7.62" y="5.08" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" length="middle"/>
+<pin name="5" x="-7.62" y="0" length="middle"/>
+<pin name="6" x="-7.62" y="-2.54" length="middle"/>
+<pin name="7" x="-7.62" y="-5.08" length="middle"/>
+<pin name="8" x="-7.62" y="-7.62" length="middle"/>
+<pin name="9" x="-7.62" y="-10.16" length="middle"/>
+<pin name="10" x="-7.62" y="-12.7" length="middle"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1406,7 +1388,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 &lt;a href="http://www.molex.com/pdm_docs/sd/022032061_sd.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
 &lt;a href="http://www.molex.com/molex/products/listview.jsp?query=&amp;offset=0&amp;filter=&amp;fs=&amp;npp=20&amp;sType=a&amp;autoNav=&amp;path=+inmeta%3Apromotable%253Dyes+inmeta%3ACollectionName%253DImpulse++inmeta%3Acategory%253DPCB%252520Headers+inmeta%3Abreakaway%253DNo+inmeta%3Acircuitsloaded%253D6%2526partialfields%3D%28productname%3AKK%252520254%29&amp;channel=products"&gt; Link&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="KK254_6PIN" x="0" y="0"/>
+<gate name="G$1" symbol="6-PIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="KK254_6PIN">
@@ -1478,11 +1460,7 @@ Created by Ben Hurwitz, 10 March 2016</description>
 Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
 Part number: 397000205</description>
 <gates>
-<<<<<<< HEAD
-<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
-=======
 <gate name="G$1" symbol="5-PIN" x="0" y="0"/>
->>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
 </gates>
 <devices>
 <device name="" package="M205_5PIN">
@@ -1499,8 +1477,6 @@ Part number: 397000205</description>
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
-=======
 <deviceset name="SUPERSABRE_8CIRCUIT" uservalue="yes">
 <description>Molex SuperSabre 172042-0806&lt;br&gt;
 8-pin high-current vertical header&lt;br&gt;
@@ -1527,7 +1503,6 @@ Part number: 397000205</description>
 </device>
 </devices>
 </deviceset>
->>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
 </devicesets>
 </library>
 </drawing>
