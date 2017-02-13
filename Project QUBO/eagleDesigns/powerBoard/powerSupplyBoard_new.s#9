@@ -15640,6 +15640,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="BAT2HSOR" gate="G$1" pin="SHDN'"/>
 <wire x1="-241.3" y1="-7.62" x2="-241.3" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="-5.08" x2="-198.12" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-241.3" y="-5.08"/>
 </segment>
 </net>
 <net name="N$24" class="0">
