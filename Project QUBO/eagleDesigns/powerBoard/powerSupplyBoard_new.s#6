@@ -15640,6 +15640,19 @@ by R. Vogg  15.March.2002</description>
 <pinref part="BAT2HSOR" gate="G$1" pin="SHDN'"/>
 <wire x1="-241.3" y1="-7.62" x2="-241.3" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="-5.08" x2="-198.12" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-241.3" y="-5.08"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="R48" gate="G$1" pin="1"/>
+<wire x1="-241.3" y1="111.76" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
+<wire x1="-241.3" y1="101.6" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="99.06" x2="-246.38" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
+<wire x1="-198.12" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-241.3" y="101.6"/>
 </segment>
 </net>
 </nets>

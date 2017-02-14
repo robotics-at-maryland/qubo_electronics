@@ -11,14 +11,24 @@
 <setting verticaltext="up"/>
 </settings>
 <<<<<<< .mine
+<<<<<<< HEAD
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 ||||||| .r132
 <grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 =======
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+||||||| .r132
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+>>>>>>> origin/master
+=======
 <<<<<<< HEAD
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 =======
+<<<<<<< HEAD
 <grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+=======
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+>>>>>>> origin/master
 >>>>>>> .r135
 >>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
 <layers>
@@ -497,10 +507,13 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/1722871102_PCB_HEA
 <wire x1="5.3005" y1="2.4305" x2="5.3005" y2="-2.9205" width="0.127" layer="51"/>
 <wire x1="5.3005" y1="-2.9205" x2="-5.3005" y2="-2.9205" width="0.127" layer="51"/>
 <wire x1="-5.3005" y1="-2.9205" x2="-5.3005" y2="2.4305" width="0.127" layer="51"/>
+<<<<<<< HEAD
 <wire x1="-5.75" y1="2.75" x2="-5.75" y2="-3.25" width="0.127" layer="21"/>
 <wire x1="-5.75" y1="-3.25" x2="5.75" y2="-3.25" width="0.127" layer="21"/>
 <wire x1="5.75" y1="-3.25" x2="5.75" y2="2.75" width="0.127" layer="21"/>
 <wire x1="5.75" y1="2.75" x2="-5.75" y2="2.75" width="0.127" layer="21"/>
+=======
+>>>>>>> origin/master
 </package>
 <package name="SUPERSABRE_3CIRCUIT">
 <pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
@@ -1449,7 +1462,15 @@ Created by Ben Hurwitz, 10 March 2016</description>
 Title: 2.54mm Pitch, Eurostyle™ Fixed-Mount Push-Button Terminal Block, Vertical, 6A, 26-18 AWG, Green, 5 Circuits&lt;br&gt;
 Part number: 397000205</description>
 <gates>
+<<<<<<< HEAD
 <gate name="G$1" symbol="5-PIN" x="0" y="0"/>
+=======
+<<<<<<< HEAD
+<gate name="G$1" symbol="KK254_VERT_5PIN" x="0" y="0"/>
+=======
+<gate name="G$1" symbol="5-PIN" x="0" y="0"/>
+>>>>>>> e5d5900cf80988b726acbb5c771b9b1234d8e9f8
+>>>>>>> origin/master
 </gates>
 <devices>
 <device name="" package="M205_5PIN">
@@ -1466,6 +1487,11 @@ Part number: 397000205</description>
 </device>
 </devices>
 </deviceset>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
 <deviceset name="SUPERSABRE_8CIRCUIT" uservalue="yes">
 <description>Molex SuperSabre 172042-0806&lt;br&gt;
 8-pin high-current vertical header&lt;br&gt;

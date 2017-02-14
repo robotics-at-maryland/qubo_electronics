@@ -5897,8 +5897,8 @@ type 0309, grid 2.5 mm</description>
 <hole x="8.5344" y="-1.8034" drill="2.9972"/>
 <pad name="P$2" x="3.7465" y="0" drill="5.25" shape="square"/>
 <pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
-<text x="-10.16" y="6.35" size="1.27" layer="1">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.27" layer="1">&gt;VALUE</text>
+<text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="M205_5PIN">
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
@@ -6291,7 +6291,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 </package>
 </packages>
 <symbols>
-<symbol name="MPTC-01-80">
+<symbol name="80-PIN+2-PWR">
 <pin name="P$1" x="-73.66" y="22.86" visible="pad" length="middle"/>
 <pin name="P$2" x="-73.66" y="20.32" visible="pad" length="middle"/>
 <pin name="P$3" x="-73.66" y="17.78" visible="pad" length="middle"/>
@@ -6419,7 +6419,7 @@ University of Maryland, College Park, MD, USA&lt;p&gt;
 
 Description; This is an 82-pin female signal/power combination plug, with 80 5A signal pins and 2 24.7A power blades (each uses six pins). It was designed to be used on a backplane for the autonomous submarine to connect the four main daughterboards to the CPU and batteries via the backplane. It fits with the Samtec MPSC male half.</description>
 <gates>
-<gate name="G$1" symbol="MPTC-01-80" x="-25.4" y="5.08"/>
+<gate name="G$1" symbol="80-PIN+2-PWR" x="-25.4" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="MPTC-01-80">

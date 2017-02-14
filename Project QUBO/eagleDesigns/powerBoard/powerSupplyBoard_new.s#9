@@ -13805,6 +13805,9 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-220.98" y1="96.52" x2="-220.98" y2="93.98" width="0.1524" layer="91"/>
 <label x="-226.06" y="93.98" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-231.14" y1="104.14" x2="-231.14" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-231.14" y1="93.98" x2="-220.98" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -14278,21 +14281,6 @@ by R. Vogg  15.March.2002</description>
 <wire x1="91.44" y1="-91.44" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="83.82" y="-91.44"/>
 <label x="88.9" y="-93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
-<wire x1="-246.38" y1="99.06" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-241.3" y1="99.06" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
-<wire x1="-241.3" y1="101.6" x2="-241.3" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="101.6" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-241.3" y="101.6"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-231.14" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-231.14" y1="104.14" x2="-231.14" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-231.14" y="101.6"/>
-<label x="-231.14" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15658,13 +15646,6 @@ by R. Vogg  15.March.2002</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,-35.56,-187.96,N$61,,,,,"/>
-<approved hash="106,1,-35.56,-193.04,N$63,,,,,"/>
-<approved hash="106,1,180.34,-137.16,N$84,,,,,"/>
-<approved hash="106,1,180.34,-139.7,N$86,,,,,"/>
-<approved hash="106,1,330.2,5.08,N$100,,,,,"/>
-<approved hash="106,1,289.56,20.32,SCL1,,,,,"/>
-<approved hash="106,1,289.56,22.86,SDA1,,,,,"/>
 <approved hash="110,1,45.72,-15.24,GND,N$58,,,,"/>
 <approved hash="110,1,30.48,-30.48,GND,N$57,,,,"/>
 <approved hash="110,1,-63.5,-254,N$67,GND,,,,"/>
@@ -15673,12 +15654,9 @@ by R. Vogg  15.March.2002</description>
 <approved hash="110,1,43.18,-238.76,N$72,3.3V,,,,"/>
 <approved hash="110,1,83.82,-218.44,N$32,BAT3,,,,"/>
 <approved hash="110,1,73.66,-223.52,N$55,16V,,,,"/>
-<approved hash="111,1,-205.74,101.6,GND,,,,,"/>
 <approved hash="111,1,-205.74,91.44,N$15,,,,,"/>
-<approved hash="111,1,-205.74,-5.08,GND,,,,,"/>
 <approved hash="111,1,-205.74,-15.24,N$21,,,,,"/>
 <approved hash="111,1,-152.4,20.32,N$27,,,,,"/>
-<approved hash="111,1,-205.74,-111.76,GND,,,,,"/>
 <approved hash="111,1,-205.74,-121.92,N$37,,,,,"/>
 <approved hash="111,1,45.72,-15.24,GND,,,,,"/>
 <approved hash="111,1,40.64,-35.56,N$92,,,,,"/>
@@ -15690,13 +15668,10 @@ by R. Vogg  15.March.2002</description>
 <approved hash="111,1,43.18,-238.76,N$72,,,,,"/>
 <approved hash="113,1,-165.1,110.562,D1,,,,,"/>
 <approved hash="113,1,-154.94,112.958,D2,,,,,"/>
-<approved hash="113,1,-99.9736,123.19,C15,,,,,"/>
 <approved hash="113,1,-167.64,3.88197,D3,,,,,"/>
 <approved hash="113,1,-154.94,6.27803,D4,,,,,"/>
-<approved hash="113,1,-100.67,16.51,C3,,,,,"/>
 <approved hash="113,1,-167.64,-102.798,D5,,,,,"/>
 <approved hash="113,1,-154.94,-100.402,D6,,,,,"/>
-<approved hash="113,1,-100.67,-90.17,C6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
