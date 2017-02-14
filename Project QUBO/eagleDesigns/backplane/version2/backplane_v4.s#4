@@ -5897,8 +5897,8 @@ type 0309, grid 2.5 mm</description>
 <hole x="8.5344" y="-1.8034" drill="2.9972"/>
 <pad name="P$2" x="3.7465" y="0" drill="5.25" shape="square"/>
 <pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
-<text x="-10.16" y="6.35" size="1.27" layer="1">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.27" layer="1">&gt;VALUE</text>
+<text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="M205_5PIN">
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
@@ -6291,7 +6291,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 </package>
 </packages>
 <symbols>
-<symbol name="MPTC-01-80">
+<symbol name="80-PIN+2-PWR">
 <pin name="P$1" x="-73.66" y="22.86" visible="pad" length="middle"/>
 <pin name="P$2" x="-73.66" y="20.32" visible="pad" length="middle"/>
 <pin name="P$3" x="-73.66" y="17.78" visible="pad" length="middle"/>
@@ -6419,7 +6419,7 @@ University of Maryland, College Park, MD, USA&lt;p&gt;
 
 Description; This is an 82-pin female signal/power combination plug, with 80 5A signal pins and 2 24.7A power blades (each uses six pins). It was designed to be used on a backplane for the autonomous submarine to connect the four main daughterboards to the CPU and batteries via the backplane. It fits with the Samtec MPSC male half.</description>
 <gates>
-<gate name="G$1" symbol="MPTC-01-80" x="-25.4" y="5.08"/>
+<gate name="G$1" symbol="80-PIN+2-PWR" x="-25.4" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="MPTC-01-80">
@@ -10580,7 +10580,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <text x="22.86" y="127" size="6.4516" layer="91">&gt;&gt;&gt; Daughterboard connections</text>
 <text x="-284.48" y="-396.24" size="6.4516" layer="91">IMU Connection</text>
 <text x="-561.34" y="-144.78" size="6.4516" layer="91">Debug LED SPI</text>
-<text x="-530.86" y="-342.9" size="6.4516" layer="91">GPIO USBs</text>
+<text x="-533.4" y="-302.26" size="6.4516" layer="91">GPIO USBs</text>
 <text x="-472.44" y="203.2" size="6.4516" layer="91">7-port USB hub</text>
 <text x="-297.18" y="-142.24" size="6.4516" layer="91">2-port USB hub (DVL)</text>
 <text x="-104.14" y="-297.18" size="6.4516" layer="91">Battery MUX</text>
@@ -13065,6 +13065,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <label x="-190.5" y="66.04" size="1.778" layer="95"/>
 <pinref part="D24" gate="G$1" pin="C"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="VCC"/>
+<wire x1="-266.7" y1="-370.84" x2="-259.08" y2="-370.84" width="0.1524" layer="91"/>
+<label x="-264.16" y="-370.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$42" gate="G$1" pin="VCC"/>
+<wire x1="-269.24" y1="-434.34" x2="-261.62" y2="-434.34" width="0.1524" layer="91"/>
+<label x="-266.7" y="-434.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -13171,16 +13181,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$15" gate="G$1" pin="P$2"/>
 <wire x1="-535.94" y1="-172.72" x2="-541.02" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-541.02" y="-172.72" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="VCC"/>
-<wire x1="-266.7" y1="-370.84" x2="-259.08" y2="-370.84" width="0.1524" layer="91"/>
-<label x="-264.16" y="-370.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$42" gate="G$1" pin="VCC"/>
-<wire x1="-269.24" y1="-434.34" x2="-261.62" y2="-434.34" width="0.1524" layer="91"/>
-<label x="-266.7" y="-434.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="2PIN_4" gate="U1" pin="P$1"/>
@@ -15997,9 +15997,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <net name="N$2" class="0">
 <segment>
 <wire x1="-576.58" y1="-215.9" x2="-439.42" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="-439.42" y1="-215.9" x2="-439.42" y2="-353.06" width="0.1524" layer="91"/>
-<wire x1="-439.42" y1="-353.06" x2="-576.58" y2="-353.06" width="0.1524" layer="91"/>
-<wire x1="-576.58" y1="-353.06" x2="-576.58" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="-439.42" y1="-215.9" x2="-439.42" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-439.42" y1="-312.42" x2="-576.58" y2="-312.42" width="0.1524" layer="91"/>
+<wire x1="-576.58" y1="-312.42" x2="-576.58" y2="-215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">

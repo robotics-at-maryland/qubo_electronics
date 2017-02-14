@@ -10304,8 +10304,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C5" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="C6" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="DVL_SLAVE_FTDI" library="ftdichip" deviceset="FT232R" device="Q"/>
@@ -10313,8 +10313,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="4.7u"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
@@ -10330,7 +10330,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C27" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="100&gt;R&gt;40"/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED7" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="LED7" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="U$2" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$3" library="NXP" deviceset="PRTR5V0U2X" device=""/>
@@ -10496,7 +10496,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="U$61" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$62" library="NXP" deviceset="PRTR5V0U2X" device=""/>
 <part name="U$63" library="NXP" deviceset="PRTR5V0U2X" device=""/>
-<part name="D1" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="Vz=14V"/>
+<part name="D1" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="14V"/>
 <part name="U$65" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
 <part name="U$64" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
 <part name="U$66" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
@@ -10505,69 +10505,73 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="U$69" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="100u_tant"/>
 <part name="U$70" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
 <part name="U$71" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D2" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="D3" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="D4" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="D5" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="D6" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="D7" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D2" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D3" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D4" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
+<part name="D5" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
+<part name="D6" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
+<part name="D7" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$72" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D8" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D8" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$73" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D9" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
-<part name="U$74" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D10" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D9" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$75" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D11" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D11" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$76" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D12" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D12" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
 <part name="U$77" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D13" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D13" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="3V3"/>
 <part name="U$78" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D14" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D14" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$79" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D15" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D15" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$80" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D16" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D16" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
 <part name="U$81" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D17" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D17" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="3V3"/>
 <part name="U$82" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D18" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D18" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$83" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D19" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D19" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$84" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D20" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D20" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
 <part name="U$85" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D21" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D21" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="3V3"/>
 <part name="U$86" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D22" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D22" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$87" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D23" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D23" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$88" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D24" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D24" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
 <part name="U$89" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D25" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D25" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="3V3"/>
 <part name="U$90" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D26" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D26" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$91" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D27" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D27" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="12V"/>
 <part name="U$92" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D28" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D28" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$93" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D29" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D29" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$94" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D30" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D30" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$95" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D31" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D31" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$96" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D32" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D32" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$97" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D33" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D33" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$98" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D34" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D34" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$99" library="avx" deviceset="F93-XX-XXX-X-A" device="" value="0.1u"/>
-<part name="D35" library="diode" deviceset="ZENER-DIODE" device="SOD123"/>
+<part name="D35" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="V_BATT"/>
 <part name="U$100" library="molex" deviceset="SUPERSABRE_8CIRCUIT" device="" value="SYSTEM GROUND"/>
+<part name="D10" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D36" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D37" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D38" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D39" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
+<part name="D40" library="diode" deviceset="ZENER-DIODE" device="SOD123" value="5V"/>
 </parts>
 <sheets>
 <sheet>
@@ -10820,8 +10824,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="D8" gate="G$1" x="411.48" y="-33.02" rot="MR90"/>
 <instance part="U$73" gate="G$1" x="360.68" y="-33.02"/>
 <instance part="D9" gate="G$1" x="347.98" y="-33.02" rot="MR90"/>
-<instance part="U$74" gate="G$1" x="429.26" y="15.24"/>
-<instance part="D10" gate="G$1" x="416.56" y="17.78" rot="MR90"/>
 <instance part="U$75" gate="G$1" x="-116.84" y="86.36"/>
 <instance part="D11" gate="G$1" x="-129.54" y="88.9" rot="MR90"/>
 <instance part="U$76" gate="G$1" x="-116.84" y="55.88"/>
@@ -10873,6 +10875,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="U$99" gate="G$1" x="-708.66" y="-302.26"/>
 <instance part="D35" gate="G$1" x="-721.36" y="-299.72" rot="MR90"/>
 <instance part="U$100" gate="G$1" x="294.64" y="83.82"/>
+<instance part="D10" gate="G$1" x="-274.32" y="-482.6" rot="MR90"/>
+<instance part="D36" gate="G$1" x="-289.56" y="-416.56" rot="MR90"/>
+<instance part="D37" gate="G$1" x="-287.02" y="-353.06" rot="MR90"/>
+<instance part="D38" gate="G$1" x="-543.56" y="-307.34" rot="MR90"/>
+<instance part="D39" gate="G$1" x="-543.56" y="-269.24" rot="MR90"/>
+<instance part="D40" gate="G$1" x="-543.56" y="-233.68" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -11475,12 +11483,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$24" gate="G$1" pin="P$1"/>
 <wire x1="-566.42" y1="-238.76" x2="-566.42" y2="-241.3" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-241.3" x2="-553.72" y2="-241.3" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-241.3" x2="-523.24" y2="-241.3" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-241.3" x2="-543.56" y2="-241.3" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-241.3" x2="-523.24" y2="-241.3" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-241.3" x2="-553.72" y2="-238.84" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-241.3"/>
 <pinref part="U$34" gate="G$1" pin="-"/>
 <wire x1="-553.72" y1="-238.84" x2="-553.72" y2="-238.76" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-238.84"/>
+<pinref part="D40" gate="G$1" pin="A"/>
+<wire x1="-543.56" y1="-236.22" x2="-543.56" y2="-241.3" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-241.3"/>
 </segment>
 <segment>
 <pinref part="U$16" gate="G$1" pin="4"/>
@@ -11488,12 +11500,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$25" gate="G$1" pin="P$1"/>
 <wire x1="-566.42" y1="-274.32" x2="-566.42" y2="-276.86" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-276.86" x2="-553.72" y2="-276.86" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-276.86" x2="-523.24" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-276.86" x2="-543.56" y2="-276.86" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-276.86" x2="-523.24" y2="-276.86" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-276.86" x2="-553.72" y2="-274.4" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-276.86"/>
 <pinref part="U$35" gate="G$1" pin="-"/>
 <wire x1="-553.72" y1="-274.4" x2="-553.72" y2="-274.32" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-274.4"/>
+<pinref part="D39" gate="G$1" pin="A"/>
+<wire x1="-543.56" y1="-271.78" x2="-543.56" y2="-276.86" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-276.86"/>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="4"/>
@@ -11501,12 +11517,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$26" gate="G$1" pin="P$1"/>
 <wire x1="-566.42" y1="-312.42" x2="-566.42" y2="-314.96" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-314.96" x2="-553.72" y2="-314.96" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-314.96" x2="-523.24" y2="-314.96" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-314.96" x2="-543.56" y2="-314.96" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-314.96" x2="-523.24" y2="-314.96" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-314.96" x2="-553.72" y2="-312.5" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-314.96"/>
 <pinref part="U$36" gate="G$1" pin="-"/>
 <wire x1="-553.72" y1="-312.5" x2="-553.72" y2="-312.42" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-312.5"/>
+<pinref part="D38" gate="G$1" pin="A"/>
+<wire x1="-543.56" y1="-309.88" x2="-543.56" y2="-314.96" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-314.96"/>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="GND"/>
@@ -11996,18 +12016,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="347.98" y1="-35.56" x2="347.98" y2="-40.64" width="0.1524" layer="91"/>
 <label x="365.76" y="-40.64" size="1.778" layer="95"/>
 <pinref part="D9" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<wire x1="416.56" y1="10.16" x2="429.26" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="10.16" x2="436.88" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="10.16" x2="429.26" y2="12.62" width="0.1524" layer="91"/>
-<junction x="429.26" y="10.16"/>
-<pinref part="U$74" gate="G$1" pin="-"/>
-<wire x1="429.26" y1="12.62" x2="429.26" y2="12.7" width="0.1524" layer="91"/>
-<junction x="429.26" y="12.62"/>
-<wire x1="416.56" y1="15.24" x2="416.56" y2="10.16" width="0.1524" layer="91"/>
-<label x="434.34" y="10.16" size="1.778" layer="95"/>
-<pinref part="D10" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="-129.54" y1="81.28" x2="-116.84" y2="81.28" width="0.1524" layer="91"/>
@@ -15909,12 +15917,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$24" gate="G$1" pin="P$2"/>
 <wire x1="-566.42" y1="-228.6" x2="-566.42" y2="-226.06" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-226.06" x2="-553.72" y2="-226.06" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-226.06" x2="-523.24" y2="-226.06" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-226.06" x2="-543.56" y2="-226.06" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-226.06" x2="-523.24" y2="-226.06" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-231.14" x2="-553.72" y2="-231.076" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-226.06"/>
 <pinref part="U$34" gate="G$1" pin="+"/>
 <wire x1="-553.72" y1="-231.076" x2="-553.72" y2="-226.06" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-231.076"/>
+<pinref part="D40" gate="G$1" pin="C"/>
+<wire x1="-543.56" y1="-231.14" x2="-543.56" y2="-226.06" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-226.06"/>
 </segment>
 <segment>
 <pinref part="G1" gate="G$1" pin="OUT1"/>
@@ -15929,12 +15941,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$25" gate="G$1" pin="P$2"/>
 <wire x1="-566.42" y1="-264.16" x2="-566.42" y2="-261.62" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-261.62" x2="-553.72" y2="-261.62" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-261.62" x2="-523.24" y2="-261.62" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-261.62" x2="-543.56" y2="-261.62" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-261.62" x2="-523.24" y2="-261.62" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-266.7" x2="-553.72" y2="-266.636" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-261.62"/>
 <pinref part="U$35" gate="G$1" pin="+"/>
 <wire x1="-553.72" y1="-266.636" x2="-553.72" y2="-261.62" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-266.636"/>
+<pinref part="D39" gate="G$1" pin="C"/>
+<wire x1="-543.56" y1="-266.7" x2="-543.56" y2="-261.62" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-261.62"/>
 </segment>
 <segment>
 <pinref part="G1" gate="G$1" pin="OUT2"/>
@@ -15989,12 +16005,16 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$26" gate="G$1" pin="P$2"/>
 <wire x1="-566.42" y1="-302.26" x2="-566.42" y2="-299.72" width="0.1524" layer="91"/>
 <wire x1="-566.42" y1="-299.72" x2="-553.72" y2="-299.72" width="0.1524" layer="91"/>
-<wire x1="-553.72" y1="-299.72" x2="-523.24" y2="-299.72" width="0.1524" layer="91"/>
+<wire x1="-553.72" y1="-299.72" x2="-543.56" y2="-299.72" width="0.1524" layer="91"/>
+<wire x1="-543.56" y1="-299.72" x2="-523.24" y2="-299.72" width="0.1524" layer="91"/>
 <wire x1="-553.72" y1="-304.8" x2="-553.72" y2="-304.736" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-299.72"/>
 <pinref part="U$36" gate="G$1" pin="+"/>
 <wire x1="-553.72" y1="-304.736" x2="-553.72" y2="-299.72" width="0.1524" layer="91"/>
 <junction x="-553.72" y="-304.736"/>
+<pinref part="D38" gate="G$1" pin="C"/>
+<wire x1="-543.56" y1="-304.8" x2="-543.56" y2="-299.72" width="0.1524" layer="91"/>
+<junction x="-543.56" y="-299.72"/>
 </segment>
 <segment>
 <pinref part="G1" gate="G$1" pin="OUT3"/>
@@ -16636,6 +16656,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$12" gate="G$1" pin="-"/>
 <wire x1="-264.16" y1="-358.22" x2="-264.16" y2="-358.14" width="0.1524" layer="91"/>
 <junction x="-264.16" y="-358.22"/>
+<pinref part="D37" gate="G$1" pin="A"/>
+<wire x1="-287.02" y1="-355.6" x2="-287.02" y2="-360.68" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="-360.68" x2="-276.86" y2="-360.68" width="0.1524" layer="91"/>
+<junction x="-276.86" y="-360.68"/>
 </segment>
 </net>
 <net name="USB_5_5V1" class="0">
@@ -16649,6 +16673,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$12" gate="G$1" pin="+"/>
 <wire x1="-264.16" y1="-350.456" x2="-264.16" y2="-345.44" width="0.1524" layer="91"/>
 <junction x="-264.16" y="-350.456"/>
+<pinref part="D37" gate="G$1" pin="C"/>
+<wire x1="-276.86" y1="-345.44" x2="-287.02" y2="-345.44" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="-345.44" x2="-287.02" y2="-350.52" width="0.1524" layer="91"/>
+<junction x="-276.86" y="-345.44"/>
 </segment>
 </net>
 <net name="GND2" class="0">
@@ -16662,6 +16690,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$45" gate="G$1" pin="-"/>
 <wire x1="-266.7" y1="-421.72" x2="-266.7" y2="-421.64" width="0.1524" layer="91"/>
 <junction x="-266.7" y="-421.72"/>
+<pinref part="D36" gate="G$1" pin="A"/>
+<wire x1="-289.56" y1="-419.1" x2="-289.56" y2="-424.18" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="-424.18" x2="-279.4" y2="-424.18" width="0.1524" layer="91"/>
+<junction x="-279.4" y="-424.18"/>
 </segment>
 </net>
 <net name="USB_5_5V2" class="0">
@@ -16675,6 +16707,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$45" gate="G$1" pin="+"/>
 <wire x1="-266.7" y1="-413.956" x2="-266.7" y2="-408.94" width="0.1524" layer="91"/>
 <junction x="-266.7" y="-413.956"/>
+<pinref part="D36" gate="G$1" pin="C"/>
+<wire x1="-279.4" y1="-408.94" x2="-289.56" y2="-408.94" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="-408.94" x2="-289.56" y2="-414.02" width="0.1524" layer="91"/>
+<junction x="-279.4" y="-408.94"/>
 </segment>
 </net>
 <net name="GND3" class="0">
@@ -16688,6 +16724,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$49" gate="G$1" pin="-"/>
 <wire x1="-251.46" y1="-487.76" x2="-251.46" y2="-487.68" width="0.1524" layer="91"/>
 <junction x="-251.46" y="-487.76"/>
+<pinref part="D10" gate="G$1" pin="A"/>
+<wire x1="-274.32" y1="-485.14" x2="-274.32" y2="-490.22" width="0.1524" layer="91"/>
+<wire x1="-274.32" y1="-490.22" x2="-264.16" y2="-490.22" width="0.1524" layer="91"/>
+<junction x="-264.16" y="-490.22"/>
 </segment>
 </net>
 <net name="USB_5_5V3" class="0">
@@ -16701,6 +16741,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U$49" gate="G$1" pin="+"/>
 <wire x1="-251.46" y1="-479.996" x2="-251.46" y2="-474.98" width="0.1524" layer="91"/>
 <junction x="-251.46" y="-479.996"/>
+<pinref part="D10" gate="G$1" pin="C"/>
+<wire x1="-264.16" y1="-474.98" x2="-274.32" y2="-474.98" width="0.1524" layer="91"/>
+<wire x1="-274.32" y1="-474.98" x2="-274.32" y2="-480.06" width="0.1524" layer="91"/>
+<junction x="-264.16" y="-474.98"/>
 </segment>
 </net>
 <net name="DEPTH_SCL" class="0">
@@ -16824,13 +16868,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </net>
 <net name="KILL-SWT-GATE" class="0">
 <segment>
-<wire x1="416.56" y1="25.4" x2="429.26" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="20.32" x2="429.26" y2="20.384" width="0.1524" layer="91"/>
-<pinref part="U$74" gate="G$1" pin="+"/>
-<wire x1="429.26" y1="20.384" x2="429.26" y2="25.4" width="0.1524" layer="91"/>
-<junction x="429.26" y="20.384"/>
-<wire x1="416.56" y1="20.32" x2="416.56" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="D10" gate="G$1" pin="C"/>
 <pinref part="U$41" gate="G$1" pin="P$3"/>
 <wire x1="388.62" y1="-10.16" x2="388.62" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R61" gate="G$1" pin="1"/>
@@ -16841,10 +16878,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="388.62" y1="-5.08" x2="388.62" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="388.62" y1="2.54" x2="383.54" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="388.62" y1="2.54" x2="388.62" y2="25.4" width="0.1524" layer="91"/>
-<junction x="388.62" y="2.54"/>
-<wire x1="388.62" y1="25.4" x2="416.56" y2="25.4" width="0.1524" layer="91"/>
-<junction x="416.56" y="25.4"/>
 </segment>
 </net>
 <net name="N$26" class="0">

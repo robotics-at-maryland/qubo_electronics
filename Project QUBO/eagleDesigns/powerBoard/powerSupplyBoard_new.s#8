@@ -13555,7 +13555,6 @@ by R. Vogg  15.March.2002</description>
 <part name="R46" library="resistor" deviceset="R-US_" device="R0805" value="33 kO"/>
 <part name="R47" library="resistor" deviceset="R-US_" device="R0805" value="100 kO"/>
 <part name="TEMP_SENSOR_2" library="Jameco" deviceset="LM35" device=""/>
-<part name="HIGHSIDEMOS1" library="transistor-fet" deviceset="2SK3019" device="SOT416/SC75"/>
 <part name="R48" library="resistor" deviceset="R-US_" device="R0805" value="100 kO"/>
 <part name="HIGHSIDEMOS2" library="transistor-fet" deviceset="2SK3019" device="SOT416/SC75"/>
 <part name="R49" library="resistor" deviceset="R-US_" device="R0805" value="100 kO"/>
@@ -13707,7 +13706,6 @@ by R. Vogg  15.March.2002</description>
 <instance part="R46" gate="G$1" x="43.18" y="-243.84" rot="R90"/>
 <instance part="R47" gate="G$1" x="43.18" y="-254" rot="R90"/>
 <instance part="TEMP_SENSOR_2" gate="G$1" x="-302.26" y="58.42"/>
-<instance part="HIGHSIDEMOS1" gate="G$1" x="-248.92" y="91.44"/>
 <instance part="R48" gate="G$1" x="-241.3" y="116.84" rot="R90"/>
 <instance part="HIGHSIDEMOS2" gate="G$1" x="-248.92" y="-15.24"/>
 <instance part="R49" gate="G$1" x="-241.3" y="10.16" rot="R90"/>
@@ -14158,7 +14156,6 @@ by R. Vogg  15.March.2002</description>
 <label x="-48.26" y="-203.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="S"/>
 <wire x1="-246.38" y1="83.82" x2="-246.38" y2="81.28" width="0.1524" layer="91"/>
 <label x="-246.38" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -15397,7 +15394,6 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="OR1EN" class="0">
 <segment>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="G"/>
 <wire x1="-259.08" y1="88.9" x2="-254" y2="88.9" width="0.1524" layer="91"/>
 <label x="-259.08" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -15640,18 +15636,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="BAT2HSOR" gate="G$1" pin="SHDN'"/>
 <wire x1="-241.3" y1="-7.62" x2="-241.3" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="-5.08" x2="-198.12" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="R48" gate="G$1" pin="1"/>
-<wire x1="-241.3" y1="111.76" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="HIGHSIDEMOS1" gate="G$1" pin="D"/>
-<wire x1="-241.3" y1="101.6" x2="-241.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-241.3" y1="99.06" x2="-246.38" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="BAT1HSOR" gate="G$1" pin="SHDN'"/>
-<wire x1="-198.12" y1="101.6" x2="-241.3" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-241.3" y="101.6"/>
+<junction x="-241.3" y="-5.08"/>
 </segment>
 </net>
 </nets>
