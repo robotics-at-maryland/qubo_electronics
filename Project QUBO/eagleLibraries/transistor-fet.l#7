@@ -841,6 +841,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <smd name="S1" x="-0.325" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
 <smd name="S" x="0.325" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
 <smd name="G" x="0.975" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
+<wire x1="-1.7" y1="1.7" x2="1.7" y2="1.7" width="0.127" layer="51"/>
+<wire x1="1.7" y1="1.7" x2="1.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.7" y1="-1.7" x2="-1.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="1.7" width="0.127" layer="51"/>
+<circle x="-1.05" y="-1" radius="0.360553125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

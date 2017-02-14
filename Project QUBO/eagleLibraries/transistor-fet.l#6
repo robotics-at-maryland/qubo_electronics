@@ -832,20 +832,20 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 <package name="POWER33">
-<smd name="D4" x="0" y="0" dx="2.37" dy="1.7" layer="1" rot="R180"/>
+<smd name="D4" x="0" y="0" dx="2.37" dy="1.7" layer="1"/>
 <smd name="D" x="-0.975" y="1.025" dx="0.45" dy="0.42" layer="1" rot="R90"/>
 <smd name="D1" x="-0.325" y="1.025" dx="0.45" dy="0.42" layer="1" rot="R90"/>
 <smd name="D2" x="0.325" y="1.025" dx="0.45" dy="0.42" layer="1" rot="R90"/>
 <smd name="D3" x="0.975" y="1.05" dx="0.45" dy="0.42" layer="1" rot="R90"/>
-<smd name="S2" x="-0.975" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
-<smd name="S1" x="-0.325" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
-<smd name="S" x="0.325" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
-<smd name="G" x="0.975" y="-1.5" dx="0.75" dy="0.42" layer="1" rot="R90"/>
-<wire x1="-1.7" y1="1.7" x2="1.7" y2="1.7" width="0.127" layer="51"/>
-<wire x1="1.7" y1="1.7" x2="1.7" y2="-1.7" width="0.127" layer="51"/>
-<wire x1="1.7" y1="-1.7" x2="-1.7" y2="-1.7" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="1.7" width="0.127" layer="51"/>
-<circle x="-1.05" y="-1" radius="0.360553125" width="0.127" layer="21"/>
+<smd name="S2" x="-0.975" y="-1.85" dx="0.75" dy="0.42" layer="1" rot="R90"/>
+<smd name="S1" x="-0.325" y="-1.85" dx="0.75" dy="0.42" layer="1" rot="R90"/>
+<smd name="S" x="0.325" y="-1.85" dx="0.75" dy="0.42" layer="1" rot="R90"/>
+<smd name="G" x="0.975" y="-1.85" dx="0.75" dy="0.42" layer="1" rot="R90"/>
+<wire x1="-1.7" y1="1.35" x2="1.7" y2="1.35" width="0.127" layer="51"/>
+<wire x1="1.7" y1="1.35" x2="1.7" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="1.7" y1="-2.3" x2="-1.7" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-2.3" x2="-1.7" y2="1.35" width="0.127" layer="51"/>
+<circle x="-1.1" y="-1.15" radius="0.360553125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
