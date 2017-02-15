@@ -14056,6 +14056,11 @@ by R. Vogg  15.March.2002</description>
 <wire x1="73.66" y1="-223.52" x2="73.66" y2="-205.74" width="0.1524" layer="91"/>
 <label x="73.66" y="-205.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="16V_CON" gate="G$1" pin="P$1"/>
+<wire x1="200.66" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="195.58" y="81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="12V" class="0">
 <segment>
@@ -15070,11 +15075,6 @@ by R. Vogg  15.March.2002</description>
 <label x="40.64" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="16V_CON" gate="G$1" pin="P$1"/>
-<wire x1="200.66" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="195.58" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="ADC" gate="G$1" pin="F0"/>
 <wire x1="-38.1" y1="-238.76" x2="-40.64" y2="-238.76" width="0.1524" layer="91"/>
 <label x="-43.18" y="-238.76" size="1.778" layer="95"/>
@@ -15193,6 +15193,20 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="5VREG" gate="G$1" pin="EN"/>
 <wire x1="43.18" y1="-15.24" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="POWER1"/>
+<wire x1="444.5" y1="33.02" x2="441.96" y2="33.02" width="0.1524" layer="91"/>
+<label x="441.96" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="POWER2"/>
+<wire x1="444.5" y1="7.62" x2="441.96" y2="7.62" width="0.1524" layer="91"/>
+<label x="441.96" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
