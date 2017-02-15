@@ -2993,13 +2993,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IOEXPANDER" pad="12"/>
 <contactref element="ADC" pad="COM"/>
 <contactref element="ADC" pad="REF-"/>
-<contactref element="ADC" pad="F0"/>
 <wire x1="134.71" y1="61.48" x2="134.71" y2="61.98" width="0" layer="19" extent="1-1"/>
 <wire x1="133.81" y1="62.63" x2="134.71" y2="61.98" width="0" layer="19" extent="1-1"/>
 <wire x1="133.31" y1="62.63" x2="133.81" y2="62.63" width="0" layer="19" extent="1-1"/>
 <wire x1="132.81" y1="62.63" x2="133.31" y2="62.63" width="0" layer="19" extent="1-1"/>
-<wire x1="132.31" y1="62.63" x2="132.81" y2="62.63" width="0" layer="19" extent="1-1"/>
-<wire x1="129.91" y1="61.98" x2="132.31" y2="62.63" width="0" layer="19" extent="1-1"/>
+<wire x1="129.91" y1="61.98" x2="132.81" y2="62.63" width="0" layer="19" extent="1-1"/>
 <wire x1="129.91" y1="60.48" x2="129.91" y2="61.98" width="0" layer="19" extent="1-1"/>
 <wire x1="129.91" y1="59.48" x2="129.91" y2="60.48" width="0" layer="19" extent="1-1"/>
 <wire x1="129.91" y1="58.98" x2="129.91" y2="59.48" width="0" layer="19" extent="1-1"/>
@@ -3095,6 +3093,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R_LOAD" pad="1"/>
 <contactref element="DVL_12VREG" pad="-VIN"/>
 <contactref element="16V_CON" pad="P$1"/>
+<contactref element="ADC" pad="F0"/>
 <contactref element="U$10" pad="GND"/>
 <contactref element="U$6" pad="GND"/>
 <contactref element="U$9" pad="GND"/>
@@ -3139,6 +3138,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="146.47" y1="45.72" x2="146.47" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="139.28" y1="45.72" x2="146.47" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="144.78" y1="38.1" x2="146.47" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="132.31" y1="62.63" x2="132.93" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="126.58" y1="45.72" x2="139.28" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="126.58" y1="48.26" x2="126.58" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="114.802" y1="86.995" x2="123.25" y2="76.835" width="0" layer="19" extent="1-1"/>
