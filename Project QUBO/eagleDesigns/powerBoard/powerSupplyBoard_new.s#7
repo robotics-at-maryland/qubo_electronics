@@ -15242,6 +15242,18 @@ by R. Vogg  15.March.2002</description>
 <junction x="-241.3" y="101.6"/>
 </segment>
 </net>
+<net name="UWEEN" class="0">
+<segment>
+<pinref part="IOEXPANDER" gate="G$1" pin="P05"/>
+<wire x1="147.32" y1="-154.94" x2="142.24" y2="-154.94" width="0.1524" layer="91"/>
+<label x="137.16" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DVL_12VREG" gate="G$1" pin="ON/OFFCTRL"/>
+<wire x1="50.8" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
+<label x="40.64" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

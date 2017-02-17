@@ -15195,6 +15195,20 @@ by R. Vogg  15.March.2002</description>
 <wire x1="43.18" y1="-15.24" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="POWER1"/>
+<wire x1="444.5" y1="33.02" x2="441.96" y2="33.02" width="0.1524" layer="91"/>
+<label x="441.96" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="POWER2"/>
+<wire x1="444.5" y1="7.62" x2="441.96" y2="7.62" width="0.1524" layer="91"/>
+<label x="441.96" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
