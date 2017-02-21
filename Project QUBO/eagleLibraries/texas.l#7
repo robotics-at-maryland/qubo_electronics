@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44916,6 +44916,51 @@ Dual Line USB Port Transient Suppressor&lt;br&gt;
 <connect gate="G$1" pin="SYNC" pad="SYNC"/>
 <connect gate="G$1" pin="VIN" pad="VIN1 VIN2"/>
 <connect gate="G$1" pin="VOUT" pad="VOUT1 VOUT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX213CDBR">
+<description>Texas Instruments MAX213CDBR&lt;br&gt;
+5-V MULTICHANNEL RS-232 LINE DRIVER/RECEIVER WITH ±15-kV ESD PROTECTION&lt;br&gt;
+SSOP28DB package</description>
+<gates>
+<gate name="G$1" symbol="MAX213" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP28DB">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="25"/>
+<connect gate="G$1" pin="C1+" pad="12"/>
+<connect gate="G$1" pin="C1-" pad="14"/>
+<connect gate="G$1" pin="C2+" pad="15"/>
+<connect gate="G$1" pin="C2-" pad="16"/>
+<connect gate="G$1" pin="DIN1" pad="7"/>
+<connect gate="G$1" pin="DIN2" pad="6"/>
+<connect gate="G$1" pin="DIN3" pad="20"/>
+<connect gate="G$1" pin="DIN4" pad="21"/>
+<connect gate="G$1" pin="DOUT1" pad="2"/>
+<connect gate="G$1" pin="DOUT2" pad="3"/>
+<connect gate="G$1" pin="DOUT3" pad="1"/>
+<connect gate="G$1" pin="DOUT4" pad="28"/>
+<connect gate="G$1" pin="EN" pad="24"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="RIN1" pad="9"/>
+<connect gate="G$1" pin="RIN2" pad="4"/>
+<connect gate="G$1" pin="RIN3" pad="27"/>
+<connect gate="G$1" pin="RIN4" pad="23"/>
+<connect gate="G$1" pin="RIN5" pad="18"/>
+<connect gate="G$1" pin="ROUT1" pad="8"/>
+<connect gate="G$1" pin="ROUT2" pad="5"/>
+<connect gate="G$1" pin="ROUT3" pad="26"/>
+<connect gate="G$1" pin="ROUT4" pad="22"/>
+<connect gate="G$1" pin="ROUT5" pad="19"/>
+<connect gate="G$1" pin="V+" pad="13"/>
+<connect gate="G$1" pin="V-" pad="17"/>
+<connect gate="G$1" pin="VCC" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>

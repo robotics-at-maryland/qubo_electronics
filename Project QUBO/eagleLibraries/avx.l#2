@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -84,7 +84,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="CAPACITOR">
+<symbol name="CAP">
 <pin name="+" x="0" y="5.144" visible="off" length="short" rot="R270"/>
 <pin name="-" x="0" y="-2.62" visible="off" length="short" rot="R90"/>
 <text x="-5.002" y="-2.396" size="1.778" layer="94" rot="R90">&gt;NAME</text>
@@ -101,7 +101,7 @@ F93-XX-XXX-X-B&lt;br&gt;
 B-style case (1210)&lt;br&gt;
 &lt;a href=http://datasheets.avx.com/f93.pdf&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="F93-XX-XXX-X-B">
@@ -120,7 +120,7 @@ B-style case (1210)&lt;br&gt;
 Model number F93-XX-XXX-X-A&lt;br&gt;
 Case A (1206)</description>
 <gates>
-<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="F93-XX-XXX-X-A">
