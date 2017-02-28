@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -61,7 +61,7 @@
 </layers>
 <library>
 <packages>
-<package name="PG-TO263-7-3">
+<package name="IPB180P04P4L-02">
 <smd name="DRAIN" x="0" y="0" dx="10.8" dy="9.4" layer="1"/>
 <smd name="GATE" x="-3.81" y="-9.15" dx="4.6" dy="0.8" layer="1" rot="R90"/>
 <smd name="S1" x="-2.54" y="-9.15" dx="4.6" dy="0.8" layer="1" rot="R90"/>
@@ -75,25 +75,9 @@
 <wire x1="-6.35" y1="-11.43" x2="-6.35" y2="5.08" width="0.127" layer="21"/>
 <text x="-6.35" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-6.35" y="-12.7" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.445" y="-7.62" size="1.27" layer="27" rot="R270">Gate</text>
-<text x="5.08" y="-6.35" size="1.27" layer="27" rot="R180">&lt;Source&gt;</text>
+<text x="-4.445" y="-10.16" size="1.27" layer="27" rot="R90">Gate</text>
+<text x="2.54" y="-7.62" size="1.27" layer="27" rot="R180">Source</text>
 <text x="1.27" y="0" size="1.27" layer="27" rot="R180">Drain</text>
-</package>
-<package name="SOT-223">
-<smd name="GATE" x="-2.3" y="-3.15" dx="1.5" dy="2" layer="1"/>
-<smd name="DRAIN" x="0" y="-3.15" dx="1.5" dy="2" layer="1"/>
-<smd name="SOURCE" x="2.3" y="-3.15" dx="1.5" dy="2" layer="1"/>
-<smd name="DRAIN2" x="0" y="3.15" dx="3.8" dy="2" layer="1"/>
-<wire x1="-3.81" y1="3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-3.81" x2="-3.81" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-3.81" x2="-3.81" y2="3.81" width="0.127" layer="21"/>
-<text x="-5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.35" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-2.54" y="-1.27" size="1.27" layer="21">G</text>
-<text x="0" y="-1.27" size="1.27" layer="21">D</text>
-<text x="2.54" y="-1.27" size="1.27" layer="21">S</text>
-<text x="-1.27" y="1.27" size="1.27" layer="21">D</text>
 </package>
 </packages>
 <symbols>
@@ -114,64 +98,8 @@
 <text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="NMOS_NO-BODY">
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="S" x="-10.16" y="-5.08" visible="pin" length="short"/>
-<pin name="D" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="G" x="0" y="7.62" visible="pin" length="short" rot="R270"/>
-<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="IPB180P04P4L-02">
-<description>Infineon IPB180P04P4L-02&lt;br&gt;
-P-channel MOSFET&lt;br&gt;
-&lt;a href="http://www.infineon.com/dgdl/Infineon-IPB180P04P4L_02-DS-v01_03-en.pdf?fileId=db3a30432f69f146012f7845736e2e49&amp;ack=t"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="PMOS_NO-BODY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PG-TO263-7-3">
-<connects>
-<connect gate="G$1" pin="P$1" pad="S1 S2 S3 S4 S5"/>
-<connect gate="G$1" pin="P$2" pad="DRAIN"/>
-<connect gate="G$1" pin="P$3" pad="GATE"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IRLL024NPBF">
-<description>Infineon IRLL024NPBF N-channel MOSFET&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/196/irll024npbf-938025.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="NMOS_NO-BODY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223">
-<connects>
-<connect gate="G$1" pin="D" pad="DRAIN DRAIN2"/>
-<connect gate="G$1" pin="G" pad="GATE"/>
-<connect gate="G$1" pin="S" pad="SOURCE"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
