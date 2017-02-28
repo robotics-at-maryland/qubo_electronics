@@ -120,6 +120,7 @@
 <wire x1="2.45" y1="1.95" x2="2.45" y2="-1.95" width="0.127" layer="21"/>
 <wire x1="2.45" y1="-1.95" x2="-2.45" y2="-1.95" width="0.127" layer="21"/>
 <wire x1="-2.45" y1="-1.95" x2="-2.45" y2="1.95" width="0.127" layer="21"/>
+<circle x="-1.5" y="-1.05" radius="0.390509375" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23048,6 +23048,58 @@ changed 2011-11-09</description>
 <text x="-2.54" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-2.54" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="TIVA-C_EVAL">
+<pad name="1-1" x="-22.86" y="3.81" drill="1.016" shape="square"/>
+<pad name="1-2" x="-22.86" y="1.27" drill="1.016"/>
+<pad name="1-3" x="-22.86" y="-1.27" drill="1.016"/>
+<pad name="1-4" x="-22.86" y="-3.81" drill="1.016"/>
+<pad name="1-5" x="-22.86" y="-6.35" drill="1.016"/>
+<pad name="1-6" x="-22.86" y="-8.89" drill="1.016"/>
+<pad name="1-7" x="-22.86" y="-11.43" drill="1.016"/>
+<pad name="1-8" x="-22.86" y="-13.97" drill="1.016"/>
+<pad name="1-9" x="-22.86" y="-16.51" drill="1.016"/>
+<pad name="1-10" x="-22.86" y="-19.05" drill="1.016"/>
+<pad name="3-1" x="-20.32" y="3.81" drill="1.016" shape="square"/>
+<pad name="3-2" x="-20.32" y="1.27" drill="1.016"/>
+<pad name="3-3" x="-20.32" y="-1.27" drill="1.016"/>
+<pad name="3-4" x="-20.32" y="-3.81" drill="1.016"/>
+<pad name="3-5" x="-20.32" y="-6.35" drill="1.016"/>
+<pad name="3-6" x="-20.32" y="-8.89" drill="1.016"/>
+<pad name="3-7" x="-20.32" y="-11.43" drill="1.016"/>
+<pad name="3-8" x="-20.32" y="-13.97" drill="1.016"/>
+<pad name="3-9" x="-20.32" y="-16.51" drill="1.016"/>
+<pad name="3-10" x="-20.32" y="-19.05" drill="1.016"/>
+<pad name="4-1" x="20.32" y="3.81" drill="1.016" shape="square"/>
+<pad name="2-1" x="22.86" y="3.81" drill="1.016" shape="square"/>
+<pad name="4-2" x="20.32" y="1.27" drill="1.016"/>
+<pad name="2-2" x="22.86" y="1.27" drill="1.016"/>
+<pad name="4-3" x="20.32" y="-1.27" drill="1.016"/>
+<pad name="2-3" x="22.86" y="-1.27" drill="1.016"/>
+<pad name="4-4" x="20.32" y="-3.81" drill="1.016"/>
+<pad name="2-4" x="22.86" y="-3.81" drill="1.016"/>
+<pad name="4-5" x="20.32" y="-6.35" drill="1.016"/>
+<pad name="2-5" x="22.86" y="-6.35" drill="1.016"/>
+<pad name="4-6" x="20.32" y="-8.89" drill="1.016"/>
+<pad name="2-6" x="22.86" y="-8.89" drill="1.016"/>
+<pad name="4-7" x="20.32" y="-11.43" drill="1.016"/>
+<pad name="2-7" x="22.86" y="-11.43" drill="1.016"/>
+<pad name="4-8" x="20.32" y="-13.97" drill="1.016"/>
+<pad name="2-8" x="22.86" y="-13.97" drill="1.016"/>
+<pad name="4-9" x="20.32" y="-16.51" drill="1.016"/>
+<pad name="2-9" x="22.86" y="-16.51" drill="1.016"/>
+<pad name="4-10" x="20.32" y="-19.05" drill="1.016"/>
+<pad name="2-10" x="22.86" y="-19.05" drill="1.016"/>
+<wire x1="-25.4" y1="-33.02" x2="25.4" y2="-33.02" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-33.02" x2="25.4" y2="33.02" width="0.127" layer="21"/>
+<wire x1="25.4" y1="33.02" x2="-25.4" y2="33.02" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="-33.02" width="0.127" layer="21"/>
+<text x="-24.13" y="34.29" size="5.08" layer="25">&gt;NAME</text>
+<text x="-24.13" y="-35.56" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-24.13" y="6.35" size="1.27" layer="27">J1</text>
+<text x="-20.32" y="6.35" size="1.27" layer="27">J3</text>
+<text x="19.05" y="6.35" size="1.27" layer="27">J4</text>
+<text x="22.86" y="6.35" size="1.27" layer="27">J2</text>
+</package>
 </packages>
 <symbols>
 <symbol name="320C5402">
@@ -32236,13 +32288,13 @@ changed 2011-11-09</description>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND1" x="-15.24" y="7.62" length="middle"/>
-<pin name="VI" x="-15.24" y="2.54" length="middle"/>
-<pin name="INHIBIT" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VOADJUST" x="-15.24" y="-7.62" length="middle"/>
-<pin name="VOSENSE" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="VO" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GND2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="VI" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="INHIBIT" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="VOADJUST" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="VOSENSE" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VO" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
@@ -32395,6 +32447,70 @@ changed 2011-11-09</description>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TIVA-C_EVAL">
+<pin name="3V3" x="-71.12" y="17.78" visible="pin" length="middle"/>
+<pin name="PB5" x="-71.12" y="12.7" visible="pin" length="middle"/>
+<pin name="PB0" x="-71.12" y="7.62" visible="pin" length="middle"/>
+<pin name="PB1" x="-71.12" y="2.54" visible="pin" length="middle"/>
+<pin name="PE4" x="-71.12" y="-2.54" visible="pin" length="middle"/>
+<pin name="PE5" x="-71.12" y="-7.62" visible="pin" length="middle"/>
+<pin name="PB4" x="-71.12" y="-12.7" visible="pin" length="middle"/>
+<pin name="PA5" x="-71.12" y="-17.78" visible="pin" length="middle"/>
+<pin name="PA6" x="-71.12" y="-22.86" visible="pin" length="middle"/>
+<pin name="PA7" x="-71.12" y="-27.94" visible="pin" length="middle"/>
+<wire x1="-66.04" y1="20.32" x2="-66.04" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-66.04" y1="-30.48" x2="-55.88" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-55.88" y1="-30.48" x2="-55.88" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-55.88" y1="20.32" x2="-66.04" y2="20.32" width="0.254" layer="94"/>
+<pin name="GND@2-1" x="-27.94" y="17.78" visible="pin" length="middle"/>
+<pin name="PB2" x="-27.94" y="12.7" visible="pin" length="middle"/>
+<pin name="PE0" x="-27.94" y="7.62" visible="pin" length="middle"/>
+<pin name="PF0" x="-27.94" y="2.54" visible="pin" length="middle"/>
+<pin name="RESET" x="-27.94" y="-2.54" visible="pin" length="middle"/>
+<pin name="PB7/PD1" x="-27.94" y="-7.62" visible="pin" length="middle"/>
+<pin name="PB6/PD0" x="-27.94" y="-12.7" visible="pin" length="middle"/>
+<pin name="PA4" x="-27.94" y="-17.78" visible="pin" length="middle"/>
+<pin name="PA3" x="-27.94" y="-22.86" visible="pin" length="middle"/>
+<pin name="PA2" x="-27.94" y="-27.94" visible="pin" length="middle"/>
+<wire x1="-22.86" y1="20.32" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="-22.86" y2="20.32" width="0.254" layer="94"/>
+<pin name="5V" x="15.24" y="17.78" visible="pin" length="middle"/>
+<pin name="GND@3-2" x="15.24" y="12.7" visible="pin" length="middle"/>
+<pin name="PD0/PB6" x="15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="PD1/PB7" x="15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="PD2" x="15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="PD3" x="15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="PE1" x="15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="PE2" x="15.24" y="-17.78" visible="pin" length="middle"/>
+<pin name="PE3" x="15.24" y="-22.86" visible="pin" length="middle"/>
+<pin name="PF1" x="15.24" y="-27.94" visible="pin" length="middle"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-30.48" x2="30.48" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-30.48" x2="30.48" y2="20.32" width="0.254" layer="94"/>
+<wire x1="30.48" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<pin name="PF2" x="58.42" y="17.78" visible="pin" length="middle"/>
+<pin name="PF3" x="58.42" y="12.7" visible="pin" length="middle"/>
+<pin name="PB3" x="58.42" y="7.62" visible="pin" length="middle"/>
+<pin name="PC4" x="58.42" y="2.54" visible="pin" length="middle"/>
+<pin name="PC5" x="58.42" y="-2.54" visible="pin" length="middle"/>
+<pin name="PC6" x="58.42" y="-7.62" visible="pin" length="middle"/>
+<pin name="PC7" x="58.42" y="-12.7" visible="pin" length="middle"/>
+<pin name="PD6" x="58.42" y="-17.78" visible="pin" length="middle"/>
+<pin name="PD7" x="58.42" y="-22.86" visible="pin" length="middle"/>
+<pin name="PF4" x="58.42" y="-27.94" visible="pin" length="middle"/>
+<wire x1="63.5" y1="20.32" x2="63.5" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="63.5" y1="-30.48" x2="73.66" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="73.66" y1="-30.48" x2="73.66" y2="20.32" width="0.254" layer="94"/>
+<wire x1="73.66" y1="20.32" x2="63.5" y2="20.32" width="0.254" layer="94"/>
+<text x="-66.04" y="-40.64" size="5.08" layer="95">&gt;NAME</text>
+<text x="15.24" y="-40.64" size="5.08" layer="96">&gt;VALUE</text>
+<text x="-66.04" y="22.86" size="5.08" layer="97">J1</text>
+<text x="-22.86" y="22.86" size="5.08" layer="97">J2</text>
+<text x="20.32" y="22.86" size="5.08" layer="97">J3</text>
+<text x="63.5" y="22.86" size="5.08" layer="97">J4</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -45018,6 +45134,64 @@ Bidirectional 5V &lt;-&gt; 3V3 &lt;br&gt;
 <connect gate="G$1" pin="SDA2" pad="P$5"/>
 <connect gate="G$1" pin="VREF1" pad="P$2"/>
 <connect gate="G$1" pin="VREF2" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TIVA-C_EVAL">
+<description>Texas Instruments Tiva-C TM4C123G LaunchPad Evaluation Board &lt;br&gt;
+Part number EK-TM4C123GXL&lt;br&gt;
+&lt;a href="http://www.ti.com/lit/ug/spmu296/spmu296.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.ti.com/lit/ds/spms376e/spms376e.pdf"&gt;Microcontroller&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TIVA-C_EVAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TIVA-C_EVAL">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1-1"/>
+<connect gate="G$1" pin="5V" pad="3-1"/>
+<connect gate="G$1" pin="GND@2-1" pad="2-1"/>
+<connect gate="G$1" pin="GND@3-2" pad="3-2"/>
+<connect gate="G$1" pin="PA2" pad="2-10"/>
+<connect gate="G$1" pin="PA3" pad="2-9"/>
+<connect gate="G$1" pin="PA4" pad="2-8"/>
+<connect gate="G$1" pin="PA5" pad="1-8"/>
+<connect gate="G$1" pin="PA6" pad="1-9"/>
+<connect gate="G$1" pin="PA7" pad="1-10"/>
+<connect gate="G$1" pin="PB0" pad="1-3"/>
+<connect gate="G$1" pin="PB1" pad="1-4"/>
+<connect gate="G$1" pin="PB2" pad="2-2"/>
+<connect gate="G$1" pin="PB3" pad="4-3"/>
+<connect gate="G$1" pin="PB4" pad="1-7"/>
+<connect gate="G$1" pin="PB5" pad="1-2"/>
+<connect gate="G$1" pin="PB6/PD0" pad="2-7"/>
+<connect gate="G$1" pin="PB7/PD1" pad="2-6"/>
+<connect gate="G$1" pin="PC4" pad="4-4"/>
+<connect gate="G$1" pin="PC5" pad="4-5"/>
+<connect gate="G$1" pin="PC6" pad="4-6"/>
+<connect gate="G$1" pin="PC7" pad="4-7"/>
+<connect gate="G$1" pin="PD0/PB6" pad="3-3"/>
+<connect gate="G$1" pin="PD1/PB7" pad="3-4"/>
+<connect gate="G$1" pin="PD2" pad="3-5"/>
+<connect gate="G$1" pin="PD3" pad="3-6"/>
+<connect gate="G$1" pin="PD6" pad="4-8"/>
+<connect gate="G$1" pin="PD7" pad="4-9"/>
+<connect gate="G$1" pin="PE0" pad="2-3"/>
+<connect gate="G$1" pin="PE1" pad="3-7"/>
+<connect gate="G$1" pin="PE2" pad="3-8"/>
+<connect gate="G$1" pin="PE3" pad="3-9"/>
+<connect gate="G$1" pin="PE4" pad="1-5"/>
+<connect gate="G$1" pin="PE5" pad="1-6"/>
+<connect gate="G$1" pin="PF0" pad="2-4"/>
+<connect gate="G$1" pin="PF1" pad="3-10"/>
+<connect gate="G$1" pin="PF2" pad="4-1"/>
+<connect gate="G$1" pin="PF3" pad="4-2"/>
+<connect gate="G$1" pin="PF4" pad="4-10"/>
+<connect gate="G$1" pin="RESET" pad="2-5"/>
 </connects>
 <technologies>
 <technology name=""/>
