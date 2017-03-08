@@ -1995,7 +1995,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="16V_CON" library="molex" package="SUPERSABRE_2CIRCUIT" value="SUPERSABRE_2CIRCUIT" x="114.3" y="95.25"/>
 <element name="3.3VCS" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="7.62" y="33.782"/>
 <element name="3.3VREG" library="texas" package="PTN78060W" value="PTN78060W" x="56.642" y="30.226" rot="MR180"/>
-<element name="5VCS" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="117.602" y="4.064" rot="R270"/>
+<element name="5VCS" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="114.046" y="10.668" rot="R270"/>
 <element name="5VREG" library="texas" package="LMZ23610" value="LMZ23610" x="138.684" y="25.146" rot="R270"/>
 <element name="ADC" library="linear" package="LTC2497-UHF" value="LTC2497UHF" x="29.694" y="5.128" rot="R270"/>
 <element name="BAT1" library="molex" package="SUPERSABRE_2CIRCUIT" value="SUPERSABRE_2CIRCUIT" x="46.99" y="95.25"/>
@@ -2056,7 +2056,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="HSOR2MOS2" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="92.964" y="87.376" rot="R270"/>
 <element name="HSOR3MOS1" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="17.272" y="86.868" rot="R90"/>
 <element name="HSOR3MOS2" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="28.194" y="84.074" rot="R270"/>
-<element name="IOEXPANDER" library="texas" package="PW_R-PDSO-G24" value="PCF8575C" x="12.446" y="1.778" rot="R270"/>
+<element name="IOEXPANDER" library="texas" package="PW_R-PDSO-G24" value="PCF8575C" x="16.002" y="6.604" rot="R270"/>
 <element name="JP1" library="samtec" package="MPSC-01-80" value="" x="74.93" y="8.89" rot="R180"/>
 <element name="R1" library="resistor" package="R0805" value="10 O" x="84.328" y="81.28" rot="R90"/>
 <element name="R10" library="resistor" package="R0805" value="510 kO" x="38.862" y="87.63"/>
@@ -2119,9 +2119,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TEMP_SENSOR_1" library="Jameco" package="LM35" value="LM35" x="147.828" y="81.026" rot="R90"/>
 <element name="TEMP_SENSOR_2" library="Jameco" package="LM35" value="LM35" x="74.676" y="43.688" rot="R270"/>
 <element name="U$10" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="28.702" y="16.002" rot="R90"/>
-<element name="U$16" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="1.016" y="8.382"/>
-<element name="U$17" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="-1.778" y="8.382" rot="R180"/>
-<element name="U$18" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="4.826" y="8.128"/>
+<element name="U$16" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="4.318" y="8.382"/>
+<element name="U$17" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="1.27" y="8.382" rot="R180"/>
+<element name="U$18" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="7.62" y="8.382"/>
 <element name="U$6" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="28.702" y="13.462" rot="R90"/>
 <element name="U$9" library="resistor" package="PULLUP_PULLDOWN_0805" value="PULLUP_PULLDOWN0805" x="28.702" y="10.922" rot="R90"/>
 <element name="U$1" library="transistor-fet" package="SOT23" value="BSS138CT-NDSOT23" x="106.426" y="30.734"/>
@@ -2441,19 +2441,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="32.094" y1="6.378" x2="32.094" y2="6.878" width="0" layer="19" extent="1-1"/>
 <wire x1="139.28" y1="48.26" x2="32.094" y2="6.378" width="0" layer="19" extent="1-1"/>
 <wire x1="133.858" y1="36.234" x2="139.28" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="4.826" y1="10.248" x2="133.858" y2="36.234" width="0" layer="19" extent="1-1"/>
-<wire x1="1.016" y1="10.502" x2="4.826" y2="10.248" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.778" y1="10.502" x2="1.016" y2="10.502" width="0" layer="19" extent="1-1"/>
-<wire x1="15.346" y1="5.353" x2="4.826" y2="10.248" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="10.502" x2="133.858" y2="36.234" width="0" layer="19" extent="1-1"/>
+<wire x1="4.318" y1="10.502" x2="7.62" y2="10.502" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="10.502" x2="4.318" y2="10.502" width="0" layer="19" extent="1-1"/>
+<wire x1="18.902" y1="10.179" x2="7.62" y2="10.502" width="0" layer="19" extent="1-1"/>
 <wire x1="124.88" y1="48.26" x2="139.28" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="111.086" y1="77.47" x2="26.582" y2="13.462" width="0" layer="19" extent="1-1"/>
 <wire x1="109.468" y1="82.931" x2="111.086" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="108.21" y1="69.215" x2="111.086" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="106.592" y1="61.976" x2="108.21" y2="69.215" width="0" layer="19" extent="1-1"/>
-<wire x1="120.402" y1="5.969" x2="-1.778" y2="10.502" width="0" layer="19" extent="1-1"/>
-<wire x1="114.802" y1="3.429" x2="120.402" y2="5.969" width="0" layer="19" extent="1-1"/>
-<wire x1="114.802" y1="2.159" x2="114.802" y2="3.429" width="0" layer="19" extent="1-1"/>
-<wire x1="114.681" y1="26.93" x2="114.802" y2="2.159" width="0" layer="19" extent="1-1"/>
+<wire x1="116.846" y1="12.573" x2="1.27" y2="10.502" width="0" layer="19" extent="1-1"/>
+<wire x1="111.246" y1="10.033" x2="116.846" y2="12.573" width="0" layer="19" extent="1-1"/>
+<wire x1="111.246" y1="8.763" x2="111.246" y2="10.033" width="0" layer="19" extent="1-1"/>
+<wire x1="114.681" y1="26.93" x2="111.246" y2="8.763" width="0" layer="19" extent="1-1"/>
 <wire x1="114.212" y1="36.576" x2="114.681" y2="26.93" width="0" layer="19" extent="1-1"/>
 <wire x1="87.93" y1="8.56" x2="114.681" y2="26.93" width="0" layer="19" extent="1-1"/>
 <wire x1="87.93" y1="6.56" x2="87.93" y2="8.56" width="0" layer="19" extent="1-1"/>
@@ -3003,13 +3003,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="130.722" y1="11.43" x2="129.184" y2="20.066" width="0" layer="19" extent="1-1"/>
 <wire x1="132.422" y1="6.858" x2="130.722" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="141.478" y1="7.626" x2="132.422" y2="6.858" width="0" layer="19" extent="1-1"/>
-<wire x1="114.802" y1="4.699" x2="130.722" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="114.802" y1="5.969" x2="114.802" y2="4.699" width="0" layer="19" extent="1-1"/>
+<wire x1="111.246" y1="11.303" x2="130.722" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="111.246" y1="12.573" x2="111.246" y2="11.303" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$47">
 <contactref element="5VCS" pad="P$6"/>
 <contactref element="C_F3" pad="1"/>
-<wire x1="120.402" y1="3.429" x2="124.88" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="116.846" y1="10.033" x2="124.88" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$49">
 <contactref element="12VCS" pad="P$6"/>
@@ -3154,7 +3154,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="5CSOUT">
 <contactref element="5VCS" pad="P$7"/>
 <contactref element="ADC" pad="CH5"/>
-<wire x1="120.402" y1="4.699" x2="28.194" y2="1.728" width="0" layer="19" extent="1-1"/>
+<wire x1="116.846" y1="11.303" x2="28.194" y2="1.728" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3CSOUT">
 <contactref element="3.3VCS" pad="P$7"/>
@@ -3350,17 +3350,17 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="OR1EN">
 <contactref element="HIGHSIDEMOS1" pad="G"/>
 <contactref element="IOEXPANDER" pad="4"/>
-<wire x1="43.95" y1="73.822" x2="9.546" y2="3.403" width="0" layer="19" extent="1-1"/>
+<wire x1="43.95" y1="73.822" x2="13.102" y2="8.229" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OR2EN">
 <contactref element="HIGHSIDEMOS2" pad="G"/>
 <contactref element="IOEXPANDER" pad="5"/>
-<wire x1="73.414" y1="73.568" x2="9.546" y2="2.753" width="0" layer="19" extent="1-1"/>
+<wire x1="73.414" y1="73.568" x2="13.102" y2="7.579" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OR3EN">
 <contactref element="HIGHSIDEMOS3" pad="G"/>
 <contactref element="IOEXPANDER" pad="6"/>
-<wire x1="9.152" y1="68.742" x2="9.546" y2="2.103" width="0" layer="19" extent="1-1"/>
+<wire x1="9.152" y1="68.742" x2="13.102" y2="6.929" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$87">
 <contactref element="12VREG" pad="P$3"/>
@@ -3370,7 +3370,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="12VEN">
 <contactref element="IOEXPANDER" pad="7"/>
 <contactref element="U$1" pad="1"/>
-<wire x1="105.476" y1="29.634" x2="9.546" y2="1.453" width="0" layer="19" extent="1-1"/>
+<wire x1="105.476" y1="29.634" x2="13.102" y2="6.279" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$92">
 <contactref element="C_BYP7" pad="1"/>
@@ -3385,27 +3385,27 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="3.3VEN">
 <contactref element="IOEXPANDER" pad="8"/>
 <contactref element="U$2" pad="1"/>
-<wire x1="57.724" y1="28.618" x2="9.546" y2="0.803" width="0" layer="19" extent="1-1"/>
+<wire x1="57.724" y1="28.618" x2="13.102" y2="5.629" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$88">
 <contactref element="IOEXPANDER" pad="21"/>
 <contactref element="U$17" pad="MID"/>
-<wire x1="-1.778" y1="8.382" x2="15.346" y2="3.403" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="8.382" x2="18.902" y2="8.229" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$95">
 <contactref element="IOEXPANDER" pad="1"/>
 <contactref element="R53" pad="1"/>
-<wire x1="9.546" y1="5.353" x2="133.858" y2="37.934" width="0" layer="19" extent="1-1"/>
+<wire x1="13.102" y1="10.179" x2="133.858" y2="37.934" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$96">
 <contactref element="IOEXPANDER" pad="2"/>
 <contactref element="U$16" pad="MID"/>
-<wire x1="1.016" y1="8.382" x2="9.546" y2="4.703" width="0" layer="19" extent="1-1"/>
+<wire x1="4.318" y1="8.382" x2="13.102" y2="9.529" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
 <contactref element="IOEXPANDER" pad="3"/>
 <contactref element="U$18" pad="MID"/>
-<wire x1="4.826" y1="8.128" x2="9.546" y2="4.053" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="8.382" x2="13.102" y2="8.879" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R3" pad="1"/>
@@ -3525,7 +3525,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="UWEEN">
 <contactref element="IOEXPANDER" pad="9"/>
 <contactref element="DVL_12VREG" pad="ONOFF"/>
-<wire x1="9.546" y1="0.153" x2="137.16" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="13.102" y1="4.979" x2="137.16" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
 <contactref element="JP1" pad="1"/>
@@ -3562,8 +3562,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.294" y1="6.378" x2="27.294" y2="7.878" width="0" layer="19" extent="1-1"/>
 <wire x1="27.294" y1="5.378" x2="27.294" y2="6.378" width="0" layer="19" extent="1-1"/>
 <wire x1="27.294" y1="4.878" x2="27.294" y2="5.378" width="0" layer="19" extent="1-1"/>
-<wire x1="9.546" y1="-1.797" x2="27.294" y2="4.878" width="0" layer="19" extent="1-1"/>
-<wire x1="83.93" y1="8.56" x2="9.546" y2="-1.797" width="0" layer="19" extent="1-1"/>
+<wire x1="13.102" y1="3.029" x2="27.294" y2="4.878" width="0" layer="19" extent="1-1"/>
+<wire x1="83.93" y1="8.56" x2="13.102" y2="3.029" width="0" layer="19" extent="1-1"/>
 <wire x1="83.93" y1="6.56" x2="83.93" y2="8.56" width="0" layer="19" extent="1-1"/>
 <wire x1="83.93" y1="4.56" x2="83.93" y2="6.56" width="0" layer="19" extent="1-1"/>
 <wire x1="83.93" y1="2.56" x2="83.93" y2="4.56" width="0" layer="19" extent="1-1"/>
@@ -3584,15 +3584,15 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP1" pad="65"/>
 <contactref element="IOEXPANDER" pad="23"/>
 <contactref element="ADC" pad="SDA"/>
-<wire x1="15.346" y1="4.703" x2="27.294" y2="6.878" width="0" layer="19" extent="1-1"/>
-<wire x1="63.93" y1="2.56" x2="15.346" y2="4.703" width="0" layer="19" extent="1-1"/>
+<wire x1="18.902" y1="9.529" x2="27.294" y2="6.878" width="0" layer="19" extent="1-1"/>
+<wire x1="63.93" y1="2.56" x2="18.902" y2="9.529" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INT_SCL">
 <contactref element="JP1" pad="66"/>
 <contactref element="IOEXPANDER" pad="22"/>
 <contactref element="ADC" pad="SCL"/>
-<wire x1="15.346" y1="4.053" x2="27.294" y2="7.378" width="0" layer="19" extent="1-1"/>
-<wire x1="65.93" y1="2.56" x2="15.346" y2="4.053" width="0" layer="19" extent="1-1"/>
+<wire x1="18.902" y1="8.879" x2="27.294" y2="7.378" width="0" layer="19" extent="1-1"/>
+<wire x1="65.93" y1="2.56" x2="18.902" y2="8.879" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="JP1" pad="20"/>
@@ -3754,13 +3754,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="129.184" y1="26.416" x2="129.184" y2="25.146" width="0" layer="19" extent="1-1"/>
 <wire x1="129.184" y1="28.956" x2="129.184" y2="26.416" width="0" layer="19" extent="1-1"/>
 <wire x1="123.786" y1="13.716" x2="129.184" y2="28.956" width="0" layer="19" extent="1-1"/>
-<wire x1="120.402" y1="2.159" x2="123.786" y2="13.716" width="0" layer="19" extent="1-1"/>
-<wire x1="125.818" y1="9.398" x2="120.402" y2="2.159" width="0" layer="19" extent="1-1"/>
+<wire x1="116.846" y1="8.763" x2="123.786" y2="13.716" width="0" layer="19" extent="1-1"/>
+<wire x1="125.818" y1="9.398" x2="116.846" y2="8.763" width="0" layer="19" extent="1-1"/>
 <wire x1="130.722" y1="6.858" x2="125.818" y2="9.398" width="0" layer="19" extent="1-1"/>
 <wire x1="141.478" y1="14.726" x2="123.786" y2="13.716" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.778" y1="6.262" x2="141.478" y2="14.726" width="0" layer="19" extent="1-1"/>
-<wire x1="1.016" y1="6.262" x2="-1.778" y2="6.262" width="0" layer="19" extent="1-1"/>
-<wire x1="4.826" y1="6.008" x2="1.016" y2="6.262" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="6.262" x2="141.478" y2="14.726" width="0" layer="19" extent="1-1"/>
+<wire x1="4.318" y1="6.262" x2="1.27" y2="6.262" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="6.262" x2="4.318" y2="6.262" width="0" layer="19" extent="1-1"/>
 <wire x1="118.491" y1="26.93" x2="125.818" y2="9.398" width="0" layer="19" extent="1-1"/>
 <wire x1="118.452" y1="32.258" x2="118.491" y2="26.93" width="0" layer="19" extent="1-1"/>
 <wire x1="115.912" y1="36.576" x2="118.452" y2="32.258" width="0" layer="19" extent="1-1"/>

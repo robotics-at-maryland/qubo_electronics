@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1998,7 +1998,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="5VCS" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="75.692" y="35.306" rot="R270"/>
 <element name="5VREG" library="texas" package="LMZ23610" value="LMZ23610" x="93.472" y="38.862" rot="R270"/>
 <element name="ADC" library="linear" package="LTC2497-UHF" value="LTC2497UHF" x="29.694" y="5.128" rot="R270"/>
-<element name="BAT1" library="molex" package="SUPERSABRE_2CIRCUIT" value="SUPERSABRE_2CIRCUIT" x="54.61" y="94.488"/>
+<element name="BAT1" library="molex" package="SUPERSABRE_2CIRCUIT" value="SUPERSABRE_2CIRCUIT" x="50.8" y="94.996"/>
 <element name="BAT1CS" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="65.024" y="61.468" rot="R270"/>
 <element name="BAT1HSOR" library="linear" package="MSOP16" value="LTC4364MSOP" x="49.474" y="65.278" rot="R180"/>
 <element name="BAT2" library="molex" package="SUPERSABRE_2CIRCUIT" value="SUPERSABRE_2CIRCUIT" x="82.042" y="95.504"/>
@@ -2050,7 +2050,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="HIGHSIDEMOS1" library="transistor-fet" package="SOT416" value="2SK3019SOT416/SC75" x="49.022" y="59.944"/>
 <element name="HIGHSIDEMOS2" library="transistor-fet" package="SOT416" value="2SK3019SOT416/SC75" x="73.914" y="74.168"/>
 <element name="HIGHSIDEMOS3" library="transistor-fet" package="SOT416" value="2SK3019SOT416/SC75" x="27.178" y="78.486"/>
-<element name="HSOR1MOS1" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="54.356" y="86.106"/>
+<element name="HSOR1MOS1" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="50.8" y="86.614"/>
 <element name="HSOR1MOS2" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="55.372" y="77.216" rot="R180"/>
 <element name="HSOR2MOS1" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="82.042" y="87.884"/>
 <element name="HSOR2MOS2" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="84.328" y="76.454" rot="R180"/>
@@ -2059,7 +2059,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="IOEXPANDER" library="texas" package="PW_R-PDSO-G24" value="PCF8575C" x="16.002" y="6.604" rot="R270"/>
 <element name="JP1" library="samtec" package="MPSC-01-80" value="" x="74.93" y="8.89" rot="R180"/>
 <element name="R1" library="resistor" package="R0805" value="10 O" x="88.138" y="87.376" rot="R90"/>
-<element name="R10" library="resistor" package="R0805" value="510 kO" x="48.768" y="77.216" rot="R180"/>
+<element name="R10" library="resistor" package="R0805" value="510 kO" x="65.786" y="87.884" rot="R180"/>
 <element name="R11" library="resistor" package="R0805" value="51 kO" x="46.228" y="54.102"/>
 <element name="R12" library="resistor" package="R0805" value="68 kO" x="57.15" y="51.562"/>
 <element name="R13" library="resistor" package="R0805" value="430 kO" x="58.928" y="54.102"/>
@@ -2085,24 +2085,24 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R31" library="resistor" package="R0805" value="68 kO" x="32.258" y="69.596"/>
 <element name="R32" library="resistor" package="R0805" value="430 kO" x="32.258" y="72.136" rot="R180"/>
 <element name="R33" library="resistor" package="R0805" value="33 kO" x="32.258" y="67.056" rot="R180"/>
-<element name="R34" library="resistor" package="R0805" value="680 kO" x="148.59" y="74.93"/>
-<element name="R35" library="resistor" package="R0805" value="100 kO" x="148.59" y="72.39" rot="R180"/>
+<element name="R34" library="resistor" package="R0805" value="680 kO" x="26.924" y="27.178"/>
+<element name="R35" library="resistor" package="R0805" value="100 kO" x="28.448" y="19.812" rot="R180"/>
 <element name="R36" library="resistor" package="R0805" value="680 kO" x="16.51" y="35.56" rot="R180"/>
 <element name="R37" library="resistor" package="R0805" value="100 kO" x="16.51" y="33.02"/>
 <element name="R38" library="resistor" package="R0805" value="680 kO" x="16.51" y="27.94" rot="R180"/>
 <element name="R39" library="resistor" package="R0805" value="100 kO" x="16.51" y="30.48"/>
 <element name="R4" library="resistor" package="R0805" value="68 kO" x="82.296" y="70.358" rot="R180"/>
-<element name="R40" library="resistor" package="R0805" value="680 kO" x="140.97" y="74.93"/>
-<element name="R41" library="resistor" package="R0805" value="100 kO" x="140.97" y="69.85" rot="R180"/>
+<element name="R40" library="resistor" package="R0805" value="680 kO" x="122.174" y="81.28"/>
+<element name="R41" library="resistor" package="R0805" value="100 kO" x="120.396" y="77.216" rot="R180"/>
 <element name="R42" library="resistor" package="R0805" value="430 kO" x="16.51" y="21.59" rot="R180"/>
 <element name="R43" library="resistor" package="R0805" value="100 kO" x="16.51" y="19.05"/>
 <element name="R44" library="resistor" package="R0805" value="100 kO" x="140.208" y="48.26"/>
 <element name="R45" library="resistor" package="R0805" value="100 kO" x="140.208" y="45.72" rot="R180"/>
 <element name="R46" library="resistor" package="R0805" value="33 kO" x="6.604" y="18.288"/>
 <element name="R47" library="resistor" package="R0805" value="100 kO" x="16.51" y="16.51"/>
-<element name="R48" library="resistor" package="R0805" value="100 kO" x="49.364" y="70.162" rot="R180"/>
+<element name="R48" library="resistor" package="R0805" value="100 kO" x="65.62" y="92.514" rot="R180"/>
 <element name="R49" library="resistor" package="R0805" value="100 kO" x="73.406" y="81.026"/>
-<element name="R5" library="resistor" package="R0805" value="2 kO" x="48.768" y="73.66" rot="R180"/>
+<element name="R5" library="resistor" package="R0805" value="2 kO" x="68.326" y="95.504" rot="R180"/>
 <element name="R50" library="resistor" package="R0805" value="100 kO" x="25.908" y="85.09" rot="R90"/>
 <element name="R53" library="resistor" package="R0805" value="100 kO" x="133.858" y="37.084" rot="R270"/>
 <element name="R6" library="resistor" package="R0805" value="68 kO" x="46.228" y="49.276" rot="R180"/>
@@ -2137,14 +2137,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R34" pad="2"/>
 <contactref element="R10" pad="2"/>
 <contactref element="BAT1" pad="P$2"/>
-<via x="50.8635" y="94.488" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="58.3565" y1="94.488" x2="149.44" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8635" y1="94.488" x2="58.3565" y2="94.488" width="0" layer="19" extent="1-1"/>
-<wire x1="54.356" y1="86.781" x2="50.8635" y2="94.488" width="0" layer="19" extent="1-1"/>
-<wire x1="47.918" y1="77.216" x2="54.356" y2="86.781" width="0" layer="19" extent="1-1"/>
-<wire x1="47.918" y1="73.66" x2="47.918" y2="77.216" width="0" layer="19" extent="1-1"/>
-<wire x1="48.514" y1="70.162" x2="47.918" y2="73.66" width="0" layer="19" extent="1-1"/>
-<wire x1="47.724" y1="67.668" x2="48.514" y2="70.162" width="0" layer="19" extent="1-1"/>
+<via x="47.0535" y="94.996" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="54.5465" y1="94.996" x2="27.774" y2="27.178" width="0" layer="19" extent="1-1"/>
+<wire x1="47.0535" y1="94.996" x2="54.5465" y2="94.996" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="87.289" x2="47.0535" y2="94.996" width="0" layer="19" extent="1-1"/>
+<wire x1="64.936" y1="87.884" x2="50.8" y2="87.289" width="0" layer="19" extent="1-1"/>
+<wire x1="67.476" y1="95.504" x2="64.936" y2="87.884" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="92.514" x2="67.476" y2="95.504" width="0" layer="19" extent="1-1"/>
+<wire x1="47.724" y1="67.668" x2="64.77" y2="92.514" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BAT2">
 <contactref element="BAT2" pad="P$1"/>
@@ -2173,7 +2173,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$8">
 <contactref element="R5" pad="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="45.378" y1="49.276" x2="49.618" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="45.378" y1="49.276" x2="69.176" y2="95.504" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R6" pad="1"/>
@@ -2199,7 +2199,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R11" pad="2"/>
 <contactref element="BAT1HSOR" pad="UV"/>
 <contactref element="C13" pad="1"/>
-<wire x1="48.224" y1="62.888" x2="49.618" y2="77.216" width="0" layer="19" extent="1-1"/>
+<wire x1="48.224" y1="62.888" x2="66.636" y2="87.884" width="0" layer="19" extent="1-1"/>
 <wire x1="47.078" y1="56.642" x2="48.224" y2="62.888" width="0" layer="19" extent="1-1"/>
 <wire x1="47.078" y1="54.102" x2="47.078" y2="56.642" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2684,7 +2684,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="115.3795" y1="94.996" x2="122.8725" y2="94.996" width="0" layer="19" extent="1-1"/>
 <wire x1="115.068" y1="86.741" x2="115.3795" y2="94.996" width="0" layer="19" extent="1-1"/>
 <wire x1="115.068" y1="85.471" x2="115.068" y2="86.741" width="0" layer="19" extent="1-1"/>
-<wire x1="141.82" y1="74.93" x2="122.8725" y2="94.996" width="0" layer="19" extent="1-1"/>
+<wire x1="123.024" y1="81.28" x2="122.8725" y2="94.996" width="0" layer="19" extent="1-1"/>
 <wire x1="99.315" y1="8.1" x2="115.068" y2="85.471" width="0" layer="19" extent="1-1"/>
 <wire x1="97.435" y1="8.1" x2="99.315" y2="8.1" width="0" layer="19" extent="1-1"/>
 <wire x1="99.315" y1="5.56" x2="99.315" y2="8.1" width="0" layer="19" extent="1-1"/>
@@ -2843,8 +2843,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R40" pad="1"/>
 <contactref element="R41" pad="2"/>
 <contactref element="ADC" pad="CH10"/>
-<wire x1="140.12" y1="69.85" x2="140.12" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="30.694" y1="1.728" x2="140.12" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="119.546" y1="77.216" x2="121.324" y2="81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="30.694" y1="1.728" x2="119.546" y2="77.216" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$72">
 <contactref element="R42" pad="1"/>
@@ -2887,13 +2887,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="HSOR1MOS2" pad="SOURCE1"/>
 <contactref element="HSOR1MOS2" pad="SOURCE2"/>
 <contactref element="HSOR1MOS2" pad="SOURCE3"/>
-<wire x1="54.031" y1="84.706" x2="54.681" y2="84.706" width="0.4064" layer="1"/>
+<wire x1="50.475" y1="85.214" x2="51.125" y2="85.214" width="0.4064" layer="1"/>
 <wire x1="56.347" y1="78.616" x2="58.748" y2="81.534" width="0" layer="19" extent="1-1"/>
 <wire x1="55.697" y1="78.616" x2="56.347" y2="78.616" width="0" layer="19" extent="1-1"/>
 <wire x1="55.047" y1="78.616" x2="55.697" y2="78.616" width="0" layer="19" extent="1-1"/>
-<wire x1="54.681" y1="84.706" x2="58.748" y2="81.534" width="0" layer="19" extent="1-1"/>
-<wire x1="53.381" y1="84.706" x2="54.031" y2="84.706" width="0" layer="19" extent="1-1"/>
-<wire x1="48.694" y1="82.042" x2="53.381" y2="84.706" width="0" layer="19" extent="1-1"/>
+<wire x1="51.125" y1="85.214" x2="58.748" y2="81.534" width="0" layer="19" extent="1-1"/>
+<wire x1="49.825" y1="85.214" x2="50.475" y2="85.214" width="0" layer="19" extent="1-1"/>
+<wire x1="48.694" y1="82.042" x2="49.825" y2="85.214" width="0" layer="19" extent="1-1"/>
 <wire x1="49.224" y1="67.668" x2="55.047" y2="78.616" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
@@ -3005,7 +3005,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$3">
 <contactref element="R3" pad="2"/>
 <contactref element="HSOR1MOS1" pad="GATE"/>
-<wire x1="55.331" y1="84.706" x2="61.214" y2="85.94" width="0" layer="19" extent="1-1"/>
+<wire x1="51.775" y1="85.214" x2="61.214" y2="85.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
 <contactref element="HSOR2MOS1" pad="GATE"/>
@@ -3032,8 +3032,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R34" pad="1"/>
 <contactref element="R35" pad="2"/>
 <contactref element="ADC" pad="CH7"/>
-<wire x1="147.74" y1="72.39" x2="147.74" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="29.194" y1="1.728" x2="147.74" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="27.598" y1="19.812" x2="26.074" y2="27.178" width="0" layer="19" extent="1-1"/>
+<wire x1="29.194" y1="1.728" x2="27.598" y2="19.812" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$55">
 <contactref element="R36" pad="1"/>
@@ -3081,7 +3081,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R48" pad="1"/>
 <contactref element="HIGHSIDEMOS1" pad="D"/>
 <contactref element="BAT1HSOR" pad="SHDN"/>
-<wire x1="47.724" y1="62.888" x2="50.214" y2="70.162" width="0" layer="19" extent="1-1"/>
+<wire x1="47.724" y1="62.888" x2="66.47" y2="92.514" width="0" layer="19" extent="1-1"/>
 <wire x1="49.022" y1="60.644" x2="47.724" y2="62.888" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UWEEN">
@@ -3274,9 +3274,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="31.916" y1="91.02" x2="33.274" y2="89.662" width="0.254" layer="1"/>
 <wire x1="33.274" y1="89.662" x2="33.948" y2="89.662" width="0.254" layer="1"/>
 <wire x1="33.948" y1="89.662" x2="34.29" y2="89.32" width="0.254" layer="1"/>
-<wire x1="149.44" y1="72.39" x2="150.428" y2="82.931" width="0" layer="19" extent="1-1"/>
-<wire x1="141.82" y1="69.85" x2="149.44" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="141.058" y1="45.72" x2="141.82" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="29.298" y1="19.812" x2="150.428" y2="82.931" width="0" layer="19" extent="1-1"/>
+<wire x1="121.246" y1="77.216" x2="29.298" y2="19.812" width="0" layer="19" extent="1-1"/>
+<wire x1="141.058" y1="45.72" x2="121.246" y2="77.216" width="0" layer="19" extent="1-1"/>
 <wire x1="146.05" y1="36.576" x2="141.058" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="126.58" y1="45.72" x2="141.058" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="126.58" y1="48.26" x2="126.58" y2="45.72" width="0" layer="19" extent="1-1"/>
