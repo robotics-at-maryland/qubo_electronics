@@ -98,21 +98,21 @@
 </packages>
 <symbols>
 <symbol name="PMOS_NO-BODY">
-<wire x1="-1.27" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<pin name="P$1" x="-5.08" y="-2.54" visible="pad" length="short"/>
-<pin name="P$2" x="5.08" y="-2.54" visible="pad" length="short" rot="R180"/>
-<pin name="P$3" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
-<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-7.62" y="-5.08" visible="pin" length="short"/>
+<pin name="D" x="7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="G" x="0" y="10.16" visible="pin" length="middle" function="dot" rot="R270"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="NMOS_NO-BODY">
 <wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -143,9 +143,9 @@ P-channel MOSFET&lt;br&gt;
 <devices>
 <device name="" package="PG-TO263-7-3">
 <connects>
-<connect gate="G$1" pin="P$1" pad="S1 S2 S3 S4 S5"/>
-<connect gate="G$1" pin="P$2" pad="DRAIN"/>
-<connect gate="G$1" pin="P$3" pad="GATE"/>
+<connect gate="G$1" pin="D" pad="DRAIN"/>
+<connect gate="G$1" pin="G" pad="GATE"/>
+<connect gate="G$1" pin="S" pad="S1 S2 S3 S4 S5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -158,6 +158,25 @@ P-channel MOSFET&lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/196/irll024npbf-938025.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="NMOS_NO-BODY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-223">
+<connects>
+<connect gate="G$1" pin="D" pad="DRAIN DRAIN2"/>
+<connect gate="G$1" pin="G" pad="GATE"/>
+<connect gate="G$1" pin="S" pad="SOURCE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSP92PH6327XTSA1">
+<description>Infineon BSP92PH6327XTSA1 P-channel MOSFET&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/196/BSP92P_Rev2.7-359220.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PMOS_NO-BODY" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-223">

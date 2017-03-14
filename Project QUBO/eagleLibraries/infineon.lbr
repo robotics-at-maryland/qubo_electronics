@@ -95,6 +95,22 @@
 <text x="2.54" y="-1.27" size="1.27" layer="21">S</text>
 <text x="-1.27" y="1.27" size="1.27" layer="21">D</text>
 </package>
+<package name="SO-8">
+<smd name="S1" x="-1.905" y="-2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="S2" x="-0.635" y="-2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="S3" x="0.635" y="-2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="G4" x="1.905" y="-2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="D5" x="1.905" y="2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="D6" x="0.635" y="2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="D7" x="-0.635" y="2.34" dx="0.72" dy="1.78" layer="1"/>
+<smd name="D8" x="-1.905" y="2.34" dx="0.72" dy="1.78" layer="1"/>
+<wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<text x="-2.54" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PMOS_NO-BODY">
@@ -111,6 +127,8 @@
 <wire x1="2.54" y1="0" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="NMOS_NO-BODY">
 <wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -182,6 +200,25 @@ P-channel MOSFET&lt;br&gt;
 <connect gate="G$1" pin="D" pad="DRAIN DRAIN2"/>
 <connect gate="G$1" pin="G" pad="GATE"/>
 <connect gate="G$1" pin="S" pad="SOURCE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRF7205PBF" uservalue="yes">
+<description>Infineon IRF7205PBF P-Channel MOSFET&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/196/irf7205pbf-936007.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PMOS_NO-BODY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO-8">
+<connects>
+<connect gate="G$1" pin="D" pad="D5 D6 D7 D8"/>
+<connect gate="G$1" pin="G" pad="G4"/>
+<connect gate="G$1" pin="S" pad="S1 S2 S3"/>
 </connects>
 <technologies>
 <technology name=""/>

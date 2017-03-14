@@ -45143,6 +45143,7 @@ Bidirectional 5V &lt;-&gt; 3V3 &lt;br&gt;
 </deviceset>
 <deviceset name="TIVA-C_EVAL">
 <description>Texas Instruments Tiva-C TM4C123G LaunchPad Evaluation Board &lt;br&gt;
+Part number EK-TM4C123GXL&lt;br&gt;
 &lt;a href="http://www.ti.com/lit/ug/spmu296/spmu296.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="TIVA-C_EVAL" x="0" y="0"/>

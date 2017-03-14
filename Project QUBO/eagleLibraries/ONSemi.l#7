@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -38,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -57,78 +71,40 @@
 </layers>
 <library>
 <packages>
-<package name="UVQ-24/4.5-D24P-C">
-<wire x1="-29.21" y1="18.415" x2="29.21" y2="18.415" width="0.127" layer="21"/>
-<wire x1="29.21" y1="18.415" x2="29.21" y2="-18.415" width="0.127" layer="21"/>
-<wire x1="29.21" y1="-18.415" x2="-29.21" y2="-18.415" width="0.127" layer="21"/>
-<wire x1="-29.21" y1="-18.415" x2="-29.21" y2="18.415" width="0.127" layer="21"/>
-<pad name="P$1" x="-25.4" y="7.62" drill="1.143" shape="octagon" rot="R270"/>
-<pad name="P$2" x="-25.4" y="0" drill="1.143" shape="octagon"/>
-<pad name="P$3" x="-25.4" y="-7.62" drill="1.143" shape="octagon"/>
-<pad name="P$4" x="25.4" y="7.62" drill="1.7018" shape="octagon"/>
-<pad name="P$5" x="25.4" y="3.81" drill="1.7018" shape="octagon"/>
-<pad name="P$6" x="25.4" y="0" drill="1.7018" shape="octagon"/>
-<pad name="P$7" x="25.4" y="-3.81" drill="1.7018" shape="octagon"/>
-<pad name="P$8" x="25.4" y="-7.62" drill="1.7018" shape="octagon"/>
+<package name="SOD-923">
+<smd name="P$1" x="-0.42" y="0" dx="0.25" dy="0.36" layer="1" rot="R90"/>
+<smd name="P$2" x="0.42" y="0" dx="0.25" dy="0.36" layer="1" rot="R90"/>
+<wire x1="-0.4" y1="0.3" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.3" x2="-0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<text x="-0.635" y="0.635" size="0.254" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.635" size="0.254" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="UVQ-24/4.5-D24P-C">
-<wire x1="-17.78" y1="22.86" x2="17.78" y2="22.86" width="0.254" layer="94"/>
-<wire x1="17.78" y1="22.86" x2="17.78" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
-<pin name="+VIN" x="-22.86" y="-12.7" length="middle"/>
-<pin name="ON/OFFCONTROL" x="-22.86" y="0" length="middle"/>
-<pin name="-VIN" x="-22.86" y="12.7" length="middle"/>
-<pin name="-VOUT" x="22.86" y="15.24" length="middle" rot="R180"/>
-<pin name="-SENSE" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="TRIM" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="+SENSE" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="+VOUT" x="22.86" y="-15.24" length="middle" rot="R180"/>
-<text x="-20.32" y="22.86" size="2.54" layer="95">&gt;Name</text>
-<text x="-20.32" y="-25.4" size="2.54" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="UWE">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="+VIN" x="-15.24" y="7.62" length="middle"/>
-<pin name="ON/OFFCTRL" x="-15.24" y="2.54" length="middle"/>
-<pin name="-VIN" x="-15.24" y="-2.54" length="middle"/>
-<pin name="-VOUT" x="-15.24" y="-7.62" length="middle"/>
-<pin name="-SENSE" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="TRIM" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="+SENSE" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="+VOUT" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<symbol name="2-PIN_TVS">
+<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="UVQ-24/4.5-D24P-C">
-<gates>
-<gate name="G$1" symbol="UVQ-24/4.5-D24P-C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="UVQ-24/4.5-D24P-C">
-<connects>
-<connect gate="G$1" pin="+SENSE" pad="P$7"/>
-<connect gate="G$1" pin="+VIN" pad="P$3"/>
-<connect gate="G$1" pin="+VOUT" pad="P$8"/>
-<connect gate="G$1" pin="-SENSE" pad="P$5"/>
-<connect gate="G$1" pin="-VIN" pad="P$1"/>
-<connect gate="G$1" pin="-VOUT" pad="P$4"/>
-<connect gate="G$1" pin="ON/OFFCONTROL" pad="P$2"/>
-<connect gate="G$1" pin="TRIM" pad="P$6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 00 01"
+Version="08 00 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -9,6 +9,7 @@ AutoSaveProject=1
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/BME280ComponentLibrary.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/Jameco.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/NXP.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/ONSemi.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/ParkerFludics.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/allegro.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/analog_devices.lbr"
@@ -50,10 +51,10 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 
 [Win_1]
 Type="Control Panel"
-Loc="269 0 1092 729"
+Loc="0 0 1365 745"
 State=2
 Number=0
 
 [Desktop]
-Screen="1366 768"
+Screen="3286 1080"
 Window="Win_1"
