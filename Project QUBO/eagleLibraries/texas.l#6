@@ -23095,6 +23095,10 @@ changed 2011-11-09</description>
 <wire x1="-25.4" y1="33.02" x2="-25.4" y2="-33.02" width="0.127" layer="21"/>
 <text x="-24.13" y="34.29" size="5.08" layer="25">&gt;NAME</text>
 <text x="-24.13" y="-35.56" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-24.13" y="6.35" size="1.27" layer="27">J1</text>
+<text x="-20.32" y="6.35" size="1.27" layer="27">J3</text>
+<text x="19.05" y="6.35" size="1.27" layer="27">J4</text>
+<text x="22.86" y="6.35" size="1.27" layer="27">J2</text>
 </package>
 </packages>
 <symbols>

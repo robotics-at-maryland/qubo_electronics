@@ -11485,6 +11485,74 @@ Can be totem pole or open collector&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="BME280ComponentLibrary">
+<packages>
+<package name="BME280_LGA">
+<smd name="P$1" x="1.025" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$2" x="1.025" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$3" x="1.025" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$4" x="1.025" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$5" x="-1.025" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$6" x="-1.025" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$7" x="-1.025" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P$8" x="-1.025" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<wire x1="-1.42875" y1="1.42875" x2="1.42875" y2="1.42875" width="0.254" layer="21"/>
+<wire x1="1.42875" y1="1.42875" x2="1.42875" y2="-1.42875" width="0.254" layer="21"/>
+<wire x1="1.42875" y1="-1.42875" x2="-1.42875" y2="-1.42875" width="0.254" layer="21"/>
+<wire x1="-1.42875" y1="-1.42875" x2="-1.42875" y2="1.42875" width="0.254" layer="21"/>
+<circle x="1.74625" y="1.74625" radius="0.15875" width="0.127" layer="21"/>
+<text x="-1.905" y="2.54" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<circle x="1.74625" y="1.74625" radius="0.079375" width="0.127" layer="21"/>
+<circle x="1.74625" y="1.74625" radius="0.0381" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BME280">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND1" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="!CS" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SDI/SDA" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCK/SCL" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SDO/ADR" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="VDDIO" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="GND2" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="7.62" visible="pin" length="short"/>
+<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BME280" prefix="U" uservalue="yes">
+<gates>
+<gate name="U1" symbol="BME280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BME280_LGA">
+<connects>
+<connect gate="U1" pin="!CS" pad="P$2"/>
+<connect gate="U1" pin="GND1" pad="P$1"/>
+<connect gate="U1" pin="GND2" pad="P$7"/>
+<connect gate="U1" pin="SCK/SCL" pad="P$4"/>
+<connect gate="U1" pin="SDI/SDA" pad="P$3"/>
+<connect gate="U1" pin="SDO/ADR" pad="P$5"/>
+<connect gate="U1" pin="VDD" pad="P$8"/>
+<connect gate="U1" pin="VDDIO" pad="P$6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13090" constant="no"/>
+<attribute name="VALUE" value="BME280" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11556,10 +11624,24 @@ Can be totem pole or open collector&lt;br&gt;
 <part name="U$20" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A Fuse"/>
 <part name="4PIN_8" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="Depth Sensor"/>
 <part name="4PIN_9" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU PWR"/>
-<part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="2PIN_1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="Camera pwr"/>
 <part name="2PIN_2" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="5V Switch"/>
 <part name="2PIN_3" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="SSR Switch"/>
 <part name="U$21" library="texas" deviceset="PCA9306" device="DCT"/>
+<part name="4PIN_10" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041"/>
+<part name="U$22" library="allegro" deviceset="ACS713" device="SOIC"/>
+<part name="C21" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C22" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
+<part name="U$23" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A Fuse"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="200k"/>
+<part name="2PIN_4" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="Ethernet switch pwr"/>
+<part name="C23" library="resistor" deviceset="C-US" device="C0805" value="100p"/>
+<part name="U2" library="BME280ComponentLibrary" deviceset="BME280" device="" value="BME280"/>
+<part name="C24" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
+<part name="C25" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
+<part name="C26" library="resistor" deviceset="C-US" device="C0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -11627,10 +11709,24 @@ Can be totem pole or open collector&lt;br&gt;
 <instance part="U$20" gate="G$1" x="93.98" y="50.8"/>
 <instance part="4PIN_8" gate="U1" x="269.24" y="157.48"/>
 <instance part="4PIN_9" gate="U1" x="309.88" y="157.48"/>
-<instance part="2PIN_1" gate="U1" x="269.24" y="121.92"/>
+<instance part="2PIN_1" gate="U1" x="347.98" y="157.48"/>
 <instance part="2PIN_2" gate="U1" x="15.24" y="38.1"/>
 <instance part="2PIN_3" gate="U1" x="-53.34" y="38.1"/>
-<instance part="U$21" gate="G$1" x="220.98" y="96.52"/>
+<instance part="U$21" gate="G$1" x="205.74" y="160.02"/>
+<instance part="4PIN_10" gate="U1" x="480.06" y="-154.94"/>
+<instance part="U$22" gate="G$1" x="449.58" y="-127"/>
+<instance part="C21" gate="G$1" x="469.9" y="-114.3"/>
+<instance part="C22" gate="G$1" x="480.06" y="-132.08"/>
+<instance part="U$23" gate="G$1" x="447.04" y="-149.86"/>
+<instance part="R10" gate="G$1" x="218.44" y="129.54" rot="R90"/>
+<instance part="R11" gate="G$1" x="200.66" y="129.54" rot="R90"/>
+<instance part="R12" gate="G$1" x="226.06" y="177.8"/>
+<instance part="2PIN_4" gate="U1" x="386.08" y="157.48"/>
+<instance part="C23" gate="G$1" x="231.14" y="167.64"/>
+<instance part="U2" gate="U1" x="208.28" y="205.74"/>
+<instance part="C24" gate="G$1" x="172.72" y="210.82"/>
+<instance part="C25" gate="G$1" x="160.02" y="200.66"/>
+<instance part="C26" gate="G$1" x="241.3" y="205.74"/>
 </instances>
 <busses>
 </busses>
@@ -11884,6 +11980,81 @@ Can be totem pole or open collector&lt;br&gt;
 <wire x1="261.62" y1="160.02" x2="256.54" y2="160.02" width="0.1524" layer="91"/>
 <label x="256.54" y="160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="4PIN_10" gate="U1" pin="P$3"/>
+<wire x1="472.44" y1="-152.4" x2="462.28" y2="-152.4" width="0.1524" layer="91"/>
+<label x="462.28" y="-152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4PIN_10" gate="U1" pin="P$1"/>
+<wire x1="472.44" y1="-160.02" x2="462.28" y2="-160.02" width="0.1524" layer="91"/>
+<label x="462.28" y="-160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$22" gate="G$1" pin="GND"/>
+<wire x1="462.28" y1="-134.62" x2="472.44" y2="-134.62" width="0.1524" layer="91"/>
+<label x="469.9" y="-134.62" size="1.778" layer="95"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="480.06" y1="-137.16" x2="472.44" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="-137.16" x2="472.44" y2="-134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="469.9" y1="-119.38" x2="477.52" y2="-119.38" width="0.1524" layer="91"/>
+<label x="477.52" y="-119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VSS"/>
+<wire x1="45.72" y1="-134.62" x2="35.56" y2="-134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="-134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="GND"/>
+<wire x1="190.5" y1="167.64" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
+<label x="180.34" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_1" gate="U1" pin="P$2"/>
+<wire x1="340.36" y1="154.94" x2="332.74" y2="154.94" width="0.1524" layer="91"/>
+<label x="332.74" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_4" gate="U1" pin="P$2"/>
+<wire x1="378.46" y1="154.94" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
+<label x="370.84" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="162.56" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
+<label x="241.3" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="GND2"/>
+<wire x1="193.04" y1="208.28" x2="185.42" y2="208.28" width="0.1524" layer="91"/>
+<label x="185.42" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="SDO/ADR"/>
+<label x="185.42" y="198.12" size="1.778" layer="95"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="205.74" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="198.12" x2="193.04" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="195.58" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="190.5" x2="172.72" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="190.5" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
+<junction x="172.72" y="198.12"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="GND1"/>
+<wire x1="223.52" y1="213.36" x2="231.14" y2="213.36" width="0.1524" layer="91"/>
+<label x="223.52" y="213.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="200.66" x2="256.54" y2="200.66" width="0.1524" layer="91"/>
+<label x="256.54" y="200.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V-OUT" class="0">
 <segment>
@@ -12051,6 +12222,18 @@ Can be totem pole or open collector&lt;br&gt;
 <wire x1="261.62" y1="162.56" x2="256.54" y2="162.56" width="0.1524" layer="91"/>
 <label x="256.54" y="162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$22" gate="G$1" pin="VCC"/>
+<wire x1="462.28" y1="-111.76" x2="462.28" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="462.28" y1="-111.76" x2="469.9" y2="-111.76" width="0.1524" layer="91"/>
+<label x="462.28" y="-111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="177.8" x2="236.22" y2="177.8" width="0.1524" layer="91"/>
+<label x="233.68" y="177.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -12082,6 +12265,11 @@ Can be totem pole or open collector&lt;br&gt;
 <pinref part="U$3" gate="G$1" pin="PB5"/>
 <wire x1="271.78" y1="81.28" x2="264.16" y2="81.28" width="0.1524" layer="91"/>
 <label x="264.16" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$22" gate="G$1" pin="VIOUT"/>
+<wire x1="462.28" y1="-124.46" x2="472.44" y2="-124.46" width="0.1524" layer="91"/>
+<label x="469.9" y="-124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN9" class="0">
@@ -12222,6 +12410,11 @@ Can be totem pole or open collector&lt;br&gt;
 <wire x1="73.66" y1="-106.68" x2="81.28" y2="-106.68" width="0.1524" layer="91"/>
 <label x="78.74" y="-106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="SCL2"/>
+<wire x1="220.98" y1="157.48" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
+<label x="226.06" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA1" class="0">
 <segment>
@@ -12238,6 +12431,11 @@ Can be totem pole or open collector&lt;br&gt;
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="73.66" y1="-104.14" x2="81.28" y2="-104.14" width="0.1524" layer="91"/>
 <label x="78.74" y="-104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="SDA2"/>
+<wire x1="220.98" y1="152.4" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
+<label x="226.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12431,6 +12629,21 @@ Can be totem pole or open collector&lt;br&gt;
 <wire x1="302.26" y1="160.02" x2="297.18" y2="160.02" width="0.1524" layer="91"/>
 <label x="297.18" y="160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$22" gate="G$1" pin="IP+"/>
+<wire x1="436.88" y1="-119.38" x2="429.26" y2="-119.38" width="0.1524" layer="91"/>
+<label x="429.26" y="-119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_1" gate="U1" pin="P$1"/>
+<wire x1="340.36" y1="160.02" x2="332.74" y2="160.02" width="0.1524" layer="91"/>
+<label x="332.74" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_4" gate="U1" pin="P$1"/>
+<wire x1="378.46" y1="160.02" x2="370.84" y2="160.02" width="0.1524" layer="91"/>
+<label x="370.84" y="160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$14" class="0">
 <segment>
@@ -12616,6 +12829,35 @@ Can be totem pole or open collector&lt;br&gt;
 <wire x1="271.78" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
 <label x="264.16" y="86.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="134.62" x2="218.44" y2="134.62" width="0.1524" layer="91"/>
+<label x="208.28" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="VREF1"/>
+<wire x1="190.5" y1="162.56" x2="180.34" y2="162.56" width="0.1524" layer="91"/>
+<label x="180.34" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="VDD"/>
+<label x="185.42" y="213.36" size="1.778" layer="95"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="213.36" x2="172.72" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="VDDIO"/>
+<label x="185.42" y="203.2" size="1.778" layer="95"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="203.2" x2="160.02" y2="203.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="!CS"/>
+<label x="223.52" y="208.28" size="1.778" layer="95"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="208.28" x2="223.52" y2="208.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
@@ -12631,18 +12873,48 @@ Can be totem pole or open collector&lt;br&gt;
 <label x="264.16" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DEPTH-SDA" class="0">
+<net name="3V3-SDA" class="0">
 <segment>
 <pinref part="4PIN_8" gate="U1" pin="P$2"/>
 <wire x1="261.62" y1="154.94" x2="256.54" y2="154.94" width="0.1524" layer="91"/>
 <label x="251.46" y="154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
+<label x="223.52" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="SDA1"/>
+<wire x1="190.5" y1="152.4" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
+<label x="180.34" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="SDI/SDA"/>
+<wire x1="223.52" y1="203.2" x2="231.14" y2="203.2" width="0.1524" layer="91"/>
+<label x="223.52" y="203.2" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="DEPTH-SCL" class="0">
+<net name="3V3-SCL" class="0">
 <segment>
 <pinref part="4PIN_8" gate="U1" pin="P$1"/>
 <wire x1="261.62" y1="152.4" x2="256.54" y2="152.4" width="0.1524" layer="91"/>
 <label x="251.46" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="182.88" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="SCL1"/>
+<wire x1="190.5" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
+<label x="180.34" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="U1" pin="SCK/SCL"/>
+<wire x1="223.52" y1="198.12" x2="231.14" y2="198.12" width="0.1524" layer="91"/>
+<label x="223.52" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -12655,6 +12927,56 @@ Can be totem pole or open collector&lt;br&gt;
 <segment>
 <pinref part="2PIN_2" gate="U1" pin="P$2"/>
 <wire x1="7.62" y1="35.56" x2="-2.54" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U$22" gate="G$1" pin="FILTER"/>
+<wire x1="462.28" y1="-129.54" x2="480.06" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U$23" gate="G$1" pin="P$2"/>
+<pinref part="4PIN_10" gate="U1" pin="P$4"/>
+<wire x1="457.2" y1="-149.86" x2="472.44" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="U$23" gate="G$1" pin="P$1"/>
+<wire x1="436.88" y1="-149.86" x2="434.34" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="-149.86" x2="434.34" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="U$22" gate="G$1" pin="IP-"/>
+<wire x1="434.34" y1="-134.62" x2="436.88" y2="-134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="T8_PWM" class="0">
+<segment>
+<pinref part="4PIN_10" gate="U1" pin="P$2"/>
+<wire x1="472.44" y1="-157.48" x2="462.28" y2="-157.48" width="0.1524" layer="91"/>
+<label x="462.28" y="-157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="CH7"/>
+<wire x1="45.72" y1="-132.08" x2="35.56" y2="-132.08" width="0.1524" layer="91"/>
+<label x="35.56" y="-132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U$21" gate="G$1" pin="VREF2"/>
+<pinref part="U$21" gate="G$1" pin="EN"/>
+<wire x1="220.98" y1="162.56" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="167.64" x2="220.98" y2="177.8" width="0.1524" layer="91"/>
+<junction x="220.98" y="167.64"/>
+<wire x1="220.98" y1="162.56" x2="226.06" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="162.56" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
+<junction x="220.98" y="162.56"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

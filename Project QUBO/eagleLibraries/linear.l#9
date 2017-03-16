@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -6286,22 +6286,22 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <circle x="-2.4" y="-1.4" radius="0.4472125" width="0.127" layer="21"/>
 </package>
 <package name="MSOP16">
-<smd name="P$1" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$3" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$4" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$5" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$6" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$7" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$8" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$9" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$10" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$11" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$12" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$13" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$14" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$15" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="P$16" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
+<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
 <wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
@@ -10785,63 +10785,66 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LTC2497">
-<wire x1="-25.4" y1="38.1" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-45.72" x2="20.32" y2="38.1" width="0.254" layer="94"/>
-<wire x1="20.32" y1="38.1" x2="-25.4" y2="38.1" width="0.254" layer="94"/>
-<pin name="GND" x="-30.48" y="35.56" length="middle"/>
-<pin name="SCL" x="-30.48" y="30.48" length="middle"/>
-<pin name="SDA" x="-30.48" y="25.4" length="middle"/>
-<pin name="NC" x="-30.48" y="20.32" length="middle"/>
-<pin name="COM" x="-30.48" y="15.24" length="middle"/>
-<pin name="MUXOUTP" x="-30.48" y="10.16" length="middle"/>
-<pin name="MUXOUTN" x="-30.48" y="5.08" length="middle"/>
-<pin name="ADCINN" x="-30.48" y="0" length="middle"/>
-<pin name="ADCINP" x="-30.48" y="-5.08" length="middle"/>
-<pin name="REF+" x="-30.48" y="-10.16" length="middle"/>
-<pin name="REF-" x="-30.48" y="-15.24" length="middle"/>
-<pin name="CH15" x="25.4" y="-40.64" length="middle" rot="R180"/>
-<pin name="CH14" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="CH13" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="CH12" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="CH11" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="CH10" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="CH9" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="CH8" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="CH7" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="CH6" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="CH5" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="CH4" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="CH3" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="CH2" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="CH1" x="25.4" y="30.48" length="middle" rot="R180"/>
-<pin name="CH0" x="25.4" y="35.56" length="middle" rot="R180"/>
-<pin name="F0" x="-30.48" y="-20.32" length="middle"/>
-<pin name="CA0" x="-30.48" y="-25.4" length="middle"/>
-<pin name="CA1" x="-30.48" y="-30.48" length="middle"/>
-<pin name="CA2" x="-30.48" y="-35.56" length="middle"/>
-<pin name="VCC" x="-30.48" y="-40.64" length="middle"/>
+<wire x1="-22.86" y1="40.64" x2="-22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-43.18" x2="22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-43.18" x2="22.86" y2="40.64" width="0.254" layer="94"/>
+<wire x1="22.86" y1="40.64" x2="-22.86" y2="40.64" width="0.254" layer="94"/>
+<pin name="GND" x="-27.94" y="38.1" length="middle"/>
+<pin name="SCL" x="-27.94" y="33.02" length="middle"/>
+<pin name="SDA" x="-27.94" y="27.94" length="middle"/>
+<pin name="NC" x="-27.94" y="22.86" length="middle"/>
+<pin name="COM" x="-27.94" y="17.78" length="middle"/>
+<pin name="MUXOUTP" x="-27.94" y="12.7" length="middle"/>
+<pin name="MUXOUTN" x="-27.94" y="7.62" length="middle"/>
+<pin name="ADCINN" x="-27.94" y="2.54" length="middle"/>
+<pin name="ADCINP" x="-27.94" y="-2.54" length="middle"/>
+<pin name="REF+" x="-27.94" y="-7.62" length="middle"/>
+<pin name="REF-" x="-27.94" y="-12.7" length="middle"/>
+<pin name="CH15" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="CH14" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="CH13" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="CH12" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="CH11" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="CH10" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="CH9" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="CH8" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="CH7" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="CH6" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="CH5" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="CH4" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="CH3" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="CH2" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="CH1" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="CH0" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="F0" x="-27.94" y="-17.78" length="middle"/>
+<pin name="CA0" x="-27.94" y="-22.86" length="middle"/>
+<pin name="CA1" x="-27.94" y="-27.94" length="middle"/>
+<pin name="CA2" x="-27.94" y="-33.02" length="middle"/>
+<pin name="VCC" x="-27.94" y="-38.1" length="middle"/>
+<text x="-20.32" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-17.78" y="40.64" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="LTC4364">
-<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
-<pin name="OUT" x="-20.32" y="17.78" length="middle"/>
-<pin name="SENSE" x="-20.32" y="12.7" length="middle"/>
-<pin name="NC" x="-20.32" y="7.62" length="middle"/>
-<pin name="DGATE" x="-20.32" y="2.54" length="middle"/>
-<pin name="SOURCE" x="-20.32" y="-2.54" length="middle"/>
-<pin name="HGATE" x="-20.32" y="-7.62" length="middle"/>
-<pin name="FB" x="-20.32" y="-12.7" length="middle"/>
-<pin name="VCC" x="-20.32" y="-17.78" length="middle"/>
-<pin name="SHDN" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="UV" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="OV" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="FLT'" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="ENOUT" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="TMR" x="20.32" y="15.24" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-12.7" x2="-33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="12.7" width="0.254" layer="94"/>
+<pin name="SHDN'" x="-38.1" y="10.16" length="middle"/>
+<pin name="UV" x="-38.1" y="0" length="middle"/>
+<pin name="OV" x="-38.1" y="-7.62" length="middle"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle" rot="R90"/>
+<pin name="TMR" x="15.24" y="-17.78" length="middle" rot="R90"/>
+<pin name="FAULT'" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="ENOUT" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="FB" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="27.94" y="17.78" length="middle" rot="R270"/>
+<pin name="SENSE" x="17.78" y="17.78" length="middle" rot="R270"/>
+<pin name="DGATE" x="10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="SOURCE" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="HGATE" x="-10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="VCC" x="-22.86" y="17.78" length="middle" rot="R270"/>
+<text x="-33.02" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-33.02" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -27815,6 +27818,34 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <connect gate="G$1" pin="REF-" pad="REF-"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4364">
+<gates>
+<gate name="G$1" symbol="LTC4364" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP16">
+<connects>
+<connect gate="G$1" pin="DGATE" pad="DGATE"/>
+<connect gate="G$1" pin="ENOUT" pad="ENOUT"/>
+<connect gate="G$1" pin="FAULT'" pad="FLT"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HGATE" pad="HGATE"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="OV" pad="OV"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="SHDN'" pad="SHDN"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
+<connect gate="G$1" pin="TMR" pad="TMR"/>
+<connect gate="G$1" pin="UV" pad="UV"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>

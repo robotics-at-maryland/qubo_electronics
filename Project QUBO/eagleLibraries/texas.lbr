@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -32467,7 +32467,7 @@ changed 2011-11-09</description>
 <pin name="PB2" x="-27.94" y="12.7" visible="pin" length="middle"/>
 <pin name="PE0" x="-27.94" y="7.62" visible="pin" length="middle"/>
 <pin name="PF0" x="-27.94" y="2.54" visible="pin" length="middle"/>
-<pin name="RESET" x="-27.94" y="-2.54" visible="pin" length="middle"/>
+<pin name="!RESET!" x="-27.94" y="-2.54" visible="pin" length="middle"/>
 <pin name="PD1" x="-27.94" y="-7.62" visible="pin" length="middle"/>
 <pin name="PD0" x="-27.94" y="-12.7" visible="pin" length="middle"/>
 <pin name="PA4" x="-27.94" y="-17.78" visible="pin" length="middle"/>
@@ -45152,6 +45152,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <devices>
 <device name="" package="TIVA-C_EVAL">
 <connects>
+<connect gate="G$1" pin="!RESET!" pad="2-5"/>
 <connect gate="G$1" pin="3V3" pad="1-1"/>
 <connect gate="G$1" pin="5V" pad="3-1"/>
 <connect gate="G$1" pin="GND@2-1" pad="2-1"/>
@@ -45191,7 +45192,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <connect gate="G$1" pin="PF2" pad="4-1"/>
 <connect gate="G$1" pin="PF3" pad="4-2"/>
 <connect gate="G$1" pin="PF4" pad="4-10"/>
-<connect gate="G$1" pin="RESET" pad="2-5"/>
 </connects>
 <technologies>
 <technology name=""/>
