@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11034,6 +11034,16 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <smd name="MID" x="0" y="0" dx="1.57" dy="1.5" layer="1" rot="R270"/>
 <text x="-4.572" y="3.556" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="HCMA0703">
+<smd name="P$1" x="0" y="2.65" dx="3.3" dy="2.3" layer="1"/>
+<smd name="P$2" x="0" y="-2.65" dx="3.3" dy="2.3" layer="1"/>
+<wire x1="-3.5" y1="3.7" x2="3.5" y2="3.7" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.7" x2="3.5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.7" x2="-3.5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.7" x2="-3.5" y2="3.7" width="0.127" layer="21"/>
+<text x="-3.175" y="4.445" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-5.08" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -15802,6 +15812,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HCMA0703" package="HCMA0703">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
