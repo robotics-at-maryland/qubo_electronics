@@ -12752,6 +12752,29 @@ http://www.linear-tech.com&lt;p&gt;
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.127" layer="21"/>
 </package>
+<package name="MSOP16">
+<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
+<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.44" y="-0.9" radius="0.22" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTM4605">
@@ -12781,6 +12804,28 @@ http://www.linear-tech.com&lt;p&gt;
 <pin name="EXTV_CC" x="-25.4" y="-2.54" visible="pin" length="middle"/>
 <pin name="STBYMD" x="-25.4" y="-7.62" visible="pin" length="middle"/>
 <pin name="PGOOD" x="-25.4" y="15.24" visible="pin" length="middle"/>
+</symbol>
+<symbol name="LTC4364">
+<wire x1="-33.02" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-12.7" x2="-33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="12.7" width="0.254" layer="94"/>
+<pin name="SHDN'" x="-38.1" y="10.16" length="middle"/>
+<pin name="UV" x="-38.1" y="0" length="middle"/>
+<pin name="OV" x="-38.1" y="-7.62" length="middle"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle" rot="R90"/>
+<pin name="TMR" x="15.24" y="-17.78" length="middle" rot="R90"/>
+<pin name="FAULT'" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="ENOUT" x="38.1" y="-5.08" length="middle" rot="R180"/>
+<pin name="FB" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="27.94" y="17.78" length="middle" rot="R270"/>
+<pin name="SENSE" x="17.78" y="17.78" length="middle" rot="R270"/>
+<pin name="DGATE" x="10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="SOURCE" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="HGATE" x="-10.16" y="17.78" length="middle" rot="R270"/>
+<pin name="VCC" x="-22.86" y="17.78" length="middle" rot="R270"/>
+<text x="-33.02" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-33.02" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12814,6 +12859,34 @@ http://www.linear-tech.com&lt;p&gt;
 <connect gate="G$1" pin="VIN" pad="J10 J11 J12 K10 K11 K12 L10 L11 L12 M10 M11 M12"/>
 <connect gate="G$1" pin="VOUT" pad="E1 E2 F1 F2 F3 F4 G1 G2 G3 G4 H1 H2 H3 H4"/>
 <connect gate="G$1" pin="V_FB" pad="B6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4364">
+<gates>
+<gate name="G$1" symbol="LTC4364" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP16">
+<connects>
+<connect gate="G$1" pin="DGATE" pad="DGATE"/>
+<connect gate="G$1" pin="ENOUT" pad="ENOUT"/>
+<connect gate="G$1" pin="FAULT'" pad="FLT"/>
+<connect gate="G$1" pin="FB" pad="FB"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HGATE" pad="HGATE"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="OV" pad="OV"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
+<connect gate="G$1" pin="SHDN'" pad="SHDN"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
+<connect gate="G$1" pin="TMR" pad="TMR"/>
+<connect gate="G$1" pin="UV" pad="UV"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13117,6 +13190,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="JP2" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
 <part name="JP3" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="U$27" library="linear" deviceset="LTC4364" device="MSOP"/>
+<part name="U$28" library="linear" deviceset="LTC4364" device="MSOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -13266,6 +13341,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <instance part="R19" gate="G$1" x="-259.08" y="81.28"/>
 <instance part="JP2" gate="G$1" x="-817.88" y="144.78" rot="R180"/>
 <instance part="JP3" gate="G$1" x="-817.88" y="116.84" rot="R180"/>
+<instance part="U$27" gate="G$1" x="-619.76" y="228.6"/>
+<instance part="U$28" gate="G$1" x="-619.76" y="142.24"/>
 </instances>
 <busses>
 </busses>
