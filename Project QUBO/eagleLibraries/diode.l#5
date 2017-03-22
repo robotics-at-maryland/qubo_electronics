@@ -9023,6 +9023,15 @@ super fast rectifier, 2 A</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="SOD523">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE-" prefix="D" uservalue="yes">
@@ -10323,6 +10332,22 @@ Source: BAS70_1PS7XSB70_SER_8.pdf</description>
 <connect gate="B" pin="A1" pad="4"/>
 <connect gate="B" pin="C1A2" pad="3"/>
 <connect gate="B" pin="C2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMSZ5231BS">
+<gates>
+<gate name="G$1" symbol="D-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD323-REFLOW" package="SOD323-R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -15055,15 +15055,15 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <pin name="!FAULT!" x="-17.78" y="-55.88" visible="pin" length="middle"/>
 <pin name="CSSP" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="CSSN" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="VLO" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="BST" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="LX" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="DHI" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="DLO" x="17.78" y="-33.02" visible="pin" length="middle" rot="R180"/>
-<pin name="PGND" x="17.78" y="-38.1" visible="pin" length="middle" rot="R180"/>
-<pin name="CS" x="17.78" y="-40.64" visible="pin" length="middle" rot="R180"/>
-<pin name="BATT" x="17.78" y="-50.8" visible="pin" length="middle" rot="R180"/>
-<pin name="THM" x="17.78" y="-66.04" visible="pin" length="middle" rot="R180"/>
+<pin name="VLO" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="BST" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="LX" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="DHI" x="17.78" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="DLO" x="17.78" y="-35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="PGND" x="17.78" y="-43.18" visible="pin" length="middle" rot="R180"/>
+<pin name="CS" x="17.78" y="-50.8" visible="pin" length="middle" rot="R180"/>
+<pin name="BATT" x="17.78" y="-60.96" visible="pin" length="middle" rot="R180"/>
+<pin name="THM" x="17.78" y="-68.58" visible="pin" length="middle" rot="R180"/>
 <wire x1="-12.7" y1="22.86" x2="-12.7" y2="-71.12" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-71.12" x2="12.7" y2="-71.12" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-71.12" x2="12.7" y2="22.86" width="0.254" layer="94"/>

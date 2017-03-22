@@ -52,7 +52,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -61,10 +61,53 @@
 </layers>
 <library>
 <packages>
+<package name="SI7164DP">
+<smd name="P$1" x="-2.921" y="1.9685" dx="1.524" dy="0.635" layer="1"/>
+<smd name="P$2" x="-2.921" y="0.6985" dx="1.524" dy="0.635" layer="1"/>
+<smd name="P$5" x="-2.921" y="-0.5715" dx="1.524" dy="0.635" layer="1"/>
+<smd name="P$3" x="-2.921" y="-1.8415" dx="1.524" dy="0.635" layer="1"/>
+<smd name="P$4" x="2.413" y="1.9685" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$6" x="2.413" y="0.6985" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$7" x="2.413" y="-0.5715" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$8" x="2.413" y="-1.8415" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$9" x="0.508" y="0" dx="3.81" dy="3.9116" layer="1"/>
+<wire x1="-3.302" y1="2.794" x2="2.794" y2="2.794" width="0.127" layer="21"/>
+<wire x1="2.794" y1="2.794" x2="2.794" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="2.794" y1="-2.286" x2="-3.302" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-2.286" x2="-3.302" y2="2.794" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
+<symbol name="N-MOSFET">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="GATE" x="-10.16" y="0" length="middle"/>
+<pin name="DRAIN" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="SOURCE" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="N-MOSFET">
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SI7164DP">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="P$4 P$6 P$7 P$8 P$9"/>
+<connect gate="G$1" pin="GATE" pad="P$3"/>
+<connect gate="G$1" pin="SOURCE" pad="P$1 P$2 P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
