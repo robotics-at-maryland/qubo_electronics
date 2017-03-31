@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -11060,6 +11060,19 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="-7.62" y="3.81" size="1.016" layer="25">&gt;NAME</text>
 <text x="-7.62" y="-5.08" size="1.016" layer="27">&gt;VALUE</text>
 </package>
+<package name="PTV09A-4">
+<pad name="P$1" x="-2.5" y="0" drill="1" shape="octagon"/>
+<pad name="P$2" x="0" y="0" drill="1" shape="octagon"/>
+<pad name="P$3" x="2.5" y="0" drill="1" shape="octagon"/>
+<hole x="-4.4" y="7" drill="2.2"/>
+<hole x="4.4" y="7" drill="2.2"/>
+<wire x1="-5.7" y1="12.5" x2="5.7" y2="12.5" width="0.127" layer="21"/>
+<wire x1="5.7" y1="12.5" x2="5.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="5.7" y1="-1" x2="-5.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5.7" y1="-1" x2="-5.7" y2="12.5" width="0.127" layer="21"/>
+<text x="-2.5" y="13.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -11175,9 +11188,9 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
 <text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="E" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="E" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="C-TRIMM">
 <wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
@@ -17748,6 +17761,16 @@ for power line</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTV09A-4" package="PTV09A-4">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="E" pad="P$3"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
