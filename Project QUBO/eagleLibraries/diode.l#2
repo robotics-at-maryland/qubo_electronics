@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4975,6 +4975,37 @@ Source: Philips - BAS70_1PS7XSB70_SER_8.pdf</description>
 <wire x1="-0.85" y1="-0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
 <text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-1.27" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="TO252">
+<smd name="CATHODE" x="0" y="2.5" dx="5.632" dy="5.7" layer="1"/>
+<smd name="ANODE1" x="-2.286" y="-4.05" dx="1.06" dy="2.6" layer="1"/>
+<smd name="ANODE3" x="2.286" y="-4.05" dx="1.06" dy="2.6" layer="1"/>
+<wire x1="-3.35" y1="5.2" x2="3.35" y2="5.2" width="0.127" layer="21"/>
+<wire x1="3.35" y1="5.2" x2="3.35" y2="-5.2" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-5.2" x2="-3.35" y2="-5.2" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="-5.2" x2="-3.35" y2="5.2" width="0.127" layer="21"/>
+<text x="-2.54" y="-2.54" size="1.016" layer="25">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="DO-219AB">
+<smd name="P$1" x="-1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
+<smd name="P$2" x="1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
+<wire x1="-1.45" y1="0.95" x2="1.45" y2="0.95" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.95" x2="1.45" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.9" x2="-1.45" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.9" x2="-1.45" y2="0.95" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
+<package name="SOD-923_SMD">
+<smd name="P$1" x="-0.78" y="0" dx="0.36" dy="0.25" layer="1"/>
+<smd name="P$2" x="0.78" y="0" dx="0.36" dy="0.25" layer="1"/>
+<wire x1="-0.4" y1="0.3" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.3" x2="-0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<text x="-0.6436375" y="0.453653125" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-0.66090625" y="-0.7472625" size="0.3048" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10443,6 +10474,63 @@ Standard packages</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SBR2065">
+<description>Diodes SBR2065 Series&lt;br&gt;
+Super Barrier Rectifier schottky diodes&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/115/SBR2065D1-959624.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO252">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE1 ANODE3"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VTVS">
+<description>Vishay VTVS5V0ASMF to VTVS63GSMF&lt;br&gt;
+400W TVS diodes&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/427/vtvs5v0asmf-1078013.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-219AB">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESD9X3">
+<description>ON Semiconductors TVS Diodes&lt;br&gt;
+ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/308/ESD9X3.3ST5G-D-241605.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-923_SMD">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

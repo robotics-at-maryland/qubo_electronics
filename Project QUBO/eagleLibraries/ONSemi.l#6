@@ -81,6 +81,16 @@
 <text x="-0.635" y="0.635" size="0.254" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-0.635" size="0.254" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOD-323">
+<smd name="P$1" x="-1.115" y="0" dx="0.83" dy="0.63" layer="1" rot="R90"/>
+<smd name="P$2" x="1.115" y="0" dx="0.83" dy="0.63" layer="1" rot="R90"/>
+<wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_TVS">
@@ -105,14 +115,23 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESD9B3.3ST5G">
+<deviceset name="2-PIN_TVS" uservalue="yes">
 <description>ON Semiconductor ESD9B3.3ST5G TVS Diode&lt;br&gt;
 &lt;a href="http://www.mouser.com/ds/2/308/ESD9B-D-479788.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="2-PIN_TVS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-923">
+<device name="_SOD-923" package="SOD-923">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SOD-323" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
