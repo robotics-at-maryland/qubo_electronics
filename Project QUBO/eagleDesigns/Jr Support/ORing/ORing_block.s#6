@@ -7369,6 +7369,21 @@ by R. Vogg  15.March.2002</description>
 <text x="-0.635" y="-0.635" size="0.254" layer="25" rot="R90">&gt;NAME</text>
 <text x="-0.635" y="0.635" size="0.254" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET-P_MULTI-DIODES">
@@ -7417,6 +7432,42 @@ by R. Vogg  15.March.2002</description>
 <vertex x="-1.778" y="-0.508"/>
 </polygon>
 </symbol>
+<symbol name="MOSFET-N">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0.508" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="0.508" x2="5.08" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0.508" x2="4.572" y2="0.508" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="-7.62" visible="off" length="middle" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="5.08" y="0.508"/>
+<vertex x="4.572" y="-0.254"/>
+<vertex x="5.588" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0.254" y="0"/>
+<vertex x="1.27" y="0.762"/>
+<vertex x="1.27" y="-0.762"/>
+</polygon>
+<pin name="D" x="2.54" y="7.62" visible="off" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DMP32D5SFB">
@@ -7432,6 +7483,26 @@ by R. Vogg  15.March.2002</description>
 <connect gate="G$1" pin="D" pad="P$3"/>
 <connect gate="G$1" pin="G" pad="P$2"/>
 <connect gate="G$1" pin="S" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSS138CT-ND">
+<description>ON Semiconductor BSS138&lt;br&gt;
+N-MOSFET, Logic Level&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/149/BSS138-1006682.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOSFET-N" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7506,6 +7577,14 @@ by R. Vogg  15.March.2002</description>
 <part name="U$8" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R17" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="AUDIO1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="U$9" library="transistor-fet" deviceset="BSS138CT-ND" device="SOT23"/>
+<part name="R18" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
+<part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="20k+"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="U$10" library="transistor-fet" deviceset="BSS138CT-ND" device="SOT23"/>
+<part name="R29" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
+<part name="R30" library="resistor" deviceset="R-US_" device="R0805" value="20k+"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -7567,6 +7646,14 @@ by R. Vogg  15.March.2002</description>
 <instance part="U$8" gate="G$1" x="78.74" y="-17.78"/>
 <instance part="R17" gate="G$1" x="78.74" y="-30.48" rot="R90"/>
 <instance part="AUDIO1" gate="U1" x="106.68" y="-43.18"/>
+<instance part="U$9" gate="G$1" x="104.14" y="-2.54"/>
+<instance part="R18" gate="G$1" x="106.68" y="10.16" rot="R90"/>
+<instance part="R19" gate="G$1" x="86.36" y="0" rot="R90"/>
+<instance part="LED3" gate="G$1" x="106.68" y="20.32"/>
+<instance part="U$10" gate="G$1" x="83.82" y="-101.6"/>
+<instance part="R29" gate="G$1" x="86.36" y="-88.9" rot="R90"/>
+<instance part="R30" gate="G$1" x="66.04" y="-99.06" rot="R90"/>
+<instance part="LED4" gate="G$1" x="86.36" y="-78.74"/>
 </instances>
 <busses>
 </busses>
@@ -7670,6 +7757,18 @@ by R. Vogg  15.March.2002</description>
 <wire x1="99.06" y1="-55.88" x2="78.74" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="78.74" y="-55.88"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="S"/>
+<wire x1="106.68" y1="-10.16" x2="106.68" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-15.24" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
+<label x="101.6" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="S"/>
+<wire x1="86.36" y1="-109.22" x2="86.36" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-114.3" x2="78.74" y2="-114.3" width="0.1524" layer="91"/>
+<label x="81.28" y="-114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="V_BATT1" class="0">
 <segment>
@@ -7702,6 +7801,28 @@ by R. Vogg  15.March.2002</description>
 <pinref part="U$8" gate="G$1" pin="D"/>
 <wire x1="66.04" y1="-10.16" x2="78.74" y2="-10.16" width="0.1524" layer="91"/>
 <label x="66.04" y="-10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="G"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="-5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
+<junction x="86.36" y="-5.08"/>
+<wire x1="86.36" y1="5.08" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
+<junction x="86.36" y="5.08"/>
+<pinref part="U$27" gate="G$1" pin="ENOUT"/>
+<wire x1="38.1" y1="-7.62" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-7.62" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<label x="86.36" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="106.68" y1="22.86" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<label x="96.52" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -7933,6 +8054,25 @@ by R. Vogg  15.March.2002</description>
 <wire x1="55.88" y1="-111.76" x2="68.58" y2="-111.76" width="0.1524" layer="91"/>
 <label x="55.88" y="-111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="86.36" y1="-76.2" x2="86.36" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-73.66" x2="78.74" y2="-73.66" width="0.1524" layer="91"/>
+<label x="76.2" y="-73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="G"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-104.14" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="-104.14" x2="66.04" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="66.04" y="-104.14"/>
+<wire x1="66.04" y1="-93.98" x2="66.04" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-91.44" x2="73.66" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="66.04" y="-93.98"/>
+<wire x1="40.64" y1="-104.14" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
+<label x="66.04" y="-91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$48" class="0">
 <segment>
@@ -8057,6 +8197,30 @@ by R. Vogg  15.March.2002</description>
 <wire x1="99.06" y1="-40.64" x2="99.06" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="-35.56" x2="78.74" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="78.74" y="-35.56"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="D"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="D"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>

@@ -9328,6 +9328,12 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-180.34" y1="-127" x2="-165.1" y2="-127" width="0.1524" layer="91"/>
 <label x="-177.8" y="-127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="86.36" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="5.08" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<label x="86.36" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="V_BATT" class="0">
 <segment>
@@ -9780,14 +9786,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-149.86" y1="-149.86" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="-139.7" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="-165.1" y="-139.7"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<wire x1="86.36" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="5.08" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
-<label x="86.36" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9309,17 +9309,11 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="U$9" gate="G$1" pin="G"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="-5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
 <junction x="86.36" y="-5.08"/>
-<wire x1="86.36" y1="5.08" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
-<junction x="86.36" y="5.08"/>
 <pinref part="U$27" gate="G$1" pin="ENOUT"/>
 <wire x1="38.1" y1="-7.62" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-7.62" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
-<label x="86.36" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
@@ -9786,6 +9780,14 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-149.86" y1="-149.86" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="-139.7" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="-165.1" y="-139.7"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<wire x1="86.36" y1="7.62" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="5.08" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<label x="86.36" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
