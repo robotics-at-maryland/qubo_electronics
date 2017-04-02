@@ -7915,6 +7915,74 @@ Part No. NTCLE201E3&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="molex">
+<packages>
+<package name="SUPERSABRE_2CIRCUIT">
+<wire x1="-10.541" y1="3.81" x2="-10.541" y2="5.7658" width="0" layer="20"/>
+<wire x1="-10.541" y1="5.7658" x2="10.541" y2="5.7658" width="0.254" layer="21"/>
+<wire x1="-10.541" y1="5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
+<wire x1="10.541" y1="5.7658" x2="10.541" y2="-5.7658" width="0.254" layer="21"/>
+<wire x1="10.541" y1="-5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
+<hole x="-8.5344" y="-1.8034" drill="2.9972"/>
+<hole x="8.5344" y="-1.8034" drill="2.9972"/>
+<pad name="P$2" x="3.7465" y="0" drill="5.25" shape="square"/>
+<pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
+<text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="2-PIN">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="2.54" visible="off" length="middle"/>
+<pin name="P$2" x="-7.62" y="-2.54" visible="off" length="middle"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SUPERSABRE_2CIRCUIT" prefix="JP">
+<description>Molex SuperSabre&lt;br&gt;
+2-pin vertical header</description>
+<gates>
+<gate name="G$1" symbol="2-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SUPERSABRE_2CIRCUIT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2_SUPERSABRE" prefix="JP">
+<description>Molex SuperSabre&lt;br&gt;
+2-pin vertical header</description>
+<gates>
+<gate name="G$1" symbol="2-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SUPERSABRE_2CIRCUIT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7992,6 +8060,9 @@ Part No. NTCLE201E3&lt;br&gt;
 <part name="U$5" library="diode" deviceset="SBR2065" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="U$6" library="vishay" deviceset="NTCLE201E3" device=""/>
+<part name="JP1" library="molex" deviceset="SUPERSABRE_2CIRCUIT" device=""/>
+<part name="JP2" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="JP3" library="molex" deviceset="2_SUPERSABRE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8065,6 +8136,9 @@ Part No. NTCLE201E3&lt;br&gt;
 <instance part="U$5" gate="G$1" x="355.6" y="81.28" rot="MR0"/>
 <instance part="D2" gate="G$1" x="276.86" y="40.64" rot="MR90"/>
 <instance part="U$6" gate="G$1" x="261.62" y="-5.08" rot="MR0"/>
+<instance part="JP1" gate="G$1" x="195.58" y="121.92" rot="R90"/>
+<instance part="JP2" gate="G$1" x="175.26" y="2.54"/>
+<instance part="JP3" gate="G$1" x="205.74" y="2.54" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8149,6 +8223,9 @@ Part No. NTCLE201E3&lt;br&gt;
 <pinref part="U$40" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="-5.08" x2="157.48" y2="-5.08" width="0.1524" layer="91"/>
 <label x="157.48" y="-5.08" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="P$2"/>
+<wire x1="157.48" y1="-5.08" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="0" x2="167.64" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -8225,8 +8302,16 @@ Part No. NTCLE201E3&lt;br&gt;
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="2"/>
-<wire x1="256.54" y1="-5.08" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="-5.08" x2="213.36" y2="-5.08" width="0.1524" layer="91"/>
 <label x="228.6" y="-5.08" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP3" gate="G$1" pin="P$2"/>
+<wire x1="213.36" y1="0" x2="213.36" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$2"/>
+<wire x1="198.12" y1="114.3" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="104.14" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
+<label x="223.52" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_BATT1" class="0">
@@ -8243,6 +8328,9 @@ Part No. NTCLE201E3&lt;br&gt;
 <wire x1="144.78" y1="10.16" x2="157.48" y2="10.16" width="0.1524" layer="91"/>
 <junction x="144.78" y="10.16"/>
 <label x="157.48" y="10.16" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="P$1"/>
+<wire x1="157.48" y1="10.16" x2="157.48" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="5.08" x2="167.64" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_SHORE" class="0">
@@ -8255,6 +8343,12 @@ Part No. NTCLE201E3&lt;br&gt;
 <pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="358.14" y1="81.28" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
 <label x="373.38" y="81.28" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$1"/>
+<wire x1="193.04" y1="114.3" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<label x="167.64" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -8693,9 +8787,11 @@ Part No. NTCLE201E3&lt;br&gt;
 <junction x="248.92" y="10.16"/>
 <wire x1="248.92" y1="10.16" x2="241.3" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="10.16" x2="228.6" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="10.16" x2="213.36" y2="10.16" width="0.1524" layer="91"/>
 <junction x="241.3" y="10.16"/>
 <label x="228.6" y="10.16" size="1.778" layer="95" rot="MR0"/>
+<pinref part="JP3" gate="G$1" pin="P$1"/>
+<wire x1="213.36" y1="5.08" x2="213.36" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

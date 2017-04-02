@@ -13212,6 +13212,135 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-power">
+<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO252-3">
+<smd name="TAB" x="0" y="0" dx="5.8" dy="6.4" layer="1"/>
+<smd name="1" x="-2.28" y="-6.3" dx="1.2" dy="2.2" layer="1"/>
+<smd name="3" x="2.28" y="-6.3" dx="1.2" dy="2.2" layer="1"/>
+<text x="-3.81" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MFPD">
+<wire x1="2.54" y1="1.905" x2="3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="4.445" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="0.635" x2="3.175" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="3.81" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-0.762" x2="3.81" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.175" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-0.762" x2="2.921" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-0.762" x2="4.699" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-1.1176" y1="-2.54" x2="-1.1176" y2="2.413" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="0.5334" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.2352" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0.508" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.1176" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="0" x2="1.016" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="0.508" x2="1.016" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-0.508" x2="2.286" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.143" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.143" y1="-0.254" x2="2.032" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.032" y1="0" x2="1.143" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="1.143" y1="0.254" x2="1.143" y2="0" width="0.3048" layer="94"/>
+<wire x1="1.143" y1="0" x2="1.397" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<circle x="2.54" y="1.905" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="-1.905" radius="0.127" width="0.4064" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.143" y="-3.175" size="0.8128" layer="93">D</text>
+<text x="1.143" y="2.413" size="0.8128" layer="93">S</text>
+<text x="-2.286" y="-2.159" size="0.8128" layer="93">G</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="-1.27" layer="94"/>
+<rectangle x1="-0.254" y1="1.27" x2="0.508" y2="2.54" layer="94"/>
+<rectangle x1="-0.254" y1="-0.889" x2="0.508" y2="0.889" layer="94"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IPD50P04P4-13">
+<description>Infineon IPD50P04P4-13&lt;br&gt;
+OptiMOS®-P2 Power-Transistor&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/196/Infineon-IPD50P04P4-13-DS-v01_02-EN-336147.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MFPD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO252-3">
+<connects>
+<connect gate="G$1" pin="D" pad="TAB"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="switches">
+<packages>
+<package name="GPTS203211B">
+<pad name="P$1" x="0" y="-2.65" drill="1.2" shape="square"/>
+<pad name="P$2" x="0" y="2.65" drill="1.2" shape="octagon"/>
+<wire x1="0" y1="-6.5" x2="-13" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-13" y1="-6.5" x2="-13" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-13" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
+<wire x1="0" y1="6.5" x2="0" y2="-6.5" width="0.127" layer="21"/>
+<text x="-12.7" y="-8.89" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SPST">
+<pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.048" x2="1.524" y2="0.508" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.524" y="0.508"/>
+<vertex x="1.524" y="1.27"/>
+<vertex x="0.762" y="0.508"/>
+</polygon>
+<text x="-7.62" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GPTS203212B">
+<description>CW Industries Pushbutton SPST switch&lt;br&gt;
+ON-OFF, 1A, 30VDC&lt;br&gt;
+&lt;a href="http://switches-connectors-custom.cwind.com/Asset/GPTS203211BR2.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GPTS203211B">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13224,7 +13353,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <parts>
 <part name="U$1" library="texas" deviceset="PTN78060W" device=""/>
 <part name="U$2" library="allegro" deviceset="ACS713" device="SOIC"/>
-<part name="JP1" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="C4" library="resistor" deviceset="CPOL-US" device="F" value="100u"/>
@@ -13298,10 +13426,7 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <part name="C54" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="C27" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="100u"/>
-<part name="C28" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="100u"/>
-<part name="C35" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
-<part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 <part name="U$7" library="texas" deviceset="ADS7828" device=""/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0805"/>
@@ -13362,7 +13487,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <part name="U$33" library="diode" deviceset="VTVS" device=""/>
 <part name="U$34" library="diode" deviceset="VTVS" device=""/>
 <part name="U$38" library="diode" deviceset="VTVS" device=""/>
-<part name="U$41" library="diode" deviceset="VTVS" device=""/>
 <part name="U$46" library="diode" deviceset="ESD9X3" device=""/>
 <part name="U$47" library="diode" deviceset="ESD9X3" device=""/>
 <part name="U$48" library="diode" deviceset="ESD9X3" device=""/>
@@ -13392,6 +13516,14 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <part name="C34" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C63" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="100"/>
+<part name="VIN" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="U$60" library="diode" deviceset="VTVS" device=""/>
+<part name="U$61" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
+<part name="R26" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
+<part name="C64" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
+<part name="U$62" library="switches" deviceset="GPTS203212B" device=""/>
+<part name="R27" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
+<part name="R28" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -13407,7 +13539,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <instances>
 <instance part="U$1" gate="G$1" x="-152.4" y="-7.62"/>
 <instance part="U$2" gate="G$1" x="-66.04" y="-7.62"/>
-<instance part="JP1" gate="G$1" x="-388.62" y="40.64" rot="R180"/>
 <instance part="C2" gate="G$1" x="-45.72" y="5.08"/>
 <instance part="C3" gate="G$1" x="-35.56" y="-12.7"/>
 <instance part="C4" gate="G$1" x="-129.54" y="-17.78"/>
@@ -13481,10 +13612,7 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <instance part="C54" gate="G$1" x="160.02" y="-88.9" rot="MR0"/>
 <instance part="R19" gate="G$1" x="-259.08" y="81.28"/>
 <instance part="C27" gate="G$1" x="-127" y="144.78"/>
-<instance part="C28" gate="G$1" x="-358.14" y="40.64"/>
-<instance part="C35" gate="G$1" x="-347.98" y="40.64"/>
 <instance part="R13" gate="G$1" x="-307.34" y="71.12" rot="R90"/>
-<instance part="R20" gate="G$1" x="-297.18" y="60.96" rot="R90"/>
 <instance part="U$7" gate="G$1" x="58.42" y="-40.64"/>
 <instance part="R22" gate="G$1" x="45.72" y="-60.96" rot="R270"/>
 <instance part="C7" gate="G$1" x="78.74" y="-27.94"/>
@@ -13545,7 +13673,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <instance part="U$33" gate="G$1" x="358.14" y="182.88"/>
 <instance part="U$34" gate="G$1" x="73.66" y="261.62"/>
 <instance part="U$38" gate="G$1" x="-60.96" y="33.02"/>
-<instance part="U$41" gate="G$1" x="-332.74" y="30.48"/>
 <instance part="U$46" gate="G$1" x="304.8" y="193.04"/>
 <instance part="U$47" gate="G$1" x="284.48" y="203.2"/>
 <instance part="U$48" gate="G$1" x="73.66" y="233.68"/>
@@ -13575,6 +13702,14 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <instance part="C34" gate="G$1" x="-256.54" y="-25.4"/>
 <instance part="C63" gate="G$1" x="-203.2" y="-25.4"/>
 <instance part="R25" gate="G$1" x="-185.42" y="-22.86"/>
+<instance part="VIN" gate="G$1" x="-340.36" y="50.8" rot="R90"/>
+<instance part="U$60" gate="G$1" x="-340.36" y="33.02" rot="R90"/>
+<instance part="U$61" gate="G$1" x="-345.44" y="27.94" rot="MR180"/>
+<instance part="R26" gate="G$1" x="-365.76" y="30.48" rot="R180"/>
+<instance part="C64" gate="G$1" x="-355.6" y="25.4"/>
+<instance part="U$62" gate="G$1" x="-375.92" y="17.78" rot="R90"/>
+<instance part="R27" gate="G$1" x="-375.92" y="35.56" rot="R270"/>
+<instance part="R28" gate="G$1" x="-342.9" y="17.78" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13584,21 +13719,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="GND1"/>
 <wire x1="-167.64" y1="0" x2="-175.26" y2="0" width="0.1524" layer="91"/>
 <label x="-175.26" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="P$1"/>
-<wire x1="-381" y1="38.1" x2="-373.38" y2="38.1" width="0.1524" layer="91"/>
-<label x="-375.92" y="38.1" size="1.778" layer="95"/>
-<pinref part="C28" gate="G$1" pin="-"/>
-<wire x1="-358.14" y1="35.56" x2="-373.38" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-373.38" y1="35.56" x2="-373.38" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="-347.98" y1="35.56" x2="-358.14" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-358.14" y="35.56"/>
-<wire x1="-332.74" y1="27.94" x2="-347.98" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-347.98" y1="27.94" x2="-347.98" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-347.98" y="35.56"/>
-<pinref part="U$41" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -14227,6 +14347,21 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <junction x="-228.6" y="-35.56"/>
 <label x="-220.98" y="-35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VIN" gate="G$1" pin="P$2"/>
+<wire x1="-337.82" y1="43.18" x2="-337.82" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-337.82" y1="33.02" x2="-307.34" y2="33.02" width="0.1524" layer="91"/>
+<label x="-312.42" y="33.02" size="1.778" layer="95"/>
+<pinref part="U$60" gate="G$1" pin="A"/>
+<junction x="-337.82" y="33.02"/>
+</segment>
+<segment>
+<pinref part="U$62" gate="G$1" pin="P$1"/>
+<pinref part="C64" gate="G$1" pin="2"/>
+<wire x1="-375.92" y1="10.16" x2="-355.6" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="10.16" x2="-355.6" y2="20.32" width="0.1524" layer="91"/>
+<label x="-360.68" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V-OUT" class="0">
 <segment>
@@ -14524,23 +14659,6 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 </segment>
 </net>
 <net name="V_BATT1" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="P$2"/>
-<label x="-375.92" y="43.18" size="1.778" layer="95"/>
-<pinref part="C28" gate="G$1" pin="+"/>
-<wire x1="-358.14" y1="43.18" x2="-381" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="-358.14" y1="43.18" x2="-347.98" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-358.14" y="43.18"/>
-<junction x="-347.98" y="43.18"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="-297.18" y1="55.88" x2="-297.18" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-297.18" y1="43.18" x2="-332.74" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$41" gate="G$1" pin="C"/>
-<wire x1="-332.74" y1="43.18" x2="-347.98" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-332.74" y1="33.02" x2="-332.74" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-332.74" y="43.18"/>
-</segment>
 <segment>
 <pinref part="C61" gate="G$1" pin="1"/>
 <pinref part="U$57" gate="G$1" pin="VIN"/>
@@ -15271,12 +15389,14 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <net name="RELAY-BATT" class="0">
 <segment>
 <pinref part="U$25" gate="G$1" pin="5"/>
-<wire x1="-281.94" y1="71.12" x2="-284.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="-297.18" y="71.12" size="1.778" layer="95"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="-284.48" y1="71.12" x2="-287.02" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-297.18" y1="66.04" x2="-297.18" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-297.18" y1="71.12" x2="-287.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-297.18" y1="71.12" x2="-281.94" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-342.9" y1="10.16" x2="-335.28" y2="10.16" width="0.1524" layer="91"/>
+<label x="-340.36" y="10.16" size="1.778" layer="95"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="-342.9" y1="10.16" x2="-342.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPU_ON" class="0">
@@ -15720,6 +15840,46 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="!INHIBIT!"/>
 <wire x1="-180.34" y1="-22.86" x2="-180.34" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="-10.16" x2="-167.64" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="VIN" gate="G$1" pin="P$1"/>
+<pinref part="U$60" gate="G$1" pin="C"/>
+<wire x1="-342.9" y1="43.18" x2="-342.9" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$61" gate="G$1" pin="D"/>
+<junction x="-342.9" y="33.02"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-375.92" y1="40.64" x2="-375.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-375.92" y1="43.18" x2="-342.9" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-342.9" y="43.18"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="C64" gate="G$1" pin="1"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="-355.6" y1="27.94" x2="-355.6" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="30.48" x2="-360.68" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$61" gate="G$1" pin="G"/>
+<wire x1="-355.6" y1="30.48" x2="-350.52" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-355.6" y="30.48"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="U$62" gate="G$1" pin="P$2"/>
+<wire x1="-370.84" y1="30.48" x2="-375.92" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-375.92" y1="30.48" x2="-375.92" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<junction x="-375.92" y="30.48"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="U$61" gate="G$1" pin="S"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
