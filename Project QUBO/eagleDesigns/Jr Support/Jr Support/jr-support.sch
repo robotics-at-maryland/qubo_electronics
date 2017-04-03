@@ -13341,6 +13341,69 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="led">
+<description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
+Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
+<packages>
+<package name="0805">
+<smd name="P$1" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="P$2" x="1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<text x="0" y="-0.635" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
+<text x="-1.27" y="-1.27" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0805_LED" prefix="LED" uservalue="yes">
+<description>LED, 0805 package. Any variety.</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13524,6 +13587,20 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$62" library="switches" deviceset="GPTS203212B" device=""/>
 <part name="R27" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
 <part name="R28" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="1.5k"/>
+<part name="LED1" library="led" deviceset="0805_LED" device=""/>
+<part name="R29" library="resistor" deviceset="R-US_" device="R0805" value="1.5k"/>
+<part name="LED2" library="led" deviceset="0805_LED" device=""/>
+<part name="R30" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
+<part name="LED3" library="led" deviceset="0805_LED" device=""/>
+<part name="R31" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
+<part name="LED4" library="led" deviceset="0805_LED" device=""/>
+<part name="R32" library="resistor" deviceset="R-US_" device="R0805" value="1.5k"/>
+<part name="LED5" library="led" deviceset="0805_LED" device=""/>
+<part name="R33" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
+<part name="LED6" library="led" deviceset="0805_LED" device=""/>
+<part name="R34" library="resistor" deviceset="R-US_" device="R0805" value="68"/>
+<part name="LED7" library="led" deviceset="0805_LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13710,6 +13787,20 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="U$62" gate="G$1" x="-375.92" y="17.78" rot="R90"/>
 <instance part="R27" gate="G$1" x="-375.92" y="35.56" rot="R270"/>
 <instance part="R28" gate="G$1" x="-342.9" y="17.78" rot="R90"/>
+<instance part="R20" gate="G$1" x="-213.36" y="68.58" rot="R90"/>
+<instance part="LED1" gate="G$1" x="-213.36" y="60.96"/>
+<instance part="R29" gate="G$1" x="-342.9" y="5.08" rot="R90"/>
+<instance part="LED2" gate="G$1" x="-342.9" y="-2.54"/>
+<instance part="R30" gate="G$1" x="-330.2" y="78.74" rot="R90"/>
+<instance part="LED3" gate="G$1" x="-330.2" y="71.12"/>
+<instance part="R31" gate="G$1" x="-45.72" y="-30.48" rot="R180"/>
+<instance part="LED4" gate="G$1" x="-38.1" y="-30.48" rot="R90"/>
+<instance part="R32" gate="G$1" x="-40.64" y="40.64" rot="R90"/>
+<instance part="LED5" gate="G$1" x="-40.64" y="33.02"/>
+<instance part="R33" gate="G$1" x="-40.64" y="111.76" rot="R90"/>
+<instance part="LED6" gate="G$1" x="-40.64" y="104.14"/>
+<instance part="R34" gate="G$1" x="241.3" y="81.28" rot="MR90"/>
+<instance part="LED7" gate="G$1" x="241.3" y="73.66" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -14324,6 +14415,10 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="C59" gate="G$1" pin="-"/>
 <wire x1="-228.6" y1="66.04" x2="-238.76" y2="66.04" width="0.1524" layer="91"/>
 <label x="-238.76" y="66.04" size="1.778" layer="95"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="-213.36" y1="55.88" x2="-228.6" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="55.88" x2="-228.6" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-228.6" y="66.04"/>
 </segment>
 <segment>
 <pinref part="C62" gate="G$1" pin="2"/>
@@ -14361,6 +14456,36 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <wire x1="-375.92" y1="10.16" x2="-355.6" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-355.6" y1="10.16" x2="-355.6" y2="20.32" width="0.1524" layer="91"/>
 <label x="-360.68" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="-342.9" y1="-7.62" x2="-358.14" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-358.14" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="-330.2" y1="66.04" x2="-345.44" y2="66.04" width="0.1524" layer="91"/>
+<label x="-345.44" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="-33.02" y1="-30.48" x2="-33.02" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-33.02" y="-45.72" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="-40.64" y1="27.94" x2="-55.88" y2="27.94" width="0.1524" layer="91"/>
+<label x="-55.88" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<wire x1="-40.64" y1="99.06" x2="-55.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="-55.88" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<wire x1="241.3" y1="68.58" x2="256.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="256.54" y="68.58" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="5V-OUT" class="0">
@@ -14402,6 +14527,9 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="-251.46" y="73.66"/>
 <pinref part="C59" gate="G$1" pin="+"/>
 <wire x1="-251.46" y1="73.66" x2="-228.6" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="-228.6" y1="73.66" x2="-213.36" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-228.6" y="73.66"/>
 </segment>
 <segment>
 <pinref part="C34" gate="G$1" pin="1"/>
@@ -15009,11 +15137,12 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </segment>
 <segment>
 <pinref part="U$36" gate="G$1" pin="P$2"/>
-<wire x1="-58.42" y1="116.84" x2="-53.34" y2="116.84" width="0.1524" layer="91"/>
 <label x="-55.88" y="116.84" size="1.778" layer="95"/>
 <pinref part="U$49" gate="G$1" pin="C"/>
 <wire x1="-58.42" y1="106.68" x2="-58.42" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-58.42" y="116.84"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<wire x1="-58.42" y1="116.84" x2="-40.64" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="2PIN_8" gate="U1" pin="P$1"/>
@@ -15197,11 +15326,12 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="V_THRUST" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="P$2"/>
-<wire x1="-60.96" y1="45.72" x2="-53.34" y2="45.72" width="0.1524" layer="91"/>
 <label x="-58.42" y="45.72" size="1.778" layer="95"/>
 <pinref part="U$38" gate="G$1" pin="C"/>
 <wire x1="-60.96" y1="35.56" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-60.96" y="45.72"/>
+<pinref part="R32" gate="G$1" pin="2"/>
+<wire x1="-60.96" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="IP+"/>
@@ -15880,6 +16010,48 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <segment>
 <pinref part="U$61" gate="G$1" pin="S"/>
 <pinref part="R28" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<pinref part="R31" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="R32" gate="G$1" pin="1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="R34" gate="G$1" pin="1"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

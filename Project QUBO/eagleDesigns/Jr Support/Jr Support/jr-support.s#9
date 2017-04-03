@@ -15924,7 +15924,7 @@ Part No. NTCLE201E3&lt;br&gt;
 <instance part="U$38" gate="G$1" x="-566.42" y="121.92"/>
 <instance part="R36" gate="G$1" x="-576.58" y="157.48" rot="R90"/>
 <instance part="U$39" gate="G$1" x="-683.26" y="162.56"/>
-<instance part="D1" gate="G$1" x="-604.52" y="121.92" rot="R90"/>
+<instance part="D1" gate="G$1" x="-604.52" y="124.46" rot="MR90"/>
 <instance part="U$40" gate="G$1" x="-589.28" y="76.2"/>
 </instances>
 <busses>
@@ -18095,7 +18095,7 @@ Part No. NTCLE201E3&lt;br&gt;
 <pinref part="U$33" gate="G$1" pin="BST"/>
 <pinref part="C78" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="-604.52" y1="124.46" x2="-604.52" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-604.52" y1="127" x2="-604.52" y2="129.54" width="0.1524" layer="91"/>
 <junction x="-604.52" y="129.54"/>
 </segment>
 </net>
@@ -18136,8 +18136,8 @@ Part No. NTCLE201E3&lt;br&gt;
 <pinref part="U$33" gate="G$1" pin="VLO"/>
 <pinref part="C79" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-604.52" y1="121.92" x2="-604.52" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-604.52" y="119.38"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$77" class="0">

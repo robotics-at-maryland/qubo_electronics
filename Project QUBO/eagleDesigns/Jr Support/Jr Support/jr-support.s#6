@@ -13327,11 +13327,11 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <plain>
 <text x="-203.2" y="160.02" size="1.778" layer="97">RUN is an enable-high pin (max 6V) to turn on the regulator.</text>
 <text x="195.58" y="223.52" size="1.778" layer="97">Address: 1110111 (0x77)(BME)</text>
-<text x="45.72" y="-15.24" size="1.778" layer="97">Address: 1001000 (Thrust ADC)</text>
+<text x="40.64" y="-15.24" size="1.778" layer="97">Address: 1001000 (Thrust ADC)</text>
 <text x="193.04" y="144.78" size="1.778" layer="97">Address: 1110111 (0x77) )(BAR30)</text>
 <text x="-22.86" y="160.02" size="1.778" layer="97">Address: 1010101 (12V ADC)</text>
 <text x="-20.32" y="91.44" size="1.778" layer="97">Address: 1011010 (VIN ADC)</text>
-<text x="-22.86" y="30.48" size="1.778" layer="97">Address: 1011001 (5V ADC)</text>
+<text x="-17.78" y="30.48" size="1.778" layer="97">Address: 1011001 (5V ADC)</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-157.48" y="10.16"/>
@@ -13490,7 +13490,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <instance part="U$40" gate="G$1" x="398.78" y="-154.94"/>
 <instance part="C58" gate="G$1" x="408.94" y="-160.02" rot="MR0"/>
 <instance part="U$41" gate="G$1" x="416.56" y="-162.56" rot="R90"/>
-<instance part="U$42" gate="G$1" x="-7.62" y="12.7"/>
+<instance part="U$42" gate="G$1" x="-2.54" y="12.7"/>
 <instance part="U$43" gate="G$1" x="-2.54" y="71.12"/>
 <instance part="U$44" gate="G$1" x="-5.08" y="142.24"/>
 </instances>
@@ -14114,8 +14114,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="GND"/>
-<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
-<label x="2.54" y="0" size="1.778" layer="95"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
+<label x="7.62" y="0" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$43" gate="G$1" pin="GND"/>
@@ -14139,8 +14139,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="ADR0"/>
-<wire x1="12.7" y1="10.16" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
-<label x="17.78" y="10.16" size="1.778" layer="95"/>
+<wire x1="17.78" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
+<label x="22.86" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V-OUT" class="0">
@@ -14398,8 +14398,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="VDD"/>
-<wire x1="-7.62" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
-<label x="2.54" y="25.4" size="1.778" layer="95"/>
+<wire x1="-2.54" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<label x="7.62" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$43" gate="G$1" pin="VDD"/>
@@ -14423,8 +14423,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="ADR1"/>
-<wire x1="12.7" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
-<label x="17.78" y="7.62" size="1.778" layer="95"/>
+<wire x1="17.78" y1="7.62" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
+<label x="22.86" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_BATT1" class="0">
@@ -14570,8 +14570,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="SCL"/>
-<wire x1="12.7" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<label x="17.78" y="12.7" size="1.778" layer="95"/>
+<wire x1="17.78" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<label x="22.86" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$43" gate="G$1" pin="SCL"/>
@@ -14612,8 +14612,8 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </segment>
 <segment>
 <pinref part="U$42" gate="G$1" pin="SDA"/>
-<wire x1="12.7" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
-<label x="17.78" y="15.24" size="1.778" layer="95"/>
+<wire x1="17.78" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
+<label x="22.86" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$43" gate="G$1" pin="SDA"/>
@@ -15517,7 +15517,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <segment>
 <pinref part="U$42" gate="G$1" pin="VIN"/>
 <pinref part="U$2" gate="G$1" pin="VIOUT"/>
-<wire x1="-30.48" y1="12.7" x2="-58.42" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="12.7" x2="-58.42" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
