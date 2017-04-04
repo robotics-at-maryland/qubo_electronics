@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1799,6 +1799,10 @@ design rules under a new name.</description>
 <element name="U$7" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="84.83" y="62.47" rot="R270"/>
 <element name="U$8" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="17.32" y="42.77" rot="R90"/>
 <element name="U$9" library="transistor-fet" package="SOT23" value="BSS138CT-NDSOT23" x="2.58" y="52.15"/>
+<element name="LED7" library="led" package="0805" value="Green" x="-7.25" y="-1.4"/>
+<element name="R33" library="resistor" package="R0805" value="1.5k" x="-8.3" y="-5.9"/>
+<element name="LED8" library="led" package="0805" value="Green" x="-7.25" y="-15.3"/>
+<element name="R34" library="resistor" package="R0805" value="1.5k" x="-8.3" y="-11.45"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1843,6 +1847,7 @@ design rules under a new name.</description>
 <wire x1="12.8" y1="53.69" x2="12.78" y2="53.71" width="0.3048" layer="1"/>
 <wire x1="21.58" y1="45.59" x2="25.66" y2="45.59" width="0.3048" layer="1"/>
 <wire x1="25.66" y1="45.59" x2="26.82" y2="44.43" width="0.3048" layer="1"/>
+<contactref element="LED7" pad="P$2"/>
 <wire x1="101.33" y1="124.39" x2="100.9" y2="126.82" width="0" layer="19" extent="1-1"/>
 <wire x1="102.55" y1="119.3" x2="101.33" y2="124.39" width="0" layer="19" extent="1-1"/>
 <wire x1="95.23" y1="122.52" x2="101.33" y2="124.39" width="0" layer="19" extent="1-1"/>
@@ -1872,6 +1877,7 @@ design rules under a new name.</description>
 <wire x1="3.53" y1="51.05" x2="12.8" y2="52.35" width="0" layer="19" extent="1-1"/>
 <wire x1="4.9" y1="40.33" x2="3.53" y2="51.05" width="0" layer="19" extent="1-1"/>
 <wire x1="27.64" y1="85.86" x2="18.07" y2="57.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.2" y1="-1.4" x2="4.9" y2="40.33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_BATT1">
 <contactref element="U$27" pad="VCC"/>
@@ -2154,6 +2160,7 @@ design rules under a new name.</description>
 <contactref element="POT" pad="P$1"/>
 <contactref element="R32" pad="2"/>
 <contactref element="R30" pad="2"/>
+<contactref element="R33" pad="2"/>
 <wire x1="95.9" y1="126.82" x2="105.23" y2="123.94" width="0" layer="19" extent="1-1"/>
 <wire x1="64.2835" y1="94.23" x2="95.9" y2="126.82" width="0" layer="19" extent="1-1"/>
 <wire x1="67.23" y1="86.83" x2="64.2835" y2="94.23" width="0" layer="19" extent="1-1"/>
@@ -2164,6 +2171,7 @@ design rules under a new name.</description>
 <wire x1="80.73" y1="63.87" x2="84.93" y2="76.89" width="0" layer="19" extent="1-1"/>
 <wire x1="84.83" y1="62.12" x2="80.73" y2="63.87" width="0" layer="19" extent="1-1"/>
 <wire x1="71.86" y1="68.29" x2="80.73" y2="63.87" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.45" y1="-5.9" x2="71.86" y2="68.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$48">
 <contactref element="U$56" pad="P$3"/>
@@ -2343,6 +2351,22 @@ design rules under a new name.</description>
 <wire x1="13.52" y1="54.73" x2="13.75" y2="54.5" width="0.3048" layer="1"/>
 <wire x1="13.75" y1="54.5" x2="13.75" y2="53.74" width="0.3048" layer="1"/>
 <wire x1="13.75" y1="53.74" x2="13.78" y2="53.71" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$33">
+<contactref element="LED7" pad="P$1"/>
+<contactref element="R33" pad="1"/>
+<wire x1="-8.3" y1="-1.4" x2="-9.15" y2="-5.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GND1">
+<contactref element="LED8" pad="P$2"/>
+</signal>
+<signal name="V_BATT3">
+<contactref element="R34" pad="2"/>
+</signal>
+<signal name="N$34">
+<contactref element="LED8" pad="P$1"/>
+<contactref element="R34" pad="1"/>
+<wire x1="-9.15" y1="-11.45" x2="-8.3" y2="-15.3" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -9447,6 +9447,11 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-152.4" y1="-2.54" x2="-152.4" y2="7.62" width="0.1524" layer="91"/>
 <label x="-157.48" y="-2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED8" gate="G$1" pin="C"/>
+<wire x1="-180.34" y1="-160.02" x2="-198.12" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="-160.02" x2="-198.12" y2="-154.94" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V_BATT1" class="0">
 <segment>
@@ -9496,6 +9501,11 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-139.7" y1="10.16" x2="-139.7" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="-2.54" x2="-132.08" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-137.16" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R34" gate="G$1" pin="2"/>
+<wire x1="-198.12" y1="-132.08" x2="-198.12" y2="-127" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="-127" x2="-180.34" y2="-127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -9973,20 +9983,6 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="LED7" gate="G$1" pin="A"/>
 <pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="-119.38" y1="-149.86" x2="-119.38" y2="-144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND1" class="0">
-<segment>
-<pinref part="LED8" gate="G$1" pin="C"/>
-<wire x1="-180.34" y1="-160.02" x2="-198.12" y2="-160.02" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-160.02" x2="-198.12" y2="-154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="V_BATT3" class="0">
-<segment>
-<pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="-198.12" y1="-132.08" x2="-198.12" y2="-127" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="-127" x2="-180.34" y2="-127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
