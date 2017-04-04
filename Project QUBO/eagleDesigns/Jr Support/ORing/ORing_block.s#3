@@ -9306,16 +9306,6 @@ where POT is the resistance of the potentiometer.</text>
 <label x="66.04" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="G"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="86.36" y="-5.08"/>
-<pinref part="U$27" gate="G$1" pin="ENOUT"/>
-<wire x1="38.1" y1="-7.62" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-7.62" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="106.68" y1="22.86" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
@@ -9571,13 +9561,6 @@ where POT is the resistance of the potentiometer.</text>
 <label x="76.2" y="-73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="G"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-104.14" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
-<junction x="66.04" y="-104.14"/>
-<wire x1="40.64" y1="-104.14" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="POT" gate="G$1" pin="A"/>
 <pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="-129.54" y1="-134.62" x2="-129.54" y2="-127" width="0.1524" layer="91"/>
@@ -9786,6 +9769,28 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-149.86" y1="-149.86" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="-139.7" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="-165.1" y="-139.7"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="ENOUT"/>
+<pinref part="U$10" gate="G$1" pin="G"/>
+<wire x1="40.64" y1="-104.14" x2="66.04" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<junction x="66.04" y="-104.14"/>
+<wire x1="66.04" y1="-104.14" x2="78.74" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$27" gate="G$1" pin="ENOUT"/>
+<wire x1="38.1" y1="-7.62" x2="60.96" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-7.62" x2="60.96" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="-5.08" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="G"/>
+<wire x1="86.36" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="86.36" y="-5.08"/>
 </segment>
 </net>
 </nets>

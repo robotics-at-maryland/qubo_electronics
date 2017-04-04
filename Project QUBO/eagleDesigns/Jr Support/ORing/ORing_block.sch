@@ -9181,6 +9181,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
 <part name="U$15" library="switches" deviceset="GPTS203212B" device=""/>
 <part name="R38" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
+<part name="LED9" library="led" deviceset="0805_LED" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9282,6 +9283,7 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="C3" gate="G$1" x="-152.4" y="12.7"/>
 <instance part="U$15" gate="G$1" x="-172.72" y="5.08" rot="R90"/>
 <instance part="R38" gate="G$1" x="-172.72" y="22.86" rot="R270"/>
+<instance part="LED9" gate="G$1" x="-261.62" y="-30.48"/>
 </instances>
 <busses>
 </busses>
