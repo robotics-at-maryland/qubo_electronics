@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
+<<<<<<< .mine
+<eagle version="6.5.0">
+||||||| .r181
+<eagle version="8.0.0">
+=======
 <eagle version="8.1.0">
+>>>>>>> .r217
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1402,6 +1408,47 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 <pin name="D" x="2.54" y="7.62" visible="off" length="middle" rot="R270"/>
 </symbol>
+<<<<<<< .mine
+<symbol name="MOSFET-P">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-0.508" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="-0.508" x2="5.08" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-0.508" x2="5.588" y2="-0.508" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="-7.62" visible="off" length="middle" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="5.08" y="-0.508"/>
+<vertex x="5.588" y="0.254"/>
+<vertex x="4.572" y="0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.286" y="0"/>
+<vertex x="1.27" y="0.762"/>
+<vertex x="1.27" y="-0.762"/>
+</polygon>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+</symbol>
+||||||| .r181
+=======
 <symbol name="MOSFET-P_MULTI-DIODES">
 <pin name="D" x="0" y="7.62" visible="pin" length="short" rot="R270"/>
 <pin name="S" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
@@ -1448,6 +1495,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <vertex x="-1.778" y="-0.508"/>
 </polygon>
 </symbol>
+>>>>>>> .r217
 </symbols>
 <devicesets>
 <deviceset name="BUZ10" prefix="Q">
@@ -2904,6 +2952,43 @@ N-MOSFET, Logic Level&lt;br&gt;
 </device>
 </devices>
 </deviceset>
+<<<<<<< .mine
+<deviceset name="FDN5618P" prefix="Q">
+<gates>
+<gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N7002" prefix="N">
+<gates>
+<gate name="G$1" symbol="MOSFET-N" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+||||||| .r181
+=======
 <deviceset name="DMP32D5SFB">
 <description>Diodes Inc. DMP32D5SFB&lt;br&gt;
 30V P-MOSFET (Enhancement)&lt;br&gt;
@@ -2924,6 +3009,7 @@ N-MOSFET, Logic Level&lt;br&gt;
 </device>
 </devices>
 </deviceset>
+>>>>>>> .r217
 </devicesets>
 </library>
 </drawing>
