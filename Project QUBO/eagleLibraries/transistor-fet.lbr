@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< .mine
-<eagle version="6.5.0">
-||||||| .r181
-<eagle version="8.0.0">
-=======
 <eagle version="8.1.0">
->>>>>>> .r217
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1408,7 +1402,6 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 <pin name="D" x="2.54" y="7.62" visible="off" length="middle" rot="R270"/>
 </symbol>
-<<<<<<< .mine
 <symbol name="MOSFET-P">
 <wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
@@ -2952,7 +2945,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<<<<<<< .mine
 <deviceset name="FDN5618P" prefix="Q">
 <gates>
 <gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>

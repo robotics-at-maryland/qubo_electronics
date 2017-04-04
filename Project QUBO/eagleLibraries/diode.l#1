@@ -9796,15 +9796,6 @@ super fast rectifier, 2 A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SOD-106" package="SOD106-R">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="DIODE_SCHOTTKY2-" prefix="D" uservalue="yes">
