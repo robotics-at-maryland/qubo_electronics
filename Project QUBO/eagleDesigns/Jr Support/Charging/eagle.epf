@@ -40,6 +40,8 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/resistor.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/samtec.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/supply1.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/switch-tact.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/switch.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/switches.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/texas.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/transistor-fet.lbr"
@@ -53,8 +55,8 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -8 1357 737"
-State=1
+Loc="2 2 1349 729"
+State=2
 Number=0
 
 [Desktop]
