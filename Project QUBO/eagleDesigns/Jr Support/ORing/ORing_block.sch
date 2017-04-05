@@ -7085,11 +7085,11 @@ Based on the following sources:
 <library name="NXP">
 <packages>
 <package name="TSSOP5">
-<smd name="P$1" x="-0.65" y="-1.125" dx="0.15" dy="0.6" layer="1"/>
-<smd name="P$2" x="0" y="-1.125" dx="0.15" dy="0.6" layer="1"/>
-<smd name="P$3" x="0.65" y="-1.125" dx="0.15" dy="0.6" layer="1"/>
-<smd name="P$4" x="0.65" y="1.125" dx="0.15" dy="0.6" layer="1"/>
-<smd name="P$5" x="-0.62" y="1.125" dx="0.15" dy="0.6" layer="1"/>
+<smd name="P$1" x="-0.65" y="-1.125" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$2" x="0" y="-1.125" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$3" x="0.65" y="-1.125" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$4" x="0.65" y="1.125" dx="0.3" dy="0.6" layer="1"/>
+<smd name="P$5" x="-0.62" y="1.125" dx="0.3" dy="0.6" layer="1"/>
 <wire x1="-1.125" y1="0.675" x2="1.125" y2="0.675" width="0.127" layer="21"/>
 <wire x1="1.125" y1="0.675" x2="1.125" y2="-0.675" width="0.127" layer="21"/>
 <wire x1="1.125" y1="-0.675" x2="-1.125" y2="-0.675" width="0.127" layer="21"/>
