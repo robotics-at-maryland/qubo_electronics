@@ -155,7 +155,6 @@
 <library name="molex">
 <packages>
 <package name="SUPERSABRE_2CIRCUIT">
-<wire x1="-10.541" y1="3.81" x2="-10.541" y2="5.7658" width="0" layer="20"/>
 <wire x1="-10.541" y1="5.7658" x2="10.541" y2="5.7658" width="0.254" layer="21"/>
 <wire x1="-10.541" y1="5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
 <wire x1="10.541" y1="5.7658" x2="10.541" y2="-5.7658" width="0.254" layer="21"/>
@@ -8820,6 +8819,8 @@ by R. Vogg  15.March.2002</description>
 <vertex x="-1.778" y="0.508"/>
 <vertex x="-1.778" y="-0.508"/>
 </polygon>
+<text x="-7.62" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-7.62" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="MOSFET-N">
 <wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
@@ -8965,6 +8966,10 @@ Adjustable shunt regulator&lt;br&gt;
 <smd name="3" x="2.28" y="-6.3" dx="1.2" dy="2.2" layer="1"/>
 <text x="-3.81" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="5.08" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-3.25" y1="3.4" x2="3.25" y2="3.4" width="0.127" layer="21"/>
+<wire x1="3.25" y1="3.4" x2="3.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="3.25" y1="-6.6" x2="-3.25" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-3.25" y1="-6.6" x2="-3.25" y2="3.4" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
