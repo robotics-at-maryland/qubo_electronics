@@ -11094,6 +11094,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="-3.81" y="-3.81" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.445" y="-3.81" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="L6100">
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-3" y="0" drill="1" shape="square"/>
+<pad name="P$2" x="3" y="0" drill="1" shape="octagon" rot="R180"/>
+<text x="-3.81" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -15904,6 +15911,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 </technologies>
 </device>
 <device name="L0740" package="L0740">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L6100" package="L6100">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
