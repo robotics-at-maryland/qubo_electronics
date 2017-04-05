@@ -9095,9 +9095,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </classes>
 <parts>
 <part name="U$27" library="linear" deviceset="LTC4364" device="MSOP"/>
-<part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="R21" library="resistor" deviceset="R-US_" device="R0805" value="12k"/>
-<part name="R22" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="R23" library="resistor" deviceset="R-US_" device="R0805" value="51k"/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="5m"/>
 <part name="R26" library="resistor" deviceset="R-US_" device="R0805" value="10\"/>
@@ -9109,9 +9107,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$32" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0805" value="5.1k"/>
 <part name="U$1" library="linear" deviceset="LTC4364" device="MSOP"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="12k"/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="20.8k"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="51k"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="5m"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="10\"/>
@@ -9196,9 +9192,7 @@ where POT is the resistance of the potentiometer.</text>
 </plain>
 <instances>
 <instance part="U$27" gate="G$1" x="0" y="0"/>
-<instance part="R20" gate="G$1" x="-48.26" y="7.62" rot="R90"/>
 <instance part="R21" gate="G$1" x="-48.26" y="-2.54" rot="R90"/>
-<instance part="R22" gate="G$1" x="-48.26" y="-12.7" rot="R90"/>
 <instance part="R23" gate="G$1" x="38.1" y="10.16" rot="R90"/>
 <instance part="R25" gate="G$1" x="25.4" y="35.56"/>
 <instance part="R26" gate="G$1" x="-10.16" y="22.86" rot="R90"/>
@@ -9210,9 +9204,7 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="U$32" gate="G$1" x="12.7" y="35.56" rot="MR90"/>
 <instance part="R24" gate="G$1" x="38.1" y="0" rot="R90"/>
 <instance part="U$1" gate="G$1" x="2.54" y="-96.52"/>
-<instance part="R1" gate="G$1" x="-45.72" y="-88.9" rot="R90"/>
 <instance part="R2" gate="G$1" x="-45.72" y="-99.06" rot="R90"/>
-<instance part="R3" gate="G$1" x="-45.72" y="-109.22" rot="R90"/>
 <instance part="R4" gate="G$1" x="40.64" y="-86.36" rot="R90"/>
 <instance part="R5" gate="G$1" x="27.94" y="-60.96"/>
 <instance part="R6" gate="G$1" x="-7.62" y="-73.66" rot="R90"/>
@@ -9289,13 +9281,17 @@ where POT is the resistance of the potentiometer.</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$27" gate="G$1" pin="GND"/>
-<pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="-48.26" y1="-17.78" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="C64" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="-25.4" x2="-17.78" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-25.4" x2="-17.78" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-17.78"/>
 <label x="-15.24" y="-25.4" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="U$27" gate="G$1" pin="OV"/>
+<wire x1="-38.1" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-7.62" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-48.26" y="-7.62"/>
 </segment>
 <segment>
 <pinref part="C65" gate="G$1" pin="2"/>
@@ -9311,13 +9307,17 @@ where POT is the resistance of the potentiometer.</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="-114.3" x2="-15.24" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="-121.92" x2="-15.24" y2="-121.92" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-121.92" x2="-15.24" y2="-114.3" width="0.1524" layer="91"/>
 <junction x="-15.24" y="-114.3"/>
 <label x="-12.7" y="-121.92" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="OV"/>
+<wire x1="-35.56" y1="-104.14" x2="-45.72" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-104.14" x2="-45.72" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="-45.72" y="-104.14"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -9547,20 +9547,12 @@ where POT is the resistance of the potentiometer.</text>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="U$27" gate="G$1" pin="UV"/>
 <wire x1="-38.1" y1="2.54" x2="-48.26" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="12.7" x2="-48.26" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-48.26" y="2.54"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="1"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="U$27" gate="G$1" pin="OV"/>
-<wire x1="-38.1" y1="-7.62" x2="-48.26" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-48.26" y="-7.62"/>
 </segment>
 </net>
 <net name="N$50" class="0">
@@ -9575,12 +9567,6 @@ where POT is the resistance of the potentiometer.</text>
 <segment>
 <pinref part="U$27" gate="G$1" pin="HGATE"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="R27" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$53" class="0">
@@ -9630,20 +9616,12 @@ where POT is the resistance of the potentiometer.</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="UV"/>
 <wire x1="-35.56" y1="-93.98" x2="-45.72" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="-83.82" x2="-45.72" y2="-93.98" width="0.1524" layer="91"/>
 <junction x="-45.72" y="-93.98"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="OV"/>
-<wire x1="-35.56" y1="-104.14" x2="-45.72" y2="-104.14" width="0.1524" layer="91"/>
-<junction x="-45.72" y="-104.14"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -9658,12 +9636,6 @@ where POT is the resistance of the potentiometer.</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="HGATE"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
