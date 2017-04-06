@@ -9134,7 +9134,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="C62" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="U$58" library="diode" deviceset="VTVS" device=""/>
 <part name="U$6" library="diode" deviceset="VTVS" device=""/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0805"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="20k+"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="430"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
 <part name="U$7" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
