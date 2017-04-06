@@ -9140,7 +9140,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$7" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="AUDIO" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0805"/>
+<part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="20k+"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0805" value="430"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" value="Red"/>
 <part name="U$8" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
