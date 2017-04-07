@@ -6,6 +6,8 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/74xx-little-us.lbr"
+UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/74xx-us.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/BME280ComponentLibrary.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/Jameco.lbr"
 UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleLibraries/NXP.lbr"
@@ -55,10 +57,10 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 
 [Win_1]
 Type="Control Panel"
-Loc="1478 16 3397 1073"
+Loc="0 0 1361 741"
 State=2
 Number=0
 
 [Desktop]
-Screen="3286 1080"
+Screen="1366 768"
 Window="Win_1"
