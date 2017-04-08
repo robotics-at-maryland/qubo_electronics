@@ -2027,7 +2027,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R35" library="resistor" package="R0805" value="0" x="34.925" y="52.705" rot="R90"/>
 <element name="R36" library="resistor" package="R0805" value="0" x="84.455" y="34.925" rot="R180"/>
 <element name="R37" library="resistor" package="R0805" value="0" x="-1.27" y="-6.35"/>
-<element name="R38" library="resistor" package="R0805" value="0" x="-1.27" y="-12.065"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -2112,7 +2111,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="3.81" y="0"/>
 </polygon>
 <contactref element="R37" pad="2"/>
-<contactref element="R38" pad="1"/>
 <wire x1="67.843053125" y1="59.772503125" x2="67.867384375" y2="57.69543125" width="0" layer="19" extent="1-1"/>
 <wire x1="76.589715625" y1="44.651253125" x2="76.486875" y2="52.966740625" width="0" layer="19" extent="1-1"/>
 <wire x1="85.305" y1="34.925" x2="97.265" y2="34.29" width="0" layer="19" extent="1-1"/>
@@ -2125,7 +2123,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.98" y1="83.82" x2="31.33" y2="83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="24.37" y1="88.29" x2="24.98" y2="83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.42" y1="-6.35" x2="33.02" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.12" y1="-12.065" x2="-0.42" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_1">
 <contactref element="U$33" pad="7"/>
@@ -3077,8 +3074,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="84.455" y="38.1"/>
 <vertex x="84.455" y="22.225"/>
 </polygon>
-<contactref element="R38" pad="2"/>
-<wire x1="79.9465" y1="27.94" x2="-0.42" y2="-12.065" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
