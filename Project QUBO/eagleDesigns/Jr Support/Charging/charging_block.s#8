@@ -14602,7 +14602,7 @@ Part No. NTCLE201E3&lt;br&gt;
 <wire x1="10.541" y1="-5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
 <hole x="-8.5344" y="-1.8034" drill="2.9972"/>
 <hole x="8.5344" y="-1.8034" drill="2.9972"/>
-<pad name="P$2" x="3.7465" y="0" drill="5.25" shape="square"/>
+<pad name="P$2" x="3.7465" y="0" drill="5.25"/>
 <pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
 <text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
@@ -17405,21 +17405,21 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="276.86" y="48.26"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="DLO_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DLO"/>
 <pinref part="U$3" gate="G$1" pin="GATE"/>
 <wire x1="276.86" y1="27.94" x2="271.78" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="DHI_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DHI"/>
 <pinref part="U$2" gate="G$1" pin="GATE"/>
 <wire x1="276.86" y1="58.42" x2="271.78" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="L-IN_2" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="DRAIN"/>
 <pinref part="U$2" gate="G$1" pin="SOURCE"/>
@@ -17430,7 +17430,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="PGND_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PGND"/>
 <pinref part="U$3" gate="G$1" pin="SOURCE"/>
@@ -17445,7 +17445,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="276.86" y="38.1"/>
 </segment>
 </net>
-<net name="L-OUT" class="0">
+<net name="CS_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CS"/>
 <pinref part="C17" gate="G$1" pin="1"/>
@@ -17459,14 +17459,14 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="L2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="THM_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="THM"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="-5.08" x2="266.7" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BATT2_SENSE" class="0">
+<net name="BATT_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="BATT"/>
 <pinref part="C18" gate="G$1" pin="1"/>
@@ -17655,7 +17655,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="121.92" y="81.28"/>
 </segment>
 </net>
-<net name="N$42" class="0">
+<net name="DCIN_2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CSSN"/>
 <wire x1="276.86" y1="71.12" x2="264.16" y2="71.12" width="0.1524" layer="91"/>
@@ -17730,7 +17730,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="VIN" gate="G$1" pin="P$1"/>
 <pinref part="U$4" gate="G$1" pin="C"/>
@@ -17764,7 +17764,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="203.2" y="152.4"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="BATT1_P" class="0">
 <segment>
 <pinref part="BATT1_CHARGE" gate="G$1" pin="P$1"/>
 <pinref part="U$15" gate="G$1" pin="C"/>
@@ -17798,7 +17798,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="132.08" y="-38.1"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="BATT2_P" class="0">
 <segment>
 <pinref part="BATT2_CHARGE" gate="G$1" pin="P$1"/>
 <pinref part="U$13" gate="G$1" pin="C"/>

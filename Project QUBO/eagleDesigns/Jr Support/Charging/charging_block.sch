@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="12" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -14259,7 +14259,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FDMC8360LET40" uservalue="yes">
+<deviceset name="FDMC8360LET40">
 <gates>
 <gate name="G$1" symbol="FDMC8360LET40" x="0" y="0"/>
 </gates>
@@ -16586,7 +16586,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="U$33" library="maxim" deviceset="MAX1737" device=""/>
+<part name="BATT1_IC" library="maxim" deviceset="MAX1737" device=""/>
 <part name="C63" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C66" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
 <part name="C67" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
@@ -16600,7 +16600,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="C73" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="C74" library="resistor" deviceset="C-US" device="C0805" value="1n"/>
 <part name="C75" library="resistor" deviceset="C-US" device="C0805" value="1n"/>
-<part name="U$34" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
+<part name="B1-HFET" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
 <part name="U$37" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
 <part name="C78" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C79" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
@@ -16609,7 +16609,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="C83" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C84" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="120u"/>
 <part name="R29" library="resistor" deviceset="R-US_" device="R0805" value="100m"/>
-<part name="U$39" library="diode" deviceset="SCHOTTKY-DIODE" device="SOD-106"/>
+<part name="B1-ZENER" library="diode" deviceset="SCHOTTKY-DIODE" device="SOD-106"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="U$40" library="vishay" deviceset="NTCLE201E3" device=""/>
 <part name="U$1" library="maxim" deviceset="MAX1737" device=""/>
@@ -16638,74 +16638,74 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$5" library="diode" deviceset="SCHOTTKY-DIODE" device="SOD-106"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="U$6" library="vishay" deviceset="NTCLE201E3" device=""/>
-<part name="VIN" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="SHORE_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="U$56" library="NXP" deviceset="74LVC1G14" device=""/>
 <part name="R23" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0805" value="6.8k"/>
 <part name="C60" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="ON" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="CHARGING-SWITCH" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$57" library="ONSemi" deviceset="NCP1117" device=""/>
 <part name="C61" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C62" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
-<part name="U$58" library="diode" deviceset="VTVS" device=""/>
-<part name="U$4" library="diode" deviceset="VTVS" device=""/>
+<part name="5V-TVS_1" library="diode" deviceset="VTVS" device=""/>
+<part name="24V-TVS_1" library="diode" deviceset="VTVS" device=""/>
 <part name="U$7" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="FASTCHG"/>
 <part name="U$8" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="FULLCHG"/>
 <part name="U$9" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="Red"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="FAULT"/>
 <part name="U$10" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="FASTCHG"/>
 <part name="U$11" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R17" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R18" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="FULLCHG"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="680"/>
-<part name="AUDIO" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="BUZZER" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$12" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="Red"/>
+<part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="FAULT"/>
 <part name="R21" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0805" value="680"/>
-<part name="AUDIO1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
-<part name="U$17" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A"/>
-<part name="U$18" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A"/>
+<part name="BUZZER2" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="BATT1_FUSE" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A"/>
+<part name="BATT2_FUSE" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A"/>
 <part name="U$19" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
 <part name="C20" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
-<part name="U$20" library="switches" deviceset="GPTS203212B" device=""/>
+<part name="INPUT-SWITCH" library="switches" deviceset="GPTS203212B" device=""/>
 <part name="R26" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
-<part name="V_OUT" library="molex" deviceset="2_SUPERSABRE" device=""/>
-<part name="U$21" library="diode" deviceset="VTVS" device=""/>
-<part name="BATT1_CHARGE" library="molex" deviceset="2_SUPERSABRE" device=""/>
-<part name="U$15" library="diode" deviceset="VTVS" device=""/>
+<part name="SHORE_OUT" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="24V-TVS_OUT" library="diode" deviceset="VTVS" device=""/>
+<part name="BATT1_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="24V-TVS_2" library="diode" deviceset="VTVS" device=""/>
 <part name="U$16" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
-<part name="U$22" library="switches" deviceset="GPTS203212B" device=""/>
+<part name="BATT1_SWITCH" library="switches" deviceset="GPTS203212B" device=""/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
-<part name="BATT2_CHARGE" library="molex" deviceset="2_SUPERSABRE" device=""/>
-<part name="U$13" library="diode" deviceset="VTVS" device=""/>
+<part name="BATT2_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="24V-TVS_3" library="diode" deviceset="VTVS" device=""/>
 <part name="U$23" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
-<part name="U$24" library="switches" deviceset="GPTS203212B" device=""/>
+<part name="BATT2_SWITCH" library="switches" deviceset="GPTS203212B" device=""/>
 <part name="R27" library="resistor" deviceset="R-US_" device="R0805" value="4.3k"/>
-<part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED7" library="led" deviceset="LED" device="CHIP-LED0805" value="Shore Power"/>
 <part name="R28" library="resistor" deviceset="R-US_" device="R0805" value="1.5k"/>
-<part name="LED8" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED8" library="led" deviceset="LED" device="CHIP-LED0805" value="CHARGING"/>
 <part name="R33" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
-<part name="L1" library="resistor" deviceset="L-US" device="L6100" value="10u"/>
-<part name="L2" library="resistor" deviceset="L-US" device="L6100" value="10u"/>
+<part name="L1" library="resistor" deviceset="L-US" device="L6100" value="10uH"/>
+<part name="L2" library="resistor" deviceset="L-US" device="L6100" value="10uH"/>
 <part name="R35" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R36" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 <part name="R37" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
@@ -16715,7 +16715,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <plain>
 </plain>
 <instances>
-<instance part="U$33" gate="G$1" x="91.44" y="60.96"/>
+<instance part="BATT1_IC" gate="G$1" x="91.44" y="60.96"/>
 <instance part="C63" gate="G$1" x="43.18" y="78.74"/>
 <instance part="C66" gate="G$1" x="50.8" y="71.12"/>
 <instance part="C67" gate="G$1" x="63.5" y="71.12"/>
@@ -16729,7 +16729,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="C73" gate="G$1" x="50.8" y="27.94"/>
 <instance part="C74" gate="G$1" x="58.42" y="25.4"/>
 <instance part="C75" gate="G$1" x="66.04" y="22.86"/>
-<instance part="U$34" gate="G$1" x="121.92" y="60.96"/>
+<instance part="B1-HFET" gate="G$1" x="121.92" y="60.96"/>
 <instance part="U$37" gate="G$1" x="121.92" y="30.48"/>
 <instance part="C78" gate="G$1" x="109.22" y="53.34"/>
 <instance part="C79" gate="G$1" x="109.22" y="35.56"/>
@@ -16738,7 +16738,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="C83" gate="G$1" x="109.22" y="7.62"/>
 <instance part="C84" gate="G$1" x="137.16" y="7.62"/>
 <instance part="R29" gate="G$1" x="144.78" y="15.24" rot="R90"/>
-<instance part="U$39" gate="G$1" x="30.48" y="81.28"/>
+<instance part="B1-ZENER" gate="G$1" x="30.48" y="81.28"/>
 <instance part="D1" gate="G$1" x="109.22" y="40.64" rot="R90"/>
 <instance part="U$40" gate="G$1" x="124.46" y="-5.08"/>
 <instance part="U$1" gate="G$1" x="294.64" y="60.96" rot="MR0"/>
@@ -16767,17 +16767,17 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="U$5" gate="G$1" x="355.6" y="81.28" rot="MR0"/>
 <instance part="D2" gate="G$1" x="276.86" y="40.64" rot="MR90"/>
 <instance part="U$6" gate="G$1" x="261.62" y="-5.08" rot="MR0"/>
-<instance part="VIN" gate="G$1" x="238.76" y="172.72" rot="R90"/>
+<instance part="SHORE_IN" gate="G$1" x="238.76" y="172.72" rot="R90"/>
 <instance part="U$56" gate="G$1" x="119.38" y="127"/>
 <instance part="R23" gate="G$1" x="88.9" y="127"/>
 <instance part="R24" gate="G$1" x="76.2" y="134.62" rot="R90"/>
 <instance part="C60" gate="G$1" x="93.98" y="116.84"/>
-<instance part="ON" gate="U1" x="68.58" y="116.84" rot="MR0"/>
+<instance part="CHARGING-SWITCH" gate="U1" x="68.58" y="116.84" rot="MR0"/>
 <instance part="U$57" gate="G$1" x="38.1" y="139.7"/>
 <instance part="C61" gate="G$1" x="10.16" y="137.16"/>
 <instance part="C62" gate="G$1" x="63.5" y="137.16"/>
-<instance part="U$58" gate="G$1" x="76.2" y="116.84"/>
-<instance part="U$4" gate="G$1" x="238.76" y="154.94" rot="R90"/>
+<instance part="5V-TVS_1" gate="G$1" x="76.2" y="116.84"/>
+<instance part="24V-TVS_1" gate="G$1" x="238.76" y="154.94" rot="R90"/>
 <instance part="U$7" gate="G$1" x="-12.7" y="5.08" rot="R180"/>
 <instance part="R9" gate="G$1" x="-12.7" y="-15.24" rot="R90"/>
 <instance part="R10" gate="G$1" x="7.62" y="12.7" rot="R90"/>
@@ -16799,35 +16799,35 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="LED5" gate="G$1" x="386.08" y="-50.8" rot="MR0"/>
 <instance part="R13" gate="G$1" x="12.7" y="-73.66" rot="R90"/>
 <instance part="R19" gate="G$1" x="12.7" y="-63.5" rot="R90"/>
-<instance part="AUDIO" gate="U1" x="38.1" y="-71.12"/>
+<instance part="BUZZER" gate="U1" x="38.1" y="-71.12"/>
 <instance part="U$12" gate="G$1" x="373.38" y="-50.8" rot="MR180"/>
 <instance part="R20" gate="G$1" x="353.06" y="-43.18" rot="MR90"/>
 <instance part="LED6" gate="G$1" x="373.38" y="-81.28" rot="MR0"/>
 <instance part="R21" gate="G$1" x="373.38" y="-73.66" rot="MR90"/>
 <instance part="R22" gate="G$1" x="373.38" y="-63.5" rot="MR90"/>
-<instance part="AUDIO1" gate="U1" x="347.98" y="-71.12" rot="MR0"/>
-<instance part="U$17" gate="G$1" x="154.94" y="10.16" rot="MR0"/>
-<instance part="U$18" gate="G$1" x="231.14" y="10.16"/>
+<instance part="BUZZER2" gate="U1" x="347.98" y="-71.12" rot="MR0"/>
+<instance part="BATT1_FUSE" gate="G$1" x="154.94" y="10.16" rot="MR0"/>
+<instance part="BATT2_FUSE" gate="G$1" x="231.14" y="10.16"/>
 <instance part="U$19" gate="G$1" x="233.68" y="149.86" rot="MR180"/>
 <instance part="R25" gate="G$1" x="213.36" y="152.4" rot="R180"/>
 <instance part="C20" gate="G$1" x="223.52" y="147.32"/>
-<instance part="U$20" gate="G$1" x="203.2" y="139.7" rot="R90"/>
+<instance part="INPUT-SWITCH" gate="G$1" x="203.2" y="139.7" rot="R90"/>
 <instance part="R26" gate="G$1" x="203.2" y="157.48" rot="R270"/>
-<instance part="V_OUT" gate="G$1" x="302.26" y="137.16" rot="MR0"/>
-<instance part="U$21" gate="G$1" x="312.42" y="137.16"/>
-<instance part="BATT1_CHARGE" gate="G$1" x="167.64" y="-58.42" rot="MR270"/>
-<instance part="U$15" gate="G$1" x="167.64" y="-40.64" rot="MR270"/>
+<instance part="SHORE_OUT" gate="G$1" x="302.26" y="137.16" rot="MR0"/>
+<instance part="24V-TVS_OUT" gate="G$1" x="312.42" y="137.16"/>
+<instance part="BATT1_IN" gate="G$1" x="167.64" y="-58.42" rot="MR270"/>
+<instance part="24V-TVS_2" gate="G$1" x="167.64" y="-40.64" rot="MR270"/>
 <instance part="U$16" gate="G$1" x="162.56" y="-35.56"/>
 <instance part="R4" gate="G$1" x="142.24" y="-38.1" rot="MR0"/>
 <instance part="C11" gate="G$1" x="152.4" y="-33.02" rot="MR180"/>
-<instance part="U$22" gate="G$1" x="132.08" y="-25.4" rot="MR270"/>
+<instance part="BATT1_SWITCH" gate="G$1" x="132.08" y="-25.4" rot="MR270"/>
 <instance part="R6" gate="G$1" x="132.08" y="-43.18" rot="MR90"/>
-<instance part="BATT2_CHARGE" gate="G$1" x="218.44" y="-58.42" rot="R270"/>
-<instance part="U$13" gate="G$1" x="218.44" y="-40.64" rot="R270"/>
+<instance part="BATT2_IN" gate="G$1" x="218.44" y="-58.42" rot="R270"/>
+<instance part="24V-TVS_3" gate="G$1" x="218.44" y="-40.64" rot="R270"/>
 <instance part="U$23" gate="G$1" x="223.52" y="-35.56" rot="MR0"/>
 <instance part="R8" gate="G$1" x="243.84" y="-38.1"/>
 <instance part="C12" gate="G$1" x="233.68" y="-33.02" rot="R180"/>
-<instance part="U$24" gate="G$1" x="254" y="-25.4" rot="R270"/>
+<instance part="BATT2_SWITCH" gate="G$1" x="254" y="-25.4" rot="R270"/>
 <instance part="R27" gate="G$1" x="254" y="-43.18" rot="R90"/>
 <instance part="LED7" gate="G$1" x="236.22" y="119.38"/>
 <instance part="R28" gate="G$1" x="236.22" y="127" rot="R90"/>
@@ -16844,7 +16844,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="GND"/>
+<pinref part="BATT1_IC" gate="G$1" pin="GND"/>
 <pinref part="C75" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C74" gate="G$1" pin="2"/>
@@ -16960,11 +16960,11 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <label x="269.24" y="12.7" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="VIN" gate="G$1" pin="P$2"/>
+<pinref part="SHORE_IN" gate="G$1" pin="P$2"/>
 <wire x1="241.3" y1="165.1" x2="241.3" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="154.94" x2="271.78" y2="154.94" width="0.1524" layer="91"/>
 <label x="266.7" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="A"/>
+<pinref part="24V-TVS_1" gate="G$1" pin="A"/>
 <junction x="241.3" y="154.94"/>
 </segment>
 <segment>
@@ -16995,7 +16995,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <wire x1="12.7" y1="-86.36" x2="12.7" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-91.44" x2="5.08" y2="-91.44" width="0.1524" layer="91"/>
 <label x="5.08" y="-91.44" size="1.778" layer="95"/>
-<pinref part="AUDIO" gate="U1" pin="P$2"/>
+<pinref part="BUZZER" gate="U1" pin="P$2"/>
 <wire x1="30.48" y1="-73.66" x2="30.48" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-91.44" x2="12.7" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="12.7" y="-91.44"/>
@@ -17017,33 +17017,33 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <wire x1="373.38" y1="-86.36" x2="373.38" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="-91.44" x2="381" y2="-91.44" width="0.1524" layer="91"/>
 <label x="381" y="-91.44" size="1.778" layer="95" rot="MR0"/>
-<pinref part="AUDIO1" gate="U1" pin="P$2"/>
+<pinref part="BUZZER2" gate="U1" pin="P$2"/>
 <wire x1="355.6" y1="-73.66" x2="355.6" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="-91.44" x2="373.38" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="373.38" y="-91.44"/>
 </segment>
 <segment>
-<pinref part="U$20" gate="G$1" pin="P$1"/>
+<pinref part="INPUT-SWITCH" gate="G$1" pin="P$1"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="132.08" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 <label x="218.44" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V_OUT" gate="G$1" pin="P$2"/>
-<pinref part="U$21" gate="G$1" pin="A"/>
+<pinref part="SHORE_OUT" gate="G$1" pin="P$2"/>
+<pinref part="24V-TVS_OUT" gate="G$1" pin="A"/>
 <wire x1="312.42" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
 <label x="325.12" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$22" gate="G$1" pin="P$1"/>
+<pinref part="BATT1_SWITCH" gate="G$1" pin="P$1"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-17.78" x2="152.4" y2="-27.94" width="0.1524" layer="91"/>
 <label x="147.32" y="-17.78" size="1.778" layer="95" rot="MR180"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="P$1"/>
+<pinref part="BATT2_SWITCH" gate="G$1" pin="P$1"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="254" y1="-17.78" x2="233.68" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-17.78" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
@@ -17073,17 +17073,17 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="C60" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="114.3" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="ON" gate="U1" pin="P$2"/>
+<pinref part="CHARGING-SWITCH" gate="U1" pin="P$2"/>
 <wire x1="76.2" y1="114.3" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="93.98" y="111.76"/>
-<pinref part="U$58" gate="G$1" pin="A"/>
+<pinref part="5V-TVS_1" gate="G$1" pin="A"/>
 <junction x="76.2" y="114.3"/>
 </segment>
 </net>
 <net name="BATT_1" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="BATT"/>
+<pinref part="BATT1_IC" gate="G$1" pin="BATT"/>
 <pinref part="C83" gate="G$1" pin="1"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="10.16" x2="137.16" y2="10.16" width="0.1524" layer="91"/>
@@ -17092,13 +17092,13 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="137.16" y="10.16"/>
 <wire x1="137.16" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="U$17" gate="G$1" pin="P$2"/>
+<pinref part="BATT1_FUSE" gate="G$1" pin="P$2"/>
 <junction x="144.78" y="10.16"/>
 </segment>
 </net>
 <net name="V_SHORE" class="0">
 <segment>
-<pinref part="U$39" gate="G$1" pin="A"/>
+<pinref part="B1-ZENER" gate="G$1" pin="A"/>
 <wire x1="27.94" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
 <label x="12.7" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -17176,8 +17176,8 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="236.22" y="132.08"/>
 </segment>
 <segment>
-<pinref part="V_OUT" gate="G$1" pin="P$1"/>
-<pinref part="U$21" gate="G$1" pin="C"/>
+<pinref part="SHORE_OUT" gate="G$1" pin="P$1"/>
+<pinref part="24V-TVS_OUT" gate="G$1" pin="C"/>
 <wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
 <label x="325.12" y="139.7" size="1.778" layer="95"/>
 </segment>
@@ -17186,7 +17186,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<pinref part="U$33" gate="G$1" pin="VADJ"/>
+<pinref part="BATT1_IC" gate="G$1" pin="VADJ"/>
 <wire x1="73.66" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 <junction x="58.42" y="50.8"/>
 <wire x1="58.42" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
@@ -17194,14 +17194,14 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$65" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="VL"/>
+<pinref part="BATT1_IC" gate="G$1" pin="VL"/>
 <pinref part="C67" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C66" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 <junction x="63.5" y="73.66"/>
-<pinref part="U$33" gate="G$1" pin="CELL"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CELL"/>
 <wire x1="73.66" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="68.58" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <junction x="71.12" y="73.66"/>
@@ -17209,10 +17209,10 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$68" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="ISETOUT"/>
-<pinref part="U$33" gate="G$1" pin="ISETIN"/>
+<pinref part="BATT1_IC" gate="G$1" pin="ISETOUT"/>
+<pinref part="BATT1_IC" gate="G$1" pin="ISETIN"/>
 <wire x1="73.66" y1="55.88" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="REF"/>
+<pinref part="BATT1_IC" gate="G$1" pin="REF"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C69" gate="G$1" pin="1"/>
@@ -17232,7 +17232,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$67" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="CCV"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CCV"/>
 <pinref part="C71" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R32" gate="G$1" pin="2"/>
@@ -17242,21 +17242,21 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$69" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="CCI"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CCI"/>
 <pinref part="C72" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$70" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="CCS"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CCS"/>
 <pinref part="C73" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="TIMER1"/>
+<pinref part="BATT1_IC" gate="G$1" pin="TIMER1"/>
 <pinref part="C74" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
 </segment>
@@ -17264,19 +17264,19 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="N$72" class="0">
 <segment>
 <pinref part="C75" gate="G$1" pin="1"/>
-<pinref part="U$33" gate="G$1" pin="TIMER2"/>
+<pinref part="BATT1_IC" gate="G$1" pin="TIMER2"/>
 <wire x1="66.04" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$75" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="LX"/>
+<pinref part="BATT1_IC" gate="G$1" pin="LX"/>
 <pinref part="C78" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$76" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="BST"/>
+<pinref part="BATT1_IC" gate="G$1" pin="BST"/>
 <pinref part="C78" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="109.22" y1="43.18" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
@@ -17285,22 +17285,22 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$79" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="DLO"/>
+<pinref part="BATT1_IC" gate="G$1" pin="DLO"/>
 <pinref part="U$37" gate="G$1" pin="GATE"/>
 <wire x1="109.22" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$80" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="DHI"/>
-<pinref part="U$34" gate="G$1" pin="GATE"/>
+<pinref part="BATT1_IC" gate="G$1" pin="DHI"/>
+<pinref part="B1-HFET" gate="G$1" pin="GATE"/>
 <wire x1="109.22" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$81" class="0">
 <segment>
 <pinref part="U$37" gate="G$1" pin="DRAIN"/>
-<pinref part="U$34" gate="G$1" pin="SOURCE"/>
+<pinref part="B1-HFET" gate="G$1" pin="SOURCE"/>
 <wire x1="121.92" y1="38.1" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="45.72" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
@@ -17310,14 +17310,14 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$82" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="PGND"/>
+<pinref part="BATT1_IC" gate="G$1" pin="PGND"/>
 <pinref part="U$37" gate="G$1" pin="SOURCE"/>
 <wire x1="109.22" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$83" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="VLO"/>
+<pinref part="BATT1_IC" gate="G$1" pin="VLO"/>
 <pinref part="C79" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <junction x="109.22" y="38.1"/>
@@ -17325,7 +17325,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="CS_1" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="CS"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CS"/>
 <pinref part="C82" gate="G$1" pin="1"/>
 <pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="20.32" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
@@ -17339,7 +17339,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$84" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="THM"/>
+<pinref part="BATT1_IC" gate="G$1" pin="THM"/>
 <pinref part="U$40" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
@@ -17497,13 +17497,13 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <junction x="248.92" y="10.16"/>
 <wire x1="248.92" y1="10.16" x2="241.3" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="U$18" gate="G$1" pin="P$2"/>
+<pinref part="BATT2_FUSE" gate="G$1" pin="P$2"/>
 <junction x="241.3" y="10.16"/>
 </segment>
 </net>
 <net name="!SHDN!" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="!SHDN!"/>
+<pinref part="BATT1_IC" gate="G$1" pin="!SHDN!"/>
 <wire x1="73.66" y1="71.12" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="!SHDN!"/>
 <wire x1="312.42" y1="71.12" x2="312.42" y2="96.52" width="0.1524" layer="91"/>
@@ -17534,10 +17534,10 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="127" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="ON" gate="U1" pin="P$1"/>
+<pinref part="CHARGING-SWITCH" gate="U1" pin="P$1"/>
 <wire x1="76.2" y1="119.38" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <junction x="76.2" y="127"/>
-<pinref part="U$58" gate="G$1" pin="C"/>
+<pinref part="5V-TVS_1" gate="G$1" pin="C"/>
 <junction x="76.2" y="119.38"/>
 </segment>
 </net>
@@ -17575,7 +17575,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <wire x1="7.62" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="7.62" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
 <junction x="7.62" y="7.62"/>
-<pinref part="U$33" gate="G$1" pin="!FASTCHG!"/>
+<pinref part="BATT1_IC" gate="G$1" pin="!FASTCHG!"/>
 <wire x1="45.72" y1="10.16" x2="73.66" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17597,7 +17597,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="U$8" gate="G$1" pin="G"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="!FULLCHG!"/>
+<pinref part="BATT1_IC" gate="G$1" pin="!FULLCHG!"/>
 <wire x1="73.66" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="7.62" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
@@ -17609,7 +17609,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="U$9" gate="G$1" pin="G"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="-48.26" x2="33.02" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="!FAULT!"/>
+<pinref part="BATT1_IC" gate="G$1" pin="!FAULT!"/>
 <wire x1="33.02" y1="-48.26" x2="73.66" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-48.26" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 <junction x="33.02" y="-48.26"/>
@@ -17643,21 +17643,21 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="U$33" gate="G$1" pin="CSSN"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CSSN"/>
 <wire x1="109.22" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$34" gate="G$1" pin="DRAIN"/>
+<pinref part="B1-HFET" gate="G$1" pin="DRAIN"/>
 <wire x1="121.92" y1="71.12" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
 <junction x="121.92" y="71.12"/>
-<pinref part="U$33" gate="G$1" pin="DCIN"/>
+<pinref part="BATT1_IC" gate="G$1" pin="DCIN"/>
 <pinref part="C63" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$39" gate="G$1" pin="C"/>
+<pinref part="B1-ZENER" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
 <junction x="43.18" y="81.28"/>
 <wire x1="43.18" y1="81.28" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 <junction x="43.18" y="81.28"/>
 <wire x1="43.18" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="CSSP"/>
+<pinref part="BATT1_IC" gate="G$1" pin="CSSP"/>
 <wire x1="109.22" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="91.44" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="71.12" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
@@ -17696,7 +17696,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<pinref part="AUDIO" gate="U1" pin="P$1"/>
+<pinref part="BUZZER" gate="U1" pin="P$1"/>
 <wire x1="12.7" y1="-68.58" x2="30.48" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="12.7" y="-68.58"/>
 </segment>
@@ -17728,7 +17728,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="AUDIO1" gate="U1" pin="P$1"/>
+<pinref part="BUZZER2" gate="U1" pin="P$1"/>
 <wire x1="373.38" y1="-68.58" x2="355.6" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="373.38" y="-68.58"/>
 </segment>
@@ -17741,8 +17741,8 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="VIN" gate="G$1" pin="P$1"/>
-<pinref part="U$4" gate="G$1" pin="C"/>
+<pinref part="SHORE_IN" gate="G$1" pin="P$1"/>
+<pinref part="24V-TVS_1" gate="G$1" pin="C"/>
 <wire x1="236.22" y1="165.1" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U$19" gate="G$1" pin="D"/>
 <junction x="236.22" y="154.94"/>
@@ -17766,7 +17766,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="N$51" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="U$20" gate="G$1" pin="P$2"/>
+<pinref part="INPUT-SWITCH" gate="G$1" pin="P$2"/>
 <wire x1="208.28" y1="152.4" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="152.4" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -17775,8 +17775,8 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="BATT1_P" class="0">
 <segment>
-<pinref part="BATT1_CHARGE" gate="G$1" pin="P$1"/>
-<pinref part="U$15" gate="G$1" pin="C"/>
+<pinref part="BATT1_IN" gate="G$1" pin="P$1"/>
+<pinref part="24V-TVS_2" gate="G$1" pin="C"/>
 <wire x1="165.1" y1="-50.8" x2="165.1" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="D"/>
 <junction x="165.1" y="-40.64"/>
@@ -17800,7 +17800,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="N$52" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="U$22" gate="G$1" pin="P$2"/>
+<pinref part="BATT1_SWITCH" gate="G$1" pin="P$2"/>
 <wire x1="137.16" y1="-38.1" x2="132.08" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-38.1" x2="132.08" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -17809,8 +17809,8 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="BATT2_P" class="0">
 <segment>
-<pinref part="BATT2_CHARGE" gate="G$1" pin="P$1"/>
-<pinref part="U$13" gate="G$1" pin="C"/>
+<pinref part="BATT2_IN" gate="G$1" pin="P$1"/>
+<pinref part="24V-TVS_3" gate="G$1" pin="C"/>
 <wire x1="220.98" y1="-50.8" x2="220.98" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="U$23" gate="G$1" pin="D"/>
 <junction x="220.98" y="-40.64"/>
@@ -17834,7 +17834,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="N$55" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U$24" gate="G$1" pin="P$2"/>
+<pinref part="BATT2_SWITCH" gate="G$1" pin="P$2"/>
 <wire x1="248.92" y1="-38.1" x2="254" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="254" y1="-38.1" x2="254" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -17844,14 +17844,14 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <net name="N$44" class="0">
 <segment>
 <pinref part="U$23" gate="G$1" pin="S"/>
-<pinref part="U$18" gate="G$1" pin="P$1"/>
+<pinref part="BATT2_FUSE" gate="G$1" pin="P$1"/>
 <wire x1="220.98" y1="-30.48" x2="220.98" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FET-D_1" class="0">
 <segment>
 <pinref part="U$16" gate="G$1" pin="S"/>
-<pinref part="U$17" gate="G$1" pin="P$1"/>
+<pinref part="BATT1_FUSE" gate="G$1" pin="P$1"/>
 <wire x1="165.1" y1="-30.48" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17918,11 +17918,11 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <label x="132.08" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BATT1_CHARGE" gate="G$1" pin="P$2"/>
+<pinref part="BATT1_IN" gate="G$1" pin="P$2"/>
 <wire x1="170.18" y1="-50.8" x2="170.18" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="-40.64" x2="177.8" y2="-40.64" width="0.1524" layer="91"/>
 <label x="175.26" y="-40.64" size="1.778" layer="95" rot="MR180"/>
-<pinref part="U$15" gate="G$1" pin="A"/>
+<pinref part="24V-TVS_2" gate="G$1" pin="A"/>
 <junction x="170.18" y="-40.64"/>
 </segment>
 <segment>
@@ -17936,11 +17936,11 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 </net>
 <net name="BATT2_M" class="0">
 <segment>
-<pinref part="BATT2_CHARGE" gate="G$1" pin="P$2"/>
+<pinref part="BATT2_IN" gate="G$1" pin="P$2"/>
 <wire x1="215.9" y1="-50.8" x2="215.9" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="-40.64" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
 <label x="210.82" y="-40.64" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$13" gate="G$1" pin="A"/>
+<pinref part="24V-TVS_3" gate="G$1" pin="A"/>
 <junction x="215.9" y="-40.64"/>
 </segment>
 <segment>
