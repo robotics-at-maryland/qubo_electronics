@@ -17730,7 +17730,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$45" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="VIN" gate="G$1" pin="P$1"/>
 <pinref part="U$4" gate="G$1" pin="C"/>

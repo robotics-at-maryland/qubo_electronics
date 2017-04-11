@@ -16652,14 +16652,14 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$7" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="FASTCHG"/>
 <part name="U$8" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="FULLCHG"/>
 <part name="U$9" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="Red"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="FAULT"/>
 <part name="U$10" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
@@ -16670,7 +16670,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="LED5" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="680"/>
-<part name="AUDIO" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="BUZZER" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$12" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="LED6" library="led" deviceset="LED" device="CHIP-LED0805" value="Red"/>
@@ -16799,7 +16799,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <instance part="LED5" gate="G$1" x="386.08" y="-50.8" rot="MR0"/>
 <instance part="R13" gate="G$1" x="12.7" y="-73.66" rot="R90"/>
 <instance part="R19" gate="G$1" x="12.7" y="-63.5" rot="R90"/>
-<instance part="AUDIO" gate="U1" x="38.1" y="-71.12"/>
+<instance part="BUZZER" gate="U1" x="38.1" y="-71.12"/>
 <instance part="U$12" gate="G$1" x="373.38" y="-50.8" rot="MR180"/>
 <instance part="R20" gate="G$1" x="353.06" y="-43.18" rot="MR90"/>
 <instance part="LED6" gate="G$1" x="373.38" y="-81.28" rot="MR0"/>
@@ -16995,7 +16995,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <wire x1="12.7" y1="-86.36" x2="12.7" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-91.44" x2="5.08" y2="-91.44" width="0.1524" layer="91"/>
 <label x="5.08" y="-91.44" size="1.778" layer="95"/>
-<pinref part="AUDIO" gate="U1" pin="P$2"/>
+<pinref part="BUZZER" gate="U1" pin="P$2"/>
 <wire x1="30.48" y1="-73.66" x2="30.48" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-91.44" x2="12.7" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="12.7" y="-91.44"/>
@@ -17696,7 +17696,7 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<pinref part="AUDIO" gate="U1" pin="P$1"/>
+<pinref part="BUZZER" gate="U1" pin="P$1"/>
 <wire x1="12.7" y1="-68.58" x2="30.48" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="12.7" y="-68.58"/>
 </segment>
