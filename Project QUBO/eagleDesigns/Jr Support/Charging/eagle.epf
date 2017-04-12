@@ -57,8 +57,8 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 
 [Win_1]
 Type="Control Panel"
-Loc="1493 -127 2840 600"
-State=0
+Loc="18 0 1365 727"
+State=2
 Number=0
 
 [Desktop]
