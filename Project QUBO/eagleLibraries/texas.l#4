@@ -32619,6 +32619,22 @@ changed 2011-11-09</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="REF" x="0" y="2.54" visible="off" length="short" rot="R270"/>
 </symbol>
+<symbol name="INA219">
+<pin name="IN+" x="-12.7" y="7.62" length="middle"/>
+<pin name="IN-" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VS" x="-12.7" y="-7.62" length="middle"/>
+<pin name="SCL" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="A0" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="A1" x="12.7" y="7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ2054PN" prefix="U">
