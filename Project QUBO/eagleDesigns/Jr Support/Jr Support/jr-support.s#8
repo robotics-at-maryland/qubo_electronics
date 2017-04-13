@@ -14995,7 +14995,7 @@ by R. Vogg  15.March.2002</description>
 <part name="C53" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="C54" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="U$7" library="texas" deviceset="ADS7828" device=""/>
+<part name="THRUSTER_CURR_ADC" library="texas" deviceset="ADS7828" device=""/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0805" value="0"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="THRUST2" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041"/>
@@ -15040,9 +15040,9 @@ by R. Vogg  15.March.2002</description>
 <part name="C57" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="U$40" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A Fuse"/>
 <part name="C58" library="resistor" deviceset="C-US" device="C0805"/>
-<part name="U$42" library="texas" deviceset="ADC121C021" device=""/>
-<part name="U$43" library="texas" deviceset="ADC121C021" device=""/>
-<part name="U$44" library="texas" deviceset="ADC121C021" device=""/>
+<part name="5V_CURR_ADC" library="texas" deviceset="ADC121C021" device=""/>
+<part name="V-THRUST_CURR_ADC" library="texas" deviceset="ADC121C021" device=""/>
+<part name="12V_CURR_ADC" library="texas" deviceset="ADC121C021" device=""/>
 <part name="U$10" library="diode" deviceset="VTVS" device=""/>
 <part name="U$13" library="diode" deviceset="VTVS" device=""/>
 <part name="U$16" library="diode" deviceset="VTVS" device=""/>
@@ -15116,11 +15116,11 @@ by R. Vogg  15.March.2002</description>
 <part name="C63" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
 <part name="C65" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="L1" library="resistor" deviceset="L-US" device="L0740" value="2.2u"/>
-<part name="U$56" library="texas" deviceset="INA219" device="SOT23"/>
+<part name="12V_VOLTAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
-<part name="U$41" library="texas" deviceset="INA219" device="SOT23"/>
+<part name="V-THRUST_VOLAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R30" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
-<part name="U$55" library="texas" deviceset="INA219" device="SOT23"/>
+<part name="5V_VOLTAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R35" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
 <part name="SHORE_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="U$57" library="diode" deviceset="VTVS" device=""/>
@@ -15218,7 +15218,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="C53" gate="G$1" x="342.9" y="93.98" rot="R180"/>
 <instance part="C54" gate="G$1" x="160.02" y="-88.9" rot="MR0"/>
 <instance part="R19" gate="G$1" x="-259.08" y="81.28"/>
-<instance part="U$7" gate="G$1" x="73.66" y="-81.28"/>
+<instance part="THRUSTER_CURR_ADC" gate="G$1" x="73.66" y="-81.28"/>
 <instance part="R22" gate="G$1" x="60.96" y="-101.6" rot="R270"/>
 <instance part="C7" gate="G$1" x="93.98" y="-68.58"/>
 <instance part="THRUST2" gate="U1" x="190.5" y="-162.56"/>
@@ -15263,9 +15263,9 @@ by R. Vogg  15.March.2002</description>
 <instance part="C57" gate="G$1" x="439.42" y="-137.16"/>
 <instance part="U$40" gate="G$1" x="398.78" y="-154.94"/>
 <instance part="C58" gate="G$1" x="408.94" y="-160.02" rot="MR0"/>
-<instance part="U$42" gate="G$1" x="2.54" y="-5.08"/>
-<instance part="U$43" gate="G$1" x="-2.54" y="71.12"/>
-<instance part="U$44" gate="G$1" x="-5.08" y="142.24"/>
+<instance part="5V_CURR_ADC" gate="G$1" x="2.54" y="-5.08"/>
+<instance part="V-THRUST_CURR_ADC" gate="G$1" x="-2.54" y="71.12"/>
+<instance part="12V_CURR_ADC" gate="G$1" x="-5.08" y="142.24"/>
 <instance part="U$10" gate="G$1" x="416.56" y="-167.64"/>
 <instance part="U$13" gate="G$1" x="335.28" y="-167.64"/>
 <instance part="U$16" gate="G$1" x="416.56" y="-93.98"/>
@@ -15345,11 +15345,11 @@ by R. Vogg  15.March.2002</description>
 <attribute name="NAME" x="-139.7" y="-6.35" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-132.08" y="1.27" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$56" gate="G$1" x="53.34" y="109.22"/>
+<instance part="12V_VOLTAGE" gate="G$1" x="53.34" y="109.22"/>
 <instance part="R25" gate="G$1" x="35.56" y="116.84"/>
-<instance part="U$41" gate="G$1" x="53.34" y="35.56"/>
+<instance part="V-THRUST_VOLAGE" gate="G$1" x="53.34" y="35.56"/>
 <instance part="R30" gate="G$1" x="35.56" y="43.18"/>
-<instance part="U$55" gate="G$1" x="53.34" y="-35.56"/>
+<instance part="5V_VOLTAGE" gate="G$1" x="53.34" y="-35.56"/>
 <instance part="R35" gate="G$1" x="35.56" y="-27.94"/>
 <instance part="SHORE_IN" gate="G$1" x="-340.36" y="144.78" rot="R90"/>
 <instance part="U$57" gate="G$1" x="-340.36" y="127" rot="R90"/>
@@ -15653,17 +15653,17 @@ by R. Vogg  15.March.2002</description>
 <junction x="167.64" y="-99.06"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="GND"/>
 <wire x1="86.36" y1="-88.9" x2="93.98" y2="-88.9" width="0.1524" layer="91"/>
 <label x="93.98" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="A0"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="A0"/>
 <wire x1="86.36" y1="-83.82" x2="93.98" y2="-83.82" width="0.1524" layer="91"/>
 <label x="93.98" y="-83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="A1"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="A1"/>
 <wire x1="86.36" y1="-86.36" x2="93.98" y2="-86.36" width="0.1524" layer="91"/>
 <label x="93.98" y="-86.36" size="1.778" layer="95"/>
 </segment>
@@ -15881,32 +15881,32 @@ by R. Vogg  15.March.2002</description>
 <junction x="416.56" y="-170.18"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="GND"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="-17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="GND"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="GND"/>
 <wire x1="0" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <label x="7.62" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="GND"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="GND"/>
 <wire x1="-2.54" y1="129.54" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
 <label x="5.08" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="ADR0"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="ADR0"/>
 <wire x1="15.24" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
 <label x="20.32" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="ADR1"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="ADR1"/>
 <wire x1="15.24" y1="137.16" x2="22.86" y2="137.16" width="0.1524" layer="91"/>
 <label x="20.32" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="ADR0"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="ADR0"/>
 <wire x1="22.86" y1="-7.62" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
 <label x="27.94" y="-7.62" size="1.778" layer="95"/>
 </segment>
@@ -16032,30 +16032,30 @@ by R. Vogg  15.March.2002</description>
 <label x="-200.66" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="GND"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
 <label x="33.02" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$41" gate="G$1" pin="GND"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <label x="33.02" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$55" gate="G$1" pin="GND"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="-38.1" x2="33.02" y2="-38.1" width="0.1524" layer="91"/>
 <label x="33.02" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="A0"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="A0"/>
 <wire x1="66.04" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
 <label x="68.58" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$55" gate="G$1" pin="A1"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="A1"/>
 <wire x1="66.04" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
 <label x="68.58" y="-27.94" size="1.778" layer="95"/>
-<pinref part="U$55" gate="G$1" pin="A0"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="A0"/>
 <wire x1="66.04" y1="-33.02" x2="66.04" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="66.04" y="-27.94"/>
 </segment>
@@ -16169,30 +16169,30 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-182.88" y1="27.94" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="VS"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="VS"/>
 <wire x1="40.64" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
 <label x="27.94" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$41" gate="G$1" pin="VS"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="VS"/>
 <wire x1="40.64" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 <label x="27.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$55" gate="G$1" pin="VS"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="VS"/>
 <wire x1="40.64" y1="-43.18" x2="33.02" y2="-43.18" width="0.1524" layer="91"/>
 <label x="27.94" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="A1"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="A1"/>
 <wire x1="66.04" y1="116.84" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 <label x="68.58" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$41" gate="G$1" pin="A1"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A1"/>
 <wire x1="66.04" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
 <label x="68.58" y="43.18" size="1.778" layer="95"/>
-<pinref part="U$41" gate="G$1" pin="A0"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A0"/>
 <wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
 </segment>
@@ -16350,12 +16350,12 @@ by R. Vogg  15.March.2002</description>
 <wire x1="73.66" y1="205.74" x2="73.66" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="REF"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="REF"/>
 <wire x1="60.96" y1="-66.04" x2="53.34" y2="-66.04" width="0.1524" layer="91"/>
 <label x="53.34" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VDD"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="VDD"/>
 <wire x1="86.36" y1="-66.04" x2="93.98" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <label x="86.36" y="-66.04" size="1.778" layer="95"/>
@@ -16410,32 +16410,32 @@ by R. Vogg  15.March.2002</description>
 <label x="421.64" y="-116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="VDD"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="VDD"/>
 <wire x1="2.54" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 <label x="12.7" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="VDD"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="VDD"/>
 <wire x1="-2.54" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
 <label x="7.62" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="VDD"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="VDD"/>
 <wire x1="-5.08" y1="154.94" x2="7.62" y2="154.94" width="0.1524" layer="91"/>
 <label x="5.08" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="ADR0"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="ADR0"/>
 <wire x1="17.78" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 <label x="22.86" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="ADR1"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="ADR1"/>
 <wire x1="17.78" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <label x="22.86" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="ADR1"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="ADR1"/>
 <wire x1="22.86" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
 <label x="27.94" y="-10.16" size="1.778" layer="95"/>
 </segment>
@@ -16583,37 +16583,37 @@ by R. Vogg  15.March.2002</description>
 <label x="226.06" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="SCL"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="SCL"/>
 <wire x1="86.36" y1="-78.74" x2="93.98" y2="-78.74" width="0.1524" layer="91"/>
 <label x="93.98" y="-78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="SCL"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="SCL"/>
 <wire x1="22.86" y1="-5.08" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
 <label x="27.94" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="SCL"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="SCL"/>
 <wire x1="17.78" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
 <label x="22.86" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="SCL"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="SCL"/>
 <wire x1="15.24" y1="142.24" x2="22.86" y2="142.24" width="0.1524" layer="91"/>
 <label x="20.32" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="SCL"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="SCL"/>
 <wire x1="66.04" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
 <label x="68.58" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$41" gate="G$1" pin="SCL"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="SCL"/>
 <wire x1="66.04" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
 <label x="68.58" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$55" gate="G$1" pin="SCL"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="SCL"/>
 <wire x1="66.04" y1="-43.18" x2="73.66" y2="-43.18" width="0.1524" layer="91"/>
 <label x="68.58" y="-43.18" size="1.778" layer="95"/>
 </segment>
@@ -16640,37 +16640,37 @@ by R. Vogg  15.March.2002</description>
 <label x="226.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="SDA"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="SDA"/>
 <wire x1="86.36" y1="-76.2" x2="93.98" y2="-76.2" width="0.1524" layer="91"/>
 <label x="93.98" y="-76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$42" gate="G$1" pin="SDA"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="SDA"/>
 <wire x1="22.86" y1="-2.54" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
 <label x="27.94" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$43" gate="G$1" pin="SDA"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="SDA"/>
 <wire x1="17.78" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="22.86" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$44" gate="G$1" pin="SDA"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="SDA"/>
 <wire x1="15.24" y1="144.78" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 <label x="20.32" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$56" gate="G$1" pin="SDA"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="SDA"/>
 <wire x1="66.04" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <label x="68.58" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$41" gate="G$1" pin="SDA"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="SDA"/>
 <wire x1="66.04" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <label x="68.58" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$55" gate="G$1" pin="SDA"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="SDA"/>
 <wire x1="66.04" y1="-38.1" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
 <label x="68.58" y="-38.1" size="1.778" layer="95"/>
 </segment>
@@ -17207,7 +17207,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T1_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH0"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH0"/>
 <wire x1="60.96" y1="-76.2" x2="53.34" y2="-76.2" width="0.1524" layer="91"/>
 <label x="53.34" y="-76.2" size="1.778" layer="95"/>
 </segment>
@@ -17219,7 +17219,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T3_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH2"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH2"/>
 <wire x1="60.96" y1="-81.28" x2="53.34" y2="-81.28" width="0.1524" layer="91"/>
 <label x="53.34" y="-81.28" size="1.778" layer="95"/>
 </segment>
@@ -17231,7 +17231,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T4_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH3"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH3"/>
 <wire x1="60.96" y1="-83.82" x2="53.34" y2="-83.82" width="0.1524" layer="91"/>
 <label x="53.34" y="-83.82" size="1.778" layer="95"/>
 </segment>
@@ -17243,7 +17243,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T5_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH4"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH4"/>
 <wire x1="60.96" y1="-86.36" x2="53.34" y2="-86.36" width="0.1524" layer="91"/>
 <label x="53.34" y="-86.36" size="1.778" layer="95"/>
 </segment>
@@ -17255,7 +17255,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T6_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH5"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH5"/>
 <wire x1="60.96" y1="-88.9" x2="53.34" y2="-88.9" width="0.1524" layer="91"/>
 <label x="53.34" y="-88.9" size="1.778" layer="95"/>
 </segment>
@@ -17267,7 +17267,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T7_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH6"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH6"/>
 <wire x1="60.96" y1="-91.44" x2="53.34" y2="-91.44" width="0.1524" layer="91"/>
 <label x="53.34" y="-91.44" size="1.778" layer="95"/>
 </segment>
@@ -17279,7 +17279,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="T2_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH1"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH1"/>
 <wire x1="60.96" y1="-78.74" x2="53.34" y2="-78.74" width="0.1524" layer="91"/>
 <label x="53.34" y="-78.74" size="1.778" layer="95"/>
 </segment>
@@ -17291,13 +17291,13 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="COM"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="COM"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="T8_CURR" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CH7"/>
+<pinref part="THRUSTER_CURR_ADC" gate="G$1" pin="CH7"/>
 <wire x1="60.96" y1="-93.98" x2="53.34" y2="-93.98" width="0.1524" layer="91"/>
 <label x="53.34" y="-93.98" size="1.778" layer="95"/>
 </segment>
@@ -17512,7 +17512,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$57" class="0">
 <segment>
-<pinref part="U$42" gate="G$1" pin="VIN"/>
+<pinref part="5V_CURR_ADC" gate="G$1" pin="VIN"/>
 <pinref part="U$2" gate="G$1" pin="VIOUT"/>
 <wire x1="-20.32" y1="-5.08" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
@@ -17756,8 +17756,8 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="U$56" gate="G$1" pin="IN-"/>
-<pinref part="U$56" gate="G$1" pin="IN+"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="IN-"/>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="IN+"/>
 <wire x1="40.64" y1="111.76" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <junction x="40.64" y="116.84"/>
@@ -17765,8 +17765,8 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="U$41" gate="G$1" pin="IN-"/>
-<pinref part="U$41" gate="G$1" pin="IN+"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="IN-"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="IN+"/>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <junction x="40.64" y="43.18"/>
@@ -17774,8 +17774,8 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$77" class="0">
 <segment>
-<pinref part="U$55" gate="G$1" pin="IN-"/>
-<pinref part="U$55" gate="G$1" pin="IN+"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="IN-"/>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="IN+"/>
 <wire x1="40.64" y1="-33.02" x2="40.64" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="2"/>
 <junction x="40.64" y="-27.94"/>
@@ -17825,14 +17825,14 @@ by R. Vogg  15.March.2002</description>
 <net name="N$53" class="0">
 <segment>
 <pinref part="U$19" gate="G$1" pin="VIOUT"/>
-<pinref part="U$43" gate="G$1" pin="VIN"/>
+<pinref part="V-THRUST_CURR_ADC" gate="G$1" pin="VIN"/>
 <wire x1="-53.34" y1="71.12" x2="-25.4" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="U$35" gate="G$1" pin="VIOUT"/>
-<pinref part="U$44" gate="G$1" pin="VIN"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="VIN"/>
 <wire x1="-55.88" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
