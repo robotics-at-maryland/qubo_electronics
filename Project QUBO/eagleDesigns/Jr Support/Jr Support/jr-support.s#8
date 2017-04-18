@@ -15157,6 +15157,7 @@ by R. Vogg  15.March.2002</description>
 <text x="-12.7" y="12.7" size="1.778" layer="97">Address: 1011001 (5V ADC)</text>
 <text x="-198.12" y="177.8" size="1.778" layer="97">PG is an open-drain fault pin.</text>
 <text x="-195.58" y="30.48" size="1.778" layer="97">PG is an open-drain fault pin.</text>
+<text x="35.56" y="53.34" size="1.778" layer="97">Should these be 5V powered?</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="-66.04" y="-7.62"/>
