@@ -20592,19 +20592,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-182.88" y1="27.94" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="12V_VOLTAGE" gate="G$1" pin="A1"/>
-<wire x1="66.04" y1="116.84" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
-<label x="68.58" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A1"/>
-<wire x1="66.04" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
-<label x="68.58" y="43.18" size="1.778" layer="95"/>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A0"/>
-<wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
-<junction x="66.04" y="43.18"/>
-</segment>
-<segment>
 <pinref part="U$58" gate="G$1" pin="S"/>
 <wire x1="-243.84" y1="10.16" x2="-243.84" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -20891,6 +20878,19 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="5V_VOLTAGE" gate="G$1" pin="VS"/>
 <wire x1="40.64" y1="-43.18" x2="33.02" y2="-43.18" width="0.1524" layer="91"/>
 <label x="27.94" y="-43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="A1"/>
+<wire x1="66.04" y1="116.84" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
+<label x="68.58" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A1"/>
+<wire x1="66.04" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.778" layer="95"/>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A0"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
+<junction x="66.04" y="43.18"/>
 </segment>
 </net>
 <net name="AIN11" class="0">

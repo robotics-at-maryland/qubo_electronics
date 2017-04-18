@@ -19006,14 +19006,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="U1" library="NXP" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="THRUST1" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="4.7k"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="4.7k"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="U$4" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C5" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C6" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
@@ -19364,14 +19358,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="R1" gate="G$1" x="299.72" y="71.12" rot="R90"/>
 <instance part="U1" gate="G$1" x="63.5" y="-160.02"/>
 <instance part="THRUST1" gate="U1" x="190.5" y="-88.9"/>
-<instance part="R2" gate="G$1" x="55.88" y="-119.38" rot="R90"/>
-<instance part="R3" gate="G$1" x="48.26" y="-121.92" rot="R90"/>
-<instance part="R4" gate="G$1" x="40.64" y="-124.46" rot="R90"/>
-<instance part="R5" gate="G$1" x="33.02" y="-127" rot="R90"/>
-<instance part="R6" gate="G$1" x="25.4" y="-129.54" rot="R90"/>
 <instance part="R7" gate="G$1" x="276.86" y="17.78" rot="R90"/>
 <instance part="R8" gate="G$1" x="259.08" y="17.78" rot="R90"/>
-<instance part="R9" gate="G$1" x="116.84" y="-129.54" rot="R90"/>
 <instance part="U$4" gate="G$1" x="160.02" y="-60.96"/>
 <instance part="C5" gate="G$1" x="180.34" y="-48.26"/>
 <instance part="C6" gate="G$1" x="190.5" y="-66.04"/>
@@ -20624,25 +20612,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="294.64" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="-114.3" x2="48.26" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-114.3" x2="40.64" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-114.3" x2="33.02" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-114.3" x2="25.4" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-114.3" x2="25.4" y2="-124.46" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="-121.92" x2="33.02" y2="-114.3" width="0.1524" layer="91"/>
-<junction x="33.02" y="-114.3"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="-119.38" x2="40.64" y2="-114.3" width="0.1524" layer="91"/>
-<junction x="40.64" y="-114.3"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="-116.84" x2="48.26" y2="-114.3" width="0.1524" layer="91"/>
-<junction x="48.26" y="-114.3"/>
-<label x="25.4" y="-114.3" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="86.36" y1="-124.46" x2="93.98" y2="-124.46" width="0.1524" layer="91"/>
 <label x="91.44" y="-124.46" size="1.778" layer="95"/>
@@ -20652,11 +20621,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="276.86" y1="22.86" x2="259.08" y2="22.86" width="0.1524" layer="91"/>
 <label x="266.7" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="-124.46" x2="109.22" y2="-124.46" width="0.1524" layer="91"/>
-<label x="109.22" y="-124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
@@ -20892,6 +20856,28 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A4"/>
+<pinref part="U1" gate="G$1" pin="A3"/>
+<wire x1="58.42" y1="-134.62" x2="58.42" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="A2"/>
+<wire x1="58.42" y1="-132.08" x2="58.42" y2="-129.54" width="0.1524" layer="91"/>
+<junction x="58.42" y="-132.08"/>
+<pinref part="U1" gate="G$1" pin="A1"/>
+<wire x1="58.42" y1="-129.54" x2="58.42" y2="-127" width="0.1524" layer="91"/>
+<junction x="58.42" y="-129.54"/>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<wire x1="58.42" y1="-127" x2="58.42" y2="-124.46" width="0.1524" layer="91"/>
+<junction x="58.42" y="-127"/>
+<wire x1="58.42" y1="-124.46" x2="50.8" y2="-124.46" width="0.1524" layer="91"/>
+<junction x="58.42" y="-124.46"/>
+<label x="53.34" y="-124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A5"/>
+<wire x1="86.36" y1="-134.62" x2="96.52" y2="-134.62" width="0.1524" layer="91"/>
+<label x="93.98" y="-134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="AIN11" class="0">
 <segment>
@@ -21096,48 +21082,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="U$3" gate="G$1" pin="!RESET!"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="314.96" y1="66.04" x2="299.72" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A4"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-134.62" x2="25.4" y2="-134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="A3"/>
-<wire x1="33.02" y1="-132.08" x2="58.42" y2="-132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-129.54" x2="40.64" y2="-129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="A1"/>
-<wire x1="48.26" y1="-127" x2="58.42" y2="-127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A0"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-124.46" x2="55.88" y2="-124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="A5"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-134.62" x2="116.84" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="T1_PWM" class="0">
