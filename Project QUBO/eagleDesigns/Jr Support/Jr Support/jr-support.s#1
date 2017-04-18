@@ -19027,8 +19027,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="CPU_PWR" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041" value="CPU PWR"/>
 <part name="CAMERA1" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="I2C_SHIFT" library="texas" deviceset="PCA9306" device="DCT"/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="4.2k"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="4.2k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="200k"/>
 <part name="ETHERNET" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="C23" library="resistor" deviceset="C-US" device="C0805" value="100p"/>
