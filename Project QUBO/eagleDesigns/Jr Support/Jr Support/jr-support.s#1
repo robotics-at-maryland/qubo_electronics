@@ -19265,7 +19265,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="T_FUSE" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="IC2" library="texas" deviceset="TLC2272" device="D"/>
+<part name="IC2" library="texas" deviceset="TLC2272" device="PW" value="TLC2272PW"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="R52" library="resistor" deviceset="R-US_" device="R0805" value="100k"/>

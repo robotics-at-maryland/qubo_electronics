@@ -15069,7 +15069,7 @@ by R. Vogg  15.March.2002</description>
 <part name="R18" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R21" library="resistor" deviceset="R-US_" device="R0805" value="6.8k"/>
 <part name="C32" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="2PIN_3" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
+<part name="CPU_ON" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="U$59" library="diode" deviceset="VTVS" device=""/>
 <part name="BATTERY_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="U$60" library="diode" deviceset="VTVS" device=""/>
@@ -15292,7 +15292,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="R18" gate="G$1" x="-215.9" y="218.44"/>
 <instance part="R21" gate="G$1" x="-228.6" y="226.06" rot="R90"/>
 <instance part="C32" gate="G$1" x="-210.82" y="208.28"/>
-<instance part="2PIN_3" gate="U1" x="-236.22" y="208.28" rot="MR0"/>
+<instance part="CPU_ON" gate="U1" x="-236.22" y="208.28" rot="MR0"/>
 <instance part="U$59" gate="G$1" x="-228.6" y="208.28"/>
 <instance part="BATTERY_IN" gate="G$1" x="-340.36" y="50.8" rot="R90"/>
 <instance part="U$60" gate="G$1" x="-340.36" y="33.02" rot="R90"/>
@@ -17523,7 +17523,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="-180.34" y1="205.74" x2="-180.34" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="-180.34" y1="203.2" x2="-210.82" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="2PIN_3" gate="U1" pin="P$2"/>
+<pinref part="CPU_ON" gate="U1" pin="P$2"/>
 <wire x1="-228.6" y1="205.74" x2="-228.6" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="-228.6" y1="203.2" x2="-210.82" y2="203.2" width="0.1524" layer="91"/>
 <junction x="-210.82" y="203.2"/>
@@ -17547,7 +17547,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="-220.98" y1="218.44" x2="-228.6" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="-228.6" y1="218.44" x2="-228.6" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="2PIN_3" gate="U1" pin="P$1"/>
+<pinref part="CPU_ON" gate="U1" pin="P$1"/>
 <wire x1="-228.6" y1="210.82" x2="-228.6" y2="218.44" width="0.1524" layer="91"/>
 <junction x="-228.6" y="218.44"/>
 <pinref part="U$59" gate="G$1" pin="C"/>

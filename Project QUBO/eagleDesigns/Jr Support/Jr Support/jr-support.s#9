@@ -15090,7 +15090,7 @@ by R. Vogg  15.March.2002</description>
 <part name="12V_LED" library="led" deviceset="0805_LED" device=""/>
 <part name="R34" library="resistor" deviceset="R-US_" device="R0805" value="68"/>
 <part name="3V3_LED" library="led" deviceset="0805_LED" device=""/>
-<part name="U$1" library="linear" deviceset="LT8640" device=""/>
+<part name="12V_REG" library="linear" deviceset="LT8640" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="41.2k"/>
 <part name="C4" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
 <part name="C27" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
@@ -15103,7 +15103,7 @@ by R. Vogg  15.March.2002</description>
 <part name="C39" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
 <part name="C41" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="L2" library="resistor" deviceset="L-US" device="L0740" value="2.2u"/>
-<part name="U$24" library="linear" deviceset="LT8640" device=""/>
+<part name="5V_REG" library="linear" deviceset="LT8640" device=""/>
 <part name="R17" library="resistor" deviceset="R-US_" device="R0805" value="41.2k"/>
 <part name="C38" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
 <part name="C40" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
@@ -15313,7 +15313,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="12V_LED" gate="G$1" x="-35.56" y="104.14"/>
 <instance part="R34" gate="G$1" x="241.3" y="81.28" rot="MR90"/>
 <instance part="3V3_LED" gate="G$1" x="238.76" y="73.66" rot="MR0"/>
-<instance part="U$1" gate="G$1" x="-167.64" y="152.4"/>
+<instance part="12V_REG" gate="G$1" x="-167.64" y="152.4"/>
 <instance part="R14" gate="G$1" x="-185.42" y="132.08" rot="R90"/>
 <instance part="C4" gate="G$1" x="-185.42" y="162.56"/>
 <instance part="C27" gate="G$1" x="-198.12" y="162.56"/>
@@ -15329,7 +15329,7 @@ by R. Vogg  15.March.2002</description>
 <attribute name="NAME" x="-142.24" y="140.97" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-134.62" y="148.59" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$24" gate="G$1" x="-165.1" y="5.08"/>
+<instance part="5V_REG" gate="G$1" x="-165.1" y="5.08"/>
 <instance part="R17" gate="G$1" x="-182.88" y="-15.24" rot="R90"/>
 <instance part="C38" gate="G$1" x="-182.88" y="15.24"/>
 <instance part="C40" gate="G$1" x="-195.58" y="15.24"/>
@@ -15960,7 +15960,7 @@ by R. Vogg  15.March.2002</description>
 <label x="256.54" y="68.58" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="12V_REG" gate="G$1" pin="GND"/>
 <wire x1="-167.64" y1="127" x2="-185.42" y2="127" width="0.1524" layer="91"/>
 <wire x1="-185.42" y1="127" x2="-195.58" y2="127" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -15981,14 +15981,14 @@ by R. Vogg  15.March.2002</description>
 <label x="-149.86" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND-2"/>
+<pinref part="12V_REG" gate="G$1" pin="GND-2"/>
 <pinref part="C34" gate="G$1" pin="2"/>
 <wire x1="-149.86" y1="157.48" x2="-142.24" y2="157.48" width="0.1524" layer="91"/>
 <junction x="-149.86" y="157.48"/>
 <label x="-142.24" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND-1"/>
+<pinref part="12V_REG" gate="G$1" pin="GND-1"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="-185.42" y1="157.48" x2="-198.12" y2="157.48" width="0.1524" layer="91"/>
@@ -15996,7 +15996,7 @@ by R. Vogg  15.March.2002</description>
 <label x="-203.2" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="GND"/>
+<pinref part="5V_REG" gate="G$1" pin="GND"/>
 <wire x1="-165.1" y1="-20.32" x2="-182.88" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="-20.32" x2="-193.04" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
@@ -16017,14 +16017,14 @@ by R. Vogg  15.March.2002</description>
 <label x="-147.32" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="GND-2"/>
+<pinref part="5V_REG" gate="G$1" pin="GND-2"/>
 <pinref part="C60" gate="G$1" pin="2"/>
 <wire x1="-147.32" y1="10.16" x2="-139.7" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-147.32" y="10.16"/>
 <label x="-139.7" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="GND-1"/>
+<pinref part="5V_REG" gate="G$1" pin="GND-1"/>
 <pinref part="C38" gate="G$1" pin="2"/>
 <pinref part="C40" gate="G$1" pin="2"/>
 <wire x1="-182.88" y1="10.16" x2="-195.58" y2="10.16" width="0.1524" layer="91"/>
@@ -16136,14 +16136,14 @@ by R. Vogg  15.March.2002</description>
 <junction x="-228.6" y="73.66"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN-2"/>
+<pinref part="12V_REG" gate="G$1" pin="VIN-2"/>
 <pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="-149.86" y1="165.1" x2="-142.24" y2="165.1" width="0.1524" layer="91"/>
 <junction x="-149.86" y="165.1"/>
 <label x="-142.24" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VIN-1"/>
+<pinref part="12V_REG" gate="G$1" pin="VIN-1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="-185.42" y1="165.1" x2="-198.12" y2="165.1" width="0.1524" layer="91"/>
@@ -16151,20 +16151,20 @@ by R. Vogg  15.March.2002</description>
 <label x="-162.56" y="208.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="VIN-2"/>
+<pinref part="5V_REG" gate="G$1" pin="VIN-2"/>
 <pinref part="C60" gate="G$1" pin="1"/>
 <wire x1="-147.32" y1="17.78" x2="-139.7" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-147.32" y="17.78"/>
 <label x="-139.7" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$24" gate="G$1" pin="VIN-1"/>
+<pinref part="5V_REG" gate="G$1" pin="VIN-1"/>
 <pinref part="C38" gate="G$1" pin="1"/>
 <pinref part="C40" gate="G$1" pin="1"/>
 <wire x1="-182.88" y1="17.78" x2="-195.58" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-182.88" y="17.78"/>
 <label x="-210.82" y="17.78" size="1.778" layer="95"/>
-<pinref part="U$24" gate="G$1" pin="EN/UV"/>
+<pinref part="5V_REG" gate="G$1" pin="EN/UV"/>
 <wire x1="-165.1" y1="27.94" x2="-182.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-182.88" y1="27.94" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
@@ -17195,7 +17195,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="U$45" gate="G$1" pin="OUT"/>
 <label x="-167.64" y="218.44" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="EN/UV"/>
+<pinref part="12V_REG" gate="G$1" pin="EN/UV"/>
 <wire x1="-167.64" y1="218.44" x2="-167.64" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17632,13 +17632,13 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="RT"/>
+<pinref part="12V_REG" gate="G$1" pin="RT"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SW"/>
+<pinref part="12V_REG" gate="G$1" pin="SW"/>
 <pinref part="C41" gate="G$1" pin="2"/>
 <junction x="-149.86" y="147.32"/>
 <pinref part="L2" gate="G$1" pin="1"/>
@@ -17646,7 +17646,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="FB"/>
+<pinref part="12V_REG" gate="G$1" pin="FB"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="C28" gate="G$1" pin="2"/>
@@ -17657,7 +17657,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BST"/>
+<pinref part="12V_REG" gate="G$1" pin="BST"/>
 <pinref part="C41" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -17676,7 +17676,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-114.3" y1="147.32" x2="-104.14" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-114.3" y="147.32"/>
 <wire x1="-132.08" y1="147.32" x2="-134.62" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="BIAS"/>
+<pinref part="12V_REG" gate="G$1" pin="BIAS"/>
 <wire x1="-149.86" y1="144.78" x2="-134.62" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="144.78" x2="-134.62" y2="147.32" width="0.1524" layer="91"/>
 <junction x="-134.62" y="147.32"/>
@@ -17688,19 +17688,19 @@ by R. Vogg  15.March.2002</description>
 <net name="N$54" class="0">
 <segment>
 <pinref part="C39" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="INTV-CC"/>
+<pinref part="12V_REG" gate="G$1" pin="INTV-CC"/>
 <wire x1="-195.58" y1="142.24" x2="-185.42" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="RT"/>
+<pinref part="5V_REG" gate="G$1" pin="RT"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="SW"/>
+<pinref part="5V_REG" gate="G$1" pin="SW"/>
 <pinref part="C65" gate="G$1" pin="2"/>
 <junction x="-147.32" y="0"/>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -17708,7 +17708,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="FB"/>
+<pinref part="5V_REG" gate="G$1" pin="FB"/>
 <pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="C42" gate="G$1" pin="2"/>
@@ -17719,7 +17719,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="BST"/>
+<pinref part="5V_REG" gate="G$1" pin="BST"/>
 <pinref part="C65" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -17738,7 +17738,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-111.76" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
 <junction x="-111.76" y="0"/>
 <wire x1="-129.54" y1="0" x2="-132.08" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="BIAS"/>
+<pinref part="5V_REG" gate="G$1" pin="BIAS"/>
 <wire x1="-147.32" y1="-2.54" x2="-132.08" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="-2.54" x2="-132.08" y2="0" width="0.1524" layer="91"/>
 <junction x="-132.08" y="0"/>
@@ -17750,7 +17750,7 @@ by R. Vogg  15.March.2002</description>
 <net name="N$48" class="0">
 <segment>
 <pinref part="C63" gate="G$1" pin="1"/>
-<pinref part="U$24" gate="G$1" pin="INTV-CC"/>
+<pinref part="5V_REG" gate="G$1" pin="INTV-CC"/>
 <wire x1="-193.04" y1="-5.08" x2="-182.88" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17854,7 +17854,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="U$58" gate="G$1" pin="G"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="-231.14" y1="5.08" x2="-223.52" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="PG"/>
+<pinref part="5V_REG" gate="G$1" pin="PG"/>
 <wire x1="-223.52" y1="5.08" x2="-182.88" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-223.52" y="5.08"/>
 </segment>
@@ -17877,7 +17877,7 @@ by R. Vogg  15.March.2002</description>
 <pinref part="U$66" gate="G$1" pin="G"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="-215.9" y1="152.4" x2="-208.28" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PG"/>
+<pinref part="12V_REG" gate="G$1" pin="PG"/>
 <wire x1="-208.28" y1="152.4" x2="-185.42" y2="152.4" width="0.1524" layer="91"/>
 <junction x="-208.28" y="152.4"/>
 </segment>
