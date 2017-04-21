@@ -19231,7 +19231,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="R46" library="resistor" deviceset="R-US_" device="R0805" value="1M"/>
 <part name="C73" library="resistor" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="ON_INDICATOR" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
 <part name="R47" library="resistor" deviceset="R-US_" device="R0805" value="3.3k"/>
 <part name="R48" library="resistor" deviceset="R-US_" device="R0805" value="3.3k"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -19590,7 +19590,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="R46" gate="G$1" x="-584.2" y="30.48" rot="R90"/>
 <instance part="C73" gate="G$1" x="-576.58" y="30.48"/>
 <instance part="GND11" gate="1" x="-584.2" y="20.32"/>
-<instance part="LED3" gate="G$1" x="-558.8" y="149.86" rot="R90"/>
+<instance part="ON_INDICATOR" gate="G$1" x="-558.8" y="149.86" rot="R90"/>
 <instance part="R47" gate="G$1" x="-568.96" y="154.94" rot="R180"/>
 <instance part="R48" gate="G$1" x="-568.96" y="144.78" rot="R180"/>
 <instance part="GND12" gate="1" x="-551.18" y="144.78"/>
@@ -20465,7 +20465,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-551.18" y1="147.32" x2="-551.18" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="ON_INDICATOR" gate="G$1" pin="C"/>
 <wire x1="-551.18" y1="149.86" x2="-553.72" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22509,7 +22509,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <net name="N$84" class="0">
 <segment>
 <pinref part="R48" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="ON_INDICATOR" gate="G$1" pin="A"/>
 <wire x1="-563.88" y1="144.78" x2="-561.34" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="-561.34" y1="144.78" x2="-561.34" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="1"/>

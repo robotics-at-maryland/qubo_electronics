@@ -19194,10 +19194,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="FAN2" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021" value="Ethernet switch pwr"/>
 <part name="C68" library="resistor" deviceset="C-US" device="C0805"/>
 <part name="U$65" library="diode" deviceset="DESD" device=""/>
-<part name="U$58" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
-<part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R28" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="FASTCHG"/>
 <part name="U$66" library="transistor-fet" deviceset="DMP32D5SFB" device=""/>
 <part name="R38" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R40" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
@@ -19552,10 +19549,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="FAN2" gate="U1" x="441.96" y="129.54"/>
 <instance part="C68" gate="G$1" x="403.86" y="129.54"/>
 <instance part="U$65" gate="G$1" x="414.02" y="124.46"/>
-<instance part="U$58" gate="G$1" x="-243.84" y="2.54" rot="R180"/>
-<instance part="R13" gate="G$1" x="-243.84" y="-17.78" rot="R90"/>
-<instance part="R28" gate="G$1" x="-226.06" y="12.7" rot="R90"/>
-<instance part="LED1" gate="G$1" x="-243.84" y="-25.4"/>
+<instance part="R28" gate="G$1" x="-226.06" y="10.16" rot="R90"/>
 <instance part="U$66" gate="G$1" x="-228.6" y="149.86" rot="R180"/>
 <instance part="R38" gate="G$1" x="-228.6" y="129.54" rot="R90"/>
 <instance part="R40" gate="G$1" x="-208.28" y="157.48" rot="R90"/>
@@ -20379,12 +20373,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <junction x="414.02" y="121.92"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="-243.84" y1="-30.48" x2="-243.84" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-243.84" y1="-35.56" x2="-251.46" y2="-35.56" width="0.1524" layer="91"/>
-<label x="-251.46" y="-35.56" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="-228.6" y1="116.84" x2="-228.6" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-228.6" y1="111.76" x2="-236.22" y2="111.76" width="0.1524" layer="91"/>
@@ -20580,13 +20568,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-182.88" y1="27.94" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$58" gate="G$1" pin="S"/>
-<wire x1="-243.84" y1="10.16" x2="-243.84" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="-243.84" y1="15.24" x2="-243.84" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-226.06" y1="17.78" x2="-243.84" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-243.84" y="15.24"/>
-<label x="-243.84" y="25.4" size="1.778" layer="95"/>
+<wire x1="-226.06" y1="15.24" x2="-226.06" y2="25.4" width="0.1524" layer="91"/>
+<label x="-226.06" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$66" gate="G$1" pin="S"/>
@@ -22191,27 +22175,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-55.88" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$67" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="U$58" gate="G$1" pin="D"/>
-<wire x1="-243.84" y1="-12.7" x2="-243.84" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="5V_PG" class="0">
 <segment>
-<pinref part="U$58" gate="G$1" pin="G"/>
 <pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="-231.14" y1="5.08" x2="-226.06" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="5V_REG" gate="G$1" pin="PG"/>
-<wire x1="-226.06" y1="7.62" x2="-182.88" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-226.06" y="7.62"/>
+<wire x1="-226.06" y1="5.08" x2="-182.88" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="A" pin="I1"/>

@@ -20592,21 +20592,6 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="-182.88" y1="27.94" x2="-182.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="12V_VOLTAGE" gate="G$1" pin="VS"/>
-<wire x1="40.64" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="27.94" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="VS"/>
-<wire x1="40.64" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
-<label x="27.94" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="5V_VOLTAGE" gate="G$1" pin="VS"/>
-<wire x1="40.64" y1="-43.18" x2="33.02" y2="-43.18" width="0.1524" layer="91"/>
-<label x="27.94" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="12V_VOLTAGE" gate="G$1" pin="A1"/>
 <wire x1="66.04" y1="116.84" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 <label x="68.58" y="116.84" size="1.778" layer="95"/>
@@ -20891,6 +20876,21 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="U$65" gate="G$1" pin="C"/>
 <wire x1="414.02" y1="127" x2="414.02" y2="137.16" width="0.1524" layer="91"/>
 <junction x="414.02" y="137.16"/>
+</segment>
+<segment>
+<pinref part="12V_VOLTAGE" gate="G$1" pin="VS"/>
+<wire x1="40.64" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="27.94" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="VS"/>
+<wire x1="40.64" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="27.94" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="5V_VOLTAGE" gate="G$1" pin="VS"/>
+<wire x1="40.64" y1="-43.18" x2="33.02" y2="-43.18" width="0.1524" layer="91"/>
+<label x="27.94" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN11" class="0">
