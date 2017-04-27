@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -19523,7 +19523,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="L1" library="resistor" deviceset="L-US" device="L0740" value="2.2u"/>
 <part name="12V_VOLTAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
-<part name="V-THRUST_VOLAGE" library="texas" deviceset="INA219" device="SOT23"/>
+<part name="V-THRUST_VOLTAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R30" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
 <part name="5V_VOLTAGE" library="texas" deviceset="INA219" device="SOT23"/>
 <part name="R35" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
@@ -19883,7 +19883,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </instance>
 <instance part="12V_VOLTAGE" gate="G$1" x="53.34" y="109.22"/>
 <instance part="R25" gate="G$1" x="35.56" y="116.84"/>
-<instance part="V-THRUST_VOLAGE" gate="G$1" x="53.34" y="35.56"/>
+<instance part="V-THRUST_VOLTAGE" gate="G$1" x="53.34" y="35.56"/>
 <instance part="R30" gate="G$1" x="35.56" y="43.18"/>
 <instance part="5V_VOLTAGE" gate="G$1" x="53.34" y="-35.56"/>
 <instance part="R35" gate="G$1" x="35.56" y="-27.94"/>
@@ -20664,7 +20664,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="33.02" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="GND"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <label x="33.02" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -21186,7 +21186,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="27.94" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="VS"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="VS"/>
 <wire x1="40.64" y1="27.94" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
 <label x="27.94" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -21201,10 +21201,10 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="68.58" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A1"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="A1"/>
 <wire x1="66.04" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
 <label x="68.58" y="43.18" size="1.778" layer="95"/>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="A0"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="A0"/>
 <wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="66.04" y="43.18"/>
 </segment>
@@ -21362,7 +21362,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="68.58" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="SCL"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="SCL"/>
 <wire x1="66.04" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
 <label x="68.58" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -21419,7 +21419,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="68.58" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="SDA"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="SDA"/>
 <wire x1="66.04" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <label x="68.58" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -22472,8 +22472,8 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="IN-"/>
-<pinref part="V-THRUST_VOLAGE" gate="G$1" pin="IN+"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="IN-"/>
+<pinref part="V-THRUST_VOLTAGE" gate="G$1" pin="IN+"/>
 <wire x1="40.64" y1="38.1" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <junction x="40.64" y="43.18"/>
