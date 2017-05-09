@@ -127,22 +127,22 @@
 </packages>
 <symbols>
 <symbol name="2-PIN_TVS">
-<pin name="P$1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="P$2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
-<wire x1="-1.23754375" y1="1.56260625" x2="-1.23754375" y2="0.06515625" width="0.254" layer="94"/>
-<wire x1="-1.23754375" y1="0.06515625" x2="-1.23754375" y2="-1.301971875" width="0.254" layer="94"/>
-<wire x1="-1.23754375" y1="1.56260625" x2="-0.584209375" y2="2.246171875" width="0.254" layer="94"/>
-<wire x1="-1.23754375" y1="-1.301971875" x2="-1.825965625" y2="-2.083271875" width="0.254" layer="94"/>
-<wire x1="-1.23754375" y1="0.06515625" x2="-2.544215625" y2="1.367128125" width="0.254" layer="94"/>
-<wire x1="-2.544215625" y1="1.367128125" x2="-2.544215625" y2="-0.03258125" width="0.254" layer="94"/>
-<wire x1="-2.544215625" y1="-0.03258125" x2="-2.544215625" y2="-1.171653125" width="0.254" layer="94"/>
-<wire x1="-2.544215625" y1="-1.171653125" x2="-1.23754375" y2="0.06515625" width="0.254" layer="94"/>
-<wire x1="-1.23754375" y1="0.06515625" x2="0.101584375" y2="1.36713125" width="0.254" layer="94"/>
-<wire x1="0.101584375" y1="1.36713125" x2="0.101584375" y2="-0.03258125" width="0.254" layer="94"/>
-<wire x1="0.101584375" y1="-0.03258125" x2="0.10158125" y2="-1.106490625" width="0.254" layer="94"/>
-<wire x1="0.10158125" y1="-1.106490625" x2="-1.23754375" y2="0.06515625" width="0.254" layer="94"/>
-<wire x1="0.101584375" y1="-0.03258125" x2="2.515971875" y2="-0.03258125" width="0.254" layer="94"/>
-<wire x1="-2.544215625" y1="-0.03258125" x2="-4.991059375" y2="-0.03258125" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="1.56260625" x2="0.03245625" y2="0.06515625" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="0.06515625" x2="0.03245625" y2="-1.301971875" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="1.56260625" x2="0.685790625" y2="2.246171875" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="-1.301971875" x2="-0.555965625" y2="-2.083271875" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="0.06515625" x2="-1.274215625" y2="1.367128125" width="0.254" layer="94"/>
+<wire x1="-1.274215625" y1="1.367128125" x2="-1.274215625" y2="-0.03258125" width="0.254" layer="94"/>
+<wire x1="-1.274215625" y1="-0.03258125" x2="-1.274215625" y2="-1.171653125" width="0.254" layer="94"/>
+<wire x1="-1.274215625" y1="-1.171653125" x2="0.03245625" y2="0.06515625" width="0.254" layer="94"/>
+<wire x1="0.03245625" y1="0.06515625" x2="1.371584375" y2="1.36713125" width="0.254" layer="94"/>
+<wire x1="1.371584375" y1="1.36713125" x2="1.371584375" y2="-0.03258125" width="0.254" layer="94"/>
+<wire x1="1.371584375" y1="-0.03258125" x2="1.37158125" y2="-1.106490625" width="0.254" layer="94"/>
+<wire x1="1.37158125" y1="-1.106490625" x2="0.03245625" y2="0.06515625" width="0.254" layer="94"/>
+<wire x1="1.371584375" y1="-0.03258125" x2="2.515971875" y2="-0.03258125" width="0.254" layer="94"/>
+<wire x1="-1.274215625" y1="-0.03258125" x2="-2.451059375" y2="-0.03258125" width="0.254" layer="94"/>
 <text x="-7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -156,17 +156,6 @@
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <text x="-15.24" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="NCV1117">
-<pin name="VIN" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="VOUT" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="REF" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -219,26 +208,6 @@ Standard packages</description>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="VIN" pad="P$3"/>
 <connect gate="G$1" pin="VOUT" pad="P$2 P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NCV1117">
-<description>ON Semiconductor NCV1117&lt;br&gt;
-Adjustable linear regulator&lt;br&gt;
-&lt;a href="http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="NCV1117" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223">
-<connects>
-<connect gate="A" pin="REF" pad="P$1"/>
-<connect gate="A" pin="VIN" pad="P$2 P$4"/>
-<connect gate="A" pin="VOUT" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>

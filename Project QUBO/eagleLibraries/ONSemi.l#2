@@ -158,9 +158,9 @@
 <text x="-15.24" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="NCV1117">
-<pin name="VIN" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="VOUT" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="REF" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="VIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="REF" x="0" y="-12.7" length="middle" rot="R90"/>
 <wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -219,26 +219,6 @@ Standard packages</description>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="VIN" pad="P$3"/>
 <connect gate="G$1" pin="VOUT" pad="P$2 P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NCV1117">
-<description>ON Semiconductor NCV1117&lt;br&gt;
-Adjustable linear regulator&lt;br&gt;
-&lt;a href="http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="NCV1117" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-223">
-<connects>
-<connect gate="A" pin="REF" pad="P$1"/>
-<connect gate="A" pin="VIN" pad="P$2 P$4"/>
-<connect gate="A" pin="VOUT" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
