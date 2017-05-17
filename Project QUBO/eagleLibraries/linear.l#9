@@ -6902,6 +6902,10 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <circle x="-0.961746875" y="-0.346228125" radius="0.13076875" width="0.127" layer="21"/>
 <text x="-1.95" y="-1.3" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.6" y="-1.95" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-1.3" y1="0.65" x2="-1.3" y2="-0.65" width="0.127" layer="29"/>
+<wire x1="-1.3" y1="-0.65" x2="1.3" y2="-0.65" width="0.127" layer="29"/>
+<wire x1="1.3" y1="-0.65" x2="1.3" y2="0.65" width="0.127" layer="29"/>
+<wire x1="1.3" y1="0.65" x2="-1.3" y2="0.65" width="0.127" layer="29"/>
 </package>
 </packages>
 <symbols>

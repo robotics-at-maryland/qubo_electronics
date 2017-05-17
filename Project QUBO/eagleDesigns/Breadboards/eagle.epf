@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 01 01"
+Version="08 02 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -59,10 +59,10 @@ UsedLibrary="C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electroni
 
 [Win_1]
 Type="Control Panel"
-Loc="85 11 1028 607"
+Loc="422 0 1365 596"
 State=2
 Number=0
 
 [Desktop]
-Screen="3286 1080"
+Screen="1366 768"
 Window="Win_1"

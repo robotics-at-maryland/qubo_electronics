@@ -3850,14 +3850,14 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
 <circle x="-0.9956" y="-0.9906" radius="0.2461" width="0.1016" layer="21"/>
-<smd name="8" x="-0.975" y="2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="7" x="-0.325" y="2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="6" x="0.325" y="2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="5" x="0.975" y="2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="4" x="0.975" y="-2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="3" x="0.325" y="-2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="2" x="-0.325" y="-2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
-<smd name="1" x="-0.975" y="-2.125" dx="0.38" dy="1.05" layer="1" stop="no"/>
+<smd name="8" x="-0.975" y="2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="7" x="-0.325" y="2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="6" x="0.325" y="2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="5" x="0.975" y="2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="4" x="0.975" y="-2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="3" x="0.325" y="-2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="2" x="-0.325" y="-2.125" dx="0.38" dy="1.05" layer="1"/>
+<smd name="1" x="-0.975" y="-2.125" dx="0.38" dy="1.05" layer="1"/>
 <text x="-2.032" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="3.302" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.0975" y1="1.55" x2="-0.8537" y2="2.525" layer="51"/>

@@ -223,6 +223,7 @@
 <smd name="P$8" x="-0.975" y="1.7" dx="1.6" dy="0.3" layer="1" rot="R90"/>
 <text x="-2.54" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-2.54" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
+<circle x="-1.035784375" y="-0.422328125" radius="0.200228125" width="0.127" layer="21"/>
 </package>
 <package name="TSSOP16">
 <description>&lt;b&gt;PW (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
@@ -292,18 +293,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P$6" x="0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
 <smd name="P$7" x="-0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
 <smd name="P$8" x="-0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1.3" y="3.0875"/>
-<vertex x="1.3" y="3.0875"/>
-<vertex x="1.3" y="1.3"/>
-<vertex x="-1.3" y="1.3"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.3" y="-1.3"/>
-<vertex x="1.3" y="-1.3"/>
-<vertex x="1.3" y="-3.0875"/>
-<vertex x="-1.3" y="-3.0875"/>
-</polygon>
 <wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
@@ -321,18 +310,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <smd name="P$6" x="0.325" y="1.3" dx="0.45" dy="1.1" layer="1" stop="no"/>
 <smd name="P$7" x="-0.325" y="1.3" dx="0.45" dy="1.1" layer="1" stop="no"/>
 <smd name="P$8" x="-0.975" y="1.3" dx="0.45" dy="1.1" layer="1" stop="no"/>
-<polygon width="0.127" layer="29">
-<vertex x="-1.3" y="1.95"/>
-<vertex x="1.3" y="1.95"/>
-<vertex x="1.3" y="0.65"/>
-<vertex x="-1.3" y="0.65"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.3" y="-0.65"/>
-<vertex x="1.3" y="-0.65"/>
-<vertex x="1.3" y="-1.95"/>
-<vertex x="-1.3" y="-1.95"/>
-</polygon>
 <wire x1="-1.5" y1="0.875" x2="1.5" y2="0.875" width="0.127" layer="21"/>
 <wire x1="1.5" y1="0.875" x2="1.5" y2="-0.875" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-0.875" x2="-1.5" y2="-0.875" width="0.127" layer="21"/>
@@ -2080,12 +2057,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-0.889" y="1.016" size="1.27" layer="25">&gt;NAME</text>
@@ -7450,10 +7423,6 @@ diameter 5 mm, grid 2.54 mm</description>
 chip</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
@@ -18187,26 +18156,26 @@ http://www.linear-tech.com&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="QFN18-3X4">
-<smd name="11" x="-1.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
-<smd name="13" x="-0.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
-<smd name="14" x="0.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
-<smd name="15" x="0.75" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
-<smd name="16" x="1.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
-<smd name="17" x="1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R90"/>
-<smd name="18" x="1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R90"/>
-<smd name="19" x="1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R90"/>
-<smd name="20" x="1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="2" x="0.75" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="3" x="0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="4" x="-0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="6" x="-1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="7" x="-1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
-<smd name="8" x="-1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
-<smd name="9" x="-1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
-<smd name="10" x="-1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
-<smd name="21" x="-1.075" y="0" dx="0.4" dy="0.22" layer="1"/>
-<smd name="22" x="-0.305" y="0" dx="0.356" dy="0.22" layer="1"/>
+<smd name="11" x="-1.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
+<smd name="13" x="-0.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
+<smd name="14" x="0.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
+<smd name="15" x="0.75" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
+<smd name="16" x="1.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
+<smd name="17" x="1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
+<smd name="18" x="1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
+<smd name="19" x="1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
+<smd name="20" x="1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
+<smd name="1" x="1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
+<smd name="2" x="0.75" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
+<smd name="3" x="0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
+<smd name="4" x="-0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
+<smd name="6" x="-1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
+<smd name="7" x="-1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
+<smd name="8" x="-1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
+<smd name="9" x="-1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
+<smd name="10" x="-1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
+<smd name="21" x="-1.075" y="0" dx="0.4" dy="0.22" layer="1" stop="no"/>
+<smd name="22" x="-0.305" y="0" dx="0.356" dy="0.22" layer="1" stop="no"/>
 <wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
