@@ -11574,18 +11574,18 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LT4356">
-<pin name="!SHDN!" x="-17.78" y="10.16" length="middle"/>
-<pin name="IN*" x="-17.78" y="0" length="middle"/>
-<pin name="AOUT" x="-17.78" y="-10.16" length="middle"/>
-<pin name="GND" x="-2.54" y="-20.32" length="middle" rot="R90"/>
-<pin name="TMR" x="5.08" y="-20.32" length="middle" rot="R90"/>
-<pin name="!FLT!" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="EN" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="FB" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="OUT" x="12.7" y="25.4" length="middle" rot="R270"/>
-<pin name="GATE" x="5.08" y="25.4" length="middle" rot="R270"/>
-<pin name="SNS" x="-2.54" y="25.4" length="middle" rot="R270"/>
-<pin name="VCC" x="-10.16" y="25.4" length="middle" rot="R270"/>
+<pin name="!SHDN!" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="IN*" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="AOUT" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<pin name="GND" x="-2.54" y="-20.32" visible="pin" length="middle" rot="R90"/>
+<pin name="TMR" x="5.08" y="-20.32" visible="pin" length="middle" rot="R90"/>
+<pin name="!FLT!" x="20.32" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="EN" x="20.32" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="FB" x="20.32" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GATE" x="7.62" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="SNS" x="0" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="VCC" x="-10.16" y="25.4" visible="pin" length="middle" rot="R270"/>
 <wire x1="-12.7" y1="-15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-15.24" x2="15.24" y2="20.32" width="0.254" layer="94"/>
 <wire x1="15.24" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
@@ -28859,6 +28859,34 @@ Single input, single sided, 16-bit ADC to I2C&lt;br&gt;
 <connect gate="A" pin="SCL" pad="7"/>
 <connect gate="A" pin="SDA" pad="8"/>
 <connect gate="A" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT4356">
+<description>Linear LT4356 Surge Stopper&lt;br&gt;
+&lt;a href="https://cds.linear.com/docs/en/datasheet/4356fa.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LT4356" x="0" y="0"/>
+</gates>
+<devices>
+<device name="S" package="SO16">
+<connects>
+<connect gate="G$1" pin="!FLT!" pad="10"/>
+<connect gate="G$1" pin="!SHDN!" pad="9"/>
+<connect gate="G$1" pin="AOUT" pad="14"/>
+<connect gate="G$1" pin="EN" pad="11"/>
+<connect gate="G$1" pin="FB" pad="2"/>
+<connect gate="G$1" pin="GATE" pad="5"/>
+<connect gate="G$1" pin="GND" pad="12"/>
+<connect gate="G$1" pin="IN*" pad="16"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="SNS" pad="7"/>
+<connect gate="G$1" pin="TMR" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

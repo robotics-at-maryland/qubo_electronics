@@ -11103,6 +11103,7 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="29"/>
 <circle x="0" y="0" radius="5.6796125" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>

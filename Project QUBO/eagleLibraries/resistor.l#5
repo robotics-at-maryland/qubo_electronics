@@ -11103,10 +11103,34 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="20"/>
 <polygon width="0.127" layer="41">
-<vertex x="-7.62" y="6.35"/>
-<vertex x="6.35" y="6.35"/>
-<vertex x="6.35" y="-6.35"/>
-<vertex x="-7.62" y="-6.35"/>
+<vertex x="-3.81" y="3.81"/>
+<vertex x="3.81" y="3.81"/>
+<vertex x="3.81" y="-3.81"/>
+<vertex x="-3.81" y="-3.81"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-5.08" y="2.54"/>
+<vertex x="-3.81" y="2.54"/>
+<vertex x="-3.81" y="-2.54"/>
+<vertex x="-5.08" y="-2.54"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="3.81" y="2.54"/>
+<vertex x="5.08" y="2.54"/>
+<vertex x="5.08" y="-2.54"/>
+<vertex x="3.81" y="-2.54"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-2.54" y="3.81"/>
+<vertex x="-2.54" y="5.08"/>
+<vertex x="2.54" y="5.08"/>
+<vertex x="2.54" y="3.81"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-2.54" y="-5.08"/>
+<vertex x="-2.54" y="-3.81"/>
+<vertex x="2.54" y="-3.81"/>
+<vertex x="2.54" y="-5.08"/>
 </polygon>
 </package>
 </packages>
