@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -500,14 +500,14 @@
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="VSSOP-8">
-<smd name="P$1" x="-0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$3" x="0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$4" x="0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$5" x="0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$6" x="0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$7" x="-0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
-<smd name="P$8" x="-0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$1" x="-0.975" y="-2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.325" y="-2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$3" x="0.325" y="-2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$4" x="0.975" y="-2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$5" x="0.975" y="2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$6" x="0.325" y="2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$7" x="-0.325" y="2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
+<smd name="P$8" x="-0.975" y="2.2" dx="1.45" dy="0.42" layer="1" rot="R90"/>
 <wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
@@ -590,6 +590,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 <wire x1="-1.5" y1="-0.875" x2="-1.5" y2="0.875" width="0.127" layer="21"/>
 <text x="-1.95" y="-1.3" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
 <text x="-1.3" y="-0.325" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="-1.016" y="-0.254" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="SO-08">
 <description>&lt;b&gt;Small Outline Integrated Circuit&lt;/b&gt;</description>
@@ -2049,6 +2050,10 @@ chip</description>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-1.778" y1="1.016" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -3577,6 +3582,10 @@ chip</description>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="21"/>
+<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="21"/>
 </package>
 <package name="R0805W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -3747,25 +3756,6 @@ chip, wave soldering</description>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.5999" x2="0.1001" y2="0.5999" layer="35"/>
-</package>
-<package name="R2512">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="1.473" x2="1.498" y2="1.473" width="0.1524" layer="21"/>
-<wire x1="-1.473" y1="-1.473" x2="1.498" y2="-1.473" width="0.1524" layer="21"/>
-<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<text x="-2.667" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.667" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
 <package name="R2512W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -4838,6 +4828,29 @@ type 0309, grid 2.5 mm</description>
 <rectangle x1="0.254" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
 <rectangle x1="-0.635" y1="-0.3048" x2="-0.3302" y2="0.3048" layer="51"/>
 <rectangle x1="-0.3302" y1="-0.3048" x2="0.254" y2="0.3048" layer="21"/>
+</package>
+<package name="R2512">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="1.473" x2="1.498" y2="1.473" width="0.1524" layer="21"/>
+<wire x1="-1.473" y1="-1.473" x2="1.498" y2="-1.473" width="0.1524" layer="21"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.667" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.667" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+<wire x1="-4.191" y1="2.159" x2="4.191" y2="2.159" width="0.127" layer="21"/>
+<wire x1="4.191" y1="2.159" x2="4.191" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="4.191" y1="-2.159" x2="-4.191" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-4.191" y1="-2.159" x2="-4.191" y2="2.159" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

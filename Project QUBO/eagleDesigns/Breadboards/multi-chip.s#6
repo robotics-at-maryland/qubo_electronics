@@ -6468,6 +6468,10 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U$4" gate="G$1" pin="A1"/>
 <wire x1="-180.34" y1="17.78" x2="-170.18" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="ADR0"/>
+<wire x1="-58.42" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -6631,12 +6635,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-104.14" y1="7.62" x2="-104.14" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="25.4" x2="-60.96" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GD" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="ADR0"/>
-<wire x1="-58.42" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

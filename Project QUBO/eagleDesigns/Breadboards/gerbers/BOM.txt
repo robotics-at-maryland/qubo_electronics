@@ -1,0 +1,24 @@
+Partlist exported from C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleDesigns/Breadboards/multi-chip.sch at Wed, 5/17/2017 10:48 PM
+
+Part   Value       Device      Package      Description                    PROD_ID  VALUE  
+C1     47n         C-USC0805   C0805        CAPACITOR, American symbol                     
+C2     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+C3     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+C4     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+C5     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+C6     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+C7     0.1u        C-USC0805   C0805        CAPACITOR, American symbol                     
+I2C                PINHD-1X2   1X02         PIN HEADER                                     
+INA219 INA219SOT23 INA219SOT23 SOT-23-8     TI INA219                                      
+JP1                PINHD-1X8   1X08         PIN HEADER                                     
+JP3                PINHD-1X2   1X02         PIN HEADER                                     
+JP4                PINHD-1X2   1X02         PIN HEADER                                     
+JP5                PINHD-1X8   1X08         PIN HEADER                                     
+JP8                PINHD-1X8   1X08         PIN HEADER                                     
+POWER              PINHD-1X2   1X02         PIN HEADER                                     
+R1     10          R-US_R0805  R0805        RESISTOR, American symbol                      
+R2     10          R-US_R0805  R0805        RESISTOR, American symbol                      
+U$1    ACS713SOIC  ACS713SOIC  ACS713-SOIC                                                 
+U$2    ADC121C021  ADC121C021  VSSOP-8      ADC121C021 8-pin VSSOP package                 
+U$3    ADS7828     ADS7828     TSSOP16      Texas Instruments ADS7828                      
+U1     PCA9685     PCA9685     TSSOP-28_4MM 16-channel 12-bit PWM          IC-12240 PCA9685

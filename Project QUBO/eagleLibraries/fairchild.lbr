@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -100,8 +100,8 @@
 <circle x="0" y="2.54" radius="0.3592" width="0" layer="94"/>
 <text x="7.62" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <text x="5.08" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<pin name="SOURCE" x="0" y="-7.62" visible="off" length="middle" direction="pas" rot="R90"/>
-<pin name="GATE" x="-7.62" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="S" x="0" y="-7.62" visible="off" length="middle" direction="pas" rot="R90"/>
+<pin name="G" x="-7.62" y="-2.54" visible="off" length="short" direction="pas"/>
 <polygon width="0.1524" layer="94">
 <vertex x="2.54" y="0.508"/>
 <vertex x="2.032" y="-0.254"/>
@@ -112,7 +112,7 @@
 <vertex x="-1.27" y="0.762"/>
 <vertex x="-1.27" y="-0.762"/>
 </polygon>
-<pin name="DRAIN" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
+<pin name="D" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
 <text x="2.54" y="-5.08" size="1.778" layer="94" rot="R90">S</text>
 <text x="2.54" y="3.556" size="1.778" layer="94" rot="R90">D</text>
 </symbol>
@@ -125,9 +125,9 @@
 <devices>
 <device name="PWR33" package="POWER33">
 <connects>
-<connect gate="G$1" pin="DRAIN" pad="DRAIN"/>
-<connect gate="G$1" pin="GATE" pad="GATE"/>
-<connect gate="G$1" pin="SOURCE" pad="SOURCE1 SOURCE2 SOURCE3"/>
+<connect gate="G$1" pin="D" pad="DRAIN"/>
+<connect gate="G$1" pin="G" pad="GATE"/>
+<connect gate="G$1" pin="S" pad="SOURCE1 SOURCE2 SOURCE3"/>
 </connects>
 <technologies>
 <technology name=""/>

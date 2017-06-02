@@ -18187,26 +18187,26 @@ http://www.linear-tech.com&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="QFN18-3X4">
-<smd name="11" x="-1.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="13" x="-0.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="14" x="0.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="15" x="0.75" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="16" x="1.25" y="-1.4" dx="0.25" dy="0.7" layer="1" stop="no"/>
-<smd name="17" x="1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
-<smd name="18" x="1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
-<smd name="19" x="1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
-<smd name="20" x="1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R90" stop="no"/>
-<smd name="1" x="1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
-<smd name="2" x="0.75" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
-<smd name="3" x="0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
-<smd name="4" x="-0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
-<smd name="6" x="-1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no"/>
-<smd name="7" x="-1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
-<smd name="8" x="-1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
-<smd name="9" x="-1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
-<smd name="10" x="-1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270" stop="no"/>
-<smd name="21" x="-1.075" y="0" dx="0.4" dy="0.22" layer="1" stop="no"/>
-<smd name="22" x="-0.305" y="0" dx="0.356" dy="0.22" layer="1" stop="no"/>
+<smd name="11" x="-1.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
+<smd name="13" x="-0.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
+<smd name="14" x="0.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
+<smd name="15" x="0.75" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
+<smd name="16" x="1.25" y="-1.4" dx="0.25" dy="0.7" layer="1"/>
+<smd name="17" x="1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R90"/>
+<smd name="18" x="1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R90"/>
+<smd name="19" x="1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R90"/>
+<smd name="20" x="1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R90"/>
+<smd name="1" x="1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="2" x="0.75" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="3" x="0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="4" x="-0.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="6" x="-1.25" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+<smd name="7" x="-1.9" y="0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="8" x="-1.9" y="0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="9" x="-1.9" y="-0.25" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="10" x="-1.9" y="-0.75" dx="0.25" dy="0.7" layer="1" rot="R270"/>
+<smd name="21" x="-1.075" y="0" dx="0.4" dy="0.22" layer="1"/>
+<smd name="22" x="-0.305" y="0" dx="0.356" dy="0.22" layer="1"/>
 <wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2829,10 +2829,6 @@ chip</description>
 chip</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
@@ -16604,11 +16600,11 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$37" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
 <part name="C78" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C79" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
-<part name="R34" library="resistor" deviceset="R-US_" device="R0805" value="100m"/>
+<part name="R34" library="resistor" deviceset="R-US_" device="R2512" value="100m"/>
 <part name="C82" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C83" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C84" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="120u"/>
-<part name="R29" library="resistor" deviceset="R-US_" device="R0805" value="100m"/>
+<part name="R29" library="resistor" deviceset="R-US_" device="R2512" value="100m"/>
 <part name="B1-ZENER" library="diode" deviceset="SCHOTTKY-DIODE" device="SOD-106"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="U$40" library="vishay" deviceset="NTCLE201E3" device=""/>
@@ -16630,11 +16626,11 @@ ON-OFF, 1A, 30VDC&lt;br&gt;
 <part name="U$3" library="fairchild" deviceset="FDMC8360LET40" device="PWR33"/>
 <part name="C13" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C14" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="100m"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R2512" value="100m"/>
 <part name="C17" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C18" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C19" library="resistor" deviceset="CPOL-US" device="E3.5-8" value="120uF"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="100m"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R2512" value="100m"/>
 <part name="U$5" library="diode" deviceset="SCHOTTKY-DIODE" device="SOD-106"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="U$6" library="vishay" deviceset="NTCLE201E3" device=""/>

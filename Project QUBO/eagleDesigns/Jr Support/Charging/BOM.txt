@@ -1,0 +1,126 @@
+Partlist exported from C:/Users/Ben/Documents/Dropbox/Documents/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleDesigns/Jr Support/Charging/charging_block.sch at Thu, 5/18/2017 10:26 AM
+
+Part            Value              Device                    Package             Description                                                                               
+5V-TVS_1        VTVS               VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
+24V-TVS_1       VTVS               VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
+24V-TVS_2       VTVS               VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
+24V-TVS_3       VTVS               VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
+24V-TVS_OUT     VTVS               VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
+B1-HFET         FDMC8360LET40PWR33 FDMC8360LET40PWR33        POWER33                                                                                                       
+B1-ZENER                           SCHOTTKY-DIODESOD-106     SOD106-R            Schottky Diode                                                                            
+BATT1_FUSE      4A                 154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                          
+BATT1_IC        MAX1737            MAX1737                   QSOP28              Maxim MAX1737 Stand-Alone Switch-Mode Lithium-Ion Battery-Charger Controller              
+BATT1_IN        2_SUPERSABRE       2_SUPERSABRE              SUPERSABRE_2CIRCUIT Molex SuperSabre                                                                          
+BATT1_SWITCH    GPTS203212B        GPTS203212B               GPTS203211B         CW Industries Pushbutton SPST switch                                                      
+BATT2_FUSE      4A                 154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                          
+BATT2_IN        2_SUPERSABRE       2_SUPERSABRE              SUPERSABRE_2CIRCUIT Molex SuperSabre                                                                          
+BATT2_SWITCH    GPTS203212B        GPTS203212B               GPTS203211B         CW Industries Pushbutton SPST switch                                                      
+BUZZER                             KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating 
+BUZZER2                            KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating 
+C1              0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C2              2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C3              2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C4              1u                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C5              0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C6              1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C7              47n                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C8              47n                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C9              1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C10             1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C11             2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C12             2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C13             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C14             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C17             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C18             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C19             120uF              CPOL-USE3.5-8             E3,5-8              POLARIZED CAPACITOR, American symbol                                                      
+C20             2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C60             1u                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C61             10u                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C62             10u                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C63             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C66             2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C67             2.2u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C69             1u                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C70             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C71             1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C72             47n                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C73             47n                C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C74             1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C75             1n                 C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C78             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C79             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C82             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C83             0.1u               C-USC0805                 C0805               CAPACITOR, American symbol                                                                
+C84             120u               CPOL-USE3.5-8             E3,5-8              POLARIZED CAPACITOR, American symbol                                                      
+CHARGING-SWITCH                    KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating 
+D1                                 DIODE-SOD123              SOD123              DIODE                                                                                     
+D2                                 DIODE-SOD123              SOD123              DIODE                                                                                     
+INPUT-SWITCH    GPTS203212B        GPTS203212B               GPTS203211B         CW Industries Pushbutton SPST switch                                                      
+L1              10uH               L-USL6100                 L6100               INDUCTOR, American symbol                                                                 
+L2              10uH               L-USL6100                 L6100               INDUCTOR, American symbol                                                                 
+LED1            FASTCHG            LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED2            FULLCHG            LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED3            FAULT              LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED4            FASTCHG            LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED5            FULLCHG            LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED6            FAULT              LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED7            Shore Power        LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+LED8            CHARGING           LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                       
+R1              ~50k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R2              ~50k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R3              10k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R4              43k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R5              100m               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R6              4.3k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R7              100m               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R8              43k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R9              1.2k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R10             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R11             1.2k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R12             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R13             510                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R14             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R15             1.2k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R16             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R17             1.2k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R18             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R19             680                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R20             50k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R21             510                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R22             680                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R23             510                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R24             6.8k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R25             43k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R26             4.3k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R27             4.3k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R28             1.5k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R29             100m               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R30             ~50k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R31             ~50k               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R32             10k                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R33             330                R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R34             100m               R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R35             0                  R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R36             0                  R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+R37             0                  R-US_R0805                R0805               RESISTOR, American symbol                                                                 
+SHORE_IN        2_SUPERSABRE       2_SUPERSABRE              SUPERSABRE_2CIRCUIT Molex SuperSabre                                                                          
+SHORE_OUT       2_SUPERSABRE       2_SUPERSABRE              SUPERSABRE_2CIRCUIT Molex SuperSabre                                                                          
+U$1             MAX1737            MAX1737                   QSOP28              Maxim MAX1737 Stand-Alone Switch-Mode Lithium-Ion Battery-Charger Controller              
+U$2             FDMC8360LET40PWR33 FDMC8360LET40PWR33        POWER33                                                                                                       
+U$3             FDMC8360LET40PWR33 FDMC8360LET40PWR33        POWER33                                                                                                       
+U$5                                SCHOTTKY-DIODESOD-106     SOD106-R            Schottky Diode                                                                            
+U$6             NTCLE201E3         NTCLE201E3                2-0.3MM-LEADS       Vishay NTC Thermistor                                                                     
+U$7             DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$8             DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$9             DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$10            DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$11            DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$12            DMP32D5SFB         DMP32D5SFB                AP02002             Diodes Inc. DMP32D5SFB                                                                    
+U$16            IPD50P04P4-13      IPD50P04P4-13             TO252-3             Infineon IPD50P04P4-13                                                                    
+U$19            IPD50P04P4-13      IPD50P04P4-13             TO252-3             Infineon IPD50P04P4-13                                                                    
+U$23            IPD50P04P4-13      IPD50P04P4-13             TO252-3             Infineon IPD50P04P4-13                                                                    
+U$37            FDMC8360LET40PWR33 FDMC8360LET40PWR33        POWER33                                                                                                       
+U$40            NTCLE201E3         NTCLE201E3                2-0.3MM-LEADS       Vishay NTC Thermistor                                                                     
+U$56            74LVC1G14          74LVC1G14                 TSSOP5              Nexperia 74LVC1G14                                                                        
+U$57            NCP1117            NCP1117                   SOT-223             ON Semiconductor NCP1117                                                                  

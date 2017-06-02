@@ -23,42 +23,42 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="12" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="12" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -156,6 +156,9 @@
 <wire x1="104.755" y1="20.955" x2="104.755" y2="98.095" width="0" layer="20"/>
 <wire x1="104.755" y1="98.095" x2="19.685" y2="98.095" width="0" layer="20"/>
 <wire x1="19.685" y1="98.095" x2="19.685" y2="20.955" width="0" layer="20"/>
+<text x="98.425" y="94.615" size="1.27" layer="21" ratio="15" rot="SR270">Ben Hurwitz
+R@M
+2017</text>
 </plain>
 <libraries>
 <library name="molex">
@@ -1908,89 +1911,87 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="22.225" y="90.805" size="0.4064" layer="25" ratio="7" rot="R270"/>
 <attribute name="VALUE" x="29.21" y="94.615" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AUDIO1" library="molex" package="KK254_VERT_2PIN" value="" x="99.057796875" y="38.265959375" smashed="yes" rot="R180">
-<attribute name="NAME" x="101.597796875" y="34.455959375" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<element name="BUZZER2" library="molex" package="KK254_VERT_2PIN" value="" x="99.057796875" y="38.265959375" smashed="yes" rot="R180">
+<attribute name="NAME" x="103.339040625" y="39.367796875" size="0.4064" layer="25" ratio="7" rot="R270"/>
 <attribute name="VALUE" x="101.597796875" y="43.345959375" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="BATT1_CHARGE" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="27.94" y="48.895" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.59" y="38.735" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="35.56" y="38.735" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<element name="BATT1_IN" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="27.94" y="48.895" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.59" y="41.91" size="1.27" layer="25" ratio="7" rot="R90"/>
 </element>
-<element name="BATT2_CHARGE" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="76.2" y="27.94" smashed="yes">
-<attribute name="NAME" x="66.04" y="34.29" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="66.04" y="20.32" size="0.4064" layer="27" ratio="7"/>
+<element name="BATT2_IN" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="76.2" y="27.94" smashed="yes">
+<attribute name="NAME" x="64.77" y="21.59" size="1.27" layer="25" ratio="7" rot="R90"/>
 </element>
 <element name="C1" library="resistor" package="C0805" value="0.1u" x="77.4602" y="67.509959375" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.4442" y="66.620959375" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="79.7462" y="66.620959375" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="76.4442" y="68.525959375" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="79.1112" y="67.890959375" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C10" library="resistor" package="C0805" value="1n" x="69.26380625" y="55.4751625" smashed="yes" rot="R180">
-<attribute name="NAME" x="70.15280625" y="54.4591625" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="70.15280625" y="57.7611625" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="68.88280625" y="54.4591625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="67.3338375" y="56.18280625" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="C11" library="resistor" package="C0805" value="2.2u" x="46.99" y="41.91" smashed="yes" rot="R270">
-<attribute name="NAME" x="48.006" y="42.799" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="44.704" y="42.799" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="48.006" y="42.164" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="45.339" y="42.164" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="C12" library="resistor" package="C0805" value="2.2u" x="76.589715625" y="43.801253125" smashed="yes" rot="R90">
-<attribute name="NAME" x="75.573715625" y="42.912253125" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="78.875715625" y="42.912253125" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="77.102746875" y="41.918715625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="75.700715625" y="42.277253125" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C13" library="resistor" package="C0805" value="0.1u" x="79.95484375" y="62.594084375" smashed="yes">
-<attribute name="NAME" x="79.06584375" y="63.610084375" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="79.06584375" y="60.308084375" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="82.22415625" y="65.294915625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="80.97084375" y="64.118084375" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C14" library="resistor" package="C0805" value="0.1u" x="79.9803375" y="60.528134375" smashed="yes">
-<attribute name="NAME" x="79.0913375" y="61.544134375" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="79.0913375" y="58.242134375" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="81.5636625" y="61.645865625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="82.092865625" y="60.0413375" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C17" library="resistor" package="C0805" value="0.1u" x="79.95703125" y="58.456534375" smashed="yes">
-<attribute name="NAME" x="79.06803125" y="59.472534375" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="79.06803125" y="56.170534375" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="81.697534375" y="58.72696875" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="80.95196875" y="57.494465625" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C18" library="resistor" package="C0805" value="0.1u" x="76.486875" y="53.816740625" smashed="yes" rot="R270">
-<attribute name="NAME" x="77.502875" y="54.705740625" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="74.200875" y="54.705740625" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="77.502875" y="53.435740625" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="76.104259375" y="51.975875" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C19" library="resistor" package="E3,5-8" value="120uF" x="82.5196375" y="50.9102375" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.7256375" y="54.2122375" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="85.5676375" y="48.6242375" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="80.4077625" y="47.3406375" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="80.9157625" y="46.8326375" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C2" library="resistor" package="C0805" value="2.2u" x="71.208053125" y="67.3678" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.192053125" y="66.4788" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="73.494053125" y="66.4788" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="70.192053125" y="68.3838" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="72.555946875" y="68.7762" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
-<element name="C20" library="resistor" package="C0805" value="2.2u" x="57.15" y="84.455" smashed="yes" rot="MR180">
-<attribute name="NAME" x="58.801" y="84.709" size="0.4064" layer="26" ratio="7" rot="MR180"/>
-<attribute name="VALUE" x="55.499" y="84.074" size="0.4064" layer="28" ratio="7" rot="MR0"/>
+<element name="C20" library="resistor" package="C0805" value="2.2u" x="57.15" y="85.09" smashed="yes" rot="MR180">
+<attribute name="NAME" x="58.801" y="85.344" size="0.4064" layer="26" ratio="7" rot="MR180"/>
+<attribute name="VALUE" x="55.499" y="84.709" size="0.4064" layer="28" ratio="7" rot="MR0"/>
 </element>
 <element name="C3" library="resistor" package="C0805" value="2.2u" x="68.15321875" y="66.36519375" smashed="yes" rot="R180">
-<attribute name="NAME" x="69.04221875" y="65.34919375" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="69.04221875" y="68.65119375" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="66.09580625" y="67.13721875" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="67.77221875" y="68.01619375" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C4" library="resistor" package="C0805" value="1u" x="66.360290625" y="63.93663125" smashed="yes" rot="R180">
-<attribute name="NAME" x="67.249290625" y="62.92063125" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="67.249290625" y="66.22263125" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="64.07936875" y="64.709290625" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="65.979290625" y="65.58763125" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C5" library="resistor" package="C0805" value="0.1u" x="64.59298125" y="59.780690625" smashed="yes">
 <attribute name="NAME" x="63.70398125" y="60.796690625" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="63.70398125" y="57.494690625" size="0.4064" layer="27" ratio="7"/>
+<attribute name="VALUE" x="62.574690625" y="60.75601875" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="C6" library="resistor" package="C0805" value="1n" x="68.693053125" y="59.772503125" smashed="yes" rot="R180">
-<attribute name="NAME" x="69.582053125" y="58.756503125" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="69.582053125" y="62.058503125" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="66.307946875" y="59.988496875" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="67.042053125" y="59.518503125" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C60" library="resistor" package="C0805" value="1u" x="62.865" y="45.085" smashed="yes">
-<attribute name="NAME" x="61.976" y="46.101" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="61.976" y="42.799" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="61.214" y="44.196" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="64.389" y="45.974" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="C61" library="resistor" package="C0805" value="10u" x="54.61" y="40.005" smashed="yes">
 <attribute name="NAME" x="53.721" y="41.021" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="53.721" y="37.719" size="0.4064" layer="27" ratio="7"/>
+<attribute name="VALUE" x="56.134" y="39.116" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C62" library="resistor" package="C0805" value="10u" x="59.69" y="40.005" smashed="yes" rot="R270">
-<attribute name="NAME" x="60.706" y="40.894" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="57.404" y="40.894" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="59.436" y="41.656" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="60.579" y="38.481" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C63" library="resistor" package="C0805" value="0.1u" x="40.95716875" y="71.66018125" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.57581875" y="72.32616875" size="0.4064" layer="25" ratio="7" rot="R270"/>
@@ -2009,8 +2010,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="31.9886875" y="71.2720625" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="C7" library="resistor" package="C0805" value="47n" x="74.40445625" y="53.819975" smashed="yes" rot="R270">
-<attribute name="NAME" x="75.42045625" y="54.708975" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="72.11845625" y="54.708975" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="73.80454375" y="52.606025" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="74.196025" y="51.79845625" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C70" library="resistor" package="C0805" value="0.1u" x="26.251228125" y="64.00236875" smashed="yes">
 <attribute name="NAME" x="24.51663125" y="63.462228125" size="0.4064" layer="25" ratio="7" rot="R90"/>
@@ -2026,50 +2027,50 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C73" library="resistor" package="C0805" value="47n" x="33.15330625" y="63.22415" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.13685" y="63.88730625" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="33.26769375" y="62.12485" size="0.4064" layer="27" ratio="7"/>
+<attribute name="VALUE" x="33.3270125" y="62.108671875" size="0.254" layer="27" ratio="7"/>
 </element>
 <element name="C74" library="resistor" package="C0805" value="1n" x="37.0474125" y="58.09889375" smashed="yes" rot="R270">
-<attribute name="NAME" x="38.0634125" y="58.98789375" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="34.7614125" y="58.98789375" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="37.39789375" y="56.5515875" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="38.2635875" y="58.48710625" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C75" library="resistor" package="C0805" value="1n" x="34.9502125" y="58.10844375" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.9662125" y="58.99744375" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="32.6642125" y="58.99744375" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="34.34755625" y="56.2862125" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="35.61755625" y="59.9692125" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C78" library="resistor" package="C0805" value="0.1u" x="45.206096875" y="68.377915625" smashed="yes">
-<attribute name="NAME" x="44.317096875" y="69.393915625" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="44.317096875" y="66.091915625" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="43.682096875" y="69.393915625" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="47.122903125" y="67.258084375" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C79" library="resistor" package="C0805" value="0.1u" x="47.6161125" y="63.642075" smashed="yes">
-<attribute name="NAME" x="46.7271125" y="64.658075" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="46.7271125" y="61.356075" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="45.608075" y="64.3978875" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="49.768925" y="63.2371125" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C8" library="resistor" package="C0805" value="47n" x="68.717384375" y="57.69543125" smashed="yes" rot="R180">
 <attribute name="NAME" x="69.606384375" y="56.67943125" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="69.606384375" y="59.98143125" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="66.96643125" y="57.393615625" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="C82" library="resistor" package="C0805" value="0.1u" x="43.346084375" y="61.95205" smashed="yes" rot="R270">
-<attribute name="NAME" x="44.362084375" y="62.84105" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="41.060084375" y="62.84105" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="43.79105" y="64.222915625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="44.42605" y="59.904915625" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="C83" library="resistor" package="C0805" value="0.1u" x="33.15805" y="65.707071875" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.558928125" y="66.43205" size="0.4064" layer="25" ratio="7" rot="R270"/>
 <attribute name="VALUE" x="31.99295" y="66.626928125" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C84" library="resistor" package="E3,5-8" value="120u" x="41.91" y="54.61" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.608" y="51.816" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="44.196" y="57.658" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="40.513" y="50.546" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="39.624" y="49.657" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="C9" library="resistor" package="C0805" value="1n" x="72.334659375" y="53.84150625" smashed="yes" rot="R270">
-<attribute name="NAME" x="73.350659375" y="54.73050625" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="70.048659375" y="54.73050625" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="71.429340625" y="52.58449375" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="71.923965625" y="51.84860625" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="D1" library="diode" package="SOD123" value="" x="48.0515875" y="67.890884375" smashed="yes" rot="R270">
-<attribute name="NAME" x="49.0515875" y="68.990884375" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="NAME" x="49.0515875" y="68.355884375" size="0.4064" layer="25" ratio="7" rot="R270"/>
 <attribute name="VALUE" x="45.7515875" y="68.990884375" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D2" library="diode" package="SOD123" value="" x="82.957078125" y="60.79170625" smashed="yes" rot="R270">
-<attribute name="NAME" x="83.957078125" y="61.89170625" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="NAME" x="83.957078125" y="61.25670625" size="0.4064" layer="25" ratio="7" rot="R270"/>
 <attribute name="VALUE" x="80.657078125" y="61.89170625" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="LED1" library="led" package="CHIP-LED0805" value="FASTCHG" x="23.495" y="69.215" smashed="yes" rot="R180">
@@ -2081,25 +2082,22 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED3" library="led" package="CHIP-LED0805" value="FAULT" x="23.2067875" y="82.16683125" smashed="yes" rot="R180">
 <attribute name="VALUE" x="21.8782125" y="81.02816875" size="1.016" layer="27" ratio="15" rot="R90"/>
 </element>
-<element name="LED4" library="led" package="CHIP-LED0805" value="Green" x="99.695" y="45.72" smashed="yes" rot="R270">
-<attribute name="NAME" x="98.425" y="46.99" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="98.425" y="43.18" size="0.4064" layer="27" ratio="7"/>
+<element name="LED4" library="led" package="CHIP-LED0805" value="FASTCHG" x="99.695" y="45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="103.400625" y="47.92655" size="1.27" layer="27" ratio="15" rot="R180"/>
 </element>
-<element name="LED5" library="led" package="CHIP-LED0805" value="Green" x="99.55771875" y="49.056996875" smashed="yes" rot="R270">
-<attribute name="NAME" x="98.28771875" y="50.326996875" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="98.28771875" y="46.516996875" size="0.4064" layer="27" ratio="7"/>
+<element name="LED5" library="led" package="CHIP-LED0805" value="FULLCHG" x="99.55771875" y="49.056996875" smashed="yes" rot="R270">
+<attribute name="VALUE" x="103.64228125" y="51.908003125" size="1.27" layer="27" ratio="15" rot="R180"/>
 </element>
-<element name="LED6" library="led" package="CHIP-LED0805" value="Red" x="99.628596875" y="42.034153125" smashed="yes" rot="R270">
-<attribute name="NAME" x="98.358596875" y="43.304153125" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="98.358596875" y="39.494153125" size="0.4064" layer="27" ratio="7"/>
+<element name="LED6" library="led" package="CHIP-LED0805" value="FAULT" x="99.628596875" y="42.034153125" smashed="yes" rot="R270">
+<attribute name="VALUE" x="102.301403125" y="44.325846875" size="1.27" layer="27" ratio="15" rot="R180"/>
 </element>
-<element name="ON" library="molex" package="KK254_VERT_2PIN" value="" x="56.515" y="34.925" smashed="yes">
-<attribute name="NAME" x="53.975" y="38.735" size="0.4064" layer="25" ratio="7"/>
+<element name="CHARGING-SWITCH" library="molex" package="KK254_VERT_2PIN" value="" x="56.515" y="34.925" smashed="yes">
+<attribute name="NAME" x="48.26" y="30.48" size="1.27" layer="25" ratio="7"/>
 <attribute name="VALUE" x="53.975" y="29.845" size="1.27" layer="27"/>
 </element>
 <element name="R1" library="resistor" package="R0805" value="~50k" x="69.4242375" y="62.91135" smashed="yes" rot="R270">
-<attribute name="NAME" x="70.4402375" y="63.67335" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="67.1382375" y="63.67335" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="69.04165" y="64.7252375" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="70.02335" y="61.1317625" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R10" library="resistor" package="R0805" value="50k" x="29.21" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.448" y="75.311" size="0.4064" layer="25" ratio="7"/>
@@ -2122,68 +2120,68 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="29.972" y="81.661" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R15" library="resistor" package="R0805" value="1.2k" x="88.991234375" y="41.921290625" smashed="yes" rot="R180">
-<attribute name="NAME" x="89.753234375" y="40.905290625" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="89.753234375" y="44.207290625" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="90.388234375" y="40.905290625" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="88.483234375" y="41.032290625" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R16" library="resistor" package="R0805" value="50k" x="88.751515625" y="45.522396875" smashed="yes">
-<attribute name="NAME" x="87.989515625" y="46.538396875" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="87.989515625" y="43.236396875" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="90.621603125" y="44.809515625" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="87.354515625" y="46.411396875" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R17" library="resistor" package="R0805" value="1.2k" x="93.487146875" y="41.97078125" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.249146875" y="40.95478125" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="94.249146875" y="44.25678125" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="93.710853125" y="40.32521875" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="91.805853125" y="40.19821875" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R18" library="resistor" package="R0805" value="50k" x="93.386878125" y="45.5228125" smashed="yes">
-<attribute name="NAME" x="92.624878125" y="46.5388125" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="92.624878125" y="43.2368125" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="91.989878125" y="46.5388125" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="91.4968125" y="45.805121875" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="R19" library="resistor" package="R0805" value="680" x="26.035" y="81.28" smashed="yes">
 <attribute name="NAME" x="24.384" y="81.153" size="0.4064" layer="25" ratio="7" rot="R90"/>
 <attribute name="VALUE" x="27.559" y="82.042" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="R2" library="resistor" package="R0805" value="~50k" x="66.37180625" y="61.88128125" smashed="yes">
-<attribute name="NAME" x="65.60980625" y="62.89728125" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="65.60980625" y="59.59528125" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="64.73771875" y="61.79980625" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="67.10519375" y="61.05471875" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R20" library="resistor" package="R0805" value="50k" x="84.415409375" y="45.5418375" smashed="yes">
-<attribute name="NAME" x="83.653409375" y="46.5578375" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="83.653409375" y="43.2558375" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="85.9278375" y="45.886590625" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="83.351590625" y="44.3741625" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R21" library="resistor" package="R0805" value="510" x="87.2063125" y="39.68748125" smashed="yes" rot="R180">
-<attribute name="NAME" x="87.9683125" y="38.67148125" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="87.9683125" y="41.97348125" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="89.47148125" y="39.0316875" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="85.02651875" y="40.3433125" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="R22" library="resistor" package="R0805" value="680" x="84.612078125" y="41.8338875" smashed="yes" rot="R180">
-<attribute name="NAME" x="85.374078125" y="40.8178875" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="85.374078125" y="44.1198875" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="84.739078125" y="40.8178875" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="82.8548875" y="41.625921875" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="R23" library="resistor" package="R0805" value="510" x="62.865" y="42.545" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.627" y="41.529" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="63.627" y="44.831" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="61.214" y="41.783" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="64.389" y="43.307" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="R24" library="resistor" package="R0805" value="6.8k" x="62.865" y="40.005" smashed="yes" rot="R180">
-<attribute name="NAME" x="63.627" y="38.989" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="63.627" y="42.291" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="61.214" y="39.243" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="64.389" y="40.767" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
-<element name="R25" library="resistor" package="R0805" value="43k" x="57.15" y="86.36" smashed="yes" rot="MR180">
-<attribute name="NAME" x="58.928" y="86.614" size="0.4064" layer="26" ratio="7" rot="MR180"/>
-<attribute name="VALUE" x="55.372" y="85.979" size="0.4064" layer="28" ratio="7" rot="MR0"/>
+<element name="R25" library="resistor" package="R0805" value="43k" x="57.15" y="87.169459375" smashed="yes" rot="MR180">
+<attribute name="NAME" x="58.928" y="87.423459375" size="0.4064" layer="26" ratio="7" rot="MR180"/>
+<attribute name="VALUE" x="55.372" y="86.788459375" size="0.4064" layer="28" ratio="7" rot="MR0"/>
 </element>
-<element name="R26" library="resistor" package="R0805" value="4.3k" x="57.15" y="88.265" smashed="yes" rot="MR180">
-<attribute name="NAME" x="58.928" y="89.154" size="0.4064" layer="26" ratio="7" rot="MR180"/>
-<attribute name="VALUE" x="59.182" y="89.154" size="0.4064" layer="28" ratio="7" rot="MR0"/>
+<element name="R26" library="resistor" package="R0805" value="4.3k" x="57.176840625" y="89.24891875" smashed="yes" rot="MR180">
+<attribute name="NAME" x="58.954840625" y="90.13791875" size="0.4064" layer="26" ratio="7" rot="MR180"/>
+<attribute name="VALUE" x="59.208840625" y="90.13791875" size="0.4064" layer="28" ratio="7" rot="MR0"/>
 </element>
 <element name="R27" library="resistor" package="R0805" value="4.3k" x="76.2" y="38.735" smashed="yes">
-<attribute name="NAME" x="75.438" y="39.751" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="75.438" y="36.449" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="74.549" y="37.973" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="74.803" y="39.624" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R29" library="resistor" package="R0805" value="100m" x="49.53" y="59.055" smashed="yes" rot="R90">
-<attribute name="NAME" x="48.514" y="58.293" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="51.816" y="58.293" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="51.054" y="59.563" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="50.292" y="60.706" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R3" library="resistor" package="R0805" value="10k" x="64.61136875" y="57.71275625" smashed="yes">
-<attribute name="NAME" x="63.84936875" y="58.72875625" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="63.84936875" y="55.42675625" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="62.53875625" y="58.07063125" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="64.42063125" y="56.96824375" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R30" library="resistor" package="R0805" value="~50k" x="31.642375" y="68.424678125" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.825625" y="69.116321875" size="0.4064" layer="25" ratio="7"/>
@@ -2198,28 +2196,28 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="26.141103125" y="66.970928125" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R34" library="resistor" package="R0805" value="100m" x="46.99" y="59.055" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.974" y="58.293" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="49.276" y="58.293" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="45.974" y="59.563" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="47.752" y="60.706" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R4" library="resistor" package="R0805" value="43k" x="42.545" y="40.005" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.307" y="38.989" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="43.307" y="42.291" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="42.037" y="38.989" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="43.942" y="39.116" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R5" library="resistor" package="R0805" value="100m" x="90.91331875" y="50.59105625" smashed="yes" rot="R90">
-<attribute name="NAME" x="89.89731875" y="49.82905625" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="93.19931875" y="49.82905625" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="NAME" x="92.43731875" y="49.82905625" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="90.46905625" y="48.40568125" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R6" library="resistor" package="R0805" value="4.3k" x="38.1" y="40.005" smashed="yes">
-<attribute name="NAME" x="37.338" y="41.021" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="37.338" y="37.719" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="37.592" y="38.989" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="39.497" y="39.116" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R7" library="resistor" package="R0805" value="100m" x="88.846809375" y="50.606625" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.830809375" y="49.844625" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="91.132809375" y="49.844625" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="87.944625" y="48.567190625" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R8" library="resistor" package="R0805" value="43k" x="79.640178125" y="42.834209375" smashed="yes">
-<attribute name="NAME" x="78.878178125" y="43.850209375" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="78.878178125" y="40.548209375" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="78.243178125" y="43.850209375" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="81.188209375" y="43.676821875" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="R9" library="resistor" package="R0805" value="1.2k" x="25.4" y="72.39" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.638" y="74.041" size="0.4064" layer="25" ratio="7"/>
@@ -2229,36 +2227,30 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="74.93" y="57.6834" size="0.4064" layer="25" ratio="7" rot="SR90"/>
 </element>
 <element name="U$10" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="88.9" y="43.815" smashed="yes" rot="R270">
-<attribute name="NAME" x="88.265" y="44.45" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="89.535" y="44.45" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="90.805" y="43.18" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="U$11" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="93.345" y="43.815" smashed="yes" rot="R270">
-<attribute name="NAME" x="92.71" y="44.45" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="93.98" y="44.45" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="95.25" y="43.18" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="U$12" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="84.41540625" y="43.815" smashed="yes" rot="R270">
-<attribute name="NAME" x="83.78040625" y="44.45" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="85.05040625" y="44.45" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="86.36" y="43.21959375" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
-<element name="U$13" library="diode" package="DO-219AB" value="VTVS" x="76.255903125" y="35.112746875" smashed="yes" rot="R180">
-<attribute name="NAME" x="78.795903125" y="33.842746875" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="78.795903125" y="37.017746875" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<element name="24V-TVS_3" library="diode" package="DO-219AB" value="VTVS" x="76.255903125" y="35.112746875" smashed="yes" rot="R180">
+<attribute name="NAME" x="78.160903125" y="37.017746875" size="0.4064" layer="25" ratio="7" rot="R180"/>
 </element>
-<element name="U$15" library="diode" package="DO-219AB" value="VTVS" x="35.038246875" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.308246875" y="53.34" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="33.133246875" y="53.34" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<element name="24V-TVS_2" library="diode" package="DO-219AB" value="VTVS" x="35.038246875" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.308246875" y="52.705" size="0.4064" layer="25" ratio="7" rot="R270"/>
 </element>
 <element name="U$16" library="transistor-power" package="TO252-3" value="IPD50P04P4-13" x="37.465" y="45.085" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.275" y="41.275" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="41.275" y="50.165" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="41.91" y="48.895" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
-<element name="U$17" library="littelfuse" package="154-OMNI-BLOK" value="4A" x="48.895" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.085" y="44.45" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="53.975" y="44.45" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<element name="BATT1_FUSE" library="littelfuse" package="154-OMNI-BLOK" value="4A" x="48.895" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.07" y="53.975" size="0.6096" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="45.72" y="50.165" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
-<element name="U$18" library="littelfuse" package="154-OMNI-BLOK" value="4A" x="71.755" y="48.26" smashed="yes">
-<attribute name="NAME" x="65.405" y="52.07" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="65.405" y="43.18" size="0.4064" layer="27" ratio="7"/>
+<element name="BATT2_FUSE" library="littelfuse" package="154-OMNI-BLOK" value="4A" x="71.755" y="48.26" smashed="yes">
+<attribute name="NAME" x="71.755" y="45.72" size="0.6096" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="74.295" y="45.085" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="U$19" library="transistor-power" package="TO252-3" value="IPD50P04P4-13" x="49.53" y="80.645" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="44.45" y="77.47" size="0.4064" layer="28" ratio="7" rot="MR180"/>
@@ -2267,27 +2259,27 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="89.07" y="67.475" size="0.4064" layer="28" ratio="7" rot="MR270"/>
 </element>
 <element name="INPUT-SWITCH" library="switches" package="GPTS203211B" value="GPTS203212B" x="60.96" y="86.36" smashed="yes" rot="R180">
-<attribute name="NAME" x="73.66" y="95.885" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="73.66" y="87.63" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="73.66" y="95.885" size="1.27" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="74.295" y="87.63" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="24V-TVS_OUT" library="diode" package="DO-219AB" value="VTVS" x="86.995" y="80.645" smashed="yes" rot="R180">
 <attribute name="NAME" x="90.17" y="79.375" size="0.4064" layer="25" ratio="7" rot="R180"/>
 </element>
-<element name="U$22" library="switches" package="GPTS203211B" value="GPTS203212B" x="44.45" y="37.465" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.34" y="24.765" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="45.72" y="24.765" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<element name="BATT1_SWITCH" library="switches" package="GPTS203211B" value="GPTS203212B" x="33.655" y="28.575" smashed="yes">
+<attribute name="NAME" x="34.29" y="37.465" size="1.27" layer="25" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="29.21" y="21.59" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="U$23" library="transistor-power" package="TO252-3" value="IPD50P04P4-13" x="70.485" y="38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="74.295" y="41.91" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="65.405" y="41.91" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="NAME" x="72.39" y="39.37" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="66.04" y="40.64" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
-<element name="U$24" library="switches" package="GPTS203211B" value="GPTS203212B" x="94.615" y="34.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="103.505" y="21.59" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="95.885" y="21.59" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<element name="BATT2_SWITCH" library="switches" package="GPTS203211B" value="GPTS203212B" x="94.615" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="103.505" y="21.59" size="1.27" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="101.6" y="26.035" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
 <element name="U$3" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="86.36" y="59.69" smashed="yes" rot="MR90"/>
-<element name="U$33" library="maxim" package="QSOP28" value="MAX1737" x="38.735" y="65.405" smashed="yes">
-<attribute name="NAME" x="39.37" y="62.1284" size="0.4064" layer="25" ratio="7" rot="SR90"/>
+<element name="BATT1_IC" library="maxim" package="QSOP28" value="MAX1737" x="38.735" y="65.405" smashed="yes">
+<attribute name="NAME" x="38.6334" y="59.69" size="0.4064" layer="25" ratio="7" rot="SR0"/>
 </element>
 <element name="B1-HFET" library="fairchild" package="POWER33" value="FDMC8360LET40PWR33" x="45.085" y="71.12" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="49.695" y="72.22" size="0.4064" layer="28" ratio="7" rot="MR0"/>
@@ -2299,7 +2291,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="48.514" y="73.683" size="0.4064" layer="26" ratio="7" rot="MR0"/>
 <attribute name="VALUE" x="45.466" y="77.493" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="24V-TVS_IN" library="diode" package="DO-219AB" value="VTVS" x="46.355" y="80.645" smashed="yes">
+<element name="24V-TVS_1" library="diode" package="DO-219AB" value="VTVS" x="46.355" y="80.645" smashed="yes">
 <attribute name="NAME" x="48.895" y="79.375" size="0.4064" layer="25" ratio="7" rot="R180"/>
 </element>
 <element name="U$40" library="vishay" package="2-0.3MM-LEADS" value="NTCLE201E3" x="22.86" y="62.23" smashed="yes" rot="R270">
@@ -2314,16 +2306,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="61.595" y="48.895" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="U$57" library="ONSemi" package="SOT-223" value="NCP1117" x="56.515" y="44.45" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.975" y="48.26" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="56.515" y="46.99" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="55.245" y="48.26" size="0.4064" layer="27" ratio="7"/>
 </element>
-<element name="U$58" library="diode" package="DO-219AB" value="VTVS" x="62.23" y="36.195" smashed="yes" rot="R90">
-<attribute name="NAME" x="60.96" y="33.655" size="0.4064" layer="25" ratio="7" rot="R90"/>
-<attribute name="VALUE" x="64.135" y="33.655" size="0.4064" layer="27" ratio="7" rot="R90"/>
+<element name="5V-TVS_1" library="diode" package="DO-219AB" value="VTVS" x="62.23" y="36.195" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.135" y="34.29" size="0.4064" layer="25" ratio="7" rot="R90"/>
 </element>
 <element name="U$6" library="vishay" package="2-0.3MM-LEADS" value="NTCLE201E3" x="81.630434375" y="38.92176875" smashed="yes" rot="R270">
-<attribute name="NAME" x="82.900434375" y="41.46176875" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="79.725434375" y="41.46176875" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="80.360434375" y="40.82676875" size="0.4064" layer="25" ratio="7" rot="R270"/>
 </element>
 <element name="U$7" library="transistor-fet" package="AP02002" value="DMP32D5SFB" x="27.305" y="73.66" smashed="yes" rot="R180">
 <attribute name="VALUE" x="27.94" y="75.565" size="0.4064" layer="27" ratio="7" rot="R270"/>
@@ -2335,41 +2324,40 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="27.94" y="85.725" size="0.4064" layer="27" ratio="7" rot="R270"/>
 </element>
 <element name="SHORE_IN" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="45.085" y="88.265" smashed="yes" rot="R180">
-<attribute name="NAME" x="48.895" y="95.885" size="0.4064" layer="25" ratio="7" rot="R180"/>
+<attribute name="NAME" x="48.895" y="95.885" size="1.27" layer="25" ratio="7" rot="R180"/>
 </element>
 <element name="SHORE_OUT" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="86.995" y="88.265" smashed="yes">
-<attribute name="NAME" x="81.915" y="94.615" size="0.4064" layer="25" ratio="7"/>
+<attribute name="NAME" x="81.915" y="94.615" size="1.27" layer="25" ratio="7"/>
 </element>
 <element name="LED7" library="led" package="CHIP-LED0805" value="Shore Power" x="79.375" y="78.74" smashed="yes" rot="R90">
-<attribute name="VALUE" x="86.995" y="77.47" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="VALUE" x="86.995" y="77.47" size="1.27" layer="27" ratio="15" rot="R180"/>
 </element>
 <element name="R28" library="resistor" package="R0805" value="1.5k" x="81.28" y="80.645" smashed="yes">
 <attribute name="NAME" x="83.439" y="80.518" size="0.4064" layer="25" ratio="7" rot="R90"/>
 <attribute name="VALUE" x="79.121" y="80.518" size="0.4064" layer="27" ratio="7" rot="R90"/>
 </element>
-<element name="LED8" library="led" package="CHIP-LED0805" value="Green" x="56.515" y="51.435" smashed="yes" rot="R90">
-<attribute name="NAME" x="57.785" y="50.165" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="57.785" y="53.975" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<element name="LED8" library="led" package="CHIP-LED0805" value="CHARGING" x="56.515" y="51.435" smashed="yes" rot="R90">
+<attribute name="VALUE" x="62.865" y="54.61" size="1.27" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R33" library="resistor" package="R0805" value="330" x="60.96" y="51.435" smashed="yes">
 <attribute name="NAME" x="60.198" y="52.451" size="0.4064" layer="25" ratio="7"/>
 <attribute name="VALUE" x="60.198" y="49.149" size="0.4064" layer="27" ratio="7"/>
 </element>
-<element name="L1" library="resistor" package="L6100" value="10u" x="56.515" y="62.865" smashed="yes" rot="R270">
-<attribute name="NAME" x="59.055" y="66.675" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="52.705" y="66.675" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<element name="L1" library="resistor" package="L6100" value="10uH" x="56.515" y="62.865" smashed="yes" rot="R270">
+<attribute name="NAME" x="55.88" y="69.215" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="55.88" y="68.58" size="0.4064" layer="27" ratio="7"/>
 </element>
-<element name="L2" library="resistor" package="L6100" value="10u" x="90.17" y="58.42" smashed="yes" rot="R270">
-<attribute name="NAME" x="92.71" y="62.23" size="0.4064" layer="25" ratio="7" rot="R270"/>
-<attribute name="VALUE" x="86.36" y="62.23" size="0.4064" layer="27" ratio="7" rot="R270"/>
+<element name="L2" library="resistor" package="L6100" value="10uH" x="90.17" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="89.535" y="64.77" size="0.4064" layer="25" ratio="7"/>
+<attribute name="VALUE" x="89.535" y="64.135" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R35" library="resistor" package="R0805" value="0" x="35.96115" y="54.814078125" smashed="yes">
-<attribute name="NAME" x="35.19915" y="55.830078125" size="0.4064" layer="25" ratio="7"/>
-<attribute name="VALUE" x="35.19915" y="52.528078125" size="0.4064" layer="27" ratio="7"/>
+<attribute name="NAME" x="38.149921875" y="54.24915" size="0.4064" layer="25" ratio="7" rot="R90"/>
+<attribute name="VALUE" x="37.10415" y="55.703078125" size="0.4064" layer="27" ratio="7"/>
 </element>
 <element name="R36" library="resistor" package="R0805" value="0" x="84.455" y="34.925" smashed="yes" rot="R180">
-<attribute name="NAME" x="85.217" y="33.909" size="0.4064" layer="25" ratio="7" rot="R180"/>
-<attribute name="VALUE" x="85.217" y="37.211" size="0.4064" layer="27" ratio="7" rot="R180"/>
+<attribute name="NAME" x="82.296" y="35.687" size="0.4064" layer="25" ratio="7" rot="R270"/>
+<attribute name="VALUE" x="83.312" y="36.576" size="0.4064" layer="27" ratio="7" rot="R180"/>
 </element>
 <element name="R37" library="resistor" package="R0805" value="0" x="27.94" y="60.96" smashed="yes">
 <attribute name="NAME" x="26.289" y="60.833" size="0.4064" layer="25" ratio="7" rot="R90"/>
@@ -2378,7 +2366,7 @@ Please make sure your boards conform to these design rules.</description>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
-<contactref element="U$33" pad="6"/>
+<contactref element="BATT1_IC" pad="6"/>
 <contactref element="C75" pad="2"/>
 <contactref element="C74" pad="2"/>
 <contactref element="C73" pad="2"/>
@@ -2411,7 +2399,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C19" pad="-"/>
 <contactref element="C17" pad="2"/>
 <contactref element="SHORE_IN" pad="P$2"/>
-<contactref element="24V-TVS_IN" pad="P$1"/>
+<contactref element="24V-TVS_1" pad="P$1"/>
 <contactref element="C62" pad="2"/>
 <contactref element="U$57" pad="P$1"/>
 <contactref element="C61" pad="2"/>
@@ -2422,19 +2410,19 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LED4" pad="C"/>
 <contactref element="LED5" pad="C"/>
 <contactref element="LED6" pad="C"/>
-<contactref element="AUDIO1" pad="P$2"/>
+<contactref element="BUZZER2" pad="P$2"/>
 <contactref element="INPUT-SWITCH" pad="P$1"/>
 <contactref element="C20" pad="2"/>
 <contactref element="SHORE_OUT" pad="P$2"/>
 <contactref element="24V-TVS_OUT" pad="P$1"/>
-<contactref element="U$22" pad="P$1"/>
+<contactref element="BATT1_SWITCH" pad="P$1"/>
 <contactref element="C11" pad="2"/>
-<contactref element="U$24" pad="P$1"/>
+<contactref element="BATT2_SWITCH" pad="P$1"/>
 <contactref element="C12" pad="2"/>
 <polygon width="0.8128" layer="1" isolate="0.00030625" rank="6">
-<vertex x="21.59" y="31.75"/>
-<vertex x="103.505" y="31.75"/>
-<vertex x="103.505" y="96.52"/>
+<vertex x="21.59" y="22.225"/>
+<vertex x="102.87" y="22.225"/>
+<vertex x="102.235" y="96.52"/>
 <vertex x="20.955" y="96.52"/>
 </polygon>
 <contactref element="LED8" pad="C"/>
@@ -2452,8 +2440,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R37" pad="2"/>
 <contactref element="U$56" pad="P$3"/>
 <contactref element="C60" pad="2"/>
-<contactref element="ON" pad="P$2"/>
-<contactref element="U$58" pad="P$1"/>
+<contactref element="CHARGING-SWITCH" pad="P$2"/>
+<contactref element="5V-TVS_1" pad="P$1"/>
 <wire x1="72.334659375" y1="52.99150625" x2="72.356190625" y2="52.969975" width="1.27" layer="1"/>
 <wire x1="72.356190625" y1="52.969975" x2="74.40445625" y2="52.969975" width="1.27" layer="1"/>
 <wire x1="74.40445625" y1="52.969975" x2="74.407690625" y2="52.966740625" width="1.27" layer="1"/>
@@ -2468,7 +2456,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.07865" y1="66.572803125" x2="33.07865" y2="66.477671875" width="0.254" layer="1"/>
 <wire x1="35.152753125" y1="66.3575" x2="34.77378125" y2="66.736471875" width="0.254" layer="1"/>
 <wire x1="33.07865" y1="66.477671875" x2="32.30805" y2="65.707071875" width="0.254" layer="1"/>
-<wire x1="58" y1="84.455" x2="58" y2="82.97" width="0.254" layer="16"/>
+<wire x1="58" y1="85.09" x2="58" y2="82.97" width="0.254" layer="16"/>
 <wire x1="58" y1="82.97" x2="58.42" y2="82.55" width="0.254" layer="16"/>
 <via x="58.42" y="82.55" extent="1-16" drill="0.6"/>
 <wire x1="67.843053125" y1="59.772503125" x2="67.867384375" y2="57.69543125" width="0" layer="19" extent="1-1"/>
@@ -2478,12 +2466,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="76.589715625" y1="44.651253125" x2="76.486875" y2="52.966740625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BATT_1">
-<contactref element="U$33" pad="7"/>
+<contactref element="BATT1_IC" pad="7"/>
 <contactref element="C83" pad="1"/>
 <contactref element="R34" pad="1"/>
 <contactref element="C84" pad="+"/>
 <contactref element="R29" pad="1"/>
-<contactref element="U$17" pad="P$2"/>
+<contactref element="BATT1_FUSE" pad="P$2"/>
 <wire x1="34.1875" y1="65.7225" x2="34.00805" y2="65.707071875" width="0.254" layer="1"/>
 <wire x1="35.34266875" y1="65.7225" x2="36.0807" y2="65.7225" width="0.254" layer="1"/>
 <wire x1="36.0807" y1="65.7225" x2="34.023478125" y2="65.7225" width="0.254" layer="1"/>
@@ -2536,14 +2524,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="89.125" y1="44.165" x2="89.601515625" y2="44.641515625" width="0.254" layer="1"/>
 <wire x1="89.601515625" y1="44.641515625" x2="89.601515625" y2="45.522396875" width="0.254" layer="1"/>
 <wire x1="93.57" y1="44.165" x2="94.236878125" y2="44.831878125" width="0.254" layer="1"/>
-<wire x1="94.236878125" y1="44.831878125" x2="94.236878125" y2="45.5228125" width="0.254" layer="1"/>
 <wire x1="85.265409375" y1="45.5418375" x2="85.265409375" y2="44.909590625" width="0.254" layer="1"/>
 <wire x1="85.265409375" y1="44.909590625" x2="86.36" y2="43.815" width="0.254" layer="1"/>
 <via x="86.36" y="43.815" extent="1-16" drill="0.1778"/>
 <wire x1="89.601515625" y1="45.522396875" x2="89.601515625" y2="45.018484375" width="0.254" layer="1"/>
 <wire x1="89.601515625" y1="45.018484375" x2="90.805" y2="43.815" width="0.254" layer="1"/>
 <via x="90.805" y="43.815" extent="1-16" drill="0.1778"/>
-<wire x1="94.236878125" y1="45.5228125" x2="94.236878125" y2="44.828121875" width="0.254" layer="1"/>
+<wire x1="94.236878125" y1="45.5228125" x2="94.236878125" y2="44.831878125" width="0.254" layer="1"/>
+<wire x1="94.236878125" y1="44.831878125" x2="94.236878125" y2="44.828121875" width="0.254" layer="1"/>
 <wire x1="94.236878125" y1="44.828121875" x2="95.25" y2="43.815" width="0.254" layer="1"/>
 <via x="95.25" y="43.815" extent="1-16" drill="0.1778"/>
 <wire x1="95.25" y1="43.815" x2="97.155" y2="45.72" width="0.254" layer="16"/>
@@ -2606,7 +2594,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$62">
 <contactref element="R30" pad="2"/>
 <contactref element="R31" pad="2"/>
-<contactref element="U$33" pad="8"/>
+<contactref element="BATT1_IC" pad="8"/>
 <wire x1="31.54231875" y1="64.677671875" x2="31.37865" y2="64.841340625" width="0.254" layer="1"/>
 <wire x1="31.37865" y1="64.841340625" x2="31.37865" y2="66.41135" width="0.254" layer="1"/>
 <wire x1="34.77378125" y1="64.677671875" x2="31.54231875" y2="64.677671875" width="0.254" layer="1"/>
@@ -2618,10 +2606,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.44949375" y1="68.424678125" x2="30.792375" y2="68.424678125" width="0.254" layer="1"/>
 </signal>
 <signal name="N$65">
-<contactref element="U$33" pad="1"/>
+<contactref element="BATT1_IC" pad="1"/>
 <contactref element="C67" pad="1"/>
 <contactref element="C66" pad="1"/>
-<contactref element="U$33" pad="12"/>
+<contactref element="BATT1_IC" pad="12"/>
 <wire x1="36.0807" y1="69.5325" x2="34.5889" y2="69.5325" width="0.254" layer="1"/>
 <wire x1="36.0807" y1="69.5325" x2="35.636428125" y2="69.976771875" width="0.254" layer="1"/>
 <wire x1="35.636428125" y1="69.976771875" x2="35.636428125" y2="70.967728125" width="0.254" layer="1"/>
@@ -2641,9 +2629,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.7825" y1="69.5325" x2="36.0807" y2="69.5325" width="0.254" layer="1"/>
 </signal>
 <signal name="N$68">
-<contactref element="U$33" pad="3"/>
-<contactref element="U$33" pad="2"/>
-<contactref element="U$33" pad="5"/>
+<contactref element="BATT1_IC" pad="3"/>
+<contactref element="BATT1_IC" pad="2"/>
+<contactref element="BATT1_IC" pad="5"/>
 <contactref element="R30" pad="1"/>
 <contactref element="C69" pad="1"/>
 <wire x1="36.0807" y1="68.8975" x2="34.6075" y2="68.8975" width="0.254" layer="1"/>
@@ -2671,7 +2659,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.418103125" y1="64.01924375" x2="25.401228125" y2="64.00236875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$67">
-<contactref element="U$33" pad="9"/>
+<contactref element="BATT1_IC" pad="9"/>
 <contactref element="C71" pad="1"/>
 <contactref element="R32" pad="2"/>
 <wire x1="35.979221875" y1="64.351021875" x2="36.0807" y2="64.4525" width="0.254" layer="1"/>
@@ -2685,7 +2673,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="29.6256125" y1="66.01963125" x2="29.347709375" y2="66.01963125" width="0.254" layer="1"/>
 </signal>
 <signal name="N$69">
-<contactref element="U$33" pad="11"/>
+<contactref element="BATT1_IC" pad="11"/>
 <contactref element="C72" pad="1"/>
 <wire x1="36.0807" y1="63.1825" x2="35.9029" y2="63.0047" width="0.254" layer="1"/>
 <wire x1="35.9029" y1="63.0047" x2="35.16486875" y2="63.0047" width="0.254" layer="1"/>
@@ -2694,7 +2682,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35.0012" y1="62.15539375" x2="34.01069375" y2="61.1648875" width="0.254" layer="1"/>
 </signal>
 <signal name="N$70">
-<contactref element="U$33" pad="10"/>
+<contactref element="BATT1_IC" pad="10"/>
 <contactref element="C73" pad="1"/>
 <wire x1="36.0807" y1="63.8175" x2="35.9029" y2="63.6397" width="0.254" layer="1"/>
 <wire x1="35.9029" y1="63.6397" x2="35.16486875" y2="63.6397" width="0.254" layer="1"/>
@@ -2702,7 +2690,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="35.16486875" y1="63.6397" x2="34.74931875" y2="63.22415" width="0.254" layer="1"/>
 </signal>
 <signal name="N$71">
-<contactref element="U$33" pad="13"/>
+<contactref element="BATT1_IC" pad="13"/>
 <contactref element="C74" pad="1"/>
 <wire x1="36.0807" y1="61.9125" x2="36.2585" y2="61.7347" width="0.254" layer="1"/>
 <wire x1="36.2585" y1="61.7347" x2="36.99653125" y2="61.7347" width="0.254" layer="1"/>
@@ -2713,12 +2701,12 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$72">
 <contactref element="C75" pad="1"/>
-<contactref element="U$33" pad="14"/>
+<contactref element="BATT1_IC" pad="14"/>
 <wire x1="34.9502125" y1="58.95844375" x2="34.9502125" y2="60.1470125" width="0.254" layer="1"/>
 <wire x1="34.9502125" y1="60.1470125" x2="36.0807" y2="61.2775" width="0.254" layer="1"/>
 </signal>
 <signal name="N$75">
-<contactref element="U$33" pad="24"/>
+<contactref element="BATT1_IC" pad="24"/>
 <contactref element="C78" pad="1"/>
 <wire x1="41.3893" y1="66.9925" x2="41.5671" y2="67.1703" width="0.254" layer="1"/>
 <wire x1="41.5671" y1="67.1703" x2="42.30513125" y2="67.1703" width="0.254" layer="1"/>
@@ -2726,7 +2714,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42.30513125" y1="67.1703" x2="43.512746875" y2="68.377915625" width="0.254" layer="1"/>
 </signal>
 <signal name="N$76">
-<contactref element="U$33" pad="23"/>
+<contactref element="BATT1_IC" pad="23"/>
 <contactref element="C78" pad="2"/>
 <contactref element="D1" pad="C"/>
 <wire x1="46.414115625" y1="68.019896875" x2="46.056096875" y2="68.377915625" width="0.254" layer="1"/>
@@ -2741,7 +2729,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="47.469065625" y1="69.790884375" x2="48.0515875" y2="69.790884375" width="0.254" layer="1"/>
 </signal>
 <signal name="N$79">
-<contactref element="U$33" pad="21"/>
+<contactref element="BATT1_IC" pad="21"/>
 <contactref element="U$37" pad="GATE"/>
 <wire x1="41.3893" y1="65.0875" x2="42.18759375" y2="65.0875" width="0.254" layer="1"/>
 <wire x1="42.18759375" y1="65.0875" x2="42.27649375" y2="65.1764" width="0.254" layer="1"/>
@@ -2752,7 +2740,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="47.285" y1="68.71855625" x2="47.285" y2="69.085" width="0.254" layer="16"/>
 </signal>
 <signal name="N$80">
-<contactref element="U$33" pad="25"/>
+<contactref element="BATT1_IC" pad="25"/>
 <contactref element="B1-HFET" pad="GATE"/>
 <wire x1="41.3893" y1="67.6275" x2="41.5671" y2="67.8053" width="0.254" layer="1"/>
 <wire x1="41.5671" y1="67.8053" x2="42.30513125" y2="67.8053" width="0.254" layer="1"/>
@@ -2770,7 +2758,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="B1-HFET" pad="SOURCE2"/>
 <contactref element="B1-HFET" pad="SOURCE3"/>
 <contactref element="L1" pad="P$1"/>
-<polygon width="0.254" layer="16" spacing="0.254" isolate="0.3048" thermals="no">
+<polygon width="0.254" layer="16" spacing="0.254" isolate="0.3048" thermals="no" rank="2">
 <vertex x="46.99" y="69.215"/>
 <vertex x="50.165" y="69.215"/>
 <vertex x="50.165" y="73.025"/>
@@ -2785,7 +2773,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="51.26" y1="71.12" x2="56.515" y2="65.865" width="3.81" layer="16"/>
 </signal>
 <signal name="N$82">
-<contactref element="U$33" pad="20"/>
+<contactref element="BATT1_IC" pad="20"/>
 <contactref element="U$37" pad="SOURCE1"/>
 <contactref element="U$37" pad="SOURCE2"/>
 <contactref element="U$37" pad="SOURCE3"/>
@@ -2805,7 +2793,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.26" y1="68.76" x2="48.26" y2="68.58" width="0.254" layer="16"/>
 </signal>
 <signal name="N$83">
-<contactref element="U$33" pad="22"/>
+<contactref element="BATT1_IC" pad="22"/>
 <contactref element="C79" pad="1"/>
 <contactref element="D1" pad="A"/>
 <wire x1="44.20206875" y1="66.7491875" x2="44.85438125" y2="66.7491875" width="0.254" layer="1"/>
@@ -2819,7 +2807,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="46.7661125" y1="64.705409375" x2="46.7661125" y2="63.642075" width="0.254" layer="1"/>
 </signal>
 <signal name="CS_1">
-<contactref element="U$33" pad="19"/>
+<contactref element="BATT1_IC" pad="19"/>
 <contactref element="C82" pad="1"/>
 <contactref element="R34" pad="2"/>
 <contactref element="R29" pad="2"/>
@@ -2841,7 +2829,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.53" y1="59.905" x2="50.8" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$84">
-<contactref element="U$33" pad="4"/>
+<contactref element="BATT1_IC" pad="4"/>
 <contactref element="U$40" pad="P$1"/>
 <wire x1="36.0807" y1="67.6275" x2="35.9029" y2="67.8053" width="0.254" layer="1"/>
 <wire x1="34.9852625" y1="67.945" x2="34.29" y2="67.945" width="0.254" layer="1"/>
@@ -3052,7 +3040,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="C19" pad="+"/>
 <contactref element="R7" pad="1"/>
-<contactref element="U$18" pad="P$2"/>
+<contactref element="BATT2_FUSE" pad="P$2"/>
 <wire x1="82.2824" y1="48.895" x2="74.9427" y2="48.26" width="2.54" layer="1"/>
 <wire x1="82.2824" y1="48.895" x2="82.5196375" y2="49.1322375" width="2.54" layer="1"/>
 <wire x1="88.222421875" y1="49.1322375" x2="82.5196375" y2="49.1322375" width="2.54" layer="1"/>
@@ -3080,7 +3068,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="72.55653125" y1="61.0997" x2="71.8185" y2="61.0997" width="0.254" layer="1"/>
 </signal>
 <signal name="!SHDN!">
-<contactref element="U$33" pad="18"/>
+<contactref element="BATT1_IC" pad="18"/>
 <contactref element="U$1" pad="18"/>
 <contactref element="U$56" pad="P$4"/>
 <contactref element="R33" pad="2"/>
@@ -3126,8 +3114,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$50">
 <contactref element="R23" pad="1"/>
 <contactref element="R24" pad="1"/>
-<contactref element="ON" pad="P$1"/>
-<contactref element="U$58" pad="P$2"/>
+<contactref element="CHARGING-SWITCH" pad="P$1"/>
+<contactref element="5V-TVS_1" pad="P$2"/>
 <wire x1="63.715" y1="42.545" x2="63.715" y2="40.005" width="0.254" layer="1"/>
 <wire x1="63.715" y1="40.005" x2="63.715" y2="39.13" width="0.254" layer="1"/>
 <wire x1="62.23" y1="37.645" x2="63.715" y2="39.13" width="0.254" layer="1"/>
@@ -3165,7 +3153,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$24">
 <contactref element="U$7" pad="P$2"/>
 <contactref element="R10" pad="1"/>
-<contactref element="U$33" pad="16"/>
+<contactref element="BATT1_IC" pad="16"/>
 <wire x1="27.655" y1="73.885" x2="28.28" y2="74.51" width="0.254" layer="1"/>
 <wire x1="29.21" y1="74.51" x2="28.28" y2="74.51" width="0.254" layer="1"/>
 <wire x1="40.43110625" y1="61.8363" x2="39.57889375" y2="61.8363" width="0.254" layer="1"/>
@@ -3200,7 +3188,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$27">
 <contactref element="U$8" pad="P$2"/>
 <contactref element="R12" pad="1"/>
-<contactref element="U$33" pad="17"/>
+<contactref element="BATT1_IC" pad="17"/>
 <wire x1="27.655" y1="78.33" x2="28.28" y2="78.955" width="0.254" layer="1"/>
 <wire x1="29.21" y1="78.955" x2="28.28" y2="78.955" width="0.254" layer="1"/>
 <wire x1="40.26276875" y1="62.2427" x2="39.74723125" y2="62.2427" width="0.254" layer="1"/>
@@ -3223,7 +3211,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$31">
 <contactref element="U$9" pad="P$2"/>
 <contactref element="R14" pad="1"/>
-<contactref element="U$33" pad="15"/>
+<contactref element="BATT1_IC" pad="15"/>
 <wire x1="27.655" y1="83.41" x2="28.28" y2="84.035" width="0.254" layer="1"/>
 <wire x1="29.21" y1="84.035" x2="28.28" y2="84.035" width="0.254" layer="1"/>
 <wire x1="41.3893" y1="61.2775" x2="41.0718" y2="60.96" width="0.254" layer="1"/>
@@ -3273,12 +3261,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="92.637146875" y1="42.757146875" x2="92.637146875" y2="41.97078125" width="0.254" layer="1"/>
 </signal>
 <signal name="N$40">
-<contactref element="U$33" pad="26"/>
+<contactref element="BATT1_IC" pad="26"/>
 <contactref element="B1-HFET" pad="DRAIN"/>
-<contactref element="U$33" pad="28"/>
+<contactref element="BATT1_IC" pad="28"/>
 <contactref element="C63" pad="1"/>
 <contactref element="B1-ZENER" pad="C"/>
-<contactref element="U$33" pad="27"/>
+<contactref element="BATT1_IC" pad="27"/>
 <wire x1="41.3893" y1="69.5325" x2="41.80716875" y2="69.95036875" width="0.254" layer="1"/>
 <wire x1="41.80716875" y1="69.95036875" x2="41.80716875" y2="71.66018125" width="0.254" layer="1"/>
 <wire x1="41.3893" y1="68.2625" x2="41.3893" y2="68.8975" width="0.254" layer="1"/>
@@ -3356,7 +3344,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$39">
 <contactref element="R21" pad="2"/>
 <contactref element="R22" pad="1"/>
-<contactref element="AUDIO1" pad="P$1"/>
+<contactref element="BUZZER2" pad="P$1"/>
 <wire x1="85.462078125" y1="40.581715625" x2="86.3563125" y2="39.68748125" width="0.254" layer="1"/>
 <wire x1="85.462078125" y1="40.581715625" x2="85.462078125" y2="41.8338875" width="0.254" layer="1"/>
 <wire x1="87.1269125" y1="38.82175" x2="87.29058125" y2="38.65808125" width="0.254" layer="1"/>
@@ -3373,14 +3361,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="VIN">
 <contactref element="SHORE_IN" pad="P$1"/>
-<contactref element="24V-TVS_IN" pad="P$2"/>
+<contactref element="24V-TVS_1" pad="P$2"/>
 <contactref element="U$19" pad="TAB"/>
 <contactref element="R26" pad="1"/>
 <wire x1="48.8315" y1="88.265" x2="48.8315" y2="81.3965" width="3.81" layer="1"/>
 <wire x1="48.8315" y1="81.3965" x2="47.805" y2="80.645" width="3.81" layer="1"/>
 <wire x1="48.8315" y1="88.265" x2="48.8315" y2="81.3435" width="6.4516" layer="16"/>
 <wire x1="48.8315" y1="81.3435" x2="49.53" y2="80.645" width="6.4516" layer="16"/>
-<wire x1="56.3" y1="88.265" x2="54.6537625" y2="88.265" width="0.254" layer="16"/>
+<wire x1="56.326840625" y1="89.24891875" x2="54.6537625" y2="88.265" width="0.254" layer="16"/>
 <wire x1="54.6537625" y1="88.265" x2="54.4505625" y2="88.0618" width="0.254" layer="16"/>
 <wire x1="54.4505625" y1="88.0618" x2="52.7882375" y2="88.0618" width="0.254" layer="16"/>
 <wire x1="52.7882375" y1="88.0618" x2="52.5850375" y2="88.265" width="0.254" layer="16"/>
@@ -3391,20 +3379,20 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R25" pad="1"/>
 <contactref element="U$19" pad="1"/>
 <wire x1="55.83" y1="82.925" x2="55.83" y2="83.985" width="0.254" layer="16"/>
-<wire x1="55.83" y1="83.985" x2="56.3" y2="84.455" width="0.254" layer="16"/>
-<wire x1="56.3" y1="84.455" x2="56.3" y2="86.36" width="0.254" layer="16"/>
+<wire x1="55.83" y1="83.985" x2="56.3" y2="85.09" width="0.254" layer="16"/>
+<wire x1="56.3" y1="85.09" x2="56.3" y2="87.169459375" width="0.254" layer="16"/>
 </signal>
 <signal name="N$51">
 <contactref element="R25" pad="2"/>
 <contactref element="INPUT-SWITCH" pad="P$2"/>
 <contactref element="R26" pad="2"/>
-<wire x1="58" y1="86.36" x2="58" y2="88.265" width="0.254" layer="16"/>
+<wire x1="58" y1="87.169459375" x2="58.026840625" y2="89.24891875" width="0.254" layer="16"/>
 <wire x1="60.96" y1="83.71" x2="60.65" y2="83.71" width="0.254" layer="16"/>
-<wire x1="60.65" y1="83.71" x2="58" y2="86.36" width="0.254" layer="16"/>
+<wire x1="60.65" y1="83.71" x2="58" y2="87.169459375" width="0.254" layer="16"/>
 </signal>
 <signal name="BATT1_P">
-<contactref element="BATT1_CHARGE" pad="P$1"/>
-<contactref element="U$15" pad="P$2"/>
+<contactref element="BATT1_IN" pad="P$1"/>
+<contactref element="24V-TVS_2" pad="P$2"/>
 <contactref element="U$16" pad="TAB"/>
 <contactref element="R6" pad="1"/>
 <polygon width="0.254" layer="1" spacing="0.254" isolate="0.3048" thermals="no">
@@ -3429,14 +3417,15 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$52">
 <contactref element="R4" pad="2"/>
-<contactref element="U$22" pad="P$2"/>
+<contactref element="BATT1_SWITCH" pad="P$2"/>
 <contactref element="R6" pad="2"/>
 <wire x1="38.95" y1="40.005" x2="41.695" y2="40.005" width="0.254" layer="1"/>
-<wire x1="41.695" y1="40.005" x2="41.8" y2="37.465" width="0" layer="19" extent="1-1"/>
+<wire x1="33.655" y1="31.225" x2="38.95" y2="36.52" width="0.3048" layer="1"/>
+<wire x1="38.95" y1="36.52" x2="38.95" y2="40.005" width="0.3048" layer="1"/>
 </signal>
 <signal name="BATT2_P">
-<contactref element="BATT2_CHARGE" pad="P$1"/>
-<contactref element="U$13" pad="P$2"/>
+<contactref element="BATT2_IN" pad="P$1"/>
+<contactref element="24V-TVS_3" pad="P$2"/>
 <contactref element="U$23" pad="TAB"/>
 <contactref element="R27" pad="1"/>
 <polygon width="1.27" layer="1" spacing="0.254" isolate="0.3048">
@@ -3461,7 +3450,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$55">
 <contactref element="R8" pad="2"/>
-<contactref element="U$24" pad="P$2"/>
+<contactref element="BATT2_SWITCH" pad="P$2"/>
 <contactref element="R27" pad="2"/>
 <wire x1="77.05" y1="38.735" x2="78.74" y2="40.425" width="0.254" layer="1"/>
 <wire x1="78.74" y1="40.425" x2="80.490178125" y2="42.834209375" width="0.254" layer="1"/>
@@ -3470,13 +3459,13 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$44">
 <contactref element="U$23" pad="3"/>
-<contactref element="U$18" pad="P$1"/>
+<contactref element="BATT2_FUSE" pad="P$1"/>
 <wire x1="68.205" y1="44.4" x2="68.205" y2="48.5327" width="2.54" layer="1"/>
 <wire x1="68.205" y1="48.5327" x2="68.5673" y2="48.26" width="2.54" layer="1"/>
 </signal>
 <signal name="FET-D_1">
 <contactref element="U$16" pad="3"/>
-<contactref element="U$17" pad="P$1"/>
+<contactref element="BATT1_FUSE" pad="P$1"/>
 <polygon width="0.254" layer="1" spacing="0.254" isolate="0.3048">
 <vertex x="42.545" y="50.8"/>
 <vertex x="52.07" y="50.8"/>
@@ -3565,8 +3554,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="BATT1_M">
 <contactref element="U$40" pad="P$2"/>
-<contactref element="BATT1_CHARGE" pad="P$2"/>
-<contactref element="U$15" pad="P$1"/>
+<contactref element="BATT1_IN" pad="P$2"/>
+<contactref element="24V-TVS_2" pad="P$1"/>
 <contactref element="R35" pad="1"/>
 <contactref element="R37" pad="1"/>
 <wire x1="27.2288" y1="56.3878125" x2="27.09" y2="56.5266125" width="1.27" layer="1"/>
@@ -3591,8 +3580,8 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 </signal>
 <signal name="BATT2_M">
-<contactref element="BATT2_CHARGE" pad="P$2"/>
-<contactref element="U$13" pad="P$1"/>
+<contactref element="BATT2_IN" pad="P$2"/>
+<contactref element="24V-TVS_3" pad="P$1"/>
 <contactref element="U$6" pad="P$2"/>
 <contactref element="R36" pad="2"/>
 <polygon width="1.27" layer="1" spacing="0.254" isolate="0.3048">
@@ -3604,9 +3593,500 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="6,1,d0bfd07f517f51bf"/>
-<approved hash="4,16,1aed436fe52f5e9c"/>
+<approved hash="18,29,6f05ba8d294d8e77"/>
+<approved hash="18,29,ec83280fc6283076"/>
+<approved hash="18,29,4d35feeb789833b1"/>
+<approved hash="18,29,7003730773127016"/>
+<approved hash="18,29,04a3978053e54645"/>
+<approved hash="18,29,9199441b92a14aed"/>
+<approved hash="18,29,ef0d0fc15c174d9e"/>
+<approved hash="18,29,6f6a9d5ab09c707e"/>
+<approved hash="18,29,cd3d4ba70dc2f058"/>
+<approved hash="18,29,7033f337f0dc73d8"/>
+<approved hash="18,29,0753213426b005a3"/>
+<approved hash="18,29,1270f14ee4150ae5"/>
+<approved hash="18,29,3b0a6209d9ec2902"/>
+<approved hash="18,29,eb2a8aed73b8b2e1"/>
+<approved hash="18,29,6b1488e1227370c6"/>
+<approved hash="18,29,05457bb8c2d3028c"/>
+<approved hash="18,29,1e26017401421e10"/>
+<approved hash="18,29,157af58f8560c4d4"/>
+<approved hash="18,29,0e31116311620e30"/>
+<approved hash="18,29,f8ad86faff92ffcc"/>
+<approved hash="18,29,f8c98428fd40f850"/>
+<approved hash="18,29,bd3e8900897ebd40"/>
+<approved hash="18,29,f8c96f6c1624ffc0"/>
+<approved hash="18,29,bd4e89708942bd7c"/>
+<approved hash="18,29,f8ad6c9a15f2ffcc"/>
+<approved hash="18,29,f93590ee29a5bfc5"/>
+<approved hash="18,29,bd4f89718941bd7f"/>
+<approved hash="18,29,f8a99e1c2773bfc1"/>
+<approved hash="18,29,065a460d53da6d84"/>
+<approved hash="18,29,065aaf7fba086d6c"/>
+<approved hash="18,29,07a251f8858d2c6c"/>
+<approved hash="18,29,01c244a356f46a64"/>
+<approved hash="18,29,065a5eee8b3f2d8c"/>
+<approved hash="18,29,065aac6db9ba6d84"/>
+<approved hash="18,29,88ad9f2e03845579"/>
+<approved hash="18,29,88ed7458e8da5511"/>
+<approved hash="18,29,dce0f55fa8f5c034"/>
+<approved hash="18,29,dcf81e0943c7c048"/>
+<approved hash="18,29,08ed85dbd9591511"/>
+<approved hash="18,29,dcf96f8af246004b"/>
+<approved hash="18,29,9185c3fc8e5ecbf5"/>
+<approved hash="18,29,f6b37a237a36f6a6"/>
+<approved hash="18,29,6d364c1f649e4436"/>
+<approved hash="18,29,08036b036b160816"/>
+<approved hash="18,29,1fa07d6d9b8ef0c2"/>
+<approved hash="18,29,c29de3f128cf2361"/>
+<approved hash="18,29,1181927b1fd68bfe"/>
+<approved hash="18,29,f6b8fa28fa3af6aa"/>
+<approved hash="18,29,ed3d1d93f5158432"/>
+<approved hash="18,29,0808eb08eb1a081a"/>
+<approved hash="18,29,1faf2ce50a09b0ca"/>
+<approved hash="18,29,4299b276b947636a"/>
+<approved hash="18,29,f68f7a1f7a0af69a"/>
+<approved hash="18,29,91993836758ccbf1"/>
+<approved hash="18,29,6d32b7e99f68442a"/>
+<approved hash="18,29,083f6b3f6b2a082a"/>
+<approved hash="18,29,1f8086bf6044f0e2"/>
+<approved hash="18,29,c281183bd31d2365"/>
+<approved hash="18,29,ab05d481ad61b827"/>
+<approved hash="18,29,e361fd207f106f43"/>
+<approved hash="18,29,e362f29528fdca2a"/>
+<approved hash="18,29,eb25b56a47fd6b81"/>
+<approved hash="18,29,5b3dbb8e8f8119a9"/>
+<approved hash="18,29,e34bfce6e5183422"/>
+<approved hash="18,29,6b3cb7467fbaade9"/>
+<approved hash="18,29,e373fe2aa1554e2b"/>
+<approved hash="18,29,6e283cea3c166ed4"/>
+<approved hash="18,29,5e2f34ed351e5fdc"/>
+<approved hash="18,29,6e3b7cf97cce6e0c"/>
+<approved hash="18,29,807f3aac350e95ce"/>
+<approved hash="18,29,d8d4c8d8cb2038e4"/>
+<approved hash="18,29,d0c394c794d2d0d6"/>
+<approved hash="18,29,0e4a729ac74f0069"/>
+<approved hash="18,29,11c801d400c47030"/>
+<approved hash="18,29,3d05d23d8b70719a"/>
+<approved hash="18,29,5d0582366d68a799"/>
+<approved hash="18,29,00d408d80ba01ce4"/>
+<approved hash="18,29,ee8f75622e72c269"/>
+<approved hash="18,29,10f363cf63da10e6"/>
+<approved hash="18,29,00c84ef44ee440b0"/>
+<approved hash="18,29,5515823bbf2c6554"/>
+<approved hash="18,29,a258ac09c2c8cd9b"/>
+<approved hash="18,29,a258ac09c2c8cd9b"/>
+<approved hash="18,29,a7e4fc087c0827e4"/>
+<approved hash="18,29,b9c51669966939c5"/>
+<approved hash="18,29,ffc755f995f03fce"/>
+<approved hash="18,29,f1ee5b809b8931e7"/>
+<approved hash="18,29,0a09b80a58386a18"/>
+<approved hash="18,29,e078d353413f615a"/>
+<approved hash="18,29,7439693d692e742a"/>
+<approved hash="18,29,c21a1069f1182209"/>
+<approved hash="18,29,8bf2a8de9b0dfe8c"/>
+<approved hash="18,29,30690a190a0a307a"/>
+<approved hash="18,29,3ff8332e333c3fea"/>
+<approved hash="18,29,32e91b391b2a32fa"/>
+<approved hash="18,29,9da361bc4848a721"/>
+<approved hash="18,29,b4bccb14ab7fc1cd"/>
+<approved hash="18,29,d604d65ad66fd631"/>
+<approved hash="18,29,1d63bc2197ff09b3"/>
+<approved hash="18,29,5d36f15d7e0a9537"/>
+<approved hash="18,29,3023102310563056"/>
+<approved hash="18,29,a00585e8e78f6c14"/>
+<approved hash="18,29,3e01520152703e70"/>
+<approved hash="18,29,7561198d867020cb"/>
+<approved hash="18,29,6cc0cfd03cfe4f40"/>
+<approved hash="18,29,0803606fdd47b129"/>
+<approved hash="18,29,65f6f69238d2d014"/>
+<approved hash="18,29,d14ce65a0a547480"/>
+<approved hash="18,29,08630ee70e920816"/>
+<approved hash="18,29,1780cfc0e54b0e9d"/>
+<approved hash="18,29,c5afae0ad8f9a96e"/>
+<approved hash="18,29,fcf4ad28a56ed51d"/>
+<approved hash="18,29,2c99f919f9282ca8"/>
+<approved hash="18,29,2d5f69d11d9af053"/>
+<approved hash="18,29,d6b9fa79fa49d689"/>
+<approved hash="18,29,0540ae44dbdb0229"/>
+<approved hash="18,29,74a6a1e21ef31ad8"/>
+<approved hash="18,29,0da2a66527ab9f3e"/>
+<approved hash="18,29,bbf297164044eeb7"/>
+<approved hash="18,29,7d1bc4b2a507e26a"/>
+<approved hash="18,29,71e586ae49bda60d"/>
+<approved hash="18,29,ec5b6e4f5053ec73"/>
+<approved hash="18,29,12e5bacf3ace92e4"/>
+<approved hash="18,29,2c3994831482ac38"/>
+<approved hash="18,29,9febf6c776c61fea"/>
+<approved hash="18,29,5ee93939392a5efa"/>
+<approved hash="18,29,afab1da2f5d99ce0"/>
+<approved hash="18,29,4d3c4f1e2ff5dec5"/>
+<approved hash="18,29,4d19ac3bb884c046"/>
+<approved hash="18,29,377dd15e107683c7"/>
+<approved hash="18,29,2eea576b13a93611"/>
+<approved hash="18,29,68d8888809f828c8"/>
+<approved hash="18,29,8819081d0809880d"/>
+<approved hash="18,29,10e9d7692819d0f8"/>
+<approved hash="18,29,22ff4a4acf264c7f"/>
+<approved hash="18,29,4bfc4c5f512f4102"/>
+<approved hash="18,29,4ffdb8501336f705"/>
+<approved hash="18,29,f3af9c2ab8e90358"/>
+<approved hash="18,29,0d9db4bbc004a94e"/>
+<approved hash="18,29,2828c80808f82838"/>
+<approved hash="18,29,6c19091d090e6c0a"/>
+<approved hash="18,29,20f811e81018e0c8"/>
+<approved hash="18,29,c4feb54b4fa3ac46"/>
+<approved hash="18,29,4b7dbc5962d68b40"/>
+<approved hash="18,29,b90156215657b977"/>
+<approved hash="18,29,d879293b2954d816"/>
+<approved hash="18,29,c8a61857fb602b27"/>
+<approved hash="18,29,074a3749d81fe0b2"/>
+<approved hash="18,29,183a060c060f1839"/>
+<approved hash="18,29,00661037f1402030"/>
+<approved hash="18,29,d07a030c0300d076"/>
+<approved hash="18,29,b6d819f499f436d8"/>
+<approved hash="18,29,9fab2fae3cd505e0"/>
+<approved hash="18,29,72e90b390b2a72fa"/>
+<approved hash="18,29,ab3cbb13b8f8b5c5"/>
+<approved hash="18,29,57fe0a7f3ebcdf05"/>
+<approved hash="18,29,d8d83888dbf8d8c8"/>
+<approved hash="18,29,657d914dbd655ac7"/>
+<approved hash="18,29,0f198e3bea848046"/>
+<approved hash="18,29,5019341d340e500a"/>
+<approved hash="18,29,c4feac4b09279c7e"/>
+<approved hash="18,29,30e81168f01830f8"/>
+<approved hash="18,29,6dfd9e4afe3b1802"/>
+<approved hash="18,29,8028f8081cf83c3b"/>
+<approved hash="18,29,7cba173f23ff6c4d"/>
+<approved hash="18,29,cf9da6bbc2075f4d"/>
+<approved hash="18,29,4dfe4e4458214e05"/>
+<approved hash="18,29,1019031d030e100a"/>
+<approved hash="18,29,20f85fe8b81840c8"/>
+<approved hash="18,29,a2fec54b71a3dc46"/>
+<approved hash="18,29,457dce4c8bc30a40"/>
+<approved hash="18,29,8879473b47548816"/>
+<approved hash="18,29,b7015a215a57b777"/>
+<approved hash="18,29,00a61057f1602128"/>
+<approved hash="18,29,d03a220c2200d036"/>
+<approved hash="18,29,0145b146501060b2"/>
+<approved hash="18,29,40661837f7402430"/>
+<approved hash="18,29,187be50de5011877"/>
+<approved hash="18,29,a6a0addd3b7c0ab3"/>
+<approved hash="18,29,4e481b3c382c6260"/>
+<approved hash="18,29,28136a176a7a287e"/>
+<approved hash="18,29,127c58387b50360c"/>
+<approved hash="18,29,673c4027069128fc"/>
+<approved hash="18,29,38940c24f2593840"/>
+<approved hash="18,29,81d73cf399824d5d"/>
+<approved hash="18,29,680ca2982299e80d"/>
+<approved hash="18,29,ab34bb24fe38e6a2"/>
+<approved hash="18,29,02c30f82fee80eaa"/>
+<approved hash="18,29,4b35aa206b6e75d2"/>
+<approved hash="18,29,f4296a296a3af43a"/>
+<approved hash="18,29,05e7403743ef0586"/>
+<approved hash="18,29,fe48713a7122fe50"/>
+<approved hash="18,29,0ef168136bfc0d1e"/>
+<approved hash="18,29,2e88f46af4782e9a"/>
+<approved hash="18,29,b7142bd8280ccf08"/>
+<approved hash="18,29,2a3e59fe39904a30"/>
+<approved hash="18,29,1a782a5969897a69"/>
+<approved hash="18,29,89eb01350141899f"/>
+<approved hash="18,29,30d748d80ba03420"/>
+<approved hash="18,29,561e1b7e38107190"/>
+<approved hash="18,29,99494b22eced8602"/>
+<approved hash="18,29,babd6969c2c91b36"/>
+<approved hash="18,29,92a6809e488294f6"/>
+<approved hash="18,29,abcf0a7b8a7b2bcf"/>
+<approved hash="18,29,8120345cb45c0120"/>
+<approved hash="18,29,ad1a193b5924ed05"/>
+<approved hash="18,29,bcf307ec47f3fcec"/>
+<approved hash="18,29,1f4596ef86cfb64a"/>
+<approved hash="18,29,19c9ca9bca8319d1"/>
+<approved hash="18,29,92167b2ebd15c1de"/>
+<approved hash="18,29,e5cdceea5778fa79"/>
+<approved hash="18,29,ea3ff96df97eea2c"/>
+<approved hash="18,29,46d7cc6119fe2a60"/>
+<approved hash="18,29,8913a6a2846aa531"/>
+<approved hash="18,29,da40cd12cd02da50"/>
+<approved hash="18,29,97d34d78ce475ae1"/>
+<approved hash="18,29,1f5b60f66398976c"/>
+<approved hash="18,29,d50deda138b37f46"/>
+<approved hash="18,29,6b03f5f44debe886"/>
+<approved hash="18,29,65d5c3fc9a62ba62"/>
+<approved hash="18,29,89072ba6c96d6521"/>
+<approved hash="18,29,5b0291441360e845"/>
+<approved hash="18,29,86cab1ff82aaa89d"/>
+<approved hash="18,29,bb661636a4831f51"/>
+<approved hash="18,29,812a67cbb3408fb4"/>
+<approved hash="18,29,05fa630e8382516b"/>
+<approved hash="18,29,74072e072e3a743a"/>
+<approved hash="18,29,e9c0acc783513997"/>
+<approved hash="18,29,3f166e49fb8d5860"/>
+<approved hash="18,29,b58540335a03a13b"/>
+<approved hash="18,29,ab0449ecf02111de"/>
+<approved hash="18,29,fb779aa8a263c2bf"/>
+<approved hash="18,29,ee5b03bac3a32e42"/>
+<approved hash="18,29,224d47ac8795e274"/>
+<approved hash="18,29,e1dad1d23512770d"/>
+<approved hash="18,29,a1dc4e018af1d731"/>
+<approved hash="18,29,5731961396125730"/>
+<approved hash="18,29,18d9d808bb33f8c1"/>
+<approved hash="18,29,28b6db0fb83cc8a6"/>
+<approved hash="18,29,f8300be20be2f830"/>
+<approved hash="18,29,1886bb5bd848d89e"/>
+<approved hash="18,29,e8c7d830bb9008ce"/>
+<approved hash="18,29,f8010bd30bc2f810"/>
+<approved hash="18,29,e82e03fc0382e850"/>
+<approved hash="18,29,e900d9f93ac0093e"/>
+<approved hash="18,29,18f6db143824d8f6"/>
+<approved hash="18,29,d7871ee71eead78a"/>
+<approved hash="18,29,b7830ae30a98b7f8"/>
+<approved hash="18,29,797f3a1f3a287948"/>
+<approved hash="18,29,79091e691e7a791a"/>
+<approved hash="18,29,79671a071a0a796a"/>
+<approved hash="18,29,d87bdbb8ba48d848"/>
+<approved hash="18,29,2d2adf11d2131127"/>
+<approved hash="18,29,3808ba0fdbff1813"/>
+<approved hash="18,29,345e747b18687036"/>
+<approved hash="18,29,046e142f781c600e"/>
+<approved hash="18,29,ea0ff50df51dea1f"/>
+<approved hash="18,29,fa10e312e312fa10"/>
+<approved hash="18,29,b61f0e0f09f9b1e9"/>
+<approved hash="18,29,36693679366a367a"/>
+<approved hash="18,29,d038701f10eff003"/>
+<approved hash="18,29,203f70981060000c"/>
+<approved hash="18,29,2067f0a810500030"/>
+<approved hash="18,29,51f8300410f471d0"/>
+<approved hash="18,29,306b10a870583078"/>
+<approved hash="18,29,2000700110e000a0"/>
+<approved hash="18,29,d6e721152120d6d2"/>
+<approved hash="18,29,06813d733d620690"/>
+<approved hash="18,29,26ee0d1c0d622690"/>
+<approved hash="18,29,36f00502050236f0"/>
+<approved hash="18,29,57e1b17f3cc7584a"/>
+<approved hash="18,29,45089bf6acf45e22"/>
+<approved hash="18,29,185109bd0e03b848"/>
+<approved hash="18,29,09dc181418f5093d"/>
+<approved hash="18,29,36c6c3836092b8df"/>
+<approved hash="18,29,660773056cf079f2"/>
+<approved hash="18,29,fe71df8d54cbf629"/>
+<approved hash="18,29,7c17511b51067c0a"/>
+<approved hash="18,29,99851ee7900d0845"/>
+<approved hash="18,29,cbddb25ca4b4a308"/>
+<approved hash="18,29,6084f6642cc0c506"/>
+<approved hash="18,29,b02e5442277d22e1"/>
+<approved hash="18,29,361d161d158e358e"/>
+<approved hash="18,29,36f98f92cc912a6a"/>
+<approved hash="18,29,6d4d606fd74febaf"/>
+<approved hash="18,29,638ca78865129f5f"/>
+<approved hash="18,29,5ffdb051ea9bf71a"/>
+<approved hash="18,29,101f2e372e22100a"/>
+<approved hash="18,29,0060102490cbe070"/>
+<approved hash="18,29,9029f0f630207027"/>
+<approved hash="18,29,4e01351735264e30"/>
+<approved hash="18,29,13907dc5fdc49391"/>
+<approved hash="18,29,5d67099263926006"/>
+<approved hash="18,29,270cd241fc43f2db"/>
+<approved hash="18,29,909f8a44495db7b5"/>
+<approved hash="18,29,4c17e3d0ba001958"/>
+<approved hash="18,29,58a86dc6a1679214"/>
+<approved hash="18,29,6505b97024f70973"/>
+<approved hash="18,29,0e0b150915f60ef4"/>
+<approved hash="18,29,401ef03830086096"/>
+<approved hash="18,29,ce692279226ace7a"/>
+<approved hash="18,29,a028e8e8ecf84c18"/>
+<approved hash="18,29,1cc00cc10810f0f0"/>
+<approved hash="18,29,1af83f0a3f1c1aee"/>
+<approved hash="18,29,6aeb1b191be66a14"/>
+<approved hash="18,29,a09311730c378e95"/>
+<approved hash="18,29,cb135adebaaa15ce"/>
+<approved hash="18,29,1a7fa85cc88fda68"/>
+<approved hash="18,29,5c091a891a9a5c1a"/>
+<approved hash="18,29,034b004861582378"/>
+<approved hash="18,29,a5691544406bfe54"/>
+<approved hash="18,29,73e36b93d9e14ad6"/>
+<approved hash="18,29,7d8bc92578ced972"/>
+<approved hash="18,29,ed4b1da0ea890df0"/>
+<approved hash="18,29,cc8dedcbef78ae02"/>
+<approved hash="18,29,3a8794d214d2ba87"/>
+<approved hash="18,29,c010b338a899e661"/>
+<approved hash="18,29,e00fcdfce90eab8b"/>
+<approved hash="18,29,8fec73c5d514b72f"/>
+<approved hash="18,29,0d7589a2edc5e6b1"/>
+<approved hash="18,29,f64b0709071ef65c"/>
+<approved hash="18,29,cb0dcdfa71db74ba"/>
+<approved hash="18,29,afe1514e878d8718"/>
+<approved hash="18,29,4b27ce9fd4141b93"/>
+<approved hash="18,29,48241818fcc05c0c"/>
+<approved hash="18,29,a5159a8295a9a770"/>
+<approved hash="18,29,38377637762a382a"/>
+<approved hash="18,29,7b10bb34580417d0"/>
+<approved hash="18,29,3fb75527553a3faa"/>
+<approved hash="18,29,2d02b386782c95fe"/>
+<approved hash="18,29,7502f4805496fb0a"/>
+<approved hash="18,29,c4c07caf3d40d44d"/>
+<approved hash="18,29,613b411941176135"/>
+<approved hash="18,29,57125f7dc3fad109"/>
+<approved hash="18,29,582f9f2f9ed859d8"/>
+<approved hash="18,29,2e4ea4f60d3437e9"/>
+<approved hash="18,29,57670f82ad53ef60"/>
+<approved hash="18,29,390ffd29fcde38f8"/>
+<approved hash="18,29,c64e5beccde08a2b"/>
+<approved hash="18,29,58c018a82f47264d"/>
+<approved hash="18,29,a8772dc1bd466992"/>
+<approved hash="18,29,b8a961a8627bc5c3"/>
+<approved hash="18,29,02a7e5279ad703ee"/>
+<approved hash="18,29,cc77b1c64f417b92"/>
+<approved hash="18,29,9e9ac9a43ba30e64"/>
+<approved hash="18,29,1a38017a014a1a08"/>
+<approved hash="18,29,074f596c94e88cb4"/>
+<approved hash="18,29,969ccd6eb3c49a17"/>
+<approved hash="18,29,98b765af8be700d2"/>
+<approved hash="18,29,0716a359242d329c"/>
+<approved hash="18,29,0a2b1b691b1e0a5c"/>
+<approved hash="18,29,96b4cb61779fdc34"/>
+<approved hash="18,29,0a2a1b681b1a0a58"/>
+<approved hash="18,29,5ec3f9a849aeeac5"/>
+<approved hash="18,29,1a97b9c409daae99"/>
+<approved hash="18,29,d6ab79f1c9f66aac"/>
+<approved hash="18,29,d6ab79f1c9f66aac"/>
+<approved hash="18,29,1a6dbd320d30ae6f"/>
+<approved hash="18,29,0e9067bce7bf8e93"/>
+<approved hash="18,29,279e88b208ada781"/>
+<approved hash="18,29,908104a3c4da50f8"/>
+<approved hash="18,29,f1eb65c9a5c031e2"/>
+<approved hash="18,29,5840e89d26282d0b"/>
+<approved hash="18,29,fe3ff001f00ffe31"/>
+<approved hash="18,29,7c40ec9ec82b5f0b"/>
+<approved hash="18,29,7135a8195b90fc05"/>
+<approved hash="18,29,3c6fb16b442a72d0"/>
+<approved hash="18,29,26a3c10df9bb60ac"/>
+<approved hash="18,29,f9554c38762cdd56"/>
+<approved hash="18,29,c1be71593049e9a7"/>
+<approved hash="18,29,05d66c70b8877788"/>
+<approved hash="18,29,fe280efe0ee1fe37"/>
+<approved hash="18,29,b1684bf78dff8173"/>
+<approved hash="18,29,513c102810529b52"/>
+<approved hash="18,29,6b35da4dbf5e402d"/>
+<approved hash="18,29,77b5441eaee2a35b"/>
+<approved hash="18,29,386f956836299cd0"/>
+<approved hash="18,29,7f098af01332f8d9"/>
+<approved hash="18,29,6549830a1292fac7"/>
+<approved hash="18,29,ff550cf05650b7c0"/>
+<approved hash="18,29,c288a67e26bb24c4"/>
+<approved hash="18,29,e1090d06568eb88c"/>
+<approved hash="18,29,d3f9b86e47af0925"/>
+<approved hash="18,29,303c09f80e90102c"/>
+<approved hash="18,29,c0f86edb2908e0e8"/>
+<approved hash="18,29,400a2e0a29f86018"/>
+<approved hash="18,29,307709a80e431047"/>
+<approved hash="18,29,d9e96f2b6fdad918"/>
+<approved hash="18,29,a9f9173b170ba9c9"/>
+<approved hash="18,29,af24479376bb8d5a"/>
+<approved hash="18,29,4b24b39910a0e75f"/>
+<approved hash="18,29,2014b3dbf126cdd8"/>
+<approved hash="18,29,d66cdc126e3f815f"/>
+<approved hash="18,29,c8baa4b94a279dd5"/>
+<approved hash="18,29,4afdc15f5dd78a37"/>
+<approved hash="18,29,b1beea4a2d868f0f"/>
+<approved hash="18,29,98b541ef842623c5"/>
+<approved hash="18,29,b46f119d7b1cc790"/>
+<approved hash="18,29,7d3f2101210f7d31"/>
+<approved hash="18,29,f8c060eb931e124b"/>
+<approved hash="18,29,d4c06ce485114c4b"/>
+<approved hash="18,29,0ea3e9783c8ea5ec"/>
+<approved hash="18,29,b86f3d922513d190"/>
+<approved hash="18,29,d131fe83fe9e22af"/>
+<approved hash="18,29,3c14ad2d4f5e4722"/>
+<approved hash="18,29,43e579605d338ced"/>
+<approved hash="18,29,b1aeaeb6c7727937"/>
+<approved hash="18,29,c4135524ac119ce7"/>
+<approved hash="18,29,87bd0d3a4c2fad60"/>
+<approved hash="18,29,aeaac6c0fb260aed"/>
+<approved hash="18,29,5734aebe152b19d3"/>
+<approved hash="18,29,d48ab98ad4c3c0a0"/>
+<approved hash="18,29,af4446b829e7ed8d"/>
+<approved hash="18,30,2f58b131718b5d8c"/>
+<approved hash="18,30,90935d1e07ce2917"/>
+<approved hash="18,30,08386bfa6bca0808"/>
+<approved hash="18,30,916f7d7efaa00227"/>
+<approved hash="18,30,30ebc9c816f830f8"/>
+<approved hash="18,30,50e73367336850e8"/>
+<approved hash="18,30,d5f9d41a3829d189"/>
+<approved hash="18,30,47463039f0c97f4d"/>
+<approved hash="18,30,8adc9211f904a093"/>
+<approved hash="18,30,328977f777c432ba"/>
+<approved hash="18,30,9705fe3b48a63396"/>
+<approved hash="18,30,cb3592c1d69d999b"/>
+<approved hash="18,30,5606503990492ecd"/>
+<approved hash="18,30,b14a280a14f94d7a"/>
+<approved hash="18,30,4f0417348c622751"/>
+<approved hash="18,30,8b3cc31e3f9f7607"/>
+<approved hash="18,30,3f9946ff46cc3faa"/>
+<approved hash="18,30,a705ff2ea32fc912"/>
+<approved hash="18,30,6b04c5340f249716"/>
+<approved hash="18,30,98fb274eab1b3fd0"/>
+<approved hash="18,30,510bb1e850d81118"/>
+<approved hash="18,30,54e71967196854e8"/>
+<approved hash="18,30,39b8181bf80839a8"/>
+<approved hash="18,30,6d14c029c0e25eed"/>
+<approved hash="18,30,5505f149ed385442"/>
+<approved hash="18,30,1ef82d137d2f34f4"/>
+<approved hash="18,30,3d56ceb01ecc2b53"/>
+<approved hash="18,30,1ef82cb01ecc2af4"/>
+<approved hash="18,30,535ccd06a9ba858e"/>
+<approved hash="18,30,b542004192372782"/>
+<approved hash="18,30,8515d11672ff382a"/>
+<approved hash="18,30,9ff71a671a6f9fff"/>
+<approved hash="18,30,ab02021789a32de4"/>
+<approved hash="18,30,b714f817e9a5b3e8"/>
+<approved hash="18,30,287b2be8ebd82810"/>
+<approved hash="18,30,b296d0bab2636221"/>
+<approved hash="18,30,6f0ccb0c5202d9f8"/>
+<approved hash="18,30,5330cd6f31451d74"/>
+<approved hash="18,30,35bd1718bd141c56"/>
+<approved hash="18,30,2b0484712b1cf1a7"/>
+<approved hash="18,30,6f14d068b50427aa"/>
+<approved hash="18,30,28fba9d868e82908"/>
+<approved hash="18,30,4847084708484848"/>
+<approved hash="18,30,21e80febc81821f8"/>
+<approved hash="18,30,6b04d5736454e561"/>
+<approved hash="18,30,f87bf9c819f83870"/>
+<approved hash="18,30,4704f962c6540b64"/>
+<approved hash="18,30,9447194719489448"/>
+<approved hash="18,30,d1f0d16b3018d1e8"/>
+<approved hash="18,30,af07017ce19fbd25"/>
+<approved hash="18,30,d9e839cbd8fbd9fb"/>
+<approved hash="18,30,9c471a471a499c49"/>
+<approved hash="18,30,21f8111bf00981e8"/>
+<approved hash="18,30,24f48447d2dc7cfd"/>
+<approved hash="18,30,285bcbc80bf82840"/>
+<approved hash="18,30,5457355735585458"/>
+<approved hash="18,30,51f050ebb01851e8"/>
+<approved hash="18,30,4d74c449fe1c60bf"/>
+<approved hash="18,30,ad05f6423e1676a3"/>
+<approved hash="18,30,95f5f14b0d447478"/>
+<approved hash="18,30,d05b3908d5f81440"/>
+<approved hash="18,30,a5f41745955b3a7c"/>
+<approved hash="18,30,71871261126e7188"/>
+<approved hash="18,30,cd75915d50a4663a"/>
+<approved hash="18,30,733acd1b72030e30"/>
+<approved hash="18,30,db359c635f112a30"/>
+<approved hash="18,30,e5c727c81ff6f04b"/>
+<approved hash="18,30,61e75c2f2acd15c1"/>
+<approved hash="18,30,78c5d3ab53a8f8c6"/>
+<approved hash="18,30,61013967b964e102"/>
+<approved hash="18,30,c8c911341696bd5e"/>
+<approved hash="18,30,0d0445ccde139c19"/>
+<approved hash="18,30,e5dfaf27ccc545b4"/>
+<approved hash="18,30,e01fdeb434fe0995"/>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

@@ -6198,12 +6198,12 @@ type 0309, grid 2.5 mm</description>
 <part name="JP8" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="C4" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="C5" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="C6" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="C7" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
+<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C4" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C5" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C7" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>

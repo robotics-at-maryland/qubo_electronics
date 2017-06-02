@@ -23105,14 +23105,14 @@ changed 2011-11-09</description>
 <text x="22.86" y="6.35" size="1.27" layer="27">J2</text>
 </package>
 <package name="VSSOP-8">
-<smd name="P$1" x="-0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$2" x="-0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$3" x="0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$4" x="0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$5" x="0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$6" x="0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$7" x="-0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="P$8" x="-0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90" stop="no"/>
+<smd name="P$1" x="-0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$3" x="0.325" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$4" x="0.975" y="-2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$5" x="0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$6" x="0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$7" x="-0.325" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
+<smd name="P$8" x="-0.975" y="2.2" dx="1.45" dy="0.45" layer="1" rot="R90"/>
 <wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
 <wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
