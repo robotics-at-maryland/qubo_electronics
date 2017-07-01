@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -210,26 +210,22 @@
 <wire x1="20.32" y1="2.54" x2="-20.32" y2="2.54" width="0.127" layer="21"/>
 </package>
 <package name="KK254_VERT_4PIN">
-<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.127" layer="51"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-2.921" x2="-5.08" y2="-2.921" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="2.921" width="0.127" layer="51"/>
 <pad name="P$1" x="3.81" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$2" x="1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$3" x="-1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$4" x="-3.81" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <text x="-5.08" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-2.54" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-2.54" x2="6.35" y2="2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="2.54" x2="-6.35" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.9" x2="-5.08" y2="-2.9" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.9" x2="5.08" y2="-2.9" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.9" x2="5.08" y2="2.9" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.9" x2="-5.08" y2="2.9" width="0.127" layer="21"/>
 </package>
 <package name="KK254_VERT_2PIN">
-<wire x1="-2.54" y1="2.921" x2="2.54" y2="2.921" width="0.127" layer="51"/>
-<wire x1="2.54" y1="2.921" x2="2.54" y2="-2.921" width="0.127" layer="51"/>
-<wire x1="2.54" y1="-2.921" x2="-2.54" y2="-2.921" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="-2.921" x2="-2.54" y2="2.921" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="2.921" x2="4.318" y2="2.921" width="0.127" layer="51"/>
+<wire x1="4.318" y1="2.921" x2="4.318" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="4.318" y1="-2.921" x2="-4.445" y2="-2.921" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="-2.921" x2="-4.445" y2="2.921" width="0.127" layer="51"/>
 <pad name="P$1" x="1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <pad name="P$2" x="-1.27" y="0" drill="1.2" shape="octagon" rot="R180"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
@@ -1125,7 +1121,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEA
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK254_VERT_2PIN" prefix="2PIN_" uservalue="yes">
+<deviceset name="KK254_VERT_2PIN" prefix="2PIN_">
 <description>KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating&lt;br&gt;
 Part Number: 22-29-2021&lt;br&gt;
 http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEADERS.xml</description>
@@ -1133,7 +1129,7 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <gate name="U1" symbol="2-PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="22-29-2021" package="KK254_VERT_2PIN">
+<device name="&quot;&quot;" package="KK254_VERT_2PIN">
 <connects>
 <connect gate="U1" pin="P$1" pad="P$1"/>
 <connect gate="U1" pin="P$2" pad="P$2"/>

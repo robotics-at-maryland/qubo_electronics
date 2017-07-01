@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10531,10 +10531,19 @@ Super Barrier Rectifier schottky diodes&lt;br&gt;
 <gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DO-219AB">
+<device name="DO-219AB" package="DO-219AB">
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT323" package="SOT323-R">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C" pad="1 2"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -24,7 +24,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -11095,14 +11095,13 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="4.445" y="-3.81" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="L6100">
-<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
 <pad name="P$1" x="-3" y="0" drill="1" shape="square"/>
 <pad name="P$2" x="3" y="0" drill="1" shape="octagon" rot="R180"/>
 <text x="-3.81" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
-<circle x="0" y="0" radius="5.5" width="0.127" layer="29"/>
-<circle x="0" y="0" radius="5.6796125" width="0.127" layer="41"/>
+<circle x="0" y="1.27" radius="5.5" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="20"/>
 </package>
 </packages>
 <symbols>

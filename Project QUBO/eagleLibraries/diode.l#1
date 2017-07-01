@@ -10579,12 +10579,19 @@ ESD9X3.3ST5G Series, SZESD9X3.3ST5G Series&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESD12VD3B">
+<deviceset name="ESD12VD3B" prefix="TVS" uservalue="yes">
+<description>MC Semi ESD12VD3B&lt;br&gt;
+12V TVS ESD protection&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/258/ESD12VD3B(SOD-323)-478460.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="2-PIN_TVS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
