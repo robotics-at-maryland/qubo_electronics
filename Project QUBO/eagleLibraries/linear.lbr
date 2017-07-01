@@ -14,11 +14,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -6289,27 +6289,41 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <circle x="-2.4" y="-1.4" radius="0.4472125" width="0.127" layer="21"/>
 </package>
 <package name="MSOP16">
-<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90"/>
-<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270"/>
+<smd name="OUT" x="-1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="SENSE" x="-1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="NC" x="-0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="DGATE" x="-0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="SOURCE" x="0.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="HGATE" x="0.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="NC1" x="1.25" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="VCC" x="1.75" y="-2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="FB" x="-1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="TMR" x="-1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="ENOUT" x="-0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="FLT" x="-0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="GND" x="0.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="OV" x="0.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="UV" x="1.25" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R90" stop="no"/>
+<smd name="SHDN" x="1.75" y="2.39" dx="0.889" dy="0.305" layer="1" rot="R270" stop="no"/>
 <wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.44" y="-0.9" radius="0.22" width="0.127" layer="21"/>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.00144375" y="2.933609375"/>
+<vertex x="2.00144375" y="2.933609375"/>
+<vertex x="2.00144375" y="1.84453125"/>
+<vertex x="-2.00144375" y="1.84453125"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.003115625" y="-1.842459375"/>
+<vertex x="1.999771875" y="-1.842459375"/>
+<vertex x="1.999771875" y="-2.9315375"/>
+<vertex x="-2.003115625" y="-2.9315375"/>
+</polygon>
+<text x="-2.54" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;VALUE</text>
 </package>
 <package name="LGA-141">
 <smd name="F1" x="-6.985" y="-0.635" dx="0.65" dy="0.65" layer="1" rot="R180"/>
@@ -11557,9 +11571,9 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <pin name="UV" x="-38.1" y="2.54" visible="pin" length="middle"/>
 <pin name="OV" x="-38.1" y="-7.62" visible="pin" length="middle"/>
 <pin name="GND" x="-17.78" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="TMR" x="15.24" y="-17.78" visible="pin" length="middle" rot="R90"/>
-<pin name="!FAULT!" x="38.1" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="ENOUT" x="38.1" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="TMR" x="7.62" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="!FAULT!" x="27.94" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="ENOUT" x="17.78" y="-17.78" visible="pin" length="middle" rot="R90"/>
 <pin name="FB" x="38.1" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT" x="30.48" y="17.78" visible="pin" length="middle" rot="R270"/>
 <pin name="SENSE" x="20.32" y="17.78" visible="pin" length="middle" rot="R270"/>

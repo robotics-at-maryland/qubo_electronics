@@ -13172,16 +13172,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="2.6" y1="-0.7" x2="2.85" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
-<package name="X1-DFN1006-2">
-<smd name="P$1" x="-0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
-<smd name="P$2" x="0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
-<wire x1="-0.537" y1="0.337" x2="0.537" y2="0.337" width="0.127" layer="21"/>
-<wire x1="0.537" y1="0.337" x2="0.537" y2="-0.337" width="0.127" layer="21"/>
-<wire x1="0.537" y1="-0.337" x2="-0.537" y2="-0.337" width="0.127" layer="21"/>
-<wire x1="-0.537" y1="-0.337" x2="-0.537" y2="0.337" width="0.127" layer="21"/>
-<text x="-0.673878125" y="0.580571875" size="0.3048" layer="25">&gt;NAME</text>
-<text x="-0.690840625" y="-0.872184375" size="0.3048" layer="27">&gt;VALUE</text>
-</package>
 <package name="DO-219AB">
 <smd name="P$1" x="-1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
 <smd name="P$2" x="1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
@@ -14187,24 +14177,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DESD">
-<description>Diodes Inc. Low Cap. Bidirectional TVS Diodes&lt;br&gt;
-&lt;a href="http://www.mouser.com/ds/2/115/ds31434-219410.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="X1-DFN1006-2">
-<connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16564,6 +16536,136 @@ NMOS Power FET&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="diodes">
+<packages>
+<package name="SOT457">
+<smd name="P$1" x="-0.95" y="-1.15" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$2" x="0" y="-1.15" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$3" x="0.95" y="-1.15" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$4" x="0.95" y="1.15" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$5" x="0" y="1.15" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$6" x="-0.95" y="1.15" dx="0.5" dy="0.8" layer="1"/>
+<text x="-1.9" y="-1.9" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.85" y="-1.9" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-1.524" y1="1.651" x2="-1.524" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-1.651" x2="1.524" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-1.651" x2="1.524" y2="1.651" width="0.127" layer="21"/>
+<wire x1="1.524" y1="1.651" x2="-1.524" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.762" x2="1.27" y2="0.762" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.762" x2="1.27" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.762" x2="-1.27" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.762" x2="-1.27" y2="0.762" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="QUAD-TVS-1">
+<wire x1="-5.08" y1="2.54" x2="-3.556" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="2.54" x2="-3.556" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="3.81" x2="-1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="2.54" x2="-3.556" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="1.524" x2="-3.556" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.81" x2="-1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.524" x2="-2.286" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="4.064" x2="-6.35" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="4.064" x2="-5.08" y2="5.842" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.842" x2="-4.064" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="4.064" x2="-5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="5.842" x2="-4.064" y2="5.842" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="6.096" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="5.842" x2="-4.064" y2="5.334" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="3.556" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.556" y1="2.54" x2="3.556" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.556" y1="3.81" x2="1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="3.556" y2="1.524" width="0.254" layer="94"/>
+<wire x1="3.556" y1="1.524" x2="3.556" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="3.81" x2="1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.524" x2="2.286" y2="1.524" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="4.064" x2="6.35" y2="4.064" width="0.254" layer="94"/>
+<wire x1="6.35" y1="4.064" x2="5.08" y2="5.842" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.842" x2="4.064" y2="4.064" width="0.254" layer="94"/>
+<wire x1="4.064" y1="4.064" x2="5.08" y2="4.064" width="0.254" layer="94"/>
+<wire x1="6.35" y1="5.842" x2="4.064" y2="5.842" width="0.254" layer="94"/>
+<wire x1="5.08" y1="6.096" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="4.064" y1="5.842" x2="4.064" y2="5.334" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-2.54" x2="-3.556" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-3.81" x2="-1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="-3.556" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-1.524" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-3.81" x2="-1.778" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-1.524" x2="-2.286" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-4.064" x2="-6.35" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-4.064" x2="-5.08" y2="-5.842" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.842" x2="-4.064" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-4.064" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-5.842" x2="-4.064" y2="-5.842" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-6.096" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-5.842" x2="-4.064" y2="-5.334" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.556" y1="-2.54" x2="3.556" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="3.556" y1="-3.81" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-2.54" x2="3.556" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="3.556" y1="-1.524" x2="3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-3.81" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.286" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-4.064" x2="6.35" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-4.064" x2="5.08" y2="-5.842" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.842" x2="4.064" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-4.064" x2="5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-5.842" x2="4.064" y2="-5.842" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-6.096" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-5.842" x2="4.064" y2="-5.334" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="-10.16" visible="off" length="short" rot="R90"/>
+<pin name="P$2" x="0" y="-10.16" visible="off" length="short" rot="R90"/>
+<pin name="P$3" x="5.08" y="-10.16" visible="off" length="short" rot="R90"/>
+<pin name="P$4" x="5.08" y="10.16" visible="off" length="short" rot="R270"/>
+<pin name="P$5" x="0" y="10.16" visible="off" length="short" rot="R270"/>
+<pin name="P$6" x="-5.08" y="10.16" visible="off" length="short" rot="R270"/>
+<text x="-10.16" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="10.16" y="-7.62" size="1.778" layer="95" rot="R90">&gt;VALUE</text>
+<circle x="-7.112" y="-6.858" radius="0.254" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BZA408B" prefix="5-TVS_">
+<description>Nexperia BZA408B&lt;br&gt;
+5V TVS diode&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/302/BZA408B-841090.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="QUAD-TVS-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT457">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16607,7 +16709,6 @@ NMOS Power FET&lt;br&gt;
 <part name="U$57" library="ONSemi" deviceset="NCP1117" device=""/>
 <part name="C61" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C62" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
-<part name="5V-TVS_1" library="diode" deviceset="DESD" device=""/>
 <part name="24V-TVS_1" library="diode" deviceset="VTVS" device=""/>
 <part name="U7" library="transistors" deviceset="SSM3J353F" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
@@ -16647,6 +16748,7 @@ NMOS Power FET&lt;br&gt;
 <part name="NMOS2" library="transistors" deviceset="STD95N2LH5" device=""/>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="Batt Connect."/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="2-3k"/>
+<part name="5-TVS_1" library="diodes" deviceset="BZA408B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16686,7 +16788,6 @@ NMOS Power FET&lt;br&gt;
 <instance part="U$57" gate="G$1" x="38.1" y="139.7"/>
 <instance part="C61" gate="G$1" x="10.16" y="137.16"/>
 <instance part="C62" gate="G$1" x="63.5" y="137.16"/>
-<instance part="5V-TVS_1" gate="G$1" x="76.2" y="116.84"/>
 <instance part="24V-TVS_1" gate="G$1" x="238.76" y="154.94" rot="R90"/>
 <instance part="U7" gate="G$1" x="-12.7" y="5.08"/>
 <instance part="R9" gate="G$1" x="-12.7" y="-15.24" rot="R90"/>
@@ -16726,6 +16827,7 @@ NMOS Power FET&lt;br&gt;
 <instance part="NMOS2" gate="G$1" x="127" y="30.48" rot="MR0"/>
 <instance part="LED4" gate="G$1" x="200.66" y="-15.24" rot="R90"/>
 <instance part="R1" gate="G$1" x="185.42" y="-15.24" rot="R180"/>
+<instance part="5-TVS_1" gate="G$1" x="83.82" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -16870,8 +16972,6 @@ NMOS Power FET&lt;br&gt;
 <wire x1="76.2" y1="114.3" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="93.98" y="111.76"/>
-<pinref part="5V-TVS_1" gate="G$1" pin="A"/>
-<junction x="76.2" y="114.3"/>
 <label x="119.38" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -16891,6 +16991,11 @@ NMOS Power FET&lt;br&gt;
 <pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="205.74" y1="-15.24" x2="215.9" y2="-15.24" width="0.1524" layer="91"/>
 <label x="213.36" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="5-TVS_1" gate="G$1" pin="P$2"/>
+<wire x1="83.82" y1="172.72" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
+<label x="83.82" y="165.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="BATT_1" class="0">
@@ -17122,19 +17227,6 @@ NMOS Power FET&lt;br&gt;
 <pinref part="U$56" gate="G$1" pin="IN"/>
 <wire x1="93.98" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <junction x="93.98" y="127"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="127" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="CHARGING-SWITCH" gate="U1" pin="P$1"/>
-<wire x1="76.2" y1="119.38" x2="76.2" y2="127" width="0.1524" layer="91"/>
-<junction x="76.2" y="127"/>
-<pinref part="5V-TVS_1" gate="G$1" pin="C"/>
-<junction x="76.2" y="119.38"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -17375,6 +17467,22 @@ NMOS Power FET&lt;br&gt;
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="-15.24" x2="198.12" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CHARGE-SWT" class="0">
+<segment>
+<pinref part="5-TVS_1" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="172.72" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<label x="78.74" y="157.48" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="127" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="CHARGING-SWITCH" gate="U1" pin="P$1"/>
+<wire x1="76.2" y1="119.38" x2="76.2" y2="127" width="0.1524" layer="91"/>
+<junction x="76.2" y="127"/>
 </segment>
 </net>
 </nets>

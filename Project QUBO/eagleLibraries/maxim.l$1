@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -4190,18 +4190,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <wire x1="-1.9812" y1="-4.6482" x2="-1.9812" y2="-4.9784" width="0.1524" layer="21"/>
 <wire x1="1.9812" y1="4.6482" x2="1.9812" y2="4.9784" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="4.9784" width="0.1524" layer="21" curve="-180"/>
-<polygon width="0.0254" layer="21">
-<vertex x="-3.9624" y="-1.397"/>
-<vertex x="-3.9624" y="-1.778"/>
-<vertex x="-3.7084" y="-1.778"/>
-<vertex x="-3.7084" y="-1.397"/>
-</polygon>
-<polygon width="0.0254" layer="21">
-<vertex x="3.9624" y="-0.762"/>
-<vertex x="3.9624" y="-1.143"/>
-<vertex x="3.7084" y="-1.143"/>
-<vertex x="3.7084" y="-0.762"/>
-</polygon>
 <text x="-3.4798" y="4.3688" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-1.9812" y1="3.9624" x2="-1.9812" y2="4.2672" width="0.1524" layer="51"/>
 <wire x1="-1.9812" y1="4.2672" x2="-3.0988" y2="4.2672" width="0.1524" layer="51"/>

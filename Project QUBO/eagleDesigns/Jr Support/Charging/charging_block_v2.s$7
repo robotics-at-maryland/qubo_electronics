@@ -1304,6 +1304,10 @@ chip</description>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-1.778" y1="1.016" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -2832,6 +2836,10 @@ chip</description>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="21"/>
+<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="21"/>
 </package>
 <package name="R0805W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -3021,6 +3029,10 @@ chip</description>
 <rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+<wire x1="-4.191" y1="2.159" x2="4.191" y2="2.159" width="0.127" layer="21"/>
+<wire x1="4.191" y1="2.159" x2="4.191" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="4.191" y1="-2.159" x2="-4.191" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-4.191" y1="-2.159" x2="-4.191" y2="2.159" width="0.127" layer="21"/>
 </package>
 <package name="R2512W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
@@ -13160,6 +13172,16 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="2.6" y1="-0.7" x2="2.85" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
+<package name="X1-DFN1006-2">
+<smd name="P$1" x="-0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
+<smd name="P$2" x="0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
+<wire x1="-0.537" y1="0.337" x2="0.537" y2="0.337" width="0.127" layer="21"/>
+<wire x1="0.537" y1="0.337" x2="0.537" y2="-0.337" width="0.127" layer="21"/>
+<wire x1="0.537" y1="-0.337" x2="-0.537" y2="-0.337" width="0.127" layer="21"/>
+<wire x1="-0.537" y1="-0.337" x2="-0.537" y2="0.337" width="0.127" layer="21"/>
+<text x="-0.673878125" y="0.580571875" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-0.690840625" y="-0.872184375" size="0.3048" layer="27">&gt;VALUE</text>
+</package>
 <package name="DO-219AB">
 <smd name="P$1" x="-1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
 <smd name="P$2" x="1.45" y="0" dx="1.3" dy="1.4" layer="1"/>
@@ -14172,6 +14194,24 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="DESD">
+<description>Diodes Inc. Low Cap. Bidirectional TVS Diodes&lt;br&gt;
+&lt;a href="http://www.mouser.com/ds/2/115/ds31434-219410.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SUPPRESSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="X1-DFN1006-2">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="VTVS">
 <description>Vishay VTVS5V0ASMF to VTVS63GSMF&lt;br&gt;
 400W TVS diodes&lt;br&gt;
@@ -14646,12 +14686,12 @@ Single Schmitt trigger inverter&lt;br&gt;
 <smd name="P$2" x="0" y="-3.15" dx="1.5" dy="2" layer="1"/>
 <smd name="P$3" x="2.3" y="-3.15" dx="1.5" dy="2" layer="1"/>
 <smd name="P$4" x="0" y="2.54" dx="3.8" dy="2" layer="1"/>
-<wire x1="-3.35" y1="1.85" x2="-3.35" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="-3.35" y1="-1.85" x2="3.35" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="3.35" y1="-1.85" x2="3.35" y2="1.85" width="0.127" layer="21"/>
-<wire x1="3.35" y1="1.85" x2="-3.35" y2="1.85" width="0.127" layer="21"/>
 <text x="-3.81" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
 <text x="-2.54" y="0" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="-3.302" y1="-4.445" x2="-3.302" y2="3.937" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="3.937" x2="3.302" y2="3.937" width="0.127" layer="21"/>
+<wire x1="3.302" y1="3.937" x2="3.302" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-4.445" x2="-3.302" y2="-4.445" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -15365,6 +15405,10 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
 <rectangle x1="-0.675" y1="0.45" x2="0.675" y2="1.05" layer="51"/>
 <rectangle x1="-0.675" y1="-1.05" x2="0.675" y2="-0.45" layer="51"/>
+<wire x1="-0.762" y1="1.778" x2="0.762" y2="1.778" width="0.127" layer="21"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="0.762" y1="-1.778" x2="-0.762" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="1.778" width="0.127" layer="21"/>
 </package>
 <package name="MINI-TOPLED-SANTANA">
 <description>&lt;b&gt;Mini TOPLED Santana®&lt;/b&gt;&lt;p&gt;
@@ -16563,24 +16607,24 @@ NMOS Power FET&lt;br&gt;
 <part name="U$57" library="ONSemi" deviceset="NCP1117" device=""/>
 <part name="C61" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C62" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
-<part name="5V-TVS_1" library="diode" deviceset="VTVS" device=""/>
+<part name="5V-TVS_1" library="diode" deviceset="DESD" device=""/>
 <part name="24V-TVS_1" library="diode" deviceset="VTVS" device=""/>
-<part name="U$7" library="transistors" deviceset="SSM3J353F" device=""/>
+<part name="U7" library="transistors" deviceset="SSM3J353F" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="FASTCHG"/>
-<part name="U$8" library="transistors" deviceset="SSM3J353F" device=""/>
+<part name="U8" library="transistors" deviceset="SSM3J353F" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="FULLCHG"/>
-<part name="U$9" library="transistors" deviceset="SSM3J353F" device=""/>
+<part name="U9" library="transistors" deviceset="SSM3J353F" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="FAULT"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R19" library="resistor" deviceset="R-US_" device="R0805" value="680"/>
 <part name="BUZZER" library="molex" deviceset="KK254_VERT_2PIN" device="22-29-2021"/>
 <part name="BATT1_FUSE" library="littelfuse" deviceset="154-OMNI_BLOK" device="" value="4A"/>
-<part name="U$19" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
+<part name="NMOS4" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
 <part name="R25" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
 <part name="C20" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
 <part name="INPUT-SWITCH" library="switches" deviceset="GPTS203212B" device=""/>
@@ -16589,7 +16633,7 @@ NMOS Power FET&lt;br&gt;
 <part name="24V-TVS_OUT" library="diode" deviceset="VTVS" device=""/>
 <part name="BATT1_IN" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="24V-TVS_2" library="diode" deviceset="VTVS" device=""/>
-<part name="U$16" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
+<part name="NMOS3" library="transistor-power" deviceset="IPD50P04P4-13" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="43k"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0805" value="2.2u"/>
 <part name="BATT1_SWITCH" library="switches" deviceset="GPTS203212B" device=""/>
@@ -16644,22 +16688,22 @@ NMOS Power FET&lt;br&gt;
 <instance part="C62" gate="G$1" x="63.5" y="137.16"/>
 <instance part="5V-TVS_1" gate="G$1" x="76.2" y="116.84"/>
 <instance part="24V-TVS_1" gate="G$1" x="238.76" y="154.94" rot="R90"/>
-<instance part="U$7" gate="G$1" x="-12.7" y="5.08"/>
+<instance part="U7" gate="G$1" x="-12.7" y="5.08"/>
 <instance part="R9" gate="G$1" x="-12.7" y="-15.24" rot="R90"/>
 <instance part="R10" gate="G$1" x="7.62" y="12.7" rot="R90"/>
 <instance part="LED1" gate="G$1" x="-12.7" y="-22.86"/>
-<instance part="U$8" gate="G$1" x="0" y="-22.86"/>
+<instance part="U8" gate="G$1" x="0" y="-22.86"/>
 <instance part="R11" gate="G$1" x="0" y="-43.18" rot="R90"/>
 <instance part="R12" gate="G$1" x="20.32" y="-15.24" rot="R90"/>
 <instance part="LED2" gate="G$1" x="0" y="-50.8"/>
-<instance part="U$9" gate="G$1" x="12.7" y="-50.8"/>
+<instance part="U9" gate="G$1" x="12.7" y="-50.8"/>
 <instance part="R14" gate="G$1" x="33.02" y="-43.18" rot="R90"/>
 <instance part="LED3" gate="G$1" x="12.7" y="-81.28"/>
 <instance part="R13" gate="G$1" x="12.7" y="-73.66" rot="R90"/>
 <instance part="R19" gate="G$1" x="12.7" y="-63.5" rot="R90"/>
 <instance part="BUZZER" gate="U1" x="38.1" y="-71.12"/>
 <instance part="BATT1_FUSE" gate="G$1" x="154.94" y="10.16" rot="MR0"/>
-<instance part="U$19" gate="G$1" x="233.68" y="149.86" rot="MR180"/>
+<instance part="NMOS4" gate="G$1" x="233.68" y="149.86" rot="MR180"/>
 <instance part="R25" gate="G$1" x="213.36" y="152.4" rot="R180"/>
 <instance part="C20" gate="G$1" x="223.52" y="147.32"/>
 <instance part="INPUT-SWITCH" gate="G$1" x="203.2" y="139.7" rot="R90"/>
@@ -16668,7 +16712,7 @@ NMOS Power FET&lt;br&gt;
 <instance part="24V-TVS_OUT" gate="G$1" x="226.06" y="53.34" rot="MR0"/>
 <instance part="BATT1_IN" gate="G$1" x="167.64" y="-58.42" rot="MR270"/>
 <instance part="24V-TVS_2" gate="G$1" x="167.64" y="-40.64" rot="MR270"/>
-<instance part="U$16" gate="G$1" x="162.56" y="-35.56"/>
+<instance part="NMOS3" gate="G$1" x="162.56" y="-35.56"/>
 <instance part="R4" gate="G$1" x="142.24" y="-38.1" rot="MR0"/>
 <instance part="C11" gate="G$1" x="152.4" y="-33.02" rot="MR180"/>
 <instance part="BATT1_SWITCH" gate="G$1" x="132.08" y="-25.4" rot="MR270"/>
@@ -16877,7 +16921,7 @@ NMOS Power FET&lt;br&gt;
 <label x="10.16" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="S"/>
+<pinref part="U7" gate="G$1" pin="S"/>
 <wire x1="-12.7" y1="12.7" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="17.78" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
@@ -16886,7 +16930,7 @@ NMOS Power FET&lt;br&gt;
 <label x="-12.7" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="S"/>
+<pinref part="U8" gate="G$1" pin="S"/>
 <wire x1="0" y1="-15.24" x2="0" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="0" y1="-10.16" x2="0" y2="0" width="0.1524" layer="91"/>
@@ -16895,7 +16939,7 @@ NMOS Power FET&lt;br&gt;
 <label x="0" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="S"/>
+<pinref part="U9" gate="G$1" pin="S"/>
 <wire x1="12.7" y1="-43.18" x2="12.7" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="-38.1" x2="12.7" y2="-27.94" width="0.1524" layer="91"/>
@@ -16904,7 +16948,7 @@ NMOS Power FET&lt;br&gt;
 <label x="12.7" y="-27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$19" gate="G$1" pin="S"/>
+<pinref part="NMOS4" gate="G$1" pin="S"/>
 <wire x1="236.22" y1="144.78" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="132.08" x2="243.84" y2="132.08" width="0.1524" layer="91"/>
 <label x="238.76" y="132.08" size="1.778" layer="95"/>
@@ -17115,13 +17159,13 @@ NMOS Power FET&lt;br&gt;
 <net name="N$23" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="U$7" gate="G$1" pin="D"/>
+<pinref part="U7" gate="G$1" pin="D"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!FASTCHG!_1" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="G"/>
+<pinref part="U7" gate="G$1" pin="G"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
@@ -17140,13 +17184,13 @@ NMOS Power FET&lt;br&gt;
 <net name="N$26" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="G$1" pin="D"/>
+<pinref part="U8" gate="G$1" pin="D"/>
 <wire x1="0" y1="-38.1" x2="0" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!FULLCHG!_1" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="G"/>
+<pinref part="U8" gate="G$1" pin="G"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="BATT1_IC" gate="G$1" pin="!FULLCHG!"/>
@@ -17158,7 +17202,7 @@ NMOS Power FET&lt;br&gt;
 </net>
 <net name="!FAULT!_1" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="G"/>
+<pinref part="U9" gate="G$1" pin="G"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="-48.26" x2="33.02" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="BATT1_IC" gate="G$1" pin="!FAULT!"/>
@@ -17207,7 +17251,7 @@ NMOS Power FET&lt;br&gt;
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="D"/>
+<pinref part="U9" gate="G$1" pin="D"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="-58.42" x2="12.7" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
@@ -17217,7 +17261,7 @@ NMOS Power FET&lt;br&gt;
 <pinref part="SHORE_IN" gate="G$1" pin="P$1"/>
 <pinref part="24V-TVS_1" gate="G$1" pin="C"/>
 <wire x1="236.22" y1="165.1" x2="236.22" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="D"/>
+<pinref part="NMOS4" gate="G$1" pin="D"/>
 <junction x="236.22" y="154.94"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="162.56" x2="203.2" y2="165.1" width="0.1524" layer="91"/>
@@ -17231,7 +17275,7 @@ NMOS Power FET&lt;br&gt;
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="149.86" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="152.4" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U$19" gate="G$1" pin="G"/>
+<pinref part="NMOS4" gate="G$1" pin="G"/>
 <wire x1="223.52" y1="152.4" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 <junction x="223.52" y="152.4"/>
 </segment>
@@ -17251,7 +17295,7 @@ NMOS Power FET&lt;br&gt;
 <pinref part="BATT1_IN" gate="G$1" pin="P$1"/>
 <pinref part="24V-TVS_2" gate="G$1" pin="C"/>
 <wire x1="165.1" y1="-50.8" x2="165.1" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="D"/>
+<pinref part="NMOS3" gate="G$1" pin="D"/>
 <junction x="165.1" y="-40.64"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="-48.26" x2="132.08" y2="-50.8" width="0.1524" layer="91"/>
@@ -17265,7 +17309,7 @@ NMOS Power FET&lt;br&gt;
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="-35.56" x2="152.4" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-38.1" x2="147.32" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="G"/>
+<pinref part="NMOS3" gate="G$1" pin="G"/>
 <wire x1="152.4" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="152.4" y="-38.1"/>
 </segment>
@@ -17282,7 +17326,7 @@ NMOS Power FET&lt;br&gt;
 </net>
 <net name="CHG-OUT_1" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="S"/>
+<pinref part="NMOS3" gate="G$1" pin="S"/>
 <pinref part="BATT1_FUSE" gate="G$1" pin="P$1"/>
 <wire x1="165.1" y1="-30.48" x2="165.1" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>

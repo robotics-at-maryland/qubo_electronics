@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15039,8 +15039,8 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <pin name="TIMER1" x="-17.78" y="-33.02" visible="pin" length="middle"/>
 <pin name="TIMER2" x="-17.78" y="-35.56" visible="pin" length="middle"/>
 <pin name="!FASTCHG!" x="-17.78" y="-50.8" visible="pin" length="middle"/>
-<pin name="!FULLCHG!" x="-17.78" y="-53.34" visible="pin" length="middle"/>
-<pin name="!FAULT!" x="-17.78" y="-55.88" visible="pin" length="middle"/>
+<pin name="!FULLCHG!" x="-17.78" y="-55.88" visible="pin" length="middle"/>
+<pin name="!FAULT!" x="-17.78" y="-60.96" visible="pin" length="middle"/>
 <pin name="CSSP" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="CSSN" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="VLO" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>

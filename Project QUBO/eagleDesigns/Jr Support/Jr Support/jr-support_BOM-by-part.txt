@@ -1,0 +1,200 @@
+Partlist exported from C:/Users/Ben/Documents/Dropbox/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleDesigns/Jr Support/Jr Support/jr-support_v3.sch at Wed, 6/14/2017 1:37 PM
+
+Part              Value                     Device                    Package             Description                                                                               PROD_ID  VALUE  
+3V3_LED                                     0805_LED                  0805                LED, 0805 package. Any variety.                                                                           
+5-TVS_1           BZA408B                   BZA408B                   SOT457              Nexperia BZA408B                                                                                          
+5-TVS_2           BZA408B                   BZA408B                   SOT457              Nexperia BZA408B                                                                                          
+5V_CURR_ADC       ADC121C021                ADC121C021                VSSOP-8             ADC121C021 8-pin VSSOP package                                                                            
+5V_LED                                      0805_LED                  0805                LED, 0805 package. Any variety.                                                                           
+5V_OUT            5V_OUT                    KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+5V_PG             Red                       LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                                       
+5V_REG            LT8640                    LT8640                    QFN18-3X4           Linear LT8640                                                                                             
+5V_VOLTAGE        INA219SOT23               INA219SOT23               SOT-23-8            TI INA219                                                                                                 
+12V_CURR_ADC      ADC121C021                ADC121C021                VSSOP-8             ADC121C021 8-pin VSSOP package                                                                            
+12V_LED                                     0805_LED                  0805                LED, 0805 package. Any variety.                                                                           
+12V_OUT           12V_OUT                   KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+12V_REG           LT8640                    LT8640                    QFN18-3X4           Linear LT8640                                                                                             
+12V_VOLTAGE       INA219SOT23               INA219SOT23               SOT-23-8            TI INA219                                                                                                 
+BME280            BME280                    BME280                    BME280_LGA                                                                                                    IC-13090 BME280 
+C1                0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C2                0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C3                47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C4                1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C5                0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C6                47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C7                1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C8                0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C9                47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C10               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C11               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C12               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C13               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C14               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C15               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C16               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C17               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C18               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C19               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C20               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C21               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C22               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C23               100p                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C24               100n                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C25               100n                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C26               100n                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C27               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C28               15p                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C29               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C30               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C31               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C32               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C33               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C34               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C35               22u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C36               220u                      CPOL-USC-F80              C-F80               POLARIZED CAPACITOR, American symbol                                                                      
+C37               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C38               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C39               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C40               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C41               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C42               15p                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C43               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C44               100p                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C45               1n                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C46               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C47               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C48               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C49               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C50               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C51               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C52               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C53               4.7u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C54               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C55               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C56               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C57               47n                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C58               10u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C60               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C61               22u                       C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C62               220u                      CPOL-USC-F80              C-F80               POLARIZED CAPACITOR, American symbol                                                                      
+C63               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C65               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C67               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C68               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C77               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C78               4.7u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C81               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C82               1n                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C83               4.7u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C84               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C85               1n                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C86               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C87               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C88               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C89               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C90               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C91               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C92               0.1u                      C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C93               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C95               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C96               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C97               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C98               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C99               1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+C100              1u                        C-USC0805                 C0805               CAPACITOR, American symbol                                                                                
+CAMERA1           KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+CAMERA2           KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+CPU_ON            KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+CPU_PWR           CPU PWR                   KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+DEPTH_SENS        Depth Sensor              KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+ETHERNET          KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+FAN1              KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+FAN2              KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+I2C_SHIFT                                   PCA9306DCT                SM8                 TI I2C/SMBus Level Shifter                                                                                
+JP1                                         PINHD-1X2                 1X02                PIN HEADER                                                                                                
+JP2               2_SUPERSABRE              2_SUPERSABRE              SUPERSABRE_2CIRCUIT Molex SuperSabre                                                                                          
+L1                2.2u                      L-USL0740                 L0740               INDUCTOR, American symbol                                                                                 
+L2                2.2u                      L-USL0740                 L0740               INDUCTOR, American symbol                                                                                 
+LED2              RED                       LEDCHIP-LED0805           CHIP-LED0805        LED                                                                                                       
+R1                10k                       R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R2                1.2k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R3                50k                       R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R7                4.7k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R8                4.7k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R10               4.2k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R11               4.2k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R12               200k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R14               41.2k                     R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R15               1M                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R16               88.7k                     R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R17               41.2k                     R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R18               510                       R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R21               6.8k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R23               1M                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R24               243k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R25               10                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R30               10                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R31               270                       R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R32               1.5k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R33               1.2k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R34               68                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R35               10                        R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R38               1.2k                      R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+R40               50k                       R-US_R0805                R0805               RESISTOR, American symbol                                                                                 
+THRUST1           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST2           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST3           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST4           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST5           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST6           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST7           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUST8           KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN22-29-2041 KK254_VERT_4PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating                 
+THRUSTER_CURR_ADC ADS7828                   ADS7828                   TSSOP16             Texas Instruments ADS7828                                                                                 
+TVS1                                        ESD12VD3B                 SOD-323             MC Semi ESD12VD3B                                                                                         
+TVS2                                        ESD12VD3B                 SOD-323             MC Semi ESD12VD3B                                                                                         
+TVS3                                        ESD12VD3B                 SOD-323             MC Semi ESD12VD3B                                                                                         
+U$1               SSM3J353F                 SSM3J353F                 SOT-346-3/S-MINI    Toshiba SSM3J353F                                                                                         
+U$2               ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$3               TIVA-C_EVAL               TIVA-C_EVAL               TIVA-C_EVAL         Texas Instruments Tiva-C TM4C123G LaunchPad Evaluation Board                                              
+U$4               ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$5               25A Fuse                  BOWED-1.25"-FUSECLIPS     1.25"_FUSECLIPS     Littelfuse 1.25" fuse clips with bowed leads                                                              
+U$6               4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$7               VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$8               ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$9               4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$10              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$11              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$12              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$13              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$14              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$15              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$16              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$17              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$18              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$19              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$20              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$22              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$23              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$26              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$27              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$28              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$29              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$30              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$31              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$32              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$33              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$34              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$35              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$36              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$37              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$38              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$39              ACS713SOIC                ACS713SOIC                ACS713-SOIC                                                                                                                   
+U$40              4A Fuse                   154-OMNI_BLOK             154-OMNI-BLOK       Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                                          
+U$45              74LVC1G14                 74LVC1G14                 TSSOP5              Nexperia 74LVC1G14                                                                                        
+U$59              VTVS                      VTVS                      DO-219AB            Vishay VTVS5V0ASMF to VTVS63GSMF                                                                          
+U$66              SSM3J353F                 SSM3J353F                 SOT-346-3/S-MINI    Toshiba SSM3J353F                                                                                         
+U1                PCA9685                   PCA9685                   TSSOP-28_4MM        16-channel 12-bit PWM                                                                     IC-12240 PCA9685
+V-THRUST_CURR_ADC ADC121C021                ADC121C021                VSSOP-8             ADC121C021 8-pin VSSOP package                                                                            
+V-THRUST_LED                                0805_LED                  0805                LED, 0805 package. Any variety.                                                                           
+V-THRUST_OUT      Vin_OUT                   KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating                 
+V-THRUST_VOLTAGE  INA219SOT23               INA219SOT23               SOT-23-8            TI INA219                                                                                                 

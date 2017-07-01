@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -32,19 +32,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -69,8 +69,8 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Linear Technology Devices&lt;/b&gt;&lt;p&gt;
@@ -6493,6 +6493,132 @@ Source: &lt;a href="http://cds.linear.com/docs/Datasheet/2444589fb.pdf"&gt; Data
 <text x="-2" y="-2.5" size="0.6096" layer="27">&gt;VALUE</text>
 <text x="1" y="1" size="0.254" layer="21">1</text>
 <text x="1.5" y="0.5" size="0.254" layer="21">20</text>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.320975" y="0.565815625"/>
+<vertex x="-1.49661875" y="0.565815625"/>
+<vertex x="-1.49785625" y="0.884096875"/>
+<vertex x="-2.315903125" y="0.928328125"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.318271875" y="0.0698625"/>
+<vertex x="-1.493915625" y="0.0698625"/>
+<vertex x="-1.48884375" y="0.432375"/>
+<vertex x="-2.3132" y="0.432375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.31153125" y="-0.438909375"/>
+<vertex x="-1.487175" y="-0.438909375"/>
+<vertex x="-1.482103125" y="-0.076396875"/>
+<vertex x="-2.306459375" y="-0.076396875"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-2.316275" y="-0.93179375"/>
+<vertex x="-1.49191875" y="-0.873375"/>
+<vertex x="-1.486846875" y="-0.56928125"/>
+<vertex x="-2.311203125" y="-0.56928125"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-1.06348125" y="-1.83403125"/>
+<vertex x="-1.06348125" y="-1.009675"/>
+<vertex x="-1.367571875" y="-1.008253125"/>
+<vertex x="-1.42599375" y="-1.828959375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-0.0664875" y="-1.840034375"/>
+<vertex x="-0.0664875" y="-1.015678125"/>
+<vertex x="-0.429" y="-1.01060625"/>
+<vertex x="-0.429" y="-1.8349625"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="0.43080625" y="-1.83671875"/>
+<vertex x="0.43080625" y="-1.0123625"/>
+<vertex x="0.06829375" y="-1.007290625"/>
+<vertex x="0.06829375" y="-1.831646875"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="0.930553125" y="-1.81435625"/>
+<vertex x="0.930553125" y="-0.99"/>
+<vertex x="0.568040625" y="-0.984928125"/>
+<vertex x="0.568040625" y="-1.809284375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.43621875" y="-1.81673125"/>
+<vertex x="1.392396875" y="-0.992375"/>
+<vertex x="1.07370625" y="-0.987303125"/>
+<vertex x="1.07370625" y="-1.811659375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.49426875" y="-0.863165625"/>
+<vertex x="2.314975" y="-0.917934375"/>
+<vertex x="2.320046875" y="-0.555421875"/>
+<vertex x="1.495690625" y="-0.555421875"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.49061875" y="-0.433646875"/>
+<vertex x="2.314975" y="-0.433646875"/>
+<vertex x="2.320046875" y="-0.071134375"/>
+<vertex x="1.495690625" y="-0.071134375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.49061875" y="0.0717"/>
+<vertex x="2.314975" y="0.0717"/>
+<vertex x="2.320046875" y="0.4342125"/>
+<vertex x="1.495690625" y="0.4342125"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.49061875" y="0.56651875"/>
+<vertex x="2.314975" y="0.56651875"/>
+<vertex x="2.320046875" y="0.92903125"/>
+<vertex x="1.502" y="0.8721625"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="1.3630875" y="0.987115625"/>
+<vertex x="1.43249375" y="1.811471875"/>
+<vertex x="1.06998125" y="1.81654375"/>
+<vertex x="1.06998125" y="0.9921875"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="0.93294375" y="0.987259375"/>
+<vertex x="0.93294375" y="1.811615625"/>
+<vertex x="0.57043125" y="1.8166875"/>
+<vertex x="0.57043125" y="0.99233125"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="0.43334375" y="0.976778125"/>
+<vertex x="0.43334375" y="1.801134375"/>
+<vertex x="0.07083125" y="1.80620625"/>
+<vertex x="0.07083125" y="0.98185"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-0.071571875" y="0.98179375"/>
+<vertex x="-0.071571875" y="1.80615"/>
+<vertex x="-0.434084375" y="1.811221875"/>
+<vertex x="-0.434084375" y="0.986865625"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-1.065421875" y="0.9767"/>
+<vertex x="-1.065421875" y="1.80105625"/>
+<vertex x="-1.427934375" y="1.806128125"/>
+<vertex x="-1.358528125" y="0.981771875"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-1.279953125" y="0.122509375"/>
+<vertex x="-0.857528125" y="0.122509375"/>
+<vertex x="-0.857528125" y="-0.116171875"/>
+<vertex x="-1.2947375" y="-0.116171875"/>
+<vertex x="-1.2947375" y="0.126734375"/>
+<vertex x="-1.26939375" y="0.126734375"/>
+<vertex x="-1.26939375" y="0.118284375"/>
+</polygon>
+<polygon width="0.0762" layer="29">
+<vertex x="-0.509025" y="0.13518125"/>
+<vertex x="-0.0866" y="0.13518125"/>
+<vertex x="-0.0866" y="-0.1035"/>
+<vertex x="-0.523809375" y="-0.1035"/>
+<vertex x="-0.523809375" y="0.13940625"/>
+<vertex x="-0.498465625" y="0.13940625"/>
+<vertex x="-0.498465625" y="0.13095625"/>
+</polygon>
 </package>
 <package name="MSOP-8_MS">
 <smd name="1" x="-2.2098" y="0.975" dx="1.397" dy="0.4318" layer="1"/>

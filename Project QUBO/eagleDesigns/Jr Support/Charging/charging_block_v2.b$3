@@ -1937,14 +1937,12 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="24V-TVS_1" library="diode" package="DO-219AB" value="VTVS" x="15.24" y="83.185" smashed="yes" rot="R270">
-<attribute name="NAME" x="-6.35" y="85.09" size="0.8128" layer="25" ratio="17" rot="R270"/>
 <attribute name="VALUE" x="13.335" y="85.725" size="0.8128" layer="27" ratio="17" rot="R270"/>
 </element>
 <element name="24V-TVS_2" library="diode" package="DO-219AB" value="VTVS" x="26.67" y="10.16" smashed="yes" rot="R270">
 <attribute name="VALUE" x="24.765" y="12.7" size="0.8128" layer="27" ratio="17" rot="R270"/>
 </element>
 <element name="24V-TVS_OUT" library="diode" package="DO-219AB" value="VTVS" x="39.37" y="82.55" smashed="yes" rot="R90">
-<attribute name="NAME" x="69.215" y="78.74" size="0.8128" layer="25" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="41.275" y="80.01" size="0.8128" layer="27" ratio="17" rot="R90"/>
 </element>
 <element name="B1-ZENER" library="diode" package="SOD106-R" value="" x="20.955" y="63.5" smashed="yes" rot="R90">
@@ -2471,17 +2469,12 @@ design rules under a new name.</description>
 <contactref element="R30" pad="2"/>
 <contactref element="R31" pad="2"/>
 <contactref element="BATT1_IC" pad="8"/>
-<wire x1="18.9357" y1="54.2925" x2="17.60355" y2="54.2925" width="0.3048" layer="1"/>
-<wire x1="17.60355" y1="54.2925" x2="17.42575" y2="54.1147" width="0.3048" layer="1"/>
-<wire x1="17.42575" y1="54.1147" x2="17.38983125" y2="54.1147" width="0.254" layer="1"/>
-<wire x1="17.38983125" y1="54.1147" x2="17.37573125" y2="54.1006" width="0.254" layer="1"/>
-<wire x1="15.3656" y1="54.1006" x2="15.3543" y2="54.0893" width="0.254" layer="1"/>
-<wire x1="17.37573125" y1="54.1006" x2="15.3656" y2="54.1006" width="0.254" layer="1"/>
-<wire x1="15.3543" y1="54.0893" x2="13.7677" y2="54.0893" width="0.254" layer="1"/>
-<wire x1="11.479" y1="54.649" x2="13.208" y2="54.649" width="0.3048" layer="1"/>
+<wire x1="13.208" y1="54.649" x2="11.479" y2="54.649" width="0.3048" layer="1"/>
 <wire x1="11.479" y1="54.649" x2="11.01" y2="55.118" width="0.3048" layer="1"/>
-<wire x1="13.208" y1="54.649" x2="13.7423" y2="54.1147" width="0.3048" layer="1"/>
-<wire x1="13.7423" y1="54.1147" x2="13.7677" y2="54.0893" width="0" layer="19" extent="1-1"/>
+<wire x1="18.9357" y1="54.2925" x2="17.56763125" y2="54.2925" width="0.254" layer="1"/>
+<wire x1="17.56763125" y1="54.2925" x2="17.37573125" y2="54.1006" width="0.254" layer="1"/>
+<wire x1="17.37573125" y1="54.1006" x2="13.7564" y2="54.1006" width="0.254" layer="1"/>
+<wire x1="13.7564" y1="54.1006" x2="13.208" y2="54.649" width="0.254" layer="1"/>
 </signal>
 <signal name="VL_1">
 <contactref element="BATT1_IC" pad="1"/>

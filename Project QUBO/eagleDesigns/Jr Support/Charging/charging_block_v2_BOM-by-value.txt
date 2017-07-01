@@ -1,0 +1,44 @@
+Partlist exported from C:/Users/Ben/Documents/Dropbox/UMD/R@M/RAM Tran Electronics_2016/qubo_electronics.git/Project QUBO/eagleDesigns/Jr Support/Charging/charging_block_v2.sch at Wed, 6/14/2017 12:29 PM
+
+Qty Value                     Device                    Package             Parts                             Description                                                                               
+1                             DIODE-SOD123              SOD123              D1                                DIODE                                                                                     
+1                             SCHOTTKY-DIODESOD-106     SOD106-R            B1-ZENER                          Schottky Diode                                                                            
+6   0.1u                      C-USC0805                 C0805               C63, C70, C78, C79, C82, C83      CAPACITOR, American symbol                                                                
+2   1.2k                      R-US_R0805                R0805               R9, R11                           RESISTOR, American symbol                                                                 
+1   1.5k                      R-US_R0805                R0805               R28                               RESISTOR, American symbol                                                                 
+2   100m                      R-US_R2512                R2512               R29, R34                          RESISTOR, American symbol                                                                 
+1   10k                       R-US_R0805                R0805               R32                               RESISTOR, American symbol                                                                 
+2   10u                       C-USC0805                 C0805               C61, C62                          CAPACITOR, American symbol                                                                
+1   10uH                      L-USL6100                 L6100               L1                                INDUCTOR, American symbol                                                                 
+1   120u                      CPOL-USE3.5-8             E3,5-8              C84                               POLARIZED CAPACITOR, American symbol                                                      
+3   1n                        C-USC0805                 C0805               C71, C74, C75                     CAPACITOR, American symbol                                                                
+2   1u                        C-USC0805                 C0805               C60, C69                          CAPACITOR, American symbol                                                                
+1   2.1k                      R-US_R0805                R0805               R1                                RESISTOR, American symbol                                                                 
+4   2.2u                      C-USC0805                 C0805               C11, C20, C66, C67                CAPACITOR, American symbol                                                                
+3   2_SUPERSABRE              2_SUPERSABRE              SUPERSABRE_2CIRCUIT BATT1_IN, SHORE_IN, SHORE_OUT     Molex SuperSabre                                                                          
+1   330                       R-US_R0805                R0805               R33                               RESISTOR, American symbol                                                                 
+2   4.3k                      R-US_R0805                R0805               R6, R26                           RESISTOR, American symbol                                                                 
+2   43k                       R-US_R0805                R0805               R4, R25                           RESISTOR, American symbol                                                                 
+2   47n                       C-USC0805                 C0805               C72, C73                          CAPACITOR, American symbol                                                                
+1   4A                        154-OMNI_BLOK             154-OMNI-BLOK       BATT1_FUSE                        Littelfuse NANO2 Series 154 Omni-Blok fuseholder                                          
+5   50k                       R-US_R0805                R0805               R10, R12, R14, R30, R31           RESISTOR, American symbol                                                                 
+2   510                       R-US_R0805                R0805               R13, R23                          RESISTOR, American symbol                                                                 
+1   6.8k                      R-US_R0805                R0805               R24                               RESISTOR, American symbol                                                                 
+1   680                       R-US_R0805                R0805               R19                               RESISTOR, American symbol                                                                 
+1   74LVC1G14                 74LVC1G14                 TSSOP5              U56                               Nexperia 74LVC1G14                                                                        
+1   BZA408B                   BZA408B                   SOT457              5-TVS_1                           Nexperia BZA408B                                                                          
+1   Batt Connect.             LEDCHIP-LED0805           CHIP-LED0805        LED4                              LED                                                                                       
+1   CHARGING                  LEDCHIP-LED0805           CHIP-LED0805        LED8                              LED                                                                                       
+1   FASTCHG                   LEDCHIP-LED0805           CHIP-LED0805        LED1                              LED                                                                                       
+1   FAULT                     LEDCHIP-LED0805           CHIP-LED0805        LED3                              LED                                                                                       
+1   FULLCHG                   LEDCHIP-LED0805           CHIP-LED0805        LED2                              LED                                                                                       
+2   GPTS203212B               GPTS203212B               GPTS203211B         BATT1_SWITCH, INPUT-SWITCH        CW Industries Pushbutton SPST switch                                                      
+2   IPD50P04P4-13             IPD50P04P4-13             TO252-3             NMOS3, NMOS4                      Infineon IPD50P04P4-13                                                                    
+2   KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN22-29-2021 KK254_VERT_2PIN     BUZZER, CHARGING-SWITCH           KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 2 Circuits, Gold (Au) Plating 
+1   MAX1737                   MAX1737                   QSOP28              BATT1_IC                          Maxim MAX1737 Stand-Alone Switch-Mode Lithium-Ion Battery-Charger Controller              
+1   NCP1117                   NCP1117                   SOT-223             U57                               ON Semiconductor NCP1117                                                                  
+1   NTCLE201E3                NTCLE201E3                2-0.3MM-LEADS       THERM                             Vishay NTC Thermistor                                                                     
+3   SSM3J353F                 SSM3J353F                 SOT-346-3/S-MINI    U7, U8, U9                        Toshiba SSM3J353F                                                                         
+2   STD95N2LH5                STD95N2LH5                DPAK                NMOS1, NMOS2                      ST STD95N2LH5                                                                             
+1   Shore Power               LEDCHIP-LED0805           CHIP-LED0805        LED7                              LED                                                                                       
+3   VTVS                      VTVS                      DO-219AB            24V-TVS_1, 24V-TVS_2, 24V-TVS_OUT Vishay VTVS5V0ASMF to VTVS63GSMF                                                          
