@@ -11121,6 +11121,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pad name="P$1" x="-5.1" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="5.1" y="0" drill="0.8" shape="square"/>
 </package>
+<package name="534-5004">
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="1.016"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -11319,6 +11323,10 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="5.08" y="-7.62" size="1.778" layer="94">4</text>
 <text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TEST_PT">
+<pin name="1" x="0" y="-7.62" length="middle" rot="R90"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14888,6 +14896,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="RC55/H8" package="RC55">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="C-US" prefix="C" uservalue="yes">
@@ -18107,6 +18124,21 @@ for power line</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 <connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST_PT">
+<gates>
+<gate name="G$1" symbol="TEST_PT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="534-5004" package="534-5004">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
