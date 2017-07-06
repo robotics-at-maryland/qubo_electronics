@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -156,58 +156,6 @@
 <description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TIVA-C_EVAL">
-<pad name="1-1" x="-22.86" y="3.81" drill="1.016" shape="square"/>
-<pad name="1-2" x="-22.86" y="1.27" drill="1.016"/>
-<pad name="1-3" x="-22.86" y="-1.27" drill="1.016"/>
-<pad name="1-4" x="-22.86" y="-3.81" drill="1.016"/>
-<pad name="1-5" x="-22.86" y="-6.35" drill="1.016"/>
-<pad name="1-6" x="-22.86" y="-8.89" drill="1.016"/>
-<pad name="1-7" x="-22.86" y="-11.43" drill="1.016"/>
-<pad name="1-8" x="-22.86" y="-13.97" drill="1.016"/>
-<pad name="1-9" x="-22.86" y="-16.51" drill="1.016"/>
-<pad name="1-10" x="-22.86" y="-19.05" drill="1.016"/>
-<pad name="3-1" x="-20.32" y="3.81" drill="1.016" shape="square"/>
-<pad name="3-2" x="-20.32" y="1.27" drill="1.016"/>
-<pad name="3-3" x="-20.32" y="-1.27" drill="1.016"/>
-<pad name="3-4" x="-20.32" y="-3.81" drill="1.016"/>
-<pad name="3-5" x="-20.32" y="-6.35" drill="1.016"/>
-<pad name="3-6" x="-20.32" y="-8.89" drill="1.016"/>
-<pad name="3-7" x="-20.32" y="-11.43" drill="1.016"/>
-<pad name="3-8" x="-20.32" y="-13.97" drill="1.016"/>
-<pad name="3-9" x="-20.32" y="-16.51" drill="1.016"/>
-<pad name="3-10" x="-20.32" y="-19.05" drill="1.016"/>
-<pad name="4-1" x="20.32" y="3.81" drill="1.016" shape="square"/>
-<pad name="2-1" x="22.86" y="3.81" drill="1.016" shape="square"/>
-<pad name="4-2" x="20.32" y="1.27" drill="1.016"/>
-<pad name="2-2" x="22.86" y="1.27" drill="1.016"/>
-<pad name="4-3" x="20.32" y="-1.27" drill="1.016"/>
-<pad name="2-3" x="22.86" y="-1.27" drill="1.016"/>
-<pad name="4-4" x="20.32" y="-3.81" drill="1.016"/>
-<pad name="2-4" x="22.86" y="-3.81" drill="1.016"/>
-<pad name="4-5" x="20.32" y="-6.35" drill="1.016"/>
-<pad name="2-5" x="22.86" y="-6.35" drill="1.016"/>
-<pad name="4-6" x="20.32" y="-8.89" drill="1.016"/>
-<pad name="2-6" x="22.86" y="-8.89" drill="1.016"/>
-<pad name="4-7" x="20.32" y="-11.43" drill="1.016"/>
-<pad name="2-7" x="22.86" y="-11.43" drill="1.016"/>
-<pad name="4-8" x="20.32" y="-13.97" drill="1.016"/>
-<pad name="2-8" x="22.86" y="-13.97" drill="1.016"/>
-<pad name="4-9" x="20.32" y="-16.51" drill="1.016"/>
-<pad name="2-9" x="22.86" y="-16.51" drill="1.016"/>
-<pad name="4-10" x="20.32" y="-19.05" drill="1.016"/>
-<pad name="2-10" x="22.86" y="-19.05" drill="1.016"/>
-<wire x1="-25.4" y1="-33.02" x2="25.4" y2="-33.02" width="0.127" layer="21"/>
-<wire x1="25.4" y1="-33.02" x2="25.4" y2="33.02" width="0.127" layer="21"/>
-<wire x1="25.4" y1="33.02" x2="-25.4" y2="33.02" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="33.02" x2="-25.4" y2="-33.02" width="0.127" layer="21"/>
-<text x="-24.13" y="34.29" size="5.08" layer="25">&gt;NAME</text>
-<text x="-24.13" y="-35.56" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-24.13" y="6.35" size="1.27" layer="27">J1</text>
-<text x="-20.32" y="6.35" size="1.27" layer="27">J3</text>
-<text x="19.05" y="6.35" size="1.27" layer="27">J4</text>
-<text x="22.86" y="6.35" size="1.27" layer="27">J2</text>
-</package>
 <package name="TSSOP16">
 <description>&lt;b&gt;PW (R-PDSO-G8)&lt;/b&gt;&lt;p&gt;
 Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
@@ -360,70 +308,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="TIVA-C_EVAL">
-<pin name="3V3" x="-71.12" y="17.78" visible="pin" length="middle"/>
-<pin name="PB5" x="-71.12" y="12.7" visible="pin" length="middle"/>
-<pin name="PB0" x="-71.12" y="7.62" visible="pin" length="middle"/>
-<pin name="PB1" x="-71.12" y="2.54" visible="pin" length="middle"/>
-<pin name="PE4" x="-71.12" y="-2.54" visible="pin" length="middle"/>
-<pin name="PE5" x="-71.12" y="-7.62" visible="pin" length="middle"/>
-<pin name="PB4" x="-71.12" y="-12.7" visible="pin" length="middle"/>
-<pin name="PA5" x="-71.12" y="-17.78" visible="pin" length="middle"/>
-<pin name="PA6" x="-71.12" y="-22.86" visible="pin" length="middle"/>
-<pin name="PA7" x="-71.12" y="-27.94" visible="pin" length="middle"/>
-<wire x1="-66.04" y1="20.32" x2="-66.04" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-66.04" y1="-30.48" x2="-55.88" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="-30.48" x2="-55.88" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-55.88" y1="20.32" x2="-66.04" y2="20.32" width="0.254" layer="94"/>
-<pin name="GND@2-1" x="-27.94" y="17.78" visible="pin" length="middle"/>
-<pin name="PB2" x="-27.94" y="12.7" visible="pin" length="middle"/>
-<pin name="PE0" x="-27.94" y="7.62" visible="pin" length="middle"/>
-<pin name="PF0" x="-27.94" y="2.54" visible="pin" length="middle"/>
-<pin name="!RESET!" x="-27.94" y="-2.54" visible="pin" length="middle"/>
-<pin name="PD1" x="-27.94" y="-7.62" visible="pin" length="middle"/>
-<pin name="PD0" x="-27.94" y="-12.7" visible="pin" length="middle"/>
-<pin name="PA4" x="-27.94" y="-17.78" visible="pin" length="middle"/>
-<pin name="PA3" x="-27.94" y="-22.86" visible="pin" length="middle"/>
-<pin name="PA2" x="-27.94" y="-27.94" visible="pin" length="middle"/>
-<wire x1="-22.86" y1="20.32" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="20.32" x2="-22.86" y2="20.32" width="0.254" layer="94"/>
-<pin name="5V" x="15.24" y="17.78" visible="pin" length="middle"/>
-<pin name="GND@3-2" x="15.24" y="12.7" visible="pin" length="middle"/>
-<pin name="PB6" x="15.24" y="7.62" visible="pin" length="middle"/>
-<pin name="PB7" x="15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="PD2" x="15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="PD3" x="15.24" y="-7.62" visible="pin" length="middle"/>
-<pin name="PE1" x="15.24" y="-12.7" visible="pin" length="middle"/>
-<pin name="PE2" x="15.24" y="-17.78" visible="pin" length="middle"/>
-<pin name="PE3" x="15.24" y="-22.86" visible="pin" length="middle"/>
-<pin name="PF1" x="15.24" y="-27.94" visible="pin" length="middle"/>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-30.48" x2="30.48" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-30.48" x2="30.48" y2="20.32" width="0.254" layer="94"/>
-<wire x1="30.48" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
-<pin name="PF2" x="58.42" y="17.78" visible="pin" length="middle"/>
-<pin name="PF3" x="58.42" y="12.7" visible="pin" length="middle"/>
-<pin name="PB3" x="58.42" y="7.62" visible="pin" length="middle"/>
-<pin name="PC4" x="58.42" y="2.54" visible="pin" length="middle"/>
-<pin name="PC5" x="58.42" y="-2.54" visible="pin" length="middle"/>
-<pin name="PC6" x="58.42" y="-7.62" visible="pin" length="middle"/>
-<pin name="PC7" x="58.42" y="-12.7" visible="pin" length="middle"/>
-<pin name="PD6" x="58.42" y="-17.78" visible="pin" length="middle"/>
-<pin name="PD7" x="58.42" y="-22.86" visible="pin" length="middle"/>
-<pin name="PF4" x="58.42" y="-27.94" visible="pin" length="middle"/>
-<wire x1="63.5" y1="20.32" x2="63.5" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="63.5" y1="-30.48" x2="73.66" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="73.66" y1="-30.48" x2="73.66" y2="20.32" width="0.254" layer="94"/>
-<wire x1="73.66" y1="20.32" x2="63.5" y2="20.32" width="0.254" layer="94"/>
-<text x="-66.04" y="-40.64" size="5.08" layer="95">&gt;NAME</text>
-<text x="15.24" y="-40.64" size="5.08" layer="96">&gt;VALUE</text>
-<text x="-66.04" y="22.86" size="5.08" layer="97">J1</text>
-<text x="-22.86" y="22.86" size="5.08" layer="97">J2</text>
-<text x="20.32" y="22.86" size="5.08" layer="97">J3</text>
-<text x="63.5" y="22.86" size="5.08" layer="97">J4</text>
-</symbol>
 <symbol name="ADS7828">
 <pin name="REF" x="-12.7" y="15.24" visible="pin" length="middle"/>
 <pin name="CH0" x="-12.7" y="5.08" visible="pin" length="middle"/>
@@ -511,64 +395,6 @@ Source: http://focus.ti.com/lit/ds/symlink/ads1271.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TIVA-C_EVAL">
-<description>Texas Instruments Tiva-C TM4C123G LaunchPad Evaluation Board &lt;br&gt;
-Part number EK-TM4C123GXL&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ug/spmu296/spmu296.pdf"&gt;Datasheet&lt;/a&gt;&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/spms376e/spms376e.pdf"&gt;Microcontroller&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TIVA-C_EVAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TIVA-C_EVAL">
-<connects>
-<connect gate="G$1" pin="!RESET!" pad="2-5"/>
-<connect gate="G$1" pin="3V3" pad="1-1"/>
-<connect gate="G$1" pin="5V" pad="3-1"/>
-<connect gate="G$1" pin="GND@2-1" pad="2-1"/>
-<connect gate="G$1" pin="GND@3-2" pad="3-2"/>
-<connect gate="G$1" pin="PA2" pad="2-10"/>
-<connect gate="G$1" pin="PA3" pad="2-9"/>
-<connect gate="G$1" pin="PA4" pad="2-8"/>
-<connect gate="G$1" pin="PA5" pad="1-8"/>
-<connect gate="G$1" pin="PA6" pad="1-9"/>
-<connect gate="G$1" pin="PA7" pad="1-10"/>
-<connect gate="G$1" pin="PB0" pad="1-3"/>
-<connect gate="G$1" pin="PB1" pad="1-4"/>
-<connect gate="G$1" pin="PB2" pad="2-2"/>
-<connect gate="G$1" pin="PB3" pad="4-3"/>
-<connect gate="G$1" pin="PB4" pad="1-7"/>
-<connect gate="G$1" pin="PB5" pad="1-2"/>
-<connect gate="G$1" pin="PB6" pad="3-3"/>
-<connect gate="G$1" pin="PB7" pad="3-4"/>
-<connect gate="G$1" pin="PC4" pad="4-4"/>
-<connect gate="G$1" pin="PC5" pad="4-5"/>
-<connect gate="G$1" pin="PC6" pad="4-6"/>
-<connect gate="G$1" pin="PC7" pad="4-7"/>
-<connect gate="G$1" pin="PD0" pad="2-7"/>
-<connect gate="G$1" pin="PD1" pad="2-6"/>
-<connect gate="G$1" pin="PD2" pad="3-5"/>
-<connect gate="G$1" pin="PD3" pad="3-6"/>
-<connect gate="G$1" pin="PD6" pad="4-8"/>
-<connect gate="G$1" pin="PD7" pad="4-9"/>
-<connect gate="G$1" pin="PE0" pad="2-3"/>
-<connect gate="G$1" pin="PE1" pad="3-7"/>
-<connect gate="G$1" pin="PE2" pad="3-8"/>
-<connect gate="G$1" pin="PE3" pad="3-9"/>
-<connect gate="G$1" pin="PE4" pad="1-5"/>
-<connect gate="G$1" pin="PE5" pad="1-6"/>
-<connect gate="G$1" pin="PF0" pad="2-4"/>
-<connect gate="G$1" pin="PF1" pad="3-10"/>
-<connect gate="G$1" pin="PF2" pad="4-1"/>
-<connect gate="G$1" pin="PF3" pad="4-2"/>
-<connect gate="G$1" pin="PF4" pad="4-10"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ADS7828">
 <description>Texas Instruments ADS7828&lt;br&gt;
 8-channel 12-bit I2C ADC&lt;br&gt;
@@ -797,18 +623,6 @@ Adjustable shunt regulator&lt;br&gt;
 <wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
 </package>
-<package name="SUPERSABRE_2CIRCUIT">
-<wire x1="-10.541" y1="5.7658" x2="10.541" y2="5.7658" width="0.254" layer="21"/>
-<wire x1="-10.541" y1="5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
-<wire x1="10.541" y1="5.7658" x2="10.541" y2="-5.7658" width="0.254" layer="21"/>
-<wire x1="10.541" y1="-5.7658" x2="-10.541" y2="-5.7658" width="0.254" layer="21"/>
-<hole x="-8.5344" y="-1.8034" drill="2.9972"/>
-<hole x="8.5344" y="-1.8034" drill="2.9972"/>
-<pad name="P$2" x="3.7465" y="0" drill="5.25"/>
-<pad name="P$1" x="-3.7465" y="0" drill="5.25"/>
-<text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="2-PIN">
@@ -870,24 +684,6 @@ http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292021_PCB_HEA
 <connects>
 <connect gate="U1" pin="P$1" pad="P$1"/>
 <connect gate="U1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2_SUPERSABRE" prefix="JP">
-<description>Molex SuperSabre&lt;br&gt;
-2-pin vertical header</description>
-<gates>
-<gate name="G$1" symbol="2-PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SUPERSABRE_2CIRCUIT">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15808,8 +15604,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$2" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
-<part name="U$3" library="texas" deviceset="TIVA-C_EVAL" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="U1" library="NXP" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="THRUST1" library="molex" deviceset="KK254_VERT_4PIN" device="22-29-2041"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="4.7k"/>
@@ -15887,12 +15681,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$33" library="diode" deviceset="VTVS" device="SOT323"/>
 <part name="U$34" library="diode" deviceset="VTVS" device="SOT323"/>
 <part name="U$38" library="diode" deviceset="VTVS" device="SOT323"/>
-<part name="U$45" library="NXP" deviceset="74LVC1G14" device=""/>
-<part name="R18" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
-<part name="R21" library="resistor" deviceset="R-US_" device="R0805" value="6.8k"/>
-<part name="C32" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="SW_CPU" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
-<part name="U$59" library="diode" deviceset="VTVS" device="SOT323"/>
 <part name="R31" library="resistor" deviceset="R-US_" device="R0805" value="270"/>
 <part name="5V_LED" library="led" deviceset="0805_LED" device=""/>
 <part name="R32" library="resistor" deviceset="R-US_" device="R0805" value="1.5k"/>
@@ -15917,12 +15705,10 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="C84" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C85" library="resistor" deviceset="C-US" device="C0805" value="1n"/>
 <part name="C93" library="resistor" deviceset="C-US" device="C0805" value="1u"/>
-<part name="JP_5V" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -15932,8 +15718,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
@@ -16094,21 +15878,16 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="GND97" library="supply1" deviceset="GND" device=""/>
 <part name="GND98" library="supply1" deviceset="GND" device=""/>
 <part name="GND99" library="supply1" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND101" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND102" library="supply1" deviceset="GND" device=""/>
-<part name="GND100" library="supply1" deviceset="GND" device=""/>
-<part name="GND104" library="supply1" deviceset="GND" device=""/>
 <part name="GND105" library="supply1" deviceset="GND" device=""/>
-<part name="P+52" library="supply1" deviceset="+5V" device=""/>
 <part name="P+53" library="supply1" deviceset="+5V" device=""/>
 <part name="P+54" library="supply1" deviceset="+5V" device=""/>
 <part name="P+55" library="supply1" deviceset="+12V" device=""/>
 <part name="P+56" library="supply1" deviceset="+5V" device=""/>
 <part name="P+57" library="supply1" deviceset="+5V" device=""/>
-<part name="P+58" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
@@ -16216,7 +15995,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$52" library="transistors" deviceset="STD95N2LH5" device=""/>
 <part name="U$53" library="transistors" deviceset="STD95N2LH5" device=""/>
 <part name="R20" library="resistor" deviceset="R-US_" device="R0805" value="5.1k"/>
-<part name="JP6" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="U$56" library="NXP" deviceset="74LVC1G14" device=""/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0805" value="510"/>
 <part name="R29" library="resistor" deviceset="R-US_" device="R0805" value="6.8k"/>
@@ -16225,7 +16003,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$57" library="ONSemi" deviceset="NCP1117" device=""/>
 <part name="C61" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C62" library="resistor" deviceset="C-US" device="C0805" value="10u"/>
-<part name="U$54" library="diode" deviceset="VTVS" device="DO-219AB"/>
 <part name="R36" library="resistor" deviceset="R-US_" device="R0805" value="1MO"/>
 <part name="R37" library="resistor" deviceset="R-US_" device="R0805" value="430"/>
 <part name="LED1" library="led" deviceset="0805_LED" device="" value="Red"/>
@@ -16238,11 +16015,11 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="AUDIO1" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
 <part name="U$55" library="transistor-fet" deviceset="BSS138CT-ND" device="SOT23"/>
 <part name="R44" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
-<part name="R45" library="resistor" deviceset="R-US_" device="R0805" value="20k"/>
+<part name="R45" library="resistor" deviceset="R-US_" device="R0805" value="1MO"/>
 <part name="LED4" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
 <part name="U$58" library="transistor-fet" deviceset="BSS138CT-ND" device="SOT23"/>
 <part name="R46" library="resistor" deviceset="R-US_" device="R0805" value="1.2k"/>
-<part name="R47" library="resistor" deviceset="R-US_" device="R0805" value="20k"/>
+<part name="R47" library="resistor" deviceset="R-US_" device="R0805" value="1MO"/>
 <part name="LED5" library="led" deviceset="0805_LED" device="" value="Green"/>
 <part name="U$60" library="texas" deviceset="TL431" device="DBZ"/>
 <part name="LED6" library="led" deviceset="0805_LED" device="" value="Yellow"/>
@@ -16266,7 +16043,6 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$64" library="diode" deviceset="VTVS" device="DO-219AB"/>
 <part name="U$1" library="diode" deviceset="VTVS" device="DO-219AB"/>
 <part name="U$62" library="diode" deviceset="VTVS" device="SOT323"/>
-<part name="U$65" library="diode" deviceset="VTVS" device="SOT323"/>
 <part name="U$66" library="diode" deviceset="VTVS" device="DO-219AB"/>
 <part name="U$67" library="diode" deviceset="VTVS" device="SOT323"/>
 <part name="U$68" library="diode" deviceset="VTVS" device="SOT323"/>
@@ -16280,6 +16056,27 @@ N-MOSFET, Logic Level&lt;br&gt;
 <part name="U$76" library="resistor" deviceset="TEST_PT" device="534-5004"/>
 <part name="R2" library="resistor" deviceset="R-TRIMM" device="3314J"/>
 <part name="R3" library="resistor" deviceset="R-TRIMM" device="3314J"/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="U$45" library="diode" deviceset="VTVS" device="DO-219AB"/>
+<part name="P+5" library="supply1" deviceset="+12V" device=""/>
+<part name="U$54" library="resistor" deviceset="TEST_PT" device="534-5004"/>
+<part name="2PIN_2" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
+<part name="2PIN_3" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="U$3" library="resistor" deviceset="TEST_PT" device="534-5004"/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="GND100" library="supply1" deviceset="GND" device=""/>
+<part name="GND103" library="supply1" deviceset="GND" device=""/>
+<part name="GND104" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16358,15 +16155,8 @@ N-MOSFET, Logic Level&lt;br&gt;
 <wire x1="332.74" y1="-66.04" x2="332.74" y2="-330.2" width="0.1524" layer="97" style="longdash"/>
 <wire x1="332.74" y1="-330.2" x2="-213.36" y2="-330.2" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-213.36" y1="-330.2" x2="-213.36" y2="-66.04" width="0.1524" layer="97" style="longdash"/>
-<text x="137.16" y="60.96" size="6.4516" layer="97">Tiva-C</text>
-<text x="-157.48" y="144.78" size="6.4516" layer="97">Pulling Rs</text>
-<text x="-99.06" y="66.04" size="6.4516" layer="97">LEDs</text>
-<text x="27.94" y="55.88" size="2.54" layer="97">NOTE (from the datasheet):
-The TIVA-C has 5V-tolerant non-driving 
-GPIOs which allows us to have
-a 5V I2C bus and a 3.3V I2C bus.
-HOWEVER, pins PD4, PD5, PB0,
-and PB1 are 3.6V-limited.</text>
+<text x="-193.04" y="144.78" size="6.4516" layer="97">Pulling Rs</text>
+<text x="-149.86" y="53.34" size="6.4516" layer="97">LEDs</text>
 <text x="-980.44" y="68.58" size="6.4516" layer="97">Input Voltage</text>
 <wire x1="-1031.24" y1="83.82" x2="-833.12" y2="83.82" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-833.12" y1="83.82" x2="-833.12" y2="-10.16" width="0.1524" layer="97" style="longdash"/>
@@ -16399,13 +16189,24 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-533.4" y1="-269.24" x2="-533.4" y2="-619.76" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-533.4" y1="-619.76" x2="-1043.94" y2="-619.76" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-1043.94" y1="-619.76" x2="-1043.94" y2="-269.24" width="0.1524" layer="97" style="longdash"/>
+<text x="27.94" y="60.96" size="6.4516" layer="97">Embedded System Headers</text>
+<wire x1="15.24" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="97" style="longdash"/>
+<wire x1="167.64" y1="73.66" x2="167.64" y2="-40.64" width="0.1524" layer="97" style="longdash"/>
+<wire x1="167.64" y1="-40.64" x2="15.24" y2="-40.64" width="0.1524" layer="97" style="longdash"/>
+<wire x1="15.24" y1="-40.64" x2="15.24" y2="73.66" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-182.88" y1="63.5" x2="-91.44" y2="63.5" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-91.44" y1="63.5" x2="-91.44" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-91.44" y1="-17.78" x2="-182.88" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-182.88" y1="-17.78" x2="-182.88" y2="63.5" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-238.76" y1="154.94" x2="-88.9" y2="154.94" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-88.9" y1="154.94" x2="-88.9" y2="99.06" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-88.9" y1="99.06" x2="-238.76" y2="99.06" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-238.76" y1="99.06" x2="-238.76" y2="154.94" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="-520.7" y="45.72"/>
 <instance part="C2" gate="G$1" x="-454.66" y="12.7"/>
 <instance part="C3" gate="G$1" x="-490.22" y="40.64"/>
-<instance part="U$3" gate="G$1" x="180.34" y="17.78"/>
-<instance part="R1" gate="G$1" x="-162.56" y="119.38" rot="R90"/>
 <instance part="U1" gate="G$1" x="236.22" y="-246.38"/>
 <instance part="THRUST1" gate="U1" x="-121.92" y="-187.96"/>
 <instance part="R7" gate="G$1" x="-190.5" y="119.38" rot="R90"/>
@@ -16420,8 +16221,8 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="DEPTH_SENS" gate="U1" x="50.8" y="322.58"/>
 <instance part="CPU_PWR" gate="U1" x="205.74" y="297.18"/>
 <instance part="CAMERA1" gate="U1" x="281.94" y="289.56"/>
-<instance part="R10" gate="G$1" x="-88.9" y="119.38" rot="R90"/>
-<instance part="R11" gate="G$1" x="-127" y="119.38" rot="MR90"/>
+<instance part="R10" gate="G$1" x="-124.46" y="119.38" rot="R90"/>
+<instance part="R11" gate="G$1" x="-162.56" y="119.38" rot="MR90"/>
 <instance part="ETHERNET" gate="U1" x="78.74" y="294.64"/>
 <instance part="BME280" gate="U1" x="-200.66" y="226.06"/>
 <instance part="C24" gate="G$1" x="-210.82" y="193.04"/>
@@ -16483,12 +16284,6 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="U$33" gate="G$1" x="254" y="256.54"/>
 <instance part="U$34" gate="G$1" x="256.54" y="317.5" rot="MR0"/>
 <instance part="U$38" gate="G$1" x="-548.64" y="-162.56"/>
-<instance part="U$45" gate="G$1" x="-728.98" y="332.74"/>
-<instance part="R18" gate="G$1" x="-759.46" y="332.74"/>
-<instance part="R21" gate="G$1" x="-772.16" y="340.36" rot="R90"/>
-<instance part="C32" gate="G$1" x="-754.38" y="322.58"/>
-<instance part="SW_CPU" gate="U1" x="-779.78" y="322.58" rot="MR0"/>
-<instance part="U$59" gate="G$1" x="-772.16" y="322.58"/>
 <instance part="R31" gate="G$1" x="-162.56" y="22.86" rot="R90"/>
 <instance part="5V_LED" gate="G$1" x="-162.56" y="5.08"/>
 <instance part="R32" gate="G$1" x="-114.3" y="25.4" rot="R90"/>
@@ -16513,23 +16308,19 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="C84" gate="G$1" x="50.8" y="30.48"/>
 <instance part="C85" gate="G$1" x="60.96" y="30.48"/>
 <instance part="C93" gate="G$1" x="-444.5" y="12.7"/>
-<instance part="JP_5V" gate="G$1" x="-678.18" y="332.74"/>
 <instance part="GND1" gate="1" x="-551.18" y="223.52"/>
 <instance part="GND2" gate="1" x="-129.54" y="-5.08"/>
 <instance part="GND3" gate="1" x="-495.3" y="259.08"/>
 <instance part="GND4" gate="1" x="-398.78" y="254"/>
-<instance part="GND7" gate="1" x="-754.38" y="314.96"/>
 <instance part="GND8" gate="1" x="-530.86" y="259.08"/>
 <instance part="GND9" gate="1" x="-546.1" y="261.62"/>
 <instance part="GND10" gate="1" x="-497.84" y="233.68"/>
 <instance part="C59" gate="G$1" x="-487.68" y="241.3"/>
 <instance part="GND11" gate="1" x="-487.68" y="233.68"/>
 <instance part="P+1" gate="1" x="-492.76" y="251.46"/>
-<instance part="P+2" gate="1" x="-497.84" y="289.56"/>
+<instance part="P+2" gate="1" x="-497.84" y="292.1"/>
 <instance part="P+3" gate="1" x="-546.1" y="287.02"/>
 <instance part="P+4" gate="1" x="-406.4" y="264.16"/>
-<instance part="P+5" gate="1" x="-734.06" y="353.06"/>
-<instance part="P+6" gate="1" x="-772.16" y="353.06"/>
 <instance part="GND12" gate="1" x="-472.44" y="259.08"/>
 <instance part="P+7" gate="1" x="-515.62" y="254"/>
 <instance part="P+8" gate="1" x="-406.4" y="281.94"/>
@@ -16668,7 +16459,7 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="GND83" gate="1" x="27.94" y="-243.84"/>
 <instance part="P+44" gate="1" x="20.32" y="-284.48"/>
 <instance part="P+45" gate="1" x="101.6" y="-284.48"/>
-<instance part="P+46" gate="1" x="101.6" y="-116.84"/>
+<instance part="P+46" gate="1" x="101.6" y="-114.3"/>
 <instance part="P+47" gate="1" x="12.7" y="-114.3"/>
 <instance part="P+48" gate="1" x="-76.2" y="-111.76"/>
 <instance part="P+49" gate="1" x="-165.1" y="-111.76"/>
@@ -16690,23 +16481,18 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="GND97" gate="1" x="-139.7" y="-172.72"/>
 <instance part="GND98" gate="1" x="-132.08" y="-198.12"/>
 <instance part="GND99" gate="1" x="-154.94" y="-198.12"/>
-<instance part="+3V1" gate="G$1" x="101.6" y="43.18"/>
 <instance part="+3V2" gate="G$1" x="50.8" y="43.18"/>
 <instance part="GND101" gate="1" x="50.8" y="17.78"/>
 <instance part="+3V3" gate="G$1" x="-144.78" y="38.1"/>
 <instance part="GND102" gate="1" x="-144.78" y="-5.08"/>
-<instance part="GND100" gate="1" x="144.78" y="33.02"/>
-<instance part="GND104" gate="1" x="185.42" y="27.94"/>
 <instance part="GND105" gate="1" x="50.8" y="-17.78"/>
-<instance part="P+52" gate="1" x="185.42" y="43.18"/>
 <instance part="P+53" gate="1" x="50.8" y="7.62"/>
 <instance part="P+54" gate="1" x="-162.56" y="38.1"/>
 <instance part="P+55" gate="1" x="-129.54" y="38.1"/>
 <instance part="P+56" gate="1" x="-218.44" y="132.08" rot="MR0"/>
 <instance part="P+57" gate="1" x="-190.5" y="132.08"/>
-<instance part="P+58" gate="1" x="-162.56" y="132.08"/>
-<instance part="+3V4" gate="G$1" x="-127" y="132.08" rot="MR0"/>
-<instance part="+3V5" gate="G$1" x="-88.9" y="132.08"/>
+<instance part="+3V4" gate="G$1" x="-162.56" y="132.08" rot="MR0"/>
+<instance part="+3V5" gate="G$1" x="-124.46" y="132.08"/>
 <instance part="+3V6" gate="G$1" x="-200.66" y="203.2"/>
 <instance part="GND106" gate="1" x="-200.66" y="182.88"/>
 <instance part="+3V7" gate="G$1" x="-175.26" y="236.22"/>
@@ -16753,9 +16539,9 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="C30" gate="G$1" x="-899.16" y="-86.36" rot="MR0"/>
 <instance part="GND127" gate="1" x="-949.96" y="-88.9"/>
 <instance part="GND128" gate="1" x="-899.16" y="-96.52"/>
-<instance part="C33" gate="G$1" x="-904.24" y="-53.34" rot="MR0"/>
-<instance part="GND129" gate="1" x="-904.24" y="-63.5"/>
-<instance part="P+81" gate="1" x="-904.24" y="-43.18"/>
+<instance part="C33" gate="G$1" x="-876.3" y="-43.18" rot="MR0"/>
+<instance part="GND129" gate="1" x="-876.3" y="-53.34"/>
+<instance part="P+81" gate="1" x="-876.3" y="-33.02"/>
 <instance part="R4" gate="G$1" x="-962.66" y="-81.28" rot="R90"/>
 <instance part="GND130" gate="1" x="-962.66" y="-88.9"/>
 <instance part="C43" gate="G$1" x="-533.4" y="-162.56"/>
@@ -16824,7 +16610,6 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="U$52" gate="G$1" x="-772.16" y="-416.56" rot="MR270"/>
 <instance part="U$53" gate="G$1" x="-746.76" y="-416.56" rot="R270"/>
 <instance part="R20" gate="G$1" x="-721.36" y="-452.12" rot="R90"/>
-<instance part="JP6" gate="G$1" x="-713.74" y="-396.24"/>
 <instance part="U$56" gate="G$1" x="-817.88" y="-396.24"/>
 <instance part="R22" gate="G$1" x="-848.36" y="-396.24"/>
 <instance part="R29" gate="G$1" x="-861.06" y="-388.62" rot="R90"/>
@@ -16833,7 +16618,6 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="U$57" gate="G$1" x="-899.16" y="-383.54"/>
 <instance part="C61" gate="G$1" x="-927.1" y="-386.08"/>
 <instance part="C62" gate="G$1" x="-873.76" y="-386.08"/>
-<instance part="U$54" gate="G$1" x="-721.36" y="-396.24" rot="MR0"/>
 <instance part="R36" gate="G$1" x="-668.02" y="-429.26" rot="R90"/>
 <instance part="R37" gate="G$1" x="-647.7" y="-457.2" rot="R90"/>
 <instance part="LED1" gate="G$1" x="-647.7" y="-464.82"/>
@@ -16873,21 +16657,41 @@ where POT is the resistance of the potentiometer.</text>
 <instance part="U$63" gate="G$1" x="177.8" y="264.16"/>
 <instance part="U$64" gate="G$1" x="198.12" y="297.18"/>
 <instance part="U$1" gate="G$1" x="-551.18" y="241.3"/>
-<instance part="U$62" gate="G$1" x="-855.98" y="-398.78"/>
-<instance part="U$65" gate="G$1" x="-848.36" y="-386.08"/>
+<instance part="U$62" gate="G$1" x="-855.98" y="-403.86"/>
 <instance part="U$66" gate="G$1" x="-914.4" y="35.56"/>
 <instance part="U$67" gate="G$1" x="-957.58" y="35.56"/>
 <instance part="U$68" gate="G$1" x="-995.68" y="35.56"/>
 <instance part="U$69" gate="G$1" x="-416.56" y="15.24" rot="R270"/>
 <instance part="U$70" gate="G$1" x="-462.28" y="236.22" rot="R270"/>
-<instance part="U$71" gate="G$1" x="93.98" y="-5.08" rot="R90"/>
-<instance part="U$72" gate="G$1" x="93.98" y="-10.16" rot="R90"/>
+<instance part="U$71" gate="G$1" x="134.62" y="0" rot="R90"/>
+<instance part="U$72" gate="G$1" x="134.62" y="-5.08" rot="R90"/>
 <instance part="U$73" gate="G$1" x="-914.4" y="45.72"/>
 <instance part="U$74" gate="G$1" x="-957.58" y="45.72"/>
 <instance part="U$75" gate="G$1" x="-995.68" y="45.72"/>
 <instance part="U$76" gate="G$1" x="91.44" y="-96.52" rot="R270"/>
 <instance part="R2" gate="G$1" x="-863.6" y="-497.84"/>
 <instance part="R3" gate="G$1" x="-942.34" y="-495.3"/>
+<instance part="JP4" gate="G$1" x="-899.16" y="-68.58"/>
+<instance part="U$45" gate="G$1" x="-891.54" y="-86.36"/>
+<instance part="P+5" gate="1" x="-906.78" y="-55.88"/>
+<instance part="U$54" gate="G$1" x="-452.12" y="-160.02" rot="R270"/>
+<instance part="2PIN_2" gate="U1" x="96.52" y="30.48"/>
+<instance part="2PIN_3" gate="U1" x="96.52" y="-5.08"/>
+<instance part="JP5" gate="G$1" x="147.32" y="30.48"/>
+<instance part="JP6" gate="G$1" x="147.32" y="10.16"/>
+<instance part="+3V1" gate="G$1" x="83.82" y="40.64"/>
+<instance part="GND5" gate="1" x="83.82" y="22.86"/>
+<instance part="U$3" gate="G$1" x="134.62" y="-10.16" rot="R90"/>
+<instance part="P+6" gate="1" x="83.82" y="5.08"/>
+<instance part="GND6" gate="1" x="83.82" y="-12.7"/>
+<instance part="GND7" gate="1" x="-629.92" y="25.4"/>
+<instance part="GND20" gate="1" x="-650.24" y="12.7"/>
+<instance part="GND21" gate="1" x="-678.18" y="22.86"/>
+<instance part="GND22" gate="1" x="-698.5" y="33.02"/>
+<instance part="GND23" gate="1" x="-734.06" y="243.84"/>
+<instance part="GND100" gate="1" x="-754.38" y="256.54"/>
+<instance part="GND103" gate="1" x="-706.12" y="238.76"/>
+<instance part="GND104" gate="1" x="-685.8" y="251.46"/>
 </instances>
 <busses>
 </busses>
@@ -16899,16 +16703,6 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="C93" gate="G$1" pin="2"/>
 <wire x1="-444.5" y1="7.62" x2="-454.66" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-454.66" y="7.62"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="GND@2-1"/>
-<wire x1="152.4" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND100" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="GND@3-2"/>
-<wire x1="195.58" y1="30.48" x2="185.42" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="GND104" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="EXTCLK"/>
@@ -17147,19 +16941,6 @@ where POT is the resistance of the potentiometer.</text>
 <junction x="50.8" y="25.4"/>
 <pinref part="GND101" gate="1" pin="GND"/>
 <wire x1="50.8" y1="25.4" x2="50.8" y2="20.32" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="U$45" gate="G$1" pin="GND"/>
-<pinref part="C32" gate="G$1" pin="2"/>
-<wire x1="-723.9" y1="320.04" x2="-723.9" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="-723.9" y1="317.5" x2="-754.38" y2="317.5" width="0.1524" layer="91"/>
-<pinref part="SW_CPU" gate="U1" pin="P$2"/>
-<wire x1="-772.16" y1="320.04" x2="-772.16" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="-772.16" y1="317.5" x2="-754.38" y2="317.5" width="0.1524" layer="91"/>
-<junction x="-754.38" y="317.5"/>
-<pinref part="U$59" gate="G$1" pin="A"/>
-<junction x="-772.16" y="320.04"/>
-<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C59" gate="G$1" pin="2"/>
@@ -17604,11 +17385,15 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="-899.16" y1="-91.44" x2="-899.16" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="GND128" gate="1" pin="GND"/>
+<pinref part="U$45" gate="G$1" pin="A"/>
+<wire x1="-891.54" y1="-88.9" x2="-891.54" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-891.54" y1="-93.98" x2="-899.16" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-899.16" y="-93.98"/>
 </segment>
 <segment>
 <pinref part="C33" gate="G$1" pin="2"/>
 <pinref part="GND129" gate="1" pin="GND"/>
-<wire x1="-904.24" y1="-58.42" x2="-904.24" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-876.3" y1="-48.26" x2="-876.3" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -17638,6 +17423,9 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="CIN2" gate="G$1" pin="2"/>
 <pinref part="CIN1" gate="G$1" pin="2"/>
 <wire x1="-690.88" y1="39.116" x2="-698.5" y2="39.116" width="0.1524" layer="91"/>
+<wire x1="-698.5" y1="39.116" x2="-698.5" y2="35.56" width="0.1524" layer="91" style="longdash"/>
+<junction x="-698.5" y="39.116"/>
+<pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$25" gate="G$1" pin="GND1"/>
@@ -17645,25 +17433,30 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-675.386" y="51.816" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-683.26" y1="30.226" x2="-679.196" y2="30.226" width="0.1524" layer="91"/>
-<label x="-682.752" y="28.194" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="U$25" gate="G$1" pin="GND2"/>
 <wire x1="-650.24" y1="22.86" x2="-638.81" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-638.81" y1="22.86" x2="-638.81" y2="39.116" width="0.1524" layer="91"/>
+<wire x1="-650.24" y1="22.86" x2="-650.24" y2="15.24" width="0.1524" layer="91" style="longdash"/>
+<junction x="-650.24" y="22.86"/>
+<pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C51" gate="G$1" pin="2"/>
 <pinref part="C50" gate="G$1" pin="-"/>
 <wire x1="-619.76" y1="35.56" x2="-629.92" y2="35.56" width="0.1524" layer="91"/>
 <label x="-626.618" y="33.528" size="1.778" layer="95"/>
+<wire x1="-629.92" y1="35.56" x2="-629.92" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<junction x="-629.92" y="35.56"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="CIN4" gate="G$1" pin="2"/>
 <pinref part="CIN3" gate="G$1" pin="2"/>
 <wire x1="-746.76" y1="262.636" x2="-754.38" y2="262.636" width="0.1524" layer="91"/>
+<pinref part="GND100" gate="1" pin="GND"/>
+<wire x1="-754.38" y1="259.08" x2="-754.38" y2="262.636" width="0.1524" layer="91"/>
+<junction x="-754.38" y="262.636"/>
 </segment>
 <segment>
 <pinref part="U$41" gate="G$1" pin="GND1"/>
@@ -17671,20 +17464,22 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-731.266" y="275.336" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-739.14" y1="253.746" x2="-735.076" y2="253.746" width="0.1524" layer="91"/>
-<label x="-738.632" y="251.714" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="U$41" gate="G$1" pin="GND2"/>
 <wire x1="-706.12" y1="246.38" x2="-694.69" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="-694.69" y1="246.38" x2="-694.69" y2="262.636" width="0.1524" layer="91"/>
+<pinref part="GND103" gate="1" pin="GND"/>
+<wire x1="-706.12" y1="246.38" x2="-706.12" y2="241.3" width="0.1524" layer="91" style="longdash"/>
+<junction x="-706.12" y="246.38"/>
 </segment>
 <segment>
 <pinref part="C40" gate="G$1" pin="2"/>
 <pinref part="C38" gate="G$1" pin="-"/>
 <wire x1="-675.64" y1="259.08" x2="-685.8" y2="259.08" width="0.1524" layer="91"/>
 <label x="-682.498" y="257.048" size="1.778" layer="95"/>
+<pinref part="GND104" gate="1" pin="GND"/>
+<wire x1="-685.8" y1="259.08" x2="-685.8" y2="254" width="0.1524" layer="91" style="longdash"/>
+<junction x="-685.8" y="259.08"/>
 </segment>
 <segment>
 <pinref part="BATT1_IN" gate="U1" pin="P$2"/>
@@ -17766,13 +17561,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-713.74" y1="-457.2" x2="-721.36" y2="-457.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="P$2"/>
-<wire x1="-721.36" y1="-398.78" x2="-728.98" y2="-398.78" width="0.1524" layer="91"/>
-<label x="-731.52" y="-398.78" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U$54" gate="G$1" pin="A"/>
-<junction x="-721.36" y="-398.78"/>
-</segment>
-<segment>
 <pinref part="C62" gate="G$1" pin="2"/>
 <pinref part="U$57" gate="G$1" pin="GND"/>
 <wire x1="-873.76" y1="-391.16" x2="-873.76" y2="-396.24" width="0.1524" layer="91"/>
@@ -17850,11 +17638,10 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-927.1" y1="-510.54" x2="-927.1" y2="-515.62" width="0.1524" layer="91"/>
 <junction x="-927.1" y="-515.62"/>
 <pinref part="R3" gate="G$1" pin="E"/>
-</segment>
-<segment>
 <pinref part="LED9" gate="G$1" pin="C"/>
 <wire x1="-942.34" y1="-515.62" x2="-960.12" y2="-515.62" width="0.1524" layer="91"/>
 <wire x1="-960.12" y1="-515.62" x2="-960.12" y2="-510.54" width="0.1524" layer="91"/>
+<junction x="-942.34" y="-515.62"/>
 </segment>
 <segment>
 <pinref part="U$56" gate="G$1" pin="GND"/>
@@ -17864,22 +17651,41 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="2PIN_5" gate="U1" pin="P$2"/>
 <wire x1="-838.2" y1="-411.48" x2="-843.28" y2="-411.48" width="0.1524" layer="91"/>
 <wire x1="-861.06" y1="-408.94" x2="-861.06" y2="-411.48" width="0.1524" layer="91"/>
-<wire x1="-861.06" y1="-411.48" x2="-843.28" y2="-411.48" width="0.1524" layer="91"/>
+<wire x1="-861.06" y1="-411.48" x2="-855.98" y2="-411.48" width="0.1524" layer="91"/>
 <junction x="-843.28" y="-411.48"/>
 <label x="-828.04" y="-411.48" size="1.778" layer="95"/>
 <pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="-855.98" y1="-411.48" x2="-843.28" y2="-411.48" width="0.1524" layer="91"/>
 <wire x1="-838.2" y1="-393.7" x2="-838.2" y2="-411.48" width="0.1524" layer="91"/>
 <junction x="-838.2" y="-411.48"/>
-</segment>
-<segment>
 <pinref part="U$62" gate="G$1" pin="A"/>
-<wire x1="-855.98" y1="-401.32" x2="-855.98" y2="-403.86" width="0.1524" layer="91"/>
+<wire x1="-855.98" y1="-406.4" x2="-855.98" y2="-411.48" width="0.1524" layer="91"/>
 <label x="-855.98" y="-406.4" size="1.778" layer="95"/>
+<junction x="-855.98" y="-411.48"/>
 </segment>
 <segment>
-<pinref part="U$65" gate="G$1" pin="A"/>
-<wire x1="-848.36" y1="-388.62" x2="-848.36" y2="-391.16" width="0.1524" layer="91"/>
-<label x="-848.36" y="-391.16" size="1.778" layer="95"/>
+<pinref part="2PIN_2" gate="U1" pin="P$2"/>
+<wire x1="88.9" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="83.82" y1="27.94" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="2PIN_3" gate="U1" pin="P$2"/>
+<wire x1="88.9" y1="-7.62" x2="83.82" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="83.82" y1="-7.62" x2="83.82" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="-683.26" y1="30.48" x2="-678.18" y2="30.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-678.18" y1="30.48" x2="-678.18" y2="25.4" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="-739.14" y1="254" x2="-734.06" y2="254" width="0.1524" layer="91"/>
+<wire x1="-734.06" y1="254" x2="-734.06" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -17889,83 +17695,12 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="AIN11" class="0">
+<net name="SCL" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="PB5"/>
-<wire x1="109.22" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
-<label x="101.6" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN9" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE4"/>
-<wire x1="109.22" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
-<label x="101.6" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN8" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE5"/>
-<wire x1="109.22" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
-<label x="101.6" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN10" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PB4"/>
-<wire x1="109.22" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
-<label x="101.6" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE0"/>
-<wire x1="152.4" y1="25.4" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
-<label x="144.78" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN5" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PD2"/>
-<wire x1="195.58" y1="15.24" x2="185.42" y2="15.24" width="0.1524" layer="91"/>
-<label x="185.42" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN4" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PD3"/>
-<wire x1="195.58" y1="10.16" x2="185.42" y2="10.16" width="0.1524" layer="91"/>
-<label x="185.42" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN2" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE1"/>
-<wire x1="195.58" y1="5.08" x2="185.42" y2="5.08" width="0.1524" layer="91"/>
-<label x="185.42" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN1" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE2"/>
-<wire x1="195.58" y1="0" x2="185.42" y2="0" width="0.1524" layer="91"/>
-<label x="185.42" y="0" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AIN0" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PE3"/>
-<wire x1="195.58" y1="-5.08" x2="185.42" y2="-5.08" width="0.1524" layer="91"/>
-<label x="185.42" y="-5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SCL_5V" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="PA6"/>
-<wire x1="109.22" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
-<label x="101.6" y="-5.08" size="1.778" layer="95"/>
+<wire x1="149.86" y1="0" x2="142.24" y2="0" width="0.1524" layer="91"/>
+<label x="142.24" y="0" size="1.778" layer="95"/>
 <pinref part="U$71" gate="G$1" pin="1"/>
-<junction x="101.6" y="-5.08"/>
+<junction x="142.24" y="0"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -18014,14 +17749,18 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-365.76" y1="259.08" x2="-363.22" y2="259.08" width="0.1524" layer="91"/>
 <label x="-363.22" y="259.08" size="1.778" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="SDA_5V" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="PA7"/>
-<wire x1="109.22" y1="-10.16" x2="101.6" y2="-10.16" width="0.1524" layer="91"/>
-<label x="101.6" y="-10.16" size="1.778" layer="95"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+<label x="132.08" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<wire x1="149.86" y1="-5.08" x2="142.24" y2="-5.08" width="0.1524" layer="91"/>
+<label x="142.24" y="-5.08" size="1.778" layer="95"/>
 <pinref part="U$72" gate="G$1" pin="1"/>
-<junction x="101.6" y="-10.16"/>
+<junction x="142.24" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -18069,6 +17808,11 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="12V_VOLTAGE" gate="G$1" pin="SDA"/>
 <wire x1="-365.76" y1="264.16" x2="-363.22" y2="264.16" width="0.1524" layer="91"/>
 <label x="-363.22" y="264.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<label x="132.08" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="T1_PWM" class="0">
@@ -18228,12 +17972,18 @@ where POT is the resistance of the potentiometer.</text>
 <segment>
 <pinref part="P+81" gate="1" pin="+12V"/>
 <pinref part="C33" gate="G$1" pin="1"/>
-<wire x1="-904.24" y1="-45.72" x2="-904.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-876.3" y1="-35.56" x2="-876.3" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$70" gate="G$1" pin="1"/>
 <wire x1="-469.9" y1="236.22" x2="-474.98" y2="236.22" width="0.1524" layer="91"/>
 <label x="-477.52" y="236.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<wire x1="-906.78" y1="-58.42" x2="-906.78" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="-906.78" y1="-66.04" x2="-901.7" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_THRUST1" class="0">
@@ -18279,8 +18029,8 @@ where POT is the resistance of the potentiometer.</text>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-88.9" y1="114.3" x2="-78.74" y2="114.3" width="0.1524" layer="91"/>
-<label x="-78.74" y="114.3" size="1.778" layer="95" xref="yes"/>
+<wire x1="-124.46" y1="114.3" x2="-114.3" y2="114.3" width="0.1524" layer="91"/>
+<label x="-114.3" y="114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="BME280" gate="U1" pin="SDI/SDA"/>
@@ -18288,9 +18038,9 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-185.42" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="PD1"/>
-<wire x1="152.4" y1="10.16" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
-<label x="144.78" y="10.16" size="1.778" layer="95"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
+<label x="127" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL-3V3" class="0">
@@ -18301,8 +18051,8 @@ where POT is the resistance of the potentiometer.</text>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-127" y1="114.3" x2="-114.3" y2="114.3" width="0.1524" layer="91"/>
-<label x="-114.3" y="114.3" size="1.778" layer="95" xref="yes"/>
+<wire x1="-162.56" y1="114.3" x2="-149.86" y2="114.3" width="0.1524" layer="91"/>
+<label x="-149.86" y="114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="BME280" gate="U1" pin="SCK/SCL"/>
@@ -18310,9 +18060,9 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-185.42" y="218.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="PD0"/>
-<wire x1="152.4" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-<label x="144.78" y="5.08" size="1.778" layer="95"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
+<label x="127" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="T8_PWM" class="0">
@@ -18439,6 +18189,11 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="83.82" y1="-96.52" x2="78.74" y2="-96.52" width="0.1524" layer="91"/>
 <label x="68.58" y="-96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$54" gate="G$1" pin="1"/>
+<wire x1="-459.74" y1="-160.02" x2="-464.82" y2="-160.02" width="0.1524" layer="91"/>
+<label x="-464.82" y="-160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$52" class="0">
 <segment>
@@ -18463,14 +18218,6 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="U$36" gate="G$1" pin="P$1"/>
 <wire x1="-571.5" y1="248.92" x2="-576.58" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="-576.58" y1="264.16" x2="-576.58" y2="248.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CPU_ON" class="0">
-<segment>
-<pinref part="U$45" gate="G$1" pin="OUT"/>
-<pinref part="JP_5V" gate="G$1" pin="2"/>
-<wire x1="-680.72" y1="332.74" x2="-711.2" y2="332.74" width="0.1524" layer="91"/>
-<label x="-675.64" y="332.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="T1_CURR" class="0">
@@ -18719,29 +18466,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-474.98" y1="48.26" x2="-508" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$59" class="0">
-<segment>
-<pinref part="C32" gate="G$1" pin="1"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="-754.38" y1="325.12" x2="-754.38" y2="332.74" width="0.1524" layer="91"/>
-<pinref part="U$45" gate="G$1" pin="IN"/>
-<wire x1="-754.38" y1="332.74" x2="-746.76" y2="332.74" width="0.1524" layer="91"/>
-<junction x="-754.38" y="332.74"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="-764.54" y1="332.74" x2="-772.16" y2="332.74" width="0.1524" layer="91"/>
-<wire x1="-772.16" y1="332.74" x2="-772.16" y2="335.28" width="0.1524" layer="91"/>
-<pinref part="SW_CPU" gate="U1" pin="P$1"/>
-<wire x1="-772.16" y1="325.12" x2="-772.16" y2="332.74" width="0.1524" layer="91"/>
-<junction x="-772.16" y="332.74"/>
-<pinref part="U$59" gate="G$1" pin="C"/>
-<junction x="-772.16" y="325.12"/>
-</segment>
-</net>
 <net name="N$71" class="0">
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -18838,10 +18562,6 @@ where POT is the resistance of the potentiometer.</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="12V_CURR_ADC" gate="G$1" pin="VDD"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="U$57" gate="G$1" pin="VOUT"/>
 <pinref part="C62" gate="G$1" pin="1"/>
 <wire x1="-883.92" y1="-383.54" x2="-873.76" y2="-383.54" width="0.1524" layer="91"/>
@@ -18850,15 +18570,12 @@ where POT is the resistance of the potentiometer.</text>
 <junction x="-873.76" y="-383.54"/>
 <pinref part="R29" gate="G$1" pin="2"/>
 <junction x="-861.06" y="-383.54"/>
-<wire x1="-861.06" y1="-383.54" x2="-848.36" y2="-383.54" width="0.1524" layer="91"/>
+<wire x1="-861.06" y1="-383.54" x2="-838.2" y2="-383.54" width="0.1524" layer="91"/>
 <label x="-853.44" y="-383.54" size="1.778" layer="95"/>
 <pinref part="C36" gate="G$1" pin="1"/>
-<wire x1="-848.36" y1="-383.54" x2="-838.2" y2="-383.54" width="0.1524" layer="91"/>
 <wire x1="-838.2" y1="-383.54" x2="-822.96" y2="-383.54" width="0.1524" layer="91"/>
 <wire x1="-838.2" y1="-386.08" x2="-838.2" y2="-383.54" width="0.1524" layer="91"/>
 <junction x="-838.2" y="-383.54"/>
-<pinref part="U$65" gate="G$1" pin="C"/>
-<junction x="-848.36" y="-383.54"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -18897,11 +18614,6 @@ where POT is the resistance of the potentiometer.</text>
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="JP_5V" gate="G$1" pin="1"/>
-<wire x1="-680.72" y1="335.28" x2="-688.34" y2="335.28" width="0.1524" layer="91"/>
-<label x="-688.34" y="335.28" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$7" gate="G$1" pin="2"/>
 <wire x1="-939.8" y1="-106.68" x2="-947.42" y2="-106.68" width="0.1524" layer="91"/>
 <label x="-947.42" y="-106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -18924,18 +18636,45 @@ where POT is the resistance of the potentiometer.</text>
 <junction x="-746.76" y="270.256"/>
 <label x="-754.38" y="270.256" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$48" gate="G$1" pin="OUT"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="-731.52" y1="-337.82" x2="-731.52" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="-731.52" y1="-320.04" x2="-723.9" y2="-320.04" width="0.1524" layer="91"/>
+<junction x="-731.52" y="-320.04"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="-723.9" y1="-330.2" x2="-723.9" y2="-320.04" width="0.1524" layer="91"/>
+<label x="-721.36" y="-320.04" size="1.778" layer="95"/>
+<pinref part="C65" gate="G$1" pin="1"/>
+<wire x1="-723.9" y1="-320.04" x2="-713.74" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="-713.74" y1="-320.04" x2="-713.74" y2="-322.58" width="0.1524" layer="91"/>
+<junction x="-723.9" y="-320.04"/>
+</segment>
+<segment>
+<pinref part="U$51" gate="G$1" pin="OUT"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="-728.98" y1="-434.34" x2="-728.98" y2="-416.56" width="0.1524" layer="91"/>
+<wire x1="-728.98" y1="-416.56" x2="-721.36" y2="-416.56" width="0.1524" layer="91"/>
+<junction x="-728.98" y="-416.56"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="-721.36" y1="-426.72" x2="-721.36" y2="-416.56" width="0.1524" layer="91"/>
+<label x="-718.82" y="-416.56" size="1.778" layer="95"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="-721.36" y1="-416.56" x2="-711.2" y2="-416.56" width="0.1524" layer="91"/>
+<wire x1="-711.2" y1="-416.56" x2="-711.2" y2="-419.1" width="0.1524" layer="91"/>
+<junction x="-721.36" y="-416.56"/>
+</segment>
+<segment>
+<pinref part="SHORE_IN" gate="U1" pin="P$1"/>
+<wire x1="-911.86" y1="38.1" x2="-914.4" y2="38.1" width="0.1524" layer="91"/>
+<label x="-922.02" y="38.1" size="1.778" layer="95"/>
+<pinref part="U$66" gate="G$1" pin="C"/>
+<wire x1="-914.4" y1="38.1" x2="-916.94" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-914.4" y="38.1"/>
+<pinref part="U$73" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="-772.16" y1="345.44" x2="-772.16" y2="350.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$45" gate="G$1" pin="VDD"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="-734.06" y1="345.44" x2="-734.06" y2="350.52" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="C59" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -19157,12 +18896,6 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="P+45" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="C112" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="-121.92" x2="101.6" y2="-119.38" width="0.1524" layer="91"/>
-<pinref part="P+46" gate="1" pin="+5V"/>
-<wire x1="101.6" y1="-119.38" x2="101.6" y2="-116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C109" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="-119.38" x2="12.7" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="P+47" gate="1" pin="+5V"/>
@@ -19208,12 +18941,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-165.1" y1="-119.38" x2="-165.1" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="5V"/>
-<wire x1="195.58" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="35.56" x2="185.42" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="P+52" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="C53" gate="G$1" pin="1"/>
 <pinref part="C82" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="0" x2="40.64" y2="-2.54" width="0.1524" layer="91"/>
@@ -19242,11 +18969,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-218.44" y1="124.46" x2="-218.44" y2="129.54" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="P+58" gate="1" pin="+5V"/>
-<wire x1="-162.56" y1="124.46" x2="-162.56" y2="129.54" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="238.76" x2="38.1" y2="238.76" width="0.1524" layer="91"/>
@@ -19263,12 +18985,12 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="DEPTH_SENS" gate="U1" pin="P$4"/>
-<wire x1="43.18" y1="327.66" x2="38.1" y2="327.66" width="0.1524" layer="91"/>
 <pinref part="P+73" gate="1" pin="+5V"/>
-<wire x1="38.1" y1="327.66" x2="38.1" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="U$47" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="330.2" x2="38.1" y2="332.74" width="0.1524" layer="91"/>
+<pinref part="DEPTH_SENS" gate="U1" pin="P$4"/>
+<wire x1="43.18" y1="327.66" x2="43.18" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="330.2" x2="38.1" y2="330.2" width="0.1524" layer="91"/>
 <junction x="38.1" y="330.2"/>
 </segment>
 <segment>
@@ -19319,6 +19041,22 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="U$69" gate="G$1" pin="1"/>
 <wire x1="-424.18" y1="15.24" x2="-429.26" y2="15.24" width="0.1524" layer="91"/>
 <label x="-429.26" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="2PIN_3" gate="U1" pin="P$1"/>
+<wire x1="88.9" y1="-2.54" x2="83.82" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="83.82" y1="-2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<pinref part="12V_CURR_ADC" gate="G$1" pin="VDD"/>
+<wire x1="-497.84" y1="289.56" x2="-497.84" y2="287.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C112" gate="G$1" pin="1"/>
+<pinref part="P+46" gate="1" pin="+5V"/>
+<wire x1="101.6" y1="-121.92" x2="101.6" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_THRUST2" class="0">
@@ -19425,25 +19163,7 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-66.04" y="-256.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TIVA_!RST!" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="!RESET!"/>
-<wire x1="152.4" y1="15.24" x2="144.78" y2="15.24" width="0.1524" layer="91" style="longdash"/>
-<label x="144.78" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-162.56" y1="114.3" x2="-152.4" y2="114.3" width="0.1524" layer="91" style="longdash"/>
-<label x="-152.4" y="114.3" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="3V3"/>
-<wire x1="109.22" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="40.64" width="0.1524" layer="91" style="longdash"/>
-</segment>
 <segment>
 <pinref part="C83" gate="G$1" pin="1"/>
 <pinref part="C84" gate="G$1" pin="1"/>
@@ -19465,12 +19185,12 @@ where POT is the resistance of the potentiometer.</text>
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-127" y1="124.46" x2="-127" y2="129.54" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-162.56" y1="124.46" x2="-162.56" y2="129.54" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="-88.9" y1="124.46" x2="-88.9" y2="129.54" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-124.46" y1="124.46" x2="-124.46" y2="129.54" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <pinref part="C26" gate="G$1" pin="1"/>
@@ -19505,29 +19225,17 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-220.98" y1="233.68" x2="-220.98" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<wire x1="20.32" y1="81.28" x2="284.48" y2="81.28" width="0.1524" layer="91" style="longdash"/>
-<wire x1="284.48" y1="81.28" x2="284.48" y2="-43.18" width="0.1524" layer="91" style="longdash"/>
-<wire x1="284.48" y1="-43.18" x2="20.32" y2="-43.18" width="0.1524" layer="91" style="longdash"/>
-<wire x1="20.32" y1="-43.18" x2="20.32" y2="81.28" width="0.1524" layer="91" style="longdash"/>
+<pinref part="2PIN_2" gate="U1" pin="P$1"/>
+<wire x1="88.9" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="83.82" y1="33.02" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<wire x1="-175.26" y1="81.28" x2="0" y2="81.28" width="0.1524" layer="91" style="longdash"/>
-<wire x1="0" y1="81.28" x2="0" y2="-40.64" width="0.1524" layer="91" style="longdash"/>
-<wire x1="0" y1="-40.64" x2="-175.26" y2="-40.64" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-175.26" y1="-40.64" x2="-175.26" y2="81.28" width="0.1524" layer="91" style="longdash"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="-243.84" y1="157.48" x2="0" y2="157.48" width="0.1524" layer="91" style="longdash"/>
-<wire x1="0" y1="157.48" x2="0" y2="88.9" width="0.1524" layer="91" style="longdash"/>
-<wire x1="0" y1="88.9" x2="-243.84" y2="88.9" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-243.84" y1="88.9" x2="-243.84" y2="157.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="149.86" y1="-10.16" x2="142.24" y2="-10.16" width="0.1524" layer="91"/>
+<label x="142.24" y="-10.16" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<junction x="142.24" y="-10.16"/>
 </segment>
 </net>
 <net name="V_RELAY" class="0">
@@ -19540,20 +19248,6 @@ where POT is the resistance of the potentiometer.</text>
 <pinref part="U$7" gate="G$1" pin="7"/>
 <wire x1="-922.02" y1="-109.22" x2="-911.86" y2="-109.22" width="0.1524" layer="91"/>
 <label x="-911.86" y="-109.22" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="A"/>
-<wire x1="-922.02" y1="-101.6" x2="-914.4" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="OUT"/>
-<wire x1="-916.94" y1="-73.66" x2="-914.4" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-914.4" y1="-73.66" x2="-914.4" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="-914.4" y1="-78.74" x2="-914.4" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-914.4" y1="-78.74" x2="-899.16" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-899.16" y1="-78.74" x2="-899.16" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="-914.4" y="-78.74"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -19606,17 +19300,6 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-725.17" y1="246.38" x2="-716.28" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="V_SHORE" class="0">
-<segment>
-<pinref part="SHORE_IN" gate="U1" pin="P$1"/>
-<wire x1="-911.86" y1="38.1" x2="-914.4" y2="38.1" width="0.1524" layer="91"/>
-<label x="-922.02" y="38.1" size="1.778" layer="95"/>
-<pinref part="U$66" gate="G$1" pin="C"/>
-<wire x1="-914.4" y1="38.1" x2="-916.94" y2="38.1" width="0.1524" layer="91"/>
-<junction x="-914.4" y="38.1"/>
-<pinref part="U$73" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="V_BATT1" class="0">
 <segment>
 <pinref part="U$48" gate="G$1" pin="VCC"/>
@@ -19658,6 +19341,10 @@ where POT is the resistance of the potentiometer.</text>
 <wire x1="-942.34" y1="-482.6" x2="-927.1" y2="-482.6" width="0.1524" layer="91"/>
 <label x="-939.8" y="-482.6" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="A"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<wire x1="-960.12" y1="-487.68" x2="-960.12" y2="-482.6" width="0.1524" layer="91"/>
+<wire x1="-960.12" y1="-482.6" x2="-942.34" y2="-482.6" width="0.1524" layer="91"/>
+<junction x="-942.34" y="-482.6"/>
 </segment>
 <segment>
 <wire x1="-624.84" y1="-396.24" x2="-617.22" y2="-396.24" width="0.1524" layer="91"/>
@@ -19666,54 +19353,12 @@ where POT is the resistance of the potentiometer.</text>
 <label x="-624.84" y="-396.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R51" gate="G$1" pin="2"/>
-<wire x1="-960.12" y1="-487.68" x2="-960.12" y2="-482.6" width="0.1524" layer="91"/>
-<wire x1="-960.12" y1="-482.6" x2="-942.34" y2="-482.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="BATT1_IN" gate="U1" pin="P$1"/>
 <wire x1="-995.68" y1="38.1" x2="-1000.76" y2="38.1" width="0.1524" layer="91"/>
 <label x="-1005.84" y="38.1" size="1.778" layer="95"/>
 <pinref part="U$68" gate="G$1" pin="C"/>
 <junction x="-995.68" y="38.1"/>
 <pinref part="U$75" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="V_BATT" class="0">
-<segment>
-<pinref part="U$48" gate="G$1" pin="OUT"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="-731.52" y1="-337.82" x2="-731.52" y2="-320.04" width="0.1524" layer="91"/>
-<wire x1="-731.52" y1="-320.04" x2="-723.9" y2="-320.04" width="0.1524" layer="91"/>
-<junction x="-731.52" y="-320.04"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="-723.9" y1="-330.2" x2="-723.9" y2="-320.04" width="0.1524" layer="91"/>
-<label x="-721.36" y="-320.04" size="1.778" layer="95"/>
-<pinref part="C65" gate="G$1" pin="1"/>
-<wire x1="-723.9" y1="-320.04" x2="-713.74" y2="-320.04" width="0.1524" layer="91"/>
-<wire x1="-713.74" y1="-320.04" x2="-713.74" y2="-322.58" width="0.1524" layer="91"/>
-<junction x="-723.9" y="-320.04"/>
-</segment>
-<segment>
-<pinref part="U$51" gate="G$1" pin="OUT"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="-728.98" y1="-434.34" x2="-728.98" y2="-416.56" width="0.1524" layer="91"/>
-<wire x1="-728.98" y1="-416.56" x2="-721.36" y2="-416.56" width="0.1524" layer="91"/>
-<junction x="-728.98" y="-416.56"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="-721.36" y1="-426.72" x2="-721.36" y2="-416.56" width="0.1524" layer="91"/>
-<label x="-718.82" y="-416.56" size="1.778" layer="95"/>
-<pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="-721.36" y1="-416.56" x2="-711.2" y2="-416.56" width="0.1524" layer="91"/>
-<wire x1="-711.2" y1="-416.56" x2="-711.2" y2="-419.1" width="0.1524" layer="91"/>
-<junction x="-721.36" y="-416.56"/>
-</segment>
-<segment>
-<pinref part="JP6" gate="G$1" pin="P$1"/>
-<wire x1="-721.36" y1="-393.7" x2="-728.98" y2="-393.7" width="0.1524" layer="91"/>
-<label x="-731.52" y="-393.7" size="1.778" layer="95" rot="MR0"/>
-<pinref part="U$54" gate="G$1" pin="C"/>
-<junction x="-721.36" y="-393.7"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -20117,40 +19762,43 @@ where POT is the resistance of the potentiometer.</text>
 </net>
 <net name="SHDN_SW" class="0">
 <segment>
-<pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="-853.44" y1="-396.24" x2="-855.98" y2="-396.24" width="0.1524" layer="91"/>
-<wire x1="-855.98" y1="-396.24" x2="-861.06" y2="-396.24" width="0.1524" layer="91"/>
-<wire x1="-861.06" y1="-396.24" x2="-861.06" y2="-393.7" width="0.1524" layer="91"/>
 <pinref part="2PIN_5" gate="U1" pin="P$1"/>
 <wire x1="-861.06" y1="-403.86" x2="-861.06" y2="-396.24" width="0.1524" layer="91"/>
-<junction x="-861.06" y="-396.24"/>
 <label x="-866.14" y="-396.24" size="1.778" layer="95"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="-861.06" y1="-396.24" x2="-861.06" y2="-393.7" width="0.1524" layer="91"/>
+<wire x1="-853.44" y1="-396.24" x2="-855.98" y2="-396.24" width="0.1524" layer="91"/>
+<junction x="-861.06" y="-396.24"/>
 <pinref part="U$62" gate="G$1" pin="C"/>
+<wire x1="-855.98" y1="-396.24" x2="-861.06" y2="-396.24" width="0.1524" layer="91"/>
+<wire x1="-855.98" y1="-401.32" x2="-855.98" y2="-396.24" width="0.1524" layer="91"/>
 <junction x="-855.98" y="-396.24"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$45" gate="G$1" pin="C"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="-891.54" y1="-83.82" x2="-899.16" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="A"/>
+<wire x1="-922.02" y1="-101.6" x2="-914.4" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="OUT"/>
+<wire x1="-916.94" y1="-73.66" x2="-914.4" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-914.4" y1="-73.66" x2="-914.4" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-914.4" y1="-83.82" x2="-914.4" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-899.16" y1="-83.82" x2="-914.4" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-899.16" y="-83.82"/>
+<junction x="-914.4" y="-83.82"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="-901.7" y1="-68.58" x2="-914.4" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-914.4" y1="-68.58" x2="-914.4" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="-914.4" y="-73.66"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="106,1,358.14,45.72,AIN0,,,,,"/>
-<approved hash="106,1,358.14,50.8,AIN1,,,,,"/>
-<approved hash="106,1,358.14,55.88,AIN2,,,,,"/>
-<approved hash="106,1,314.96,76.2,AIN3,,,,,"/>
-<approved hash="106,1,358.14,60.96,AIN4,,,,,"/>
-<approved hash="106,1,358.14,66.04,AIN5,,,,,"/>
-<approved hash="106,1,271.78,60.96,AIN8,,,,,"/>
-<approved hash="106,1,271.78,66.04,AIN9,,,,,"/>
-<approved hash="106,1,271.78,55.88,AIN10,,,,,"/>
-<approved hash="106,1,271.78,81.28,AIN11,,,,,"/>
-<approved hash="106,1,271.78,76.2,RX,,,,,"/>
-<approved hash="106,1,314.96,55.88,SCL3,,,,,"/>
-<approved hash="106,1,314.96,60.96,SDA3,,,,,"/>
-<approved hash="106,1,271.78,71.12,TX,,,,,"/>
-<approved hash="113,1,349.907,214.63,C46,,,,,"/>
-<approved hash="113,1,349.907,186.69,C47,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
