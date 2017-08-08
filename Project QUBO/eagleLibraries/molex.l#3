@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1104,7 +1104,7 @@ NOTE: 3A per contact maximum!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK254_VERT_4PIN" prefix="4PIN_" uservalue="yes">
+<deviceset name="KK254_VERT_4PIN" prefix="4PIN_">
 <description>KK® 254 Wire-to-Board Header, Vertical, with Friction Lock, 4 Circuits, Gold (Au) Plating&lt;br&gt;
 Part Number: 22-29-2041&lt;br&gt;
 http://www.molex.com/molex/products/datasheet.jsp?part=active/0022292041_PCB_HEADERS.xml</description>

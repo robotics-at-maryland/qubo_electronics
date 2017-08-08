@@ -14888,6 +14888,15 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="RC55/H8" package="RC55">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="C-US" prefix="C" uservalue="yes">
