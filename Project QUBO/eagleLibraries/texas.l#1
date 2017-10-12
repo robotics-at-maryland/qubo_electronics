@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22931,17 +22932,17 @@ changed 2011-11-09</description>
 <package name="TPS54560-Q1">
 </package>
 <package name="PTN">
-<wire x1="-13.208" y1="8.382" x2="13.208" y2="8.382" width="0.127" layer="21"/>
-<wire x1="13.208" y1="8.382" x2="13.208" y2="-8.382" width="0.127" layer="21"/>
-<wire x1="13.208" y1="-8.382" x2="-13.208" y2="-8.382" width="0.127" layer="21"/>
-<wire x1="-13.208" y1="-8.382" x2="-13.208" y2="8.382" width="0.127" layer="21"/>
-<pad name="P$1" x="-11.1125" y="6.35" drill="1.397" shape="octagon"/>
-<pad name="P$2" x="-11.1125" y="-6.35" drill="1.397" shape="octagon"/>
-<pad name="P$3" x="-1.5875" y="-6.35" drill="1.397" shape="octagon" rot="R180"/>
-<pad name="P$4" x="1.5875" y="-6.35" drill="1.397" shape="octagon"/>
-<pad name="P$5" x="4.7625" y="-6.35" drill="1.397" shape="octagon"/>
-<pad name="P$6" x="11.1125" y="-6.35" drill="1.397" shape="octagon"/>
-<pad name="P$7" x="11.1125" y="6.35" drill="1.397" shape="octagon"/>
+<wire x1="-18.9865" y1="11.049" x2="18.9865" y2="11.049" width="0.127" layer="21"/>
+<wire x1="18.9865" y1="11.049" x2="18.9865" y2="-11.049" width="0.127" layer="21"/>
+<wire x1="18.9865" y1="-11.049" x2="-18.9865" y2="-11.049" width="0.127" layer="21"/>
+<wire x1="-18.9865" y1="-11.049" x2="-18.9865" y2="11.049" width="0.127" layer="21"/>
+<pad name="GND1" x="-17.4625" y="9.525" drill="1.397" shape="octagon"/>
+<pad name="VIN" x="-17.4625" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="INHIBIT" x="-4.7625" y="-9.525" drill="1.397" shape="octagon" rot="R180"/>
+<pad name="ADJUST" x="-1.5875" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="SENSE" x="1.5875" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="VOUT" x="17.4625" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="GND2" x="17.4625" y="9.525" drill="1.397" shape="octagon"/>
 </package>
 <package name="48-LQFP_0.5MM_PITCH">
 <wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
@@ -45069,20 +45070,34 @@ NOTE: These replace the older TPS2044/54 switches.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PTN78060W">
+<deviceset name="PTN">
 <gates>
 <gate name="G$1" symbol="PTN78060W" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PTN">
+<device name="78060" package="PTN">
 <connects>
-<connect gate="G$1" pin="!INHIBIT!" pad="P$3"/>
-<connect gate="G$1" pin="GND1" pad="P$1"/>
-<connect gate="G$1" pin="GND2" pad="P$2"/>
-<connect gate="G$1" pin="VI" pad="P$4"/>
-<connect gate="G$1" pin="VO" pad="P$5"/>
-<connect gate="G$1" pin="VOADJUST" pad="P$6"/>
-<connect gate="G$1" pin="VOSENSE" pad="P$7"/>
+<connect gate="G$1" pin="!INHIBIT!" pad="INHIBIT"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="VIN"/>
+<connect gate="G$1" pin="VI" pad="ADJUST"/>
+<connect gate="G$1" pin="VO" pad="SENSE"/>
+<connect gate="G$1" pin="VOADJUST" pad="VOUT"/>
+<connect gate="G$1" pin="VOSENSE" pad="GND2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="78020" package="PTN">
+<connects>
+<connect gate="G$1" pin="!INHIBIT!" pad="INHIBIT"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VI" pad="VIN"/>
+<connect gate="G$1" pin="VO" pad="VOUT"/>
+<connect gate="G$1" pin="VOADJUST" pad="ADJUST"/>
+<connect gate="G$1" pin="VOSENSE" pad="SENSE"/>
 </connects>
 <technologies>
 <technology name=""/>
