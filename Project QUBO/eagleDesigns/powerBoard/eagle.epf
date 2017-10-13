@@ -25,7 +25,7 @@ UsedLibrary="C:/EAGLE 8.3.2/lbr/ltspice/sym.lbr"
 
 [Win_1]
 Type="Board Editor"
-Loc="-9 -38 1190 601"
+Loc="0 0 1199 639"
 State=0
 Number=2
 File="powerSupplyBoard_new.brd"
@@ -71,7 +71,7 @@ Layer=1
 
 [Win_2]
 Type="Library Editor"
-Loc="-9 -38 1190 561"
+Loc="0 0 1199 599"
 State=2
 Number=3
 File="C:/EAGLE 8.3.2/cache/lbr/allegro.lbr"
