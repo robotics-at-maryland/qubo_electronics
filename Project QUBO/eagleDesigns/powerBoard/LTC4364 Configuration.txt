@@ -4,4 +4,6 @@ LTC4364 2017 CONFIGURATION:
 		OV/UV FILTERING CAPS tUV/tOV > 50
 			OV CAP: ((1/51) + (1/931))^-1 * 0.1uF = 4.835 x 10 ^ -3 s 
 			UV CAP: 4.835 / (50((1/51) + (1/523))^-1) = 2 nF
-			
+	FAULT TIMER
+
+	
