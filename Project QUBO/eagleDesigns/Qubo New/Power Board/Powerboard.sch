@@ -5743,6 +5743,9 @@ type 0309, grid 2.5 mm</description>
 <part name="C4" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="UWE_CURRENT_TO_I2C1" library="texas" deviceset="ADC121C021" device=""/>
 <part name="DVL_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
+<part name="VDIV1" library="resistor" deviceset="R-US_" device="R0805" value="90kO"/>
+<part name="VDIV2" library="resistor" deviceset="R-US_" device="R0805" value="10kO"/>
+<part name="INPUT_VOLTAGE_TO_I2C" library="texas" deviceset="ADC121C021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5762,6 +5765,9 @@ type 0309, grid 2.5 mm</description>
 <instance part="C4" gate="G$1" x="220.98" y="15.24" rot="R270"/>
 <instance part="UWE_CURRENT_TO_I2C1" gate="G$1" x="279.4" y="20.32"/>
 <instance part="DVL_OUT" gate="U1" x="426.72" y="71.12"/>
+<instance part="VDIV1" gate="G$1" x="81.28" y="119.38"/>
+<instance part="VDIV2" gate="G$1" x="99.06" y="119.38"/>
+<instance part="INPUT_VOLTAGE_TO_I2C" gate="G$1" x="180.34" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -5825,6 +5831,16 @@ type 0309, grid 2.5 mm</description>
 <wire x1="281.94" y1="7.62" x2="281.94" y2="2.54" width="0.1524" layer="91"/>
 <label x="281.94" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VDIV2" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<label x="104.14" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="GND"/>
+<wire x1="182.88" y1="127" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<label x="182.88" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -5876,6 +5892,21 @@ type 0309, grid 2.5 mm</description>
 <wire x1="299.72" y1="15.24" x2="312.42" y2="15.24" width="0.1524" layer="91"/>
 <label x="309.88" y="15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="VDD"/>
+<wire x1="180.34" y1="152.4" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
+<label x="180.34" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="ADR0"/>
+<wire x1="200.66" y1="137.16" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
+<label x="208.28" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="ADR1"/>
+<wire x1="200.66" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
+<label x="210.82" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -5901,6 +5932,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="299.72" y1="22.86" x2="304.8" y2="22.86" width="0.1524" layer="91"/>
 <label x="302.26" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="SDA"/>
+<wire x1="200.66" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<label x="203.2" y="142.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -5915,6 +5951,12 @@ type 0309, grid 2.5 mm</description>
 <label x="304.8" y="20.32" size="1.778" layer="95"/>
 <label x="304.8" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="SCL"/>
+<wire x1="200.66" y1="139.7" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
+<label x="205.74" y="139.7" size="1.778" layer="95"/>
+<label x="205.74" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PROCESSED_INPUT" class="0">
 <segment>
@@ -5927,6 +5969,11 @@ type 0309, grid 2.5 mm</description>
 <wire x1="101.6" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="VDIV1" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<label x="66.04" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UWE_EN" class="0">
@@ -6004,6 +6051,17 @@ type 0309, grid 2.5 mm</description>
 <pinref part="DVL_OUT" gate="U1" pin="P$2"/>
 <wire x1="419.1" y1="68.58" x2="408.94" y2="68.58" width="0.1524" layer="91"/>
 <label x="408.94" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="88.9" y1="139.7" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="VDIV1" gate="G$1" pin="2"/>
+<pinref part="VDIV2" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="119.38" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="139.7" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<junction x="88.9" y="119.38"/>
 </segment>
 </net>
 </nets>
