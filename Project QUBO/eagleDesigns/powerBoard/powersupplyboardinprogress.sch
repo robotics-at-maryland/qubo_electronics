@@ -5539,8 +5539,8 @@ chip</description>
 <part name="R2" library="resistor" deviceset="R-US_" device="M0805" value="51K"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="M0805" value="51K"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="M0805" value="523K"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="1uF"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.022uF"/>
+<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="2nF"/>
+<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
