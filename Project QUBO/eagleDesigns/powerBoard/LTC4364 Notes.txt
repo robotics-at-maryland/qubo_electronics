@@ -1,0 +1,21 @@
+LTC4364 Notes
+	-M1 is normally fully on
+	-When there is an overvoltage, the voltage amplifier controls the M1 gate and regulates
+	 the voltage at the OUT pin set by the external resistive divider to ground and the internal 1.25 V reference
+	-Overcurrent can be detected by the current sensing resistor between the SENSE and OUT pins
+	-An IA (active current limit circuit) controls the gate of M1 to limit the sense voltage to 50mV if OUT is above 2.5V
+	-During OV or OI event, a current source starts charging the TMR cap.  The pull-up current source in an OI event is 5 
+	 times that of one in an OC event.  When TMR reaches 1.25V, FLT pulls low to warn impending turn off.  M1 stays on until
+	 TMR reaches 1.35V, at which point HGATE pulls low and turns off M1. 
+	-Fault timer period decreases with voltage across the MOSFET
+	-If HGATE is latched low, briefly pulling SHDN below 0.5V resets the fault and lets HGATE pull high
+	-The source and drain of MOSFET M2 act as the anode and cathode of the ideal diode
+	-DGATE maintains a 30mV voltage across source and drain of M2.
+	-If a reverse voltage exceeding -30mV flows across M2, DGATE pulls low and turns off M2
+	-If VCC falls below GND voltage, DGATE is pulled to SOURCE pin voltage, keeping M2 off.  
+	-If HGATE pulls low, DGATE also pulls low
+	-If the output drops below GND, HGATE is pulled to SOURCE pin voltage, turning M1 off and shutting down the forward current
+	 path
+	-If UV detects an undervoltage, HGATE and DGATE remain low if UV is below its 1.25V threshold.  SHDN turns off both the
+	 pass devices and internal circuitry, reducing supply current to 10uA.
+	 
