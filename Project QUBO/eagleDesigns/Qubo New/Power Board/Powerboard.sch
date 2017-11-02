@@ -5612,6 +5612,19 @@ type 0309, grid 2.5 mm</description>
 <text x="-1.3" y="-0.325" size="0.6096" layer="27">&gt;VALUE</text>
 <circle x="-0.975" y="-0.975" radius="0.1625" width="0.127" layer="21"/>
 </package>
+<package name="PTN">
+<wire x1="-18.9865" y1="11.049" x2="18.9865" y2="11.049" width="0.127" layer="21"/>
+<wire x1="18.9865" y1="11.049" x2="18.9865" y2="-11.049" width="0.127" layer="21"/>
+<wire x1="18.9865" y1="-11.049" x2="-18.9865" y2="-11.049" width="0.127" layer="21"/>
+<wire x1="-18.9865" y1="-11.049" x2="-18.9865" y2="11.049" width="0.127" layer="21"/>
+<pad name="GND1" x="-17.4625" y="9.525" drill="1.397" shape="octagon"/>
+<pad name="VIN" x="-17.4625" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="INHIBIT" x="-4.7625" y="-9.525" drill="1.397" shape="octagon" rot="R180"/>
+<pad name="ADJUST" x="-1.5875" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="SENSE" x="1.5875" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="VOUT" x="17.4625" y="-9.525" drill="1.397" shape="octagon"/>
+<pad name="GND2" x="17.4625" y="9.525" drill="1.397" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADC121C021">
@@ -5630,6 +5643,21 @@ type 0309, grid 2.5 mm</description>
 <text x="-20.32" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="ADR0" x="20.32" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="ADR1" x="20.32" y="-5.08" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="PTN78060W">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="VI" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="!INHIBIT!" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="VOADJUST" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="VOSENSE" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VO" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5651,6 +5679,41 @@ type 0309, grid 2.5 mm</description>
 <connect gate="G$1" pin="SDA" pad="P$8"/>
 <connect gate="G$1" pin="VDD" pad="P$5"/>
 <connect gate="G$1" pin="VIN" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTN">
+<gates>
+<gate name="G$1" symbol="PTN78060W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="78060" package="PTN">
+<connects>
+<connect gate="G$1" pin="!INHIBIT!" pad="INHIBIT"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="VIN"/>
+<connect gate="G$1" pin="VI" pad="ADJUST"/>
+<connect gate="G$1" pin="VO" pad="SENSE"/>
+<connect gate="G$1" pin="VOADJUST" pad="VOUT"/>
+<connect gate="G$1" pin="VOSENSE" pad="GND2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="78020" package="PTN">
+<connects>
+<connect gate="G$1" pin="!INHIBIT!" pad="INHIBIT"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VI" pad="VIN"/>
+<connect gate="G$1" pin="VO" pad="VOUT"/>
+<connect gate="G$1" pin="VOADJUST" pad="ADJUST"/>
+<connect gate="G$1" pin="VOSENSE" pad="SENSE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5736,16 +5799,25 @@ type 0309, grid 2.5 mm</description>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="INPUT_CURRENT_TO_I2C" library="texas" deviceset="ADC121C021" device=""/>
-<part name="U$1" library="murata" deviceset="UWE" device="UWE"/>
+<part name="UWE" library="murata" deviceset="UWE" device="UWE"/>
 <part name="TRIM" library="resistor" deviceset="R-US_" device="R0805" value="570kO"/>
-<part name="UWE_CURRENT_SENSOR1" library="allegro" deviceset="ACS713" device="SOIC"/>
+<part name="UWE_CURRENT_SENSOR" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C4" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
-<part name="UWE_CURRENT_TO_I2C1" library="texas" deviceset="ADC121C021" device=""/>
+<part name="UWE_CURRENT_TO_I2C" library="texas" deviceset="ADC121C021" device=""/>
 <part name="DVL_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
 <part name="VDIV1" library="resistor" deviceset="R-US_" device="R0805" value="90kO"/>
 <part name="VDIV2" library="resistor" deviceset="R-US_" device="R0805" value="10kO"/>
 <part name="INPUT_VOLTAGE_TO_I2C" library="texas" deviceset="ADC121C021" device=""/>
+<part name="10V_REGULATOR" library="texas" deviceset="PTN" device="78020"/>
+<part name="ADJUST" library="resistor" deviceset="R-US_" device="R0805" value="2.66k"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C0805" value="330u"/>
+<part name="C5" library="resistor" deviceset="C-US" device="C0805" value="XXX"/>
+<part name="10V_CURRENT_SENSOR" library="allegro" deviceset="ACS713" device="SOIC"/>
+<part name="C7" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
+<part name="10V_CURRENT_TO_I2C" library="texas" deviceset="ADC121C021" device=""/>
+<part name="10V_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
 </parts>
 <sheets>
 <sheet>
@@ -5758,16 +5830,25 @@ type 0309, grid 2.5 mm</description>
 <instance part="C1" gate="G$1" x="142.24" y="76.2" rot="R270"/>
 <instance part="C2" gate="G$1" x="142.24" y="66.04" rot="R270"/>
 <instance part="INPUT_CURRENT_TO_I2C" gate="G$1" x="200.66" y="71.12"/>
-<instance part="U$1" gate="G$1" x="116.84" y="33.02"/>
+<instance part="UWE" gate="G$1" x="116.84" y="33.02"/>
 <instance part="TRIM" gate="G$1" x="139.7" y="35.56"/>
-<instance part="UWE_CURRENT_SENSOR1" gate="G$1" x="193.04" y="17.78"/>
+<instance part="UWE_CURRENT_SENSOR" gate="G$1" x="193.04" y="17.78"/>
 <instance part="C3" gate="G$1" x="220.98" y="25.4" rot="R270"/>
 <instance part="C4" gate="G$1" x="220.98" y="15.24" rot="R270"/>
-<instance part="UWE_CURRENT_TO_I2C1" gate="G$1" x="279.4" y="20.32"/>
+<instance part="UWE_CURRENT_TO_I2C" gate="G$1" x="279.4" y="20.32"/>
 <instance part="DVL_OUT" gate="U1" x="426.72" y="71.12"/>
 <instance part="VDIV1" gate="G$1" x="81.28" y="119.38"/>
 <instance part="VDIV2" gate="G$1" x="99.06" y="119.38"/>
 <instance part="INPUT_VOLTAGE_TO_I2C" gate="G$1" x="180.34" y="139.7"/>
+<instance part="10V_REGULATOR" gate="G$1" x="116.84" y="-15.24"/>
+<instance part="ADJUST" gate="G$1" x="121.92" y="-33.02"/>
+<instance part="C6" gate="G$1" x="147.32" y="-22.86"/>
+<instance part="C5" gate="G$1" x="81.28" y="-12.7" rot="R270"/>
+<instance part="10V_CURRENT_SENSOR" gate="G$1" x="193.04" y="-22.86"/>
+<instance part="C7" gate="G$1" x="220.98" y="-15.24" rot="R270"/>
+<instance part="C8" gate="G$1" x="220.98" y="-25.4" rot="R270"/>
+<instance part="10V_CURRENT_TO_I2C" gate="G$1" x="279.4" y="-20.32"/>
+<instance part="10V_OUT" gate="U1" x="426.72" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -5809,7 +5890,7 @@ type 0309, grid 2.5 mm</description>
 <label x="203.2" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="-VIN"/>
+<pinref part="UWE" gate="G$1" pin="-VIN"/>
 <wire x1="101.6" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <label x="88.9" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -5822,12 +5903,12 @@ type 0309, grid 2.5 mm</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="15.24" x2="231.14" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="15.24" x2="231.14" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="GND"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="GND"/>
 <wire x1="231.14" y1="10.16" x2="205.74" y2="10.16" width="0.1524" layer="91"/>
 <label x="228.6" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="GND"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="GND"/>
 <wire x1="281.94" y1="7.62" x2="281.94" y2="2.54" width="0.1524" layer="91"/>
 <label x="281.94" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -5840,6 +5921,49 @@ type 0309, grid 2.5 mm</description>
 <pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="GND"/>
 <wire x1="182.88" y1="127" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="182.88" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_REGULATOR" gate="G$1" pin="GND1"/>
+<label x="88.9" y="-7.62" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="-12.7" x2="71.12" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-12.7" x2="71.12" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="10V_REGULATOR" gate="G$1" pin="GND2"/>
+<wire x1="132.08" y1="-20.32" x2="134.62" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-20.32" x2="134.62" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-33.02" x2="147.32" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="-33.02" x2="147.32" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="ADJUST" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="-33.02" x2="127" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="134.62" y="-33.02"/>
+<label x="137.16" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="-15.24" x2="231.14" y2="-15.24" width="0.1524" layer="91"/>
+<label x="228.6" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="-25.4" x2="231.14" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-25.4" x2="231.14" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="GND"/>
+<wire x1="231.14" y1="-30.48" x2="205.74" y2="-30.48" width="0.1524" layer="91"/>
+<label x="228.6" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="GND"/>
+<wire x1="281.94" y1="-33.02" x2="281.94" y2="-38.1" width="0.1524" layer="91"/>
+<label x="281.94" y="-35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_OUT" gate="U1" pin="P$1"/>
+<wire x1="419.1" y1="48.26" x2="408.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="408.94" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5872,23 +5996,23 @@ type 0309, grid 2.5 mm</description>
 <label x="231.14" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="VCC"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="VCC"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
 <label x="208.28" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="VDD"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="VDD"/>
 <wire x1="279.4" y1="33.02" x2="279.4" y2="38.1" width="0.1524" layer="91"/>
 <label x="279.4" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="ADR0"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="ADR0"/>
 <wire x1="299.72" y1="17.78" x2="309.88" y2="17.78" width="0.1524" layer="91"/>
 <label x="307.34" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="ADR1"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="ADR1"/>
 <wire x1="299.72" y1="15.24" x2="312.42" y2="15.24" width="0.1524" layer="91"/>
 <label x="309.88" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -5906,6 +6030,27 @@ type 0309, grid 2.5 mm</description>
 <pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="ADR1"/>
 <wire x1="200.66" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
 <label x="210.82" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="VCC"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="-15.24" x2="215.9" y2="-15.24" width="0.1524" layer="91"/>
+<label x="208.28" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="VDD"/>
+<wire x1="279.4" y1="-7.62" x2="279.4" y2="-2.54" width="0.1524" layer="91"/>
+<label x="279.4" y="-5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="ADR0"/>
+<wire x1="299.72" y1="-22.86" x2="309.88" y2="-22.86" width="0.1524" layer="91"/>
+<label x="307.34" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="ADR1"/>
+<wire x1="299.72" y1="-25.4" x2="312.42" y2="-25.4" width="0.1524" layer="91"/>
+<label x="309.88" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5928,7 +6073,7 @@ type 0309, grid 2.5 mm</description>
 <label x="223.52" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="SDA"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="SDA"/>
 <wire x1="299.72" y1="22.86" x2="304.8" y2="22.86" width="0.1524" layer="91"/>
 <label x="302.26" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -5936,6 +6081,11 @@ type 0309, grid 2.5 mm</description>
 <pinref part="INPUT_VOLTAGE_TO_I2C" gate="G$1" pin="SDA"/>
 <wire x1="200.66" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 <label x="203.2" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="SDA"/>
+<wire x1="299.72" y1="-17.78" x2="304.8" y2="-17.78" width="0.1524" layer="91"/>
+<label x="302.26" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -5946,7 +6096,7 @@ type 0309, grid 2.5 mm</description>
 <label x="226.06" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE_CURRENT_TO_I2C1" gate="G$1" pin="SCL"/>
+<pinref part="UWE_CURRENT_TO_I2C" gate="G$1" pin="SCL"/>
 <wire x1="299.72" y1="20.32" x2="307.34" y2="20.32" width="0.1524" layer="91"/>
 <label x="304.8" y="20.32" size="1.778" layer="95"/>
 <label x="304.8" y="20.32" size="1.778" layer="95"/>
@@ -5957,6 +6107,12 @@ type 0309, grid 2.5 mm</description>
 <label x="205.74" y="139.7" size="1.778" layer="95"/>
 <label x="205.74" y="139.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="10V_CURRENT_TO_I2C" gate="G$1" pin="SCL"/>
+<wire x1="299.72" y1="-20.32" x2="307.34" y2="-20.32" width="0.1524" layer="91"/>
+<label x="304.8" y="-20.32" size="1.778" layer="95"/>
+<label x="304.8" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PROCESSED_INPUT" class="0">
 <segment>
@@ -5965,7 +6121,7 @@ type 0309, grid 2.5 mm</description>
 <label x="88.9" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="+VIN"/>
+<pinref part="UWE" gate="G$1" pin="+VIN"/>
 <wire x1="101.6" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
@@ -5975,19 +6131,25 @@ type 0309, grid 2.5 mm</description>
 <wire x1="76.2" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
 <label x="66.04" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="10V_REGULATOR" gate="G$1" pin="VI"/>
+<wire x1="101.6" y1="-12.7" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
+<label x="88.9" y="-12.7" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="UWE_EN" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="ON/OFFCTRL"/>
+<pinref part="UWE" gate="G$1" pin="ON/OFFCTRL"/>
 <wire x1="101.6" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 <label x="88.9" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UWE_OUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="+VOUT"/>
+<pinref part="UWE" gate="G$1" pin="+VOUT"/>
 <wire x1="132.08" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="+SENSE"/>
+<pinref part="UWE" gate="G$1" pin="+SENSE"/>
 <wire x1="149.86" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="30.48" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="30.48" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
@@ -5997,23 +6159,23 @@ type 0309, grid 2.5 mm</description>
 <junction x="149.86" y="30.48"/>
 <junction x="149.86" y="25.4"/>
 <label x="162.56" y="25.4" size="1.778" layer="95"/>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="IP+"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="IP+"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="TRIM"/>
+<pinref part="UWE" gate="G$1" pin="TRIM"/>
 <pinref part="TRIM" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UWE_GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="-VOUT"/>
+<pinref part="UWE" gate="G$1" pin="-VOUT"/>
 <wire x1="101.6" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="25.4" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="-SENSE"/>
+<pinref part="UWE" gate="G$1" pin="-SENSE"/>
 <wire x1="154.94" y1="17.78" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="40.64" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
@@ -6028,20 +6190,20 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="FILTER"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="FILTER"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="15.24" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="VIOUT"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="VIOUT"/>
 <wire x1="205.74" y1="20.32" x2="256.54" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PROCESSED_UWE_OUT" class="0">
 <segment>
-<pinref part="UWE_CURRENT_SENSOR1" gate="G$1" pin="IP-"/>
+<pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="IP-"/>
 <wire x1="180.34" y1="10.16" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
 <label x="157.48" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -6062,6 +6224,63 @@ type 0309, grid 2.5 mm</description>
 <wire x1="88.9" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="139.7" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
 <junction x="88.9" y="119.38"/>
+</segment>
+</net>
+<net name="10V_EN" class="0">
+<segment>
+<pinref part="10V_REGULATOR" gate="G$1" pin="!INHIBIT!"/>
+<wire x1="101.6" y1="-17.78" x2="88.9" y2="-17.78" width="0.1524" layer="91"/>
+<label x="88.9" y="-17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="10V_OUT" class="0">
+<segment>
+<pinref part="10V_REGULATOR" gate="G$1" pin="VO"/>
+<wire x1="132.08" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-15.24" x2="147.32" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="147.32" y="-15.24"/>
+<pinref part="10V_REGULATOR" gate="G$1" pin="VOSENSE"/>
+<wire x1="132.08" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-10.16" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<junction x="147.32" y="-10.16"/>
+<label x="132.08" y="-15.24" size="1.778" layer="95"/>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="IP+"/>
+<wire x1="180.34" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="ADJUST" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="-33.02" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-33.02" x2="88.9" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="10V_REGULATOR" gate="G$1" pin="VOADJUST"/>
+<wire x1="88.9" y1="-22.86" x2="101.6" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="FILTER"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="-25.4" x2="215.9" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="VIOUT"/>
+<wire x1="205.74" y1="-20.32" x2="256.54" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PROCESSED_10V_OUT" class="0">
+<segment>
+<pinref part="10V_CURRENT_SENSOR" gate="G$1" pin="IP-"/>
+<wire x1="180.34" y1="-30.48" x2="165.1" y2="-30.48" width="0.1524" layer="91"/>
+<label x="157.48" y="-30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_OUT" gate="U1" pin="P$2"/>
+<wire x1="419.1" y1="43.18" x2="408.94" y2="43.18" width="0.1524" layer="91"/>
+<label x="408.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
