@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.3.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="4BIG8SMALL">
+</package>
+</packages>
+<symbols>
+<symbol name="4BIG8SMALL">
+<wire x1="-109.22" y1="17.78" x2="-101.6" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-101.6" y1="17.78" x2="-101.6" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-101.6" y1="-17.78" x2="-109.22" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-109.22" y1="-17.78" x2="-109.22" y2="17.78" width="0.254" layer="94"/>
+<pin name="B1" x="-114.3" y="15.24" length="middle"/>
+<pin name="B2" x="-114.3" y="5.08" length="middle"/>
+<pin name="B3" x="-114.3" y="-5.08" length="middle"/>
+<pin name="B4" x="-114.3" y="-15.24" length="middle"/>
+<wire x1="-78.74" y1="17.78" x2="-71.12" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-71.12" y1="17.78" x2="-71.12" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-71.12" y1="-17.78" x2="-78.74" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-78.74" y1="-17.78" x2="-78.74" y2="17.78" width="0.254" layer="94"/>
+<pin name="B5" x="-83.82" y="15.24" length="middle"/>
+<pin name="B6" x="-83.82" y="5.08" length="middle"/>
+<pin name="B7" x="-83.82" y="-5.08" length="middle"/>
+<pin name="B8" x="-83.82" y="-15.24" length="middle"/>
+<wire x1="73.66" y1="17.78" x2="81.28" y2="17.78" width="0.254" layer="94"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="81.28" y1="-17.78" x2="73.66" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="73.66" y1="-17.78" x2="73.66" y2="17.78" width="0.254" layer="94"/>
+<pin name="B9" x="68.58" y="15.24" length="middle"/>
+<pin name="B10" x="68.58" y="5.08" length="middle"/>
+<pin name="B11" x="68.58" y="-5.08" length="middle"/>
+<pin name="B12" x="68.58" y="-15.24" length="middle"/>
+<wire x1="104.14" y1="17.78" x2="111.76" y2="17.78" width="0.254" layer="94"/>
+<wire x1="111.76" y1="17.78" x2="111.76" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="111.76" y1="-17.78" x2="104.14" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="104.14" y1="-17.78" x2="104.14" y2="17.78" width="0.254" layer="94"/>
+<pin name="B13" x="99.06" y="15.24" length="middle"/>
+<pin name="B14" x="99.06" y="5.08" length="middle"/>
+<pin name="B15" x="99.06" y="-5.08" length="middle"/>
+<pin name="B16" x="99.06" y="-15.24" length="middle"/>
+<wire x1="-45.72" y1="53.34" x2="-40.64" y2="53.34" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="53.34" x2="-40.64" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="2.54" x2="-45.72" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-45.72" y1="2.54" x2="-45.72" y2="53.34" width="0.254" layer="94"/>
+<pin name="S1" x="-50.8" y="50.8" length="middle"/>
+<pin name="S7" x="-50.8" y="20.32" length="middle"/>
+<pin name="S2" x="-50.8" y="45.72" length="middle"/>
+<pin name="S6" x="-50.8" y="25.4" length="middle"/>
+<pin name="S3" x="-50.8" y="40.64" length="middle"/>
+<pin name="S5" x="-50.8" y="30.48" length="middle"/>
+<pin name="S4" x="-50.8" y="35.56" length="middle"/>
+<pin name="S8" x="-50.8" y="15.24" length="middle"/>
+<pin name="S9" x="-50.8" y="10.16" length="middle"/>
+<pin name="S10" x="-50.8" y="5.08" length="middle"/>
+<wire x1="-15.24" y1="53.34" x2="-10.16" y2="53.34" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="53.34" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="2.54" x2="-15.24" y2="53.34" width="0.254" layer="94"/>
+<pin name="S11" x="-20.32" y="50.8" length="middle"/>
+<pin name="S12" x="-20.32" y="20.32" length="middle"/>
+<pin name="S13" x="-20.32" y="45.72" length="middle"/>
+<pin name="S14" x="-20.32" y="25.4" length="middle"/>
+<pin name="S15" x="-20.32" y="40.64" length="middle"/>
+<pin name="S16" x="-20.32" y="30.48" length="middle"/>
+<pin name="S17" x="-20.32" y="35.56" length="middle"/>
+<pin name="S18" x="-20.32" y="15.24" length="middle"/>
+<pin name="S19" x="-20.32" y="10.16" length="middle"/>
+<pin name="S20" x="-20.32" y="5.08" length="middle"/>
+<wire x1="15.24" y1="53.34" x2="20.32" y2="53.34" width="0.254" layer="94"/>
+<wire x1="20.32" y1="53.34" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="53.34" width="0.254" layer="94"/>
+<pin name="S21" x="10.16" y="50.8" length="middle"/>
+<pin name="S22" x="10.16" y="20.32" length="middle"/>
+<pin name="S23" x="10.16" y="45.72" length="middle"/>
+<pin name="S24" x="10.16" y="25.4" length="middle"/>
+<pin name="S25" x="10.16" y="40.64" length="middle"/>
+<pin name="S26" x="10.16" y="30.48" length="middle"/>
+<pin name="S27" x="10.16" y="35.56" length="middle"/>
+<pin name="S28" x="10.16" y="15.24" length="middle"/>
+<pin name="S29" x="10.16" y="10.16" length="middle"/>
+<pin name="S30" x="10.16" y="5.08" length="middle"/>
+<wire x1="45.72" y1="53.34" x2="50.8" y2="53.34" width="0.254" layer="94"/>
+<wire x1="50.8" y1="53.34" x2="50.8" y2="2.54" width="0.254" layer="94"/>
+<wire x1="50.8" y1="2.54" x2="45.72" y2="2.54" width="0.254" layer="94"/>
+<wire x1="45.72" y1="2.54" x2="45.72" y2="53.34" width="0.254" layer="94"/>
+<pin name="S31" x="40.64" y="50.8" length="middle"/>
+<pin name="S32" x="40.64" y="20.32" length="middle"/>
+<pin name="S33" x="40.64" y="45.72" length="middle"/>
+<pin name="S34" x="40.64" y="25.4" length="middle"/>
+<pin name="S35" x="40.64" y="40.64" length="middle"/>
+<pin name="S36" x="40.64" y="30.48" length="middle"/>
+<pin name="S37" x="40.64" y="35.56" length="middle"/>
+<pin name="S38" x="40.64" y="15.24" length="middle"/>
+<pin name="S39" x="40.64" y="10.16" length="middle"/>
+<pin name="S40" x="40.64" y="5.08" length="middle"/>
+<wire x1="-45.72" y1="-2.54" x2="-40.64" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="-2.54" x2="-40.64" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="-53.34" x2="-45.72" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="-45.72" y1="-53.34" x2="-45.72" y2="-2.54" width="0.254" layer="94"/>
+<pin name="S41" x="-50.8" y="-5.08" length="middle"/>
+<pin name="S42" x="-50.8" y="-35.56" length="middle"/>
+<pin name="S43" x="-50.8" y="-10.16" length="middle"/>
+<pin name="S44" x="-50.8" y="-30.48" length="middle"/>
+<pin name="S45" x="-50.8" y="-15.24" length="middle"/>
+<pin name="S46" x="-50.8" y="-25.4" length="middle"/>
+<pin name="S47" x="-50.8" y="-20.32" length="middle"/>
+<pin name="S48" x="-50.8" y="-40.64" length="middle"/>
+<pin name="S49" x="-50.8" y="-45.72" length="middle"/>
+<pin name="S50" x="-50.8" y="-50.8" length="middle"/>
+<wire x1="-15.24" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-53.34" x2="-15.24" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-53.34" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
+<pin name="S51" x="-20.32" y="-5.08" length="middle"/>
+<pin name="S52" x="-20.32" y="-35.56" length="middle"/>
+<pin name="S53" x="-20.32" y="-10.16" length="middle"/>
+<pin name="S54" x="-20.32" y="-30.48" length="middle"/>
+<pin name="S55" x="-20.32" y="-15.24" length="middle"/>
+<pin name="S56" x="-20.32" y="-25.4" length="middle"/>
+<pin name="S57" x="-20.32" y="-20.32" length="middle"/>
+<pin name="S58" x="-20.32" y="-40.64" length="middle"/>
+<pin name="S59" x="-20.32" y="-45.72" length="middle"/>
+<pin name="S60" x="-20.32" y="-50.8" length="middle"/>
+<wire x1="15.24" y1="-2.54" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-53.34" x2="15.24" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-53.34" x2="15.24" y2="-2.54" width="0.254" layer="94"/>
+<pin name="S61" x="10.16" y="-5.08" length="middle"/>
+<pin name="S62" x="10.16" y="-35.56" length="middle"/>
+<pin name="S63" x="10.16" y="-10.16" length="middle"/>
+<pin name="S64" x="10.16" y="-30.48" length="middle"/>
+<pin name="S65" x="10.16" y="-15.24" length="middle"/>
+<pin name="S66" x="10.16" y="-25.4" length="middle"/>
+<pin name="S67" x="10.16" y="-20.32" length="middle"/>
+<pin name="S68" x="10.16" y="-40.64" length="middle"/>
+<pin name="S69" x="10.16" y="-45.72" length="middle"/>
+<pin name="S70" x="10.16" y="-50.8" length="middle"/>
+<wire x1="45.72" y1="-2.54" x2="50.8" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="50.8" y1="-2.54" x2="50.8" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="50.8" y1="-53.34" x2="45.72" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="45.72" y1="-53.34" x2="45.72" y2="-2.54" width="0.254" layer="94"/>
+<pin name="S71" x="40.64" y="-5.08" length="middle"/>
+<pin name="S72" x="40.64" y="-35.56" length="middle"/>
+<pin name="S73" x="40.64" y="-10.16" length="middle"/>
+<pin name="S74" x="40.64" y="-30.48" length="middle"/>
+<pin name="S75" x="40.64" y="-15.24" length="middle"/>
+<pin name="S76" x="40.64" y="-25.4" length="middle"/>
+<pin name="S77" x="40.64" y="-20.32" length="middle"/>
+<pin name="S78" x="40.64" y="-40.64" length="middle"/>
+<pin name="S79" x="40.64" y="-45.72" length="middle"/>
+<pin name="S80" x="40.64" y="-50.8" length="middle"/>
+<text x="-109.22" y="17.78" size="1.778" layer="97">R1</text>
+<text x="-78.74" y="17.78" size="1.778" layer="97">R2</text>
+<text x="-45.72" y="53.34" size="1.778" layer="97">R3</text>
+<text x="-15.24" y="53.34" size="1.778" layer="97">R4</text>
+<text x="15.24" y="53.34" size="1.778" layer="97">R5</text>
+<text x="45.72" y="53.34" size="1.778" layer="97">R6</text>
+<text x="-45.72" y="-2.54" size="1.778" layer="97">R7</text>
+<text x="-15.24" y="-2.54" size="1.778" layer="97">R8</text>
+<text x="15.24" y="-2.54" size="1.778" layer="97">R9</text>
+<text x="45.72" y="-2.54" size="1.778" layer="97">R10</text>
+<text x="73.66" y="17.78" size="1.778" layer="97">R11</text>
+<text x="104.14" y="17.78" size="1.778" layer="97">R12</text>
+</symbol>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>
