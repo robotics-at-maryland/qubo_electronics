@@ -5540,7 +5540,9 @@ chip</description>
 <part name="R3" library="resistor" deviceset="R-US_" device="M0805" value="51K"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="M0805" value="523K"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="2nF"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF"/>
+<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF">
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5638,16 +5640,17 @@ chip</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="88.9" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="88.9" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="78.74" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="109.22" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
-<junction x="27.94" y="109.22"/>
-<junction x="12.7" y="109.22"/>
+<wire x1="12.7" y1="78.74" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<junction x="27.94" y="116.84"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="2.54" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="109.22" x2="52.07" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="52.07" y1="109.22" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="116.84" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
+<junction x="12.7" y="116.84"/>
+<wire x1="55.88" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

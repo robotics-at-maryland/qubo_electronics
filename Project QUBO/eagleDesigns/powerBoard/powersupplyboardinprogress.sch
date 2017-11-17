@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5620,6 +5620,40 @@ by R. Vogg  15.March.2002</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5632,8 +5666,6 @@ by R. Vogg  15.March.2002</description>
 <parts>
 <part name="U$1" library="linear" deviceset="LTC4364" device="MSOP"/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0805"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="M0805" value="931K"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="M0805" value="51K"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="M0805" value="51K"/>
@@ -5642,7 +5674,11 @@ by R. Vogg  15.March.2002</description>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="U$2" library="transistor-fet" deviceset="IRF7458PBF" device=""/>
+<part name="U$2" library="transistor-fet" deviceset="IRF7458PBF" device="">
+<attribute name="SPICEPREFIX" value="M"/>
+</part>
+<part name="U$3" library="transistor-fet" deviceset="IRF7458PBF" device=""/>
+<part name="BAT1" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5651,34 +5687,28 @@ by R. Vogg  15.March.2002</description>
 <instances>
 <instance part="U$1" gate="G$1" x="74.93" y="76.2"/>
 <instance part="C1" gate="G$1" x="82.55" y="55.88"/>
-<instance part="R4" gate="G$1" x="119.38" y="76.2" rot="R90"/>
-<instance part="R5" gate="G$1" x="119.38" y="85.09" rot="R90"/>
 <instance part="R1" gate="G$1" x="12.7" y="73.66" rot="R90"/>
 <instance part="R2" gate="G$1" x="12.7" y="63.5" rot="R90"/>
 <instance part="R3" gate="G$1" x="27.94" y="73.66" rot="R90"/>
 <instance part="R6" gate="G$1" x="27.94" y="83.82" rot="R90"/>
 <instance part="C2" gate="G$1" x="20.32" y="55.88"/>
 <instance part="C3" gate="G$1" x="2.54" y="55.88"/>
-<instance part="U$2" gate="G$1" x="63.5" y="114.3" rot="R90"/>
+<instance part="U$2" gate="G$1" x="62.23" y="114.3" rot="R90"/>
+<instance part="U$3" gate="G$1" x="87.63" y="114.3" rot="MR90"/>
+<instance part="BAT1" gate="VCC" x="-2.54" y="116.84" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
-<label x="119.38" y="60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="82.55" y1="50.8" x2="57.15" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="57.15" y1="50.8" x2="57.15" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="50.8" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="82.55" y1="50.8" x2="82.55" y2="45.72" width="0.1524" layer="91"/>
 <junction x="82.55" y="50.8"/>
-<label x="83.82" y="45.72" size="1.778" layer="95"/>
+<label x="82.55" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -5700,18 +5730,16 @@ by R. Vogg  15.March.2002</description>
 <wire x1="2.54" y1="50.8" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="2.54" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="FB"/>
+<wire x1="113.03" y1="81.28" x2="113.03" y2="45.72" width="0.1524" layer="91"/>
+<label x="113.03" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="TMR"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="FB"/>
-<wire x1="113.03" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5738,7 +5766,43 @@ by R. Vogg  15.March.2002</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DGATE"/>
+<pinref part="U$3" gate="G$1" pin="G"/>
+<wire x1="85.09" y1="93.98" x2="85.09" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="69.85" y1="116.84" x2="74.93" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SOURCE"/>
+<wire x1="74.93" y1="116.84" x2="80.01" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="74.93" y1="93.98" x2="74.93" y2="116.84" width="0.1524" layer="91"/>
+<junction x="74.93" y="116.84"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="D"/>
+<wire x1="95.25" y1="116.84" x2="105.41" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SENSE"/>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="95.25" y1="93.98" x2="105.41" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="105.41" y1="93.98" x2="105.41" y2="116.84" width="0.1524" layer="91"/>
+<junction x="105.41" y="93.98"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="HGATE"/>
+<pinref part="U$2" gate="G$1" pin="G"/>
+<wire x1="64.77" y1="93.98" x2="64.77" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="88.9" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
@@ -5751,8 +5815,9 @@ by R. Vogg  15.March.2002</description>
 <wire x1="52.07" y1="116.84" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
 <junction x="12.7" y="116.84"/>
-<wire x1="55.88" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="D"/>
+<pinref part="BAT1" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 </nets>
