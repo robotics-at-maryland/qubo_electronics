@@ -5152,10 +5152,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="78.74" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="DGND" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$1"/>
 <wire x1="12.7" y1="152.4" x2="0" y2="152.4" width="0.1524" layer="91"/>
+<label x="0" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5542,7 +5543,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$61"/>
 <wire x1="134.62" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
-<label x="121.92" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

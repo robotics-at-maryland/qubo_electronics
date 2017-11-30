@@ -4771,6 +4771,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-60.96" y1="147.32" x2="-71.12" y2="147.32" width="0.1524" layer="91"/>
 <label x="-71.12" y="147.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="P$42"/>
+<wire x1="93.98" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
+<label x="76.2" y="149.86" size="1.778" layer="95"/>
+<label x="76.2" y="149.86" size="1.778" layer="95"/>
+<label x="76.2" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="P$62"/>
+<wire x1="134.62" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
+<label x="121.92" y="149.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX_PF" class="0">
 <segment>
@@ -5465,13 +5477,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="-53.34" y="111.76"/>
 </segment>
 </net>
-<net name="GPIO_42" class="0">
-<segment>
-<pinref part="JP5" gate="G$1" pin="P$42"/>
-<wire x1="93.98" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
-<label x="76.2" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BATT_SDA" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$43"/>
@@ -5532,13 +5537,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="JP5" gate="G$1" pin="P$51"/>
 <wire x1="93.98" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
 <label x="81.28" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO_62" class="0">
-<segment>
-<pinref part="JP5" gate="G$1" pin="P$62"/>
-<wire x1="134.62" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
-<label x="121.92" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INT_SDA" class="0">

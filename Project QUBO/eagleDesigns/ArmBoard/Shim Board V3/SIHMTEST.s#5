@@ -4780,32 +4780,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="116.84" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BUFFERSCL0" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="LX"/>
-<wire x1="-99.06" y1="127" x2="-119.38" y2="127" width="0.1524" layer="91"/>
-<label x="-157.48" y="129.54" size="1.778" layer="95"/>
-<wire x1="-119.38" y1="127" x2="-119.38" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-119.38" y1="129.54" x2="-119.38" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="132.08" x2="-121.92" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="129.54" x2="-157.48" y2="129.54" width="0.1524" layer="91"/>
-<junction x="-119.38" y="129.54"/>
-</segment>
-</net>
-<net name="BUFFERSDA0" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="LY"/>
-<wire x1="-73.66" y1="127" x2="-50.8" y2="127" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="127" x2="-50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-50.8" y1="132.08" x2="-33.02" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="132.08" x2="-20.32" y2="132.08" width="0.1524" layer="91"/>
-<junction x="-33.02" y="132.08"/>
-<label x="-27.94" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UNBUFFERSCL0" class="0">
+<net name="ACT_UNBUFFERSCL" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="9"/>
 <wire x1="10.16" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
@@ -4822,7 +4797,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-119.38" y1="121.92" x2="-154.94" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UNBUFFERSDA0" class="0">
+<net name="ACT_UNBUFFERSDA" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="10"/>
 <wire x1="10.16" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
@@ -5511,12 +5486,33 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="53.34" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
 <label x="38.1" y="147.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="LY"/>
+<wire x1="-73.66" y1="127" x2="-50.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="127" x2="-50.8" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-50.8" y1="132.08" x2="-33.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="132.08" x2="-17.78" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-33.02" y="132.08"/>
+<label x="-27.94" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ACT_SCL" class="0">
 <segment>
 <pinref part="JP5" gate="G$1" pin="P$24"/>
 <wire x1="53.34" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
 <label x="40.64" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="LX"/>
+<wire x1="-99.06" y1="127" x2="-119.38" y2="127" width="0.1524" layer="91"/>
+<label x="-157.48" y="129.54" size="1.778" layer="95"/>
+<wire x1="-119.38" y1="127" x2="-119.38" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="129.54" x2="-119.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="132.08" x2="-121.92" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="129.54" x2="-157.48" y2="129.54" width="0.1524" layer="91"/>
+<junction x="-119.38" y="129.54"/>
 </segment>
 </net>
 <net name="PWM_1" class="0">
