@@ -1,4 +1,4 @@
-Circuit: * C:\Users\Nathan\Downloads\LTC4364-2_TA01A (1).asc
+Circuit: * C:\Workspaces\qubo_electronics.git\trunk\Project QUBO\eagleDesigns\powerBoard\LTC4364 Simulation\LTC4364-2_TA01A (1).asc
 
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -20,24 +20,23 @@ Gmin = 2.70769e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Heightened Def Con from 0.0294131 to 0.0294131
-Heightened Def Con from 0.0294132 to 0.0294132
+Heightened Def Con from 0.101303 to 0.101303
 
-Date: Thu Jan 25 16:21:54 2018
-Total elapsed time: 0.524 seconds.
+Date: Thu Jan 25 21:44:52 2018
+Total elapsed time: 1.750 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 19278
-traniter = 18903
-tranpoints = 5117
-accept = 4106
-rejected = 1013
+totiter = 67359
+traniter = 66984
+tranpoints = 16262
+accept = 12516
+rejected = 3747
 matrix size = 113
 fillins = 36
 solver = Normal
-Thread vector: 14.0/8.9[4] 7.7/4.7[4] 1.7/1.7[1] 0.3/2.0[1]  2592/500
-Matrix Compiler1: 7.11 KB object code size  2.5/1.2/[0.6]
-Matrix Compiler2: 8.21 KB object code size  1.0/1.2/[0.4]
+Thread vector: 16.1/10.9[4] 9.1/4.3[4] 2.2/1.8[4] 0.5/0.8[1]  2592/500
+Matrix Compiler1: 7.11 KB object code size  1.9/1.1/[0.5]
+Matrix Compiler2: 8.21 KB object code size  1.2/1.8/[0.5]
 
