@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6085,55 +6085,54 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 </library>
 <library name="murata">
 <packages>
-<package name="UWE">
-<pad name="+VIN" x="-25.4" y="-7.62" drill="1.27" diameter="2.1844"/>
-<pad name="ONOFF" x="-25.4" y="0" drill="1.27" diameter="2.1844"/>
-<pad name="-VIN" x="-25.4" y="7.62" drill="1.27" diameter="2.1844"/>
-<pad name="-VOUT" x="25.4" y="7.62" drill="1.778" diameter="2.54"/>
-<pad name="-SENSE" x="25.4" y="3.81" drill="1.27" diameter="2.1844"/>
-<pad name="TRIM" x="25.4" y="0" drill="1.27" diameter="2.1844"/>
-<pad name="+SENSE" x="25.4" y="-3.81" drill="1.27" diameter="2.1844"/>
-<pad name="+VOUT" x="25.4" y="-7.62" drill="1.778" diameter="2.54"/>
-<wire x1="-29.21" y1="11.43" x2="29.21" y2="11.43" width="0.127" layer="21"/>
-<wire x1="29.21" y1="11.43" x2="29.21" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="29.21" y1="-11.43" x2="-29.21" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="-29.21" y1="-11.43" x2="-29.21" y2="11.43" width="0.127" layer="21"/>
+<package name="UEI15">
+<description>&lt;b&gt; Description: &lt;/b&gt; This footprint is untested! Used with the Murata UEI15.</description>
+<wire x1="-14.478" y1="12.7" x2="14.478" y2="12.7" width="0.127" layer="51"/>
+<wire x1="14.478" y1="12.7" x2="14.478" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="14.478" y1="-12.7" x2="-14.478" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-12.7" x2="-14.478" y2="12.7" width="0.127" layer="51"/>
+<pad name="P$1" x="-10.16" y="10.16" drill="2.8448"/>
+<pad name="P$2" x="-10.16" y="0" drill="2.8448"/>
+<pad name="P$3" x="-10.16" y="-10.16" drill="2.8448"/>
+<pad name="P$4" x="10.16" y="-10.16" drill="2.8448" rot="R180"/>
+<pad name="P$5" x="10.16" y="-2.54" drill="2.8448" rot="R180"/>
+<pad name="P$6" x="10.16" y="2.54" drill="2.8448" rot="R180"/>
+<text x="-13.97" y="13.97" size="1.27" layer="25">&gt;Name</text>
+<text x="-13.97" y="-15.24" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="UWE">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="+VIN" x="-15.24" y="7.62" length="middle"/>
-<pin name="ON/OFFCTRL" x="-15.24" y="2.54" length="middle"/>
-<pin name="-VIN" x="-15.24" y="-2.54" length="middle"/>
-<pin name="-VOUT" x="-15.24" y="-7.62" length="middle"/>
-<pin name="-SENSE" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="TRIM" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="+SENSE" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="+VOUT" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<symbol name="UEI15">
+<description>Schematic component for the Murata UEI15 Series DC/DC Converter https://power.murata.com/data/power/mdc_uei-15w.pdf</description>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="+VOUT" x="17.78" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="TRIM" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="-VIN" x="-17.78" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="ON/OFF" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="+VIN" x="-17.78" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<text x="-12.7" y="10.922" size="1.778" layer="96">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="UWE">
+<deviceset name="UEI15" prefix="U1">
+<description>The Murata UEI15 is an isolated wide input range 15W DC/DC Converter https://power.murata.com/data/power/mdc_uei-15w.pdf</description>
 <gates>
-<gate name="G$1" symbol="UWE" x="0" y="0"/>
+<gate name="U1" symbol="UEI15" x="0" y="0"/>
 </gates>
 <devices>
-<device name="UWE" package="UWE">
+<device name="" package="UEI15">
 <connects>
-<connect gate="G$1" pin="+SENSE" pad="+SENSE"/>
-<connect gate="G$1" pin="+VIN" pad="+VIN"/>
-<connect gate="G$1" pin="+VOUT" pad="+VOUT"/>
-<connect gate="G$1" pin="-SENSE" pad="-SENSE"/>
-<connect gate="G$1" pin="-VIN" pad="-VIN"/>
-<connect gate="G$1" pin="-VOUT" pad="-VOUT"/>
-<connect gate="G$1" pin="ON/OFFCTRL" pad="ONOFF"/>
-<connect gate="G$1" pin="TRIM" pad="TRIM"/>
+<connect gate="U1" pin="+VIN" pad="P$6"/>
+<connect gate="U1" pin="+VOUT" pad="P$1"/>
+<connect gate="U1" pin="-VIN" pad="P$5"/>
+<connect gate="U1" pin="-VOUT" pad="P$3"/>
+<connect gate="U1" pin="ON/OFF" pad="P$4"/>
+<connect gate="U1" pin="TRIM" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7835,8 +7834,6 @@ naming: grid - package width</description>
 <part name="INPUT_CURRENT_SENSOR" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
-<part name="UWE" library="murata" deviceset="UWE" device="UWE"/>
-<part name="TRIM" library="resistor" deviceset="R-US_" device="R0805" value="570kO"/>
 <part name="DVL_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
 <part name="VDIV1" library="resistor" deviceset="R-US_" device="R0805" value="90kO"/>
 <part name="VDIV2" library="resistor" deviceset="R-US_" device="R0805" value="10kO"/>
@@ -7876,6 +7873,7 @@ naming: grid - package width</description>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="5V_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
+<part name="U1" library="murata" deviceset="UEI15" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7888,8 +7886,6 @@ naming: grid - package width</description>
 <instance part="INPUT_CURRENT_SENSOR" gate="G$1" x="-124.46" y="66.04"/>
 <instance part="C1" gate="G$1" x="-96.52" y="73.66" rot="R270"/>
 <instance part="C2" gate="G$1" x="-96.52" y="63.5" rot="R270"/>
-<instance part="UWE" gate="G$1" x="-121.92" y="-2.54"/>
-<instance part="TRIM" gate="G$1" x="-99.06" y="0"/>
 <instance part="DVL_OUT" gate="U1" x="139.7" y="43.18"/>
 <instance part="VDIV1" gate="G$1" x="-157.48" y="88.9"/>
 <instance part="VDIV2" gate="G$1" x="-139.7" y="88.9"/>
@@ -7941,6 +7937,7 @@ naming: grid - package width</description>
 <instance part="C9" gate="G$1" x="0" y="-38.1" rot="R270"/>
 <instance part="C10" gate="G$1" x="0" y="-48.26" rot="R270"/>
 <instance part="5V_OUT" gate="U1" x="139.7" y="-33.02"/>
+<instance part="U1" gate="U1" x="-119.38" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -7975,11 +7972,6 @@ naming: grid - package width</description>
 <pinref part="INPUT_CURRENT_SENSOR" gate="G$1" pin="GND"/>
 <wire x1="-86.36" y1="58.42" x2="-111.76" y2="58.42" width="0.1524" layer="91"/>
 <label x="-88.9" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="UWE" gate="G$1" pin="-VIN"/>
-<wire x1="-137.16" y1="-5.08" x2="-149.86" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-149.86" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="VDIV2" gate="G$1" pin="2"/>
@@ -8098,6 +8090,16 @@ naming: grid - package width</description>
 <wire x1="-15.24" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-20.32" y="22.86"/>
 <label x="-20.32" y="17.78" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="+VIN"/>
+<wire x1="-137.16" y1="-12.7" x2="-149.86" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-149.86" y="-12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="10V_OUT" gate="U1" pin="P$1"/>
+<wire x1="132.08" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
+<label x="121.92" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8254,68 +8256,40 @@ naming: grid - package width</description>
 <wire x1="-111.76" y1="-81.28" x2="-149.86" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UWE_EN" class="0">
-<segment>
-<pinref part="UWE" gate="G$1" pin="ON/OFFCTRL"/>
-<wire x1="-137.16" y1="0" x2="-149.86" y2="0" width="0.1524" layer="91"/>
-<label x="-149.86" y="0" size="1.778" layer="95"/>
-</segment>
+<net name="UEI_EN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="P0"/>
 <wire x1="7.62" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
 <label x="10.16" y="40.64" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$4" class="0">
 <segment>
-<pinref part="UWE" gate="G$1" pin="TRIM"/>
-<pinref part="TRIM" gate="G$1" pin="1"/>
-<wire x1="-106.68" y1="0" x2="-104.14" y2="0" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="ON/OFF"/>
+<wire x1="-137.16" y1="-5.08" x2="-149.86" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-149.86" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UWE_GND" class="0">
-<segment>
-<pinref part="UWE" gate="G$1" pin="-VOUT"/>
-<wire x1="-137.16" y1="-10.16" x2="-149.86" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-10.16" x2="-149.86" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-17.78" x2="-83.82" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="UWE" gate="G$1" pin="-SENSE"/>
-<wire x1="-83.82" y1="-17.78" x2="-58.42" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="5.08" x2="-83.82" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="5.08" x2="-83.82" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-83.82" y="-17.78"/>
-<label x="-76.2" y="-17.78" size="1.778" layer="95"/>
-</segment>
+<net name="UEI_GND" class="0">
 <segment>
 <pinref part="DVL_OUT" gate="U1" pin="P$1"/>
 <wire x1="132.08" y1="45.72" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
 <label x="121.92" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="10V_OUT" gate="U1" pin="P$1"/>
-<wire x1="132.08" y1="20.32" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
-<label x="121.92" y="20.32" size="1.778" layer="95"/>
+<pinref part="U1" gate="U1" pin="-VOUT"/>
+<wire x1="-101.6" y1="-12.7" x2="-86.36" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-96.52" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PROCESSED_UWE_OUTPUT" class="0">
+<net name="PROCESSED_UEI_OUTPUT" class="0">
 <segment>
 <pinref part="DVL_OUT" gate="U1" pin="P$2"/>
 <wire x1="132.08" y1="40.64" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
 <label x="121.92" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UWE" gate="G$1" pin="+VOUT"/>
-<wire x1="-106.68" y1="-10.16" x2="-88.9" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="UWE" gate="G$1" pin="+SENSE"/>
-<wire x1="-88.9" y1="-10.16" x2="-58.42" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="-5.08" x2="-88.9" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="-5.08" x2="-88.9" y2="0" width="0.1524" layer="91"/>
-<pinref part="TRIM" gate="G$1" pin="2"/>
-<wire x1="-88.9" y1="0" x2="-93.98" y2="0" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="-5.08" x2="-88.9" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="-88.9" y="-5.08"/>
-<junction x="-88.9" y="-10.16"/>
-<label x="-76.2" y="-10.16" size="1.778" layer="95"/>
+<pinref part="U1" gate="U1" pin="+VOUT"/>
+<wire x1="-101.6" y1="2.54" x2="-86.36" y2="2.54" width="0.1524" layer="91"/>
+<label x="-96.52" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT_VOLTAGE" class="0">
@@ -8440,14 +8414,14 @@ naming: grid - package width</description>
 <label x="40.64" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UWE_INPUT" class="0">
+<net name="UEI_INPUT" class="0">
 <segment>
 <pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="IP-"/>
 <wire x1="-137.16" y1="17.78" x2="-149.86" y2="17.78" width="0.1524" layer="91"/>
 <label x="-149.86" y="17.78" size="1.778" layer="95"/>
-<wire x1="-149.86" y1="17.78" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="UWE" gate="G$1" pin="+VIN"/>
-<wire x1="-137.16" y1="5.08" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="-VIN"/>
+<wire x1="-137.16" y1="2.54" x2="-149.86" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="2.54" x2="-149.86" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INPUT_CURRENT" class="0">
