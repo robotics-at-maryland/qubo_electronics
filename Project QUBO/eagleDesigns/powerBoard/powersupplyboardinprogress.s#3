@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5685,25 +5685,7 @@ by R. Vogg  15.March.2002</description>
 <part name="LTC4364" library="linear" deviceset="LTC4364" device="MSOP">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="C1" library="resistor" deviceset="C-US" device="C0805">
-<attribute name="SPICEPREFIX" value="C"/>
-</part>
-<part name="R1" library="resistor" deviceset="R-US_" device="M0805" value="931K">
-<attribute name="SPICEPREFIX" value="R"/>
-</part>
-<part name="R2" library="resistor" deviceset="R-US_" device="M0805" value="51K">
-<attribute name="SPICEPREFIX" value="R"/>
-</part>
-<part name="R3" library="resistor" deviceset="R-US_" device="M0805" value="51K">
-<attribute name="SPICEPREFIX" value="R"/>
-</part>
-<part name="R6" library="resistor" deviceset="R-US_" device="M0805" value="523K">
-<attribute name="SPICEPREFIX" value="R"/>
-</part>
-<part name="C2" library="resistor" deviceset="C-US" device="C0805" value="2nF">
-<attribute name="SPICEPREFIX" value="C"/>
-</part>
-<part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1uF">
+<part name="C1" library="resistor" deviceset="C-US" device="C0805" value="150nF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="M1" library="transistor-fet" deviceset="IRF7458PBF" device="">
@@ -5715,26 +5697,20 @@ by R. Vogg  15.March.2002</description>
 <part name="BAT1" library="supply1" deviceset="VCC" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="GND2" library="supply1" deviceset="GND" device="">
-<attribute name="SPICEGROUND" value=""/>
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
-<part name="GND3" library="supply1" deviceset="GND" device="">
-<attribute name="SPICEGROUND" value=""/>
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
-<part name="GND1" library="supply1" deviceset="GND" device="">
-<attribute name="SPICEGROUND" value=""/>
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
 <part name="GND4" library="supply1" deviceset="GND" device="">
 <attribute name="SPICEGROUND" value=""/>
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="931K"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="51K"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="91K"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="5K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="173K"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="7K"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="12K"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="10m"/>
 </parts>
 <sheets>
 <sheet>
@@ -5743,23 +5719,20 @@ by R. Vogg  15.March.2002</description>
 <instances>
 <instance part="LTC4364" gate="G$1" x="74.93" y="76.2"/>
 <instance part="C1" gate="G$1" x="82.55" y="55.88"/>
-<instance part="R1" gate="G$1" x="12.7" y="73.66" rot="R90"/>
-<instance part="R2" gate="G$1" x="12.7" y="63.5" rot="R90"/>
-<instance part="R3" gate="G$1" x="27.94" y="73.66" rot="R90"/>
-<instance part="R6" gate="G$1" x="27.94" y="83.82" rot="R90"/>
-<instance part="C2" gate="G$1" x="20.32" y="55.88"/>
-<instance part="C3" gate="G$1" x="2.54" y="55.88"/>
 <instance part="M1" gate="G$1" x="62.23" y="114.3" rot="R90"/>
 <instance part="M2" gate="G$1" x="87.63" y="114.3" rot="MR90"/>
 <instance part="BAT1" gate="VCC" x="-2.54" y="116.84" rot="R90"/>
-<instance part="GND2" gate="1" x="12.7" y="44.45"/>
-<instance part="GND3" gate="1" x="20.32" y="44.45"/>
-<instance part="GND1" gate="1" x="2.54" y="44.45"/>
 <instance part="GND4" gate="1" x="82.55" y="43.18"/>
 <instance part="R7" gate="G$1" x="114.3" y="86.36" rot="R270"/>
 <instance part="R8" gate="G$1" x="114.3" y="76.2" rot="R270"/>
 <instance part="GND5" gate="1" x="114.3" y="41.91"/>
-<instance part="GND6" gate="1" x="27.94" y="44.45"/>
+<instance part="R1" gate="G$1" x="27.94" y="83.82" rot="R270"/>
+<instance part="R2" gate="G$1" x="27.94" y="73.66" rot="R270"/>
+<instance part="R3" gate="G$1" x="27.94" y="63.5" rot="R270"/>
+<instance part="GND1" gate="1" x="27.94" y="43.18"/>
+<instance part="R4" gate="G$1" x="64.77" y="101.6" rot="R270"/>
+<instance part="R5" gate="G$1" x="52.07" y="104.14" rot="R270"/>
+<instance part="R6" gate="G$1" x="100.33" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -5779,39 +5752,15 @@ by R. Vogg  15.March.2002</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="68.58" x2="27.94" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="58.42" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="LTC4364" gate="G$1" pin="TMR"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<junction x="12.7" y="68.58"/>
-<wire x1="12.7" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="68.58" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="LTC4364" gate="G$1" pin="OV"/>
-<wire x1="36.83" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="LTC4364" gate="G$1" pin="UV"/>
-<wire x1="27.94" y1="78.74" x2="36.83" y2="78.74" width="0.1524" layer="91"/>
-<junction x="27.94" y="78.74"/>
-<wire x1="27.94" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="78.74" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5834,11 +5783,7 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="M2" gate="G$1" pin="D"/>
-<wire x1="95.25" y1="116.84" x2="105.41" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="LTC4364" gate="G$1" pin="SENSE"/>
 <pinref part="LTC4364" gate="G$1" pin="OUT"/>
-<wire x1="95.25" y1="93.98" x2="105.41" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="93.98" x2="105.41" y2="116.84" width="0.1524" layer="91"/>
 <junction x="105.41" y="93.98"/>
 <wire x1="105.41" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
@@ -5846,55 +5791,22 @@ by R. Vogg  15.March.2002</description>
 <wire x1="114.3" y1="93.98" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 <junction x="114.3" y="93.98"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="LTC4364" gate="G$1" pin="HGATE"/>
-<pinref part="M1" gate="G$1" pin="G"/>
-<wire x1="64.77" y1="93.98" x2="64.77" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="88.9" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="78.74" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<junction x="27.94" y="116.84"/>
-<pinref part="LTC4364" gate="G$1" pin="VCC"/>
+<wire x1="0" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="52.07" y1="116.84" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
-<junction x="12.7" y="116.84"/>
-<wire x1="54.61" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="D"/>
 <pinref part="BAT1" gate="VCC" pin="VCC"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="58.42" x2="12.7" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="GND1" class="0">
-<segment>
-<wire x1="12.7" y1="46.99" x2="12.7" y2="44.45" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND2" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="50.8" x2="20.32" y2="44.45" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND3" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="50.8" x2="2.54" y2="44.45" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="52.07" y1="116.84" x2="54.61" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="88.9" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<junction x="27.94" y="116.84"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="52.07" y1="109.22" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
+<junction x="52.07" y="116.84"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5904,6 +5816,54 @@ by R. Vogg  15.March.2002</description>
 <wire x1="114.3" y1="81.28" x2="113.03" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <junction x="114.3" y="81.28"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="LTC4364" gate="G$1" pin="UV"/>
+<wire x1="36.83" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<junction x="27.94" y="78.74"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="LTC4364" gate="G$1" pin="OV"/>
+<wire x1="36.83" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
+<junction x="27.94" y="68.58"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="G"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="64.77" y1="109.22" x2="64.77" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="LTC4364" gate="G$1" pin="HGATE"/>
+<wire x1="64.77" y1="96.52" x2="64.77" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="LTC4364" gate="G$1" pin="VCC"/>
+<wire x1="52.07" y1="99.06" x2="52.07" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="M2" gate="G$1" pin="D"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="LTC4364" gate="G$1" pin="SENSE"/>
+<wire x1="95.25" y1="93.98" x2="95.25" y2="116.84" width="0.1524" layer="91"/>
+<junction x="95.25" y="116.84"/>
 </segment>
 </net>
 </nets>

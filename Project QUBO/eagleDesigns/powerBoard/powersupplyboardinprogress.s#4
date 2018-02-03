@@ -5685,7 +5685,7 @@ by R. Vogg  15.March.2002</description>
 <part name="LTC4364" library="linear" deviceset="LTC4364" device="MSOP">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="C1" library="resistor" deviceset="C-US" device="C0805">
+<part name="C1" library="resistor" deviceset="C-US" device="C0805" value="10nF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="R1" library="resistor" deviceset="R-US_" device="M0805" value="931K">
@@ -5731,9 +5731,10 @@ by R. Vogg  15.March.2002</description>
 <attribute name="SPICEGROUND" value=""/>
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="561K"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="931K"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="51K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5758,6 +5759,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="R7" gate="G$1" x="114.3" y="86.36" rot="R270"/>
 <instance part="R8" gate="G$1" x="114.3" y="76.2" rot="R270"/>
 <instance part="GND5" gate="1" x="114.3" y="41.91"/>
+<instance part="GND6" gate="1" x="27.94" y="44.45"/>
 </instances>
 <busses>
 </busses>
@@ -5776,6 +5778,11 @@ by R. Vogg  15.March.2002</description>
 <wire x1="114.3" y1="71.12" x2="114.3" y2="44.45" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="68.58" x2="27.94" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -5788,11 +5795,11 @@ by R. Vogg  15.March.2002</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="12.7" y="68.58"/>
-<pinref part="LTC4364" gate="G$1" pin="OV"/>
-<wire x1="12.7" y1="68.58" x2="36.83" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="68.58" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="LTC4364" gate="G$1" pin="OV"/>
+<wire x1="36.83" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -5837,6 +5844,8 @@ by R. Vogg  15.March.2002</description>
 <wire x1="105.41" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="93.98" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
+<junction x="114.3" y="93.98"/>
 </segment>
 </net>
 <net name="N$10" class="0">

@@ -6472,7 +6472,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <part name="LTC4364" library="linear" deviceset="LTC4364" device="MSOP">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="C1" library="resistor" deviceset="C-US" device="C0805" value="10nF">
+<part name="C1" library="resistor" deviceset="C-US" device="C0805" value="150nF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="M1" library="transistor-fet" deviceset="IRF7458PBF" device="">
@@ -6488,8 +6488,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="91K"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0805" value="5K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="173K"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="7K"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
@@ -6506,7 +6505,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <part name="LTC1" library="linear" deviceset="LTC4364" device="MSOP">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="C5" library="resistor" deviceset="C-US" device="C0805" value="10nF">
+<part name="C5" library="resistor" deviceset="C-US" device="C0805" value="150nF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="M3" library="transistor-fet" deviceset="IRF7458PBF" device="">
@@ -6540,7 +6539,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <part name="LTC2" library="linear" deviceset="LTC4364" device="MSOP">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="C9" library="resistor" deviceset="C-US" device="C0805" value="10nF">
+<part name="C9" library="resistor" deviceset="C-US" device="C0805" value="150nF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="M5" library="transistor-fet" deviceset="IRF7458PBF" device="">
@@ -6571,6 +6570,8 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="1N5333" device=""/>
 <part name="JP3" library="molex" deviceset="2_SUPERSABRE" device=""/>
+<part name="R25" library="resistor" deviceset="R-US_" device="R0603" value="172K"/>
+<part name="R28" library="resistor" deviceset="R-US_" device="R0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -6585,7 +6586,6 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <instance part="R7" gate="G$1" x="114.3" y="86.36" rot="R270"/>
 <instance part="R8" gate="G$1" x="114.3" y="76.2" rot="R270"/>
 <instance part="GND5" gate="1" x="114.3" y="41.91"/>
-<instance part="R1" gate="G$1" x="27.94" y="83.82" rot="R270"/>
 <instance part="R2" gate="G$1" x="27.94" y="73.66" rot="R270"/>
 <instance part="R3" gate="G$1" x="27.94" y="63.5" rot="R270"/>
 <instance part="GND1" gate="1" x="27.94" y="43.18"/>
@@ -6646,6 +6646,8 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <instance part="GND18" gate="1" x="43.18" y="190.5"/>
 <instance part="D3" gate="1" x="35.56" y="196.85" rot="R270"/>
 <instance part="JP3" gate="G$1" x="-17.78" y="209.55"/>
+<instance part="R25" gate="G$1" x="27.94" y="83.82" rot="R90"/>
+<instance part="R28" gate="G$1" x="20.32" y="158.75" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6820,9 +6822,9 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LTC4364" gate="G$1" pin="UV"/>
 <wire x1="36.83" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 <junction x="27.94" y="78.74"/>
 </segment>
 </net>
@@ -7035,7 +7037,6 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="0" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="116.84" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="D"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="52.07" y1="116.84" x2="54.61" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="88.9" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
 <junction x="27.94" y="116.84"/>
@@ -7043,6 +7044,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="52.07" y1="109.22" x2="52.07" y2="116.84" width="0.1524" layer="91"/>
 <junction x="52.07" y="116.84"/>
 <label x="0" y="116.84" size="1.778" layer="95"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="P$1"/>
