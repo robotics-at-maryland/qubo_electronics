@@ -4171,16 +4171,6 @@ type 0309, grid 2.5 mm</description>
 <pad name="P$1" x="-5.1" y="0" drill="0.85" shape="square"/>
 <pad name="P$2" x="5.1" y="0" drill="0.85" shape="square"/>
 </package>
-<package name="2827W">
-<smd name="P$1" x="-3.1242" y="0" dx="7.8232" dy="2.7432" layer="1" rot="R90"/>
-<smd name="P$2" x="3.1242" y="0" dx="7.8232" dy="2.7432" layer="1" rot="R90"/>
-<text x="-4.318" y="4.572" size="1.778" layer="25">&gt;NAME</text>
-<text x="-4.318" y="-5.969" size="1.778" layer="25">&gt;VALUE</text>
-<wire x1="-3.556" y1="3.937" x2="-3.556" y2="-3.937" width="0.1524" layer="21"/>
-<wire x1="-3.556" y1="-3.937" x2="3.683" y2="-3.937" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-3.937" x2="3.683" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="3.937" x2="-3.556" y2="3.937" width="0.1524" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="C-US">
@@ -6224,22 +6214,6 @@ type 0309, grid 2.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CSSH0.01OHM">
-<gates>
-<gate name="G$1" symbol="R-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2827W">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="transistor-fet">
@@ -6457,6 +6431,7 @@ by R. Vogg  15.March.2002</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="12K"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="10m"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="6.8nF"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="22uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -6464,7 +6439,6 @@ by R. Vogg  15.March.2002</description>
 <part name="JP1" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="172K"/>
 <part name="JP2" library="molex" deviceset="2_SUPERSABRE" device=""/>
-<part name="R6" library="resistor" deviceset="CSSH0.01OHM" device="" value="10m"/>
 </parts>
 <sheets>
 <sheet>
@@ -6484,6 +6458,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="GND1" gate="1" x="35.56" y="7.62"/>
 <instance part="R4" gate="G$1" x="72.39" y="66.04" rot="R270"/>
 <instance part="R5" gate="G$1" x="59.69" y="68.58" rot="R270"/>
+<instance part="R6" gate="G$1" x="107.95" y="81.28"/>
 <instance part="C3" gate="G$1" x="74.93" y="60.96" rot="R90"/>
 <instance part="C4" gate="G$1" x="143.51" y="55.88"/>
 <instance part="GND2" gate="1" x="80.01" y="57.15"/>
@@ -6491,7 +6466,6 @@ by R. Vogg  15.March.2002</description>
 <instance part="JP1" gate="G$1" x="-8.89" y="78.74"/>
 <instance part="R1" gate="G$1" x="35.56" y="48.26" rot="R90"/>
 <instance part="JP2" gate="G$1" x="168.91" y="55.88"/>
-<instance part="R6" gate="G$1" x="107.95" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -6607,9 +6581,9 @@ by R. Vogg  15.March.2002</description>
 <net name="N$11" class="0">
 <segment>
 <pinref part="M2" gate="G$1" pin="D"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="LTC4364" gate="G$1" pin="SENSE"/>
 <wire x1="102.87" y1="58.42" x2="102.87" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 <junction x="102.87" y="81.28"/>
 </segment>
 </net>
@@ -6623,10 +6597,10 @@ by R. Vogg  15.March.2002</description>
 <wire x1="121.92" y1="58.42" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="58.42" x2="143.51" y2="58.42" width="0.1524" layer="91"/>
 <junction x="121.92" y="58.42"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="143.51" y1="58.42" x2="148.59" y2="58.42" width="0.1524" layer="91"/>
 <junction x="143.51" y="58.42"/>
-<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="160.02" y1="58.42" x2="154.94" y2="58.42" width="0.1524" layer="91"/>

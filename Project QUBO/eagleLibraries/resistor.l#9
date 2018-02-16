@@ -11113,6 +11113,14 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <text x="-3.2" y="-2.2" size="1.27" layer="21">+</text>
 <text x="2.2" y="-2.2" size="1.27" layer="21">-</text>
 </package>
+<package name="RC55">
+<wire x1="-3.6" y1="1.25" x2="3.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3.6" y1="1.25" x2="3.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="3.6" y1="-1.25" x2="-3.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-3.6" y1="-1.25" x2="-3.6" y2="1.25" width="0.127" layer="21"/>
+<pad name="P$1" x="-5.1" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="5.1" y="0" drill="0.8" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -14866,6 +14874,24 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CKR_D10" package="CKR_D10">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RC55/H8" package="RC55">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
