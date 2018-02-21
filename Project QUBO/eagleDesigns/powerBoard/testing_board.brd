@@ -128,7 +128,8 @@
 <wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <text x="36.19" y="60.381" size="0.5" layer="121" font="vector">Designed by Nathaniel Renegar</text>
-<text x="36.195" y="58.801" size="1" layer="121">R@M 2018</text>
+<text x="36.195" y="57.658" size="1" layer="121" font="vector">R@M 2018</text>
+<text x="36.195" y="59.182" size="0.5" layer="121" font="vector">Reviewed by Alex Jiao</text>
 </plain>
 <libraries>
 <library name="resistor">
