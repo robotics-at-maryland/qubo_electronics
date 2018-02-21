@@ -4176,6 +4176,10 @@ type 0309, grid 2.5 mm</description>
 <smd name="P$2" x="3.1242" y="0" dx="7.8232" dy="2.7432" layer="1" rot="R90"/>
 <text x="-4.318" y="4.572" size="1.778" layer="25">&gt;NAME</text>
 <text x="-4.318" y="-5.969" size="1.778" layer="25">&gt;VALUE</text>
+<wire x1="-3.556" y1="3.937" x2="-3.556" y2="-3.937" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-3.937" x2="3.683" y2="-3.937" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="-3.937" x2="3.683" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="3.683" y1="3.937" x2="-3.556" y2="3.937" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6460,7 +6464,7 @@ by R. Vogg  15.March.2002</description>
 <part name="JP1" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="172K"/>
 <part name="JP2" library="molex" deviceset="2_SUPERSABRE" device=""/>
-<part name="R6" library="resistor" deviceset="CSSH0.01OHM" device=""/>
+<part name="R6" library="resistor" deviceset="CSSH0.01OHM" device="" value="10m"/>
 </parts>
 <sheets>
 <sheet>
@@ -6487,7 +6491,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="JP1" gate="G$1" x="-8.89" y="78.74"/>
 <instance part="R1" gate="G$1" x="35.56" y="48.26" rot="R90"/>
 <instance part="JP2" gate="G$1" x="168.91" y="55.88"/>
-<instance part="R6" gate="G$1" x="108.204" y="81.28"/>
+<instance part="R6" gate="G$1" x="107.95" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -6604,16 +6608,15 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="M2" gate="G$1" pin="D"/>
 <pinref part="LTC4364" gate="G$1" pin="SENSE"/>
-<wire x1="102.87" y1="58.42" x2="103.124" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="58.42" x2="102.87" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<junction x="103.124" y="81.28"/>
-<wire x1="103.124" y1="81.28" x2="102.87" y2="81.28" width="0.1524" layer="91"/>
+<junction x="102.87" y="81.28"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="LTC4364" gate="G$1" pin="OUT"/>
-<wire x1="113.03" y1="58.42" x2="113.284" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="58.42" x2="113.03" y2="81.28" width="0.1524" layer="91"/>
 <junction x="113.03" y="58.42"/>
 <wire x1="113.03" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>

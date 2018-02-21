@@ -6456,7 +6456,7 @@ by R. Vogg  15.March.2002</description>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="10"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="12K"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="6.8nF"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="22uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
