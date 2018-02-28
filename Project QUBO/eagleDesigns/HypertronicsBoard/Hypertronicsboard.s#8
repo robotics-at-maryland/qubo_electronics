@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -57,6 +57,52 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
+<library name="littelfuse">
+<packages>
+<package name="1.25&quot;_FUSECLIPS">
+<description>BOWED LEADS!!!! 1.25" long fuse clips.</description>
+<pad name="P$1" x="-17.1069" y="0" drill="2.54"/>
+<pad name="P$2" x="-9.4869" y="0" drill="2.54"/>
+<pad name="P$3" x="9.4869" y="0" drill="2.54"/>
+<pad name="P$4" x="17.1069" y="0" drill="2.54"/>
+<wire x1="-20.32" y1="4.064" x2="20.32" y2="4.064" width="0.127" layer="21"/>
+<wire x1="20.32" y1="4.064" x2="20.32" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-4.064" x2="-20.32" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="-4.064" x2="-20.32" y2="4.064" width="0.127" layer="21"/>
+<text x="-20.32" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-20.32" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSECLIPS">
+<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="P$1" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOWED-1.25&quot;-FUSECLIPS" uservalue="yes">
+<description>Littelfuse 1.25" fuse clips with bowed leads&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSECLIPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1.25&quot;_FUSECLIPS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -67,12 +113,20 @@
 </class>
 </classes>
 <parts>
+<part name="FUSE1" library="littelfuse" deviceset="BOWED-1.25&quot;-FUSECLIPS" device="" value="4A"/>
+<part name="FUSE2" library="littelfuse" deviceset="BOWED-1.25&quot;-FUSECLIPS" device="" value="4A"/>
+<part name="FUSE3" library="littelfuse" deviceset="BOWED-1.25&quot;-FUSECLIPS" device="" value="4A"/>
+<part name="FUSE4" library="littelfuse" deviceset="BOWED-1.25&quot;-FUSECLIPS" device="" value="4A"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
+<instance part="FUSE1" gate="G$1" x="2.54" y="71.12"/>
+<instance part="FUSE2" gate="G$1" x="33.02" y="71.12"/>
+<instance part="FUSE3" gate="G$1" x="2.54" y="50.8"/>
+<instance part="FUSE4" gate="G$1" x="33.02" y="50.8"/>
 </instances>
 <busses>
 </busses>
