@@ -1644,11 +1644,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="U$5" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="U$6" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="U$7" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$8" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$9" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="U$10" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$11" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$12" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="PWM" library="NXP" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="JP1" library="molex" deviceset="2_SUPERSABRE" device="" value="PWR"/>
 <part name="LIL_PWR" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
@@ -1671,11 +1667,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="U$5" gate="G$1" x="-40.64" y="17.78" rot="R270"/>
 <instance part="U$6" gate="G$1" x="-40.64" y="2.54" rot="R270"/>
 <instance part="U$7" gate="G$1" x="-40.64" y="-15.24" rot="R270"/>
-<instance part="U$8" gate="G$1" x="-40.64" y="-30.48" rot="R270"/>
-<instance part="U$9" gate="G$1" x="15.494" y="-30.226" rot="R270"/>
 <instance part="U$10" gate="G$1" x="15.24" y="17.78" rot="R270"/>
-<instance part="U$11" gate="G$1" x="15.24" y="2.54" rot="R270"/>
-<instance part="U$12" gate="G$1" x="15.24" y="-15.24" rot="R270"/>
 <instance part="PWM" gate="G$1" x="58.42" y="38.1"/>
 <instance part="JP1" gate="G$1" x="35.56" y="78.74"/>
 <instance part="LIL_PWR" gate="-1" x="0" y="78.74"/>
@@ -1729,36 +1721,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="-106.68" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
-<label x="73.66" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
-<label x="73.66" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
-<label x="76.2" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
 <wire x1="-78.74" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
 <label x="-76.2" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="P$2"/>
-<wire x1="27.94" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="22.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
@@ -1774,6 +1739,13 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="U$2" gate="G$1" pin="3"/>
 <wire x1="-78.74" y1="-30.48" x2="-71.12" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-76.2" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$2"/>
+<wire x1="27.94" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<label x="22.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="1"/>
@@ -1839,6 +1811,26 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="PWM" gate="G$1" pin="EXTCLK"/>
 <wire x1="81.28" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <label x="83.82" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<label x="73.66" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
+<label x="73.66" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
+<label x="76.2" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH1" class="0">
