@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -11118,14 +11119,26 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <wire x1="3.6" y1="1.25" x2="3.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="3.6" y1="-1.25" x2="-3.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-3.6" y1="-1.25" x2="-3.6" y2="1.25" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.1" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="5.1" y="0" drill="0.8" shape="square"/>
+<pad name="P$1" x="-5.1" y="0" drill="0.85" shape="square"/>
+<pad name="P$2" x="5.1" y="0" drill="0.85" shape="square"/>
 </package>
 <package name="534-5004">
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="1.016"/>
 <text x="-2.54" y="1.27" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="2827W">
+<wire x1="0" y1="0" x2="0" y2="-7.82" width="0.1524" layer="1"/>
+<wire x1="0" y1="-7.82" x2="0" y2="-7.8232" width="0.1524" layer="1"/>
+<wire x1="-2.75" y1="0" x2="-2.75" y2="-7.82" width="0.1524" layer="1"/>
+<wire x1="-2.75" y1="-7.82" x2="-2.75" y2="-7.8232" width="0.1524" layer="1"/>
+<wire x1="0" y1="0" x2="-2.75" y2="0" width="0.1524" layer="1"/>
+<wire x1="0" y1="-7.82" x2="-2.75" y2="-7.82" width="0.1524" layer="1"/>
+<wire x1="3.51" y1="-7.82" x2="6.26" y2="-7.8232" width="0.1524" layer="1"/>
+<wire x1="3.51" y1="0" x2="6.26" y2="0" width="0.1524" layer="1"/>
+<wire x1="3.51" y1="0" x2="3.51" y2="-7.82" width="0.1524" layer="1"/>
+<wire x1="6.26" y1="0" x2="6.26" y2="-7.82" width="0.1524" layer="1"/>
 </package>
 </packages>
 <symbols>
