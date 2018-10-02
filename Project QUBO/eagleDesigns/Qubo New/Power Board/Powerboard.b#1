@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1540,12 +1540,12 @@ The spacing is correct for the TE  KUHP-series relays.</description>
 <wire x1="14.478" y1="12.7" x2="14.478" y2="-12.7" width="0.127" layer="51"/>
 <wire x1="14.478" y1="-12.7" x2="-14.478" y2="-12.7" width="0.127" layer="51"/>
 <wire x1="-14.478" y1="-12.7" x2="-14.478" y2="12.7" width="0.127" layer="51"/>
-<pad name="P$1" x="-10.16" y="10.16" drill="2.8448"/>
-<pad name="P$2" x="-10.16" y="0" drill="2.8448"/>
-<pad name="P$3" x="-10.16" y="-10.16" drill="2.8448"/>
-<pad name="P$4" x="10.16" y="-10.16" drill="2.8448" rot="R180"/>
-<pad name="P$5" x="10.16" y="-2.54" drill="2.8448" rot="R180"/>
-<pad name="P$6" x="10.16" y="2.54" drill="2.8448" rot="R180"/>
+<pad name="+VOUT" x="-10.16" y="10.16" drill="2.8448"/>
+<pad name="OTPTTRIM" x="-10.16" y="0" drill="2.8448"/>
+<pad name="-VOUT" x="-10.16" y="-10.16" drill="2.8448"/>
+<pad name="ON/OFFCNTRL" x="10.16" y="-10.16" drill="2.8448" rot="R180"/>
+<pad name="-VIN" x="10.16" y="-2.54" drill="2.8448" rot="R180"/>
+<pad name="+VIN" x="10.16" y="2.54" drill="2.8448" rot="R180"/>
 <text x="-13.97" y="13.97" size="1.27" layer="25">&gt;Name</text>
 <text x="-13.97" y="-15.24" size="1.27" layer="27">&gt;Value</text>
 </package>
@@ -1842,7 +1842,6 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="8"/>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="3"/>
-<contactref element="U1" pad="P$6"/>
 <contactref element="10V_OUT" pad="P$1"/>
 <contactref element="U2" pad="2"/>
 <contactref element="C11" pad="2"/>
@@ -1917,8 +1916,6 @@ design rules under a new name.</description>
 <via x="71.882" y="43.942" extent="1-16" drill="0.4"/>
 <wire x1="69.215" y1="41.662" x2="71.495" y2="43.942" width="0.508" layer="1"/>
 <wire x1="71.495" y1="43.942" x2="71.882" y2="43.942" width="0.508" layer="1"/>
-<wire x1="46.394" y1="69.176" x2="43.688" y2="71.882" width="0.508" layer="1"/>
-<wire x1="43.688" y1="71.882" x2="40.64" y2="71.882" width="0.508" layer="1"/>
 <wire x1="50.415" y1="55.697" x2="50.415" y2="55.047" width="0.4064" layer="1"/>
 <wire x1="50.415" y1="55.697" x2="50.74" y2="55.372" width="0.4064" layer="1"/>
 <wire x1="50.74" y1="55.372" x2="51.562" y2="55.372" width="0.4064" layer="1"/>
@@ -1927,6 +1924,7 @@ design rules under a new name.</description>
 <via x="87.63" y="71.882" extent="1-16" drill="0.4"/>
 <contactref element="C5" pad="-"/>
 <contactref element="C6" pad="-"/>
+<contactref element="U1" pad="-VIN"/>
 </signal>
 <signal name="N$1">
 <contactref element="20A_FUSE" pad="P$3"/>
@@ -2066,9 +2064,7 @@ design rules under a new name.</description>
 <wire x1="80.772" y1="39.37" x2="80.518" y2="39.116" width="2.54" layer="1"/>
 <wire x1="80.772" y1="39.37" x2="83.439" y2="42.037" width="2.54" layer="1"/>
 <wire x1="83.439" y1="42.037" x2="87.9475" y2="42.037" width="2.54" layer="1"/>
-<wire x1="53.588" y1="67.691" x2="57.017" y2="71.12" width="2.54" layer="1"/>
-<wire x1="57.017" y1="71.12" x2="71.12" y2="71.12" width="2.54" layer="1"/>
-<wire x1="53.373" y1="67.476" x2="53.588" y2="67.691" width="2.54" layer="1"/>
+<wire x1="71.12" y1="71.12" x2="57.017" y2="71.12" width="2.54" layer="1"/>
 <wire x1="75.057" y1="62.357" x2="70.993" y2="62.357" width="0.508" layer="1"/>
 <wire x1="70.993" y1="62.357" x2="64.516" y2="55.626" width="0.508" layer="1"/>
 <wire x1="64.516" y1="55.626" x2="64.516" y2="52.07" width="0.508" layer="1"/>
@@ -2076,15 +2072,22 @@ design rules under a new name.</description>
 <contactref element="C5" pad="+"/>
 <wire x1="62.698" y1="26.162" x2="62.738" y2="26.162" width="0.1524" layer="1"/>
 <wire x1="73.406" y1="32.512" x2="73.406" y2="32.766" width="0.3048" layer="1"/>
-<wire x1="73.406" y1="32.766" x2="69.088" y2="37.084" width="0.3048" layer="1"/>
 <wire x1="62.698" y1="26.162" x2="67.056" y2="26.162" width="0.6096" layer="1"/>
 <wire x1="67.056" y1="26.162" x2="73.406" y2="32.512" width="0.6096" layer="1"/>
-<wire x1="53.373" y1="67.476" x2="53.588" y2="66.421" width="0" layer="19" extent="1-1"/>
-<wire x1="60.198" y1="52.236" x2="60.706" y2="52.07" width="0" layer="19" extent="1-1"/>
+<polygon width="0.4064" layer="1" thermals="no">
+<vertex x="50.8" y="66.04"/>
+<vertex x="54.102" y="66.04"/>
+<vertex x="54.102" y="68.326"/>
+<vertex x="54.864" y="69.088"/>
+<vertex x="58.42" y="69.088"/>
+<vertex x="58.42" y="72.898"/>
+<vertex x="50.8" y="72.898"/>
+</polygon>
+<wire x1="60.706" y1="52.07" x2="60.198" y2="52.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UEI_EN">
 <contactref element="IC1" pad="4"/>
-<contactref element="U1" pad="P$4"/>
+<contactref element="U1" pad="ON/OFFCNTRL"/>
 <wire x1="40.64" y1="59.182" x2="40.64" y2="61.722" width="0.4064" layer="1"/>
 <wire x1="40.64" y1="61.722" x2="56.388" y2="61.468" width="0.4064" layer="1"/>
 <via x="56.388" y="61.468" extent="1-16" drill="0.4"/>
@@ -2107,7 +2110,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="UEI_GND">
 <contactref element="DVL_OUT" pad="P$1"/>
-<contactref element="U1" pad="P$3"/>
+<contactref element="U1" pad="-VOUT"/>
 <polygon width="0.4064" layer="1" thermals="no">
 <vertex x="25.146" y="55.372"/>
 <vertex x="16.764" y="55.372"/>
@@ -2121,7 +2124,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PROCESSED_UEI_OUTPUT">
 <contactref element="DVL_OUT" pad="P$2"/>
-<contactref element="U1" pad="P$1"/>
+<contactref element="U1" pad="+VOUT"/>
 <polygon width="0.4064" layer="1" thermals="no" rank="2">
 <vertex x="26.162" y="83.82"/>
 <vertex x="26.162" y="76.962"/>
@@ -2159,7 +2162,7 @@ design rules under a new name.</description>
 <contactref element="10V_REGULATOR" pad="SENSE"/>
 <contactref element="10V_CURRENT_SENSOR" pad="P$1"/>
 <contactref element="10V_CURRENT_SENSOR" pad="P$2"/>
-<wire x1="106.9975" y1="42.037" x2="114.046" y2="34.9885" width="0.4064" layer="1"/>
+<wire x1="114.046" y1="34.9885" x2="106.9975" y2="42.037" width="0.4064" layer="1"/>
 <polygon width="0.4064" layer="1" thermals="no">
 <vertex x="115.062" y="52.578"/>
 <vertex x="123.19" y="52.578"/>
@@ -2180,8 +2183,8 @@ design rules under a new name.</description>
 <vertex x="114.046" y="52.578"/>
 </polygon>
 <contactref element="C6" pad="+"/>
-<wire x1="113.03" y1="26.376" x2="113.03" y2="36.83" width="0.6096" layer="1"/>
-<wire x1="113.03" y1="36.83" x2="114.3" y2="38.1" width="0.6096" layer="1"/>
+<wire x1="113.03" y1="26.376" x2="113.03" y2="33.9725" width="0.508" layer="1"/>
+<wire x1="113.03" y1="33.9725" x2="114.046" y2="34.9885" width="0.508" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="ADJUST" pad="1"/>
@@ -2220,18 +2223,16 @@ design rules under a new name.</description>
 <wire x1="125.73" y1="36.068" x2="125.73" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="125.73" y1="64.77" x2="121.666" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="121.666" y1="64.77" x2="121.158" y2="65.278" width="0.4064" layer="16"/>
-<wire x1="71.12" y1="57.492" x2="71.208" y2="57.404" width="0.508" layer="1"/>
-<wire x1="71.208" y1="57.404" x2="75.438" y2="57.404" width="0.508" layer="1"/>
-<via x="75.438" y="57.404" extent="1-16" drill="0.4"/>
-<wire x1="75.438" y1="57.404" x2="82.804" y2="57.404" width="0.508" layer="16"/>
-<wire x1="101.6" y1="55.372" x2="111.76" y2="65.532" width="0.508" layer="16"/>
-<wire x1="111.76" y1="65.532" x2="120.904" y2="65.532" width="0.508" layer="16"/>
 <wire x1="120.904" y1="65.532" x2="121.158" y2="65.278" width="0.508" layer="16"/>
-<wire x1="82.804" y1="57.404" x2="84.836" y2="55.372" width="0.508" layer="16"/>
-<via x="84.836" y="55.372" extent="1-16" drill="0.4"/>
-<wire x1="84.836" y1="55.372" x2="99.06" y2="55.372" width="0.508" layer="1"/>
-<via x="99.06" y="55.372" extent="1-16" drill="0.4"/>
-<wire x1="99.06" y1="55.372" x2="101.6" y2="55.372" width="0.508" layer="16"/>
+<wire x1="120.904" y1="65.532" x2="111.76" y2="65.532" width="1.524" layer="16"/>
+<wire x1="111.76" y1="65.532" x2="101.854" y2="55.626" width="1.524" layer="16"/>
+<wire x1="101.854" y1="55.626" x2="88.9" y2="55.626" width="1.524" layer="16"/>
+<wire x1="88.9" y1="55.626" x2="84.582" y2="55.626" width="1.524" layer="16"/>
+<wire x1="84.582" y1="55.626" x2="77.47" y2="55.626" width="1.524" layer="16"/>
+<wire x1="77.47" y1="55.626" x2="75.692" y2="57.404" width="1.524" layer="16"/>
+<via x="75.692" y="57.404" extent="1-16" drill="0.35"/>
+<wire x1="75.692" y1="57.404" x2="75.604" y2="57.492" width="1.524" layer="1"/>
+<wire x1="75.604" y1="57.492" x2="71.12" y2="57.492" width="1.524" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="MAGREAD" pad="P$2"/>
@@ -2288,21 +2289,6 @@ design rules under a new name.</description>
 <wire x1="57.912" y1="53.086" x2="57.912" y2="54.356" width="0.4064" layer="1"/>
 <wire x1="57.912" y1="54.356" x2="57.871" y2="54.397" width="0.4064" layer="1"/>
 <wire x1="57.871" y1="54.397" x2="56.265" y2="54.397" width="0.4064" layer="1"/>
-</signal>
-<signal name="UEI_INPUT">
-<contactref element="UWE_CURRENT_SENSOR" pad="P$3"/>
-<contactref element="UWE_CURRENT_SENSOR" pad="P$4"/>
-<contactref element="U1" pad="P$5"/>
-<polygon width="0.4064" layer="1">
-<vertex x="56.388" y="65.786"/>
-<vertex x="56.388" y="62.992"/>
-<vertex x="55.88" y="62.484"/>
-<vertex x="35.56" y="62.484"/>
-<vertex x="35.56" y="69.85"/>
-<vertex x="43.688" y="69.85"/>
-<vertex x="46.482" y="67.056"/>
-<vertex x="55.118" y="67.056"/>
-</polygon>
 </signal>
 <signal name="INPUT_CURRENT">
 <contactref element="INPUT_CURRENT_SENSOR" pad="P$7"/>
@@ -2469,16 +2455,34 @@ design rules under a new name.</description>
 <vertex x="74.168" y="86.36"/>
 </polygon>
 </signal>
+<signal name="N$6">
+<contactref element="U1" pad="+VIN"/>
+<contactref element="UWE_CURRENT_SENSOR" pad="P$3"/>
+<contactref element="UWE_CURRENT_SENSOR" pad="P$4"/>
+<wire x1="53.588" y1="63.881" x2="53.588" y2="65.151" width="0.4064" layer="1"/>
+<polygon width="0.4064" layer="1" thermals="no">
+<vertex x="38.1" y="74.168"/>
+<vertex x="38.1" y="69.596"/>
+<vertex x="45.212" y="69.596"/>
+<vertex x="45.466" y="69.342"/>
+<vertex x="45.466" y="63.5"/>
+<vertex x="45.72" y="63.246"/>
+<vertex x="53.594" y="63.246"/>
+<vertex x="53.594" y="65.278"/>
+<vertex x="48.006" y="65.278"/>
+<vertex x="48.006" y="74.168"/>
+</polygon>
+</signal>
 </signals>
 <errors>
-<approved hash="4,1,11ab083fa075b828"/>
 <approved hash="4,1,fd389040312f279e"/>
-<approved hash="4,16,11ab083fa075b828"/>
 <approved hash="4,16,fd389040312f279e"/>
 <approved hash="3,1,dd96a9e6a825dc55"/>
-<approved hash="21,19,78160414046a0796"/>
 <approved hash="21,19,f8c304c1fac1f83c"/>
 <approved hash="3,1,ea837ef381c415b4"/>
+<approved hash="21,19,78160414046a0796"/>
+<approved hash="4,1,11ab083fa075b828"/>
+<approved hash="4,16,11ab083fa075b828"/>
 </errors>
 </board>
 </drawing>
