@@ -12012,6 +12012,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <segment>
 <pinref part="U1" gate="U1" pin="-VIN"/>
 <wire x1="-137.16" y1="2.54" x2="-149.86" y2="2.54" width="0.1524" layer="91"/>
+<label x="-149.86" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

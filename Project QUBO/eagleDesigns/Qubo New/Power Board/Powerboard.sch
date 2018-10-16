@@ -11785,14 +11785,14 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <part name="MAGREAD" library="magReed" deviceset="HE151TR-ND" device=""/>
 <part name="U$1" library="TE" deviceset="KUHP-5XX1-XX" device=""/>
 <part name="BATTERY_LINE_OUT" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
-<part name="U$2" library="texas" deviceset="ADS7828" device=""/>
+<part name="A-2-D" library="texas" deviceset="ADS7828" device=""/>
 <part name="UWE_CURRENT_SENSOR" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C3" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C4" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
 <part name="I2C" library="molex" deviceset="KK254_VERT_2PIN" device="&quot;&quot;"/>
 <part name="VDIV3" library="resistor" deviceset="R-US_" device="R0805" value="90kO"/>
 <part name="VDIV4" library="resistor" deviceset="R-US_" device="R0805" value="10kO"/>
-<part name="IC1" library="texas" deviceset="PCF8574" device="T"/>
+<part name="IO-EXPANDER" library="texas" deviceset="PCF8574" device="T"/>
 <part name="5V_CURRENT_SENSOR" library="allegro" deviceset="ACS713" device="SOIC"/>
 <part name="C9" library="resistor" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="C10" library="resistor" deviceset="C-US" device="C0805" value="47n"/>
@@ -11826,14 +11826,14 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <instance part="MAGREAD" gate="G$1" x="81.28" y="-111.76"/>
 <instance part="U$1" gate="G$1" x="119.38" y="-127"/>
 <instance part="BATTERY_LINE_OUT" gate="U1" x="139.7" y="-7.62"/>
-<instance part="U$2" gate="G$1" x="71.12" y="30.48"/>
+<instance part="A-2-D" gate="G$1" x="71.12" y="30.48"/>
 <instance part="UWE_CURRENT_SENSOR" gate="G$1" x="-124.46" y="25.4"/>
 <instance part="C3" gate="G$1" x="-96.52" y="33.02" rot="R270"/>
 <instance part="C4" gate="G$1" x="-96.52" y="22.86" rot="R270"/>
 <instance part="I2C" gate="U1" x="139.7" y="68.58"/>
 <instance part="VDIV3" gate="G$1" x="53.34" y="-48.26"/>
 <instance part="VDIV4" gate="G$1" x="71.12" y="-48.26"/>
-<instance part="IC1" gate="G$1" x="-5.08" y="33.02"/>
+<instance part="IO-EXPANDER" gate="G$1" x="-5.08" y="33.02"/>
 <instance part="5V_CURRENT_SENSOR" gate="G$1" x="-27.94" y="-45.72"/>
 <instance part="C9" gate="G$1" x="0" y="-38.1" rot="R270"/>
 <instance part="C10" gate="G$1" x="0" y="-48.26" rot="R270"/>
@@ -11945,15 +11945,15 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="-88.9" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="A0"/>
+<pinref part="A-2-D" gate="G$1" pin="A0"/>
 <wire x1="83.82" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="27.94" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="A1"/>
+<pinref part="A-2-D" gate="G$1" pin="A1"/>
 <wire x1="88.9" y1="25.4" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="22.86" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <junction x="88.9" y="25.4"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="A-2-D" gate="G$1" pin="GND"/>
 <wire x1="83.82" y1="22.86" x2="88.9" y2="22.86" width="0.1524" layer="91"/>
 <junction x="88.9" y="22.86"/>
 <label x="86.36" y="17.78" size="1.778" layer="95" rot="R270"/>
@@ -11982,15 +11982,15 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="121.92" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VSS"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="VSS"/>
 <wire x1="7.62" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
 <label x="10.16" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="A1"/>
 <wire x1="-15.24" y1="25.4" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="25.4" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A2"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="A2"/>
 <wire x1="-20.32" y1="22.86" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-20.32" y="22.86"/>
@@ -12042,17 +12042,17 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="-109.22" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="REF"/>
+<pinref part="A-2-D" gate="G$1" pin="REF"/>
 <wire x1="58.42" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <label x="40.64" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VDD"/>
+<pinref part="A-2-D" gate="G$1" pin="VDD"/>
 <wire x1="83.82" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 <label x="86.36" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="VDD"/>
 <label x="10.16" y="45.72" size="1.778" layer="95"/>
 <wire x1="7.62" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 </segment>
@@ -12067,7 +12067,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="121.92" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="A0"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="A0"/>
 <wire x1="-15.24" y1="27.94" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="-22.86" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -12083,7 +12083,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <segment>
 <pinref part="INPUT_CURRENT_SENSOR" gate="G$1" pin="IP-"/>
 <wire x1="-137.16" y1="58.42" x2="-149.86" y2="58.42" width="0.1524" layer="91"/>
-<label x="-149.86" y="58.42" size="1.778" layer="95"/>
+<label x="-160.02" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="VDIV1" gate="G$1" pin="1"/>
@@ -12104,7 +12104,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <segment>
 <pinref part="UWE_CURRENT_SENSOR" gate="G$1" pin="IP+"/>
 <wire x1="-144.78" y1="33.02" x2="-137.16" y2="33.02" width="0.1524" layer="91"/>
-<label x="-149.86" y="33.02" size="1.778" layer="95"/>
+<label x="-157.48" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="+V_IN"/>
@@ -12114,7 +12114,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </net>
 <net name="UEI_EN" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="P0"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="P0"/>
 <wire x1="7.62" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
 <label x="10.16" y="40.64" size="1.778" layer="95"/>
 </segment>
@@ -12159,7 +12159,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="-149.86" y="96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH1"/>
+<pinref part="A-2-D" gate="G$1" pin="CH1"/>
 <wire x1="58.42" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 <label x="40.64" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -12171,7 +12171,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="55.88" y="-73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="P2"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="P2"/>
 <wire x1="7.62" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
 <label x="10.16" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -12222,12 +12222,12 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <segment>
 <pinref part="MAGREAD" gate="G$1" pin="P$1"/>
 <wire x1="68.58" y1="-111.76" x2="55.88" y2="-111.76" width="0.1524" layer="91"/>
-<label x="55.88" y="-111.76" size="1.778" layer="95"/>
+<label x="38.1" y="-111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="VDIV3" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="-48.26" x2="38.1" y2="-48.26" width="0.1524" layer="91"/>
-<label x="38.1" y="-48.26" size="1.778" layer="95"/>
+<wire x1="48.26" y1="-48.26" x2="35.56" y2="-48.26" width="0.1524" layer="91"/>
+<label x="22.86" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -12265,7 +12265,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="-76.2" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH2"/>
+<pinref part="A-2-D" gate="G$1" pin="CH2"/>
 <wire x1="58.42" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <label x="40.64" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -12277,7 +12277,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="-76.2" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH0"/>
+<pinref part="A-2-D" gate="G$1" pin="CH0"/>
 <wire x1="58.42" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
 <label x="40.64" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -12290,14 +12290,14 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="170.18" y="-78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH3"/>
+<pinref part="A-2-D" gate="G$1" pin="CH3"/>
 <wire x1="58.42" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 <label x="40.64" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="SDA"/>
+<pinref part="A-2-D" gate="G$1" pin="SDA"/>
 <wire x1="83.82" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 <label x="86.36" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -12307,14 +12307,14 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="121.92" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SDA"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="SDA"/>
 <wire x1="-15.24" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
 <label x="-22.86" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="SCL"/>
+<pinref part="A-2-D" gate="G$1" pin="SCL"/>
 <wire x1="83.82" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <label x="86.36" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -12324,7 +12324,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="121.92" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SCL"/>
+<pinref part="IO-EXPANDER" gate="G$1" pin="SCL"/>
 <wire x1="-15.24" y1="33.02" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
 <label x="-22.86" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -12340,7 +12340,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="60.96" y="-40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH4"/>
+<pinref part="A-2-D" gate="G$1" pin="CH4"/>
 <wire x1="58.42" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
 <label x="40.64" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -12359,7 +12359,7 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="17.78" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="CH5"/>
+<pinref part="A-2-D" gate="G$1" pin="CH5"/>
 <wire x1="58.42" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
 <label x="40.64" y="22.86" size="1.778" layer="95"/>
 </segment>

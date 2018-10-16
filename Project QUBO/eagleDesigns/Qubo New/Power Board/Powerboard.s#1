@@ -12345,13 +12345,6 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 <label x="40.64" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5V_EN" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="P1"/>
-<wire x1="7.62" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
-<label x="10.16" y="38.1" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="5V_CURRENT_SENSOR" gate="G$1" pin="FILTER"/>
@@ -12406,6 +12399,19 @@ Part: Keystone Electronics 0.25"x0.032" PC quick-fit terminals (Part No. 3528).&
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,7.62,17.78,IC1,VSS,GND,,,"/>
+<approved hash="104,1,7.62,45.72,IC1,VDD,5V,,,"/>
+<approved hash="104,1,-101.6,2.54,U1,+VOUT,PROCESSED_UEI_OUTPUT,,,"/>
+<approved hash="104,1,-101.6,-12.7,U1,-VOUT,UEI_GND,,,"/>
+<approved hash="104,1,-137.16,2.54,U1,-VIN,GND,,,"/>
+<approved hash="104,1,-137.16,-12.7,U1,+VIN,N$6,,,"/>
+<approved hash="104,1,-127,-53.34,U2,+V_IN,PROCESSED_INPUT,,,"/>
+<approved hash="104,1,-111.76,-53.34,U2,+V_OUT,N$4,,,"/>
+<approved hash="113,1,-154.94,74.8767,20A_FUSE,,,,,"/>
+<approved hash="113,1,46.99,-69.6753,C5,,,,,"/>
+<approved hash="113,1,115.395,-80.01,C6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
