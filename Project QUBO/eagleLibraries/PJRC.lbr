@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -91,7 +91,7 @@
 <pin name="A17" x="9" y="15" length="middle" rot="R270"/>
 <pin name="A16" x="12" y="15" length="middle" rot="R270"/>
 <pin name="RX5" x="15" y="15" length="middle" rot="R270"/>
-<pin name="A14" x="18" y="15" length="middle" rot="R270"/>
+<pin name="TX5" x="18" y="15" length="middle" rot="R270"/>
 <pin name="TX4/SCK1" x="21" y="15" length="middle" rot="R270"/>
 <pin name="RX4/CS1" x="24" y="15" length="middle" rot="R270"/>
 <pin name="A11" x="27" y="15" length="middle" rot="R270"/>
