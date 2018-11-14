@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -4400,78 +4400,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="4.9784" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.4798" y="4.3688" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="0.635" y="-3.2766" size="1.27" layer="25" ratio="6" rot="SR90">&gt;Name</text>
-</package>
-<package name="64LTQFP">
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="51"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="51"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="51"/>
-<smd name="AGND6" x="0" y="0" dx="7.57" dy="7.57" layer="1"/>
-<smd name="AGNDS3" x="-5.625" y="3.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="I.C./CH7" x="-5.625" y="3.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND2" x="-5.625" y="2.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD2" x="-5.625" y="2.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS2" x="-5.625" y="1.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC1" x="-5.625" y="1.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC_SENSE2" x="-5.625" y="0.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND1" x="-5.625" y="0.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD1" x="-5.625" y="-0.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS1" x="-5.625" y="-0.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DGND" x="-5.625" y="-1.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DVDD" x="-5.625" y="-1.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!WR" x="-5.625" y="-2.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!CS" x="-5.625" y="-2.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!RD" x="-5.625" y="-3.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DB15" x="-5.625" y="-3.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS5" x="5.625" y="3.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="CH0/I.C." x="5.625" y="3.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND4" x="5.625" y="2.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD4" x="5.625" y="2.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS6" x="5.625" y="1.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC4" x="5.625" y="1.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC_SENSE" x="5.625" y="0.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND5" x="5.625" y="0.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD5" x="5.625" y="-0.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS7" x="5.625" y="-0.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DGND2" x="5.625" y="-1.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DVDD2" x="5.625" y="-1.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="SHDN" x="5.625" y="-2.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="CONVST" x="5.625" y="-2.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!EOC" x="5.625" y="-3.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DB0/CR0" x="5.625" y="-3.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC2" x="-3.785" y="5.625" dx="0.27" dy="1.45" layer="1" rot="R180"/>
-<smd name="CH6/CH5/I.C." x="-3.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AVDD" x="-2.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGND" x="-2.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH5/CH4/CH3" x="-1.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGNDS" x="-1.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH4/CH3/CH2" x="-0.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="REFIO" x="-0.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="RDC" x="0.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH3/CH2/CH1" x="0.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGNDS4" x="1.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH2/CH1/CH0" x="1.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGND3" x="2.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AVDD3" x="2.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH1/CH0/I.C." x="3.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="RDC3" x="3.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB14" x="-3.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB13" x="-3.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB12" x="-2.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB11" x="-2.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB10" x="-1.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB9" x="-1.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB8" x="-0.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DGND3" x="-0.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DVDD3" x="0.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB7" x="0.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB6" x="1.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB5" x="1.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB4" x="2.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB3/CR3" x="2.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB2/CR2" x="3.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB1/CR1" x="3.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<circle x="-4" y="-4.1" radius="0.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -15264,6 +15192,7 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <pin name="AGNDS" x="30.48" y="22.86" length="middle" rot="R180"/>
 <pin name="AVDD" x="30.48" y="20.32" length="middle" rot="R180"/>
 <pin name="AGND" x="30.48" y="17.78" length="middle" rot="R180"/>
+<pin name="I.C." x="30.48" y="15.24" length="middle" rot="R180"/>
 <pin name="CH0" x="30.48" y="12.7" length="middle" rot="R180"/>
 <pin name="CH1" x="30.48" y="10.16" length="middle" rot="R180"/>
 <pin name="REFIO" x="30.48" y="7.62" length="middle" rot="R180"/>
@@ -15278,7 +15207,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <pin name="!RD" x="30.48" y="-15.24" length="middle" rot="R180"/>
 <pin name="DB15" x="30.48" y="-17.78" length="middle" rot="R180"/>
 <pin name="DB14" x="30.48" y="-20.32" length="middle" rot="R180"/>
-<pin name="RDC_SENSE" x="30.48" y="15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -34393,57 +34321,6 @@ Created on 14 June 2016</description>
 <connect gate="G$1" pin="VADJ" pad="8"/>
 <connect gate="G$1" pin="VL" pad="1"/>
 <connect gate="G$1" pin="VLO" pad="22"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX11049">
-<gates>
-<gate name="G$1" symbol="MAX11049" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="64LTQFP">
-<connects>
-<connect gate="G$1" pin="!CS" pad="!CS"/>
-<connect gate="G$1" pin="!EOC" pad="!EOC"/>
-<connect gate="G$1" pin="!RD" pad="!RD"/>
-<connect gate="G$1" pin="!WR" pad="!WR"/>
-<connect gate="G$1" pin="AGND" pad="AGND AGND1 AGND2 AGND3 AGND4 AGND5 AGND6"/>
-<connect gate="G$1" pin="AGNDS" pad="AGNDS AGNDS1 AGNDS2 AGNDS3 AGNDS4 AGNDS5 AGNDS6 AGNDS7"/>
-<connect gate="G$1" pin="AVDD" pad="AVDD AVDD1 AVDD2 AVDD3 AVDD4 AVDD5"/>
-<connect gate="G$1" pin="CH0" pad="CH0/I.C."/>
-<connect gate="G$1" pin="CH1" pad="CH1/CH0/I.C."/>
-<connect gate="G$1" pin="CH2" pad="CH2/CH1/CH0"/>
-<connect gate="G$1" pin="CH3" pad="CH3/CH2/CH1"/>
-<connect gate="G$1" pin="CH4" pad="CH4/CH3/CH2"/>
-<connect gate="G$1" pin="CH5" pad="CH5/CH4/CH3"/>
-<connect gate="G$1" pin="CH6" pad="CH6/CH5/I.C."/>
-<connect gate="G$1" pin="CH7" pad="I.C./CH7"/>
-<connect gate="G$1" pin="CONVST" pad="CONVST"/>
-<connect gate="G$1" pin="DB0/CR0" pad="DB0/CR0"/>
-<connect gate="G$1" pin="DB1/CR1" pad="DB1/CR1"/>
-<connect gate="G$1" pin="DB10" pad="DB10"/>
-<connect gate="G$1" pin="DB11" pad="DB11"/>
-<connect gate="G$1" pin="DB12" pad="DB12"/>
-<connect gate="G$1" pin="DB13" pad="DB13"/>
-<connect gate="G$1" pin="DB14" pad="DB14"/>
-<connect gate="G$1" pin="DB15" pad="DB15"/>
-<connect gate="G$1" pin="DB2/CR2" pad="DB2/CR2"/>
-<connect gate="G$1" pin="DB3/CR3" pad="DB3/CR3"/>
-<connect gate="G$1" pin="DB4" pad="DB4"/>
-<connect gate="G$1" pin="DB5" pad="DB5"/>
-<connect gate="G$1" pin="DB6" pad="DB6"/>
-<connect gate="G$1" pin="DB7" pad="DB7"/>
-<connect gate="G$1" pin="DB8" pad="DB8"/>
-<connect gate="G$1" pin="DB9" pad="DB9"/>
-<connect gate="G$1" pin="DGND" pad="DGND DGND2 DGND3"/>
-<connect gate="G$1" pin="DVDD" pad="DVDD DVDD2 DVDD3"/>
-<connect gate="G$1" pin="RDC" pad="RDC RDC1 RDC2 RDC3 RDC4"/>
-<connect gate="G$1" pin="REFIO" pad="REFIO"/>
-<connect gate="G$1" pin="SHDN" pad="SHDN"/>
 </connects>
 <technologies>
 <technology name=""/>

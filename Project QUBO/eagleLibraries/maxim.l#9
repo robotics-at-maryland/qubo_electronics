@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,18 +43,8 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -78,84 +67,6 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
-<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Maxim Components&lt;/b&gt;&lt;p&gt;
@@ -4400,78 +4311,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <wire x1="0.3048" y1="5.0038" x2="-0.3048" y2="4.9784" width="0.1524" layer="51" curve="-180"/>
 <text x="-3.4798" y="4.3688" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="0.635" y="-3.2766" size="1.27" layer="25" ratio="6" rot="SR90">&gt;Name</text>
-</package>
-<package name="64LTQFP">
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="51"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="51"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="51"/>
-<smd name="AGND6" x="0" y="0" dx="7.57" dy="7.57" layer="1"/>
-<smd name="AGNDS3" x="-5.625" y="3.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="I.C./CH7" x="-5.625" y="3.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND2" x="-5.625" y="2.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD2" x="-5.625" y="2.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS2" x="-5.625" y="1.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC1" x="-5.625" y="1.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC_SENSE2" x="-5.625" y="0.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND1" x="-5.625" y="0.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD1" x="-5.625" y="-0.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS1" x="-5.625" y="-0.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DGND" x="-5.625" y="-1.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DVDD" x="-5.625" y="-1.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!WR" x="-5.625" y="-2.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!CS" x="-5.625" y="-2.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!RD" x="-5.625" y="-3.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DB15" x="-5.625" y="-3.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS5" x="5.625" y="3.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="CH0/I.C." x="5.625" y="3.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND4" x="5.625" y="2.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD4" x="5.625" y="2.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS6" x="5.625" y="1.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC4" x="5.625" y="1.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC_SENSE" x="5.625" y="0.785" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGND5" x="5.625" y="0.285" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AVDD5" x="5.625" y="-0.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="AGNDS7" x="5.625" y="-0.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DGND2" x="5.625" y="-1.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DVDD2" x="5.625" y="-1.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="SHDN" x="5.625" y="-2.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="CONVST" x="5.625" y="-2.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="!EOC" x="5.625" y="-3.215" dx="1.45" dy="0.27" layer="1"/>
-<smd name="DB0/CR0" x="5.625" y="-3.715" dx="1.45" dy="0.27" layer="1"/>
-<smd name="RDC2" x="-3.785" y="5.625" dx="0.27" dy="1.45" layer="1" rot="R180"/>
-<smd name="CH6/CH5/I.C." x="-3.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AVDD" x="-2.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGND" x="-2.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH5/CH4/CH3" x="-1.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGNDS" x="-1.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH4/CH3/CH2" x="-0.785" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="REFIO" x="-0.285" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="RDC" x="0.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH3/CH2/CH1" x="0.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGNDS4" x="1.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH2/CH1/CH0" x="1.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AGND3" x="2.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="AVDD3" x="2.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="CH1/CH0/I.C." x="3.215" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="RDC3" x="3.715" y="5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB14" x="-3.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB13" x="-3.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB12" x="-2.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB11" x="-2.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB10" x="-1.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB9" x="-1.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB8" x="-0.715" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DGND3" x="-0.215" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DVDD3" x="0.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB7" x="0.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB6" x="1.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB5" x="1.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB4" x="2.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB3/CR3" x="2.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB2/CR2" x="3.285" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<smd name="DB1/CR1" x="3.785" y="-5.625" dx="0.27" dy="1.45" layer="1"/>
-<circle x="-4" y="-4.1" radius="0.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -15219,66 +15058,6 @@ Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data s
 <wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
 <text x="-12.7" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-76.2" size="1.778" layer="95">&gt;VALUE</text>
-</symbol>
-<symbol name="VL53L1X">
-<description>&lt;h3&gt;STMicroelectronics VL53L1X - 400 cm IR Laser ToF Sensor&lt;/h3&gt;
-&lt;p&gt;VL53L1X is a state-of-the-art ToF laser-ranging sensor, enhancing the ST FlightSense product family. It is the fastest miniature ToF sensor currently on the market with accurate ranging up to 4 m and fast ranging frequency (up to 50 Hz). Housed in a miniature and reflowable package, it integrates a single photon avalanche diode (SPAD) receiving array, a 940 nm invisible laser Class 1 emitter, physical infrared filters, and optics to achieve the best ranging performance in various ambient lighting conditions with a range of cover window options.&lt;/p&gt;</description>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-10.16" y="-2.54" length="short"/>
-<pin name="VCC" x="-10.16" y="5.08" length="short"/>
-<pin name="SDA" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="SCL" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="!SHUT" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="!INT" x="10.16" y="-2.54" length="short" rot="R180"/>
-<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="MAX11049">
-<wire x1="-25.4" y1="-22.86" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
-<wire x1="25.4" y1="27.94" x2="25.4" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="27.94" x2="25.4" y2="27.94" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-22.86" x2="25.4" y2="-22.86" width="0.254" layer="94"/>
-<pin name="DB13" x="-30.48" y="25.4" length="middle"/>
-<pin name="DB12" x="-30.48" y="22.86" length="middle"/>
-<pin name="DB11" x="-30.48" y="20.32" length="middle"/>
-<pin name="DB10" x="-30.48" y="17.78" length="middle"/>
-<pin name="DB9" x="-30.48" y="15.24" length="middle"/>
-<pin name="DB8" x="-30.48" y="12.7" length="middle"/>
-<pin name="DGND" x="-30.48" y="10.16" length="middle"/>
-<pin name="DVDD" x="-30.48" y="7.62" length="middle"/>
-<pin name="DB7" x="-30.48" y="5.08" length="middle"/>
-<pin name="DB6" x="-30.48" y="2.54" length="middle"/>
-<pin name="DB5" x="-30.48" y="0" length="middle"/>
-<pin name="DB4" x="-30.48" y="-2.54" length="middle"/>
-<pin name="DB3/CR3" x="-30.48" y="-5.08" length="middle"/>
-<pin name="DB2/CR2" x="-30.48" y="-7.62" length="middle"/>
-<pin name="DB1/CR1" x="-30.48" y="-10.16" length="middle"/>
-<pin name="DB0/CR0" x="-30.48" y="-12.7" length="middle"/>
-<pin name="!EOC" x="-30.48" y="-15.24" length="middle"/>
-<pin name="CONVST" x="-30.48" y="-17.78" length="middle"/>
-<pin name="SHDN" x="-30.48" y="-20.32" length="middle"/>
-<pin name="RDC" x="30.48" y="25.4" length="middle" rot="R180"/>
-<pin name="AGNDS" x="30.48" y="22.86" length="middle" rot="R180"/>
-<pin name="AVDD" x="30.48" y="20.32" length="middle" rot="R180"/>
-<pin name="AGND" x="30.48" y="17.78" length="middle" rot="R180"/>
-<pin name="CH0" x="30.48" y="12.7" length="middle" rot="R180"/>
-<pin name="CH1" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="REFIO" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="CH2" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="CH3" x="30.48" y="2.54" length="middle" rot="R180"/>
-<pin name="CH4" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="CH5" x="30.48" y="-2.54" length="middle" rot="R180"/>
-<pin name="CH6" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="CH7" x="30.48" y="-7.62" length="middle" rot="R180"/>
-<pin name="!WR" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="!CS" x="30.48" y="-12.7" length="middle" rot="R180"/>
-<pin name="!RD" x="30.48" y="-15.24" length="middle" rot="R180"/>
-<pin name="DB15" x="30.48" y="-17.78" length="middle" rot="R180"/>
-<pin name="DB14" x="30.48" y="-20.32" length="middle" rot="R180"/>
-<pin name="RDC_SENSE" x="30.48" y="15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -34393,57 +34172,6 @@ Created on 14 June 2016</description>
 <connect gate="G$1" pin="VADJ" pad="8"/>
 <connect gate="G$1" pin="VL" pad="1"/>
 <connect gate="G$1" pin="VLO" pad="22"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX11049">
-<gates>
-<gate name="G$1" symbol="MAX11049" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="64LTQFP">
-<connects>
-<connect gate="G$1" pin="!CS" pad="!CS"/>
-<connect gate="G$1" pin="!EOC" pad="!EOC"/>
-<connect gate="G$1" pin="!RD" pad="!RD"/>
-<connect gate="G$1" pin="!WR" pad="!WR"/>
-<connect gate="G$1" pin="AGND" pad="AGND AGND1 AGND2 AGND3 AGND4 AGND5 AGND6"/>
-<connect gate="G$1" pin="AGNDS" pad="AGNDS AGNDS1 AGNDS2 AGNDS3 AGNDS4 AGNDS5 AGNDS6 AGNDS7"/>
-<connect gate="G$1" pin="AVDD" pad="AVDD AVDD1 AVDD2 AVDD3 AVDD4 AVDD5"/>
-<connect gate="G$1" pin="CH0" pad="CH0/I.C."/>
-<connect gate="G$1" pin="CH1" pad="CH1/CH0/I.C."/>
-<connect gate="G$1" pin="CH2" pad="CH2/CH1/CH0"/>
-<connect gate="G$1" pin="CH3" pad="CH3/CH2/CH1"/>
-<connect gate="G$1" pin="CH4" pad="CH4/CH3/CH2"/>
-<connect gate="G$1" pin="CH5" pad="CH5/CH4/CH3"/>
-<connect gate="G$1" pin="CH6" pad="CH6/CH5/I.C."/>
-<connect gate="G$1" pin="CH7" pad="I.C./CH7"/>
-<connect gate="G$1" pin="CONVST" pad="CONVST"/>
-<connect gate="G$1" pin="DB0/CR0" pad="DB0/CR0"/>
-<connect gate="G$1" pin="DB1/CR1" pad="DB1/CR1"/>
-<connect gate="G$1" pin="DB10" pad="DB10"/>
-<connect gate="G$1" pin="DB11" pad="DB11"/>
-<connect gate="G$1" pin="DB12" pad="DB12"/>
-<connect gate="G$1" pin="DB13" pad="DB13"/>
-<connect gate="G$1" pin="DB14" pad="DB14"/>
-<connect gate="G$1" pin="DB15" pad="DB15"/>
-<connect gate="G$1" pin="DB2/CR2" pad="DB2/CR2"/>
-<connect gate="G$1" pin="DB3/CR3" pad="DB3/CR3"/>
-<connect gate="G$1" pin="DB4" pad="DB4"/>
-<connect gate="G$1" pin="DB5" pad="DB5"/>
-<connect gate="G$1" pin="DB6" pad="DB6"/>
-<connect gate="G$1" pin="DB7" pad="DB7"/>
-<connect gate="G$1" pin="DB8" pad="DB8"/>
-<connect gate="G$1" pin="DB9" pad="DB9"/>
-<connect gate="G$1" pin="DGND" pad="DGND DGND2 DGND3"/>
-<connect gate="G$1" pin="DVDD" pad="DVDD DVDD2 DVDD3"/>
-<connect gate="G$1" pin="RDC" pad="RDC RDC1 RDC2 RDC3 RDC4"/>
-<connect gate="G$1" pin="REFIO" pad="REFIO"/>
-<connect gate="G$1" pin="SHDN" pad="SHDN"/>
 </connects>
 <technologies>
 <technology name=""/>

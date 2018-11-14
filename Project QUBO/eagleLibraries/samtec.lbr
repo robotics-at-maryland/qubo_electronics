@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -575,16 +575,16 @@
 <wire x1="-1.2" y1="-10.25" x2="-1.2" y2="10.25" width="0.127" layer="51"/>
 <wire x1="-1.2" y1="10.25" x2="1.2" y2="10.25" width="0.127" layer="51"/>
 <wire x1="1.2" y1="10.25" x2="1.2" y2="-10.25" width="0.127" layer="51"/>
-<pad name="1" x="0" y="9" drill="0.5" shape="square"/>
-<pad name="2" x="0" y="7" drill="0.5" shape="square"/>
-<pad name="3" x="0" y="5" drill="0.5" shape="square"/>
-<pad name="4" x="0" y="3" drill="0.5" shape="square"/>
-<pad name="5" x="0" y="1" drill="0.5" shape="square"/>
-<pad name="6" x="0" y="-1" drill="0.5" shape="square"/>
-<pad name="7" x="0" y="-3" drill="0.5" shape="square"/>
-<pad name="8" x="0" y="-5" drill="0.5" shape="square"/>
-<pad name="9" x="0" y="-7" drill="0.5" shape="square"/>
-<pad name="10" x="0" y="-9" drill="0.5" shape="square"/>
+<pad name="1" x="0" y="9" drill="0.762" shape="square"/>
+<pad name="2" x="0" y="7" drill="0.762" shape="square"/>
+<pad name="3" x="0" y="5" drill="0.762" shape="square"/>
+<pad name="4" x="0" y="3" drill="0.762" shape="square"/>
+<pad name="5" x="0" y="1" drill="0.762" shape="square"/>
+<pad name="6" x="0" y="-1" drill="0.762" shape="square"/>
+<pad name="7" x="0" y="-3" drill="0.762" shape="square"/>
+<pad name="8" x="0" y="-5" drill="0.762" shape="square"/>
+<pad name="9" x="0" y="-7" drill="0.762" shape="square"/>
+<pad name="10" x="0" y="-9" drill="0.762" shape="square"/>
 </package>
 </packages>
 <symbols>
