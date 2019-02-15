@@ -1658,6 +1658,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="ADRESS3" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS4" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS5" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
+<part name="CAM_PWR1" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1698,6 +1699,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88" smashed="yes">
 <attribute name="NAME" x="-37.0586" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="CAM_PWR1" gate="-1" x="-2.54" y="66.04"/>
+<instance part="CAM_PWR1" gate="-2" x="-2.54" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -1839,6 +1842,16 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="PWM" gate="G$1" pin="EXTCLK"/>
 <wire x1="81.28" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <label x="83.82" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAM_PWR1" gate="-2" pin="S"/>
+<wire x1="-5.08" y1="63.5" x2="-10.16" y2="63.5" width="0.1524" layer="91"/>
+<label x="-10.16" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="9"/>
+<wire x1="-58.42" y1="22.86" x2="-58.42" y2="30.48" width="0.1524" layer="91"/>
+<label x="-58.42" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH1" class="0">
@@ -2085,6 +2098,24 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="PWM" gate="G$1" pin="A5"/>
 <wire x1="81.28" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <label x="83.82" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VINCAM" class="0">
+<segment>
+<pinref part="CAM_PWR1" gate="-1" pin="S"/>
+<wire x1="-5.08" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
+<label x="-10.16" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="10"/>
+<wire x1="-63.5" y1="22.86" x2="-63.5" y2="30.48" width="0.1524" layer="91"/>
+<label x="-71.12" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PWM" gate="G$1" pin="!OE"/>
+<wire x1="81.28" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
