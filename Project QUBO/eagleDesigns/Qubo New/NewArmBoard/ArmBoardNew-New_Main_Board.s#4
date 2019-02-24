@@ -4402,11 +4402,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="195.58" y1="139.7" x2="198.12" y2="139.7" width="0.1524" layer="91"/>
 <label x="195.58" y="139.7" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SCK/SCL"/>
-<wire x1="307.34" y1="124.46" x2="314.96" y2="124.46" width="0.1524" layer="91"/>
-<label x="307.34" y="124.46" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SDA_2" class="0">
 <segment>
@@ -4425,11 +4420,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$1" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
 <label x="195.58" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SDI/SDA"/>
-<wire x1="307.34" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
-<label x="307.34" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
@@ -4775,6 +4765,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="203.2" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
 <label x="195.58" y="129.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SCK/SCL"/>
+<wire x1="307.34" y1="124.46" x2="314.96" y2="124.46" width="0.1524" layer="91"/>
+<label x="307.34" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL_3" class="0">
 <segment>
@@ -4837,6 +4832,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$1" gate="G$1" pin="6"/>
 <wire x1="203.2" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
 <label x="195.58" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SDI/SDA"/>
+<wire x1="307.34" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="307.34" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PUSH1" class="0">
