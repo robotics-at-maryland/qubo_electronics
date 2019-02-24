@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -155,16 +155,16 @@
 <wire x1="-1.2" y1="-10.25" x2="-1.2" y2="10.25" width="0.127" layer="51"/>
 <wire x1="-1.2" y1="10.25" x2="1.2" y2="10.25" width="0.127" layer="51"/>
 <wire x1="1.2" y1="10.25" x2="1.2" y2="-10.25" width="0.127" layer="51"/>
-<pad name="1" x="0" y="9" drill="0.5" shape="square"/>
-<pad name="2" x="0" y="7" drill="0.5" shape="square"/>
-<pad name="3" x="0" y="5" drill="0.5" shape="square"/>
-<pad name="4" x="0" y="3" drill="0.5" shape="square"/>
-<pad name="5" x="0" y="1" drill="0.5" shape="square"/>
-<pad name="6" x="0" y="-1" drill="0.5" shape="square"/>
-<pad name="7" x="0" y="-3" drill="0.5" shape="square"/>
-<pad name="8" x="0" y="-5" drill="0.5" shape="square"/>
-<pad name="9" x="0" y="-7" drill="0.5" shape="square"/>
-<pad name="10" x="0" y="-9" drill="0.5" shape="square"/>
+<pad name="1" x="0" y="9" drill="1.016" shape="square"/>
+<pad name="2" x="0" y="7" drill="1.016" shape="square"/>
+<pad name="3" x="0" y="5" drill="1.016" shape="square"/>
+<pad name="4" x="0" y="3" drill="1.016" shape="square"/>
+<pad name="5" x="0" y="1" drill="1.016" shape="square"/>
+<pad name="6" x="0" y="-1" drill="1.016" shape="square"/>
+<pad name="7" x="0" y="-3" drill="1.016" shape="square"/>
+<pad name="8" x="0" y="-5" drill="1.016" shape="square"/>
+<pad name="9" x="0" y="-7" drill="1.016" shape="square"/>
+<pad name="10" x="0" y="-9" drill="1.016" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -1654,6 +1654,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="ADRESS3" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS4" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS5" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
+<part name="LIL_PWR1" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1668,27 +1669,45 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="U$6" gate="G$1" x="-40.64" y="2.54" rot="R270"/>
 <instance part="U$7" gate="G$1" x="-40.64" y="-15.24" rot="R270"/>
 <instance part="U$10" gate="G$1" x="15.24" y="17.78" rot="R270"/>
-<instance part="PWM" gate="G$1" x="58.42" y="38.1"/>
-<instance part="JP1" gate="G$1" x="35.56" y="78.74"/>
-<instance part="LIL_PWR" gate="-1" x="0" y="78.74"/>
-<instance part="LIL_PWR" gate="-2" x="0" y="76.2"/>
-<instance part="ADRESS1" gate="G$1" x="-45.72" y="76.2" smashed="yes">
+<instance part="PWM" gate="G$1" x="58.42" y="38.1">
+<attribute name="NAME" x="58.42" y="78.74" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.42" y="76.708" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="G$1" x="35.56" y="78.74">
+<attribute name="VALUE" x="30.48" y="68.58" size="1.778" layer="96"/>
+<attribute name="NAME" x="30.48" y="86.36" size="1.778" layer="95"/>
+</instance>
+<instance part="LIL_PWR" gate="-1" x="0" y="78.74">
+<attribute name="NAME" x="2.54" y="77.978" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-0.762" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="LIL_PWR" gate="-2" x="0" y="76.2">
+<attribute name="NAME" x="2.54" y="75.438" size="1.524" layer="95"/>
+</instance>
+<instance part="ADRESS1" gate="G$1" x="-45.72" y="76.2">
 <attribute name="NAME" x="-47.2186" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS2" gate="G$1" x="-60.96" y="55.88" smashed="yes">
+<instance part="ADRESS2" gate="G$1" x="-60.96" y="55.88">
 <attribute name="NAME" x="-62.4586" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS0" gate="G$1" x="-88.9" y="55.88" smashed="yes">
+<instance part="ADRESS0" gate="G$1" x="-88.9" y="55.88">
 <attribute name="NAME" x="-90.3986" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS3" gate="G$1" x="-99.06" y="76.2" smashed="yes">
+<instance part="ADRESS3" gate="G$1" x="-99.06" y="76.2">
 <attribute name="NAME" x="-100.5586" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS4" gate="G$1" x="-73.66" y="76.2" smashed="yes">
+<instance part="ADRESS4" gate="G$1" x="-73.66" y="76.2">
 <attribute name="NAME" x="-75.1586" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88" smashed="yes">
+<instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88">
 <attribute name="NAME" x="-37.0586" y="44.45" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LIL_PWR1" gate="-1" x="0" y="63.5">
+<attribute name="NAME" x="2.54" y="62.738" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-0.762" y="64.897" size="1.778" layer="96"/>
+</instance>
+<instance part="LIL_PWR1" gate="-2" x="0" y="60.96">
+<attribute name="NAME" x="2.54" y="60.198" size="1.524" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -1985,26 +2004,26 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="-22.86" y1="22.86" x2="-22.86" y2="30.48" width="0.1524" layer="91"/>
-<label x="-22.86" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PWM" gate="G$1" pin="SCL"/>
 <wire x1="81.28" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <label x="83.82" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LIL_PWR1" gate="-1" pin="S"/>
+<wire x1="-2.54" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
+<label x="-7.62" y="63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="22.86" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="-17.78" y="30.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="PWM" gate="G$1" pin="SDA"/>
 <wire x1="81.28" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="83.82" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LIL_PWR1" gate="-2" pin="S"/>
+<wire x1="-2.54" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
+<label x="-7.62" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">

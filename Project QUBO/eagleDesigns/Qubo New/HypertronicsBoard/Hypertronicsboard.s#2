@@ -1643,12 +1643,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="U$4" library="samtec" deviceset="BCS-106-L-D-PE-BE" device=""/>
 <part name="U$5" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="U$6" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$7" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$8" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$9" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="U$10" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$11" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$12" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="PWM" library="NXP" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="JP1" library="molex" deviceset="2_SUPERSABRE" device="" value="PWR"/>
 <part name="LIL_PWR" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
@@ -1670,12 +1665,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="U$4" gate="G$1" x="60.96" y="-25.4"/>
 <instance part="U$5" gate="G$1" x="-40.64" y="17.78" rot="R270"/>
 <instance part="U$6" gate="G$1" x="-40.64" y="2.54" rot="R270"/>
-<instance part="U$7" gate="G$1" x="-40.64" y="-15.24" rot="R270"/>
-<instance part="U$8" gate="G$1" x="-40.64" y="-30.48" rot="R270"/>
-<instance part="U$9" gate="G$1" x="15.494" y="-30.226" rot="R270"/>
 <instance part="U$10" gate="G$1" x="15.24" y="17.78" rot="R270"/>
-<instance part="U$11" gate="G$1" x="15.24" y="2.54" rot="R270"/>
-<instance part="U$12" gate="G$1" x="15.24" y="-15.24" rot="R270"/>
 <instance part="PWM" gate="G$1" x="58.42" y="38.1"/>
 <instance part="JP1" gate="G$1" x="35.56" y="78.74"/>
 <instance part="LIL_PWR" gate="-1" x="0" y="78.74"/>
