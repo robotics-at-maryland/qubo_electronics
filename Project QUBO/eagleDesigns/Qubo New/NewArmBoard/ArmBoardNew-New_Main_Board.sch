@@ -4680,11 +4680,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </net>
 <net name="SPI_CLK" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="PB4"/>
-<wire x1="162.56" y1="149.86" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
-<label x="154.94" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="PF2"/>
 <wire x1="292.1" y1="180.34" x2="281.94" y2="180.34" width="0.1524" layer="91"/>
 <label x="281.94" y="180.34" size="1.778" layer="95"/>
@@ -4731,14 +4726,19 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <label x="243.84" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="195.58" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
-<label x="271.78" y="203.2" size="1.778" layer="95"/>
+<wire x1="147.32" y1="149.86" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="147.32" y="152.4" size="1.778" layer="95" rot="R180"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="200.66" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
-<label x="187.96" y="208.28" size="1.778" layer="95"/>
+<wire x1="137.16" y1="149.86" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
+<label x="137.16" y="149.86" size="1.778" layer="95" rot="R90"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="9"/>
+<wire x1="177.8" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
+<label x="170.18" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PE3" class="0">
@@ -4779,16 +4779,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <label x="132.08" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="149.86" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
-<label x="137.16" y="149.86" size="1.778" layer="95" rot="R90"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="149.86" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
-<label x="147.32" y="152.4" size="1.778" layer="95" rot="R180"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="5V"/>
 <wire x1="248.92" y1="180.34" x2="238.76" y2="180.34" width="0.1524" layer="91"/>
 <label x="238.76" y="180.34" size="1.778" layer="95"/>
@@ -4807,6 +4797,16 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="147.32" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
 <label x="88.9" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="200.66" x2="187.96" y2="208.28" width="0.1524" layer="91"/>
+<label x="187.96" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="271.78" y1="195.58" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+<label x="271.78" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RES" class="0">
@@ -4908,11 +4908,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="9"/>
-<wire x1="177.8" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
-<label x="170.18" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="9"/>
 <wire x1="208.28" y1="48.26" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
 <label x="200.66" y="48.26" size="1.778" layer="95"/>
@@ -4947,6 +4942,11 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="R15" gate="G$1" pin="2"/>
 <label x="154.94" y="139.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SCK/SCL"/>
+<wire x1="281.94" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
+<label x="281.94" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA_1" class="0">
 <segment>
@@ -4966,6 +4966,11 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="R16" gate="G$1" pin="2"/>
 <label x="154.94" y="134.62" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="U1" pin="SDI/SDA"/>
+<wire x1="281.94" y1="58.42" x2="289.56" y2="58.42" width="0.1524" layer="91"/>
+<label x="281.94" y="58.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO_2" class="0">
 <segment>
@@ -4984,11 +4989,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="5"/>
 <wire x1="177.8" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="165.1" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SCK/SCL"/>
-<wire x1="281.94" y1="53.34" x2="289.56" y2="53.34" width="0.1524" layer="91"/>
-<label x="281.94" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="PB2"/>
@@ -5046,11 +5046,6 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="6"/>
 <wire x1="177.8" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
 <label x="165.1" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="U1" pin="SDI/SDA"/>
-<wire x1="281.94" y1="58.42" x2="289.56" y2="58.42" width="0.1524" layer="91"/>
-<label x="281.94" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="PB3"/>
@@ -5114,6 +5109,13 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <pinref part="U$3" gate="G$1" pin="PA5"/>
 <wire x1="162.56" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
 <label x="154.94" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPI_CLK_2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="PB4"/>
+<wire x1="162.56" y1="149.86" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
+<label x="154.94" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
