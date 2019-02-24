@@ -1561,21 +1561,11 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="P$1"/>
 <contactref element="U$2" pad="P$4"/>
 <<<<<<< HEAD
-=======
 <contactref element="U$3" pad="P$2"/>
 <contactref element="U$3" pad="P$3"/>
 <contactref element="U$4" pad="P$2"/>
 <contactref element="U$4" pad="P$3"/>
-<wire x1="77.343" y1="68.961" x2="84.963" y2="68.961" width="0" layer="19" extent="1-1"/>
-<wire x1="85.09" y1="56.388" x2="84.963" y2="68.961" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="56.388" x2="85.09" y2="56.388" width="0" layer="19" extent="1-1"/>
-<wire x1="46.228" y1="56.007" x2="77.47" y2="56.388" width="0" layer="19" extent="1-1"/>
-<wire x1="38.608" y1="56.007" x2="46.228" y2="56.007" width="0" layer="19" extent="1-1"/>
-<wire x1="46.228" y1="65.913" x2="46.228" y2="56.007" width="0" layer="19" extent="1-1"/>
-<wire x1="38.608" y1="65.913" x2="46.228" y2="65.913" width="0" layer="19" extent="1-1"/>
-<wire x1="19.87550625" y1="10.8015375" x2="38.608" y2="56.007" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="GND">
+=======
 >>>>>>> d2062950c17c133dedcd4be24d2782ea153e5413
 <contactref element="U$1" pad="P$2"/>
 <contactref element="U$1" pad="P$3"/>
@@ -1588,7 +1578,21 @@ design rules under a new name.</description>
 <wire x1="85.09" y1="53.848" x2="85.09" y2="56.388" width="0" layer="19" extent="1-1"/>
 <wire x1="77.47" y1="56.388" x2="85.09" y2="56.388" width="0" layer="19" extent="1-1"/>
 <wire x1="77.47" y1="53.848" x2="77.47" y2="56.388" width="0" layer="19" extent="1-1"/>
+<<<<<<< HEAD
+<wire x1="46.228" y1="65.913" x2="77.343" y2="66.421" width="0" layer="19" extent="1-1"/>
+<wire x1="38.608" y1="65.913" x2="46.228" y2="65.913" width="0" layer="19" extent="1-1"/>
+<wire x1="46.228" y1="56.007" x2="46.228" y2="65.913" width="0" layer="19" extent="1-1"/>
+<wire x1="38.608" y1="56.007" x2="46.228" y2="56.007" width="0" layer="19" extent="1-1"/>
+<wire x1="19.87550625" y1="10.8015375" x2="38.608" y2="56.007" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1">
+<vertex x="25.4" y="76.2"/>
+<vertex x="50.8" y="76.2"/>
+<vertex x="50.8" y="50.8"/>
+<vertex x="25.4" y="50.8"/>
+</polygon>
+=======
 <wire x1="19.87550625" y1="10.8015375" x2="77.47" y2="53.848" width="0" layer="19" extent="1-1"/>
+>>>>>>> d2062950c17c133dedcd4be24d2782ea153e5413
 </signal>
 <signal name="GND">
 <contactref element="JP1" pad="P$2"/>
@@ -1619,9 +1623,6 @@ design rules under a new name.</description>
 <wire x1="84.836" y1="29.884" x2="80.684" y2="29.884" width="0.254" layer="1"/>
 <wire x1="80.684" y1="29.884" x2="80.01" y2="29.21" width="0.254" layer="1"/>
 <via x="80.01" y="29.21" extent="1-16" drill="0.35"/>
-<wire x1="48.983" y1="22.733" x2="54.61" y2="22.86" width="0.254" layer="1"/>
-<wire x1="54.61" y1="22.86" x2="55.88" y2="22.86" width="0.254" layer="1"/>
-<via x="55.88" y="22.86" extent="1-16" drill="0.35"/>
 <wire x1="84.582" y1="37.123" x2="84.289" y2="36.83" width="0.254" layer="1" curve="-90"/>
 <wire x1="84.289" y1="36.83" x2="80.01" y2="36.83" width="0.254" layer="1"/>
 <via x="80.01" y="36.83" extent="1-16" drill="0.35"/>
@@ -1634,17 +1635,33 @@ design rules under a new name.</description>
 <wire x1="54.195" y1="36.22" x2="54.1874" y2="36.2276" width="0.254" layer="1" curve="-90"/>
 <wire x1="54.1874" y1="36.2276" x2="54.1874" y2="40.64" width="0.254" layer="1"/>
 <via x="54.1874" y="40.64" extent="1-16" drill="0.35"/>
-<via x="55.88" y="27.94" extent="1-16" drill="0.35"/>
-<wire x1="60.695" y1="29.82" x2="60.4744" y2="29.5994" width="0.254" layer="1"/>
-<wire x1="60.4744" y1="29.5994" x2="60.4744" y2="29.20426875" width="0.254" layer="1"/>
-<wire x1="59.5092" y1="28.6342" x2="58.815" y2="27.94" width="0.254" layer="1"/>
-<wire x1="58.815" y1="27.94" x2="55.88" y2="27.94" width="0.254" layer="1"/>
-<wire x1="60.4744" y1="29.20426875" x2="59.90433125" y2="28.6342" width="0.254" layer="1"/>
-<wire x1="59.90433125" y1="28.6342" x2="59.5092" y2="28.6342" width="0.254" layer="1"/>
 <wire x1="77.47" y1="44.235" x2="77.255" y2="44.235" width="0.254" layer="1"/>
 <wire x1="77.255" y1="44.235" x2="76.2" y2="43.18" width="0.254" layer="1"/>
 <wire x1="74.422" y1="46.775" x2="73.367" y2="45.72" width="0.254" layer="1"/>
 <wire x1="73.367" y1="45.72" x2="72.39" y2="45.72" width="0.254" layer="1"/>
+<<<<<<< HEAD
+<polygon width="0.254" layer="16">
+<vertex x="24.003" y="18.161"/>
+<vertex x="24.003" y="1.397"/>
+<vertex x="23.876" y="1.27"/>
+<vertex x="52.959" y="1.27"/>
+<vertex x="53.594" y="1.905"/>
+<vertex x="53.594" y="17.018"/>
+<vertex x="53.467" y="17.145"/>
+</polygon>
+<wire x1="48.983" y1="22.733" x2="49.237" y2="22.987" width="0.254" layer="1"/>
+<wire x1="49.237" y1="22.987" x2="55.499" y2="22.987" width="0.254" layer="1"/>
+<via x="55.499" y="22.987" extent="1-16" drill="0.35"/>
+<wire x1="50.1424" y1="25.1276125" x2="50.1424" y2="25.4" width="0.254" layer="16"/>
+<wire x1="55.499" y1="22.987" x2="52.2830125" y2="22.987" width="0.254" layer="16"/>
+<wire x1="52.2830125" y1="22.987" x2="50.1424" y2="25.1276125" width="0.254" layer="16"/>
+<wire x1="60.695" y1="29.82" x2="60.4744" y2="29.5994" width="0.254" layer="1"/>
+<wire x1="60.4744" y1="29.5994" x2="60.4744" y2="29.20426875" width="0.254" layer="1"/>
+<wire x1="59.5092" y1="28.6342" x2="55.499" y2="24.624" width="0.254" layer="1"/>
+<wire x1="55.499" y1="24.624" x2="55.499" y2="22.987" width="0.254" layer="1"/>
+<wire x1="60.4744" y1="29.20426875" x2="59.90433125" y2="28.6342" width="0.254" layer="1"/>
+<wire x1="59.90433125" y1="28.6342" x2="59.5092" y2="28.6342" width="0.254" layer="1"/>
+=======
 <contactref element="U$3" pad="P$2"/>
 <contactref element="U$3" pad="P$3"/>
 <contactref element="U$4" pad="P$2"/>
@@ -1654,6 +1671,7 @@ design rules under a new name.</description>
 <wire x1="46.228" y1="56.007" x2="46.228" y2="53.467" width="0" layer="19" extent="1-1"/>
 <wire x1="38.608" y1="56.007" x2="38.608" y2="53.467" width="0" layer="19" extent="1-1"/>
 <wire x1="27.368496875" y1="10.788459375" x2="48.983" y2="22.733" width="0" layer="19" extent="1-1"/>
+>>>>>>> d2062950c17c133dedcd4be24d2782ea153e5413
 </signal>
 <signal name="CH1">
 <contactref element="PWM" pad="7"/>
