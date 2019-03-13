@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1654,7 +1654,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="ADRESS3" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS4" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS5" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
-<part name="LIL_PWR1" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
+<part name="I2C" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1702,11 +1702,11 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88">
 <attribute name="NAME" x="-37.0586" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="LIL_PWR1" gate="-1" x="0" y="63.5">
+<instance part="I2C" gate="-1" x="0" y="63.5">
 <attribute name="NAME" x="2.54" y="62.738" size="1.524" layer="95"/>
 <attribute name="VALUE" x="-0.762" y="64.897" size="1.778" layer="96"/>
 </instance>
-<instance part="LIL_PWR1" gate="-2" x="0" y="60.96">
+<instance part="I2C" gate="-2" x="0" y="60.96">
 <attribute name="NAME" x="2.54" y="60.198" size="1.524" layer="95"/>
 </instance>
 </instances>
@@ -2009,7 +2009,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="83.82" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LIL_PWR1" gate="-1" pin="S"/>
+<pinref part="I2C" gate="-1" pin="S"/>
 <wire x1="-2.54" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="-7.62" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -2021,7 +2021,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="83.82" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LIL_PWR1" gate="-2" pin="S"/>
+<pinref part="I2C" gate="-2" pin="S"/>
 <wire x1="-2.54" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="-7.62" y="60.96" size="1.778" layer="95"/>
 </segment>

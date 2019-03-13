@@ -1776,7 +1776,7 @@ design rules under a new name.</description>
 <element name="C9" library="resistor" package="C0805" value="0.1u" x="87.63" y="74.676" rot="R90"/>
 <element name="DVL_OUT" library="molex" package="KK254_VERT_2PIN" value="KK254_VERT_2PIN&quot;&quot;" x="6.35" y="71.882" rot="R270"/>
 <element name="I2C" library="molex" package="KK254_VERT_2PIN" value="KK254_VERT_2PIN&quot;&quot;" x="6.35" y="56.642" rot="R270"/>
-<element name="IC1" library="texas" package="SO16W" value="PCF8574T" x="99.314" y="69.342" rot="R90">
+<element name="IO-EXPANDER" library="texas" package="SO16W" value="PCF8574T" x="99.314" y="69.342" rot="R90">
 <attribute name="MF" value="" x="99.314" y="69.342" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PCF8574T/3,512" x="99.314" y="69.342" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1201255" x="99.314" y="69.342" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1786,7 +1786,7 @@ design rules under a new name.</description>
 <element name="MAGREAD" library="magReed" package="HE151TR-ND" value="HE151TR-ND" x="119.888" y="7.874" rot="R270"/>
 <element name="SABRE_INPUT" library="molex" package="SUPERSABRE_2CIRCUIT" value="2_SUPERSABRE" x="11.43" y="32.512" rot="R90"/>
 <element name="U$1" library="TE" package="KUHP_6.35MM-QUICK-CONNECT" value="KUHP-5XX1-XX" x="86.614" y="21.336"/>
-<element name="U$2" library="texas" package="TSSOP16" value="ADS7828" x="53.34" y="55.372" rot="R90"/>
+<element name="A-2-D" library="texas" package="TSSOP16" value="ADS7828" x="53.34" y="55.372" rot="R90"/>
 <element name="U1" library="murata" package="UEI15" value="UEI15" x="30.48" y="69.342"/>
 <element name="UWE_CURRENT_SENSOR" library="allegro" package="ACS713-SOIC" value="ACS713SOIC" x="56.388" y="65.786" rot="R270"/>
 <element name="VDIV1" library="resistor" package="R0805" value="90kO" x="60.198" y="53.086" rot="R90"/>
@@ -1831,17 +1831,17 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="UWE_CURRENT_SENSOR" pad="P$5"/>
-<contactref element="U$2" pad="12"/>
-<contactref element="U$2" pad="13"/>
-<contactref element="U$2" pad="9"/>
+<contactref element="A-2-D" pad="12"/>
+<contactref element="A-2-D" pad="13"/>
+<contactref element="A-2-D" pad="9"/>
 <contactref element="VDIV4" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="C10" pad="1"/>
 <contactref element="5V_CURRENT_SENSOR" pad="P$5"/>
 <contactref element="5V_OUT" pad="P$1"/>
-<contactref element="IC1" pad="8"/>
-<contactref element="IC1" pad="2"/>
-<contactref element="IC1" pad="3"/>
+<contactref element="IO-EXPANDER" pad="8"/>
+<contactref element="IO-EXPANDER" pad="2"/>
+<contactref element="IO-EXPANDER" pad="3"/>
 <contactref element="10V_OUT" pad="P$1"/>
 <contactref element="U2" pad="2"/>
 <contactref element="C11" pad="2"/>
@@ -1947,13 +1947,13 @@ design rules under a new name.</description>
 <contactref element="C7" pad="2"/>
 <contactref element="UWE_CURRENT_SENSOR" pad="P$8"/>
 <contactref element="C3" pad="2"/>
-<contactref element="U$2" pad="10"/>
-<contactref element="U$2" pad="16"/>
-<contactref element="IC1" pad="16"/>
+<contactref element="A-2-D" pad="10"/>
+<contactref element="A-2-D" pad="16"/>
+<contactref element="IO-EXPANDER" pad="16"/>
 <contactref element="5V_CURRENT_SENSOR" pad="P$3"/>
 <contactref element="5V_CURRENT_SENSOR" pad="P$4"/>
 <contactref element="5V_OUT" pad="P$2"/>
-<contactref element="IC1" pad="1"/>
+<contactref element="IO-EXPANDER" pad="1"/>
 <wire x1="64.35" y1="45.212" x2="64.35" y2="41.662" width="0.4064" layer="1"/>
 <wire x1="64.35" y1="41.662" x2="65.405" y2="41.662" width="0.4064" layer="1"/>
 <wire x1="59.188" y1="67.691" x2="64.174" y2="67.691" width="0.4064" layer="1"/>
@@ -2086,7 +2086,7 @@ design rules under a new name.</description>
 <wire x1="60.706" y1="52.07" x2="60.198" y2="52.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UEI_EN">
-<contactref element="IC1" pad="4"/>
+<contactref element="IO-EXPANDER" pad="4"/>
 <contactref element="U1" pad="ON/OFFCNTRL"/>
 <wire x1="40.64" y1="59.182" x2="40.64" y2="61.722" width="0.4064" layer="1"/>
 <wire x1="40.64" y1="61.722" x2="56.388" y2="61.468" width="0.4064" layer="1"/>
@@ -2139,7 +2139,7 @@ design rules under a new name.</description>
 <signal name="INPUT_VOLTAGE">
 <contactref element="VDIV1" pad="2"/>
 <contactref element="VDIV2" pad="1"/>
-<contactref element="U$2" pad="2"/>
+<contactref element="A-2-D" pad="2"/>
 <wire x1="60.198" y1="53.936" x2="60.198" y2="56.808" width="0.254" layer="1"/>
 <wire x1="60.198" y1="53.936" x2="59.4274" y2="53.1654" width="0.254" layer="1"/>
 <wire x1="59.4274" y1="53.1654" x2="59.33226875" y2="53.1654" width="0.254" layer="1"/>
@@ -2153,7 +2153,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="10V_EN">
 <contactref element="10V_REGULATOR" pad="INHIBIT"/>
-<contactref element="IC1" pad="6"/>
+<contactref element="IO-EXPANDER" pad="6"/>
 <wire x1="103.914" y1="71.247" x2="100.6475" y2="71.247" width="0.4064" layer="1"/>
 <wire x1="100.6475" y1="71.247" x2="100.6475" y2="42.037" width="0.4064" layer="1"/>
 </signal>
@@ -2271,7 +2271,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="UWE_CURRENT">
 <contactref element="UWE_CURRENT_SENSOR" pad="P$7"/>
-<contactref element="U$2" pad="3"/>
+<contactref element="A-2-D" pad="3"/>
 <wire x1="59.188" y1="66.421" x2="61.595" y2="66.421" width="0.4064" layer="1"/>
 <wire x1="61.595" y1="66.421" x2="61.722" y2="66.294" width="0.4064" layer="1"/>
 <via x="61.722" y="66.294" extent="1-16" drill="0.4"/>
@@ -2292,7 +2292,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="INPUT_CURRENT">
 <contactref element="INPUT_CURRENT_SENSOR" pad="P$7"/>
-<contactref element="U$2" pad="1"/>
+<contactref element="A-2-D" pad="1"/>
 <wire x1="66.675" y1="41.662" x2="66.548" y2="41.662" width="0.4064" layer="1"/>
 <wire x1="66.675" y1="41.662" x2="66.675" y2="39.751" width="0.4064" layer="1"/>
 <wire x1="66.675" y1="39.751" x2="66.548" y2="39.624" width="0.4064" layer="1"/>
@@ -2302,7 +2302,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="10V_CURRENT">
 <contactref element="10V_CURRENT_SENSOR" pad="P$7"/>
-<contactref element="U$2" pad="4"/>
+<contactref element="A-2-D" pad="4"/>
 <wire x1="102.362" y1="10.414" x2="87.63" y2="10.414" width="0.4064" layer="1"/>
 <wire x1="81.28" y1="21.14858125" x2="78.29858125" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="78.29858125" y1="24.13" x2="37.592" y2="24.13" width="0.4064" layer="1"/>
@@ -2328,9 +2328,9 @@ design rules under a new name.</description>
 <wire x1="106.172" y1="40.8778625" x2="106.172" y2="14.224" width="0.4064" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="U$2" pad="15"/>
+<contactref element="A-2-D" pad="15"/>
 <contactref element="I2C" pad="P$1"/>
-<contactref element="IC1" pad="15"/>
+<contactref element="IO-EXPANDER" pad="15"/>
 <wire x1="6.35" y1="55.372" x2="11.938" y2="55.372" width="0.4064" layer="1"/>
 <wire x1="49.429" y1="53.747" x2="50.415" y2="53.747" width="0.4064" layer="1"/>
 <wire x1="11.938" y1="55.372" x2="15.24" y2="52.07" width="0.4064" layer="1"/>
@@ -2351,9 +2351,9 @@ design rules under a new name.</description>
 <wire x1="80.4898" y1="62.2018" x2="84.455" y2="66.167" width="0.4064" layer="1"/>
 </signal>
 <signal name="SCL">
-<contactref element="U$2" pad="14"/>
+<contactref element="A-2-D" pad="14"/>
 <contactref element="I2C" pad="P$2"/>
-<contactref element="IC1" pad="14"/>
+<contactref element="IO-EXPANDER" pad="14"/>
 <wire x1="6.35" y1="57.912" x2="11.684" y2="57.912" width="0.4064" layer="1"/>
 <wire x1="16.002" y1="53.594" x2="47.498" y2="53.594" width="0.4064" layer="1"/>
 <wire x1="47.498" y1="53.594" x2="48.006" y2="54.102" width="0.4064" layer="1"/>
@@ -2375,7 +2375,7 @@ design rules under a new name.</description>
 <signal name="10V_VOLTAGE">
 <contactref element="VDIV3" pad="2"/>
 <contactref element="VDIV4" pad="1"/>
-<contactref element="U$2" pad="5"/>
+<contactref element="A-2-D" pad="5"/>
 <wire x1="71.12" y1="55.792" x2="72.644" y2="55.792" width="0.4064" layer="1"/>
 <wire x1="72.644" y1="50.712" x2="71.12" y2="50.712" width="0.4064" layer="1"/>
 <wire x1="72.644" y1="55.792" x2="72.644" y2="50.712" width="0.4064" layer="1"/>
@@ -2402,7 +2402,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="5V_CURRENT">
 <contactref element="5V_CURRENT_SENSOR" pad="P$7"/>
-<contactref element="U$2" pad="6"/>
+<contactref element="A-2-D" pad="6"/>
 <wire x1="56.265" y1="56.347" x2="56.3336" y2="56.4156" width="0.508" layer="1"/>
 <wire x1="56.3336" y1="56.4156" x2="57.0333375" y2="56.4156" width="0.508" layer="1"/>
 <wire x1="62.80899375" y1="62.7606" x2="63.08559375" y2="62.484" width="0.508" layer="1"/>
