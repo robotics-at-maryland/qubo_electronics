@@ -4943,7 +4943,7 @@ type 0309, grid 2.5 mm</description>
 <junction x="81.28" y="78.74"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="PWR2" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="93.98" x2="106.68" y2="83.82" width="0.1524" layer="91"/>

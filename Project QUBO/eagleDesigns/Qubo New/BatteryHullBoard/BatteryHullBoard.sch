@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -144,60 +144,6 @@
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="CMXSIPSSR">
-<packages>
-<package name="CMXSIPSSR">
-<description>Schematic for CMX SIP SSR (Relay)</description>
-<wire x1="-21.59" y1="3.81" x2="21.59" y2="3.81" width="0.127" layer="51"/>
-<wire x1="21.59" y1="3.81" x2="21.59" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="21.59" y1="-3.81" x2="-21.59" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="-21.59" y1="-3.81" x2="-21.59" y2="3.81" width="0.127" layer="51"/>
-<circle x="-19.05" y="1.27" radius="1.27" width="0.127" layer="21"/>
-<text x="-19.05" y="-2.54" size="1.27" layer="27">&gt;Value</text>
-<text x="-6.35" y="-2.54" size="1.27" layer="25">&gt;Name</text>
-<pad name="P$1" x="-13.97" y="1.27" drill="2.54" diameter="3.302"/>
-<pad name="P$2" x="-3.81" y="1.27" drill="2.54" diameter="3.302"/>
-<pad name="P$3" x="8.89" y="1.27" drill="2.54" diameter="3.302" shape="square"/>
-<pad name="P$4" x="13.97" y="1.27" drill="2.54" diameter="3.302" shape="square"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CMXSIPSSR">
-<description>Symbol for CMX SIP SSR (Relay)</description>
-<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="-7.62" length="middle" rot="R90"/>
-<pin name="2" x="-2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="3" x="2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="4" x="7.62" y="-7.62" length="middle" rot="R90"/>
-<text x="-10.16" y="7.62" size="1.27" layer="95">&gt;Name</text>
-<text x="2.54" y="7.62" size="1.27" layer="96">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CMXSIPSSR" prefix="U">
-<description>CMX SIP SSR (Relay) for use on the Battery Hull Board</description>
-<gates>
-<gate name="G$1" symbol="CMXSIPSSR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CMXSIPSSR">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4866,6 +4812,57 @@ type 0309, grid 2.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="switch">
+<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
+Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="ADJH21112">
+<description>General Purpose Relay SPST-NO (1 Form A) 12VDC Coil Through Hole</description>
+<wire x1="-19.5" y1="7.5" x2="19.5" y2="7.5" width="0.127" layer="51"/>
+<wire x1="-19.5" y1="-7.5" x2="19.5" y2="-7.5" width="0.127" layer="51"/>
+<wire x1="-19.5" y1="7.5" x2="-19.5" y2="-7.5" width="0.127" layer="51"/>
+<wire x1="19.5" y1="7.5" x2="19.5" y2="-7.5" width="0.127" layer="51"/>
+<pad name="CONTROL-" x="-17.65" y="5" drill="1.5" shape="octagon"/>
+<pad name="CONRTOL+" x="-17.65" y="-5" drill="1.5" shape="octagon"/>
+<pad name="INPUT" x="16.6" y="3.75" drill="1.7" shape="octagon"/>
+<pad name="OUTPUT" x="9.85" y="-3.75" drill="1.7" shape="octagon"/>
+<circle x="-19" y="7" radius="0.5" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADJH21112">
+<wire x1="-19.5" y1="7.5" x2="19.5" y2="7.5" width="0.254" layer="94"/>
+<wire x1="19.5" y1="7.5" x2="19.5" y2="-7.5" width="0.254" layer="94"/>
+<wire x1="19.5" y1="-7.5" x2="-19.5" y2="-7.5" width="0.254" layer="94"/>
+<wire x1="-19.5" y1="-7.5" x2="-19.5" y2="7.5" width="0.254" layer="94"/>
+<pin name="CONTROL-" x="-24.5" y="4" length="middle" direction="out"/>
+<pin name="CONTROL+" x="-24.5" y="-3" length="middle" direction="in"/>
+<pin name="INPUT" x="24.5" y="4" length="middle" direction="in" rot="R180"/>
+<pin name="OUTPUT" x="24.5" y="-3" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADJH21112">
+<gates>
+<gate name="G$1" symbol="ADJH21112" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADJH21112">
+<connects>
+<connect gate="G$1" pin="CONTROL+" pad="CONRTOL+"/>
+<connect gate="G$1" pin="CONTROL-" pad="CONTROL-"/>
+<connect gate="G$1" pin="INPUT" pad="INPUT"/>
+<connect gate="G$1" pin="OUTPUT" pad="OUTPUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4877,7 +4874,6 @@ type 0309, grid 2.5 mm</description>
 </classes>
 <parts>
 <part name="U1" library="KSK-1E66" deviceset="KSK-1E66" device=""/>
-<part name="U2" library="CMXSIPSSR" deviceset="CMXSIPSSR" device=""/>
 <part name="BATTERY" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="ROBOT" library="molex" deviceset="2_SUPERSABRE" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="5MM"/>
@@ -4885,21 +4881,47 @@ type 0309, grid 2.5 mm</description>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="7700"/>
 <part name="FRAME1" library="frames" deviceset="A5L-LOC" device=""/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="10000"/>
+<part name="U$1" library="switch" deviceset="ADJH21112" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="76.2" y="101.6"/>
-<instance part="U2" gate="G$1" x="114.3" y="101.6"/>
-<instance part="BATTERY" gate="G$1" x="48.26" y="88.9" rot="MR0"/>
-<instance part="ROBOT" gate="G$1" x="124.46" y="78.74"/>
-<instance part="LED1" gate="G$1" x="99.06" y="76.2"/>
-<instance part="R1" gate="G$1" x="81.28" y="83.82" rot="R90"/>
-<instance part="R2" gate="G$1" x="81.28" y="71.12" rot="R90"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="R3" gate="G$1" x="99.06" y="63.5" rot="R90"/>
+<instance part="U1" gate="G$1" x="76.2" y="101.6">
+<attribute name="NAME" x="66.04" y="96.52" size="1.27" layer="95"/>
+<attribute name="VALUE" x="81.28" y="96.52" size="1.27" layer="96"/>
+</instance>
+<instance part="BATTERY" gate="G$1" x="48.26" y="88.9" rot="MR0">
+<attribute name="VALUE" x="53.34" y="78.74" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="53.34" y="96.52" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="ROBOT" gate="G$1" x="124.46" y="78.74">
+<attribute name="VALUE" x="119.38" y="68.58" size="1.778" layer="96"/>
+<attribute name="NAME" x="119.38" y="86.36" size="1.778" layer="95"/>
+</instance>
+<instance part="LED1" gate="G$1" x="99.06" y="76.2">
+<attribute name="NAME" x="102.616" y="71.628" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="104.775" y="71.628" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="81.28" y="83.82" rot="R90">
+<attribute name="NAME" x="79.7814" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="84.582" y="80.01" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="81.28" y="71.12" rot="R90">
+<attribute name="NAME" x="79.7814" y="67.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="84.582" y="67.31" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0">
+<attribute name="DRAWING_NAME" x="140.97" y="15.24" size="2.54" layer="94" font="vector"/>
+<attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94" font="vector"/>
+<attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94" font="vector"/>
+</instance>
+<instance part="R3" gate="G$1" x="99.06" y="63.5" rot="R90">
+<attribute name="NAME" x="97.5614" y="59.69" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="102.362" y="59.69" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U$1" gate="G$1" x="129.54" y="104.14" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -4912,12 +4934,10 @@ type 0309, grid 2.5 mm</description>
 <wire x1="60.96" y1="91.44" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
 <junction x="60.96" y="101.6"/>
-<wire x1="101.6" y1="109.22" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="88.9" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="109.22" x2="105.04" y2="109.22" width="0.1524" layer="91"/>
 <label x="60.96" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="INPUT"/>
+<wire x1="105.04" y1="109.22" x2="105.04" y2="108.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4938,9 +4958,11 @@ type 0309, grid 2.5 mm</description>
 <label x="99.06" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="4"/>
-<wire x1="121.92" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
-<label x="124.46" y="93.98" size="1.778" layer="95"/>
+<wire x1="165.1" y1="109.22" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
+<label x="165.1" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="CONTROL-"/>
+<wire x1="154.04" y1="108.14" x2="165.1" y2="108.14" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="108.14" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4952,20 +4974,24 @@ type 0309, grid 2.5 mm</description>
 <wire x1="81.28" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <junction x="81.28" y="78.74"/>
 <wire x1="114.3" y1="78.74" x2="114.3" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="3"/>
 <wire x1="114.3" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="88.9" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 <junction x="99.06" y="78.74"/>
+<pinref part="U$1" gate="G$1" pin="CONTROL+"/>
+<wire x1="116.84" y1="93.98" x2="154.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="154.04" y1="93.98" x2="154.04" y2="101.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="93.98" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="ROBOT" gate="G$1" pin="P$1"/>
 <wire x1="106.68" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="83.82" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OUTPUT"/>
+<wire x1="106.68" y1="93.98" x2="105.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="105.04" y1="93.98" x2="105.04" y2="101.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
