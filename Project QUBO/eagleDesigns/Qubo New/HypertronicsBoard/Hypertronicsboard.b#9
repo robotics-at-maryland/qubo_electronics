@@ -147,7 +147,6 @@
 <hole x="107.95" y="81.28" drill="3.302"/>
 <hole x="107.95" y="33.02" drill="3.302"/>
 <text x="2.667" y="95.758" size="3.81" layer="21" rot="R26.5">what POWER</text>
-<<<<<<< HEAD
 <text x="82.423" y="108.712" size="3.81" layer="21" rot="R332">BWHAHAHA</text>
 <text x="15.621" y="16.891" size="1.778" layer="21">BIGVIN</text>
 <text x="47.625" y="37.592" size="1.27" layer="21">VIN</text>
@@ -159,10 +158,6 @@
 <text x="81.788" y="42.291" size="1.27" layer="21">A2</text>
 <text x="78.74" y="45.847" size="1.27" layer="21">A3</text>
 <text x="75.692" y="49.657" size="1.27" layer="21">A4</text>
-=======
-<text x="38.1" y="101.6" size="3.81" layer="21" rot="R337.1">kneel before me you petty fools</text>
-<text x="79.375" y="105.156" size="3.81" layer="21">BWHAHAHA</text>
->>>>>>> d2062950c17c133dedcd4be24d2782ea153e5413
 </plain>
 <libraries>
 <library name="resistor">
@@ -1560,16 +1555,11 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="samtec" package="4-PIN-BIGPOWER" value="BCS-106-L-D-PE-BE" x="43.18" y="66.294" rot="R270"/>
 <element name="U$10" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="49.911009375" rot="R270"/>
-<element name="U$11" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="68.416715625" rot="R270"/>
-<element name="U$12" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="71.501" rot="R270"/>
 <element name="U$2" library="samtec" package="4-PIN-BIGPOWER" value="BCS-106-L-D-PE-BE" x="43.18" y="55.626" rot="R270"/>
 <element name="U$3" library="samtec" package="4-PIN-BIGPOWER" value="BCS-106-L-D-PE-BE" x="82.169" y="56.388" rot="R270"/>
 <element name="U$4" library="samtec" package="4-PIN-BIGPOWER" value="BCS-106-L-D-PE-BE" x="82.169" y="66.167" rot="R90"/>
 <element name="U$5" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="52.99529375" rot="R270"/>
 <element name="U$6" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="56.079578125" rot="R270"/>
-<element name="U$7" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="59.1638625" rot="R270"/>
-<element name="U$8" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="62.248146875" rot="R270"/>
-<element name="U$9" library="samtec" package="10-PIN-LILPWR" value="CONN-RECEPT-2MM-VERT-AU-10POS" x="62.738" y="65.33243125" rot="R270"/>
 </elements>
 <signals>
 <signal name="VIN">
@@ -1629,19 +1619,19 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="84.836" y1="29.884" x2="80.684" y2="29.884" width="0.254" layer="1"/>
 <wire x1="80.684" y1="29.884" x2="80.01" y2="29.21" width="0.254" layer="1"/>
-<via x="80.01" y="29.21" extent="1-16" drill="0.35"/>
+<via x="80.01" y="29.21" extent="1-16" drill="0.4318"/>
 <wire x1="84.582" y1="37.123" x2="84.289" y2="36.83" width="0.254" layer="1" curve="-90"/>
 <wire x1="84.289" y1="36.83" x2="80.01" y2="36.83" width="0.254" layer="1"/>
-<via x="80.01" y="36.83" extent="1-16" drill="0.35"/>
+<via x="80.01" y="36.83" extent="1-16" drill="0.4318"/>
 <wire x1="80.772" y1="40.679" x2="80.733" y2="40.64" width="0.254" layer="1" curve="-90"/>
 <wire x1="80.733" y1="40.64" x2="76.2" y2="40.64" width="0.254" layer="1"/>
-<via x="76.2" y="40.64" extent="1-16" drill="0.35"/>
+<via x="76.2" y="40.64" extent="1-16" drill="0.4318"/>
 <wire x1="76.415" y1="43.18" x2="76.2" y2="43.18" width="0.254" layer="1"/>
-<via x="76.2" y="43.18" extent="1-16" drill="0.35"/>
-<via x="72.39" y="45.72" extent="1-16" drill="0.35"/>
+<via x="76.2" y="43.18" extent="1-16" drill="0.4318"/>
+<via x="72.39" y="45.72" extent="1-16" drill="0.4318"/>
 <wire x1="54.195" y1="36.22" x2="54.1874" y2="36.2276" width="0.254" layer="1" curve="-90"/>
-<wire x1="54.1874" y1="36.2276" x2="54.1874" y2="40.64" width="0.254" layer="1"/>
-<via x="54.1874" y="40.64" extent="1-16" drill="0.35"/>
+<wire x1="54.1874" y1="36.2276" x2="51.7744" y2="36.195" width="0.254" layer="1"/>
+<via x="51.7744" y="36.195" extent="1-16" drill="0.35"/>
 <wire x1="77.47" y1="44.235" x2="77.255" y2="44.235" width="0.254" layer="1"/>
 <wire x1="77.255" y1="44.235" x2="76.2" y2="43.18" width="0.254" layer="1"/>
 <wire x1="74.422" y1="46.775" x2="73.367" y2="45.72" width="0.254" layer="1"/>
@@ -1657,10 +1647,7 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="48.983" y1="22.733" x2="49.237" y2="22.987" width="0.254" layer="1"/>
 <wire x1="49.237" y1="22.987" x2="55.499" y2="22.987" width="0.254" layer="1"/>
-<via x="55.499" y="22.987" extent="1-16" drill="0.35"/>
-<wire x1="50.1424" y1="25.1276125" x2="50.1424" y2="25.4" width="0.254" layer="16"/>
-<wire x1="55.499" y1="22.987" x2="52.2830125" y2="22.987" width="0.254" layer="16"/>
-<wire x1="52.2830125" y1="22.987" x2="50.1424" y2="25.1276125" width="0.254" layer="16"/>
+<via x="55.499" y="22.987" extent="1-16" drill="0.4318"/>
 <wire x1="60.695" y1="29.82" x2="60.4744" y2="29.5994" width="0.254" layer="1"/>
 <wire x1="60.4744" y1="29.5994" x2="60.4744" y2="29.20426875" width="0.254" layer="1"/>
 <wire x1="59.5092" y1="28.6342" x2="55.499" y2="24.624" width="0.254" layer="1"/>
@@ -1783,7 +1770,7 @@ design rules under a new name.</description>
 <wire x1="61.345" y1="29.82" x2="61.345" y2="29.341" width="0.254" layer="1"/>
 <wire x1="61.345" y1="29.341" x2="59.563" y2="27.559" width="0.254" layer="1"/>
 <wire x1="59.563" y1="27.559" x2="59.436" y2="27.559" width="0.254" layer="1"/>
-<via x="59.436" y="27.559" extent="1-16" drill="0.35"/>
+<via x="59.436" y="27.559" extent="1-16" drill="0.4318"/>
 <wire x1="66.954603125" y1="50.530740625" x2="67.118271875" y2="50.694409375" width="0.254" layer="16"/>
 <wire x1="67.118271875" y1="50.694409375" x2="67.437115625" y2="50.694409375" width="0.254" layer="16"/>
 <wire x1="67.437115625" y1="50.694409375" x2="69.738" y2="52.99529375" width="0.254" layer="16"/>
@@ -1799,7 +1786,7 @@ design rules under a new name.</description>
 <wire x1="62.2156" y1="29.5994" x2="62.2156" y2="29.20426875" width="0.254" layer="1"/>
 <wire x1="62.2156" y1="29.20426875" x2="63.22586875" y2="28.194" width="0.254" layer="1"/>
 <wire x1="63.22586875" y1="28.194" x2="68.326" y2="28.194" width="0.254" layer="1"/>
-<via x="68.326" y="28.194" extent="1-16" drill="0.35"/>
+<via x="68.326" y="28.194" extent="1-16" drill="0.4318"/>
 <wire x1="68.954603125" y1="50.530740625" x2="69.118271875" y2="50.694409375" width="0.254" layer="16"/>
 <wire x1="69.118271875" y1="50.694409375" x2="69.437115625" y2="50.694409375" width="0.254" layer="16"/>
 <wire x1="69.437115625" y1="50.694409375" x2="71.738" y2="52.99529375" width="0.254" layer="16"/>
@@ -1861,9 +1848,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="PWM" pad="23"/>
-</signal>
-<signal name="N$2">
-<via x="50.8" y="25.4" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 </board>
