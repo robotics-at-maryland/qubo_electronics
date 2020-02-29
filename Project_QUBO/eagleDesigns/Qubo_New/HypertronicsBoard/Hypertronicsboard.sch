@@ -150,22 +150,6 @@
 <pad name="P$3" x="1.27" y="-3.81" drill="0.762" shape="square"/>
 <pad name="P$4" x="-1.27" y="-3.81" drill="0.762" shape="square"/>
 </package>
-<package name="10-PIN-LILPWR">
-<wire x1="1.2" y1="-10.25" x2="-1.2" y2="-10.25" width="0.127" layer="51"/>
-<wire x1="-1.2" y1="-10.25" x2="-1.2" y2="10.25" width="0.127" layer="51"/>
-<wire x1="-1.2" y1="10.25" x2="1.2" y2="10.25" width="0.127" layer="51"/>
-<wire x1="1.2" y1="10.25" x2="1.2" y2="-10.25" width="0.127" layer="51"/>
-<pad name="1" x="0" y="9" drill="0.5" shape="square"/>
-<pad name="2" x="0" y="7" drill="0.5" shape="square"/>
-<pad name="3" x="0" y="5" drill="0.5" shape="square"/>
-<pad name="4" x="0" y="3" drill="0.5" shape="square"/>
-<pad name="5" x="0" y="1" drill="0.5" shape="square"/>
-<pad name="6" x="0" y="-1" drill="0.5" shape="square"/>
-<pad name="7" x="0" y="-3" drill="0.5" shape="square"/>
-<pad name="8" x="0" y="-5" drill="0.5" shape="square"/>
-<pad name="9" x="0" y="-7" drill="0.5" shape="square"/>
-<pad name="10" x="0" y="-9" drill="0.5" shape="square"/>
-</package>
 </packages>
 <symbols>
 <symbol name="4-PIN-BIGPOWER">
@@ -177,24 +161,6 @@
 <pin name="4" x="-10.16" y="-5.08" length="middle" function="dot"/>
 <pin name="2" x="10.16" y="5.08" length="middle" function="dot" rot="R180"/>
 <pin name="3" x="10.16" y="-5.08" length="middle" function="dot" rot="R180"/>
-</symbol>
-<symbol name="10-PIN-LILPWR">
-<wire x1="-0.01" y1="0.08" x2="-0.01" y2="0" width="0.254" layer="94"/>
-<wire x1="-0.01" y1="0" x2="0" y2="25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-25.4" x2="5.08" y2="25.4" width="0.254" layer="94"/>
-<pin name="10" x="-5.08" y="-22.86" length="middle"/>
-<pin name="9" x="-5.08" y="-17.78" length="middle"/>
-<pin name="8" x="-5.08" y="-12.7" length="middle"/>
-<pin name="7" x="-5.08" y="-7.62" length="middle"/>
-<pin name="6" x="-5.08" y="-2.54" length="middle"/>
-<pin name="5" x="-5.08" y="2.54" length="middle"/>
-<pin name="4" x="-5.08" y="7.62" length="middle"/>
-<pin name="3" x="-5.08" y="12.7" length="middle"/>
-<pin name="2" x="-5.08" y="17.78" length="middle"/>
-<pin name="1" x="-5.08" y="22.86" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -209,30 +175,6 @@
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONN-RECEPT-2MM-VERT-AU-10POS">
-<gates>
-<gate name="G$1" symbol="10-PIN-LILPWR" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="10-PIN-LILPWR">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -387,6 +329,24 @@ Can be totem pole or open collector&lt;br&gt;
 <text x="-10.16" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="KK254_10-PIN">
+<wire x1="-12.575" y1="1.18" x2="12.575" y2="1.18" width="0.127" layer="21"/>
+<wire x1="12.575" y1="1.18" x2="12.575" y2="-1.18" width="0.127" layer="21"/>
+<wire x1="12.575" y1="-1.18" x2="-12.575" y2="-1.18" width="0.127" layer="21"/>
+<wire x1="-12.575" y1="-1.18" x2="-12.575" y2="1.18" width="0.127" layer="21"/>
+<pad name="P$1" x="11.43" y="0" drill="1.1" shape="square"/>
+<pad name="P$2" x="8.89" y="0" drill="1.1"/>
+<pad name="P$3" x="6.35" y="0" drill="1.1"/>
+<pad name="P$4" x="3.81" y="0" drill="1.1"/>
+<pad name="P$5" x="1.27" y="0" drill="1.1"/>
+<pad name="P$6" x="-1.27" y="0" drill="1.1"/>
+<pad name="P$7" x="-3.81" y="0" drill="1.1"/>
+<pad name="P$8" x="-6.35" y="0" drill="1.1"/>
+<pad name="P$9" x="-8.89" y="0" drill="1.1"/>
+<pad name="P$10" x="-11.43" y="0" drill="1.1"/>
+<text x="-12.7" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN">
@@ -399,6 +359,24 @@ Can be totem pole or open collector&lt;br&gt;
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+<symbol name="10-PIN">
+<pin name="1" x="-7.62" y="10.16" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" length="middle"/>
+<pin name="3" x="-7.62" y="5.08" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" length="middle"/>
+<pin name="5" x="-7.62" y="0" length="middle"/>
+<pin name="6" x="-7.62" y="-2.54" length="middle"/>
+<pin name="7" x="-7.62" y="-5.08" length="middle"/>
+<pin name="8" x="-7.62" y="-7.62" length="middle"/>
+<pin name="9" x="-7.62" y="-10.16" length="middle"/>
+<pin name="10" x="-7.62" y="-12.7" length="middle"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -413,6 +391,32 @@ Can be totem pole or open collector&lt;br&gt;
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK254_10-PIN">
+<description>KK254 10-pin&lt;br&gt;
+&lt;a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022102101_PCB_HEADERS.xml"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="10-PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KK254_10-PIN">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1641,14 +1645,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="U$2" library="samtec" deviceset="BCS-106-L-D-PE-BE" device=""/>
 <part name="U$3" library="samtec" deviceset="BCS-106-L-D-PE-BE" device=""/>
 <part name="U$4" library="samtec" deviceset="BCS-106-L-D-PE-BE" device=""/>
-<part name="U$5" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$6" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$7" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$8" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$9" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$10" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$11" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
-<part name="U$12" library="samtec" deviceset="CONN-RECEPT-2MM-VERT-AU-10POS" device=""/>
 <part name="PWM" library="NXP" deviceset="PCA9685" device="" value="PCA9685"/>
 <part name="JP1" library="molex" deviceset="2_SUPERSABRE" device="" value="PWR"/>
 <part name="LIL_PWR" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
@@ -1658,6 +1654,11 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="ADRESS3" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS4" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
 <part name="ADRESS5" library="resistor" deviceset="PULLUP_PULLDOWN" device="0805"/>
+<part name="I2C" library="con-molex_MOD" deviceset="22-23-2021" device=""/>
+<part name="U$8" library="molex" deviceset="KK254_10-PIN" device=""/>
+<part name="U$9" library="molex" deviceset="KK254_10-PIN" device=""/>
+<part name="U$10" library="molex" deviceset="KK254_10-PIN" device=""/>
+<part name="U$11" library="molex" deviceset="KK254_10-PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1668,36 +1669,50 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="U$2" gate="G$1" x="-88.9" y="-25.4"/>
 <instance part="U$3" gate="G$1" x="60.96" y="7.62"/>
 <instance part="U$4" gate="G$1" x="60.96" y="-25.4"/>
-<instance part="U$5" gate="G$1" x="-40.64" y="17.78" rot="R270"/>
-<instance part="U$6" gate="G$1" x="-40.64" y="2.54" rot="R270"/>
-<instance part="U$7" gate="G$1" x="-40.64" y="-15.24" rot="R270"/>
-<instance part="U$8" gate="G$1" x="-40.64" y="-30.48" rot="R270"/>
-<instance part="U$9" gate="G$1" x="15.494" y="-30.226" rot="R270"/>
-<instance part="U$10" gate="G$1" x="15.24" y="17.78" rot="R270"/>
-<instance part="U$11" gate="G$1" x="15.24" y="2.54" rot="R270"/>
-<instance part="U$12" gate="G$1" x="15.24" y="-15.24" rot="R270"/>
-<instance part="PWM" gate="G$1" x="58.42" y="38.1"/>
-<instance part="JP1" gate="G$1" x="35.56" y="78.74"/>
-<instance part="LIL_PWR" gate="-1" x="0" y="78.74"/>
-<instance part="LIL_PWR" gate="-2" x="0" y="76.2"/>
-<instance part="ADRESS1" gate="G$1" x="-45.72" y="76.2" smashed="yes">
+<instance part="PWM" gate="G$1" x="58.42" y="38.1">
+<attribute name="NAME" x="58.42" y="78.74" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.42" y="76.708" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="G$1" x="35.56" y="78.74">
+<attribute name="VALUE" x="30.48" y="68.58" size="1.778" layer="96"/>
+<attribute name="NAME" x="30.48" y="86.36" size="1.778" layer="95"/>
+</instance>
+<instance part="LIL_PWR" gate="-1" x="0" y="78.74">
+<attribute name="NAME" x="2.54" y="77.978" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-0.762" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="LIL_PWR" gate="-2" x="0" y="76.2">
+<attribute name="NAME" x="2.54" y="75.438" size="1.524" layer="95"/>
+</instance>
+<instance part="ADRESS1" gate="G$1" x="-45.72" y="76.2">
 <attribute name="NAME" x="-47.2186" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS2" gate="G$1" x="-60.96" y="55.88" smashed="yes">
+<instance part="ADRESS2" gate="G$1" x="-60.96" y="55.88">
 <attribute name="NAME" x="-62.4586" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS0" gate="G$1" x="-88.9" y="55.88" smashed="yes">
+<instance part="ADRESS0" gate="G$1" x="-88.9" y="55.88">
 <attribute name="NAME" x="-90.3986" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS3" gate="G$1" x="-99.06" y="76.2" smashed="yes">
+<instance part="ADRESS3" gate="G$1" x="-99.06" y="76.2">
 <attribute name="NAME" x="-100.5586" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS4" gate="G$1" x="-73.66" y="76.2" smashed="yes">
+<instance part="ADRESS4" gate="G$1" x="-73.66" y="76.2">
 <attribute name="NAME" x="-75.1586" y="64.77" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88" smashed="yes">
+<instance part="ADRESS5" gate="G$1" x="-35.56" y="55.88">
 <attribute name="NAME" x="-37.0586" y="44.45" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="I2C" gate="-1" x="0" y="63.5">
+<attribute name="NAME" x="2.54" y="62.738" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-0.762" y="64.897" size="1.778" layer="96"/>
+</instance>
+<instance part="I2C" gate="-2" x="0" y="60.96">
+<attribute name="NAME" x="2.54" y="60.198" size="1.524" layer="95"/>
+</instance>
+<instance part="U$8" gate="G$1" x="15.24" y="15.24" rot="R270"/>
+<instance part="U$9" gate="G$1" x="15.24" y="-7.62" rot="R270"/>
+<instance part="U$10" gate="G$1" x="15.24" y="-30.48" rot="R270"/>
+<instance part="U$11" gate="G$1" x="15.24" y="-55.88" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1729,36 +1744,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="-106.68" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
-<label x="73.66" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
-<label x="73.66" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
-<label x="76.2" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
 <wire x1="-78.74" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
 <label x="-76.2" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="P$2"/>
-<wire x1="27.94" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="22.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
@@ -1774,6 +1762,13 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="U$2" gate="G$1" pin="3"/>
 <wire x1="-78.74" y1="-30.48" x2="-71.12" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-76.2" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="P$2"/>
+<wire x1="27.94" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<label x="22.86" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="1"/>
@@ -1840,6 +1835,26 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="81.28" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <label x="83.82" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<label x="73.66" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
+<label x="73.66" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
+<label x="76.2" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="-30.48" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="-30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CH1" class="0">
 <segment>
@@ -1848,9 +1863,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="22.86" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
-<label x="38.1" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<label x="25.4" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH2" class="0">
@@ -1860,9 +1875,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="22.86" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
-<label x="33.02" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="22.86" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<label x="22.86" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH3" class="0">
@@ -1872,9 +1887,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="3"/>
-<wire x1="27.94" y1="22.86" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
-<label x="27.94" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<label x="20.32" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH4" class="0">
@@ -1884,9 +1899,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="4"/>
-<wire x1="22.86" y1="22.86" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<label x="22.86" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="4"/>
+<wire x1="17.78" y1="22.86" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
+<label x="17.78" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH5" class="0">
@@ -1896,9 +1911,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="5"/>
-<wire x1="17.78" y1="22.86" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="17.78" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="5"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
+<label x="15.24" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH6" class="0">
@@ -1908,9 +1923,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="6"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<label x="12.7" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="6"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="12.7" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH7" class="0">
@@ -1920,21 +1935,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="7"/>
-<wire x1="7.62" y1="22.86" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
-<label x="7.62" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="9"/>
-<wire x1="-2.54" y1="22.86" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="10"/>
-<wire x1="-7.62" y1="22.86" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="7"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<label x="10.16" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CH0" class="0">
@@ -1944,9 +1947,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <label x="48.26" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="8"/>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
-<label x="2.54" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$8" gate="G$1" pin="8"/>
+<wire x1="7.62" y1="22.86" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
+<label x="7.62" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN2" class="0">
@@ -1993,26 +1996,26 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="2"/>
-<wire x1="-22.86" y1="22.86" x2="-22.86" y2="30.48" width="0.1524" layer="91"/>
-<label x="-22.86" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PWM" gate="G$1" pin="SCL"/>
 <wire x1="81.28" y1="68.58" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
 <label x="83.82" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="I2C" gate="-1" pin="S"/>
+<wire x1="-2.54" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
+<label x="-7.62" y="63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="22.86" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
-<label x="-17.78" y="30.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="PWM" gate="G$1" pin="SDA"/>
 <wire x1="81.28" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="83.82" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C" gate="-2" pin="S"/>
+<wire x1="-2.54" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
+<label x="-7.62" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -2085,6 +2088,12 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="PWM" gate="G$1" pin="A5"/>
 <wire x1="81.28" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <label x="83.82" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PWM" gate="G$1" pin="!OE"/>
+<wire x1="81.28" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
