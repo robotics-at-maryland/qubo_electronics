@@ -152,8 +152,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="96.52" y2="88.646" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="96.774" y2="0" width="0" layer="20"/>
+<wire x1="96.774" y1="0" x2="96.52" y2="88.646" width="0" layer="20"/>
 <wire x1="96.52" y1="88.646" x2="0" y2="88.9" width="0" layer="20"/>
 <wire x1="0" y1="88.9" x2="0" y2="0" width="0" layer="20"/>
 </plain>

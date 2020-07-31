@@ -146,8 +146,8 @@
 <hole x="6.35" y="81.28" drill="3.302"/>
 <hole x="107.95" y="81.28" drill="3.302"/>
 <hole x="107.95" y="33.02" drill="3.302"/>
-<text x="2.667" y="95.758" size="3.81" layer="21" rot="R26.5">what POWER</text>
-<text x="82.423" y="108.712" size="3.81" layer="21" rot="R332">BWHAHAHA</text>
+<text x="2.667" y="95.758" size="3.81" layer="112" rot="R26.5">what POWER</text>
+<text x="82.423" y="108.712" size="3.81" layer="121" rot="R332">BWHAHAHA</text>
 <text x="15.621" y="16.891" size="1.778" layer="21">BIGVIN</text>
 <text x="47.625" y="37.592" size="1.27" layer="21">VIN</text>
 <text x="43.18" y="37.592" size="1.27" layer="21">GND</text>
@@ -158,8 +158,9 @@
 <text x="81.788" y="42.291" size="1.27" layer="21">A2</text>
 <text x="78.74" y="45.847" size="1.27" layer="21">A3</text>
 <text x="75.692" y="49.657" size="1.27" layer="21">A4</text>
-<text x="7.747" y="89.281" size="6.4516" layer="21">RAINIER Brendan Kane</text>
+<text x="7.747" y="89.281" size="6.4516" layer="121">RAINIER Brendan Kane</text>
 <text x="82.677" y="2.413" size="3.81" layer="21">R@M 2018</text>
+<text x="34.29" y="27.94" size="1.778" layer="112">I2c</text>
 </plain>
 <libraries>
 <library name="resistor">

@@ -161,6 +161,7 @@
 <text x="21.717" y="72.771" size="5.08" layer="121">RAINIER Brendan Kane</text>
 <text x="71.247" y="2.413" size="3.81" layer="21">R@M 2018</text>
 <text x="34.29" y="27.94" size="1.778" layer="112">I2c</text>
+<dimension x1="82.55" y1="63.5" x2="82.55" y2="59.69" x3="82.55" y3="61.595" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="resistor">
