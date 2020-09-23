@@ -4782,9 +4782,9 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <attribute name="VALUE" x="48.26" y="134.62" size="1.778" layer="96"/>
 <attribute name="NAME" x="48.26" y="152.4" size="1.778" layer="95"/>
 </instance>
-<instance part="RXTX" gate="G$1" x="167.64" y="33.02" smashed="yes">
-<attribute name="NAME" x="160.02" y="48.26" size="1.778" layer="95"/>
-<attribute name="VALUE" x="160.02" y="12.7" size="1.778" layer="96"/>
+<instance part="RXTX" gate="G$1" x="175.26" y="33.02" smashed="yes">
+<attribute name="NAME" x="167.64" y="48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="167.64" y="12.7" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4804,22 +4804,12 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <wire x1="116.84" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
 <label x="109.22" y="144.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="RXTX" gate="G$1" pin="9"/>
-<wire x1="160.02" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
-<label x="152.4" y="22.86" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TX_MF" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="PB1"/>
 <wire x1="116.84" y1="139.7" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <label x="109.22" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="RXTX" gate="G$1" pin="10"/>
-<wire x1="160.02" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
-<label x="152.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -5005,7 +4995,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="8"/>
-<wire x1="160.02" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
 <label x="152.4" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5017,7 +5007,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="7"/>
-<wire x1="160.02" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
 <label x="152.4" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5027,12 +5017,22 @@ Part number EK-TM4C123GXL&lt;br&gt;
 <wire x1="246.38" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
 <label x="236.22" y="129.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RXTX" gate="G$1" pin="9"/>
+<wire x1="167.64" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TX_SF" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="PC7"/>
 <wire x1="246.38" y1="124.46" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
 <label x="236.22" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RXTX" gate="G$1" pin="10"/>
+<wire x1="167.64" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
+<label x="152.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_MD" class="0">
@@ -5043,7 +5043,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="6"/>
-<wire x1="160.02" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="91"/>
 <label x="152.4" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5055,7 +5055,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="5"/>
-<wire x1="160.02" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <label x="152.4" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5153,7 +5153,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="4"/>
-<wire x1="160.02" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <label x="152.4" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5179,7 +5179,7 @@ Part number EK-TM4C123GXL&lt;br&gt;
 </segment>
 <segment>
 <pinref part="RXTX" gate="G$1" pin="3"/>
-<wire x1="160.02" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
 <label x="152.4" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
